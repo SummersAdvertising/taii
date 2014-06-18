@@ -89,7 +89,7 @@ $(function(){
           <td>前台顯示：</td>
           <td><%= f.check_box :hide , { class: 'checkbox'  }, 0, 1 %> 是</td>
         </tr>
-        <% if current_admin == true %>
+        <% if current_admin.super == true %>
     		<tr>
           <td>陸廠編輯：</td>
           <td><%= f.check_box :accessLevel , { class: 'checkbox'  }, 1, 2 %> 是</td>

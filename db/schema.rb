@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140618115538) do
+ActiveRecord::Schema.define(version: 20140618122327) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "",    null: false
@@ -102,16 +102,16 @@ ActiveRecord::Schema.define(version: 20140618115538) do
 #   undefined method `[]' for nil:NilClass
 
   create_table "dividend_histories", force: true do |t|
-    t.integer  "fiscal_year",                                             null: false
-    t.decimal  "sre",               precision: 3, scale: 3, default: 0.0, null: false
-    t.decimal  "scap",              precision: 3, scale: 3, default: 0.0, null: false
-    t.decimal  "cash",              precision: 3, scale: 3, default: 0.0, null: false
-    t.decimal  "total",             precision: 3, scale: 3, default: 0.0, null: false
+    t.integer  "fiscal_year",                                              null: false
+    t.decimal  "sre",               precision: 10, scale: 3, default: 0.0, null: false
+    t.decimal  "scap",              precision: 10, scale: 3, default: 0.0, null: false
+    t.decimal  "cash",              precision: 10, scale: 3, default: 0.0, null: false
+    t.decimal  "total",             precision: 10, scale: 3, default: 0.0, null: false
     t.date     "stock_paymentdate"
     t.date     "cash_paymentdate"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "ranking",                                   default: 999, null: false
+    t.integer  "ranking",                                    default: 999, null: false
   end
 
   create_table "financialprojections", force: true do |t|
