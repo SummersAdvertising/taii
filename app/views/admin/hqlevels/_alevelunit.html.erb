@@ -1,0 +1,64 @@
+	<!-- for show and sortable -->
+	<tr <%= "id=dragablecontainer_#{hqlevel.id.to_s}" %> class="dragable <%= "tr-#{hqlevel.id.to_s}-for-show" %>">
+	      <td width="6%">
+	      	<img src="/images/folder.png">
+	      </td>
+			  <td width="76%" id='<%= "variant#{hqlevel.id.to_s}" %>'>
+				  <%= link_to  hqlevel.name,  admin_hqlevel_path(hqlevel.id, locale: I18n.locale )  %>
+			  </td>
+		  	<td width="18%" >
+		  		<div class="tool"> 
+		  			<a <%= "id=level#{hqlevel.id.to_s}" %> class='renameLink edit' , title="編輯" ></a>
+		  			<%= link_to '', admin_hqlevel_path(hqlevel, locale: I18n.locale), method: :delete, title: "刪除", class: 'delete', data: { confirm: 'Are you sure?' }, :remote => true %>
+		  		 </div>
+		  	 </td>
+	</tr>
+	<!-- for show and sortable END-->
+	<!-- for edit and unsortable  -->
+	<tr <%= "id=renamelevelcontainer_#{hqlevel.id.to_s}" %> class=" <%= "tr-#{hqlevel.id.to_s}-for-edit" %>  list-edit " style="display:none;">
+				<td width="6%">
+		      	<img src="/images/folder.png">
+	      </td>
+			  <!-- rename form default display none -->
+	  	   <td  width="76%" >
+	  	   		<div>
+	  	   			<%= form_for(hqlevel ,:url => admin_hqlevel_path(hqlevel.id, locale: I18n.locale), :html => {  :method => "patch", :remote => true, :class => 'ajaxRenameLevelForm', id: "ajaxRenameLevelForm#{hqlevel.id.to_s}" } ) do |f| %>
+									<div class='errors'></div>
+									<%= f.hidden_field :id, :id => "renameLevelID" %>
+		
+									<%= f.text_field :name , class: 'text' , style: 'width:75%' %>
+									<% if current_admin.super == true %>
+										<%= f.check_box :messup , { class: 'checkbox'  }, 1, 0 %> MESSUP
+									<% else %>
+										<%= f.hidden_field :messup, value: true %>
+									<% end %>
+						<!-- style modify here -->
+							<% end %>
+	  	   		</div>
+	  	   </td>
+		  	  <td width="18%" align='right'>
+			  				<%= link_to '儲存', "#", onclick: "$('#ajaxRenameLevelForm#{hqlevel.id.to_s}').submit()", title: "儲存" %>
+							<a <%= "id=cancellevel#{hqlevel.id.to_s}" %> class="cancelRenameALevelbutton" title="取消" href='#' >取消</a>
+							
+							<script type="text/javascript">
+							$(".ajaxRenameLevelForm").on('ajax:success',function(evt, data, status, xhr) {
+								//alert("ajax rename success");
+							    var $this = $(this);
+							
+							    $this.find('.errors').empty();
+							    
+									var  strLevelid = $this.find("#renameLevelID").val().toString();
+									$(".tr-"+strLevelid+"-for-edit").toggle();
+									$(".tr-"+strLevelid+"-for-show" ).toggle();
+									$("#variant"+strLevelid + " > " + " a ").text( $this.find("#hqlevel_name").val().toString() );
+					
+							});
+						</script>
+	  	 </td>
+	</tr>
+	<!-- for edit and unsortable  END-->
+
+
+
+
+

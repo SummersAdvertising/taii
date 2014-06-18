@@ -1,0 +1,205 @@
+	<article>
+		<div class="hgroup">
+		  <h3 class="left"><%= params[:fiscal_month] %> 月<span>/ <%= @monthlyrevenuereport.fiscal_year %> 年(<%= @monthlyrevenuereport.fiscal_year + 1911 %> 年)</span></h3>
+		</div>
+<!-- 	 start ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->   	  
+
+		<%= render 'admin/monthlyrevenuereports/monthTemplate' %>
+<br>
+<!-- 新增每月資料 -->
+<% if  (!@revenue_items.nil? && @revenue_items.count > 0 && !@currentMonth.nil?) %>
+	  <div class="button"> 		   
+        <a href='#' id="createARevenuebutton" class="right highlight"  >新增一個項目</a>
+     </div> 
+<% else %>
+	<% if @currentMonth.nil? %>
+		請先選擇月份
+	<% else %>
+		<div class='button'>
+			<%= link_to "新增預設項目", createDefaultItems_admin_revenue_item_path(report_id: params[:id],fiscal_month: @currentMonth), class: 'left' %> 		   
+        <a href='#' id="createARevenuebutton" class="right highlight"  >新增一個項目</a>
+     </div>
+	<% end %>
+<% end %>
+<!-- 新增每月資料 end -->
+<br>
+
+<!-- list ========================= -->
+<div class="list">
+	<table id="mainRevenueList" width="100%" border="0" cellspacing="0" cellpadding="0">
+  	<tbody id="listThisRevenue">
+    	<%= render 'admin/monthlyrevenuereports/listThisMonth' %>
+  	<tbody>    
+	</table>
+</div>
+
+ <!-- new a revenue begin -->
+<div class="list" style='margin-top:-30px;'> <!-- style modify here -->
+    <table id="revenue_form_container" width="100%" border="0" cellspacing="0" cellpadding="0" >
+      <%= form_for(@newRevenueitem,url: admin_revenue_item_path(@newRevenueitem) , :html => {:id =>'ajaxNewRevenueForm' , :method => "post", :remote => true} ) do |f| %>
+      <tr id="createNewRevenue" style="display:none"  class="list-edit">
+      	<td width='18%'>
+        		    <%= f.text_field :item , id: 'itemname', class: 'text', placeholder: "項目" %>
+      	</td>
+      	<td width='64%' >
+				  	<div class='errors'></div>							  	
+		  	    <%= f.text_field :value , id: 'itemvalue', class: 'text', placeholder: "營業收入淨額"%>
+		  	    
+				    <%= f.hidden_field :monthlyrevenuereport_id, value: @monthlyrevenuereport.id.to_s %>
+						<%= f.hidden_field :fiscal_month, value: @currentMonth.to_s %>
+      	</td>
+        <td width='18%' align="right">
+        	<%= link_to '儲存', "#", onclick: "$('#ajaxNewRevenueForm').submit()", title: "儲存" %>
+            <a id="cancelARevenuebutton" title="取消" href="#">取消</a>
+         </td>
+      </tr>
+     <% end %>		
+		</table>
+</div>
+		<!-- new a revenue end -->
+		<!-- 	 end ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+	<div class="button">
+		<a href=<%= admin_monthlyrevenuereports_path %> class="left" > 
+   		   		<img src="/images/left.png">返回
+ 		</a>
+	</div>
+	
+	
+</article>
+
+<script>
+		//edit revenue link
+		$("#mainRevenueList").on('mouseup',".editRevenueLink", function() {
+			$(".tr-"+this.id.toString().replace("revenue","")+"-for-edit").toggle();
+			$(".tr-"+this.id.toString().replace("revenue","")+"-for-show" ).toggle();
+		});
+		
+		$("#mainRevenueList").on('mouseup', ".cancelEditbutton",function() {
+			$(".tr-"+this.id.toString().replace("canceledit", "")+"-for-edit").toggle();
+			$(".tr-"+this.id.toString().replace("canceledit", "")+"-for-show" ).toggle();
+		});
+		
+		//show create new level inputs
+		$( "#createARevenuebutton" ).mouseup(function() {
+		  $( "#createNewRevenue" ).toggle();
+		});
+		//hide create new level inputs
+		$( "#cancelARevenuebutton" ).mouseup(function() {
+		  $( "#createNewRevenue" ).toggle();
+		});
+		
+		//ajax:success on NewLevel action
+		$("#ajaxNewRevenueForm").on('ajax:success',function(evt, data, status, xhr) {
+			//alert("ajaxsuccess");
+		    var $this = $(this);
+		
+		    $("#itemname").val('');
+		    $("#itemvalue").val('');
+		    $this.find('.errors').empty();
+			$("#createNewRevenue").toggle();
+
+		});
+		//ajax:error on NewLevel action
+		$("#ajaxNewRevenueForm").on('ajax:error',function(evt, data, status, xhr) {
+			//alert("ajaxerror");
+		    var responseObject = $.parseJSON(xhr.responseText),
+		        errors = $('<ul />');
+		        
+		        //alert("ERROR with="+JSON.stringify(responseObject));
+		
+		    $.each(responseObject, function(){
+		      errors.append('<li>' + this + '</li>');
+		    })
+		
+		    errors.appendTo($(this).find('.errors'));
+
+		});
+		//ajax:success on edit action
+		$(".ajaxEditRevenueForm").on('ajax:success',function(evt, data, status, xhr) {
+			//alert("ajax rename success");
+		    var $this = $(this);
+		
+		    $this.find('.errors').empty();
+		        
+				var  strRevenueid = $this.find("#editRevenueID").val().toString();	
+				$(".tr-"+strRevenueid+"-for-edit").toggle();
+				$(".tr-"+strRevenueid+"-for-show" ).toggle();
+				//$("#itemname"+strRevenueid).text( $this.find("#hqlevel_name").val().toString() );
+				//$("#valuename"+strRevenueid).text( $this.find("#hqlevel_name").val().toString() );
+				//$("#editrevenue"+strRevenueid + " > " + ".editTitleLink").text( $this.find("#brlevel_name").val().toString() );
+				//$("#editrevenue"+strRevenueid).toggle(); 
+
+		});
+		//ajax:error on edit action
+		$(".ajaxEditRevenueForm").on('ajax:error' ,function(evt, data, status, xhr) {
+				//alert("ajaxerror");
+		    var responseObject = $.parseJSON(xhr.responseText),
+		        errors = $('<ul />');
+		        
+		        //alert("ERROR with="+JSON.stringify(responseObject));
+		
+		    $.each(responseObject, function(){
+		      errors.append('<li>' + this + '</li>');
+		    })
+		
+		    errors.appendTo($(this).find('.errors'));
+
+		});
+		  
+		  //################################ revenue_items reorder begin #######################################
+		$(function() {
+			var prevEvent = null;
+		    $( "#listThisRevenue" ).sortable({
+		      //connectWith: ".renamelevelcontainer",
+		      placeholder: "ui-state-highlight",
+		      items: "> .dragable" ,
+		      update: function( event, ui ) {
+			      	
+					if(event.timeStamp == prevEvent){
+						return null;
+					}
+					
+					prevEvent = event.timeStamp;	
+					var newRankings_array = $('#listThisRevenue').sortable('toArray');
+					var orderSet = [];
+					$.each(newRankings_array, function( index, value){
+								orderSet.push(value.replace("dragablecontainer_","")); //HERE	
+				    });
+
+				    var order2Push = JSON.stringify(orderSet);
+					  
+				  	$.ajaxSetup({
+					  	headers: {
+							    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+
+				  	  //multiple reorder 
+					  	$.ajax({
+					      type: "PATCH",
+					      url: "/admin/revenue_items/"+orderSet[0]+"/multiple_reorder", //HERE
+					      data: { revenue_item: {  reorderset: orderSet } }, //HERE
+					      success: function(data){
+						   //alert ("success");
+						   		$.each(newRankings_array, function( index, value){
+							      	$('#editrevenuecontainer_'+value.replace("dragablecontainer_","") ).insertAfter('#'+value);//HERE
+							    });
+	   					  	console.log("================ RevenueItem reorder PATCH successfully end =============");
+					        return false   
+					      },
+					      error: function(data){
+						    //alert ("faild");
+					        console.log("================ RevenueItem reorder has some issues ==================");
+					        return false  
+					      }
+					    });
+
+		      }
+		    });
+		    
+			    
+		    $( "#listThisRevenue" ).disableSelection();
+		  });  
+		//################################ revenue_items reorder end #######################################
+
+</script>

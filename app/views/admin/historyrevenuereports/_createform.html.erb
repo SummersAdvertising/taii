@@ -1,0 +1,34 @@
+<%= form_for(@historyrevenuereport,:url => admin_historyrevenuereports_path, :html => { :id => 'createNewFiscalYearForm' , :method => "post" } ) do |f| %>
+	<article>
+		<div class="list">
+		<% if @historyrevenuereport.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@historyrevenuereport.errors.count, "error") %> prohibited this historyrevenuereport from being saved:</h2>
+	      <ul>
+			      <% @historyrevenuereport.errors.full_messages.each do |msg| %>
+			        <li><%= msg %></li>
+			      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+	  
+	    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr class="list-edit">
+	        <td>&nbsp;</td>
+	        <td><%= f.text_field :fiscal_year, class: "text", placeholder:"年份/民國" %></td>
+	        <td align="right">
+	        	<%= link_to '儲存', '#', onclick: "$('#createNewFiscalYearForm').submit();", title: "儲存" %>
+	         </td>
+	      </tr>
+	    </table>
+	  </div>
+	  
+	  <div class="button">
+			<a href=<%= admin_historyrevenuereports_path %> class="left" > 
+   			返回
+   			<img src="/images/left.png">
+   		</a>
+   	</div>
+	</article>
+<% end %>
+

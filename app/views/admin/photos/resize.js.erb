@@ -1,0 +1,15 @@
+
+	var image = new Object();
+	image.type = "img";
+	image.id = "<%= @photo.id.to_s.html_safe %>";
+	image.path = "<%= "/uploads/peditor/article/"+ @photo.article_id.to_s + "/" + @photo.id.to_s + "-peditor-" + @photo.name %>";
+	
+	if($("#newImageLink").val()){
+		image.link = $("#newImageLink").val();
+	}
+
+	editor.resetChild();
+	editor.img.update(image);
+	
+	hold = false;
+	$.colorbox.close();

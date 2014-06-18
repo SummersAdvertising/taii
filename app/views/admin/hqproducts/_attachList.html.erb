@@ -1,0 +1,18 @@
+<div class="list">
+<table id="mainAttachList"  width="100%" border="0" cellspacing="0" cellpadding="0" >
+    <tbody id="listThisAttach">
+		<% @hqproduct.attachments.each do |attach| %>
+	    	<tr <%= "id=createAttachcontainer_#{attach.id.to_s}" %> class="createAttachcontainer" >
+		      <td width="6%"><img src="/images/file.png"></td>
+					<td width="12%"><%= link_to attach.file_name, attach.attachment.url%></td>
+				  <td width="64%"><%= (attach.file_size.to_i)/1000 %>KB @ [<%= attach.updated_at.in_time_zone("Taipei") %> 上傳] </td>
+		      <td width="18%">
+		      	<div class="tool">
+		      		<%= link_to '', admin_attachment_path(attach.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete', title: '刪除' %>
+		        </div>
+		       </td>
+		     </tr>
+		<% end %>
+	</tbody>
+  </table>
+</div>

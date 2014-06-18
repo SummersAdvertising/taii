@@ -1,0 +1,14 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<% @organizations.each do |organization| %>
+	        <tr>
+	              <td width="12%"><%= link_to organization.org_name, admin_organization_path(organization,:locale => I18n.locale) %></td>
+	              <td width="70%"><span><%= organization.address %> </span></td>
+	              <td width="18%">
+	              	<div class="tool">
+	              		<%= link_to '', admin_organization_path(organization,:locale => I18n.locale), class: 'edit', title: '編輯' %>
+	      		        <%= link_to '', admin_organization_path(organization,:locale => I18n.locale), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete', title: '刪除' %>
+	              	</div>
+	              </td>
+	        </tr>        
+	<% end %>
+</table>

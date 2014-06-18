@@ -1,0 +1,2 @@
+module MajorpoliciesHelper
+end

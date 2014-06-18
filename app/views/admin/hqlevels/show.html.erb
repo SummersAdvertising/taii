@@ -1,0 +1,352 @@
+<!--
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<style>
+  #listThisLevel { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #listThisLevel tr { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+  html>body #listThisLevel tr { height: 1.5em; line-height: 1.2em; }
+  .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+  </style>
+-->
+
+<header>
+        <h2 class="left">產品介紹 <span>/ 集團角度</span></h2>
+        <nav class="left">
+	                <nav class="left"> <!-- 直接回到編輯頁不合理 因為有的階層根本不存在 -->
+		<%= link_to "[正體中文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW") , 'data-no-turbolink' => true %>
+		<%= link_to "[英文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("en"), :locale => "en") , 'data-no-turbolink' => true %>
+		<%= link_to "[簡體中文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("zh_CN"), :locale => "zh_CN" ) , 'data-no-turbolink' => true %>
+		<%= link_to "[日文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("ja"), :locale => "ja" ) , 'data-no-turbolink' => true %>
+		目前語系：<%= I18n.locale.to_s%></nav>
+        </nav>
+</header>
+ <article>
+		<%  if @hqlevel.level >= 0 && @hqlevel.level < 4  %>
+		<div class="hgroup">
+			<h3  class="left">
+			<% @breadcrumb.reverse.each_with_index do | bread, index | %>
+			 	<%= bread.name if index == 0 %>
+			 	<% if index >= 1  %>
+				 	<span>/<%= bread.name %></span>
+				 	<!-- link_to  ancestor.name,  admin_hqlevel_path(ancestor.id, :locale => I18n.locale) -->
+			 	<% end %>
+			 	<% if index == (@breadcrumb.count - 1 ) %>
+			 		<span>/分類列表</span>
+			 	<% end %>
+			<% end %>
+			</h3>
+					<% if current_admin.super == true || @hqlevel.messup == true %>
+          <div class="button right">
+		          <a href="#" id="createALevelbutton" class="right highlight" >建立分類<img src="/images/add_folder.png"></a>
+         </div>
+         <% end %>
+    </div>
+    
+    	<%= "Notice: This Level allow mess up. " if (@hqlevel.messup == true) %>
+
+    <div class="list">
+    	<table id="mainLevelList" width="100%" border="0" cellspacing="0" cellpadding="0">
+      	<tbody id="listThisLevel">
+	        	<%= render 'levelList' %>
+      	<tbody>    
+	   </table>
+    </div>
+		       <% if current_admin.super == true || @hqlevel.messup == true %>
+					        <!-- new a level begin -->
+			        <div class="list" style='margin-top:-30px;'> <!-- style modify here -->
+				        <table id="input_form_container" width="100%" border="0" cellspacing="0" cellpadding="0" >
+					        	<%= form_for(@newhqlevel,:url => admin_hqlevels_path(locale: I18n.locale), :html => {:id =>'ajaxNewLevelForm' , :method => "post", :remote => true} ) do |f| %>
+						        <tr id="createNewLevel" style="display:none"  class="list-edit">
+					    			        	<td width='6%' valign="top">&nbsp;</td>
+						        	<td width='76%' >
+											    <%= f.text_field :name, id: 'createname' , placeholder: '分類名稱', class: 'text', required: true %>
+		    									<% if current_admin.super == true %>
+															<%= f.check_box :messup , { class: 'checkbox'  }, 1, 0 %> MESSUP
+													<% else %>
+													<%= f.hidden_field :messup, value: true %>
+													<% end %>
+													 	<p class='errors'></p>
+													<% nxtlevel = (@hqlevel.level.to_i + 1) %>
+													<% myparent = @hqlevel.parent.to_i %>
+													<%= f.hidden_field :level, :value => ( nxtlevel > 0 ) ? nxtlevel  : 1 %>
+													<%= f.hidden_field :parent, :value => @hqlevel.id.to_i %>
+													<%= f.hidden_field :locale, :value => I18n.locale.to_s %>
+													<%= f.hidden_field :ranking, :value => 999 %>
+						        	</td>
+						          <td width='18%' align="right">
+						          	<%= link_to '儲存', "#", onclick: "$('#ajaxNewLevelForm').submit()", title: "儲存" %>
+						              <a id="cancelALevelbutton" title="取消" href="#">取消</a>
+						           </td>
+						
+						        </tr>
+	                   <% end %>	
+									</table>
+				        </div>
+						<% end %><!-- new a level end -->
+						
+  <% end %><!--   end of level part -->
+	
+		<!-- this level product list -->
+       <%  if @hqlevel.level > 0 && @hqlevel.level < 5  %>
+		<div class="hgroup">
+			<h3  class="left">
+			<% @breadcrumb.reverse.each_with_index do | bread, index | %>
+			 	<%= bread.name if index == 0 %>
+			 	<% if index >= 1 %>
+				 	<span>/<%= bread.name %></span>
+				 	<!-- link_to  ancestor.name,  admin_hqlevel_path(ancestor.id, :locale => I18n.locale) -->
+			 	<% end %>
+			 	<% if index == (@breadcrumb.count - 1 ) %>
+			 		<span>/產品列表</span>
+			 	<% end %>
+			<% end %>
+			</h3>
+					<% if current_admin.super == true || @hqlevel.messup == true %>
+		          <div class="button right">
+			           		<a href=<%= new_admin_hqproduct_path(:parentlevelid=>@hqlevel.id, :locale => I18n.locale) %> class="right highlight" > 
+				           		新增產品
+				           		<img src="/images/add_file.png">
+			           		</a>
+		           </div>
+          <% end %>
+        </div>
+        
+        <div class="list">
+          <table id="mainProductList" width="100%" border="0" cellspacing="0" cellpadding="0">
+          	<tbody id="listAllProduct">
+      			<% @productsofthislevel.each do | hqproduct | %>
+      				<% if current_admin.super == true %>
+								<tr <%= "id=productcontainer_#{hqproduct.id.to_s}" %> class="dragable productcontainer" >
+							<% else %>
+								<tr <%= "id=productcontainer_#{hqproduct.id.to_s}" %> class="productcontainer" >
+							<% end %>
+						<td width="6%">
+							<% if hqproduct.hide == 1 %>
+									<img src="/images/hd_file.png"></td>
+							<% else %>
+									<img src="/images/file.png"></td>
+							<% end %>
+						</td>
+						<td width="76%">
+									<% if hqproduct.accessLevel <= current_admin.accessLevel %>
+										<%= link_to hqproduct.name , edit_admin_hqproduct_path(hqproduct.id, :locale => I18n.locale),'data-no-turbolink' => true %>
+									<% else%>
+											<a href='#'><%= hqproduct.name%></a>
+									<% end %>	
+						</td>
+						<td width="18%">
+							<div class="tool">
+								<% if hqproduct.accessLevel <= current_admin.accessLevel %>
+									<%= link_to '', edit_admin_hqproduct_path(hqproduct.id, :locale => I18n.locale), class: 'edit' ,'data-no-turbolink' => true %>
+									<%= link_to '', admin_hqproduct_path(hqproduct.id, :locale => I18n.locale), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete' %>
+							<% end %>	
+						    </div>
+						 </td>
+					</tr>
+		
+				<% end %> 
+          	</tbody>
+          </table>
+       <% end %>
+        </div>
+       <!-- end of product list part -->
+		
+		<!-- this level product list end -->
+		<% if @hqlevel.parent.to_i > 0 %>
+  		      <div class="button">
+  		      		<a href=<%= admin_hqlevel_path(@hqlevel.parent.to_i, :locale => I18n.locale) %> class="left" > 
+		           		<img src="/images/left.png">
+		           		返回
+	           		</a>
+  		      </div>
+
+		<% end %>
+      </article>
+
+<script>
+
+		//show create new level inputs
+		$( "#createALevelbutton" ).mouseup(function() {
+		  $( "#createNewLevel" ).toggle();
+		  if($( "#createNewLevel" ).is(":visible") == true){
+			$('[_height=auto]').height($('[_height=auto]').height()+100);	  
+		  }else{
+			$('[_height=auto]').height($('[_height=auto]').height()-100);	    
+		  }
+		});
+		//hide create new level inputs
+		$( "#cancelALevelbutton" ).mouseup(function() {
+		  $( "#createNewLevel" ).toggle();
+		  $('[_height=auto]').height($('[_height=auto]').height()-100);	  
+		});
+		
+		//ajax:success on NewLevel action
+		$("#ajaxNewLevelForm").on('ajax:success',function(evt, data, status, xhr) {
+			//alert("ajaxsuccess");
+		    var $this = $(this);
+		
+		    $("#createname").val('');
+		    $this.find('.errors').empty();
+		    $("#createNewLevel").toggle();
+				
+				$('[_height=auto]').height($('[_height=auto]').height()-50);	  
+		});
+		//ajax:error on NewLevel action
+		$("#ajaxNewLevelForm").on('ajax:error',function(evt, data, status, xhr) {
+			//alert("ajaxerror");
+		    var responseObject = $.parseJSON(data.responseText);
+		    
+		     var response  = '';
+//		    alert("ERROR with="+JSON.stringify(responseObject));
+		    $.each(responseObject, function(){
+		      response = response + this.toString();
+		    });
+		    
+		    //alert(response);
+		});
+
+		//rename link
+		$("#mainLevelList").on('mouseup',".renameLink", function() {
+			$(".tr-"+this.id.toString().replace("level","")+"-for-edit").toggle();
+			$(".tr-"+this.id.toString().replace("level","")+"-for-show" ).toggle();
+		});
+		
+		$("#mainLevelList").on('mouseup', ".cancelRenameALevelbutton",function() {
+			$(".tr-"+this.id.toString().replace("cancellevel", "")+"-for-edit").toggle();
+			$(".tr-"+this.id.toString().replace("cancellevel", "")+"-for-show" ).toggle();
+		});
+
+		//ajax:success on Rename action
+		$(".ajaxRenameLevelForm").on('ajax:success',function(evt, data, status, xhr) {
+			//alert("ajax rename success");
+		    var $this = $(this);
+		
+		    $this.find('.errors').empty();
+		    
+			var  strLevelid = $this.find("#renameLevelID").val().toString();
+			$(".tr-"+strLevelid+"-for-edit").toggle();
+			$(".tr-"+strLevelid+"-for-show" ).toggle();
+			$("#variant"+strLevelid + " > " + " a ").text( $this.find("#hqlevel_name").val().toString() );
+
+		});
+		//ajax:error on Rename action
+		$(".ajaxRenameLevelForm").on('ajax:error' ,function(evt, data, status, xhr) {
+				//alert("ajaxerror");
+		    var responseObject = $.parseJSON(xhr.responseText),
+		        errors = $('<ul />');
+		        
+		        //alert("ERROR with="+JSON.stringify(responseObject));
+		
+		    $.each(responseObject, function(){
+		      errors.append('<li>' + this + '</li>');
+		    })
+		
+		    errors.appendTo($(this).find('.errors'));
+
+		});
+
+		//$('#listThisLevel').sortable();
+		//reorder v1.0
+		$(function() {
+			var prevEvent = null;
+		    $( "#listThisLevel" ).sortable({
+		    	items: "> .dragable" ,
+		      //connectWith: ".renamelevelcontainer",
+		      placeholder: "ui-state-highlight",
+		      update: function( event, ui ) {
+			      	
+					if(event.timeStamp == prevEvent){
+						return null;
+					}
+					
+					prevEvent = event.timeStamp;	
+					var newRankings_array = $('#listThisLevel').sortable('toArray');
+					var orderSet = [];
+					$.each(newRankings_array, function( index, value){
+				      	orderSet.push(value.replace("dragablecontainer_",""));
+				    });
+				    var order2Push = JSON.stringify(orderSet);
+				  	//console.log(order2Push);    
+				  	//console.log("================END==================");
+				  	
+				  	$.ajaxSetup({
+					  	headers: {
+							    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+
+				  	  //multiple reorder 
+					  	$.ajax({
+					      type: "PATCH",
+					      url: "/admin/"+"<%= I18n.locale.to_s %>"+"/hqlevels/"+orderSet[0]+"/multiple_reorder",
+					      data: { hqlevel: {  reorderset: orderSet } },
+					      success: function(data){ //rearrange
+							   		$.each(newRankings_array, function( index, value){
+							      	$('#renamelevelcontainer_'+value.replace("dragablecontainer_","") ).insertAfter('#'+value);
+								    });
+					        return false   
+					      },
+					      error: function(data){
+						    //alert ("faild");
+					        return false  
+					      }
+					    });
+		      }
+		    });
+		    
+			    
+		    $( "#listThisLevel" ).disableSelection();
+		  });  
+		//add function after drag and drop(sortable)
+		//################################ product reorder begin #######################################
+		$(function() {
+			var prevEvent = null;
+		    $( "#listAllProduct" ).sortable({
+		      //connectWith: ".renamelevelcontainer",
+		    	items: "> .dragable" ,
+		      placeholder: "ui-state-highlight",
+		      update: function( event, ui ) {
+			      	
+					if(event.timeStamp == prevEvent){
+						return null;
+					}
+					
+					prevEvent = event.timeStamp;	
+					var newRankings_array = $('#listAllProduct').sortable('toArray');
+					var orderSet = [];
+					$.each(newRankings_array, function( index, value){
+				      	orderSet.push(value.replace("productcontainer_",""));
+				    });
+				    var order2Push = JSON.stringify(orderSet);
+				  	//console.log(order2Push);    
+				  	$.ajaxSetup({
+					  	headers: {
+							    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+
+				  	  //multiple reorder 
+					  	$.ajax({
+					      type: "PATCH",
+					      url: "/admin/"+"<%= I18n.locale.to_s %>"+"/hqproducts/"+orderSet[0]+"/multiple_reorder",
+					      data: { hqproduct: {  reorderset: orderSet } },
+					      success: function(data){
+						   //alert ("success");
+	   					  	console.log("================ hqproducts reorder PATCH successfully end =============");
+					        return false   
+					      },
+					      error: function(data){
+						    //alert ("faild");
+					        console.log("================ hqproducts reorder has some issues ==================");
+					        return false  
+					      }
+					    });
+
+		      }
+		    });
+		    
+			    
+		    $( "#listAllProduct" ).disableSelection();
+		  });  
+		//################################ product reorder end #######################################
+</script>
+

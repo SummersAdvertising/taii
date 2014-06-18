@@ -1,0 +1,8 @@
+//end of create: append new level to list
+jQuery(function($) { 
+
+//work
+// $("#listThisOrg").html('<%= escape_javascript(render 'anorgunit' , :organization => @organization) %>')
+$("#listThisOrg").html('<%= escape_javascript(render 'orgList' , :@organizations => Organization.with_translations(I18n.locale) ) %>')
+
+})

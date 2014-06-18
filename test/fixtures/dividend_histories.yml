@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fiscal_year: 1
+  sre: 9.99
+  scap: 9.99
+  cash: 
+  total: 9.99
+  stock_paymentdate: 2014-06-15
+  cash_paymentdate: 2014-06-15
+
+two:
+  fiscal_year: 1
+  sre: 9.99
+  scap: 9.99
+  cash: 
+  total: 9.99
+  stock_paymentdate: 2014-06-15
+  cash_paymentdate: 2014-06-15

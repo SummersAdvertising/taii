@@ -1,0 +1,2 @@
+module MonthlyrevenuereportsHelper
+end

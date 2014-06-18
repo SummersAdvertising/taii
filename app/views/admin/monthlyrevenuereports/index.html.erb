@@ -1,0 +1,81 @@
+<header>
+  <h2 class="left">每月營收</h2>
+  <nav class="left"></nav>
+</header>
+<article>
+  <div class="button"><a href="#" id='createAMonthlybutton' class="right highlight">建立年份<img src="/images/add_folder.png"></a></div>
+  <div class="list">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    	    <% @monthlyrevenuereports.each do |monthlyrevenuereport| %>
+		      <tr>
+  	        <td width="6%"><img src="/images/folder.png"></td>
+		        <td width="12%"><a href="<%= editbymonth_admin_monthlyrevenuereport_path(monthlyrevenuereport, fiscal_month: 1) %>"><%= monthlyrevenuereport.fiscal_year %> 年</a></td>
+		        <td width="18%"><a href="<%= editbymonth_admin_monthlyrevenuereport_path(monthlyrevenuereport, fiscal_month: 1) %>"><%= monthlyrevenuereport.fiscal_year + 1911 %> 年</a></td>
+		        <td width="46%">&nbsp;</td>
+		        <td width="18%">
+		        	<div class="tool">
+		        		<a href="<%= editbymonth_admin_monthlyrevenuereport_path(monthlyrevenuereport, fiscal_month: 1) %>" class="edit" title="編輯">
+		        		<%= link_to '', admin_monthlyrevenuereport_path(monthlyrevenuereport), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete', title: '刪除' %>
+		        	</div>
+		        </td>
+		      </tr>
+	    <% end %>
+    </table>
+  </div>
+<!-- new a monthly begin -->
+    <div class="list" style='margin-top:-30px;'> <!-- style modify here -->
+        <table id="input_form_container" width="100%" border="0" cellspacing="0" cellpadding="0" >
+	        <tr id="createNewMonthly" style="display:none"  class="list-edit">
+    			<%= form_for(@NewMonthly,:url => admin_monthlyrevenuereports_path, :html => {:id =>'ajaxNewMonthlyForm' , :method => "post" } ) do |f| %>
+	        	<td width='6%' valign="top">&nbsp;</td>
+	        	<td width='76%' >
+						  	<div class='errors'></div>							  	
+				        <%= f.text_field :fiscal_year, class: "text", placeholder:"年份/民國" %>
+	        	</td>
+	          <td width='18%' align="right">
+	          	<%= link_to '儲存', "#", onclick: "$('#ajaxNewMonthlyForm').submit()", title: "儲存" %>
+	              <a id="cancelAMonthlybutton" title="取消" href="#">取消</a>
+	           </td>
+           <% end %>		
+	        </tr>
+		</table>
+   </div>
+		<!-- new a monthly end -->
+</article>
+<script>
+
+		//show create new level inputs
+		$( "#createAMonthlybutton" ).mouseup(function() {
+		  $( "#createNewMonthly" ).toggle();
+		});
+		//hide create new level inputs
+		$( "#cancelAMonthlybutton" ).mouseup(function() {
+		  $( "#createNewMonthly" ).toggle();
+		});
+		
+		//ajax:success on NewLevel action
+		$("#ajaxNewMonthlyForm").on('ajax:success',function(evt, data, status, xhr) {
+			//alert("ajaxsuccess");
+		    var $this = $(this);
+		
+		    $this.find('.errors').empty();
+				$("#createNewMonthly").toggle();
+
+		});
+		//ajax:error on NewLevel action
+		$("#ajaxNewMonthlyForm").on('ajax:error',function(evt, data, status, xhr) {
+			//alert("ajaxerror");
+		    var responseObject = $.parseJSON(xhr.responseText),
+		        errors = $('<ul />');
+		        
+		        //alert("ERROR with="+JSON.stringify(responseObject));
+		
+		    $.each(responseObject, function(){
+		      errors.append('<li>' + this + '</li>');
+		    })
+		
+		    errors.appendTo($(this).find('.errors'));
+
+		});
+
+</script>

@@ -1,0 +1,197 @@
+<header>
+  <h2>股利分派</h2>
+</header>
+ <article>
+  <div class="button">          
+  	<a href="#" id='createANewHistoryButton' class="right highlight">新增項目<img src="/images/add.png"></a></div>
+  	<div class="list">
+      	<table id="mainHistoryList" width="100%" border="0" cellspacing="0" cellpadding="0">
+	        	<tbody id="listThisHistory">
+	        		<tr class="list-head">
+					        <td width="14%">股東會年度</td>        
+					        <td width="12%">盈餘配股</td>      
+					        <td width="12%">公積配股</td>
+					        <td width="12%">現金股利</td>
+					        <td width="8%">合計</td>
+					        <td width="12%">股票發放日</td>
+					        <td width="12%">現金發放日</td>
+					        <td width="18%">&nbsp;</td>
+				      </tr>
+				          <%= render 'listHistory' %>
+	        	</tbody>
+      	</table>
+  	</div>
+  <!--       new -->
+   <div class="list" style='margin-top:-30px;'> <!-- style modify here -->
+   	 <table id="input_form_container" width="100%" border="0" cellspacing="0" cellpadding="0" >
+      <tr class="list-edit"  id="createNewHistory" style="display:none">
+      				<td width="14%">
+				      	<%= form_for(@Newhistory,:url => admin_dividend_histories_path, :html => {:id =>'NewHistoryForm' , :method => "post"} ) do |f| %>
+			        	<%= f.text_field :fiscal_year, placeholder: '股東會年度', class: 'text' %>
+      				</td>
+			        <td width="12%">
+			        	<%= f.text_field :sre, placeholder: '盈餘配股', class: 'text' %>
+			        </td>
+			        <td width="12%">
+			        	<%= f.text_field :scap, placeholder: '公積配股', class: 'text' %>
+			        </td>
+			        <td width="12%">
+			        	<%= f.text_field :cash, placeholder: '現金股利', class: 'text' %>
+			        </td>
+			      	<td width="8%">
+			        	<%= f.text_field :total, placeholder: '合計', class: 'text' %>
+			      	</td>
+			        <td width="12%">
+			        	<%= f.text_field :stock_paymentdate, placeholder: '股票發放日', class: 'text withdatepicker', id: "withstock00" %>
+			        </td>
+			        <td width="12%">
+			        	<%= f.text_field :cash_paymentdate, placeholder: '現金發放日', class: 'text withdatepicker' , id: "withcash00" %>
+			        </td>
+			        <td align="right" width="18%">
+		        		<%= link_to '儲存', "#", onclick: "$('#NewHistoryForm').submit()", title: "儲存" %>
+	              <a id="cancelAHistorybutton" title="取消" href="#">取消</a>
+			        </td>
+			        <% end %>
+		      </tr>
+   	 </table>
+   </div>
+   <!--       new end -->
+</article>
+<script>
+
+		$(".withdatepicker").datepicker({
+			dateFormat: "yy-mm-dd",
+			changeMonth: true,
+			changeYear: true,
+			yearRange: '-40:+1',
+		});
+
+		//show create new level inputs
+		$( "#createANewHistoryButton" ).mouseup(function() {
+		  $( "#createNewHistory" ).toggle();
+		});
+		//hide create new level inputs
+		$( "#cancelAHistorybutton" ).mouseup(function() {
+		  $( "#createNewHistory" ).toggle();
+		});
+		
+		//ajax:success on NewLevel action
+		$("#NewHistoryForm").on('ajax:success',function(evt, data, status, xhr) {
+			//alert("ajaxsuccess");
+		    var $this = $(this);
+		
+		    $this.find('.errors').empty();
+			$("#createNewHistory").toggle();
+
+		});
+		//ajax:error on NewLevel action
+		$("#NewHistoryForm").on('ajax:error',function(evt, data, status, xhr) {
+			//alert("ajaxerror");
+		    var responseObject = $.parseJSON(xhr.responseText),
+		        errors = $('<ul />');
+		        
+		        //alert("ERROR with="+JSON.stringify(responseObject));
+		
+		    $.each(responseObject, function(){
+		      errors.append('<li>' + this + '</li>');
+		    })
+		
+		    errors.appendTo($(this).find('.errors'));
+
+		});
+		
+		//＝＝
+			//rename link
+		$("#mainHistoryList").on('mouseup',".renameLink", function() {
+			$(".tr-"+this.id.toString().replace("history","")+"-for-edit").toggle();
+			$(".tr-"+this.id.toString().replace("history","")+"-for-show" ).toggle();
+		});
+		
+		$("#mainHistoryList").on('mouseup', ".cancelRenameAHistorybutton",function() {
+			$(".tr-"+this.id.toString().replace("cancelhistory", "")+"-for-edit").toggle();
+			$(".tr-"+this.id.toString().replace("cancelhistory", "")+"-for-show" ).toggle();
+		});
+
+		//ajax:success on Rename action
+		$(".ajaxRenameHistoryForm").on('ajax:success',function(evt, data, status, xhr) {
+			//alert("ajax rename success");
+		    var $this = $(this);
+		
+		    $this.find('.errors').empty();
+		    
+			var  strLevelid = $this.find("#renameHistoryID").val().toString();
+			$(".tr-"+strLevelid+"-for-edit").toggle();
+			$(".tr-"+strLevelid+"-for-show" ).toggle();
+			//$("#variant"+strLevelid + " > " + " a ").text( $this.find("#hqlevel_name").val().toString() );
+
+		});
+		//ajax:error on Rename action
+		$(".ajaxRenameHistoryForm").on('ajax:error' ,function(evt, data, status, xhr) {
+				//alert("ajaxerror");
+		    var responseObject = $.parseJSON(xhr.responseText),
+		        errors = $('<ul />');
+		        
+		        //alert("ERROR with="+JSON.stringify(responseObject));
+		
+		    $.each(responseObject, function(){
+		      errors.append('<li>' + this + '</li>');
+		    })
+		
+		    errors.appendTo($(this).find('.errors'));
+
+		});
+
+		//$('#listThisLevel').sortable();
+		//reorder v1.0
+		$(function() {
+			var prevEvent = null;
+		    $( "#listThisHistory" ).sortable({
+		    	items: "> .dragable" ,
+		      //connectWith: ".renamelevelcontainer",
+		      placeholder: "ui-state-highlight",
+		      update: function( event, ui ) {
+			      	
+					if(event.timeStamp == prevEvent){
+						return null;
+					}
+					
+					prevEvent = event.timeStamp;	
+					var newRankings_array = $('#listThisHistory').sortable('toArray');
+					var orderSet = [];
+					$.each(newRankings_array, function( index, value){
+				      	orderSet.push(value.replace("dragablecontainer_",""));
+				    });
+				    var order2Push = JSON.stringify(orderSet);
+				  	//console.log(order2Push);    
+				  	//console.log("================END==================");
+				  	
+				  	$.ajaxSetup({
+					  	headers: {
+							    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+
+				  	  //multiple reorder 
+					  	$.ajax({
+					      type: "PATCH",
+					      url: "/admin/dividend_histories/"+orderSet[0]+"/multiple_reorder",
+					      data: { dividend_histories: {  reorderset: orderSet } },
+					      success: function(data){ //rearrange
+							   		$.each(newRankings_array, function( index, value){
+							      	$('#renamehistorycontainer_'+value.replace("dragablecontainer_","") ).insertAfter('#'+value);
+								    });
+					        return false   
+					      },
+					      error: function(data){
+						    //alert ("faild");
+					        return false  
+					      }
+					    });
+		      }
+		    });
+		    
+			    
+		    $( "#listThisHistory" ).disableSelection();
+		  });  
+
+</script>

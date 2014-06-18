@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<!--[if lt IE 9]>
+<script src="/js/html5.js"></script>
+<![endif]-->
+<meta charset="utf-8">
+<meta name="Robots" content="index,follow"/>
+<meta http-equiv="content-language" content="zh-TW" />
+<title>台一國際後台管理系統</title>
+
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<script src="/js/jquery-1.10.2.min.js"></script>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<script src="/js/auto-full-height.min.js"></script>
+<%= csrf_meta_tags %>
+
+<script>
+  	window.onload= function() {
+		$(window).bind('peditor-updated', function() {
+			
+			var main = $('section article');
+ 
+		     if (main.length <= 0) 
+		     {
+		      return false;
+		      
+		     } else if ( main.length > 0 ) {
+		      
+		      var max = 0;
+		      var main_block;
+		      
+		      main.each(function() {
+		       if ( $(this).height() > max ) {
+		        main_block = $(this);
+		        max = main_block.height();
+		       }
+		      });
+		      
+		      main = main_block;
+		     }
+		     // new - nav = diff 
+		     // modify diff + avg quote
+			if ( (main.innerHeight() + 100) > $('[_height=auto]').height() ) {
+				$('[_height=auto]').height(main.innerHeight()+100);
+			} 
+			
+		});
+	}
+</script>
+
+</head>
+
+<body data-no-turbolink >
+<section id="wrapper">
+  <header _height="none">
+    <!--
+<ul>
+      <li class="lang-box">
+      	<a href="#" class="ctrl">語系：繁體中文</a>
+        <div class="lang"> 
+        <a href="#">繁體中文</a> 
+        <a href="#">简体中文</a> 
+        <a href="#">English</a>
+         <a href="#">日本語</a></div>
+      </li>
+    </ul>
+-->
+    <h1>台一後台管理系統</h1>
+    <aside class="right"> 
+    	<a href="#" id="aside-1">index</a>
+    	<a href="<%= edit_admin_admin_path(current_admin)%>" id="aside-2">Edit profile</a>
+    	<%= link_to 'Log out', destroy_admin_session_path, :method => :delete, id: "aside-3" %> 
+
+     </aside>
+  </header>
+  <article>
+    <nav _height="auto" class="left">
+        <!-- _height="auto" -->
+      <ul>
+        <li class="menu-box"><a href="#"><img src="/images/box.png">產品介紹</a>
+          <div class="menu"> 
+          	<%=link_to "集團角度", admin_hqlevel_path(Hqlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW" ), 'data-no-turbolink' => true %>
+          	<%=link_to "工廠角度", admin_brlevel_path(Brlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW" ) , 'data-no-turbolink' => true %>
+          </div>
+        </li>
+	      <% if current_admin.super == true %>
+        <li><a href='<%= admin_organizations_path(:locale => "zh_TW" )%>'><img src="/images/group.png">工廠業務</a></li>
+        <% end %>
+      </ul>
+      <% if current_admin.super == true %>
+      <ul>
+        <li><a href="<%= admin_announcements_path %>"><img src="/images/news.png">最新消息</a></li>
+        <li class="menu-box"><a href="#"><img src="/images/page.png">投資人服務</a>
+          <div class="menu">
+          	<a href="<%= admin_annualreports_path %>">公司年報</a>
+          	<a href="<%= admin_majorresolutions_path %>">重要決議</a>
+          	<a href="<%= admin_financialreports_path %>">財務報告</a>
+          	<a href="<%= edit_admin_financialprojection_path(id: 1) %>">財務預測</a>
+          	<a href="<%= admin_monthlyrevenuereports_path%>">每月營收</a>
+          	<a href="<%= admin_historyrevenuereports_path%>">歷年營收</a>
+          	<a href="<%= admin_dividend_histories_path %>">股利分派</a> 
+          	<a href="<%= edit_admin_majorpolicy_path(id: 1) %>">公司治理</a> 
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="<%= admin_admins_path%>"><img src="/images/manager.png">管理者列表</a></li>
+      </ul>
+      <ul>
+        <li><%= link_to 'Log out', destroy_admin_session_path, :method => :delete %> </li>
+      </ul>
+      <% end %>
+    </nav>
+    
+	<section  _height="auto" id="content"  class="left"> 
+<!-- _height="auto" -->
+		    <p class="notice"><%# notice %></p>
+		    <p class="alert"><%# alert %></p>
+		    <%= yield %>
+	</section>
+    
+  </article>
+</section>
+</body>
+</html>

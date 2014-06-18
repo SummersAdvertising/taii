@@ -1,0 +1,83 @@
+<header>
+  <h2 class="left">歷年營收</h2>
+  <nav class="left"></nav>
+</header>
+<article>
+  <div class="button"><a href="#" id='createAHistorybutton' class="right highlight">建立年份<img src="/images/add_folder.png"></a></div>
+  <!-- repeat  start -->
+  <div class="list">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    	<% @historyrevenuereports.each do |historyrevenuereport| %>
+		      <tr>
+  	        <td width="6%"><img src="/images/folder.png"></td>
+		        <td width="12%"><a href="<%= edit_admin_historyrevenuereport_path(historyrevenuereport) %>"><%= historyrevenuereport.fiscal_year %> 年</a></td>
+		        <td width="18%"><a href="<%= edit_admin_historyrevenuereport_path(historyrevenuereport) %>"><%= historyrevenuereport.fiscal_year + 1911 %> 年</a></td>
+		        <td width="46%">&nbsp;</td>
+		        <td width="18%">
+		        	<div class="tool">
+		        		<a href="<%= edit_admin_historyrevenuereport_path(historyrevenuereport) %>" class="edit" title="編輯">
+		        		<%= link_to '', admin_historyrevenuereport_path(historyrevenuereport), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete', title: '刪除' %>
+		        	</div>
+		        </td>
+		      </tr>
+	    <% end %>
+    </table>
+  </div>
+  <!-- repeat  start -->
+  <!-- new a monthly begin -->
+    <div class="list" style='margin-top:-30px;'> <!-- style modify here -->
+        <table id="input_form_container" width="100%" border="0" cellspacing="0" cellpadding="0" >
+	        <tr id="createNewHistory" style="display:none"  class="list-edit">
+    			<%= form_for(@NewHistory,:url => admin_historyrevenuereports_path, :html => {:id =>'ajaxNewHistoryForm' , :method => "post" } ) do |f| %>
+	        	<td width='6%' valign="top">&nbsp;</td>
+	        	<td width='76%' >
+						  	<div class='errors'></div>							  	
+				        <%= f.text_field :fiscal_year, class: "text", placeholder:"年份/民國" %>
+	        	</td>
+	          <td width='18%' align="right">
+	          	<%= link_to '儲存', "#", onclick: "$('#ajaxNewHistoryForm').submit()", title: "儲存" %>
+	              <a id="cancelAHistorybutton" title="取消" href="#">取消</a>
+	           </td>
+           <% end %>		
+	        </tr>
+		</table>
+   </div>
+		<!-- new a monthly end -->
+</article>
+<script>
+
+		//show create new level inputs
+		$( "#createAHistorybutton" ).mouseup(function() {
+		  $( "#createNewHistory" ).toggle();
+		});
+		//hide create new level inputs
+		$( "#cancelAHistorybutton" ).mouseup(function() {
+		  $( "#createNewHistory" ).toggle();
+		});
+		
+		//ajax:success on NewLevel action
+		$("#ajaxNewHistoryForm").on('ajax:success',function(evt, data, status, xhr) {
+			//alert("ajaxsuccess");
+		    var $this = $(this);
+		
+		    $this.find('.errors').empty();
+				$("#createNewHistory").toggle();
+
+		});
+		//ajax:error on NewLevel action
+		$("#ajaxNewHistoryForm").on('ajax:error',function(evt, data, status, xhr) {
+			//alert("ajaxerror");
+		    var responseObject = $.parseJSON(xhr.responseText),
+		        errors = $('<ul />');
+		        
+		        //alert("ERROR with="+JSON.stringify(responseObject));
+		
+		    $.each(responseObject, function(){
+		      errors.append('<li>' + this + '</li>');
+		    })
+		
+		    errors.appendTo($(this).find('.errors'));
+
+		});
+
+</script>

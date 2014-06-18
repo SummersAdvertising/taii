@@ -1,0 +1,2 @@
+module MajorresolutionsHelper
+end

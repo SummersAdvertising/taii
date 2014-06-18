@@ -1,0 +1,59 @@
+
+/*-----------------------------------------------------------------------頁首---*/
+
+#wrapper > header{background-color:#17ABBE;border-bottom:1px solid #077F8E}
+#wrapper > header aside{border-left:1px solid #3ACADD}
+#wrapper > header aside a{border-left:1px solid #077F8E;border-right:1px solid #3ACADD;;
+text-shadow:0 -1px 0 #077F8E;color:#fff}
+#wrapper > header aside a:hover{background-color:#3ACADD}
+
+#aside-1{background-image:url(../images/index-w.png)}
+#aside-2{background-image:url(../images/profile-w.png)}
+#aside-3{background-image:url(../images/logout-w.png)}
+
+/*語言列*/
+.lang-box{border-right:1px solid #077F8E}
+.lang-box > a{border-right:1px solid #3ACADD;text-shadow:0 -1px 0 #077F8E;color:#fff}
+.lang-box > a:hover{background-color:#3ACADD}
+
+/*-----------------------------------------------------------------------側欄---*/
+
+article > nav li:hover{background:#17ABBE}
+.menu{border-left:3px solid #17ABBE}
+
+/*-----------------------------------------------------------------------大標---*/
+
+#content nav .active{border-bottom:5px solid #3ACADD}
+
+/*-----------------------------------------------------------------------列表---*/
+
+.list a:hover{color:#077F8E}
+.list tr:hover,
+.list-edit,
+.list-super-admin,
+.list-head{background:#D9E7E9!important;border-top:1px solid #B9D8DC;border-bottom:1px solid #B9D8DC}
+
+.list-edit a{background:#B9D8DC}
+.list-edit .text{border:1px solid #B9D8DC}
+
+/*-----------------------------------------------------------------------按鈕---*/
+
+.button a{border:1px solid #DDD}
+.button .highlight{background:#D9E7E9;text-shadow:0 1px 0 #E4EEF0;font-weight:300!important;border:1px solid #B9D8DC;color:#333}
+.button .highlight:hover{background:#B3D2D7}
+
+/*-----------------------------------------------------------------------發文---*/
+
+.tab .active{border-bottom:4px solid #3ACADD}
+
+.post .button{background-color:#D9E7E9}
+.post .button:hover{background-color:#B3D2D7}
+
+/*-----------------------------------------------------------------------表單---*/
+
+.form h4 b{color:#17ABBE}
+
+/*-----------------------------------------------------------------------頁碼---*/
+
+.page a:hover{color:#3B5998}
+.page .active{background:#3B5998}

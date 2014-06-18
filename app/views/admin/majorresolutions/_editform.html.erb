@@ -1,0 +1,117 @@
+	<article>
+		<div class="hgroup">
+		  <h3 class="left"><%= @majorresolution.fiscal_year %> 年<span>/ <%= @majorresolution.fiscal_year + 1911 %> 年</span></h3>
+		</div>
+    <% if @majorresolution.attachments.count < 8 %>
+  			<div class="form">
+				<%= form_for(@majorresolution,:url => admin_majorresolution_path(@majorresolution.id), :html => {:multipart => true ,:method => "patch", :id => 'createNewFiscalAttachForm' } ) do |f| %>
+					  <% if @majorresolution.errors.any? %>
+					    <div id="error_explanation">
+					      <h2><%= pluralize(@majorresolution.errors.count, "error") %> prohibited this majorresolution from being saved:</h2>
+					
+					      <ul>
+					      <% @majorresolution.errors.full_messages.each do |msg| %>
+					        <li><%= msg %></li>
+					      <% end %>
+					      </ul>
+					    </div>
+					  <% end %>
+						  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+						    <tr>
+						      <td width="7%">名稱：</td>
+						      <td width="29%"><%= text_field_tag :filename %></td>
+						      <td width="2%">&nbsp;</td>
+						      <td width="7%">檔案：</td>
+						      <td width="55%"><%= file_field_tag :attachment , class: 'file' %></td>
+						      <%= f.hidden_field :fiscal_year %>
+						    </tr>
+						  </table>
+				</div>
+				
+				<div class="button"> 
+					<a href="#" onclick= "$('#createNewFiscalAttachForm').submit();" class="right highlight">新增<img src="/images/add_file.png"></a>			<% if @majorresolution.attachments.count <= 0 %>
+						<a href=<%= admin_majorresolutions_path %> class="left" ><img src="/images/left.png">返回</a>
+					<% end %>
+				</div>		
+				<!--form-->
+				<% end %>		
+	  <% else %>
+		  上傳附件已達上限,共 <%= "#{@majorresolution.attachments.count} 筆"%> <br>
+	  <% end %>
+	<div class="list">		
+		<table id="mainAttachList" width="100%" border="0" cellspacing="0" cellpadding="0">
+	    <tbody id="listAllAttach">
+  			<% @majorresolution.attachments.each do |attach| %>
+		    	<tr <%= "id=attachcontainer_#{attach.id.to_s}" %> class="attachcontainer" >
+		    	
+	    			<td width="6%"><img src="/images/file.png"></td>
+			      <td width="12%"><%= attach.file_name %></td>
+			      <td width="64%"><%= (attach.file_size.to_i)/1000 %>KB @ [<%= attach.updated_at.in_time_zone("Taipei") %> 上傳] </td>
+			      <td width="18%">
+			      	<div class="tool">
+			      		<%= link_to '', admin_attachment_path(attach.id), method: :delete, data: { confirm: 'Are you sure?' }, class: "delete", title:"刪除" %>
+			      	 </div>
+			      </td>
+			    </tr>
+		    <% end %>	
+	    </tbody>    
+		</table>
+	</div>
+	<% if @majorresolution.attachments.count > 0 %>
+		<div class="button">
+			<a href=<%= admin_majorresolutions_path %> class="left" ><img src="/images/left.png">返回</a>
+		</div>
+	<% end %>
+</article>
+
+<script>
+
+		$(function() {
+			var prevEvent = null;
+		    $( "#listAllAttach" ).sortable({
+		      //connectWith: ".renamelevelcontainer",
+		      placeholder: "ui-state-highlight",
+		      update: function( event, ui ) {
+			      	
+					if(event.timeStamp == prevEvent){
+						return null;
+					}
+					
+					prevEvent = event.timeStamp;	
+					var newRankings_array = $('#listAllAttach').sortable('toArray');
+					var orderSet = [];
+					$.each(newRankings_array, function( index, value){
+				      	orderSet.push(value.replace("attachcontainer_",""));
+				    });
+				    var order2Push = JSON.stringify(orderSet);
+				  	
+				  	$.ajaxSetup({
+					  	headers: {
+							    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+
+				  	  //multiple reorder 
+					  	$.ajax({
+					      type: "PATCH",
+					      url: "/admin/majorresolutions/"+orderSet[0]+"/multiple_reorder",
+					      data: { majorresolution: {  reorderset: orderSet } },
+					      success: function(data){
+						   //alert ("success");
+	   					  	console.log("================ attachments reorder PATCH successfully end =============");
+					        return false   
+					      },
+					      error: function(data){
+						    //alert ("faild");
+					        console.log("================ attachments reorder has some issues ==================");
+					        return false  
+					      }
+					    });
+
+		      }
+		    });
+		    
+			    
+		    $( "#listAllAttach" ).disableSelection();
+		  });  
+</script>

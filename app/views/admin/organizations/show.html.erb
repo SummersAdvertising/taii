@@ -1,0 +1,123 @@
+<script>
+$(function(){	
+	var _showTab = 0;
+	var $defaultLi = $('.tab li').eq(_showTab).addClass('active');
+	$($defaultLi.find('a').attr('href')).siblings().hide();
+ 	$('.tab li').click(function() {		
+		var $this = $(this),
+			_clickTab = $this.find('a').attr('href');		
+		$this.addClass('active').siblings('.active').removeClass('active');		
+		$(_clickTab).stop(false, true).fadeIn().siblings().hide(); 
+		return false;
+		}).find('a').focus(function(){
+			this.blur();
+	});
+});
+</script>
+
+	<header>
+        <h2 class="left">業務管理</h2>
+        <nav class="left">
+					<%= link_to "[正體中文]", admin_organizations_path( :locale => "zh_TW") , 'data-no-turbolink' => true %>
+					<%= link_to "[英文]", admin_organizations_path( :locale => "en") , 'data-no-turbolink' => true %>
+					<%= link_to "[簡體中文]", admin_organizations_path( :locale => "zh_CN" ) , 'data-no-turbolink' => true %>
+					<%= link_to "[日文]", admin_organizations_path(  :locale => "ja" ) , 'data-no-turbolink' => true %>
+			目前語系：<%= I18n.locale.to_s%>
+        </nav>
+	</header>
+	
+	<article>
+        <div class="hgroup">
+          <h3>工廠資料</h3>
+        </div>
+
+        <div class="form">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	           <%= form_for(@organization,:url => admin_organization_path(@organization.id, :locale=> I18n.locale), :html => { id: 'orgAttrUpdateForm',:method =>  "PATCH"} ) do |f| %>
+		            <tr>							       
+										  <% if @organization.errors.any? %>
+										    <div id="error_explanation">
+										      <h2><%= pluralize(@organization.errors.count, "error") %> prohibited this organization from being saved:</h2>
+										
+										      <ul>
+										      <% @organization.errors.full_messages.each do |msg| %>
+										        <li><%= msg %></li>
+										      <% end %>
+										      </ul>
+										    </div>
+										  <% end %>
+									
+											<td width="7%">廠名：</td>
+				              <td width="29%"><%= f.text_field :org_name, class: 'text' %></td>
+				              <td width="2%">&nbsp;</td>
+				              <td width="7%">地址：</td>
+				              <td width="55%"><%= f.text_field :address, class: 'text' %></td>
+             
+							   </tr>
+    				<% end %>
+      </table>
+    </div>
+
+        <div class="hgroup">
+          <h3 class="left">業務列表</h3>
+        </div>
+        
+         <% if @representatives.count < 4 %>
+         	<p id="notice"><%= notice %></p>
+	        
+	        <div id="input_form_container">
+				<div id="createNewRep">
+					<div class="form">
+					      <%= form_for(@newRep,:url => admin_representatives_path, :html => { :multipart => true, :method => 'post' , :id=> 'ajaxNewRepForm' }, locale: I18n.locale) do |f| %> <!-- , :remote => true -->
+					          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+					            <tr>
+					              <td width="8%" align="center" valign="middle">部門：</td>
+					              <td width="24%" valign="top"><%= f.text_field :division, class: 'text' %></td>
+					              <td width="10%" align="center" valign="middle">電話：</td>
+					              <td width="24%" valign="top"><%= f.text_field :phone, class: 'text' %></td>
+					              <td width="10%" align="center" valign="middle">傳真：</td>
+					              <td width="24%" valign="top"><%= f.text_field :fax, class: 'text' %></td>
+					            </tr>
+					            <tr>
+					              <td align="center" valign="middle">姓名：</td>
+					              <td valign="top">    <%= f.text_field :name, class: 'text' %></td>
+					              <td align="center" valign="middle"> Email：</td>
+					              <td colspan="3" valign="top"><%= f.text_field :email, class: 'text' %></td>
+					              <%= f.hidden_field :organization_id, :value => params[:id] %>
+					            </tr>
+					          </table>
+					      <% end %>
+					</div>	
+				</div>
+			</div>
+	        <div class="button">
+	        	<a href='#' id="createARepbutton" class="right highlight"  onclick="$('#ajaxNewRepForm').submit();" >新增業務<img src="/images/add.png"></a>
+	        	<!-- <%# link_to '新增業務', "#", title: "新增業務" %> -->
+                <!-- <a id="cancelALevelbutton" title="取消" href="#">取消</a> -->
+	        	
+	        </div>
+      	 <% end %> 
+      	 
+      	<% @representatives.each do | person | %>
+      	 <div class="form">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="6%" valign="top"><img src="/images/admin.png"></td>
+              <td width="20%" valign="top"><b><%= person.division%></b><br>
+                <%= person.name%> </td>
+              <td width="56%" valign="top"><%= person.phone%><br>
+                <%= person.fax%><br>
+                <%= person.email%></td>
+              <td width="18%" valign="top">
+              	<div class="tool">
+              		<%= link_to '', admin_representative_path(person,:locale => I18n.locale), method: :delete, class: 'delete', title: '刪除', data: { confirm: 'Are you sure?' } %>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <% end %>
+	    <div class="button">
+	    	<a href="<%= admin_organizations_path(locale: I18n.locale )%>" class="left"><img src="/images/left.png">返回</a>
+	    	<a href="#" onclick="$('#orgAttrUpdateForm').submit();" class="right highlight" >儲存<img src="/images/save.png"></a>
+	<article>

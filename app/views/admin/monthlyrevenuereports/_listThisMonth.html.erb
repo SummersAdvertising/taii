@@ -1,0 +1,47 @@
+	<tr class="list-head">
+    <td width="18%">項目</td>        
+    <td width="64%">營業收入淨額</td>      
+    <td width="18%">&nbsp;</td>
+  </tr>
+<% if (!@revenue_items.nil? && @revenue_items.count > 0) %>
+	<% @revenue_items.each do | revenueitem | %>
+			<!-- for show and sortable -->
+	<tr <%= "id=dragablecontainer_#{revenueitem.id.to_s}" %> class="dragable <%= "tr-#{revenueitem.id.to_s}-for-show" %>">
+	      <td id='<%= "itemname#{revenueitem.id.to_s}" %>'>
+	      	<%= revenueitem.item %>
+	      </td>
+			  <td id='<%= "valuename#{revenueitem.id.to_s}" %>'>
+				  <%= link_to  revenueitem.value,  admin_revenue_item_path(revenueitem.id)  %>
+			  </td>
+		  	<td>
+		  		<div class="tool"> 
+		  			<a <%= "id=revenue#{revenueitem.id.to_s}" %> class='editRevenueLink edit'  title="編輯" ></a>
+		  			<%= link_to '', admin_revenue_item_path(revenueitem), method: :delete, title: "刪除", class: 'delete', data: { confirm: 'Are you sure?' } %>
+		  		 </div>
+		  	 </td>
+	</tr>
+	<!-- for show and sortable END-->
+	<!-- for edit and unsortable  -->
+	<tr <%= "id=editrevenuecontainer_#{revenueitem.id.to_s}" %> class="<%= "tr-#{revenueitem.id.to_s}-for-edit" %>  list-edit " style="display:none;">
+				<td>
+						<%= form_for(revenueitem ,:url => admin_revenue_item_path(revenueitem.id), :html => {  :method => "patch", :class => 'ajaxEditRevenueForm', id: "ajaxEditRevenueForm#{revenueitem.id.to_s}" } ) do |f| %>
+		      	<%= f.text_field :item , class: 'text' %>
+	      </td>
+	  	   <td>
+							<div class='errors'></div>
+							<%= f.hidden_field :id, :id => "editRevenueID" %>
+							<%= f.text_field :value , class: 'text' %>
+	  	   </td>
+	  	  <td align='right'>
+		  				<%= link_to '儲存', "#", onclick: "$('#ajaxEditRevenueForm#{revenueitem.id.to_s}').submit()"%>
+						<a <%= "id=canceledit#{revenueitem.id.to_s}" %> class="cancelEditbutton" href='#' >取消</a>
+				<% end %>
+		  	 </td>
+	</tr>
+	<!-- for edit and unsortable  END-->
+	<% end %>
+<% else %>
+	<%# if !@currentMonth.nil? %>
+		<!-- 本月份尚無資料 -->
+	<%# end %>
+<% end %>

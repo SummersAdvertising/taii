@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<%= render 'admin/monthlyrevenuereports/showmonthTemplate'%>
+</p>
+<%=  "目前選擇的月份：#{@currentMonth}" if !@currentMonth.nil?%>
+<table>
+    <tbody>
+		<% if (!@revenue_items.nil? && @revenue_items.count > 0) %>
+			<% @revenue_items.each do | revenueitem | %>
+			<tr>
+				<td>
+					<%= revenueitem.item %>
+					<%= revenueitem.value %>
+				</td>
+			</tr>
+			<% end %>
+		<% else %>
+			<% if !@currentMonth.nil? %>
+			<tr>
+				<td>
+						本月份尚無資料
+				</td>
+			</tr>
+			<% end %>
+		<% end %>
+    </tbody>
+</table>
+
+
+歷年營收：<br>
+<% if @history_array.count >= 1 %>
+<% @historyRevenues.each do | history | %>
+	<%= link_to history.file_name, history.attachment.url%>[<%= (history.file_size.to_i)/1000 %>KB] <br>
+<% end %>
+<% else %>
+	查無本年度前之年度營收報告
+<% end %>
+		
+

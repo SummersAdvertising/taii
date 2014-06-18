@@ -1,0 +1,47 @@
+	<tr <%= "id=dragablecontainer_#{latestRevenue.id.to_s}" %> class="dragable <%= "tr-#{latestRevenue.id.to_s}-for-show" %>">
+	      <td id='<%= "itemname#{latestRevenue.id.to_s}" %>'>
+	      	<%= latestRevenue.item %>
+	      </td>
+			  <td id='<%= "valuename#{latestRevenue.id.to_s}" %>'>
+				  <%= link_to  latestRevenue.value,  admin_revenue_item_path(latestRevenue.id)  %>
+			  </td>
+		  	<td>
+		  		<div class="tool"> 
+		  			<a <%= "id=revenue#{latestRevenue.id.to_s}" %> class='editRevenueLink edit'  title="編輯" ></a>
+		  			<%= link_to '', admin_revenue_item_path(latestRevenue), method: :delete, title: "刪除", class: 'delete', data: { confirm: 'Are you sure?' } %>
+		  		 </div>
+		  	 </td>
+	</tr>
+	<!-- for show and sortable END-->
+	<!-- for edit and unsortable  -->
+	<tr <%= "id=editrevenuecontainer_#{latestRevenue.id.to_s}" %> class="<%= "tr-#{latestRevenue.id.to_s}-for-edit" %>  list-edit " style="display:none;">
+				<td>
+						<%= form_for(latestRevenue ,:url => admin_revenue_item_path(latestRevenue.id), :html => {  :method => "patch", :class => 'ajaxEditRevenueForm', id: "ajaxEditRevenueForm#{latestRevenue.id.to_s}" } ) do |f| %>
+		      	<%= f.text_field :item , class: 'text' %>
+	      </td>
+	  	   <td>
+							<div class='errors'></div>
+							<%= f.hidden_field :id, :id => "editRevenueID" %>
+							<%= f.text_field :value , class: 'text' %>
+	  	   </td>
+	  	  <td align='right'>
+		  				<%= link_to '儲存', "#", onclick: "$('#ajaxEditRevenueForm#{latestRevenue.id.to_s}').submit()"%>
+						<a <%= "id=canceledit#{latestRevenue.id.to_s}" %> class="cancelEditbutton" href='#' >取消</a>
+				<% end %>
+							<script>
+										//ajax:success on edit action
+										$(".ajaxEditRevenueForm").on('ajax:success',function(evt, data, status, xhr) {
+											//alert("ajax rename success");
+										    var $this = $(this);
+										
+										    $this.find('.errors').empty();
+										    
+												var  strRevenueid = $this.find("#editRevenueID").val().toString();	
+												$(".td-"+strRevenueid+"-for-edit").toggle();
+												$(".td-"+strRevenueid+"-for-show" ).toggle();
+								
+										});
+							</script>
+
+		  	 </td>
+	</tr>

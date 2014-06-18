@@ -1,0 +1,72 @@
+<%= form_for(@admin,:url => admin_admins_path, :html => {:id =>'NewAdminForm' , :method => "post"} ) do | f |%>
+	<header>
+      <h2>管理者列表</h2>      
+    </header>
+    <article>              
+			    <% if @admin.errors.any? %>
+			    	<div id="error_explanation">
+				    	<h2><%= pluralize(@admin.errors.count, "error") %> prohibited this post from being saved:</h2>
+					    <ul>
+					    <% @admin.errors.full_messages.each do |msg| %>
+					      <li><%= msg %></li>
+					    <% end %>
+					    </ul>
+					  </div>
+					<% end %>
+        <div class="form">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="6%">姓名：</td>
+              <td width="40%"><%= f.text_field :name, class: 'text' %></td>
+              <td width="4%">&nbsp;</td>
+              <td width="10%">Email：</td>
+              <td width="40%">
+              	<%= f.text_field :email, class: 'text' %>
+              	<%= f.hidden_field :super, value: false  %>
+              	<%= f.hidden_field :accessLevel, value: 1  %>
+              </td>
+            </tr>
+            <tr>
+              <td>密碼：</td>
+              <td><%= f.password_field :password, class: 'text'  %></td>
+              <td>&nbsp;</td>
+              <td>確認密碼：</td>
+              <td><%= f.password_field :password_confirmation, class: 'text'  %></td>
+            </tr>
+          </table>
+        </div>
+<% end %>
+      <div class="button">
+      
+      	<a class='right highlight'  onclick= "$('#NewAdminForm').submit()">新增管理員<img src="/images/add.png"></a>
+      </div>
+      
+      <div class="list">
+      	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				  <% @admins.each do | admin | %>  	
+							  	<% if admin.super %>
+									    <tr class="list-super-admin">
+										    <td width="18%"><%= admin.name %></td>
+									      <td width="72%"><%= admin.email %></td>
+									      <td width="10%">
+									      		<div class="tool">
+									      				<a href="<%= edit_admin_admin_path(admin) %>" class="edit" title="編輯"></a>
+									      		</div>
+									       </td>
+									    </tr>
+							    <% else %>
+									    <tr>
+										    <td width="18%"><%= admin.name %></td>
+									      <td width="72%"><%= admin.email %></td>
+									      <td width="10%">
+									      		<div class="tool">
+									      				<a href="<%= edit_admin_admin_path(admin) %>" class="edit" title="編輯"></a>
+									      				<%= link_to '', admin_admin_path( admin ), :method => :delete, class: "delete", title: "刪除", data: { confirm: "是否確定刪除使用者#{admin.name}? 此動作無法復原。" } %>
+									      		</div>
+									       </td>
+									    </tr>
+							    <% end %>
+					  <% end %>
+				  </table>
+			</div>
+    </article>

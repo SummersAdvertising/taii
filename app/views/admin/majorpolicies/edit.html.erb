@@ -1,0 +1,155 @@
+<script src="/js/jquery.colorbox-min.js"></script>
+<script src="/js/jquery.colorbox-zh-TW.js"></script>
+
+<script src="/js/editor.js"></script>
+<script src="/js/editor_p.js"></script>
+<script src="/js/editor_img.js"></script>
+<script src="/js/editor_list.js"></script>
+<script src="/js/editor_video.js"></script>
+<script src="/js/jquery.imgareaselect.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/imgareaselect-default.css" />
+<link rel="stylesheet" type="text/css" href="/css/colorbox.css" />	   	
+<style>
+.form .upload
+{
+	width: 100%;
+}
+/*列表*/
+#post-list li{padding:5px 0 0 20px;background:url(/images/p.png) 0 center no-repeat;cursor:pointer}
+#post-list .text{border:1px solid #ddd}
+
+#post-list img{position:relative;top:2px;margin:0 10px 0 0}
+#post-list .tool{opacity:0;filter:alpha(opacity=0)}
+#post-list .tool a{display:inline-block;width:16px;height:16px;background-position:center center;background-repeat:no-repeat;cursor:pointer;margin:7px 0 0 15px;text-indent:-9999px}
+#post-list li:hover .tool,
+#post-list .tool a:hover{opacity:1;filter:alpha(opacity=100)}
+#post-list .delete{background-image:url(/images/cancel.png)}
+#post-list .addlist{background:#eee;display:inline-block;padding:5px 0;width:100px;text-align:center;color:#999;margin:0 0 0 20px}
+#post-list .addlist:hover{background:#ddd}
+
+</style>
+<script>
+$(function(){	
+	var _showTab = 0;
+	var $defaultLi = $('.tab li').eq(_showTab).addClass('active');
+	$($defaultLi.find('a').attr('href')).siblings().hide();
+ 	$('.tab li').click(function() {		
+		var $this = $(this),
+			_clickTab = $this.find('a').attr('href');		
+		$this.addClass('active').siblings('.active').removeClass('active');		
+		$(_clickTab).stop(false, true).fadeIn().siblings().hide(); 
+		return false;
+		}).find('a').focus(function(){
+			this.blur();
+	});
+});
+</script>
+
+<header>
+        <h2 class="left">公司治理</h2>
+        <nav class="left"></nav>
+</header>
+
+<article>	
+		<!-- add another form for uploading attachment BEGIN-->  	
+		<div id="attach_form_container">
+			<div id="createNewAttach" >
+				<%= form_for(@majorpolicy,url: create_attachment_admin_majorpolicy_path(@majorpolicy) , :html => {:id =>'ajaxNewAttachlForm' , :method => "patch", :remote => true} ) do |fattach| %>
+			  <div class='errors'></div>
+				    <div class="form">
+			          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			            <tr>
+			              <td width='7%'>名稱：</td>
+		  	              <td width='29%'><%= text_field_tag :filename, nil , placeholder: '自訂附件名稱', class: 'text' %></td>
+		  	              <td width='2%'>&nbsp;</td>
+			              <td width="7%">檔案：</td>
+			              <td width="55%"><%= file_field_tag :attachment , class: 'file' %></td>
+			            </tr>
+			          </table>
+			        </div>
+			</div>
+		</div>
+		<div class='button'>
+			<a href="#" onclick= "$('#ajaxNewAttachlForm').submit();" class="right highlight">新增<img src="/images/add_file.png"></a>
+		</div>
+		<% end %>		<!--form end-->
+	  	  
+	  <%= render 'attachList' %>  		  
+	  		
+</article>
+
+<script type="text/javascript">
+	//ajax:success on  action
+		$("#ajaxNewAttachlForm").on('ajax:success',function(evt, data, status, xhr) {
+			//alert("ajaxsuccess");
+		    
+		});
+		//ajax:error on NewLevel action
+		$("#ajaxNewAttachlForm").on('ajax:error',function(evt, data, status, xhr) {
+			//alert("ajaxerror");
+		    var responseObject = $.parseJSON(xhr.responseText),
+		        errors = $('<ul />');
+		        
+		        //alert("ERROR with="+JSON.stringify(responseObject));
+		
+		    $.each(responseObject, function(){
+		      errors.append('<li>' + this + '</li>');
+		    })
+		
+		    errors.appendTo($(this).find('.errors'));
+		});
+		
+		//################################ attachment reorder begin #######################################
+		$(function() {
+			var prevEvent = null;
+		    $( "#listThisAttach" ).sortable({
+		      //connectWith: ".renamelevelcontainer",
+		      placeholder: "ui-state-highlight",
+		      update: function( event, ui ) {
+			      	
+					if(event.timeStamp == prevEvent){
+						return null;
+					}
+					
+					prevEvent = event.timeStamp;	
+					var newRankings_array = $('#listThisAttach').sortable('toArray');
+					var orderSet = [];
+					$.each(newRankings_array, function( index, value){
+				      	orderSet.push(value.replace("createAttachcontainer_",""));
+				    });
+				    var order2Push = JSON.stringify(orderSet);
+				  	
+				  	$.ajaxSetup({
+					  	headers: {
+							    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+
+				  	  //multiple reorder 
+					  	$.ajax({
+					      type: "PATCH",
+					      url: "/admin/attachments/"+orderSet[0]+"/multiple_reorder",
+					      data: { attachment: {  reorderset: orderSet } },
+					      success: function(data){
+						   //alert ("success");
+	   					  	console.log("================ attachment reorder PATCH successfully end =============");
+					        return false   
+					      },
+					      error: function(data){
+						    //alert ("faild");
+					        console.log("================ attachment reorder has some issues ==================");
+					        return false  
+					      }
+					    });
+
+		      }
+		    });
+		    
+			    
+		    $( "#listThisAttach" ).disableSelection();
+		  });  
+		//################################ attachment reorder end #######################################
+
+</script>
+

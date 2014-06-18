@@ -1,0 +1,47 @@
+<% @dividend_histories.each do | history | %>			
+	<tr <%= "id=dragablecontainer_#{history.id.to_s}" %> class="dragable <%= "tr-#{history.id.to_s}-for-show" %>">
+		<td><%= history.fiscal_year %></td>
+	  <td><%= history.sre %></td>
+	  <td><%= history.scap %></td>
+	  <td><%= history.cash %></td>
+		<td><%= history.total %></td>
+		<% if !history.stock_paymentdate.nil? %>
+				  <td><%= history.stock_paymentdate %></td>
+			 <% else %>
+	 			  <td>---</td>
+		 <% end %>
+		<% if !history.cash_paymentdate.nil? %>
+				  <td><%= history.cash_paymentdate %></td>
+			 <% else %>
+	 			  <td>---</td>
+		 <% end %>
+	  <td align="right">
+	  	<div class="tool">
+	  		<a <%= "id=history#{history.id.to_s}" %> class='renameLink edit'  title="編輯" ></a>
+				<%= link_to '', admin_dividend_history_path(history.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete' %>
+	  	</div>
+	  </td>
+	</tr>
+<!-- for edit and unsortable  -->
+	<tr <%= "id=renamehistorycontainer_#{history.id.to_s}" %> class="<%= "tr-#{history.id.to_s}-for-edit" %>  list-edit " style="display:none;">
+							<td>
+			  	   			<%= form_for(history ,:url => admin_dividend_history_path(history.id), :html => {  :method => "patch", :class => 'ajaxRenameHistoryForm', id: "ajaxRenameHistoryForm#{history.id.to_s}" } ) do |f| %>
+									<div class='errors'></div>
+									<%= f.hidden_field :id, :id => "renameHistoryID" %>
+									<%= f.text_field :fiscal_year , class: 'text' %>
+							</td>
+						  <td><%= f.text_field :sre , class: 'text' %></td>
+						  <td><%= f.text_field :scap , class: 'text' %></td>
+						  <td><%= f.text_field :cash , class: 'text' %></td>
+							<td><%= f.text_field :total , class: 'text' %></td>
+							<td><%= f.text_field :stock_paymentdate , class: 'text withdatepicker', id: "withstock#{history.id}" %></td>
+							<td><%= f.text_field :cash_paymentdate , class: 'text withdatepicker' , id: "withcash#{history.id}"%></td>
+						<!-- style modify here -->
+							<% end %>
+		  	  <td width="18%" align='right'>
+			  				<%= link_to '儲存', "#", onclick: "$('#ajaxRenameHistoryForm#{history.id.to_s}').submit()", title: "儲存" %>
+							<a <%= "id=cancelhistory#{history.id.to_s}" %> class="cancelRenameAHistorybutton" title="取消" href='#' >取消</a>
+			  	 </td>
+	</tr>
+	<!-- for edit and unsortable  END-->
+<% end %>

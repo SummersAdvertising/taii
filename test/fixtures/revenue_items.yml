@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fiscal_month: 1
+  item: MyString
+  value: 9.99
+  ranking: 1
+
+two:
+  fiscal_month: 1
+  item: MyString
+  value: 9.99
+  ranking: 1

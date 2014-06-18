@@ -1,0 +1,17 @@
+<%= form_for(@brproduct,url: create_attachment_admin_brproduct_path(@brproduct, locale: I18n.locale) , :html => {:id =>'ajaxNewAttachlForm' , :method => "patch", :remote => true} ) do |fattach| %>
+  <div class='errors'></div>
+  	 <!-- form -->
+	    <div class="form">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="7%">檔案：<%= text_field_tag :filename, nil , placeholder: '自訂檔案名稱...' %></td>
+              <td width="93%">	<%= file_field_tag :attachment , class: 'file' %></td>
+            </tr>
+          </table>
+        </div>
+     <!-- form -->
+     <div class='button'>
+	    <%= fattach.submit '送出' , class: 'right highlight' ,style: 'width:125px' %>
+		<a id="cancelAnAttachbutton" class='left '>取消</a>
+     </div>
+<% end %>

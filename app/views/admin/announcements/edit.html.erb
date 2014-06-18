@@ -1,0 +1,146 @@
+<script src="/js/jquery.colorbox-min.js"></script>
+<script src="/js/jquery.colorbox-zh-TW.js"></script>
+
+<script src="/js/editor.js"></script>
+<script src="/js/editor_p.js"></script>
+<script src="/js/editor_img.js"></script>
+<script src="/js/editor_list.js"></script>
+<script src="/js/editor_video.js"></script>
+<script src="/js/jquery.imgareaselect.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/imgareaselect-default.css" />
+<link rel="stylesheet" type="text/css" href="/css/colorbox.css" />	   	
+<style>
+.form .upload
+{
+	width: 100%;
+}
+/*列表*/
+#post-list li{padding:5px 0 0 20px;background:url(/images/p.png) 0 center no-repeat;cursor:pointer}
+#post-list .text{border:1px solid #ddd}
+
+#post-list img{position:relative;top:2px;margin:0 10px 0 0}
+#post-list .tool{opacity:0;filter:alpha(opacity=0)}
+#post-list .tool a{display:inline-block;width:16px;height:16px;background-position:center center;background-repeat:no-repeat;cursor:pointer;margin:7px 0 0 15px;text-indent:-9999px}
+#post-list li:hover .tool,
+#post-list .tool a:hover{opacity:1;filter:alpha(opacity=100)}
+#post-list .delete{background-image:url(/images/cancel.png)}
+#post-list .addlist{background:#eee;display:inline-block;padding:5px 0;width:100px;text-align:center;color:#999;margin:0 0 0 20px}
+#post-list .addlist:hover{background:#ddd}
+
+</style>
+<script>
+$(function(){	
+	var _showTab = 0;
+	var $defaultLi = $('.tab li').eq(_showTab).addClass('active');
+	$($defaultLi.find('a').attr('href')).siblings().hide();
+ 	$('.tab li').click(function() {		
+		var $this = $(this),
+			_clickTab = $this.find('a').attr('href');		
+		$this.addClass('active').siblings('.active').removeClass('active');		
+		$(_clickTab).stop(false, true).fadeIn().siblings().hide(); 
+		return false;
+		}).find('a').focus(function(){
+			this.blur();
+	});
+});
+</script>
+
+<header>
+        <h2 class="left">最新消息</h2>
+        <nav class="left"></nav>
+</header>
+
+<article>	
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    
+    <% if @announcement.errors.any? %>
+    	<div id="error_explanation">
+	    	<h2><%= pluralize(@announcement.errors.count, "error") %> prohibited this post from being saved:</h2>
+		    <ul>
+		    <% @announcement.errors.full_messages.each do |msg| %>
+		      <li><%= msg %></li>
+		    <% end %>
+		    </ul>
+		  </div>
+		<% end %>
+
+<div class="form">	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		 <tr>
+          <td width="10%">標題：</td>
+          <td width="90%">
+	          <%= form_for(@announcement, url: admin_announcement_path(@announcement) , method: "PATCH", html: { id: "patchthisannounce" } ) do |f| %>
+
+          	<%= f.text_field :title, placeholder: '請輸入文章標題', class: 'text'   , :required => true %>
+          </td>
+        </tr>
+        
+  </table>
+  </div>
+		<%= fields_for @announcement.article do | a | %>
+		<%= a.hidden_field :content, {:id => 'announcement_content'} %>
+	<% end %>
+ <% end %>
+	  
+	  <%= render  'admin/peditor/editor' %>
+	  		
+	<div class="button"> 
+		<a href="javascript: document.getElementById('patchthisannounce').submit();" class="right highlight" data-no-turbolink = true >儲存<img src="<%= image_path("save.png") %>"></a>
+		 <a href="<%= admin_announcements_path %>" class="left" data-no-turbolink = true ><img src="<%= image_path("left.png") %>">返回</a> 
+	 </div>
+
+	<div style="display:none">	    
+		    <div id="previewContainer">
+			    <h2>請在圖片上拖拉以完成您要的截圖範圍</h2>
+		    </div>
+	</div>
+
+</article>
+
+<script type="text/javascript">
+
+	var hold = false;
+	
+	$(document).ready(function(){
+
+	var originalClose = $.colorbox.close;
+	
+	$.colorbox.close = function(){
+		if (hold) {			
+		  if ( confirm( '確定放棄圖片裁切？這將會刪除您的圖片。' )) {
+		  	hold = false;
+		  	
+		  	editor.img.reset();
+		  	
+		    originalClose();
+		  } 
+		} else {
+			originalClose();
+		}
+	 }
+
+	 	editor.init({ articleModel: 'announcement', photoUpload: '../../peditor/<%= @announcement.article_id %>/createPhoto',p_selectList: ["paragraphFontClass"],linkedp: true });
+
+
+		$("#submit").click(function(e){
+			e.preventDefault();
+
+			if(!editor.isPostNotSent()){
+				$("#edit_article_<%= @announcement.article_id %>").submit();
+			}
+			else{
+				editor.alert("段落編輯尚未完成。", "error");
+			}
+		
+			$('#articleContent').bind('peditor_updated', function() {
+				$('#main').height('inherit')
+			})
+		
+		});
+	
+	});
+
+</script>
+

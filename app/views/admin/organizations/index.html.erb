@@ -1,0 +1,85 @@
+	<header>
+	    <h2 class="left">工廠業務</h2>
+	    <nav class="left">
+					<%= link_to "[正體中文]", admin_organizations_path( :locale => "zh_TW") , 'data-no-turbolink' => true %>
+					<%= link_to "[英文]", admin_organizations_path( :locale => "en") , 'data-no-turbolink' => true %>
+					<%= link_to "[簡體中文]", admin_organizations_path( :locale => "zh_CN" ) , 'data-no-turbolink' => true %>
+					<%= link_to "[日文]", admin_organizations_path(  :locale => "ja" ) , 'data-no-turbolink' => true %>
+			目前語系：<%= I18n.locale.to_s%>
+	    </nav>
+	</header>
+      <article>
+        <div class="button">
+        	<a href='#' id="createAOrgbutton" class="right highlight" >新增工廠<img src="/images/add.png"></a>	 
+        </div>
+
+  	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+		<div id="listThisOrg" class="list">
+			<%= render 'orgList' %>
+		</div>
+
+
+<!-- new a org form -->
+<div id="input_form_container" class='list' style='margin-top:-30px;'>
+    <table id="input_form_container" width="100%" border="0" cellspacing="0" cellpadding="0" >
+		<tr id="createNewOrg" style="display:none" class='list-edit' >
+			<%= form_for(@neworg,:url => admin_organizations_path, :html => { :method => 'post' , :remote => true, :id=> 'ajaxNewOrgForm' }) do |f| %>
+			<td width='6%' valign="top">
+			</td>
+        	<td width='76%' >
+				<div class='errors'></div>
+					廠名：<br>
+				    <%= f.text_field :org_name , :id => 'createname' , class: 'text' %>
+				    地址：<br>
+				    <%= f.text_field :address , :id => 'createaddress' , class: 'text' %>
+        	</td>
+			<td width='18%' align="right">
+	        	<%= link_to '儲存', "#", onclick: "$('#ajaxNewOrgForm').submit()", title: "儲存" %>
+				<a id="cancelAOrgbutton" title="取消" href="#">取消</a>
+			</td>
+			<% end %>
+		</tr>
+	</table>
+</div>
+<!-- new a org form end -->
+</article>
+
+<script>
+//show create new level inputs
+$( "#createAOrgbutton" ).click(function() {
+  $( "#createNewOrg" ).toggle();
+});
+//hide create new level inputs
+$( "#cancelAOrgbutton" ).click(function() {
+  $( "#createNewOrg" ).toggle();
+});
+
+$('#ajaxNewOrgForm')
+  .bind('ajax:success', function(evt, data, status, xhr){
+  	//alert("ajaxsuccess");
+    var $this = $(this);
+
+    // do something with 'data' response object
+
+    $this.find('input:text,textarea').val('');
+    $this.find('.errors').empty();
+	$('#createNewOrg').stop().toggle();
+	
+  })
+  .bind('ajax:error', function(evt, xhr, status, error){
+	//alert("ajaxerror");
+    var responseObject = $.parseJSON(xhr.responseText),
+        errors = $('<ul />');
+        
+        //alert("ERROR with="+JSON.stringify(responseObject));
+
+    $.each(responseObject, function(){
+      errors.append('<li>' + this + '</li>');
+    })
+
+    errors.appendTo($(this).find('.errors'));
+});
+
+</script>
