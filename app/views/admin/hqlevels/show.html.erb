@@ -120,7 +120,7 @@
 								<tr <%= "id=productcontainer_#{hqproduct.id.to_s}" %> class="productcontainer" >
 							<% end %>
 						<td width="6%">
-							<% if hqproduct.hide == 1 %>
+							<% if hqproduct.hide == "true" %>
 									<img src="/images/hd_file.png"></td>
 							<% else %>
 									<img src="/images/file.png"></td>
