@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140619032416) do
+ActiveRecord::Schema.define(version: 20140619095659) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "",    null: false
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20140619032416) do
     t.integer  "article_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "ranking",    default: 999, null: false
   end
 
   create_table "annualreports", force: true do |t|
@@ -237,10 +238,10 @@ ActiveRecord::Schema.define(version: 20140619032416) do
   end
 
   create_table "revenue_items", force: true do |t|
-    t.integer  "fiscal_month",                                                  null: false
-    t.string   "item",                                                          null: false
-    t.decimal  "value",                   precision: 3, scale: 3, default: 0.0, null: false
-    t.integer  "ranking",                                         default: 999
+    t.integer  "fiscal_month",                                                   null: false
+    t.string   "item",                                                           null: false
+    t.decimal  "value",                   precision: 10, scale: 3, default: 0.0, null: false
+    t.integer  "ranking",                                          default: 999
     t.integer  "monthlyrevenuereport_id"
     t.datetime "created_at"
     t.datetime "updated_at"

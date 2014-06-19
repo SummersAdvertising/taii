@@ -75,6 +75,29 @@ class Admin::AnnouncementsController < AdminController
     end
   end
 
+  #multiReorder 
+	  def multiple_reorder
+	  	errorFlag = false
+	  	params[:announcement][:reorderset].each_with_index do | announceid , index | 
+	  		@announcement = Announcement.find(announceid)
+	  		if !@announcement.nil?
+	  			@announcement.update_attribute(:ranking , index+1 )
+	  		else
+	  			errorFlag = true
+	  		end	
+	  	end
+	  	
+	  	respond_to do |format|
+		  	 if errorFlag
+		  	 	format.json { head :no_content }
+		  	 else
+		  	 	format.json { head :no_content }
+		  	 end
+		  end
+		  
+	  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_announcement

@@ -189,19 +189,23 @@ $(function(){
 		//show create new level inputs
 		$( "#createAnAttachbutton" ).mouseup(function() {
 		  //$( "#createNewAttach" ).toggle();
-		  if($( "#createNewAttach" ).is(":visible") == true){
+		  /*
+if($( "#createNewAttach" ).is(":visible") == true){
 			$('[_height=auto]').height($('[_height=auto]').height()+100);	  
 		  }else{
 			$('[_height=auto]').height($('[_height=auto]').height()-100);	    
 		  }
+*/
 		  
 		
 		});
 		//hide create new level inputs
-		$( "#cancelAnAttachbutton" ).mouseup(function() {
+		/*
+$( "#cancelAnAttachbutton" ).mouseup(function() {
 		  //$( "#createNewAttach" ).toggle();
 		  $('[_height=auto]').height($('[_height=auto]').height()-100);
 		});
+*/
 		
 		//ajax:success on NewLevel action
 		$("#ajaxNewAttachlForm").on('ajax:success',function(evt, data, status, xhr) {
@@ -235,7 +239,7 @@ $(function(){
 		     // new - nav = diff 
 		     // modify diff + avg quote
 			
-			$('[_height=auto]').height(main.innerHeight()-100);
+			$('[_height=auto]').height(main.innerHeight()+50);
 			
 			//
 		});
@@ -312,12 +316,12 @@ $(function(){
 					      data: { attachment: {  reorderset: orderSet } },
 					      success: function(data){
 						   //alert ("success");
-	   					  	console.log("================ hqproducts reorder PATCH successfully end =============");
+	   					  	//console.log("================ hqproducts reorder PATCH successfully end =============");
 					        return false   
 					      },
 					      error: function(data){
 						    //alert ("faild");
-					        console.log("================ hqproducts reorder has some issues ==================");
+					        //console.log("================ hqproducts reorder has some issues ==================");
 					        return false  
 					      }
 					    });

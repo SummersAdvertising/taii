@@ -62,8 +62,6 @@ $(function(){
 			<% end %>
 			</h3>
 	</div>
-		    <p class="notice"><%= notice %></p>
-		    <p class="alert"><%= alert %></p>
 <div class="form">
 	
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -188,18 +186,20 @@ $(function(){
 		//show create new level inputs
 		$( "#createAnAttachbutton" ).mouseup(function() {
 		  //$( "#createNewAttach" ).toggle();
-		  if($( "#createNewAttach" ).is(":visible") == true){
+		  /*
+if($( "#createNewAttach" ).is(":visible") == true){
 			$('[_height=auto]').height($('[_height=auto]').height()+100);	  
 		  }else{
 			$('[_height=auto]').height($('[_height=auto]').height()-100);	    
 		  }
+*/
 		  
 		
 		});
 		//hide create new level inputs
 		$( "#cancelAnAttachbutton" ).mouseup(function() {
 		  //$( "#createNewAttach" ).toggle();
-		  $('[_height=auto]').height($('[_height=auto]').height()-100);
+		  //$('[_height=auto]').height($('[_height=auto]').height()-100);
 		});
 		
 		//ajax:success on NewLevel action
@@ -234,7 +234,7 @@ $(function(){
 		     // new - nav = diff 
 		     // modify diff + avg quote
 			
-			$('[_height=auto]').height(main.innerHeight()-100);
+			$('[_height=auto]').height(main.innerHeight()+50);
 			
 			//
 		});
@@ -275,7 +275,7 @@ $(function(){
 		     // new - nav = diff 
 		     // modify diff + avg quote
 			
-			$('[_height=auto]').height(main.innerHeight()-100);
+			//$('[_height=auto]').height(main.innerHeight()-100);
 		});
 		
 		//################################ attachment reorder begin #######################################
@@ -311,12 +311,12 @@ $(function(){
 					      data: { attachment: {  reorderset: orderSet } },
 					      success: function(data){
 						   //alert ("success");
-	   					  	console.log("================ brproducts reorder PATCH successfully end =============");
+	   					  	//console.log("================ brproducts reorder PATCH successfully end =============");
 					        return false   
 					      },
 					      error: function(data){
 						    //alert ("faild");
-					        console.log("================ brproducts reorder has some issues ==================");
+					        //console.log("================ brproducts reorder has some issues ==================");
 					        return false  
 					      }
 					    });

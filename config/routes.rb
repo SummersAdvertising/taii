@@ -73,7 +73,11 @@ Taii::Application.routes.draw do
 			end
 		end
 		
-	  resources :announcements
+	  resources :announcements do
+	  	member do
+				patch 'multiple_reorder' , :action => 'multiple_reorder'
+			end
+	  end
     
     resources :financialprojections do
 		    member do

@@ -73,7 +73,7 @@
 -->
     <h1>台一後台管理系統</h1>
     <aside class="right"> 
-    	<a href="#" id="aside-1">index</a>
+    	<a href="<%= admin_hqlevel_path(Hqlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW" )%>" id="aside-1">index</a>
     	<a href="<%= edit_admin_admin_path(current_admin)%>" id="aside-2">Edit profile</a>
     	<%= link_to 'Log out', destroy_admin_session_path, :method => :delete, id: "aside-3" %> 
 

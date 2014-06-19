@@ -7,8 +7,9 @@
 
         <div class="list">
           <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	          <tbody id="listAnnouncement">
           	<% @announcements.each do | announce | %>
-            <tr>
+            <tr <%= "id=reorderAnnouncementContainer_#{announce.id.to_s}" %>>
               <td width="64%"><a href="<%= edit_admin_announcement_path(announce)%>"><%= announce.title %></a></td>
               <td width="18%" align="right"><%= announce.updated_at.strftime("%Y年%m月%d日") %></td>
               <td width="18%">
@@ -19,9 +20,61 @@
               </td>
             </tr>
             <% end %>
+          </tbody>
         </table>
 	    </div>
                		
 </article>
+<script>
+
+$(function() {
+			var prevEvent = null;
+		    $( "#listAnnouncement" ).sortable({
+		      //connectWith: ".renamelevelcontainer",
+		      placeholder: "ui-state-highlight",
+		      update: function( event, ui ) {
+			      	
+					if(event.timeStamp == prevEvent){
+						return null;
+					}
+					
+					prevEvent = event.timeStamp;	
+					var newRankings_array = $('#listAnnouncement').sortable('toArray');
+					var orderSet = [];
+					$.each(newRankings_array, function( index, value){
+				      	orderSet.push(value.replace("reorderAnnouncementContainer_",""));
+				    });
+				    var order2Push = JSON.stringify(orderSet);
+				  	
+				  	$.ajaxSetup({
+					  	headers: {
+							    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+
+				  	  //multiple reorder 
+					  	$.ajax({
+					      type: "PATCH",
+					      url: "/admin/announcements/"+orderSet[0]+"/multiple_reorder",
+					      data: { announcement: {  reorderset: orderSet } },
+					      success: function(data){
+						   //alert ("success");
+	   					  	//console.log("================ brproducts reorder PATCH successfully end =============");
+					        return false   
+					      },
+					      error: function(data){
+						    //alert ("faild");
+					        //console.log("================ brproducts reorder has some issues ==================");
+					        return false  
+					      }
+					    });
+
+		      }
+		    });
+		    
+			    
+		    $( "#listAnnouncement" ).disableSelection();
+		  });  
+</script>
 
 

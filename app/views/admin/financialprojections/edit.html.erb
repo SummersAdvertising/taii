@@ -186,7 +186,7 @@ $(function(){
 		     // new - nav = diff 
 		     // modify diff + avg quote
 			
-			$('[_height=auto]').height(main.innerHeight()-100);
+			$('[_height=auto]').height(main.innerHeight()+50);
 			
 			//
 		});
@@ -227,7 +227,7 @@ $(function(){
 		     // new - nav = diff 
 		     // modify diff + avg quote
 			
-			$('[_height=auto]').height(main.innerHeight()-100);
+			//$('[_height=auto]').height(main.innerHeight()-100);
 		});
 		
 		//################################ attachment reorder begin #######################################
@@ -263,12 +263,12 @@ $(function(){
 					      data: { attachment: {  reorderset: orderSet } },
 					      success: function(data){
 						   //alert ("success");
-	   					  	console.log("================ attachment reorder PATCH successfully end =============");
+	   					  	//console.log("================ attachment reorder PATCH successfully end =============");
 					        return false   
 					      },
 					      error: function(data){
 						    //alert ("faild");
-					        console.log("================ attachment reorder has some issues ==================");
+					        //console.log("================ attachment reorder has some issues ==================");
 					        return false  
 					      }
 					    });
