@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Taii::Application.config.secret_key_base = '2d22ae3b5e71488e7a0c13e675f6ea7d69431b616e03ea3ecf819745bba2d2ca98c49c36189cdff38f23f31fd6d95d503ae081684c7b9af8de1c93d2a233ff5c'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+Taii::Application.config.secret_key_base = secure_token

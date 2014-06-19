@@ -5,9 +5,11 @@ class Hqlevel < ActiveRecord::Base
 	has_many :hqproducts, -> { order('ranking, created_at') } ,dependent: :destroy
 	
 	#self join
-	belongs_to :daddy, :class_name => "Hqlevel" #, :foreign_key => 'parent', touch: true
+	belongs_to :daddy, :class_name => "Hqlevel"#, :foreign_key => 'parent', touch: true
 	#<% cache levelsib do%>
 	has_many :children, :class_name => "Hqlevel", :foreign_key => 'parent'
+  
+  
 	
 	scope :top_level, -> { where(:parent => 0, :locale => I18n.locale) }	
 	
@@ -72,20 +74,24 @@ end
    	  Hqlevel.where("level="+(self.level+1).to_s+" and parent="+self.id.to_s+" and locale='"+ I18n.locale.to_s+"'").order('ranking, id').select(:id, :ranking ,:level,:updated_at,:chaos)  	
   end
   
+  def find_papa
+  		
+  end
   #should be useful to create breadcrum
   def find_my_direct_parent()
-	  root = Hqlevel.return_root_node_on_demand(I18n.locale).id.to_i
-	  
-	  result = self.id.to_s+ "," 	  #to remove current level from breadcrum, just don't push self.id.to_s into result at very beginning
-	  startfrom = (Hqlevel.where("id=" + self.id.to_s).select([:parent]))[0][:parent]
-	  result += startfrom.to_s+ ","
-	  while  startfrom > root do
-		  currentparent = (Hqlevel.where("id=" + startfrom.to_s).select([:parent]))[0][:parent].to_s
-	  	  result += currentparent + ","
-	  	  startfrom = currentparent.to_i
-	  end
+  	
+		  root = Hqlevel.return_root_node_on_demand(I18n.locale).id.to_i
+  		result = "#{self.id.to_s},"  
+  		currentRoot = self.parent.to_i
+  		currentNode = self
 
-	  return Hqlevel.where( id: result.split(","))
+  		while currentRoot > root do
+  			result = "#{result}#{currentNode.parent},"
+  			currentNode = Hqlevel.find(currentNode.parent)
+  			currentRoot = currentNode.parent.to_i
+  		end
+  		result = "#{result}#{root},"
+  		return Hqlevel.where( id: result.split(","))
 	  
 	  #Hqlevel.where("id=" + :id.to_s).select([:id, :name, :level,:updated_at])  	
   end
@@ -95,7 +101,7 @@ end
   end
   
    def self.return_root_node_on_demand(locale)
-  	return Hqlevel.find_by('parent=0 and '+"locale = '"+locale.to_s+"'")
+   	return Hqlevel.find_by("parent=0 and locale='#{locale}'")
   end
 
 end

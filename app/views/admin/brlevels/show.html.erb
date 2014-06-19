@@ -1,5 +1,5 @@
 <header>
-        <h2 class="left">產品介紹 <span>/ 集團角度</span></h2>
+        <h2 class="left">產品介紹 <span>/ 工廠角度</span></h2>
         <nav class="left"> <!-- 直接回到編輯頁不合理 因為有的階層根本不存在 -->
 		<%= link_to "[正體中文]", admin_brlevel_path( Brlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW") , 'data-no-turbolink' => true %>
 		<%= link_to "[英文]", admin_brlevel_path( Brlevel.return_root_node_on_demand("en"), :locale => "en") , 'data-no-turbolink' => true %>
@@ -33,42 +33,14 @@
         	<table id="mainLevelList" width="100%" border="0" cellspacing="0" cellpadding="0">
 	        	<tbody id="listThisLevel">
 
-		        	<%= render 'levelList' %>
+		        	<%= render 'showlevelList' %>
 
 	        	<tbody>    
 			</table>
         </div>
-        <% if current_admin.superadmin == 1 || @brlevel.chaos == 200 %>
-        <!-- new a level begin -->
-        <div class="list" style='margin-top:-30px;'> <!-- style modify here -->
-	        <table id="input_form_container" width="100%" border="0" cellspacing="0" cellpadding="0" >
-		        <tr id="createNewLevel" style="display:none"  class="list-edit">
-	    			<%= form_for(@newbrlevel,:url => admin_brlevels_path(locale: I18n.locale), :html => {:id =>'ajaxNewLevelForm' , :method => "post", :remote => true} ) do |f| %>
-		        	<td width='6%' valign="top">&nbsp;</td>
-		        	<td width='76%' >
-							  	<div class='errors'></div>							  	
-							    <%= f.text_field :name, id: 'createname' , placeholder: '分類名稱', class: 'text' %>
-							    <% if current_admin.superadmin == 1 %>
-											<%= f.check_box :chaos , { class: 'checkbox'  }, 200, 404 %> MESSUP
-									<% else %>
-									<%= f.hidden_field :chaos, value: 200 %>
-									<% end %>
-									<% nxtlevel = (@brlevel.level.to_i + 1) %>
-									<% myparent = @brlevel.parent.to_i %>
-									<%= f.hidden_field :level, :value => ( nxtlevel > 0 ) ? nxtlevel  : 1 %>
-									<%= f.hidden_field :parent, :value => @brlevel.id.to_i %>
-									<%= f.hidden_field :locale, :value => I18n.locale.to_s %>
-									<%= f.hidden_field :ranking, :value => 999 %>
-		        	</td>
-		          <td width='18%' align="right">
-		          	<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxNewLevelForm').submit()", title: "儲存" %>
-		              <a id="cancelALevelbutton" title="取消" href="javascript: void(0)">取消</a>
-		           </td>
-	           <% end %>		
-		        </tr>
-					</table>
-      </div>
-		<% end %><!-- new a level end -->
+        <% if current_admin.superadmin == 1 || @brlevel.chaos == 200 %><!-- new a level begin -->
+	      			<%= render 'newAlevelform' %>
+				<% end %><!-- new a level end -->
 			
       <% end %>
       <!--   end of level part -->
@@ -99,38 +71,8 @@
         <div class="list">
           <table id="mainProductList" width="100%" border="0" cellspacing="0" cellpadding="0">
           	<tbody id="listAllProduct">
-      			<% @productsofthislevel.each do | brproduct | %>
-				    	<% if current_admin.superadmin == 1 %>
-					    	<tr <%= "id=productcontainer_#{brproduct.id.to_s}" %> class="dragable productcontainer" >
-							<% else %>
-					    	<tr <%= "id=productcontainer_#{brproduct.id.to_s}" %> class="productcontainer" >
-							<% end %>
-
-						<td width="6%">
-							<% if brproduct.showatfront == 404 %>
-									<img src="/images/hd_file.png"></td>
-							<% else %>
-									<img src="/images/file.png"></td>
-							<% end %>
-						<td width="76%">
-							<% if brproduct.accessLevel <= current_admin.accessLevel %>
-										<%= link_to brproduct.name , edit_admin_brproduct_path(brproduct.id, :locale => I18n.locale),'data-no-turbolink' => true %>
-							<% else%>
-										<a href="javascript: void(0)"><%= brproduct.name  %></a>
-							<% end %>	
-						</td>
-						<td width="18%">
-							<div class="tool">
-								<% if brproduct.accessLevel <= current_admin.accessLevel %>
-									<%= link_to '', edit_admin_brproduct_path(brproduct.id, :locale => I18n.locale), class: 'edit' ,'data-no-turbolink' => true %>
-									<%= link_to '', admin_brproduct_path(brproduct.id, :locale => I18n.locale), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete' %>
-							<% end %>	
-						    </div>
-						 </td>
-					</tr>
-		
-				<% end %> 
-          	</tbody>
+		      			<%= render 'listLevelproducts' %>
+	        	</tbody>
           </table>
        <% end %>
         </div>

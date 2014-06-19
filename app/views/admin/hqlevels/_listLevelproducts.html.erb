@@ -1,0 +1,31 @@
+			<% @productsofthislevel.each do | hqproduct | %>
+  				<% if current_admin.superadmin == 1 %>
+						<tr <%= "id=productcontainer_#{hqproduct.id.to_s}" %> class="dragable productcontainer" >
+					<% else %>
+						<tr <%= "id=productcontainer_#{hqproduct.id.to_s}" %> class="productcontainer" >
+					<% end %>
+				<td width="6%">
+					<% if hqproduct.showatfront == 404 %>
+							<img src="/images/hd_file.png"></td>
+					<% else %>
+							<img src="/images/file.png"></td>
+					<% end %>
+				</td>
+				<td width="76%">
+							<% if hqproduct.accessLevel <= current_admin.accessLevel %>
+								<%= link_to hqproduct.name , edit_admin_hqproduct_path(hqproduct.id, :locale => I18n.locale),'data-no-turbolink' => true %>
+							<% else%>
+									<a href="javascript: void(0)"><%= hqproduct.name%></a>
+							<% end %>	
+				</td>
+				<td width="18%">
+					<div class="tool">
+						<% if hqproduct.accessLevel <= current_admin.accessLevel %>
+							<%= link_to '', edit_admin_hqproduct_path(hqproduct.id, :locale => I18n.locale), class: 'edit' ,'data-no-turbolink' => true %>
+							<%= link_to '', admin_hqproduct_path(hqproduct.id, :locale => I18n.locale), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete' %>
+					<% end %>	
+				    </div>
+				 </td>
+			</tr>
+
+		<% end %> 

@@ -1,0 +1,28 @@
+		<div class="list" style='margin-top:-30px;'> <!-- style modify here -->
+	        <table id="input_form_container" width="100%" border="0" cellspacing="0" cellpadding="0" >
+		        <tr id="createNewLevel" style="display:none"  class="list-edit">
+	    			<%= form_for(@newbrlevel,:url => admin_brlevels_path(locale: I18n.locale), :html => {:id =>'ajaxNewLevelForm' , :method => "post", :remote => true} ) do |f| %>
+		        	<td width='6%' valign="top">&nbsp;</td>
+		        	<td width='76%' >
+							  	<div class='errors'></div>							  	
+							    <%= f.text_field :name, id: 'createname' , placeholder: '分類名稱', class: 'text' %>
+							    <% if current_admin.superadmin == 1 %>
+											<%= f.check_box :chaos , { class: 'checkbox'  }, 200, 404 %> MESSUP
+									<% else %>
+									<%= f.hidden_field :chaos, value: 200 %>
+									<% end %>
+									<% nxtlevel = (@brlevel.level.to_i + 1) %>
+									<% myparent = @brlevel.parent.to_i %>
+									<%= f.hidden_field :level, :value => ( nxtlevel > 0 ) ? nxtlevel  : 1 %>
+									<%= f.hidden_field :parent, :value => @brlevel.id.to_i %>
+									<%= f.hidden_field :locale, :value => I18n.locale.to_s %>
+									<%= f.hidden_field :ranking, :value => 999 %>
+		        	</td>
+		          <td width='18%' align="right">
+		          	<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxNewLevelForm').submit()", title: "儲存" %>
+		              <a id="cancelALevelbutton" title="取消" href="javascript: void(0)">取消</a>
+		           </td>
+	           <% end %>		
+		        </tr>
+					</table>
+      </div>

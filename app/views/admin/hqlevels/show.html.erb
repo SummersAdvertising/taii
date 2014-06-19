@@ -1,28 +1,31 @@
 <header>
         <h2 class="left">產品介紹 <span>/ 集團角度</span></h2>
-        <nav class="left">
-	                <nav class="left"> <!-- 直接回到編輯頁不合理 因為有的階層根本不存在 -->
+        <nav class="left"> <!-- 直接回到編輯頁不合理 因為有的階層根本不存在 -->
 		<%= link_to "[正體中文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW") , 'data-no-turbolink' => true %>
 		<%= link_to "[英文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("en"), :locale => "en") , 'data-no-turbolink' => true %>
 		<%= link_to "[簡體中文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("zh_CN"), :locale => "zh_CN" ) , 'data-no-turbolink' => true %>
 		<%= link_to "[日文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("ja"), :locale => "ja" ) , 'data-no-turbolink' => true %>
-		目前語系：<%= I18n.locale.to_s%></nav>
-        </nav>
+		目前語系：<%= I18n.locale.to_s%>
+				</nav>
 </header>
  <article>
 		<%  if @hqlevel.level >= 0 && @hqlevel.level < 4  %>
+		
 		<div class="hgroup">
 			<h3  class="left">
-			<% @breadcrumb.reverse.each_with_index do | bread, index | %>
-			 	<%= bread.name if index == 0 %>
-			 	<% if index >= 1  %>
-				 	<span>/<%= bread.name %></span>
-				 	<!-- link_to  ancestor.name,  admin_hqlevel_path(ancestor.id, :locale => I18n.locale) -->
-			 	<% end %>
-			 	<% if index == (@breadcrumb.count - 1 ) %>
-			 		<span>/分類列表</span>
-			 	<% end %>
-			<% end %>
+					<% @breadcrumb.reverse.each_with_index do | bread, index | %>
+								 	<%= bread.name if index == 0 %>
+			
+								 	<% if index >= 1  %>
+									 	<span>/<%= bread.name %></span>
+									 	<!-- link_to  ancestor.name,  admin_hqlevel_path(ancestor.id, :locale => I18n.locale) -->
+								 	<% end %>
+			
+								 	<% if index == (@breadcrumb.count - 1 ) %>
+								 		<span>/分類列表</span>
+								 	<% end %>
+								 	
+					<% end %>
 			</h3>
 					<% if current_admin.superadmin == 1 || @hqlevel.chaos == 200 %>
           <div class="button right">
@@ -36,42 +39,14 @@
     <div class="list">
     	<table id="mainLevelList" width="100%" border="0" cellspacing="0" cellpadding="0">
       	<tbody id="listThisLevel">
-	        	<%= render 'levelList' %>
+	        	<%= render 'showlevelList' %>
       	<tbody>    
 	   </table>
     </div>
-		       <% if current_admin.superadmin == 1 || @hqlevel.chaos == 200 %>
-					        <!-- new a level begin -->
-			        <div class="list" style='margin-top:-30px;'> <!-- style modify here -->
-				        <table id="input_form_container" width="100%" border="0" cellspacing="0" cellpadding="0" >
-					        	<%= form_for(@newhqlevel,:url => admin_hqlevels_path(locale: I18n.locale), :html => {:id =>'ajaxNewLevelForm' , :method => "post", :remote => true} ) do |f| %>
-						        <tr id="createNewLevel" style="display:none"  class="list-edit">
-					    			        	<td width='6%' valign="top">&nbsp;</td>
-						        	<td width='76%' >
-											    <%= f.text_field :name, id: 'createname' , placeholder: '分類名稱', class: 'text', required: true %>
-		    									<% if current_admin.superadmin == 1 %>
-															<%= f.check_box :chaos , { class: 'checkbox'  }, 200, 404 %> MESSUP
-													<% else %>
-													<%= f.hidden_field :chaos, value: 200 %>
-													<% end %>
-													 	<p class='errors'></p>
-													<% nxtlevel = (@hqlevel.level.to_i + 1) %>
-													<% myparent = @hqlevel.parent.to_i %>
-													<%= f.hidden_field :level, :value => ( nxtlevel > 0 ) ? nxtlevel  : 1 %>
-													<%= f.hidden_field :parent, :value => @hqlevel.id.to_i %>
-													<%= f.hidden_field :locale, :value => I18n.locale.to_s %>
-													<%= f.hidden_field :ranking, :value => 999 %>
-						        	</td>
-						          <td width='18%' align="right">
-						          	<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxNewLevelForm').submit()", title: "儲存" %>
-						              <a id="cancelALevelbutton" title="取消" href="javascript: void(0)">取消</a>
-						           </td>
-						
-						        </tr>
-	                   <% end %>	
-									</table>
-				        </div>
-						<% end %><!-- new a level end -->
+    
+	   <% if current_admin.superadmin == 1 || @hqlevel.chaos == 200 %><!-- new a level begin -->
+		        <%= render 'newAlevelform' %>
+		 <% end %><!-- new a level end -->
 						
   <% end %><!--   end of level part -->
 	
@@ -103,37 +78,7 @@
         <div class="list">
           <table id="mainProductList" width="100%" border="0" cellspacing="0" cellpadding="0">
           	<tbody id="listAllProduct">
-      			<% @productsofthislevel.each do | hqproduct | %>
-      				<% if current_admin.superadmin == 1 %>
-								<tr <%= "id=productcontainer_#{hqproduct.id.to_s}" %> class="dragable productcontainer" >
-							<% else %>
-								<tr <%= "id=productcontainer_#{hqproduct.id.to_s}" %> class="productcontainer" >
-							<% end %>
-						<td width="6%">
-							<% if hqproduct.showatfront == 404 %>
-									<img src="/images/hd_file.png"></td>
-							<% else %>
-									<img src="/images/file.png"></td>
-							<% end %>
-						</td>
-						<td width="76%">
-									<% if hqproduct.accessLevel <= current_admin.accessLevel %>
-										<%= link_to hqproduct.name , edit_admin_hqproduct_path(hqproduct.id, :locale => I18n.locale),'data-no-turbolink' => true %>
-									<% else%>
-											<a href="javascript: void(0)"><%= hqproduct.name%></a>
-									<% end %>	
-						</td>
-						<td width="18%">
-							<div class="tool">
-								<% if hqproduct.accessLevel <= current_admin.accessLevel %>
-									<%= link_to '', edit_admin_hqproduct_path(hqproduct.id, :locale => I18n.locale), class: 'edit' ,'data-no-turbolink' => true %>
-									<%= link_to '', admin_hqproduct_path(hqproduct.id, :locale => I18n.locale), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete' %>
-							<% end %>	
-						    </div>
-						 </td>
-					</tr>
-		
-				<% end %> 
+					        <%= render 'listLevelproducts' %>
           	</tbody>
           </table>
        <% end %>
@@ -320,12 +265,12 @@
 					      url: "/admin/"+"<%= I18n.locale.to_s %>"+"/hqproducts/"+orderSet[0]+"/multiple_reorder",
 					      data: { hqproduct: {  reorderset: orderSet } },
 					      success: function(data){
-						   //alert ("success");
-	   					  	console.log("================ hqproducts reorder PATCH successfully end =============");
+						      //alert ("success");
+	   					  	//console.log("================ hqproducts reorder PATCH successfully end =============");
 					        return false   
 					      },
 					      error: function(data){
-						    //alert ("faild");
+							    //alert ("faild");
 					        console.log("================ hqproducts reorder has some issues ==================");
 					        return false  
 					      }

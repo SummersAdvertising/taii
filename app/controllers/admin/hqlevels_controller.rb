@@ -15,6 +15,7 @@ class Admin::HqlevelsController < AdminController
 	@newhqlevel = Hqlevel.new
 	@breadcrumb = @hqlevel.find_my_direct_parent().load
 	@productsofthislevel = @hqlevel.hqproducts.load
+	#change find_each?
   end
 
   # GET /hqlevels/new
