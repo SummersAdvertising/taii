@@ -1,6 +1,6 @@
 <% @hqlevel.find_my_direct_childrent().each do |levelsib| %>
 	<!-- for show and sortable -->
-	<% if current_admin.super == true %>
+	<% if current_admin.superadmin == 1 %>
 			<tr <%= "id=dragablecontainer_#{levelsib.id.to_s}" %> class="dragable <%= "tr-#{levelsib.id.to_s}-for-show" %>">
 	<% else %>
 			<tr <%= "id=dragablecontainer_#{levelsib.id.to_s}" %> class="<%= "tr-#{levelsib.id.to_s}-for-show" %>">
@@ -13,7 +13,7 @@
 					  <%= link_to  levelsib.name,  admin_hqlevel_path(levelsib.id, locale: I18n.locale )  %>
 			  </td>
 		  	<td width="18%" >
-		  		<% if current_admin.super == true || @hqlevel.messup == true %>
+		  		<% if current_admin.superadmin == 1 || @hqlevel.chaos == 200 %>
 		  		<div class="tool"> 
 		  			<a <%= "id=level#{levelsib.id.to_s}" %> class='renameLink edit'  title="編輯" ></a>
 		  			<%= link_to '', admin_hqlevel_path(levelsib, locale: I18n.locale), method: :delete, title: "刪除", class: 'delete', data: { confirm: 'Are you sure?' }, :remote => true %>
@@ -22,7 +22,7 @@
 		  	 </td>
 	</tr>
 	<!-- for show and sortable END-->
-	<% if current_admin.super == true || @hqlevel.messup == true %>
+	<% if current_admin.superadmin == 1 || @hqlevel.chaos == 200 %>
 	<!-- for edit and unsortable  -->
 	<tr <%= "id=renamelevelcontainer_#{levelsib.id.to_s}" %> class="<%= "tr-#{levelsib.id.to_s}-for-edit" %>  list-edit " style="display:none;">
 				<td width="6%">
@@ -35,18 +35,17 @@
 									<%= f.hidden_field :id, :id => "renameLevelID" %>
 		
 									<%= f.text_field :name , class: 'text' , style: 'width:75%' %>
-									<% if current_admin.super == true %>
-											<%= f.check_box :messup , { class: 'checkbox'  }, 1, 0 %> MESSUP
+									<% if current_admin.superadmin == 1 %>
+											<%= f.check_box :chaos , { class: 'checkbox'  }, 200, 404 %> MESSUP
 									<% else %>
-											<%= f.hidden_field :messup , value: true %>		
-									<% end %>
-						<!-- style modify here -->
+									<%= f.hidden_field :chaos, value: 200 %>
+									<% end %>						<!-- style modify here -->
 							<% end %>
 	  	   		</div>
 	  	   </td>
 		  	  <td width="18%" align='right'>
-			  				<%= link_to '儲存', "#", onclick: "$('#ajaxRenameLevelForm#{levelsib.id.to_s}').submit()", title: "儲存" %>
-							<a <%= "id=cancellevel#{levelsib.id.to_s}" %> class="cancelRenameALevelbutton" title="取消" href='#' >取消</a>
+			  				<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxRenameLevelForm#{levelsib.id.to_s}').submit()", title: "儲存" %>
+							<a <%= "id=cancellevel#{levelsib.id.to_s}" %> class="cancelRenameALevelbutton" title="取消" href="javascript: void(0)" >取消</a>
 			  	 </td>
 	</tr>
 	<!-- for edit and unsortable  END-->

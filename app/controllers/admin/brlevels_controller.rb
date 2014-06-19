@@ -121,6 +121,6 @@ class Admin::BrlevelsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def brlevel_params
-      params.require(:brlevel).permit(:name, :level, :parent, :ranking, :reorderset, :locale, :messup)
+      params.require(:brlevel).permit(:name, :level, :parent, :ranking, :reorderset, :locale, :chaos)
     end
 end

@@ -22,13 +22,13 @@
 			 	<% end %>
 			<% end %>
 			</h3>
-					<% if current_admin.super == true || @brlevel.messup == true %>
+					<% if current_admin.superadmin == 1 || @brlevel.chaos == 200 %>
 							<div class="button right">
-				          <a href="#" id="createALevelbutton" class="right highlight" >建立分類<img src="/images/add_folder.png"></a>
+				          <a href="javascript: void(0)" id="createALevelbutton" class="right highlight" >建立分類<img src="/images/add_folder.png"></a>
 							</div>
 					<% end %>
     </div>
-    <%= "Notice: This Level allow mess up. " if (@brlevel.messup == true) %>
+    <%= "Notice: This Level allow mess up. " if (@brlevel.chaos == 200) %>
         <div class="list">
         	<table id="mainLevelList" width="100%" border="0" cellspacing="0" cellpadding="0">
 	        	<tbody id="listThisLevel">
@@ -38,7 +38,7 @@
 	        	<tbody>    
 			</table>
         </div>
-        <% if current_admin.super == true || @brlevel.messup == true %>
+        <% if current_admin.superadmin == 1 || @brlevel.chaos == 200 %>
         <!-- new a level begin -->
         <div class="list" style='margin-top:-30px;'> <!-- style modify here -->
 	        <table id="input_form_container" width="100%" border="0" cellspacing="0" cellpadding="0" >
@@ -48,10 +48,10 @@
 		        	<td width='76%' >
 							  	<div class='errors'></div>							  	
 							    <%= f.text_field :name, id: 'createname' , placeholder: '分類名稱', class: 'text' %>
-							    <% if current_admin.super == true %>
-										<%= f.check_box :messup , { class: 'checkbox'  }, 1, 0 %> MESSUP
+							    <% if current_admin.superadmin == 1 %>
+											<%= f.check_box :chaos , { class: 'checkbox'  }, 200, 404 %> MESSUP
 									<% else %>
-										<%= f.hidden_field :messup, value: true %>
+									<%= f.hidden_field :chaos, value: 200 %>
 									<% end %>
 									<% nxtlevel = (@brlevel.level.to_i + 1) %>
 									<% myparent = @brlevel.parent.to_i %>
@@ -61,8 +61,8 @@
 									<%= f.hidden_field :ranking, :value => 999 %>
 		        	</td>
 		          <td width='18%' align="right">
-		          	<%= link_to '儲存', "#", onclick: "$('#ajaxNewLevelForm').submit()", title: "儲存" %>
-		              <a id="cancelALevelbutton" title="取消" href="#">取消</a>
+		          	<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxNewLevelForm').submit()", title: "儲存" %>
+		              <a id="cancelALevelbutton" title="取消" href="javascript: void(0)">取消</a>
 		           </td>
 	           <% end %>		
 		        </tr>
@@ -88,7 +88,7 @@
 			 	<% end %>
 			<% end %>
 			</h3>
-					<% if current_admin.super == true || @brlevel.messup == true %>
+					<% if current_admin.superadmin == 1 || @brlevel.chaos == 200 %>
 		          <div class="button right">
          		   		<a href=<%= new_admin_brproduct_path(:parentlevelid=>@brlevel.id, :locale => I18n.locale) %> class="right highlight" >新增產品<img src="/images/add_file.png">
 			           	</a>
@@ -100,14 +100,14 @@
           <table id="mainProductList" width="100%" border="0" cellspacing="0" cellpadding="0">
           	<tbody id="listAllProduct">
       			<% @productsofthislevel.each do | brproduct | %>
-				    	<% if current_admin.super == true %>
+				    	<% if current_admin.superadmin == 1 %>
 					    	<tr <%= "id=productcontainer_#{brproduct.id.to_s}" %> class="dragable productcontainer" >
 							<% else %>
 					    	<tr <%= "id=productcontainer_#{brproduct.id.to_s}" %> class="productcontainer" >
 							<% end %>
 
 						<td width="6%">
-							<% if brproduct.hide == "true" %>
+							<% if brproduct.showatfront == 404 %>
 									<img src="/images/hd_file.png"></td>
 							<% else %>
 									<img src="/images/file.png"></td>
@@ -116,7 +116,7 @@
 							<% if brproduct.accessLevel <= current_admin.accessLevel %>
 										<%= link_to brproduct.name , edit_admin_brproduct_path(brproduct.id, :locale => I18n.locale),'data-no-turbolink' => true %>
 							<% else%>
-										<a href='#'><%= brproduct.name  %></a>
+										<a href="javascript: void(0)"><%= brproduct.name  %></a>
 							<% end %>	
 						</td>
 						<td width="18%">

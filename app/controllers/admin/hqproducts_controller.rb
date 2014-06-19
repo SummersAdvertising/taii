@@ -21,7 +21,7 @@ class Admin::HqproductsController < AdminController
   	@hqproduct.name = "新增產品#{Time.now.strftime("%Y-%m-%d-%I")}"
 		@hqproduct.organization_id = 0
 		
-		if current_admin.super == true
+		if current_admin.superadmin == 1
 			@hqproduct.accessLevel = 2
 		else
 			@hqproduct.accessLevel = 1		
@@ -150,7 +150,7 @@ class Admin::HqproductsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hqproduct_params
-      params.require(:hqproduct).permit(:name, :article_id, :hqlevel_id, :content, :hide, :organization_id, :accessLevel)
+      params.require(:hqproduct).permit(:name, :article_id, :hqlevel_id, :content, :showatfront, :organization_id, :accessLevel)
     end
     
     def check_accesslevel

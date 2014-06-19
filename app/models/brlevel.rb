@@ -65,7 +65,7 @@ class Brlevel < ActiveRecord::Base
 	  #Hqlevel.where("level="+(self.level+1).to_s+" and parent="+self.id.to_s).order('ranking DESC, id').select([:id, :level,:updated_at])  	
   	  #還沒使用 globalize 前使用
 #   	  Brlevel.where("level="+(self.level+1).to_s+" and parent="+self.id.to_s).order('ranking , id').select([:id, :name, :level,:ranking,:updated_at])  	
-   	  Brlevel.where("level="+(self.level+1).to_s+" and parent="+self.id.to_s+" and locale='"+ I18n.locale.to_s+"'").order('ranking, id').select(:id, :ranking ,:level,:updated_at, :messup)  	
+   	  Brlevel.where("level="+(self.level+1).to_s+" and parent="+self.id.to_s+" and locale='"+ I18n.locale.to_s+"'").order('ranking, id').select(:id, :ranking ,:level,:updated_at, :chaos)  	
   end
   
   #should be useful to create breadcrum

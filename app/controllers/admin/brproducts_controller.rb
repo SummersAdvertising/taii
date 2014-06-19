@@ -21,6 +21,12 @@ class Admin::BrproductsController < AdminController
   	@brproduct.name = "新增產品#{Time.now.strftime("%Y-%m-%d-%I")}"
 		@brproduct.organization_id = 0
 		
+		if current_admin.superadmin == 1
+			@brproduct.accessLevel = 2
+		else
+			@brproduct.accessLevel = 1		
+		end
+		
   	parentlevel = Brlevel.find(params[:parentlevelid])
     parentlevel.brproducts << @brproduct
 
@@ -145,7 +151,7 @@ class Admin::BrproductsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def brproduct_params
-      params.require(:brproduct).permit(:name, :article_id, :brlevel_id, :content, :hide, :organization_id, :accessLevel)
+      params.require(:brproduct).permit(:name, :article_id, :brlevel_id, :content, :showatfront, :organization_id, :accessLevel)
     end
 
     def check_accesslevel

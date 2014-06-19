@@ -122,7 +122,7 @@ class Admin::HqlevelsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hqlevel_params
-      params.require(:hqlevel).permit(:name, :level, :parent, :ranking, :reorderset, :locale,:messup)
+      params.require(:hqlevel).permit(:name, :level, :parent, :ranking, :reorderset, :locale,:chaos)
     end
         
 end

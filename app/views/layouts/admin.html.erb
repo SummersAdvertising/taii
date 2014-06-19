@@ -89,11 +89,11 @@
           	<%=link_to "工廠角度", admin_brlevel_path(Brlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW" ) , 'data-no-turbolink' => true %>
           </div>
         </li>
-	      <% if current_admin.super == true %>
+	      <% if current_admin.superadmin == 1 %>
         <li><a href='<%= admin_organizations_path(:locale => "zh_TW" )%>'><img src="/images/group.png">工廠業務</a></li>
         <% end %>
       </ul>
-      <% if current_admin.super == true %>
+      <% if current_admin.superadmin == 1 %>
       <ul>
         <li><a href="<%= admin_announcements_path %>"><img src="/images/news.png">最新消息</a></li>
         <li class="menu-box"><a href="#"><img src="/images/page.png">投資人服務</a>

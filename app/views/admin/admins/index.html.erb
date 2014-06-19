@@ -22,7 +22,7 @@
               <td width="10%">Email：</td>
               <td width="40%">
               	<%= f.text_field :email, class: 'text' %>
-              	<%= f.hidden_field :super, value: false  %>
+              	<%= f.hidden_field :superadmin, value: false  %>
               	<%= f.hidden_field :accessLevel, value: 1  %>
               </td>
             </tr>
@@ -44,7 +44,7 @@
       <div class="list">
       	<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				  <% @admins.each do | admin | %>  	
-							  	<% if admin.super %>
+							  	<% if admin.superadmin == 1 %>
 									    <tr class="list-super-admin">
 										    <td width="18%"><%= admin.name %></td>
 									      <td width="72%"><%= admin.email %></td>

@@ -94,6 +94,6 @@ class Admin::AdminsController < AdminController #要改AdminController？原本�
 
 private        
         def admin_params
-	        	params.require(:admin).permit( :name, :email, :password, :password_confirmation, :super, :accessLevel )
+	        	params.require(:admin).permit( :name, :email, :password, :password_confirmation, :superadmin, :accessLevel )
         end
 end

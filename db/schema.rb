@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140618122327) do
+ActiveRecord::Schema.define(version: 20140619032416) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "",    null: false
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20140618122327) do
     t.string   "name"
     t.boolean  "super",                  default: false
     t.integer  "accessLevel",            default: 2
+    t.integer  "superadmin",             default: 0
   end
 
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true
@@ -85,6 +86,7 @@ ActiveRecord::Schema.define(version: 20140618122327) do
     t.integer  "ranking",    default: 999,   null: false
     t.string   "locale"
     t.boolean  "messup",     default: false, null: false
+    t.integer  "chaos",      default: 404
   end
 
   create_table "brproduct_translations", force: true do |t|
@@ -152,6 +154,7 @@ ActiveRecord::Schema.define(version: 20140618122327) do
     t.integer  "ranking",    default: 999,   null: false
     t.string   "locale"
     t.boolean  "messup",     default: false, null: false
+    t.integer  "chaos",      default: 404
   end
 
   create_table "hqproduct_translations", force: true do |t|

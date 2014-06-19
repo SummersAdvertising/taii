@@ -24,7 +24,7 @@
             <tr>
               <td>超級管理員：</td>
               <td>
-              	<% if @admin.super %>
+              	<% if @admin.superadmin == 1 %>
               		<%= f.label "是" %>
             		<% else %>
             			<%= "否" %>
