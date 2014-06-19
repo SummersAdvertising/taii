@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140619095659) do
+ActiveRecord::Schema.define(version: 20140619130205) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "",    null: false
@@ -106,10 +106,10 @@ ActiveRecord::Schema.define(version: 20140619095659) do
 
   create_table "dividend_histories", force: true do |t|
     t.integer  "fiscal_year",                                              null: false
-    t.decimal  "sre",               precision: 10, scale: 3, default: 0.0, null: false
-    t.decimal  "scap",              precision: 10, scale: 3, default: 0.0, null: false
-    t.decimal  "cash",              precision: 10, scale: 3, default: 0.0, null: false
-    t.decimal  "total",             precision: 10, scale: 3, default: 0.0, null: false
+    t.decimal  "sre",               precision: 17, scale: 3, default: 0.0, null: false
+    t.decimal  "scap",              precision: 17, scale: 3, default: 0.0, null: false
+    t.decimal  "cash",              precision: 17, scale: 3, default: 0.0, null: false
+    t.decimal  "total",             precision: 17, scale: 3, default: 0.0, null: false
     t.date     "stock_paymentdate"
     t.date     "cash_paymentdate"
     t.datetime "created_at"
@@ -240,7 +240,7 @@ ActiveRecord::Schema.define(version: 20140619095659) do
   create_table "revenue_items", force: true do |t|
     t.integer  "fiscal_month",                                                   null: false
     t.string   "item",                                                           null: false
-    t.decimal  "value",                   precision: 10, scale: 3, default: 0.0, null: false
+    t.decimal  "value",                   precision: 17, scale: 3, default: 0.0, null: false
     t.integer  "ranking",                                          default: 999
     t.integer  "monthlyrevenuereport_id"
     t.datetime "created_at"

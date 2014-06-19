@@ -3,7 +3,7 @@
 	      	<%= latestRevenue.item %>
 	      </td>
 			  <td id='<%= "valuename#{latestRevenue.id.to_s}" %>'>
-				  <%= link_to  latestRevenue.value,  admin_revenue_item_path(latestRevenue.id)  %>
+				  <%= number_with_delimiter(latestRevenue.value)%>
 			  </td>
 		  	<td>
 		  		<div class="tool"> 

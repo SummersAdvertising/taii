@@ -11,7 +11,7 @@
 	      	<%= revenueitem.item %>
 	      </td>
 			  <td id='<%= "valuename#{revenueitem.id.to_s}" %>'>
-				  <%= link_to  revenueitem.value,  admin_revenue_item_path(revenueitem.id)  %>
+			  	<%= number_with_delimiter(revenueitem.value)%>
 			  </td>
 		  	<td>
 		  		<div class="tool"> 

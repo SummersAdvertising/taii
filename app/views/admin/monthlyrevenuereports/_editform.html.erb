@@ -102,16 +102,15 @@
 		//ajax:error on NewLevel action
 		$("#ajaxNewRevenueForm").on('ajax:error',function(evt, data, status, xhr) {
 			//alert("ajaxerror");
-		    var responseObject = $.parseJSON(xhr.responseText),
-		        errors = $('<ul />');
-		        
-		        //alert("ERROR with="+JSON.stringify(responseObject));
-		
+		   var responseObject = $.parseJSON(data.responseText);
+		    
+		     var response  = '';
+		    alert("ERROR with="+JSON.stringify(responseObject));
 		    $.each(responseObject, function(){
-		      errors.append('<li>' + this + '</li>');
-		    })
-		
-		    errors.appendTo($(this).find('.errors'));
+		      response = response + this.toString();
+		    });
+		    
+		    //alert(response);
 
 		});
 		//ajax:success on edit action
