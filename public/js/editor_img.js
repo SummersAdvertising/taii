@@ -58,12 +58,12 @@ editor.img = {
 			form.append(link);
 		}
 
-		var table = $('<table width="100%" border="0" cellspacing="0" cellpadding="0"></table>');
+		//var table = $('<table width="100%" border="0" cellspacing="0" cellpadding="0"></table>');
 		
 		form.appendTo(divwrap);
-		table.append($('<tr>').append($('<td width="100%" valign="top">').append(divwrap)));
+		//table.append($('<tr>').append($('<td width="100%" valign="top">').append(divwrap)));
 
-		$(".editorContent > .form").append(editorChild.append(table));
+		$(".editorContent > .form").append(editorChild.append(divwrap));
 	},
 	add: function(){
 		if(!$("#"+editor.img.fileinputID).val()){

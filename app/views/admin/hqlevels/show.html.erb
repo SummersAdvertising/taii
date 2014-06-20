@@ -1,11 +1,10 @@
 <header>
         <h2 class="left">產品介紹 <span>/ 集團角度</span></h2>
         <nav class="left"> <!-- 直接回到編輯頁不合理 因為有的階層根本不存在 -->
-		<%= link_to "[正體中文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW") , 'data-no-turbolink' => true %>
-		<%= link_to "[英文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("en"), :locale => "en") , 'data-no-turbolink' => true %>
-		<%= link_to "[簡體中文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("zh_CN"), :locale => "zh_CN" ) , 'data-no-turbolink' => true %>
-		<%= link_to "[日文]", admin_hqlevel_path( Hqlevel.return_root_node_on_demand("ja"), :locale => "ja" ) , 'data-no-turbolink' => true %>
-		目前語系：<%= I18n.locale.to_s%>
+        <% Hqlevel.full_house.each do | lang | %>
+        		<%= link_to t("env.language.#{lang.locale}"), admin_hqlevel_path( lang , locale: lang.locale ), 'data-no-turbolink' => true %>
+        <% end %>
+		目前語系：<%=t( "env.language.#{I18n.locale}") %>
 				</nav>
 </header>
  <article>
@@ -13,7 +12,7 @@
 		
 		<div class="hgroup">
 			<h3  class="left">
-					<% @breadcrumb.reverse.each_with_index do | bread, index | %>
+					<% @breadcrumb.each_with_index do | bread, index | %>
 								 	<%= bread.name if index == 0 %>
 			
 								 	<% if index >= 1  %>

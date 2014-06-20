@@ -12,8 +12,10 @@ class Admin::BrlevelsController < AdminController
   # GET /brlevels/1.json
   def show
 	@newbrlevel = Brlevel.new
-	@breadcrumb = @brlevel.find_my_direct_parent().load
-	@productsofthislevel = @brlevel.brproducts.load
+	@breadcrumb = @brlevel.find_my_direct_parent.reverse
+	@productsofthislevel =  Brlevel.with_products(@brlevel)
+	@directchildrent = @brlevel.find_my_direct_childrent.load
+	
   end
 
   # GET /brlevels/new

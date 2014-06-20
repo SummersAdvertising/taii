@@ -4,13 +4,70 @@ class Brlevel < ActiveRecord::Base
 	has_many :brproducts, -> { order('ranking, created_at') }  ,dependent: :destroy
 	
 	#self join
-	belongs_to :daddy, :class_name => "Brlevel"
+	belongs_to :daddy, :class_name => "Brlevel", :foreign_key => 'parent'
 	has_many :children, :class_name => "Brlevel", :foreign_key => 'parent'
 	
 	scope :top_level, -> { where(:parent => 0, :locale => I18n.locale) }	
 	
-	#return a tree of descendents [without] root node (in DFS way)
-  #each node has every columns' data of this hqlevel
+	#important
+	#SELECT brproducts.* FROM brproducts INNER JOIN brlevels ON brlevels.id = brproducts.brlevel_id
+	#WHERE ( brproducts.brlevel_id = ? and brlevels.locale = ? )
+	def self.with_products(levelid=1, locale=I18n.locale)
+			Brproduct.with_translations(I18n.locale).joins(:brlevel).where(["brproducts.brlevel_id = ? and brlevels.locale = ?", levelid, locale ])
+	end
+  
+  #return all node at same level besides itselft
+  def find_my_siblings
+  	Brlevel.where(level: self.level, locale: I18n.locale).where.not(id: self.id).select(:id, :level) 
+  end
+  
+  def self.full_house
+  	return Brlevel.where('parent=0')
+  end
+  
+  #return one level only
+  #should be useful to create subfolder
+  def find_my_direct_childrent
+  
+   	  Brlevel.with_translations(I18n.locale).where("brlevels.level="+(self.level+1).to_s+" and brlevels.parent="+self.id.to_s+" and brlevels.locale='"+ I18n.locale.to_s+"'").order('brlevels.ranking, brlevels.id').select("brlevels.id, brlevels.ranking ,brlevels.level,brlevels.updated_at, brlevels.chaos, brlevel_translations.name")  	
+  
+  end
+  
+    #should be useful to create breadcrum
+  def find_my_direct_parent
+  	
+  	 directparents = self.findpapa.dup
+  	 @@directparent.clear
+  	 
+  	 return directparents
+  	 
+  end
+  
+  #find direct parent levle mainly for breadcrumb
+	@@directparent = []
+	def findpapa
+		if self.parent > 0	
+				if daddy.parent != 0
+						@@directparent << daddy
+						daddy.findpapa
+				end
+		end 
+		
+ 			 @@directparent << self
+			 return @@directparent
+
+	end
+	    
+  def return_root_node
+  	return Brlevel.find_by('parent=0 and '+"locale = '"+I18n.locale.to_s+"'")
+  end
+  
+   def self.return_root_node_on_demand(locale)
+  	return Brlevel.find_by('parent=0 and '+"locale = '"+locale.to_s+"'")
+  end
+  
+  #return a tree of descendents [without] root node (in DFS way)
+  #each node has every columns' data of this brlevel
   def descendents
 
 		  #children.preload(:parent).each do |child|  child.descendents end
@@ -18,80 +75,27 @@ class Brlevel < ActiveRecord::Base
 	      [child] + child.descendents
 	    end
    end
-
-  #all parent level
-  # def ancestors(root)
-#   	startfrom = self.id
-#   	result = ""
-#     while  startfrom != root do
-# 	    result += (Brlevel.where(id: startfrom).select([:id]))[0][:id].to_s + ","
-# 	    startfrom -= 1
-# 	end
-# 	return Brlevel.where( id: result.split(","))
-#   end
-   
   #PRACTICE
   #return a tree of descendents [with] root node (in DFS way)  
-  #each node has every columns' data of return hqlevel
+  #each node has every columns' data of return brlevel
   def self_and_descendents
     [self] + descendents
   end
   #PRACTICE  
   #return a tree of descendents [with] root node (in DFS way)  
-  #each node has only [name] column of return hqlevel
+  #each node has only [name] column of return brlevel
   def descendent_names
      self_and_descendents.map(&:name).flatten 
   end
   
   #PRACTICE
   #return a tree of descendents [with] root node (in DFS way)  
-  #each node contains pre-defined columns of return hqlevel
+  #each node contains pre-defined columns of return brlevel
   #take this as an example which will return [name] [parent] and [level]
   def descendent_keyinfo
   	 self_and_descendents.map{ |f|
 		{ id: f.id, name: f.name, parent: f.parent, level: f.level}
 		}.flatten
-  end
-  
-  #return all node at same level besides itselft
-  def find_my_siblings
-  	Brlevel.where(level: self.level, locale: I18n.locale).where.not(id: self.id).select(:id, :level) 
-  end
-  
-  #return one level only
-  #should be useful to create subfolder
-  def find_my_direct_childrent
-	  # globalize 後使用
-	  #Hqlevel.where("level="+(self.level+1).to_s+" and parent="+self.id.to_s).order('ranking DESC, id').select([:id, :level,:updated_at])  	
-  	  #還沒使用 globalize 前使用
-#   	  Brlevel.where("level="+(self.level+1).to_s+" and parent="+self.id.to_s).order('ranking , id').select([:id, :name, :level,:ranking,:updated_at])  	
-   	  Brlevel.where("level="+(self.level+1).to_s+" and parent="+self.id.to_s+" and locale='"+ I18n.locale.to_s+"'").order('ranking, id').select(:id, :ranking ,:level,:updated_at, :chaos)  	
-  end
-  
-  #should be useful to create breadcrum
-  def find_my_direct_parent()
-	  root = Brlevel.return_root_node_on_demand(I18n.locale).id.to_i
-	  
-	  result = self.id.to_s+ "," 	  #to remove current level from breadcrum, just don't push self.id.to_s into result at very beginning
-	  startfrom = (Brlevel.where("id=" + self.id.to_s).select([:parent]))[0][:parent]
-	  result += startfrom.to_s+ ","
-	  while  startfrom > root do
-		  currentparent = (Brlevel.where("id=" + startfrom.to_s).select([:parent]))[0][:parent].to_s
-	  	  result += currentparent + ","
-	  	  startfrom = currentparent.to_i
-	  end
-
-	  return Brlevel.where( id: result.split(","))
-	  
-	  #Hqlevel.where("id=" + :id.to_s).select([:id, :name, :level,:updated_at])  	
-  end
-    
-  def return_root_node
-  	return Brlevel.find_by('parent=0 and '+"locale = '"+I18n.locale.to_s+"'")
-  end
-  
-   def self.return_root_node_on_demand(locale)
-  	return Brlevel.find_by('parent=0 and '+"locale = '"+locale.to_s+"'")
   end
 
 end

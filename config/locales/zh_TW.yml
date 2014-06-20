@@ -1,4 +1,10 @@
 zh_TW:
+  env:
+    language:
+      zh_CN: "简中"
+      zh_TW: "繁中"
+      en: "EN"
+      ja: "JP"
   activerecord:
     models:
       announcement: "最新消息"

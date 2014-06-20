@@ -1,4 +1,4 @@
-<% @hqlevel.find_my_direct_childrent().each do |levelsib| %>
+<% @directchildrent.each do |levelsib| %>
 	<!-- for show and sortable -->
 	<% if current_admin.superadmin == 1 %>
 			<tr <%= "id=dragablecontainer_#{levelsib.id.to_s}" %> class="dragable <%= "tr-#{levelsib.id.to_s}-for-show" %>">
