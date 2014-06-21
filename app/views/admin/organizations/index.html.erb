@@ -1,16 +1,15 @@
 	<header>
 	    <h2 class="left">工廠業務</h2>
 	    <nav class="left">
-					<%= link_to "[正體中文]", admin_organizations_path( :locale => "zh_TW") , 'data-no-turbolink' => true %>
-					<%= link_to "[英文]", admin_organizations_path( :locale => "en") , 'data-no-turbolink' => true %>
-					<%= link_to "[簡體中文]", admin_organizations_path( :locale => "zh_CN" ) , 'data-no-turbolink' => true %>
-					<%= link_to "[日文]", admin_organizations_path(  :locale => "ja" ) , 'data-no-turbolink' => true %>
-			目前語系：<%= I18n.locale.to_s%>
+        <% Hqlevel.full_house.each do | lang | %>
+        		<%= link_to t("env.language.#{lang.locale}"), admin_organizations_path(locale: lang.locale ), 'data-no-turbolink' => true %>
+        <% end %>
+			目前語系：<%=t( "env.language.#{I18n.locale}") %>
 	    </nav>
 	</header>
       <article>
         <div class="button">
-        	<a href='#' id="createAOrgbutton" class="right highlight" >新增工廠<img src="/images/add.png"></a>	 
+        	<a href='javascript: void(0)' id="createAOrgbutton" class="right highlight" >新增工廠<img src="/images/add.png"></a>	 
         </div>
 
   	<p class="notice"><%= notice %></p>
@@ -36,7 +35,7 @@
 				    <%= f.text_field :address , :id => 'createaddress' , class: 'text' %>
         	</td>
 			<td width='18%' align="right">
-	        	<%= link_to '儲存', "#", onclick: "$('#ajaxNewOrgForm').submit()", title: "儲存" %>
+	        	<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxNewOrgForm').submit()", title: "儲存" %>
 				<a id="cancelAOrgbutton" title="取消" href="#">取消</a>
 			</td>
 			<% end %>
@@ -69,17 +68,18 @@ $('#ajaxNewOrgForm')
 	
   })
   .bind('ajax:error', function(evt, xhr, status, error){
-	//alert("ajaxerror");
-    var responseObject = $.parseJSON(xhr.responseText),
-        errors = $('<ul />');
-        
-        //alert("ERROR with="+JSON.stringify(responseObject));
-
-    $.each(responseObject, function(){
-      errors.append('<li>' + this + '</li>');
-    })
-
-    errors.appendTo($(this).find('.errors'));
+		//alert("ajaxerror");
+	    var responseObject = $.parseJSON(xhr.responseText),
+	        errors = $('<ul />');
+	        
+	        //alert("ERROR with="+JSON.stringify(responseObject));
+	
+	    $.each(responseObject, function(){
+	      errors.append('<li>' + this + '</li>');
+	    })
+	
+	    //errors.appendTo($(this).find('.errors'));
+	    alert(responseObject);
 });
 
 </script>

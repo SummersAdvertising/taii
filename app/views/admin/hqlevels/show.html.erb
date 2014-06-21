@@ -53,7 +53,7 @@
        <%  if @hqlevel.level > 0 && @hqlevel.level < 5  %>
 		<div class="hgroup">
 			<h3  class="left">
-			<% @breadcrumb.reverse.each_with_index do | bread, index | %>
+			<% @breadcrumb.each_with_index do | bread, index | %>
 			 	<%= bread.name if index == 0 %>
 			 	<% if index >= 1 %>
 				 	<span>/<%= bread.name %></span>
@@ -97,7 +97,7 @@
       </article>
 
 <script>
-
+		
 		//show create new level inputs
 		$( "#createALevelbutton" ).mouseup(function() {
 		  $( "#createNewLevel" ).toggle();
@@ -135,7 +135,7 @@
 		      response = response + this.toString();
 		    });
 		    
-		    //alert(response);
+		    alert(response);
 		});
 
 		//rename link

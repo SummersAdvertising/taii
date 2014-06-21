@@ -19,7 +19,7 @@
 						  <table width="100%" border="0" cellspacing="0" cellpadding="0">
 						    <tr>
 						      <td width="7%">年度：</td>
-						      <td width="29%"><%= text_field_tag :filename %></td>
+						      <td width="29%"><%= text_field_tag :filename , nil, :placeholder => "顯示名稱" %></td>
 						      <td width="2%">&nbsp;</td>
 						      <td width="7%">檔案：</td>
 						      <td width="55%"><%= file_field_tag :attachment , class: 'file' %></td>

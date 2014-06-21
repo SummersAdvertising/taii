@@ -3,6 +3,9 @@ class Brlevel < ActiveRecord::Base
 		
 	has_many :brproducts, -> { order('ranking, created_at') }  ,dependent: :destroy
 	
+	#validation
+	validates_presence_of :name
+	
 	#self join
 	belongs_to :daddy, :class_name => "Brlevel", :foreign_key => 'parent'
 	has_many :children, :class_name => "Brlevel", :foreign_key => 'parent'
@@ -46,16 +49,17 @@ class Brlevel < ActiveRecord::Base
   #find direct parent levle mainly for breadcrumb
 	@@directparent = []
 	def findpapa
-		if self.parent > 0	
-				if daddy.parent != 0
-						@@directparent << daddy
-						daddy.findpapa
-				end
-		end 
-		
- 			 @@directparent << self
-			 return @@directparent
 
+	  if self.parent == 0
+  			@@directparent << self
+ 			 return @@directparent
+ 		end		
+ 		
+		if self.parent > 0	
+ 				@@directparent << self
+				daddy.findpapa
+    end
+		
 	end
 	    
   def return_root_node

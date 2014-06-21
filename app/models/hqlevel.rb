@@ -41,7 +41,8 @@ class Hqlevel < ActiveRecord::Base
   #should be useful to create breadcrum
   def find_my_direct_parent
   	
-  	 directparents = self.findpapa.dup
+  	 self.findpapa
+  	 directparents = @@directparent.dup
   	 @@directparent.clear
   	 
   	 return directparents
@@ -51,16 +52,17 @@ class Hqlevel < ActiveRecord::Base
   #find direct parent levle mainly for breadcrumb
 	@@directparent = []
 	def findpapa
-		if self.parent > 0	
-				if daddy.parent != 0
-						@@directparent << daddy
-						daddy.findpapa
-				end
-		end 
-		
- 			 @@directparent << self
-			 return @@directparent
 
+	  if self.parent == 0
+  			@@directparent << self
+ 			 return @@directparent
+ 		end		
+ 		
+		if self.parent > 0	
+ 				@@directparent << self
+				daddy.findpapa
+    end
+		
 	end
    
   

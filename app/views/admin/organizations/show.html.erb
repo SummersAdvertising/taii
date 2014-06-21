@@ -18,11 +18,10 @@ $(function(){
 	<header>
         <h2 class="left">業務管理</h2>
         <nav class="left">
-					<%= link_to "[正體中文]", admin_organizations_path( :locale => "zh_TW") , 'data-no-turbolink' => true %>
-					<%= link_to "[英文]", admin_organizations_path( :locale => "en") , 'data-no-turbolink' => true %>
-					<%= link_to "[簡體中文]", admin_organizations_path( :locale => "zh_CN" ) , 'data-no-turbolink' => true %>
-					<%= link_to "[日文]", admin_organizations_path(  :locale => "ja" ) , 'data-no-turbolink' => true %>
-			目前語系：<%= I18n.locale.to_s%>
+        <% Hqlevel.full_house.each do | lang | %>
+        		<%= link_to t("env.language.#{lang.locale}"), admin_organizations_path(locale: lang.locale ), 'data-no-turbolink' => true %>
+        <% end %>
+			目前語系：<%=t( "env.language.#{I18n.locale}") %>
         </nav>
 	</header>
 	
@@ -30,22 +29,11 @@ $(function(){
         <div class="hgroup">
           <h3>工廠資料</h3>
         </div>
-
+        <p><%= flash[:notice] %></p>
         <div class="form">
           <table width="100%" border="0" cellspacing="0" cellpadding="0">
 	           <%= form_for(@organization,:url => admin_organization_path(@organization.id, :locale=> I18n.locale), :html => { id: 'orgAttrUpdateForm',:method =>  "PATCH"} ) do |f| %>
 		            <tr>							       
-										  <% if @organization.errors.any? %>
-										    <div id="error_explanation">
-										      <h2><%= pluralize(@organization.errors.count, "error") %> prohibited this organization from being saved:</h2>
-										
-										      <ul>
-										      <% @organization.errors.full_messages.each do |msg| %>
-										        <li><%= msg %></li>
-										      <% end %>
-										      </ul>
-										    </div>
-										  <% end %>
 									
 											<td width="7%">廠名：</td>
 				              <td width="29%"><%= f.text_field :org_name, class: 'text' %></td>
@@ -63,7 +51,7 @@ $(function(){
         </div>
         
          <% if @representatives.count < 4 %>
-         	<p id="notice"><%= notice %></p>
+         	<p id="notice"><%= flash[:newreperror] %></p>
 	        
 	        <div id="input_form_container">
 				<div id="createNewRep">
@@ -92,8 +80,6 @@ $(function(){
 			</div>
 	        <div class="button">
 	        	<a href='#' id="createARepbutton" class="right highlight"  onclick="$('#ajaxNewRepForm').submit();" >新增業務<img src="/images/add.png"></a>
-	        	<!-- <%# link_to '新增業務', "#", title: "新增業務" %> -->
-                <!-- <a id="cancelALevelbutton" title="取消" href="#">取消</a> -->
 	        	
 	        </div>
       	 <% end %> 

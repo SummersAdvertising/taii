@@ -12,7 +12,7 @@ class Admin::BrlevelsController < AdminController
   # GET /brlevels/1.json
   def show
 	@newbrlevel = Brlevel.new
-	@breadcrumb = @brlevel.find_my_direct_parent.reverse
+	@breadcrumb = @brlevel.find_my_direct_parent
 	@productsofthislevel =  Brlevel.with_products(@brlevel)
 	@directchildrent = @brlevel.find_my_direct_childrent.load
 	
@@ -40,7 +40,7 @@ class Admin::BrlevelsController < AdminController
 		      format.json { render json: @brlevel, status: :created, location: @brlevel }
 		    else
 		      #format.html { render action: "new" }
-		      format.json { render json: @brlevel.errors, status: :unprocessable_entity }
+		      format.json { render json: @brlevel.errors.full_messages, status: :unprocessable_entity }
 		    end
 		  end
 	  	#--

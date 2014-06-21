@@ -49,7 +49,7 @@
        <%  if @brlevel.level > 0 && @brlevel.level < 5  %>
 		<div class="hgroup">
 			<h3  class="left">
-			<% @breadcrumb.reverse.each_with_index do | bread, index | %>
+			<% @breadcrumb.each_with_index do | bread, index | %>
 			 	<%= bread.name if index == 0 %>
 			 	<% if index >= 1 %>
 				 	<span>/<%= bread.name %></span>
@@ -119,17 +119,15 @@
 		});
 		//ajax:error on NewLevel action
 		$("#ajaxNewLevelForm").on('ajax:error',function(evt, data, status, xhr) {
-			//alert("ajaxerror");
-		    var responseObject = $.parseJSON(xhr.responseText),
-		        errors = $('<ul />');
-		        
-		        //alert("ERROR with="+JSON.stringify(responseObject));
-		
+				var responseObject = $.parseJSON(data.responseText);
+		    
+		     var response  = '';
+//		    alert("ERROR with="+JSON.stringify(responseObject));
 		    $.each(responseObject, function(){
-		      errors.append('<li>' + this + '</li>');
-		    })
-		
-		    errors.appendTo($(this).find('.errors'));
+		      response = response + this.toString();
+		    });
+		    
+		    alert(response);
 
 		});
 

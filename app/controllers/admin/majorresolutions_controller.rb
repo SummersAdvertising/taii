@@ -33,7 +33,7 @@ class Admin::MajorresolutionsController < AdminController
         format.html { redirect_to edit_admin_majorresolution_path(@majorresolution), notice: 'Majorresolution was successfully created.' }
         format.json { render action: 'show', status: :created, location: @majorresolution }
       else
-        format.html { render action: 'new' }
+        format.html { redirect_to admin_majorresolutions_path, notice: @majorresolution.errors.full_messages }
         format.json { render json: @majorresolution.errors, status: :unprocessable_entity }
       end
     end
@@ -55,7 +55,6 @@ class Admin::MajorresolutionsController < AdminController
         format.html { redirect_to edit_admin_majorresolution_path(@majorresolution), notice: 'Majorresolution was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
         format.json { render json: @majorresolution.errors, status: :unprocessable_entity }
       end
     end

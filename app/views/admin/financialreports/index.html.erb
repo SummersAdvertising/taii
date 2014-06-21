@@ -3,7 +3,8 @@
   <nav class="left"></nav>
 </header>
 <article>
-  <div class="button"> <a href="#" id='createAFinancialbutton' class="right highlight">建立年份<img src="/images/add_folder.png"></a></div>
+  <div class="button"> <a href="javascript: void(0)" id='createAFinancialbutton' class="right highlight">建立年份<img src="/images/add_folder.png"></a></div>
+  <p><%= notice %></p>
   <!-- repeat  start -->
   <div class="list">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -35,7 +36,7 @@
 				        <%= f.text_field :fiscal_year, class: "text", placeholder:"年份/民國" %>
 	        	</td>
 	          <td width='18%' align="right">
-	          	<%= link_to '儲存', "#", onclick: "$('#ajaxNewFinancialForm').submit()", title: "儲存" %>
+	          	<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxNewFinancialForm').submit()", title: "儲存" %>
 	              <a id="cancelAFinancialbutton" title="取消" href="#">取消</a>
 	           </td>
            <% end %>		

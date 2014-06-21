@@ -14,7 +14,7 @@ class Admin::HqlevelsController < AdminController
 	#@hqlevels = @hqlevelsRoot.descendents()
 	@newhqlevel = Hqlevel.new
 	#@breadcrumb = @hqlevel.find_my_direct_parent().load#@hqlevel.findpapa
-	@breadcrumb = @hqlevel.find_my_direct_parent.reverse
+	@breadcrumb = @hqlevel.find_my_direct_parent
 	@productsofthislevel = Hqlevel.with_products(@hqlevel)
 	@directchildrent = @hqlevel.find_my_direct_childrent.load
 	#change find_each?

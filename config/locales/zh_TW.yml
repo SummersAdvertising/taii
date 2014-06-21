@@ -11,6 +11,23 @@ zh_TW:
     attributes:
       announcement:
         title: "標題"
+      hqlevel:
+        name: "分類名稱"
+      brlevel:
+        name: "分類名稱"
+      organization:
+        org_name: "廠名"
+        address: "地址"
+      representative:
+        division: "部門"
+        name: "姓名"
+        phone: "電話"
+      annualreport:
+        fiscal_year: "年份"
+      majorresolution:
+        fiscal_year: "年份"
+      financialreport:
+        fiscal_year: "年份"
   date:
     abbr_day_names:
     - 日
@@ -120,7 +137,7 @@ zh_TW:
       exclusion: 是被保留的關鍵字
       greater_than: 必須大於 %{count}
       greater_than_or_equal_to: 必須大於或等於 %{count}
-      inclusion: 沒有包含在列表中
+      inclusion:  數值不在允許範圍內
       invalid: 是無效的
       less_than: 必須小於 %{count}
       less_than_or_equal_to: 必須小於或等於 %{count}

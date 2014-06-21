@@ -4,7 +4,7 @@
         <tr id="createNewLevel" style="display:none"  class="list-edit">
   			        	<td width='6%' valign="top">&nbsp;</td>
         	<td width='76%' >
-					    <%= f.text_field :name, id: 'createname' , placeholder: '分類名稱', class: 'text', required: true %>
+					    <%= f.text_field :name, id: 'createname' , placeholder: '分類名稱', class: 'text' %>
 							<% if current_admin.superadmin == 1 %>
 									<%= f.check_box :chaos , { class: 'checkbox'  }, 200, 404 %> MESSUP
 							<% else %>

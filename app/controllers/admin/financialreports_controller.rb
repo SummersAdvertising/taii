@@ -33,7 +33,7 @@ class Admin::FinancialreportsController < AdminController
         format.html { redirect_to edit_admin_financialreport_path(@financialreport), notice: 'Financialreport was successfully created.' }
         format.json { render action: 'show', status: :created, location: @financialreport }
       else
-        format.html { render action: 'new' }
+        format.html { redirect_to admin_financialreports_path, notice: @financialreport.errors.full_messages }
         format.json { render json: @financialreport.errors, status: :unprocessable_entity }
       end
     end
@@ -55,7 +55,6 @@ class Admin::FinancialreportsController < AdminController
         format.html { redirect_to edit_admin_financialreport_path(@financialreport), notice: 'Financialreport was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
         format.json { render json: @financialreport.errors, status: :unprocessable_entity }
       end
     end

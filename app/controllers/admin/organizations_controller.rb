@@ -4,14 +4,14 @@ class Admin::OrganizationsController < AdminController
   # GET /organizations
   # GET /organizations.json
   def index
-    @organizations = Organization.with_translations(params[:locale])
+    @organizations = Organization.with_translations(I18n.locale)
     @neworg = Organization.new
   end
 
   # GET /organizations/1
   # GET /organizations/1.json
   def show
-  	@representatives = Representative.with_translations(params[:locale]).where(:organization_id => params[:id]).all
+  	@representatives = Organization.with_representatives(@organization)
   	@newRep = Representative.new
   end
 
@@ -41,7 +41,7 @@ class Admin::OrganizationsController < AdminController
 		    else
 		      #format.html { render action: "new" }
   		      #format.js  { render js:  @organization.errors, :status => :unprocessable_entity  }
-		      format.json { render json: @organization.errors, status: :unprocessable_entity }
+		      format.json { render json: @organization.errors.full_messages, status: :unprocessable_entity }
 		    end
 		  end
 
@@ -66,7 +66,7 @@ class Admin::OrganizationsController < AdminController
         format.html { redirect_to admin_organizations_path(:locale => I18n.locale)}
 	    format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
+        format.html { redirect_to admin_organization_path(@organization,locale: I18n.locale), notice: @organization.errors.full_messages }
         format.json { render json: @organization.errors, status: :unprocessable_entity }
       end
     end

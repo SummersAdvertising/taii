@@ -33,7 +33,7 @@ class Admin::AnnualreportsController < AdminController
         format.html { redirect_to edit_admin_annualreport_path(@annualreport), notice: 'Annualreport was successfully created.' }
         format.json { render action: 'show', status: :created, location: @annualreport }
       else
-        format.html { render action: 'new' }
+        format.html { redirect_to admin_annualreports_path, notice: @annualreport.errors.full_messages }
         format.json { render json: @annualreport.errors, status: :unprocessable_entity }
       end
     end
@@ -55,7 +55,7 @@ class Admin::AnnualreportsController < AdminController
         format.html { redirect_to edit_admin_annualreport_path(@annualreport), notice: 'Annualreport was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
+
         format.json { render json: @annualreport.errors, status: :unprocessable_entity }
       end
     end

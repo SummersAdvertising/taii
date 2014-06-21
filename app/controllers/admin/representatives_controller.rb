@@ -34,7 +34,7 @@ class Admin::RepresentativesController < AdminController
         format.html { redirect_to admin_organization_path(@representative.organization,:locale => I18n.locale), notice: 'Representative was successfully created.' }
         format.json { render action: 'show', status: :created, location: @representative }
       else
-        format.html { redirect_to admin_organization_path(@representative.organization,:locale => I18n.locale), notice: '請確認欄位填寫完整' }
+        format.html { redirect_to admin_organization_path(@representative.organization,:locale => I18n.locale), flash: { newreperror: @representative.errors.full_messages} }
         format.json { render json: @representative.errors, status: :unprocessable_entity }
       end
     end

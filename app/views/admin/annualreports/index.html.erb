@@ -3,8 +3,9 @@
   <nav class="left"></nav>
 </header>
 <article>
-  <div class="button"> <a href="#" id='createAnAnnualbutton' class="right highlight">建立年份<img src="/images/add_folder.png"></a></div>
+  <div class="button"> <a href="javascript: void(0)" id='createAnAnnualbutton' class="right highlight">建立年份<img src="/images/add_folder.png"></a></div>
   <!-- repeat  start -->
+  <p><%= notice %></p>
   <div class="list">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
     	<% @annualreports.each do |annualreport| %>
@@ -34,7 +35,7 @@
 				        <%= f.text_field :fiscal_year, class: "text", placeholder:"年份/民國" %>
 	        	</td>
 	          <td width='18%' align="right">
-	          	<%= link_to '儲存', "#", onclick: "$('#ajaxNewAnnualForm').submit()", title: "儲存" %>
+	          	<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxNewAnnualForm').submit()", title: "儲存" %>
 	              <a id="cancelALevelbutton" title="取消" href="#">取消</a>
 	           </td>
            <% end %>		
@@ -76,7 +77,8 @@
 		      errors.append('<li>' + this + '</li>');
 		    })
 		
-		    errors.appendTo($(this).find('.errors'));
+		    //errors.appendTo($(this).find('.errors'));
+		    alert(errors);
 
 		});
 
