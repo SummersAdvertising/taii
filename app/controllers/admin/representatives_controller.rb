@@ -31,11 +31,13 @@ class Admin::RepresentativesController < AdminController
 
     respond_to do |format|
       if @representative.save
-        format.html { redirect_to admin_organization_path(@representative.organization,:locale => I18n.locale), notice: 'Representative was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @representative }
+        #format.html { redirect_to admin_organization_path(@representative.organization,:locale => I18n.locale), notice: 'Representative was successfully created.' } 
+        format.js { render :js => "window.location = ('#{admin_organization_path(@representative.organization,:locale => I18n.locale)}');"}
+        #format.json { render action: 'show', status: :created, location: @representative }
       else
-        format.html { redirect_to admin_organization_path(@representative.organization,:locale => I18n.locale), flash: { newreperror: @representative.errors.full_messages} }
-        format.json { render json: @representative.errors, status: :unprocessable_entity }
+	      #format.html { render template: 'admin/organizations/show', flash: { newreperror: @representative.errors.full_messages} }
+        #format.html { redirect_to admin_organization_path(@representative.organization,:locale => I18n.locale), flash: { newreperror: @representative.errors.full_messages} }
+        format.json { render json: @representative.errors.full_messages, status: :unprocessable_entity }
       end
     end
   end
@@ -48,7 +50,7 @@ class Admin::RepresentativesController < AdminController
         format.html { redirect_to redirect_to admin_organization_path(@representative.organization,:locale => I18n.locale), notice: 'Representative was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
+        #format.html { render action: 'edit' }
         format.json { render json: @representative.errors, status: :unprocessable_entity }
       end
     end

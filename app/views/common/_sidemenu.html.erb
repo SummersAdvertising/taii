@@ -1,0 +1,42 @@
+   <aside>
+      <ul>
+        <li><%= link_to "公司基本資料", investor_investors_path("investors-info") , class: "investors-info" %></li>
+	      <li><%= link_to "重要公告", investor_investors_path("investors-announcement") , class: "investors-announcement" %></li>
+        <li><a href="javascript: void(0)" class='investor-999'>財務資訊</a>
+          <div class="sub" > 
+            <%= link_to "財務報告", financialreport_investors_path , class: "investors-financialreport" %>
+            <%= link_to "每月營收", monthlyrevenuereport_investors_path(fiscal_month: Time.now.month)  , class: "investors-monthlyrevenuereport"%>
+	          <%= link_to "財務預測", financialprojection_investors_path  , class: "investors-financialprojection" , 'data-no-turbolink' => true %>
+	         </div>
+        </li>
+        <li><%= link_to "公司年報", annualreport_investors_path , class: "annualreport" %></li>        
+        <li><%= link_to "股價資訊", investor_investors_path("investors-price") , class: "investors-price" %></li>
+        <li><%= link_to "股東服務", investor_investors_path("investors-service") , class: "investors-service" %></li>
+        <li><%= link_to "重要決議", majorresolution_investors_path , class: "majorresolution" %></li>
+        <li><%= link_to "公司治理", majorpolicy_investors_path , class: "majorpolicy" %></li>
+        <li><%= link_to "法人說明會", investor_investors_path("investors-legal") , class: "investors-legal" %></li>
+        <li><%= link_to "股利分派", dividend_history_investors_path , class: "dividend_history" %></li>
+        <li><%= link_to "公開資訊觀測站", investor_investors_path("investors-mops") , class: "investors-mops" %></li>
+        <li><%= link_to "獨立董事", investor_investors_path("investors-director") , class: "investors-director" %></li>
+	      <li><%= link_to "聯絡窗口", investor_investors_path("investors-contact") , class: "investors-contact" %></li>
+      </ul>
+    </aside>
+    
+    <script>
+			var pageName = window.location.href.split('/');
+			var alt = ['financialreport','monthlyrevenuereport','financialprojection']
+
+			if ( pageName ) {
+				if ( $.inArray(pageName[4], alt) != -1)
+				{
+					$('.investors-' + pageName[4]+'' ).addClass('active');	
+					$('.investor-999' ).parent().addClass('active');	
+				}
+				else
+				{
+					$('.' + pageName[pageName.length -1 ]+'' ).parent().addClass('active');	
+				}
+			}
+		
+
+		</script>

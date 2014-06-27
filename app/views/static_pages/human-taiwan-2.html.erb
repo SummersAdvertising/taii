@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/css/front/human.css">
+<style>
+#link{background:url(/css/images/hr-07.jpg) 0 0 no-repeat;height:599px;
+padding:130px 0 0 102px}
+#link a{color:#1c94fb}
+</style>
+<article>
+    <h2>關於台一</h2>
+    <%= render "human_sidemenu_tw" %>
+    <section>
+      <h3><%= t("human-taiwan-2.main_title") %></h3>
+      <div class="content"><br>
+      <div id="link">
+      <%= simple_format( t("human-taiwan-2.subtitle") )%>
+<a href="http://www.104.com.tw/" target="_blank">http://www.104.com.tw/</a><br>
+<br>
+<br>
+      <%= simple_format( t("human-taiwan-2.info") )%>
+        </div>
+      </div>
+    </section>
+  </article>
+

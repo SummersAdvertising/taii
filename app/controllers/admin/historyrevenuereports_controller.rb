@@ -33,7 +33,7 @@ class Admin::HistoryrevenuereportsController < AdminController
         format.html { redirect_to edit_admin_historyrevenuereport_path(@historyrevenuereport), notice: 'Historyrevenuereport was successfully created.' }
         format.json { render action: 'show', status: :created, location: @historyrevenuereport }
       else
-        format.html { render action: 'new' }
+        format.html { redirect_to admin_historyrevenuereports_path, flash: { notice: @historyrevenuereport.errors.full_messages } }
         format.json { render json: @historyrevenuereport.errors, status: :unprocessable_entity }
       end
     end
@@ -55,7 +55,7 @@ class Admin::HistoryrevenuereportsController < AdminController
         format.html { redirect_to edit_admin_historyrevenuereport_path(@historyrevenuereport), notice: 'Historyrevenuereport was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
+        format.html { redirect_to admin_historyrevenuereports_path, flash: { notice: @historyrevenuereport.errors.full_messages } }
         format.json { render json: @historyrevenuereport.errors, status: :unprocessable_entity }
       end
     end

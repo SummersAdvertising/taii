@@ -3,7 +3,8 @@
   <nav class="left"></nav>
 </header>
 <article>
-  <div class="button"><a href="#" id='createAMonthlybutton' class="right highlight">建立年份<img src="/images/add_folder.png"></a></div>
+  <div class="button"><a href="javascript: void(0)" id='createAMonthlybutton' class="right highlight">建立年份<img src="/images/add_folder.png"></a></div>
+  <p><%= notice %></p>
   <div class="list">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
     	    <% @monthlyrevenuereports.each do |monthlyrevenuereport| %>
@@ -33,8 +34,8 @@
 				        <%= f.text_field :fiscal_year, class: "text", placeholder:"年份/民國" %>
 	        	</td>
 	          <td width='18%' align="right">
-	          	<%= link_to '儲存', "#", onclick: "$('#ajaxNewMonthlyForm').submit()", title: "儲存" %>
-	              <a id="cancelAMonthlybutton" title="取消" href="#">取消</a>
+	          	<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxNewMonthlyForm').submit()", title: "儲存" %>
+	              <a id="cancelAMonthlybutton" title="取消" href="javascript: void(0)">取消</a>
 	           </td>
            <% end %>		
 	        </tr>
@@ -53,29 +54,4 @@
 		  $( "#createNewMonthly" ).toggle();
 		});
 		
-		//ajax:success on NewLevel action
-		$("#ajaxNewMonthlyForm").on('ajax:success',function(evt, data, status, xhr) {
-			//alert("ajaxsuccess");
-		    var $this = $(this);
-		
-		    $this.find('.errors').empty();
-				$("#createNewMonthly").toggle();
-
-		});
-		//ajax:error on NewLevel action
-		$("#ajaxNewMonthlyForm").on('ajax:error',function(evt, data, status, xhr) {
-			//alert("ajaxerror");
-		    var responseObject = $.parseJSON(xhr.responseText),
-		        errors = $('<ul />');
-		        
-		        //alert("ERROR with="+JSON.stringify(responseObject));
-		
-		    $.each(responseObject, function(){
-		      errors.append('<li>' + this + '</li>');
-		    })
-		
-		    errors.appendTo($(this).find('.errors'));
-
-		});
-
 </script>

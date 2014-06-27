@@ -39,8 +39,8 @@
 						<!-- style modify here -->
 							<% end %>
 		  	  <td width="18%" align='right'>
-			  				<%= link_to '儲存', "#", onclick: "$('#ajaxRenameHistoryForm#{history.id.to_s}').submit()", title: "儲存" %>
-							<a <%= "id=cancelhistory#{history.id.to_s}" %> class="cancelRenameAHistorybutton" title="取消" href='#' >取消</a>
+			  				<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxRenameHistoryForm#{history.id.to_s}').submit()", title: "儲存" %>
+							<a <%= "id=cancelhistory#{history.id.to_s}" %> class="cancelRenameAHistorybutton" title="取消" href='javascript: void(0)' >取消</a>
 			  	 </td>
 	</tr>
 	<!-- for edit and unsortable  END-->

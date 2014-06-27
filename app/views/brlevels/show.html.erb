@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="/css/front/product.css">
+<style>
+.level-5{padding:0 0 15px 0}
+.level-5 > li > a{display:block;width:100%;height:36px;background:url(/css/images/pd-07.png) 59px 16px no-repeat;
+padding:5px 0 0 85px;color:#000}
+.level-5 > li > .active{background:url(/css/images/pd-07h.png) 59px 16px no-repeat;color:#106ab7;font-weight:900}
+</style>
+<article>
+    <h2>產品介紹</h2>
+    <aside>
+      <ul id="tab">
+        <li><a href="<%= hqlevel_path(Hqlevel.return_root_node_on_demand(I18n.locale), :locale =>I18n.locale) %>">總覽</a></li>
+        <li><a href="javascript: void(0)" class='active'>工廠</a></li>
+      </ul>
+
+    <div id="list-box"  >
+    
+    		<%= render 'sidemenu' %>
+    
+    </div>
+    </aside>
+    <section> 
+    	<span id="crumb"  data-no-turbolink>
+    			產品介紹 >
+    			<% @breadcrumb.reverse.each_with_index do | level, index | %>
+    					<%= link_to level.name, brlevel_path(level,locale: I18n.locale) %> <%= " > " if @breadcrumb.length - 1 != index%>
+    			<% end %>
+    		</span>
+    		
+      
+        <p id="items_grid"></p>
+      
+  
+    </section>
+  </article>
+    <script type="text/javascript">
+		$(function(){
+			//$('.level-2,.level-3,.level-4').hide()
+			$('.level-2,.level-3,.level-4,.level-5').hide()
+		  $('#list-box a').click(function(){
+			  $(this).addClass('active').parent('li').siblings().children('a').removeClass('active');
+				$(this).siblings('ul').toggle(500).parent('li').siblings().children('ul').slideUp(500)
+		  });
+		})
+	</script>
+	<script type="text/javascript">
+	$(function(){	
+		var _showTab = 0;
+		var $defaultLi = $('#tab li').eq(_showTab).addClass('active');	
+		$($defaultLi.find('a')).siblings().hide();  
+		$('#tab li').click(function() {		
+			var $this = $(this),
+				_clickTab = $this.find('a');		
+			$this.addClass('active').siblings('.active').removeClass('active');
+			$(_clickTab).stop(false, true).fadeIn(1000).siblings().hide(); 
+			//return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+	});
+	</script>

@@ -94,6 +94,8 @@
 
 		//show create new level inputs
 		$( "#createALevelbutton" ).mouseup(function() {
+		  $("[id^=renamelevelcontainer_]").hide();
+			$("[class$=-for-show]" ).show();
 		  $( "#createNewLevel" ).toggle();
 		  if($( "#createNewLevel" ).is(":visible") == true){
 			$('[_height=auto]').height($('[_height=auto]').height()+100);	  
@@ -133,6 +135,8 @@
 
 		//rename link
 		$("#mainLevelList").on('mouseup',".renameLink", function() {
+			$(".list-edit").hide();
+			$(".dragable").show();
 			$(".tr-"+this.id.toString().replace("level","")+"-for-edit").toggle();
 			$(".tr-"+this.id.toString().replace("level","")+"-for-show" ).toggle();
 		});

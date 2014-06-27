@@ -1,0 +1,30 @@
+
+/*-----------------------------------------------------------------------頁身---*/
+
+#wrapper > article{padding:102px 0 0 0}
+
+/*-----------------------------------------------------------------------大標---*/
+
+article h2{background:url(../images/ct-01.png) center 0 no-repeat}
+
+/*-----------------------------------------------------------------------內容---*/
+
+article section{padding:60px 0 120px 0;line-height:2em;
+color:#555;position:relative;z-index:1;background:#F6F6F3}
+
+article section > table{width:933px;margin:0 auto}
+#note{background:url(../images/ct-04.jpg) 0 0 no-repeat;width:908px;height:719px}
+#note td{padding:60px 30px 0 30px}
+
+article section p{font-size:25px;line-height:1.7em;padding:0 0 0 30px}
+article section span,article section span a{color:#aaa}
+
+/*-----------------------------------------------------------------------小標---*/
+
+article section h3{color:#095368;border-left:6px solid #7CAB2B;font:300 26px 微軟正黑體,Microsoft JhengHei;
+padding:0 0 0 16px;margin:0 0 20px 0}
+article section h4{color:#00a1a9;padding:0 0 0 21px;margin:0 0 20px 0;font:300 20px 微軟正黑體,Microsoft JhengHei}
+article section h5{font:900 15px 微軟正黑體,Microsoft JhengHei;color:#222}
+
+
+

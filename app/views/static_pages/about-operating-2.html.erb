@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="/css/front/about.css">
+<style>
+article aside ul li.active > a { background-image: url(/css/images/ab-03hh.png) }
+article section .content { padding: 0 0 80px 55px }
+article section p { padding: 0 0 25px 22px }
+</style>
+<article>
+    <h2>關於台一</h2>
+    <aside>
+      <ul>
+        <li class="about-concept"><%= link_to t("about_side_menu.concept"), page_pages_path("about-concept") %></li>
+        <li class="about-responsibility"><%= link_to t("about_side_menu.responsibility"), page_pages_path("about-responsibility") %></li>
+        <li class="about-history"><%= link_to t("about_side_menu.history"), page_pages_path("about-history") %></li>
+        <li class="about-product-1"><%= link_to t("about_side_menu.product-1"), page_pages_path("about-product-1") %></li>
+        <li class="about-evolve"><%= link_to t("about_side_menu.evolve"), page_pages_path("about-evolve") %></li>
+        <li class="about-superiority"><%= link_to t("about_side_menu.superiority"), page_pages_path("about-superiority") %></li>
+        <li class="active"><a><%=t("about-operating-1.nav_main_title")%></a>
+          <div class="sub">
+	          <%= link_to t("about-operating-1.nav_main_op_1"), page_pages_path("about-operating-1")%>
+	          <%= link_to t("about-operating-1.nav_main_op_2"), page_pages_path("about-operating-2"), class: "active"  %> 
+	          <%= link_to t("about-operating-1.nav_main_op_3"), page_pages_path("about-operating-3") %> 
+          </div>
+        </li>
+        <li class="about-organization"><%= link_to t("about_side_menu.organization"), page_pages_path("about-organization") %></li>
+        <li class="about-group"><%= link_to t("about_side_menu.group"), page_pages_path("about-group") %></li>
+      </ul>
+    </aside>
+    <section>
+      <h3><%=t("about-operating-2.main_title")%></h3>
+      <p><%=t("about-operating-2.subtitle")%></p>
+      <h4><%=t("about-operating-2.title_one")%></h4>
+      <div class="content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="3%" valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td width="97%" valign="top"><%=t("about-operating-2.title_one_content_1")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%=t("about-operating-2.title_one_content_2")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%=t("about-operating-2.title_one_content_3")%></td>
+          </tr>
+        </table>
+      </div>
+      <h4><%=t("about-operating-2.title_two")%></h4>
+      <div class="content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="3%" valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td width="97%" valign="top"><%=t("about-operating-2.title_two_content_1")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%=t("about-operating-2.title_two_content_2")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%=t("about-operating-2.title_two_content_3")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%=t("about-operating-2.title_two_content_4")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%=t("about-operating-2.title_two_content_5")%></td>
+          </tr>
+        </table>
+      </div>
+      <h4><%=t("about-operating-2.title_three")%></h4>
+      <div class="content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="3%" valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td width="97%" valign="top"><%=t("about-operating-2.title_three_content_1")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%=t("about-operating-2.title_three_content_2")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%=t("about-operating-2.title_three_content_3")%><br>
+              <br>
+              <br>
+              <img src="<%= t("about-operating-2.title_three_img_url") %>"></td>
+          </tr>
+        </table>
+      </div>
+      <h4><%=t("about-operating-2.title_four")%></h4>
+      <div class="content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="3%" valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td width="97%" valign="top"><%=t("about-operating-2.title_four_content_1")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%=t("about-operating-2.title_four_content_2")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%=t("about-operating-2.title_four_content_3")%><br>
+              <br>
+              <br>
+              <img src="<%= t("about-operating-2.title_four_img_url") %>"></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </article>
+

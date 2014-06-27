@@ -1,10 +1,657 @@
 zh_TW:
+  about_side_menu:
+    concept: "經營理念"
+    responsibility: "企業責任"
+    history: "企業沿革"
+    product-1: "主要產品"
+    evolve: "研究發展"
+    superiority: "競爭優勢"
+    operating-1: "營運佈局"
+    organization: "組織架構"
+    group: "集團架構"
+  human_side_menu:
+    title: "台一江銅、銅業"
+    guangzhou-1: "人力資源政策"
+    guangzhou-2: "菁英招募"
+    guangzhou-3: "薪資福利"
+    guangzhou-4: "教育訓練"
+    taiwan-1: "台灣總公司"
+  human_side_menu_tw:
+    title: "台灣總公司"
+    taiwan-1: "人力資源政策"
+    taiwan-2: "菁英招募"
+    taiwan-3: "薪資福利"
+    taiwan-4: "教育訓練"
+  about-responsibility:
+    main_title: "企業責任"
+    title_one: "落實公司治理"
+    title_one_content: "<ul><li>台一集團訂有相關企業社會責任之制度與執行的相關規定。</li><li>台一集團設置有推動企業社會責任專（兼）職單位運作相關措施。</li><li>集團總部及各事業部相關權責單位共同推動企業社會責任之運行，並透過環保政策，以實踐社會責任時對公司產生的具體效果即為減少資源的浪費並增進能源使用效率。</li></ul>"
+    title_two: "發展永續環境"
+    title_two_content: "台一集團實踐社會責任時透過各種宣傳方式，宣示公司的企業社會責任目標，如：推動 RoHS 無危害物質管制作業系統，積極推動綠色生產及採購作業，並實現於製程中。同時推動清潔生產技術，將資源充分利用，改善製程及操作管理，以減少廢棄物之產生並選用低污染或無污染之原物料。 "
+    title_three: "維護社會公益"
+    title_three_content: "<ul><li>遵守相關勞動法規，保障員工之合法權益，建立適當之管理方法與程序。</li><li>提供員工安全與健康之工作環境，並對員工定期實施安全與健康教育。</li><li>制定並公開其消費者權益政策，以及對其產品與服務提供透明且有效之消費者申訴程序。 </li><li>與供應商合作，共同致力提升企業社會責任。</li><li>藉由商業活動、實物捐贈、企業志工服務或其他免費專業服務，參與社區發展及慈善公益團體相關活動。</li></ul>"
+  about-history:
+    main_title: "企業沿革"
+    imageurl: "/css/images/ab-10.jpg"
+  about-product-1:
+    nav_main_product: "主要產品"
+    nav_main_product_1: "主要產品（一）"
+    nav_main_product_2: "主要產品（二）"
+    main_title: "主要產品（一）"
+    product_1: "1、裸銅線"
+    subproduct_1: "裸銅線："
+    description_1: "主要可進一步加工製成漆包線，電線電纜，異型銅線，平角銅線，光纜及建築用線"
+    subproduct_2: "異型銅材/線："
+    description_2: "為用於電動車馬達的主要零件<ul><li>至 2020 年全球電動汽車及油電混合車的市場規模約可達 1,300 萬輛，全球電動車市佔率約達 13% 以上，將帶動相關車廠零組件之需求</li><li>台一擁有多年銅加工及銅材生產及研發經驗，跨入電動車馬達關鍵零件 --- 異型銅材之研發及製造，具發展優勢</li></ul>"
+    subproduct_3: "平角銅線："
+    description_3: "為製造大型變壓器或大型馬達等感應線圈之材料" 
+    product_2: "2、三層絕緣線"
+    subproduct_4: "特性："
+    description_4: "<ul>
+                <li>符合客戶需求耐熱等級之塑料，利用押出機，可直接作為變壓器之繞組線圈，而不需中間絕緣帶間隔柵</li>
+                <li>可使變壓器縮小體積，約為傳統變壓器的一半，而重量減輕為傳統變壓器的 2/3</li>
+                <li>可大幅降低材料成本及加工費</li>
+              </ul>"
+    subproduct_5: "產品應用："
+    description_5: "<ul>
+                <li>切換式電源供應器中的變壓器繞組線材</li>
+                <li>消費性電子產品：機器人、印表機、電玩遊戲機、LCD、 PDP、PDA</li>
+                <li>電池座充器繞線材：應用於攝錄影機、手機、數位相機</li>
+                <li>AC 轉換器繞線材：應用於 PC、數位相機</li>
+              </ul>"
+    product_3: "3、AC,DC Power Cord and Electric Wire"
+    product_4: "4、綠色能源-太陽能用線"
+    subproduct_6: "PV Ribbon（光伏焊帶）及 PV Wire（太陽能電纜）： "
+    description_6: "主要應用於太陽能板的電池串聯帶及匯流帶" 
+    subproduct_7: "台一競爭優勢："
+    description_7: "<ul>
+                <li>台一具備製線及銅材核心關鍵技術，產品垂直整合、掌握關鍵原料，對於產品之良率及售價上有絕對之優勢</li>
+                <li>由工研院進行三倍耐候測試確認熱循環承受力</li>
+                <li>與 20 餘家廠商需求確認並與工研院綠能所合作共同開發，掌握台灣市場需求</li>
+                <li>目前 UL, TUV 雙認證送樣中，並與材料商結合模組廠聯盟，取得共同認證</li>
+              </ul>" 
+  about-product-2:
+    main_title: "主要產品（二）"
+    product_1: "1、電纜電線"
+    product_1_img_url: "/css/images/ab-18.jpg"
+    product_2: "2、漆包線"
+    product_2_img_url: "/css/images/ab-19.jpg"
+  about-evolve:
+    main_title: "研究發展"
+    title_one: "1、研究發展計畫"
+    title_one_content: "在漆包線產業方面：<br>
+台一集團向來為國內漆包線之重要供應廠商，將利用多年銅加工經驗，積極研發高階及高附加價值之產品，優化產品組合，提高獲利能力。<br>
+<br>"
+    title_two: "在電力電纜方面："
+    title_two_content: "在台灣市場除將持續掌握台電七輸計劃等公共工程對於電纜需求之商機外，並利用現有生產技術優勢，積極拓展中國在基礎建設工程上對電力電纜需求之業務，確實掌握「十二五規劃」及「智能電網」對於電力電纜需求之商機，擴大客戶群。
+  <br>
+  <br>"
+    title_three: "在塗料方面："
+    title_three_content: "量產漆包線塗料及發展特殊線種之塗料；加強研發能力，不僅供應內部需求，亦積極開發國內外市場增加獲利機會。"
+    title_four: "持續與專業研發機構合作，結合上、下游產業，開發新產品並掌握產品關鍵生產技術，提高獲利能力。"
+    title_five: "2、已開發成功之技術或產品"
+    title_five_content: "<ul>
+<li>低煙無鹵環保電纜</li>
+<li>光纖帶 100 芯溝槽</li>
+<li>高耐熱漆包線</li>
+<li>直焊耐高溫（H 級）特殊漆包線</li>
+<li>異型銅線</li>
+<li>平角銅線</li>
+<li>平角漆包線</li>
+<li>PV Ribbon（鍍錫焊帶）</li>
+<li>PV Wire（太陽能電纜）</li>
+<li>Power cord （電源線）</li>
+              </ul>"
+  about-superiority:
+    main_title: "競爭優勢"
+    title_one: "1、垂直整合企業架構"
+    title_one_content: "台一集團之漆包線擁有垂直整合企業架構。從銅板原材料取得，到漆包線之外層批覆絕緣材料直接由集團內樹脂廠供給，完全控管品質，確保穩定高品質漆包線生產。"
+    title_two: "2、先進的生產設備"
+    title_two_content: "台一集團之生產設備主要由義大利、德國、與日本等先進國家進口。確保高水準之產品品質。"
+    title_three: "3、全面的技術支援服務"
+    title_three_content: "本業具有銅材處理專業技術，相較於其他競爭者採取外購，無法依據客戶需求進行調整之狀況，可確認技術優勢。台一集團與客戶維持良好關係，其研發團隊甚至與客戶生產團隊合作研發滿足客戶需求之特殊線種，與客戶發展相互依存關係，並進而達到雙贏優勢。"
+    title_four: "4、豐富的產業經驗"
+    title_four_content: "台一集團之高級管理團隊對本產業具有豐富經驗，使台一集團能緊貼行業發展趨勢並隨時制定優勢策略與政策。"
+    title_five: "5、多樣的產學合作"
+    title_five_content: "台一集團在三層絕緣線、PV Ribbon、異型銅材等產品分別與台灣大學化學研究所、工業技術研究院綠能所、金屬工業研究發展中心等研究機構合作共同開發，創造產品差異，確保產品競爭力。"
+    title_six: "6、裸銅線、漆包線及電線電纜形成垂直整合的經營模式"
+    title_six_list_1: "裸銅線：<br>
+              <ul>
+                <li>SCR 裸銅線年產 200,000 噸，系華南第一大裸銅線廠</li>
+                <li>本公司市場佔有率為珠江三角洲之 40% 及中國之 18%</li>
+                <li>獲 ISO 9001、ISO 14001 及先進技術企業評等</li>
+                <li>台灣地區具備 SCR、DIP 和 OCC 無氧銅製程技術能力<br>
+                  <br>
+                </li>
+              </ul>"
+    title_six_list_2: "漆包線：<br>
+              <h5>台灣地區：</h5>
+              <ul>
+                <li>漆包線主要領導廠商，年產漆包線 16,000 公噸</li>
+                <li>與日本最大漆包線製造廠 - 第一電工技術合作，製造高品質漆包線，深獲國內外客戶好評</li>
+                <li>高附加價值之漆包線獲德國、美國及臺灣專利，產品獲 ISO 品質體系及 CNS、UL 等認證通過</li>
+              </ul>
+              <h5>中國地區：</h5>
+              <ul>
+                <li>漆包線年產量 50,000 噸，系華南第一大漆包線廠</li>
+                <li>主要客戶均為產業之龍頭廠商，如德昌、Mabuchi、Panasonic、台達電子等家電業、電子業、汽車業、工具機業、重電業大廠</li>
+                <li>獲 ISO9001、ISO 14001、UL 認證、ISO／TS16949 汽車體系品質管制體系認證</li>
+                <li>Sony 綠色夥伴、松下萬寶授予 AA 等級供應商資格<br>
+                  <br>
+                </li>
+              </ul>"
+    title_six_list_3: "電線電纜：<br>
+              <ul>
+                <li>年產塑膠電線電纜 21,600 公噸；高壓電力電纜 14,400 公噸（最適產品組合 16,000 噸）</li>
+                <li>具 161kV 交連 PE 電力電纜整體系統之設計、規劃及施工能力之電力電纜施工隊，開拓國際全工程市場之利基</li>
+                <li>獲台灣電力公司 15kV、25kV、69kV（110kV）、161kV（220kV）高壓電力電纜定型試驗通過</li>
+                <li>500kV~1000kV 架高鋁導線製程能力</li>
+                <li>年產光纜 240,000 芯公里，具 96 芯及 216 芯之單模光纖製造能力</li>
+                <li>3C 產品電子線、電源線及電腦線</li>
+                <li>獲 ISO9001、ISO 14001、UL 認證。 預計 2013 年 6 月底通過 ISO／TS16949 汽車體系品質管制體系認證<br>
+                  <br>
+                </li>
+              </ul>"
+    title_six_list_4: "電子電源線：<br>
+              <ul>
+                <li>年產能：6,000 萬組</li>
+                <li>年產值：14 億台幣</li>
+                <li>電源線適用於 NB、PC</li>
+                <li>電子線適用於 NB、PC、3C 消費、汽車及醫療、Cable Server<br>
+                  <br>
+                </li>
+              </ul>"
+    title_six_list_5: "太陽能線：<br>
+              <h5>PV Ribbon（光伏焊帶）：</h5>
+              <ul>
+                <li>年產能：100 噸</li>
+                <li>年產值：6,000 萬台幣</li>
+                <li>2015 年全球對 PV Ribbon 的需求量將達到 200 億元台幣</li>
+                <li>台灣目前 PV Ribbon 需求大多從國外進口，如美國 Ulbrich、日商的 Neomax，台一目前產品品質已與國外廠商並駕齊驅</li>
+              </ul>
+              <h5>PV Wire （太陽能線）：</h5>
+              <ul>
+                <li>年產能：3百萬米</li>
+                <li>年產值：6,600 萬台幣</li>
+                <li>已取得 UL 認證，目前 UL、TUV 雙認證及 PSE 認證送樣中</li>
+              </ul>"
+  about-operating-1:
+    nav_main_title: "營運佈局"
+    nav_main_op_1: "營運佈局"
+    nav_main_op_2: "台灣集團事業群"
+    nav_main_op_3: "海外事業群"
+    main_title: "營運佈局"
+    subtitle: "業界領導品牌"
+    main_content: "台一國際的產品主要用途是做為信號傳遞、電力傳送及能源轉換，產業關連性高，產品範圍含蓋裸銅線、漆包線、電線電纜、光纜、電子線、PV Wire、PV Ribbon、異型銅線及絕緣材料具垂直水準整合的優勢。據商業週刊兩岸三地上市公司 1000 大企業的調查，台一國際集團營收規模為臺灣企業前 100 大，兩岸三地上市公司居 500 大，擁有良好的市占率及優良的客戶群，營業規模領先其他臺灣、中國及香港上市的同業。本集團已成為中國國內裸銅線及電磁線行業的領導生產廠商，是中國第三大及華南地區最大的裸銅線及漆包線生產廠商。"
+  about-operating-2:
+    main_title: "台灣集團事業群"
+    subtitle: "漆包線、電力電纜、光纜及絕緣材料形成水平且垂直的分工體系"
+    title_one: "1、漆包線廠事業部"
+    title_one_content_1: "年產漆包線 16,000 公噸，台灣地區漆包線主要領導廠商。"
+    title_one_content_2: "研發成功高附加價值的（1）抗突波漆包線（2）耐高頻漆包線（3）耐高溫有色漆包線，並已獲得美國、德國及台灣的專利權，更是國內唯一獲此殊榮的公司，目前全世界僅有日本古河、美國菲利浦道奇及 ESSEX 四家獲得生產與銷售專利權。"
+    title_one_content_3: "高附加價值之漆包線獲德國、美國及臺灣專利。"
+    title_two: "2、電線電纜廠事業部"
+    title_two_content_1: "年產塑膠電線電纜 21,600 公噸；高壓電力電纜 14,400 公噸（最適產品組合 16,000 噸）。"
+    title_two_content_2: "獲台灣電力公司 15KV、25KV、69KV、161KV 高壓電力電纜定型試驗通過。"
+    title_two_content_3: "具 161KV 交連 PE 電力電纜整體系統之設計、規劃及施工能力之電力電纜施工隊，開拓國際全工程市場之利基。"
+    title_two_content_4: "為台塑集團事業群 50 家公司（麥寮、六輕、南亞、台化…）高壓電纜之唯一指定供應商。"
+    title_two_content_5: "獲 ISO9001、ISO 14001、UL 認證。 預計 2013 年 6 月底通過 ISO／TS16949 汽車體系品質管制體系"
+    title_three: "3、絕緣材料事業部"
+    title_three_content_1: "年產各式漆包線塗料 4,800 噸。"
+    title_three_content_2: "具（1）抗突波漆包線（2）耐高頻漆包線（3）耐高溫有色漆包線之美國、德國及台灣等多項專利權。"
+    title_three_content_3: "與台灣工業研究院共同開發高品質塗料，並取得技術專用權。"
+    title_three_img_url: "/css/images/ab-22.jpg"
+    title_four: "4、3C元件事業部"
+    title_four_content_1: "3C元件事業，創立於 2012 年，產品為電子電源線，年產量約 6000 萬組"
+    title_four_content_2: "生產鏈為垂直整合供應鏈"
+    title_four_content_3: "有 50 年生產經驗並採用先進 SAMP 多頭伸線機及束絞機，製程穩定，品質管理比照航太工業要求。"
+    title_four_img_url: "/css/images/ab-23.jpg"
+  about-operating-3:
+    main_title: "海外事業群"
+    subtitle: "集團所屬台一江銅（廣州）有限公司、台一銅業（廣州）有限公司是華南第一大的裸銅線及漆包線生產廠商。"
+    title_one: "1、台一銅業(廣州)有限公司"
+    title_one_content_1: "漆包線年產量達 50,000 噸，係華南第一大之漆包線廠。"
+    title_one_content_2: "主要客戶均為產業之龍頭廠商，如 Mabuchi、Panasonic、台達電子等。"
+    title_one_content_3: "獲 ISO9001、ISO 14001、UL 認證、ISO／TS16949 汽車體系品質管制體系認證。"
+    title_one_content_4: "Sony 綠色夥伴、松下萬寶授予 AA 等級供應商資格。"
+    title_two: "2、台一江銅(廣州)有限公司"
+    title_two_content_1: "SCR 裸銅線年產 200,000 噸，系華南第一大裸銅線廠"
+    title_two_content_2: "本公司市場佔有率為珠江三角洲之 40% 及中國之 18%"
+    title_two_content_3: "獲 ISO 9001、ISO 14001 及先進技術企業評等"
+    title_two_img_url: "/css/images/ab-24.jpg"
+  about-organization:
+    main_title: "組織架構"
+    org_img_url: "/css/images/ab-25.jpg"
+  about-group:
+    main_title: "集團架構"
+    group_img_url: "/css/images/ab-26.jpg"
+  human-guangzhou-1:
+    main_title: "台一江銅、銅業 - 人力資源政策"
+    subtitle: "台一銅業（廣州）有限公司和台一江銅（廣州）有限公司致力於建設“專業、技術、整合”的一流漆包銅圓線、漆包銅扁線、漆包絞線、鍍錫銅圓線、電工圓銅線（裸圓線）、電工用銅扁線（裸扁線）、電工用銅線坯先進生產企業，始終堅持以人為本的經營理念，通過實施人才強化戰略，完善人才發展環境，推動全體員工與台一公司共同發展和進步，構建了具有台一特色的人力資源管理體系，主要包括："
+    title_one: "1、人力規劃和人才招募"
+    title_one_content: "正確地評估達成企業目標所需的人力，藉由對外吸收優秀人才、對內留任績效表現傑出員工，確保企業擁有優質的工作團隊；根據公司人力資源規劃與優質化人力需求，來界定各職務應具備的專業知識與技能，以此作為人才甄選的依據和標準。"
+    title_two: "2、教育訓練與職業發展"
+    title_two_content: "界定各組織功能所需的專業知識、技能及特定專長，依組織之不同發展階段員工工作所需的相關知識與技能，對員工開展教育訓練，並針對企業發展和員工個人發展需求，協助員工職業生涯規劃，以利雙方目標之達成。"
+    title_three: "3、激勵、薪資福利"
+    title_three_content: "企業提供具有市場競爭力的薪資福利待遇，並制訂激勵性的薪資體系，吸引優秀的人才及留住績效表現良好的員工，共同為公司創造更大的利益，期望達到員工和公司雙贏的結果。"
+    title_four: "4、勞資關係"
+    title_four_content: "和諧的勞資關係將可提升員工自尊自重及自我成長的能力，以尋求組織整體效能的精進，凝聚員工的向心力。關懷員工需求，為員工提供良好的勞動條件、工作環境以及員工急難救助與法律諮詢，利用工會組織確保勞資雙方良好地溝通協調，都是為了吸引優秀的人才及留住績效表現良好的員工，共同為公司創造更大的利益。溝通管道還包括：總經理與各事業部主管每月的經營會議、公司整體發展會議、公司內部網路、資訊分享，及內部網上公告欄等等。"
+    title_five: "5、工作環境和社會責任"
+    title_five_content: "提供安全無虞的員工工作環境，保護好社會環境，協調好與周邊企業及居民的關係，是企業的責任。公司成立專門的工業安全和環境管理部門，每年為員工提供免費的職業健康身體檢查，對工作場所進行職業有害因素檢測，對員工進行專業的安全教育訓練，加強員工安全衛生的知識與技能，確保三廢達標排放和固廢依法處理，在企業發展的同時，回報社會。"
+  human-guangzhou-2:
+    main_title: "台一江銅、銅業 - 菁英招募"
+    hr_02_img_url: "/css/images/hr-02.jpg"
+    hr_03_img_url: "/css/images/hr-03.jpg"
+    hr_04_img_url: "/css/images/hr-04.jpg"
+    title_one: "1、人力規劃和人才招募"
+    title_one_content: 
+    title_two: "2、目前職缺"
+    title_two_content: "詳細職缺內容，請上 "
+    title_two_content_search: "網站查詢："
+    title_three: "3、報到注意事項"
+    title_three_content: "試用人員報到時，必須向管理處人資課提交以下資料： <br>
+　A、身份證原件、影本<br>
+　B、畢業證、職稱證書、生育狀況（計劃生育服務證）原件影本<br>
+　C、人事資料卡（如實填寫）<br>
+　D、體檢合格表（公司指定醫院）<br>
+　E、小一寸彩色相片 6 張<br>
+　F、與原單位解除勞動關係的證明檔原件<br>
+　G、居住證<br>
+　H、其它必要文件<br>
+同時將個人社會保險繳納情況等告知管理處人資課<br>
+(上述證件的影本由管理處人資課留存保管，如以上證件有變動資訊情況的請及時到管理處人資課更新留存)"
+    title_four: "4、聯絡方式"
+    title_four_content:  "連絡人：劉小姐、葉小姐。<br>
+聯系電話：020-82265528-2723、2724<br>
+面試地點：廣州市蘿崗區東區東鵬大道77號台一銅業（廣州）有限公司<br>
+<br>
+"
+  human-guangzhou-3:
+    main_title: "台一江銅、銅業 - 薪資福利"
+    subtitle: "堅持以業績為導向，多勞多得的分配原則，不斷完善薪酬福利體系，提高分配的客觀性。以績效考核為基礎，建立有效的分配機制，充分體現分配的激勵性。公司實行以“基本薪資 +職務津貼+其他津貼”為基礎的等級工資制，以績效考核為獎金發放依據的薪酬福利體系。在公司發展的基礎上，讓員工不斷享受企業發展的成果，提供給員工具有市場競爭力的薪酬水準。"
+    hr_06_img_url: "/css/images/hr-06.jpg"
+    title_one: "薪資"
+    title_one_content: "<ul>
+    	<li>基本工資</li>
+      <li>職務津貼</li>
+      <li>其他津貼</li>
+      <li>高溫津貼</li>
+      <li>績效獎金</li>
+      <li>年終獎金</li>
+      <li>每年度調薪</li>
+      <li>加班津貼</li>
+    </ul>"
+    title_two: "福利"
+    title_two_content: "<ul>
+    	<li>社會保險（五險）</li>
+      <li>住房公積金</li>
+      <li>免費早、中、晚、夜餐及誤餐補助</li>
+      <li>免費員工宿舍</li>
+      <li>免費員工交通車</li>
+      <li>年假等各類法定假日</li>
+      <li>婚、喪、喜、慶及生育補助</li>
+      <li>疾病困難補助</li>
+      <li>工會組織之各類文體活動、比賽</li>
+      <li>優秀員工獎金、旅遊</li>
+      <li>節日購物禮券</li>
+      <li>年資獎金</li>
+      <li>一年一次免費身體健康檢查</li>
+    </ul>"
+  human-guangzhou-4:
+    main_title: "台一江銅、銅業 - 教育訓練"
+    title_one: "1、目的"
+    title_one_content_1: "增進員工工作能力，提升經營績效。"
+    title_one_content_2: "提高員工工作意願，發揮敬業精神。"
+    title_one_content_3: "加強員工安全意識，確保工作安全。"
+    title_one_content_4: "激發員工個人潛能，儲備所需人才。"
+    title_two: "2、培訓類別"
+    title_two_content_1: "新入職培訓：公司級、部門級、班別級的三級員工入職培訓，讓新進員工熟悉公司組織架構和崗位工作職責，儘快融入公司文化。"
+    title_two_content_2: "安全培訓：由專業的安全主任、部門主管進行廠區、工作崗位的安全、環保知識培訓，增強員工安全、環保意識。"
+    title_two_content_3: "專業培訓：工作崗位上的專業技能培訓。"
+    title_two_content_4: "特殊崗位培訓：特種作業技能培訓。"
+    title_two_content_5: "綜合技能培訓：為提升管理能力而進行的溝通、協調、管理技能培訓。"
+    title_two_content_6: "語言培訓：英文、日文培訓。"
+    title_three: "3、訓練方式"
+    title_three_content_1: "內部培訓"
+    title_three_content_2: "外部培訓"
+    title_three_content_3: "自我個人培訓：通過購買書籍、光碟等方式、自我教育、提升。"
+  human-taiwan-1:
+    main_title: "台灣總公司 - 人力資源政策"
+    subtitle: "人力資源發展是人力資源管理功能中的重要部分，不僅包括訓練與發展，更包括個人的生涯規劃與發展活動及績效評量；為持續提升組織效能，奠基符合企業短、中、長程營運發展之人力資產，持續開發與優化人力資源，台一國際制定如下的人力資源政策："
+    title_one: "1、強化職能因應組織發展"
+    title_one_content: "透過工作分析與職能差異化檢視，擬定提升改善計劃，規劃階段性的訓練及養成，逐步深化核心人才的專業能力，拓展人才的視野。"
+    title_two: "2、提升績效、利潤共享"
+    title_two_content: "以關鍵績效指標設定績效考核項目，透過雙向制定考核標準及面談，共同制定提升改善計劃，強化主管與部屬間的信賴度及認同感，以達績效管理目標。同時規劃執行生產獎金制度，以事業部月經營成果（營業利益獲利回饋），結合產量、屑線率、出貨量等指標計算獎金額度，依個人月績效表現核發，以達利潤共享。"
+    title_three: "3、因應未來需求預籌人力"
+    title_three_content: "建立具市場競爭力之薪酬制度，客觀公正的績效考核，鼓勵核心職能、管理職能與技術職能成長的晉升制度，兼顧制度與人性角度，廣納天下英才。"
+    title_four: "4、人才優化精進方案"
+    title_four_content: "因應集團發展與策略目標，規劃經營主管培訓、儲備幹部訓練等計劃，評選各階人員學經能力及發展潛能，擬定訓練計劃，進行各階主管人才養成，以創造高效團隊。"
+    title_five: "5、工作環境權與員工關係"
+    title_five_content: "「安全第一」是我們對員工在工作場所的承諾，亦為安衛政策的最高指導原則，適時強化員工安全衛生的知識與技能，創造零工安事故的工作環境；同時透過關懷員工需求，提供員工急難救助與法律諮詢等，凝聚員工的向心力。"
+  human-taiwan-2:
+    main_title: "台灣總公司 - 菁英招募"
+    subtitle: "詳細職缺內容，<br>
+請上 104 人力銀行網站查詢：<br>"
+    info: "意者請直接於 104 網站投遞履歷表，<br>我們將由專人盡快為您處理並送達相關部門，<br>謝謝！"
+  human-taiwan-3:
+    main_title: "台灣總公司 - 薪資福利"
+    subtitle: "本公司提供具激勵性之獎酬制度及順暢的升遷管道："
+    info: " <ul>
+          <li>依物價狀況及同業水準作為新進人員錄用水平。</li>
+          <li>每年定期依上年度考績，作為晉升及調薪依據。</li>
+          <li>依物價狀況及同業薪資水準，不定期調薪。</li>
+          <li>生產績效獎金、年終獎金。</li>
+          <li>員工享有盈餘分紅入股。</li>
+          <li>薪資跨行提款免手續費。</li>
+          <li>三節禮券、生日禮券。</li>
+          <li>每年員工旅遊及親子活動。</li>
+          <li>每年免費健康檢查。</li>
+          <li>鮮乳或飲料隨夏季每月發放一箱（兩打）其餘月份半箱（一打）。</li>
+          <li>早、午、晚餐及夜點（工廠）。</li>
+          <li>模範員工禮金禮品及公開表揚。</li>
+          <li>婚、喪、喜、慶及生育補助。</li>
+          <li>子女教育獎助金。</li>
+          <li>員工急難救助。</li>
+          <li>社團活動補助。</li>
+          <li>公司制服外套。</li>
+          <li>依法投保勞保、健保、退休金提撥。</li>
+          <li>男性員工陪產假。</li>
+        </ul>"
+  human-taiwan-4:
+    main_title: "台灣總公司 - 教育訓練"
+    subtitle: "我們致力於提供員工成長機會，使其發揮工作潛力，著重各階層主管管理職能之強化，以及部門自辦專業職能之訓練、工作教導之執行，以培育組織所需人才，達成企業永續經營之目標。是故，在人力資源發展上採取如下策略，包括："
+    title_one_content_1: "系統性的新人訓練，協助同仁快速融入台一大家庭。"
+    title_one_content_2: "針對各功能專業職能，強化階層別教育訓練課程及導入人員發展計畫。"
+    title_one_content_3: "實施中階主管輪調計劃，並橫向開展，積極培育人才，活化組織運作。"
+    title_one_content_4: "加速知識管理（KM）系統推動，以有效傳承知識及技術累積。"
+    title_one_content_5: "針對核心工程或技術人員，建置及培養有經驗之儲備人員。"
+    title_one_content_6: "導入精實企業（LE）手法，推動人力結構與工作設計之合理化。"
+    title_one_content_7: "強化管理並確保技術資料及工作說明書之充分建置。"
+    title_one_content_8: "並且展開以職能為發展的訓練系統，包括功能別的專業核心職能訓練、職位別的管理核心職能訓練，以及共同性的經營管理訓練，積極建立企業人才庫，系統性地培養菁英人才。"
+  plant:
+    copper_title: "台一銅業"
+    copper_desc: "公司成立於 1997 年 5 月，年產能各類漆包線 53,000 噸。從德國、日本、義大利、臺灣引進行業先進生產設備及檢測設備，擁有成熟精湛的工藝技術，並已獲中國品質誠信企業與廣東省優秀台資企業等多項稱號。"
+    copper_intro: "台一銅業簡介"
+    copper_certification: "專業認證與榮耀"
+    copper_superiority: "競爭優勢"
+    copper_research: "研究發展"
+    copper_catalogs: "產品型錄"
+    copper_consulting: "產品諮詢"
+    hsinchu_intro: "新竹廠簡介"
+    hsinchu_certification: "專業認證與榮耀"
+    hsinchu_research: "研究發展"
+    hsinchu_equipment: "重要設備"
+    hsinchu_catalogs: "產品型錄"
+    hsinchu_use: "產品運用"
+    hsinchu_consulting: "產品諮詢"
+    jiangcorp_intro: "台一江銅廠簡介"
+    jiangcorp_certification: "專業認證與榮耀" 
+    jiangcorp_superiority: "競爭優勢"
+    jiangcorp_research: "研究發展"
+    jiangcorp_use: "產品應用"
+    jiangcorp_consulting: "產品諮詢"
+    
+    jiangcorp_title: "台一江銅"
+    jiangcorp_desc: "公司成立於 1997 年 5 月，年產能 180,000 噸裸銅線，已從美國引進最先進的 SCR 連鑄連軋鑄造機及最新研發之電子控制系統，並與美國南線公司保持長期技術合作，擁有成熟生產技術及穩定的品質保證，為珠江三角洲地區同行業龍頭企業。"
+    hsinchu_title: "新竹廠"
+    hsinchu_desc: "新竹廠創立於 1979 年 9 月，設立於新竹縣新竹工業區，年產量約 14000 公噸，為漆包線知名領導廠商。本廠與日本漆包線最大製造廠－第一電工技術合作製造高品質漆包線，深獲客戶好評。"
+    resin_title: "樹脂廠"
+    resin_desc: "樹脂廠產品乃機能性樹脂、 塗料、或稱凡立水，主要係運用於漆包線之外層批覆絕緣材料，本廠持續研究開發來高值化產品以與世界一流塗料商產品並駕齊驅！"
+    guanyin_title: "觀音廠電線電纜事業"
+    guanyin_desc: "電線電纜事業於 1954 年 6 月創立低壓廠，並於 1993 年增設高壓廠，後於 1996 年合併為電線電纜事業部，最適產品組合年產量約 16,000 公噸，為電線電纜與光纜業的知名領導廠商。"
+    guanyin3c_title: "觀音廠3C事業"
+    guanyin3c_desc: "3C事業創立於 2012 年，產品為電子電源線。本廠與工研院等研究單位技術合作持續進行製程的研發改良，並評估採用 3D 列印技術，持續不斷創新開發來滿足客戶的期待與需求。"
+  copper-intro:
+    main_title: "台一銅業（廣州）有限公司簡介"
+    main_desc: "公司成立於 1997 年 5 月，座落于廣州經濟技術開發區東區，由臺灣台一國際股份有限公司投資，公司註冊資本 5076 萬美元，投資總額 8446 萬美元，員工人數約 650 人，近年每年營業額約 20 億元。
+<br><br>
+公司年產能各類漆包線 53,000 噸。從德國、日本、義大利、臺灣引進行業先進生產設備及檢測設備，擁有成熟精湛的工藝技術。
+<br><br>
+公司嚴格執行 ISO 9001 品質管理體系、ISO 14001 環保管理體系、ISO／TS16949 汽車品質管理體系等管理標準，產品除獲得美國 UL 安全認證、索尼 GP 綠色夥伴認證，並符合歐盟 ROSH 以及 Reach 等環境有害物質管理規定。
+<br><br>
+秉持集團優良傳統，取得多項榮譽：安全生產標準化企業資格、廣州市清潔生產企業評定、中國品質誠信企業稱號、廣東省優秀台資企業稱號。
+<br><br>
+公司主營各類漆包線，產品線徑範圍自 0.040 mm - 3.20 mm 產品包括一般漆包線、耐熱漆包線、自融著漆包線、耐冷媒漆包線、抗電暈漆包線、耐高溫直焊性漆包線、漆包絞線、三層絕緣線、平角漆包線、異型銅線及相關特殊漆包線。產品廣泛用於空調壓縮機、線圈、馬達、變壓器、發電機、微電控制系統、電源供應器、電動汽車等行業。"
+    title_one: "員工人數："
+    title_one_content: "約 650 人"
+    title_two: "工廠面積："
+    title_two_content: "105,254 平方米"
+    title_three: "建築面積："
+    title_three_content: "50,813 平方米"
+    title_four: "地理位置："
+    title_four_content: "廣州市廣州經濟技術開發區東區東鵬大道 77 號"
+  copper-certification:
+    main_title: "專業認證與榮耀"
+    list-1: "通過 ISO9001 品質管制體系認證"
+    list-2: "通過 ISO／TS16949 汽車產品品質管制體系認證"
+    list-3: "通過 ISO 14001 環保管理體系認證"
+    list-4: "通過 UL 美國安全認證"
+    list-5: "通過安全生產標準化企業資格"
+    list-6: "通過廣州市清潔生產企業評定"
+    list-7: "獲評為中國品質誠信企業"
+    list-8: "獲評為廣東省優秀台資企業"
+    download: "附件下載："
+  copper-superiority:
+    main_title: "競爭優勢"
+    title_1: "1、垂直整合的企業架構"
+    title_1_content: "擁有行業所需之垂直整合企業架構，從銅材原材料取得，到漆包線所需之外層披覆絕緣材料，垂直控管品質，確保穩定高質之漆包線生產。"
+    title_2: "2、先進的生產設備"
+    title_2_content: "公司先進的生產設備主要由德國、日本、義大利與臺灣等先進國家（地區）進口，確保高設備先進性。"
+    title_3: "3、全面的技術支援服務"
+    title_3_content: "公司研發團隊累積集團四十多年之經驗，主動與客戶生產團隊合作研發，滿足客戶需求之特殊線種，與客戶創雙贏優勢。"
+    title_4: "4、豐富的產業經驗"
+    title_4_content: "公司從事漆包線製造四十多年，所有經營管理團隊成員對本行業具有豐富經驗，使公司能緊貼行業相關連產業之發展趨勢，隨時制定產品發展策略。"
+  copper-research:
+    main_title: "研究發展"
+    main_title_desc: "公司研發部門多年來致力於生產效率的改進與新產品的開發，主要有： "
+    title_1: "1、生產效率的改進"
+    title_1_content: "<p>透過定期的“技術管理會議”研發部門與製造部門共同對生產制程、設備效率、原材料選擇等方面進行研究，不斷更新改善細線針孔問題、氧化問題、花線問題、粉塵問題等制程瓶頸。<br>
+                <br>
+              </p>
+              <p>聯合設備供應商對機台進行改造，將 DV 值提升至超出原廠設計上限，產能提高近 30%，因應不同的作業環境，不斷開發改進原材料，解決現場中的作業困難，同時，在提升品質前提的同時，致力開發新材料，降低部份產品的單位成本，增強產品的市場競爭力。</p>"
+    title_2: "2、新產品的開發"
+    title_2_content_1: "公司研發部門曆來致力於新產品的研發，陸續成功開發的新產品有："
+    title_2_content_2: "高性能耐冷媒線"
+    title_2_content_3: "超薄漆膜微細線"
+    title_2_content_4: "低 GAS 密閉電子元器件用漆包線"
+    title_2_content_5: "Φ2.0 以上“0”針孔嚴加工高溫線" 
+    title_2_content_6: "180℃ 直焊自融著漆包線等"
+    title_2_content_7: "<p>其中高性能耐冷媒線 DFWB 有特殊的專有技術，單向刮漆平均可達 1800g 以上，滑性可達0.04 以下，綜合性能較一般產品性能高出 30% 以上，特別適合於高功效，低能耗之高槽滿率壓縮機機種。
+<br><br>
+超薄漆膜微細線可確保在 6μ 漆膜厚度狀況下針孔控制在 3 個以下，外徑均勻保持在 2μ 以內。低 GAS 漆包線不只對漆膜種類及表面潤滑油提供嚴格要求，並且具備良好滑性以確保客戶高速繞線不斷線。2.0 大線及 180℃ 直焊融著線等均可完全滿客戶之特殊需求，品質獨到之處，非一般廠商所能替代。目前技術研發的方向仍持續延伸至耐高頻線、Litz 線、其它導體漆包線等。</p>"
+  copper-catalogs:
+    main_title: "產品型錄"
+    download: "附件下載："
+  copper-consulting:
+    main_title: "產品諮詢專線"
+    title_1: "台一銅業（廣州）有限公司"
+    title_1_content: "電話：+86-020-82265950<br>
+                傳真：+86-020-82265955<br>
+                　　　+86-020-32067312"
+  hsinchu-intro:
+    main_title: "新竹廠簡介"
+    main_desc: "新竹廠（漆包線事業部）創立於 1979 年 9 月，設立於新竹縣新竹工業區，年產量約 14000 公噸，為漆包線領導廠商之一。與日本漆包線最大製造廠－第一電工 技術合作，製造高品質漆包線，深獲客戶好評。"
+    title_one: "工廠面積："
+    title_one_content: "13,551 M（4,099 坪）"
+    title_two: "建築面積："
+    title_two_content: "13,626 M（4,122 坪）"
+    title_three: "員工人數："
+    title_three_content: "約 120 人"
+    title_four: "地理位置："
+    title_four_content: "新竹縣新竹工業區大同路 25 號"
+    title_five: "優　　勢："
+    title_five_content: "高附加價值的漆包線，榮獲德國、美國、臺灣各項專利"
+    title_six: "主要產品："
+    title_six_content: "音圈用漆包線、耐熱漆包線、耐熱可直焊漆包線、耐冷媒漆包線、融著漆包線、變頻馬達用抗突波漆包線、汽車電裝專用漆包線、平行漆包線、高抗張漆包線、三層絕緣線、異型銅線…。"
+  hsinchu-certification:
+    main_title: "專業認證與榮耀"
+    title_1: "1、品質保證"
+    title_1_content_1: "1982.09"
+    title_1_content_1_desc: "取得經濟部中央標準局正字（CNS認證）"
+    title_1_content_2: "1984"
+    title_1_content_2_desc: "經濟部商品檢驗局評定甲等工廠"
+    title_1_content_3: "1995.01　"
+    title_1_content_3_desc: "通過 ISO 9001 認證"
+    title_1_content_4: "1995.02"
+    title_1_content_4_desc: "取得日本松下認可指定為世界松下供應廠"
+    title_1_content_5: "2001.02~09"
+    title_1_content_5_desc: "取得美國、德國、台灣 抗突波及耐高溫有色線專利"
+    title_1_content_6: "2004.04"
+    title_1_content_6_desc: "取得松下 GP 環境品質保證供應商資格"
+    title_1_content_7: "2008.01"
+    title_1_content_7_desc: "通過 ISO 14001 認證"
+    title_1_content_8: "2008.10"
+    title_1_content_8_desc: "通過 QC-080000 認證"
+    title_1_content_9: "2010.03"
+    title_1_content_9_desc: "通過 TS16949 汽車體系品質管制體系認證"
+    title_2: "2、產品取得 UL 認證"
+    title_2_content_1: "通過 23 個品種。"
+    title_3: "3、專利"
+    title_3_contne_1: "1999 "
+    title_3_contne_1_desc: "率先與台大教授群解析 Phelps dodge 專利研發抗突波漆包線"
+    title_3_contne_2: "2001.02"
+    title_3_contne_2_desc: "取得美國抗突波線專利，號碼：US Patent：6190770 B"
+    title_3_contne_3: "2001.09　"
+    title_3_contne_3_desc: "取得德國專利耐高溫有色漆包線，號碼：199 27 52"
+    title_3_contne_4: "2001 "
+    title_3_contne_4_desc: "取得中華民國三項專利，號碼：123015、152929、243754"
+  hsinchu-research:
+    main_title: "研究發展"
+    title_1: "1、研發技術背景"
+    title_1_desc: "台一為提高產品品質與市場競爭能力及開發附加價值新產品，與金屬中心技術合作及台大化學系教授指導，並投入各類精密儀器設備與人力做各種研究開發工作。
+<br><br>
+目前已完成抗突波漆包線、異型銅線、三層絕緣線產品，提昇國內產業技術層次，滿足客戶品質的要求和社會趨勢的需求。
+"
+    title_2: "2、主要開發產品"
+    title_2_content_1: "抗突波線"
+    title_2_content_1_sub: "特　　性："
+    title_2_content_1_desc: "漆膜具抗突波特性，防止過載漏電流對皮膜產生熱劣化而龜裂，並於高溫高壓高頻下耐壽命較一般同等級耐熱線為優。"
+    title_2_content_1_subtitle_1: "用　　途："
+    title_2_content_1_subtitle_1_desc: "高頻變壓器、變頻馬達、感應伺服馬達繞線材。轉動機器：密封直流馬達、電動工具、電動汽車馬達。"
+    title_2_content_1_subtitle_2: "耐熱等級："
+    title_2_content_1_subtitle_2_desc: "200 ℃。"
+    title_2_content_1_subtitle_3: "適用線徑："
+    title_2_content_1_subtitle_3_desc: "美規 AWG# 18~24，Heavy 種。"
+    title_2_content_1_subtitle_4: "檢驗標準："
+    title_2_content_1_subtitle_4_desc: "A、漆包線一般特性：NEMA MW35C。<br>
+                  B、高頻特性（耐壽命）：馬達變頻器測試法。"
+    title_2_content_1_subtitle_5: "UL  認 證："
+    title_2_content_1_subtitle_5_desc: "NEMA MW35C、200 ℃ 。"
+    title_2_content_1_subtitle_6: "專　　利："
+    title_2_content_1_subtitle_6_desc: "A、中華專利號碼：123015、152929、243754<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核准日期：2000/9/13。<br>
+                    B、美國專利號碼：US 6190770B，核准日期：2001/2/20。<br>
+                  C、德國專利號碼：199.27.52，核准日期：2001/9/20。"
+    title_2_content_2: "異型銅線"
+    title_2_content_2_sub: "特　　性："
+    title_2_content_2_desc: "異型銅線應用於高效馬達具有優良的導電度，與高占積率藉此提高電磁轉換效率；同時具有高速運轉時之結構強度與長期運轉時之高溫劣化穩定性。"
+    title_2_content_2_subtitle_1: "用　　途："
+    title_2_content_2_subtitle_1_desc: "混合動力汽車和電動汽車、橫向磁通電機、工業高效電機、主軸電機、變頻馬達。"
+    title_2_content_2_subtitle_2: "適用線徑："
+    title_2_content_2_subtitle_2_desc: "各類異型線材，可客製化。"
+    title_2_content_2_subtitle_3: "檢驗標準："
+    title_2_content_2_subtitle_3_desc: "ASTM 規範 B152、B272。"
+    title_2_content_3: "異型銅線"
+    title_2_content_3_sub: "特　　性："
+    title_2_content_3_desc: "具有厚膜耐高電壓絕緣，省去常規繞線間的絕緣紙和中間絕緣間隔柵，可使變壓器縮小體積，約為傳統變壓器的一半，而重量減為傳統變壓器的2／3，故可大幅降低材料成本及加工費並可實現 產品小型化。本產品具有優良的焊接及捲繞加工性，故在末端可直接直焊，故頗適合做為變壓器之線圈或引線的繞組應用。"
+    title_2_content_3_subtitle_1: "用　　途："
+    title_2_content_3_subtitle_1_desc: "切換式電源供應器（SMPS）實例：機器人，影印機、電動玩具與遊戲機、液晶、電漿顯示器、高低頻變壓器、手機、錄影機用電池充電器、掌上數位處理器（PDA）、數位相機、PC 用 AC 整流器（ADAPTOR3、耐熱等級：200 ℃）。"
+    title_2_content_3_subtitle_2: "適用線徑："
+    title_2_content_3_subtitle_2_desc: "0.20-1.00mm。"
+    title_2_content_3_subtitle_3: "檢驗標準："
+    title_2_content_3_subtitle_3_desc: "安全規範認可 UL60950，絕緣系統認可 UL1446。"
+    title_2_content_3_subtitle_4: "耐熱等級："
+    title_2_content_3_subtitle_4_desc: "B（130℃）TUB-X，F（155℃）TUF-X。"
+    title_2_content_3_subtitle_5: "單(素)線認證："
+    title_2_content_3_subtitle_5_desc: "UL 取得認證UL OBJT2.E346389。"
+    title_2_content_3_subtitle_6: "UL  認 證："
+    title_2_content_3_subtitle_6_desc: "絕緣系統（EIS）認證：UL OBJ32、UL1446 配合電源供應器生產大廠之要求，申請 EIS 認證，通過時間預計 2014 年完成。"
+  hsinchu-equipment:
+    main_title: "重要設備"
+    title_1: "1、設備介紹"
+    title_2: "2、近年來持續提升品質特性改善之實績"
+    title_3: "3、生產線上自動檢出設備"
+  hsinchu-catalogs:
+    main_title: "產品型錄"
+  hsinchu-use:
+    main_title: "產品介紹與運用"
+    subtitle_1:  "1、主要產品及用途"
+    subtitle_2:  "2、產品運用"
+  hsinchu-consulting:
+    main_title: "產品諮詢專線"
+    subtitle_1:  "<h5>漆包線事業部 - 業務</h5>
+                <p>電話：+886-3-5981521 # 238<br>
+                傳真：+886-3-5981166 </p>"
+    subtitle_2:  "<h5>漆包線事業部 - 技術</h5>
+                <p>電話：+886-3-5981521 # 224/346<br>
+                傳真：+886-5-5981166</p>"
+  jiangcorp-intro:
+    main_title: "台一江銅（廣州）有限公司簡介"
+    main_desc: "公司成立於 1997 年 5 月，座落于廣州經濟技術開發區東區，由臺灣台一國際股份有限公司投資，公司註冊資本 4,072 萬美元，投資總額 7,022 萬美元，員工人數約 170 人，近年每年營業額約 90 億元人民幣。
+<br><br>
+公司年產能 180,000 噸裸銅線，從美國引進最先進的 SCR 連鑄連軋鑄造機及最新研發之電子控制系統，並與美國南線公司（Southwire）保持長期技術合作，擁有成熟的生產技術及穩定的品質保證。
+<br><br>
+公司嚴格執行 ISO9001 品質管制體系、ISO14001 環保管理體系管理標準，為珠江三角洲地區同行業龍頭企業。
+<br><br>
+公司秉承集團優良傳統，取得諸多榮譽：安全生產標準化企業資格、廣州市清潔生產企業評定、廣東省優秀台資企業稱號等。
+<br><br>
+公司主營產品為 8.0mm 及 2.0 - 3.2mm 裸銅線，產品廣泛應用於漆包線、電力電纜、電線電纜、各類電子線及通信線等行業。"
+    title_1: "員工人數："
+    title_1_content: "170 人"
+    title_2: "工廠面積："
+    title_2_content: "20,230 平方米"
+    title_3: "建築面積："
+    title_3_content: "9,575 平方米 "
+    title_4: "地理位置："
+    title_4_content: "廣州市廣州經濟技術開發區東區駿業路 251 號"
+  jiangcorp-certification:
+    main_title: "專業認證與榮耀"
+    title_1: "品質保證"
+    title_1_content_1: "通過 ISO9001 品質管制體系"
+    title_1_content_2: "通過 ISO14001 環保管理體系管理體系"
+    title_1_content_3: "通過廣州市清潔生產企業評定"
+    title_1_content_4: "通過安全生產標準化企業資格"
+    title_1_content_5: "獲評為廣東省優秀台資企業"
+  jiangcorp-superiority:
+    main_title: "競爭優勢"
+    title_1: "1、垂直整合的企業架構"
+    title_1_desc: "公司祼銅線產品年產能 18 萬噸，集團有漆包線、電力電纜、電線電纜、電子線、通信線等產品群製造，熟悉客戶之需求，並擁有規模優勢及優質客戶群，是珠三角地區同行業龍頭企業。"
+    title_2: "2、先進的生產設備"
+    title_2_desc: "公司除引進製造銅材世界最主流設備系統--美國南線公司 SCR 連鑄連軋鑄造機,並且配以最新研發之電子控制系統，促使 SCR 設備性能更加優異、產能更為提高、制程技術更為成熟、製造成本更加低廉。"
+    title_3: "3、全面的技術支援服務"
+    title_3_desc: "公司在技術上與美國南線公司（Southwire）保持長期技術合作，並同時秉承臺灣母公司四十多年銅加工行業產品製造經驗，擁有堅強技術團隊，使產品品質長保優良穩定。"
+  x_about-responsibility: 
+    main_title:
+    title_one:
+    title_one_content:
+    title_two:
+    title_two_content:
+    title_three:
+    title_three_content:
+  about-concept:
+    title_one: "台一國際企業經營理念"
+    title_one_content: "<b>深耕</b><br>深入技術研發，提升自我能力，耕耘客戶，取得客戶對公司對產品的信任 <br><br><b>創新</b><br>觀念創新、技術創新、產品創新<br><br><b>國際觀</b><br>胸懷國際，全球化經營，成就全球企業集團之理想"
+    title_two: "企業願景"
+    title_two_content: "成為全球最先進及獲利最佳的公司，與客戶群能密切配合，共同組成最佳上下游的供應鏈夥伴。"
+    title_three: "未來展望"
+    title_three_content: "本集團致力於產品之垂直深加工以提高產品附加價值，來維持市場競爭力與公司永續經營，同時形成龐大之規模經濟結構以積極擴張產業範圍。<br>本集團致力於形成跨產業聯盟並加強與上下游廠商之合作。<br>本集團致力於強化資本結構與鞏固管理基石。"
+    title_four: "台一國際企業簡介"
+    title_four_content: "台一國際股份有限公司（以下簡稱台一國際）設立的時間，於民國 68 年 9 月11 日設立，迄今約有 34 年的歷史。<br><br>
+目前台一國際共計有五個廠，分別台灣為觀音廠（電線電纜）、新竹（漆包線）、樹脂（絕緣材料）三廠、中國有台一銅業（漆包線）、台一江銅（銅桿）兩廠，目前公司產品線包含各式高、中、低壓電纜、光纖、漆包線、車用電子線、電源線、鍍錫銅線、太陽能線等，線纜產品其主要用途是做為信號傳遞、電力傳送及能源轉換之用。漆包線產品主要供應小至耳機大至變壓器的電力傳導。<br><br>產品範圍含蓋上游裸銅線生產製造到、漆包線、電力電纜、光纜及絕緣材料產業關連性高，具垂直水平整合的優勢。相關產品並已取得 ISO9004、ISO1400、TSI16949 相關認證，產品品質與工廠管理與達國際大廠並駕齊驅。<br><br>
+        公司經營的成果卓越，據 2009 年商業週刊兩岸三地上市公司 1000 大企業的調查，台一國際集團營收規模居 389 名且列為電線電纜類之首，擁有良好的市占率及優良的客戶群，營業規模領先其他台灣、中國及香港上市的同業。本集團已成為中國國內裸銅線及電磁線行業的領導生產廠商，是中國第三大及華南地區最大的裸銅線及漆包線生產廠商。"
+  
   env:
+    h2images:
+      gy: "/css/images/gy-01.png"
+      gy-28: "/css/images/gy-28.jpg"
+      cp: "/css/images/cp-01.png"
+      hc: "/css/images/hc-01.png"
+      jc: "/css/images/jc-01.png"
     language:
-      zh_CN: "简中"
-      zh_TW: "繁中"
-      en: "EN"
-      ja: "JP"
+      zh_CN: "简体中文"
+      zh_TW: "繁體中文"
+      en: "English"
+      ja: "日本语"
   activerecord:
     models:
       announcement: "最新消息"
@@ -28,6 +675,17 @@ zh_TW:
         fiscal_year: "年份"
       financialreport:
         fiscal_year: "年份"
+      monthlyrevenuereport:
+        fiscal_year: "年份"
+      revenue_item:
+        item: "項目名稱"
+        value: "收入淨額"
+      dividend_history:
+        fiscal_year: "年份"
+        sre: "盈餘配股"
+        scap: "公債配股"
+        cash: "現金股利"
+        total: "合計"
   date:
     abbr_day_names:
     - 日

@@ -9,7 +9,7 @@
 <!-- 新增每月資料 -->
 <% if  (!@revenue_items.nil? && @revenue_items.count > 0 && !@currentMonth.nil?) %>
 	  <div class="button"> 		   
-        <a href='#' id="createARevenuebutton" class="right highlight"  >新增一個項目</a>
+        <a href='javascript: void(0)' id="createARevenuebutton" class="right highlight"  >新增一個項目</a>
      </div> 
 <% else %>
 	<% if @currentMonth.nil? %>
@@ -17,7 +17,7 @@
 	<% else %>
 		<div class='button'>
 			<%= link_to "新增預設項目", createDefaultItems_admin_revenue_item_path(report_id: params[:id],fiscal_month: @currentMonth), class: 'left' %> 		   
-        <a href='#' id="createARevenuebutton" class="right highlight"  >新增一個項目</a>
+        <a href='javascript: void(0)' id="createARevenuebutton" class="right highlight"  >新增一個項目</a>
      </div>
 	<% end %>
 <% end %>
@@ -49,8 +49,8 @@
 						<%= f.hidden_field :fiscal_month, value: @currentMonth.to_s %>
       	</td>
         <td width='18%' align="right">
-        	<%= link_to '儲存', "#", onclick: "$('#ajaxNewRevenueForm').submit()", title: "儲存" %>
-            <a id="cancelARevenuebutton" title="取消" href="#">取消</a>
+        	<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxNewRevenueForm').submit()", title: "儲存" %>
+            <a id="cancelARevenuebutton" title="取消" href="javascript: void(0)">取消</a>
          </td>
       </tr>
      <% end %>		
@@ -70,8 +70,11 @@
 <script>
 		//edit revenue link
 		$("#mainRevenueList").on('mouseup',".editRevenueLink", function() {
+			$(".list-edit").hide();
+			$(".dragable").show();
 			$(".tr-"+this.id.toString().replace("revenue","")+"-for-edit").toggle();
 			$(".tr-"+this.id.toString().replace("revenue","")+"-for-show" ).toggle();
+
 		});
 		
 		$("#mainRevenueList").on('mouseup', ".cancelEditbutton",function() {
@@ -81,6 +84,8 @@
 		
 		//show create new level inputs
 		$( "#createARevenuebutton" ).mouseup(function() {
+			$("[id^=editrevenuecontainer]").hide();
+			$("[class$=-for-show]" ).show();
 		  $( "#createNewRevenue" ).toggle();
 		});
 		//hide create new level inputs
@@ -105,12 +110,12 @@
 		   var responseObject = $.parseJSON(data.responseText);
 		    
 		     var response  = '';
-		    alert("ERROR with="+JSON.stringify(responseObject));
+		    //alert("ERROR with="+JSON.stringify(responseObject));
 		    $.each(responseObject, function(){
 		      response = response + this.toString();
 		    });
 		    
-		    //alert(response);
+		    alert(response);
 
 		});
 		//ajax:success on edit action
@@ -141,7 +146,8 @@
 		      errors.append('<li>' + this + '</li>');
 		    })
 		
-		    errors.appendTo($(this).find('.errors'));
+		    //errors.appendTo($(this).find('.errors'));
+		    alert(errors);
 
 		});
 		  
@@ -183,7 +189,7 @@
 						   		$.each(newRankings_array, function( index, value){
 							      	$('#editrevenuecontainer_'+value.replace("dragablecontainer_","") ).insertAfter('#'+value);//HERE
 							    });
-	   					  	console.log("================ RevenueItem reorder PATCH successfully end =============");
+	   					  	//console.log("================ RevenueItem reorder PATCH successfully end =============");
 					        return false   
 					      },
 					      error: function(data){

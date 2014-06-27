@@ -1,0 +1,2 @@
+$("#items_grid").empty();
+$("<%= escape_javascript(render 'showproduct', :selectitem => @brproduct ) %>").appendTo("#items_grid");

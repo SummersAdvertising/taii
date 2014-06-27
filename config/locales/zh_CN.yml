@@ -1,0 +1,694 @@
+zh_CN:
+  about_side_menu:
+    concept: "经营理念"
+    responsibility: "企业责任"
+    history: "企业沿革"
+    product-1: "主要产品"
+    evolve: "研究发展"
+    superiority: "竞争优势"
+    operating-1: "营运布局"
+    organization: "组织架构"
+    group: "集团架构"
+  human_side_menu:
+    title: "台一江铜丶铜业"
+    guangzhou-1: "人力资源政策"
+    guangzhou-2: "菁英招募"
+    guangzhou-3: "薪资福利"
+    guangzhou-4: "教育训练"
+    taiwan-1: "台湾总公司"
+  human_side_menu_tw:
+    title: "台湾总公司"
+    taiwan-1: "人力资源政策"
+    taiwan-2: "菁英招募"
+    taiwan-3: "薪资福利"
+    taiwan-4: "教育训练"
+  about-responsibility:
+    main_title: "企业责任"
+    title_one: "落实公司治理"
+    title_one_content: "<ul><li>台一集团订有相关企业社会责任之制度与执行的相关规定。</li><li>台一集团设置有推动企业社会责任专（兼）职单位运作相关措施。</li><li>集团总部及各事业部相关权责单位共同推动企业社会责任之运行，并透过环保政策，以实践社会责任时对公司产生的具体效果即为减少资源的浪费并增进能源使用效率。</li></ul>"
+    title_two: "发展永续环境"
+    title_two_content: "台一集团实践社会责任时透过各种宣传方式，宣示公司的企业社会责任目标，如：推动 RoHS 无危害物质管制作业系统，积极推动绿色生产及采购作业，并实现於制程中。同时推动清洁生产技术，将资源充分利用，改善制程及操作管理，以减少废弃物之产生并选用低污染或无污染之原物料。 "
+    title_three: "维护社会公益"
+    title_three_content: "<ul><li>遵守相关劳动法规，保障员工之合法权益，建立适当之管理方法与程序。</li><li>提供员工安全与健康之工作环境，并对员工定期实施安全与健康教育。</li><li>制定并公开其消费者权益政策，以及对其产品与服务提供透明且有效之消费者申诉程序。 </li><li>与供应商合作，共同致力提升企业社会责任。</li><li>藉由商业活动丶实物捐赠丶企业志工服务或其他免费专业服务，参与社区发展及慈善公益团体相关活动。</li></ul>"
+  about-history:
+    main_title: "企业沿革"
+    imageurl: "/css/images/ab-10.jpg"
+  about-product-1:
+    nav_main_product: "主要产品"
+    nav_main_product_1: "主要产品（一）"
+    nav_main_product_2: "主要产品（二）"
+    main_title: "主要产品（一）"
+    product_1: "1丶裸铜线"
+    subproduct_1: "裸铜线："
+    description_1: "主要可进一步加工制成漆包线，电线电缆，异型铜线，平角铜线，光缆及建筑用线"
+    subproduct_2: "异型铜材/线："
+    description_2: "为用於电动车马达的主要零件<ul><li>至 2020 年全球电动汽车及油电混合车的市场规模约可达 1,300 万辆，全球电动车市占率约达 13% 以上，将带动相关车厂零组件之需求</li><li>台一拥有多年铜加工及铜材生产及研发经验，跨入电动车马达关键零件 --- 异型铜材之研发及制造，具发展优势</li></ul>"
+    subproduct_3: "平角铜线："
+    description_3: "为制造大型变压器或大型马达等感应线圈之材料" 
+    product_2: "2丶三层绝缘线"
+    subproduct_4: "特性："
+    description_4: "<ul>
+                <li>符合客户需求耐热等级之塑料，利用押出机，可直接作为变压器之绕组线圈，而不需中间绝缘带间隔栅</li>
+                <li>可使变压器缩小体积，约为传统变压器的一半，而重量减轻为传统变压器的 2/3</li>
+                <li>可大幅降低材料成本及加工费</li>
+              </ul>"
+    subproduct_5: "产品应用："
+    description_5: "<ul>
+                <li>切换式电源供应器中的变压器绕组线材</li>
+                <li>消费性电子产品：机器人丶印表机丶电玩游戏机丶LCD丶 PDP丶PDA</li>
+                <li>电池座充器绕线材：应用於摄录影机丶手机丶数位相机</li>
+                <li>AC 转换器绕线材：应用於 PC丶数位相机</li>
+              </ul>"
+    product_3: "3丶AC,DC Power Cord and Electric Wire"
+    product_4: "4丶绿色能源-太阳能用线"
+    subproduct_6: "PV Ribbon（光伏焊带）及 PV Wire（太阳能电缆）： "
+    description_6: "主要应用於太阳能板的电池串联带及汇流带" 
+    subproduct_7: "台一竞争优势："
+    description_7: "<ul>
+                <li>台一具备制线及铜材核心关键技术，产品垂直整合丶掌握关键原料，对於产品之良率及售价上有绝对之优势</li>
+                <li>由工研院进行三倍耐候测试确认热循环承受力</li>
+                <li>与 20 馀家厂商需求确认并与工研院绿能所合作共同开发，掌握台湾市场需求</li>
+                <li>目前 UL, TUV 双认证送样中，并与材料商结合模组厂联盟，取得共同认证</li>
+              </ul>" 
+  about-product-2:
+    main_title: "主要产品（二）"
+    product_1: "1丶电缆电线"
+    product_1_img_url: "/css/images/ab-18.jpg"
+    product_2: "2丶漆包线"
+    product_2_img_url: "/css/images/ab-19.jpg"
+  about-evolve:
+    main_title: "研究发展"
+    title_one: "1丶研究发展计画"
+    title_one_content: "在漆包线产业方面：<br>
+台一集团向来为国内漆包线之重要供应厂商，将利用多年铜加工经验，积极研发高阶及高附加价值之产品，优化产品组合，提高获利能力。<br>
+<br>"
+    title_two: "在电力电缆方面："
+    title_two_content: "在台湾市场除将持续掌握台电七输计划等公共工程对於电缆需求之商机外，并利用现有生产技术优势，积极拓展中国在基础建设工程上对电力电缆需求之业务，确实掌握「十二五规划」及「智能电网」对於电力电缆需求之商机，扩大客户群。
+  <br>
+  <br>"
+    title_three: "在涂料方面："
+    title_three_content: "量产漆包线涂料及发展特殊线种之涂料；加强研发能力，不仅供应内部需求，亦积极开发国内外市场增加获利机会。"
+    title_four: "持续与专业研发机构合作，结合上丶下游产业，开发新产品并掌握产品关键生产技术，提高获利能力。"
+    title_five: "2丶已开发成功之技术或产品"
+    title_five_content: "<ul>
+<li>低烟无卤环保电缆</li>
+<li>光纤带 100 芯沟槽</li>
+<li>高耐热漆包线</li>
+<li>直焊耐高温（H 级）特殊漆包线</li>
+<li>异型铜线</li>
+<li>平角铜线</li>
+<li>平角漆包线</li>
+<li>PV Ribbon（镀锡焊带）</li>
+<li>PV Wire（太阳能电缆）</li>
+<li>Power cord （电源线）</li>
+              </ul>"
+  about-superiority:
+    main_title: "竞争优势"
+    title_one: "1丶垂直整合企业架构"
+    title_one_content: "台一集团之漆包线拥有垂直整合企业架构。从铜板原材料取得，到漆包线之外层批覆绝缘材料直接由集团内树脂厂供给，完全控管品质，确保稳定高品质漆包线生产。"
+    title_two: "2丶先进的生产设备"
+    title_two_content: "台一集团之生产设备主要由义大利丶德国丶与日本等先进国家进口。确保高水准之产品品质。"
+    title_three: "3丶全面的技术支援服务"
+    title_three_content: "本业具有铜材处理专业技术，相较於其他竞争者采取外购，无法依据客户需求进行调整之状况，可确认技术优势。台一集团与客户维持良好关系，其研发团队甚至与客户生产团队合作研发满足客户需求之特殊线种，与客户发展相互依存关系，并进而达到双赢优势。"
+    title_four: "4丶丰富的产业经验"
+    title_four_content: "台一集团之高级管理团队对本产业具有丰富经验，使台一集团能紧贴行业发展趋势并随时制定优势策略与政策。"
+    title_five: "5丶多样的产学合作"
+    title_five_content: "台一集团在三层绝缘线丶PV Ribbon丶异型铜材等产品分别与台湾大学化学研究所丶工业技术研究院绿能所丶金属工业研究发展中心等研究机构合作共同开发，创造产品差异，确保产品竞争力。"
+    title_six: "6丶裸铜线丶漆包线及电线电缆形成垂直整合的经营模式"
+    title_six_list_1: "裸铜线：<br>
+              <ul>
+                <li>SCR 裸铜线年产 200,000 吨，系华南第一大裸铜线厂</li>
+                <li>本公司市场占有率为珠江三角洲之 40% 及中国之 18%</li>
+                <li>获 ISO 9001丶ISO 14001 及先进技术企业评等</li>
+                <li>台湾地区具备 SCR丶DIP 和 OCC 无氧铜制程技术能力<br>
+                  <br>
+                </li>
+              </ul>"
+    title_six_list_2: "漆包线：<br>
+              <h5>台湾地区：</h5>
+              <ul>
+                <li>漆包线主要领导厂商，年产漆包线 16,000 公吨</li>
+                <li>与日本最大漆包线制造厂 - 第一电工技术合作，制造高品质漆包线，深获国内外客户好评</li>
+                <li>高附加价值之漆包线获德国丶美国及台湾专利，产品获 ISO 品质体系及 CNS丶UL 等认证通过</li>
+              </ul>
+              <h5>中国地区：</h5>
+              <ul>
+                <li>漆包线年产量 50,000 吨，系华南第一大漆包线厂</li>
+                <li>主要客户均为产业之龙头厂商，如德昌丶Mabuchi丶Panasonic丶台达电子等家电业丶电子业丶汽车业丶工具机业丶重电业大厂</li>
+                <li>获 ISO9001丶ISO 14001丶UL 认证丶ISO／TS16949 汽车体系品质管制体系认证</li>
+                <li>Sony 绿色夥伴丶松下万宝授予 AA 等级供应商资格<br>
+                  <br>
+                </li>
+              </ul>"
+    title_six_list_3: "电线电缆：<br>
+              <ul>
+                <li>年产塑胶电线电缆 21,600 公吨；高压电力电缆 14,400 公吨（最适产品组合 16,000 吨）</li>
+                <li>具 161kV 交连 PE 电力电缆整体系统之设计丶规划及施工能力之电力电缆施工队，开拓国际全工程市场之利基</li>
+                <li>获台湾电力公司 15kV丶25kV丶69kV（110kV）丶161kV（220kV）高压电力电缆定型试验通过</li>
+                <li>500kV~1000kV 架高铝导线制程能力</li>
+                <li>年产光缆 240,000 芯公里，具 96 芯及 216 芯之单模光纤制造能力</li>
+                <li>3C 产品电子线丶电源线及电脑线</li>
+                <li>获 ISO9001丶ISO 14001丶UL 认证。 预计 2013 年 6 月底通过 ISO／TS16949 汽车体系品质管制体系认证<br>
+                  <br>
+                </li>
+              </ul>"
+    title_six_list_4: "电子电源线：<br>
+              <ul>
+                <li>年产能：6,000 万组</li>
+                <li>年产值：14 亿台币</li>
+                <li>电源线适用於 NB丶PC</li>
+                <li>电子线适用於 NB丶PC丶3C 消费丶汽车及医疗丶Cable Server<br>
+                  <br>
+                </li>
+              </ul>"
+    title_six_list_5: "太阳能线：<br>
+              <h5>PV Ribbon（光伏焊带）：</h5>
+              <ul>
+                <li>年产能：100 吨</li>
+                <li>年产值：6,000 万台币</li>
+                <li>2015 年全球对 PV Ribbon 的需求量将达到 200 亿元台币</li>
+                <li>台湾目前 PV Ribbon 需求大多从国外进口，如美国 Ulbrich丶日商的 Neomax，台一目前产品品质已与国外厂商并驾齐驱</li>
+              </ul>
+              <h5>PV Wire （太阳能线）：</h5>
+              <ul>
+                <li>年产能：3百万米</li>
+                <li>年产值：6,600 万台币</li>
+                <li>已取得 UL 认证，目前 UL丶TUV 双认证及 PSE 认证送样中</li>
+              </ul>"
+  about-operating-1:
+    nav_main_title: "营运布局"
+    nav_main_op_1: "营运布局"
+    nav_main_op_2: "台湾集团事业群"
+    nav_main_op_3: "海外事业群"
+    main_title: "营运布局"
+    subtitle: "业界领导品牌"
+    main_content: "台一国际的产品主要用途是做为信号传递丶电力传送及能源转换，产业关连性高，产品范围含盖裸铜线丶漆包线丶电线电缆丶光缆丶电子线丶PV Wire丶PV Ribbon丶异型铜线及绝缘材料具垂直水准整合的优势。据商业周刊两岸三地上市公司 1000 大企业的调查，台一国际集团营收规模为台湾企业前 100 大，两岸三地上市公司居 500 大，拥有良好的市占率及优良的客户群，营业规模领先其他台湾丶中国及香港上市的同业。本集团已成为中国国内裸铜线及电磁线行业的领导生产厂商，是中国第三大及华南地区最大的裸铜线及漆包线生产厂商。"
+  about-operating-2:
+    main_title: "台湾集团事业群"
+    subtitle: "漆包线丶电力电缆丶光缆及绝缘材料形成水平且垂直的分工体系"
+    title_one: "1丶漆包线厂事业部"
+    title_one_content_1: "年产漆包线 16,000 公吨，台湾地区漆包线主要领导厂商。"
+    title_one_content_2: "研发成功高附加价值的（1）抗突波漆包线（2）耐高频漆包线（3）耐高温有色漆包线，并已获得美国丶德国及台湾的专利权，更是国内唯一获此殊荣的公司，目前全世界仅有日本古河丶美国菲利浦道奇及 ESSEX 四家获得生产与销售专利权。"
+    title_one_content_3: "高附加价值之漆包线获德国丶美国及台湾专利。"
+    title_two: "2丶电线电缆厂事业部"
+    title_two_content_1: "年产塑胶电线电缆 21,600 公吨；高压电力电缆 14,400 公吨（最适产品组合 16,000 吨）。"
+    title_two_content_2: "获台湾电力公司 15KV丶25KV丶69KV丶161KV 高压电力电缆定型试验通过。"
+    title_two_content_3: "具 161KV 交连 PE 电力电缆整体系统之设计丶规划及施工能力之电力电缆施工队，开拓国际全工程市场之利基。"
+    title_two_content_4: "为台塑集团事业群 50 家公司（麦寮丶六轻丶南亚丶台化…）高压电缆之唯一指定供应商。"
+    title_two_content_5: "获 ISO9001丶ISO 14001丶UL 认证。 预计 2013 年 6 月底通过 ISO／TS16949 汽车体系品质管制体系"
+    title_three: "3丶绝缘材料事业部"
+    title_three_content_1: "年产各式漆包线涂料 4,800 吨。"
+    title_three_content_2: "具（1）抗突波漆包线（2）耐高频漆包线（3）耐高温有色漆包线之美国丶德国及台湾等多项专利权。"
+    title_three_content_3: "与台湾工业研究院共同开发高品质涂料，并取得技术专用权。"
+    title_three_img_url: "/css/images/ab-22.jpg"
+    title_four: "4丶3C元件事业部"
+    title_four_content_1: "3C元件事业，创立於 2012 年，产品为电子电源线，年产量约 6000 万组"
+    title_four_content_2: "生产链为垂直整合供应链"
+    title_four_content_3: "有 50 年生产经验并采用先进 SAMP 多头伸线机及束绞机，制程稳定，品质管理比照航太工业要求。"
+    title_four_img_url: "/css/images/ab-23.jpg"
+  about-operating-3:
+    main_title: "海外事业群"
+    subtitle: "集团所属台一江铜（广州）有限公司丶台一铜业（广州）有限公司是华南第一大的裸铜线及漆包线生产厂商。"
+    title_one: "1丶台一铜业(广州)有限公司"
+    title_one_content_1: "漆包线年产量达 50,000 吨，系华南第一大之漆包线厂。"
+    title_one_content_2: "主要客户均为产业之龙头厂商，如 Mabuchi丶Panasonic丶台达电子等。"
+    title_one_content_3: "获 ISO9001丶ISO 14001丶UL 认证丶ISO／TS16949 汽车体系品质管制体系认证。"
+    title_one_content_4: "Sony 绿色夥伴丶松下万宝授予 AA 等级供应商资格。"
+    title_two: "2丶台一江铜(广州)有限公司"
+    title_two_content_1: "SCR 裸铜线年产 200,000 吨，系华南第一大裸铜线厂"
+    title_two_content_2: "本公司市场占有率为珠江三角洲之 40% 及中国之 18%"
+    title_two_content_3: "获 ISO 9001丶ISO 14001 及先进技术企业评等"
+    title_two_img_url: "/css/images/ab-24.jpg"
+  about-organization:
+    main_title: "组织架构"
+    org_img_url: "/css/images/ab-25.jpg"
+  about-group:
+    main_title: "集团架构"
+    group_img_url: "/css/images/ab-26.jpg"
+  human-guangzhou-1:
+    main_title: "台一江铜丶铜业 - 人力资源政策"
+    subtitle: "台一铜业（广州）有限公司和台一江铜（广州）有限公司致力於建设“专业丶技术丶整合”的一流漆包铜圆线丶漆包铜扁线丶漆包绞线丶镀锡铜圆线丶电工圆铜线（裸圆线）丶电工用铜扁线（裸扁线）丶电工用铜线坯先进生产企业，始终坚持以人为本的经营理念，通过实施人才强化战略，完善人才发展环境，推动全体员工与台一公司共同发展和进步，构建了具有台一特色的人力资源管理体系，主要包括："
+    title_one: "1丶人力规划和人才招募"
+    title_one_content: "正确地评估达成企业目标所需的人力，藉由对外吸收优秀人才丶对内留任绩效表现杰出员工，确保企业拥有优质的工作团队；根据公司人力资源规划与优质化人力需求，来界定各职务应具备的专业知识与技能，以此作为人才甄选的依据和标准。"
+    title_two: "2丶教育训练与职业发展"
+    title_two_content: "界定各组织功能所需的专业知识丶技能及特定专长，依组织之不同发展阶段员工工作所需的相关知识与技能，对员工开展教育训练，并针对企业发展和员工个人发展需求，协助员工职业生涯规划，以利双方目标之达成。"
+    title_three: "3丶激励丶薪资福利"
+    title_three_content: "企业提供具有市场竞争力的薪资福利待遇，并制订激励性的薪资体系，吸引优秀的人才及留住绩效表现良好的员工，共同为公司创造更大的利益，期望达到员工和公司双赢的结果。"
+    title_four: "4丶劳资关系"
+    title_four_content: "和谐的劳资关系将可提升员工自尊自重及自我成长的能力，以寻求组织整体效能的精进，凝聚员工的向心力。关怀员工需求，为员工提供良好的劳动条件丶工作环境以及员工急难救助与法律谘询，利用工会组织确保劳资双方良好地沟通协调，都是为了吸引优秀的人才及留住绩效表现良好的员工，共同为公司创造更大的利益。沟通管道还包括：总经理与各事业部主管每月的经营会议丶公司整体发展会议丶公司内部网路丶资讯分享，及内部网上公告栏等等。"
+    title_five: "5丶工作环境和社会责任"
+    title_five_content: "提供安全无虞的员工工作环境，保护好社会环境，协调好与周边企业及居民的关系，是企业的责任。公司成立专门的工业安全和环境管理部门，每年为员工提供免费的职业健康身体检查，对工作场所进行职业有害因素检测，对员工进行专业的安全教育训练，加强员工安全卫生的知识与技能，确保三废达标排放和固废依法处理，在企业发展的同时，回报社会。"
+  human-guangzhou-2:
+    main_title: "台一江铜丶铜业 - 菁英招募"
+    hr_02_img_url: "/css/images/hr-02.jpg"
+    hr_03_img_url: "/css/images/hr-03.jpg"
+    hr_04_img_url: "/css/images/hr-04.jpg"
+    title_one: "1丶人力规划和人才招募"
+    title_one_content: 
+    title_two: "2丶目前职缺"
+    title_two_content: "详细职缺内容，请上 "
+    title_two_content_search: "网站查询："
+    title_three: "3丶报到注意事项"
+    title_three_content: "试用人员报到时，必须向管理处人资课提交以下资料： <br>
+　A丶身份证原件丶影本<br>
+　B丶毕业证丶职称证书丶生育状况（计划生育服务证）原件影本<br>
+　C丶人事资料卡（如实填写）<br>
+　D丶体检合格表（公司指定医院）<br>
+　E丶小一寸彩色相片 6 张<br>
+　F丶与原单位解除劳动关系的证明档原件<br>
+　G丶居住证<br>
+　H丶其它必要文件<br>
+同时将个人社会保险缴纳情况等告知管理处人资课<br>
+(上述证件的影本由管理处人资课留存保管，如以上证件有变动资讯情况的请及时到管理处人资课更新留存)"
+    title_four: "4丶联络方式"
+    title_four_content:  "连络人：刘小姐丶叶小姐。<br>
+联系电话：020-82265528-2723丶2724<br>
+面试地点：广州市萝岗区东区东鹏大道77号台一铜业（广州）有限公司<br>
+<br>
+"
+  human-guangzhou-3:
+    main_title: "台一江铜丶铜业 - 薪资福利"
+    subtitle: "坚持以业绩为导向，多劳多得的分配原则，不断完善薪酬福利体系，提高分配的客观性。以绩效考核为基础，建立有效的分配机制，充分体现分配的激励性。公司实行以“基本薪资 +职务津贴+其他津贴”为基础的等级工资制，以绩效考核为奖金发放依据的薪酬福利体系。在公司发展的基础上，让员工不断享受企业发展的成果，提供给员工具有市场竞争力的薪酬水准。"
+    hr_06_img_url: "/css/images/hr-06.jpg"
+    title_one: "薪资"
+    title_one_content: "<ul>
+    	<li>基本工资</li>
+      <li>职务津贴</li>
+      <li>其他津贴</li>
+      <li>高温津贴</li>
+      <li>绩效奖金</li>
+      <li>年终奖金</li>
+      <li>每年度调薪</li>
+      <li>加班津贴</li>
+    </ul>"
+    title_two: "福利"
+    title_two_content: "<ul>
+    	<li>社会保险（五险）</li>
+      <li>住房公积金</li>
+      <li>免费早丶中丶晚丶夜餐及误餐补助</li>
+      <li>免费员工宿舍</li>
+      <li>免费员工交通车</li>
+      <li>年假等各类法定假日</li>
+      <li>婚丶丧丶喜丶庆及生育补助</li>
+      <li>疾病困难补助</li>
+      <li>工会组织之各类文体活动丶比赛</li>
+      <li>优秀员工奖金丶旅游</li>
+      <li>节日购物礼券</li>
+      <li>年资奖金</li>
+      <li>一年一次免费身体健康检查</li>
+    </ul>"
+  human-guangzhou-4:
+    main_title: "台一江铜丶铜业 - 教育训练"
+    title_one: "1丶目的"
+    title_one_content_1: "增进员工工作能力，提升经营绩效。"
+    title_one_content_2: "提高员工工作意愿，发挥敬业精神。"
+    title_one_content_3: "加强员工安全意识，确保工作安全。"
+    title_one_content_4: "激发员工个人潜能，储备所需人才。"
+    title_two: "2丶培训类别"
+    title_two_content_1: "新入职培训：公司级丶部门级丶班别级的三级员工入职培训，让新进员工熟悉公司组织架构和岗位工作职责，尽快融入公司文化。"
+    title_two_content_2: "安全培训：由专业的安全主任丶部门主管进行厂区丶工作岗位的安全丶环保知识培训，增强员工安全丶环保意识。"
+    title_two_content_3: "专业培训：工作岗位上的专业技能培训。"
+    title_two_content_4: "特殊岗位培训：特种作业技能培训。"
+    title_two_content_5: "综合技能培训：为提升管理能力而进行的沟通丶协调丶管理技能培训。"
+    title_two_content_6: "语言培训：英文丶日文培训。"
+    title_three: "3丶训练方式"
+    title_three_content_1: "内部培训"
+    title_three_content_2: "外部培训"
+    title_three_content_3: "自我个人培训：通过购买书籍丶光碟等方式丶自我教育丶提升。"
+  human-taiwan-1:
+    main_title: "台湾总公司 - 人力资源政策"
+    subtitle: "人力资源发展是人力资源管理功能中的重要部分，不仅包括训练与发展，更包括个人的生涯规划与发展活动及绩效评量；为持续提升组织效能，奠基符合企业短丶中丶长程营运发展之人力资产，持续开发与优化人力资源，台一国际制定如下的人力资源政策："
+    title_one: "1丶强化职能因应组织发展"
+    title_one_content: "透过工作分析与职能差异化检视，拟定提升改善计划，规划阶段性的训练及养成，逐步深化核心人才的专业能力，拓展人才的视野。"
+    title_two: "2丶提升绩效丶利润共享"
+    title_two_content: "以关键绩效指标设定绩效考核项目，透过双向制定考核标准及面谈，共同制定提升改善计划，强化主管与部属间的信赖度及认同感，以达绩效管理目标。同时规划执行生产奖金制度，以事业部月经营成果（营业利益获利回馈），结合产量丶屑线率丶出货量等指标计算奖金额度，依个人月绩效表现核发，以达利润共享。"
+    title_three: "3丶因应未来需求预筹人力"
+    title_three_content: "建立具市场竞争力之薪酬制度，客观公正的绩效考核，鼓励核心职能丶管理职能与技术职能成长的晋升制度，兼顾制度与人性角度，广纳天下英才。"
+    title_four: "4丶人才优化精进方案"
+    title_four_content: "因应集团发展与策略目标，规划经营主管培训丶储备干部训练等计划，评选各阶人员学经能力及发展潜能，拟定训练计划，进行各阶主管人才养成，以创造高效团队。"
+    title_five: "5丶工作环境权与员工关系"
+    title_five_content: "「安全第一」是我们对员工在工作场所的承诺，亦为安卫政策的最高指导原则，适时强化员工安全卫生的知识与技能，创造零工安事故的工作环境；同时透过关怀员工需求，提供员工急难救助与法律谘询等，凝聚员工的向心力。"
+  human-taiwan-2:
+    main_title: "台湾总公司 - 菁英招募"
+    subtitle: "详细职缺内容，<br>
+请上 104 人力银行网站查询：<br>"
+    info: "意者请直接於 104 网站投递履历表，<br>我们将由专人尽快为您处理并送达相关部门，<br>谢谢！"
+  human-taiwan-3:
+    main_title: "台湾总公司 - 薪资福利"
+    subtitle: "本公司提供具激励性之奖酬制度及顺畅的升迁管道："
+    info: " <ul>
+          <li>依物价状况及同业水准作为新进人员录用水平。</li>
+          <li>每年定期依上年度考绩，作为晋升及调薪依据。</li>
+          <li>依物价状况及同业薪资水准，不定期调薪。</li>
+          <li>生产绩效奖金丶年终奖金。</li>
+          <li>员工享有盈馀分红入股。</li>
+          <li>薪资跨行提款免手续费。</li>
+          <li>三节礼券丶生日礼券。</li>
+          <li>每年员工旅游及亲子活动。</li>
+          <li>每年免费健康检查。</li>
+          <li>鲜乳或饮料随夏季每月发放一箱（两打）其馀月份半箱（一打）。</li>
+          <li>早丶午丶晚餐及夜点（工厂）。</li>
+          <li>模范员工礼金礼品及公开表扬。</li>
+          <li>婚丶丧丶喜丶庆及生育补助。</li>
+          <li>子女教育奖助金。</li>
+          <li>员工急难救助。</li>
+          <li>社团活动补助。</li>
+          <li>公司制服外套。</li>
+          <li>依法投保劳保丶健保丶退休金提拨。</li>
+          <li>男性员工陪产假。</li>
+        </ul>"
+  human-taiwan-4:
+    main_title: "台湾总公司 - 教育训练"
+    subtitle: "我们致力於提供员工成长机会，使其发挥工作潜力，着重各阶层主管管理职能之强化，以及部门自办专业职能之训练丶工作教导之执行，以培育组织所需人才，达成企业永续经营之目标。是故，在人力资源发展上采取如下策略，包括："
+    title_one_content_1: "系统性的新人训练，协助同仁快速融入台一大家庭。"
+    title_one_content_2: "针对各功能专业职能，强化阶层别教育训练课程及导入人员发展计画。"
+    title_one_content_3: "实施中阶主管轮调计划，并横向开展，积极培育人才，活化组织运作。"
+    title_one_content_4: "加速知识管理（KM）系统推动，以有效传承知识及技术累积。"
+    title_one_content_5: "针对核心工程或技术人员，建置及培养有经验之储备人员。"
+    title_one_content_6: "导入精实企业（LE）手法，推动人力结构与工作设计之合理化。"
+    title_one_content_7: "强化管理并确保技术资料及工作说明书之充分建置。"
+    title_one_content_8: "并且展开以职能为发展的训练系统，包括功能别的专业核心职能训练丶职位别的管理核心职能训练，以及共同性的经营管理训练，积极建立企业人才库，系统性地培养菁英人才。"
+  plant:
+    copper_title: "台一铜业"
+    copper_desc: "公司成立於 1997 年 5 月，年产能各类漆包线 53,000 吨。从德国丶日本丶义大利丶台湾引进行业先进生产设备及检测设备，拥有成熟精湛的工艺技术，并已获中国品质诚信企业与广东省优秀台资企业等多项称号。"
+    copper_intro: "台一铜业简介"
+    copper_certification: "专业认证与荣耀"
+    copper_superiority: "竞争优势"
+    copper_research: "研究发展"
+    copper_catalogs: "产品型录"
+    copper_consulting: "产品谘询"
+    jiangcorp_title: "台一江铜"
+    jiangcorp_desc: "公司成立於 1997 年 5 月，年产能 180,000 吨裸铜线，已从美国引进最先进的 SCR 连铸连轧铸造机及最新研发之电子控制系统，并与美国南线公司保持长期技术合作，拥有成熟生产技术及稳定的品质保证，为珠江三角洲地区同行业龙头企业。"
+    hsinchu_title: "新竹厂"
+    hsinchu_desc: "新竹厂创立於 1979 年 9 月，设立於新竹县新竹工业区，年产量约 14000 公吨，为漆包线知名领导厂商。本厂与日本漆包线最大制造厂－第一电工技术合作制造高品质漆包线，深获客户好评。"
+    resin_title: "树脂厂"
+    resin_desc: "树脂厂产品乃机能性树脂丶 涂料丶或称凡立水，主要系运用於漆包线之外层批覆绝缘材料，本厂持续研究开发来高值化产品以与世界一流涂料商产品并驾齐驱！"
+    guanyin_title: "观音厂电线电缆事业"
+    guanyin_desc: "电线电缆事业於 1954 年 6 月创立低压厂，并於 1993 年增设高压厂，後於 1996 年合并为电线电缆事业部，最适产品组合年产量约 16,000 公吨，为电线电缆与光缆业的知名领导厂商。"
+    guanyin3c_title: "观音厂3C事业"
+    guanyin3c_desc: "3C事业创立於 2012 年，产品为电子电源线。本厂与工研院等研究单位技术合作持续进行制程的研发改良，并评估采用 3D 列印技术，持续不断创新开发来满足客户的期待与需求。"
+  copper-intro:
+    main_title: "台一铜业（广州）有限公司简介"
+    main_desc: "公司成立於 1997 年 5 月，座落于广州经济技术开发区东区，由台湾台一国际股份有限公司投资，公司注册资本 5076 万美元，投资总额 8446 万美元，员工人数约 650 人，近年每年营业额约 20 亿元。
+<br><br>
+公司年产能各类漆包线 53,000 吨。从德国丶日本丶义大利丶台湾引进行业先进生产设备及检测设备，拥有成熟精湛的工艺技术。
+<br><br>
+公司严格执行 ISO 9001 品质管理体系丶ISO 14001 环保管理体系丶ISO／TS16949 汽车品质管理体系等管理标准，产品除获得美国 UL 安全认证丶索尼 GP 绿色夥伴认证，并符合欧盟 ROSH 以及 Reach 等环境有害物质管理规定。
+<br><br>
+秉持集团优良传统，取得多项荣誉：安全生产标准化企业资格丶广州市清洁生产企业评定丶中国品质诚信企业称号丶广东省优秀台资企业称号。
+<br><br>
+公司主营各类漆包线，产品线径范围自 0.040 mm - 3.20 mm 产品包括一般漆包线丶耐热漆包线丶自融着漆包线丶耐冷媒漆包线丶抗电晕漆包线丶耐高温直焊性漆包线丶漆包绞线丶三层绝缘线丶平角漆包线丶异型铜线及相关特殊漆包线。产品广泛用於空调压缩机丶线圈丶马达丶变压器丶发电机丶微电控制系统丶电源供应器丶电动汽车等行业。"
+    title_one: "员工人数："
+    title_one_content: "约 650 人"
+    title_two: "工厂面积："
+    title_two_content: "105,254 平方米"
+    title_three: "建筑面积："
+    title_three_content: "50,813 平方米"
+    title_four: "地理位置："
+    title_four_content: "广州市广州经济技术开发区东区东鹏大道 77 号"
+  copper-certification:
+    main_title: "专业认证与荣耀"
+    list-1: "通过 ISO9001 品质管制体系认证"
+    list-2: "通过 ISO／TS16949 汽车产品品质管制体系认证"
+    list-3: "通过 ISO 14001 环保管理体系认证"
+    list-4: "通过 UL 美国安全认证"
+    list-5: "通过安全生产标准化企业资格"
+    list-6: "通过广州市清洁生产企业评定"
+    list-7: "获评为中国品质诚信企业"
+    list-8: "获评为广东省优秀台资企业"
+    download: "附件下载："
+  copper-superiority:
+    main_title: "竞争优势"
+    title_1: "1丶垂直整合的企业架构"
+    title_1_content: "拥有行业所需之垂直整合企业架构，从铜材原材料取得，到漆包线所需之外层披覆绝缘材料，垂直控管品质，确保稳定高质之漆包线生产。"
+    title_2: "2丶先进的生产设备"
+    title_2_content: "公司先进的生产设备主要由德国丶日本丶义大利与台湾等先进国家（地区）进口，确保高设备先进性。"
+    title_3: "3丶全面的技术支援服务"
+    title_3_content: "公司研发团队累积集团四十多年之经验，主动与客户生产团队合作研发，满足客户需求之特殊线种，与客户创双赢优势。"
+    title_4: "4丶丰富的产业经验"
+    title_4_content: "公司从事漆包线制造四十多年，所有经营管理团队成员对本行业具有丰富经验，使公司能紧贴行业相关连产业之发展趋势，随时制定产品发展策略。"
+  x_about-responsibility: 
+    main_title:
+    title_one:
+    title_one_content:
+    title_two:
+    title_two_content:
+    title_three:
+    title_three_content:
+  about-concept:
+    title_one: "台一国际企业经营理念"
+    title_one_content: "<b>深耕</b><br>深入技术研发，提升自我能力，耕耘客户，取得客户对公司对产品的信任 <br><br><b>创新</b><br>观念创新丶技术创新丶产品创新<br><br><b>国际观</b><br>胸怀国际，全球化经营，成就全球企业集团之理想"
+    title_two: "企业愿景"
+    title_two_content: "成为全球最先进及获利最佳的公司，与客户群能密切配合，共同组成最佳上下游的供应链夥伴。"
+    title_three: "未来展望"
+    title_three_content: "本集团致力於产品之垂直深加工以提高产品附加价值，来维持市场竞争力与公司永续经营，同时形成庞大之规模经济结构以积极扩张产业范围。<br>本集团致力於形成跨产业联盟并加强与上下游厂商之合作。<br>本集团致力於强化资本结构与巩固管理基石。"
+    title_four: "台一国际企业简介"
+    title_four_content: "台一国际股份有限公司（以下简称台一国际）设立的时间，於民国 68 年 9 月11 日设立，迄今约有 34 年的历史。<br><br>
+目前台一国际共计有五个厂，分别台湾为观音厂（电线电缆）丶新竹（漆包线）丶树脂（绝缘材料）三厂丶中国有台一铜业（漆包线）丶台一江铜（铜杆）两厂，目前公司产品线包含各式高丶中丶低压电缆丶光纤丶漆包线丶车用电子线丶电源线丶镀锡铜线丶太阳能线等，线缆产品其主要用途是做为信号传递丶电力传送及能源转换之用。漆包线产品主要供应小至耳机大至变压器的电力传导。<br><br>产品范围含盖上游裸铜线生产制造到丶漆包线丶电力电缆丶光缆及绝缘材料产业关连性高，具垂直水平整合的优势。相关产品并已取得 ISO9004丶ISO1400丶TSI16949 相关认证，产品品质与工厂管理与达国际大厂并驾齐驱。<br><br>
+        公司经营的成果卓越，据 2009 年商业周刊两岸三地上市公司 1000 大企业的调查，台一国际集团营收规模居 389 名且列为电线电缆类之首，拥有良好的市占率及优良的客户群，营业规模领先其他台湾丶中国及香港上市的同业。本集团已成为中国国内裸铜线及电磁线行业的领导生产厂商，是中国第三大及华南地区最大的裸铜线及漆包线生产厂商。"
+  
+  env:
+    h2images:
+      gy: "/css/images/gy-01.png"
+      cp: "/css/images/cp-01.png"
+    language:
+      zh_CN: "简体中文"
+      zh_TW: "繁体中文"
+      en: "English"
+      ja: "日本语"
+  activerecord:
+    models:
+      announcement: "最新消息"
+    attributes:
+      announcement:
+        title: "标题"
+      hqlevel:
+        name: "分类名称"
+      brlevel:
+        name: "分类名称"
+      organization:
+        org_name: "厂名"
+        address: "地址"
+      representative:
+        division: "部门"
+        name: "姓名"
+        phone: "电话"
+      annualreport:
+        fiscal_year: "年份"
+      majorresolution:
+        fiscal_year: "年份"
+      financialreport:
+        fiscal_year: "年份"
+      monthlyrevenuereport:
+        fiscal_year: "年份"
+      revenue_item:
+        item: "项目名称"
+        value: "收入净额"
+      dividend_history:
+        fiscal_year: "年份"
+        sre: "盈馀配股"
+        scap: "公债配股"
+        cash: "现金股利"
+        total: "合计"
+  date:
+    abbr_day_names:
+    - 日
+    - 一
+    - 二
+    - 三
+    - 四
+    - 五
+    - 六
+    abbr_month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    day_names:
+    - 星期日
+    - 星期一
+    - 星期二
+    - 星期三
+    - 星期四
+    - 星期五
+    - 星期六
+    formats:
+      default: ! '%Y-%m-%d'
+      long: ! '%Y年%b%d日'
+      short: ! '%b%d日'
+    month_names:
+    -
+    - 一月
+    - 二月
+    - 三月
+    - 四月
+    - 五月
+    - 六月
+    - 七月
+    - 八月
+    - 九月
+    - 十月
+    - 十一月
+    - 十二月
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 大约一小时
+        other: 大约 %{count} 小时
+      about_x_months:
+        one: 大约一个月
+        other: 大约 %{count} 个月
+      about_x_years:
+        one: 大约一年
+        other: 大约 %{count} 年
+      almost_x_years:
+        one: 接近一年
+        other: 接近 %{count} 年
+      half_a_minute: 半分钟
+      less_than_x_minutes:
+        one: 不到一分钟
+        other: 不到 %{count} 分钟
+      less_than_x_seconds:
+        one: 不到一秒
+        other: 不到 %{count} 秒
+      over_x_years:
+        one: 一年多
+        other: ! '%{count} 年多'
+      x_days:
+        one: 一天
+        other: ! '%{count} 天'
+      x_minutes:
+        one: 一分钟
+        other: ! '%{count} 分钟'
+      x_months:
+        one: 一个月
+        other: ! '%{count} 个月'
+      x_seconds:
+        one: 一秒
+        other: ! '%{count} 秒'
+    prompts:
+      day: 日
+      hour: 时
+      minute: 分
+      month: 月
+      second: 秒
+      year: 年
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: 必须是可被接受的
+      blank: 不能是空白字元
+      present: 必须是空白
+      confirmation: 不符合确认值
+      empty: 不能留空
+      equal_to: 必须等於 %{count}
+      even: 必须是偶数
+      exclusion: 是被保留的关键字
+      greater_than: 必须大於 %{count}
+      greater_than_or_equal_to: 必须大於或等於 %{count}
+      inclusion:  数值不在允许范围内
+      invalid: 是无效的
+      less_than: 必须小於 %{count}
+      less_than_or_equal_to: 必须小於或等於 %{count}
+      not_a_number: 不是数字
+      not_an_integer: 必须是整数
+      odd: 必须是奇数
+      record_invalid: ! '校验失败: %{errors}'
+      restrict_dependent_destroy: 
+        one: 由於 %{record} 需要此记录，所以无法移除记录
+        many: 由於 %{record} 需要此记录，所以无法移除记录
+      taken: 已经被使用
+      too_long: 
+        one: 过长（最长是一个字）
+        other: 过长（最长是 %{count} 个字）
+      too_short: 
+        one: 过短（最短是一个字）
+        other: 过短（最短是 %{count} 个字）
+      wrong_length: 
+        one: 字数错误 (必须是一个字)
+        other: 字数错误 (必须是 %{count} 个字)
+      other_than: 不可以是 %{count} 个字
+    template:
+      body: 以下栏位发生问题：
+      header:
+        one: 有 1 个错误发生使得「%{model}」无法被储存。
+        other: 有 %{count} 个错误发生使得「%{model}」无法被储存。
+  helpers:
+    select:
+      prompt: 请选择
+    submit:
+      create: 新增%{model}
+      submit: 储存%{model}
+      update: 更新%{model}
+  number:
+    currency:
+      format:
+        delimiter: ! ','
+        format: ! '%u %n'
+        precision: 2
+        separator: .
+        significant: false
+        strip_insignificant_zeros: false
+        unit: NT$
+    format:
+      delimiter: ! ','
+      precision: 3
+      separator: .
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: 十亿
+          million: 百万
+          quadrillion: 千兆
+          thousand: 千
+          trillion: 兆
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte: 
+            one: 位元组
+            other: 位元组
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', 和 '
+      two_words_connector: ! ' 和 '
+      words_connector: ! ', '
+  time:
+    am: 上午
+    formats:
+      default: ! '%Y年%b%d日 %A %H:%M:%S %Z'
+      long: ! '%Y年%b%d日 %H:%M'
+      short: ! '%b%d日 %H:%M'
+    pm: 下午

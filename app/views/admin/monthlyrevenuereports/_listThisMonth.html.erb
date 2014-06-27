@@ -33,8 +33,8 @@
 							<%= f.text_field :value , class: 'text' %>
 	  	   </td>
 	  	  <td align='right'>
-		  				<%= link_to '儲存', "#", onclick: "$('#ajaxEditRevenueForm#{revenueitem.id.to_s}').submit()"%>
-						<a <%= "id=canceledit#{revenueitem.id.to_s}" %> class="cancelEditbutton" href='#' >取消</a>
+		  				<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxEditRevenueForm#{revenueitem.id.to_s}').submit()"%>
+						<a <%= "id=canceledit#{revenueitem.id.to_s}" %> class="cancelEditbutton" href='javascript: void(0)' >取消</a>
 				<% end %>
 		  	 </td>
 	</tr>

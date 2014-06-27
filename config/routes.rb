@@ -1,16 +1,40 @@
 Taii::Application.routes.draw do
 
 
+  
+	scope ':locale', :locale => /en|zh_TW|zh_CN|ja/ do
+		resources :hqlevels
+		resources :brlevels	
+	  
+	  resources :hqproducts do 
+	  	member do
+				get 'fetch' , :action => 'fetch'
+			end
+	  end
+		
+		resources :brproducts do 
+	  	member do
+				get 'fetch' , :action => 'fetch'
+			end
+	  end
+
+	end
+	
   #resources :majorpolicies
-  #resources :financialprojections
   #resources :announcements
-  #resources :dividend_histories
+  #x_resources :dividend_histories, only: [:index]
+  #x_resources :organizations, only: [:index]
+  #x_resources :financialreports, only: [:index]
+  #x_resources :majorresolutions, only: [:index]
+  
+  #x_resources :annualreports, only: [:index]  
+  
+  #x_resources :financialprojections, only: [:index]
+
   #resources :revenue_items
-  #resources :monthlyrevenuereports
-  #resources :brproducts
-	#resources :brlevels
-	#resources :hqproducts
-	#resources :hqlevels
+  
+
+
 	#resources :financialreports
 	devise_for :admins
 
@@ -158,6 +182,23 @@ Taii::Application.routes.draw do
 			get ':page', :action => :show, :as => :page
 		end
 	end
+	  
+  resources :investors, :controller => :investors , only: [:annualreport, :dividend_history, :financialreport, :majorresolution, :financialprojection, :monthlyrevenuereport, :majorpolicy, :index] do 
+  	collection do
+   		get 'annualreport', :action => :annualreport, :as => :annualreport
+   		get 'dividend_history', :action => :dividend_history, :as => :dividend_history
+   		get 'financialreport', :action => :financialreport, :as => :financialreport
+   		get 'majorresolution', :action => :majorresolution, :as => :majorresolution
+   		get 'financialprojection', :action => :financialprojection, :as => :financialprojection
+	  	get 'monthlyrevenuereport/viewbymonth/:fiscal_month', :action => :monthlyrevenuereport, :as => :monthlyrevenuereport , :constraints => {:fiscal_month => /([1-9]|1[012])/ }
+	  	get 'majorpolicy', :action => :majorpolicy, :as => :majorpolicy
+	  	get ':investor', :action => :show, :as => :investor
+  	end
+  end
+  
+  get 'contactus' => "contact#contactus"
+  
+  get 'set_locale/:locale' => "static_pages#set_locale", :as => :set_locale, :locale => /en|zh_TW|zh_CN|ja/
   
 	root :to => 'static_pages#index'
   #root :to => 'static_pages#construct'

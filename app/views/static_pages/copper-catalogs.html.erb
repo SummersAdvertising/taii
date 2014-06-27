@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/front/plant-2.css">
+<style>
+article h2 { background: url(<%= t("env.h2images.cp") %>) center 0 no-repeat }
+</style> 
+<article>
+    <h2>觀音廠電線電纜事業介紹</h2>
+    <%= render "plant_sidemenu" %>
+    <%= render "copper_sidemenu" %>
+    <section>
+      <h3><%=t("copper-catalogs.main_title")%></h3>
+      <div class="content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center"><img src="/css/images/jc-11.jpg"></td>
+          </tr>
+        </table><br>
+        <div class="download">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+            	<td width="15%">&nbsp;</td>
+              <td width="8%" valign="middle"><img src="/css/images/3c-09.png"></td>
+              <td width="67%" valign="top"><%=t("copper-catalogs.download")%><br>
+                <a href="#">台一銅業-產品型錄.pdf</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+  </article>

@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="/css/front/investor.css">
+<style>
+article aside ul li.active > a { background-image: url(/css/images/ab-03hh.png) }
+</style>
+<article>
+    <h2>關於台一</h2>
+       <!-- sidemenu -->
+    <%= render  "common/sidemenu" %>
+    
+    <section>
+      <h3>每月營收</h3>
+      <h4><%= @active_monthly_report.fiscal_year %>年營業收入</h4>
+      <div class="content">
+        <div class="month"> 
+							<%= link_to "12月", monthlyrevenuereport_investors_path( fiscal_month: 12)  %>
+							<%= link_to "11月", monthlyrevenuereport_investors_path( fiscal_month: 11) %>
+							<%= link_to "10月", monthlyrevenuereport_investors_path( fiscal_month: 10) %>
+							<%= link_to "9月", monthlyrevenuereport_investors_path( fiscal_month: 9) %>
+							<%= link_to "8月", monthlyrevenuereport_investors_path( fiscal_month: 8) %>
+							<%= link_to "7月", monthlyrevenuereport_investors_path( fiscal_month: 7) %>
+							<%= link_to "6月", monthlyrevenuereport_investors_path( fiscal_month: 6) %>
+							<%= link_to "5月", monthlyrevenuereport_investors_path( fiscal_month: 5) %>
+							<%= link_to "4月", monthlyrevenuereport_investors_path( fiscal_month: 4) %>
+							<%= link_to "3月", monthlyrevenuereport_investors_path( fiscal_month: 3) %>
+							<%= link_to "2月", monthlyrevenuereport_investors_path( fiscal_month: 2) %>
+							<%= link_to "1月", monthlyrevenuereport_investors_path( fiscal_month: 1) %>
+        </div>
+        <div class="table">
+       	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr style="background:none;border:none">
+              <td colspan="2"><h6><%= @active_monthly_report.fiscal_year %> 年 <%= @currentMonth %> 月 營業收入</h6></td>
+              <td colspan="2" align="right"><span>單位：新台幣仟元</span></td>
+            </tr>
+            <tr>
+              <th width="10%">&nbsp;</th>
+              <th width="20%" align="left">項目</th>
+              <th width="60%" align="right">營業收入淨額</th>
+              <th width="10%">&nbsp;</th>
+            </tr>
+            
+            <% if (!@revenue_items.nil? && @revenue_items.count > 0) %>
+            		<% @revenue_items.each do | revenueitem | %>
+            		  <tr>
+			              <td>&nbsp;</td>
+			              <td align="left"><%= revenueitem.item %></td>
+			              <td align="right"><%= number_with_delimiter(revenueitem.value)%></td>
+			              <td>&nbsp;</td>
+			            </tr>
+			           <% end %>
+	           
+            
+            <tr style="background:none;border:none">              
+              <td colspan="4" align="right"><span>更新日期：<%= @revenue_items.maximum('updated_at').strftime("%Y").to_i - 1911 %>.<%= @revenue_items.maximum('updated_at').strftime("%m.%d")%></span></td>
+            </tr>
+            <% end %>
+          </table>
+        </div>
+      </div>
+      
+      
+      
+      <h4 style="background:url(/css/images/iv-08.jpg) center bottom no-repeat;height:65px">歷年營收</h4>
+      
+      <div class="content">
+        <div class="folder">
+				<% if @history_array.count >= 1 %>
+						<% @historyRevenues.each do | history | %>
+								 <div class="file"> <%= history.file_name %><br>
+				            <a href="<%= history.attachment.url %>">&nbsp;</a> 
+			          </div>			
+						<% end %>
+				<% else %>
+				
+					查無本年度前之年度營收報告
+				
+				<% end %>
+
+         
+         
+        </div>
+        <!--folder--> 
+      </div>
+      <!--content--> 
+    
+    </section>
+  </article>

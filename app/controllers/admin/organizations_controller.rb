@@ -90,6 +90,6 @@ class Admin::OrganizationsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def organization_params
-      params.require(:organization).permit(:org_name, :address)
+      params.require(:organization).permit(:org_name, :address, :accessLevel)
     end
 end

@@ -70,7 +70,7 @@ class Admin::AnnouncementsController < AdminController
   def destroy
     @announcement.destroy
     respond_to do |format|
-      format.html { redirect_to admin_announcement_path }
+      format.html { redirect_to admin_announcements_path }
       format.json { head :no_content }
     end
   end

@@ -1,4 +1,25 @@
 en:
+  about_side_menu:
+    concept: "Concept"
+    responsibility: "Responsibility"
+    history: "History"
+    product-1: "Products"
+    evolve: "R & D"
+    superiority: "Advantages"
+    operating-1: "Operating"
+    organization: "Organization"
+    group: "Corp"
+  about-concept:
+    title_one: "Concepts"
+    title_one_content: "<b>xx</b><br>xxxxxx，xxxxxx，xxxx，xxxxxxxxxxxxx <br><br><b>xx</b><br>xxxx、xxxx、Xxxx<br><br><b>xxx</b><br>xxxx，xxxx，xxxxxxxxxxx"
+    title_two: "企業願景"
+    title_two_content: "成為全球最先進及獲利最佳的公司，與客戶群能密切配合，共同組成最佳上下游的供應鏈夥伴。"
+    title_three: "未來展望"
+    title_three_content: "本集團致力於產品之垂直深加工以提高產品附加價值，來維持市場競爭力與公司永續經營，同時形成龐大之規模經濟結構以積極擴張產業範圍。<br>本集團致力於形成跨產業聯盟並加強與上下游廠商之合作。<br>本集團致力於強化資本結構與鞏固管理基石。"
+    title_four: "台一國際企業簡介"
+    title_four_content: "台一國際股份有限公司（以下簡稱台一國際）設立的時間，於民國 68 年 9 月11 日設立，迄今約有 34 年的歷史。<br><br>
+目前台一國際共計有五個廠，分別台灣為觀音廠（電線電纜）、新竹（漆包線）、樹脂（絕緣材料）三廠、中國有台一銅業（漆包線）、台一江銅（銅桿）兩廠，目前公司產品線包含各式高、中、低壓電纜、光纖、漆包線、車用電子線、電源線、鍍錫銅線、太陽能線等，線纜產品其主要用途是做為信號傳遞、電力傳送及能源轉換之用。漆包線產品主要供應小至耳機大至變壓器的電力傳導。<br><br>產品範圍含蓋上游裸銅線生產製造到、漆包線、電力電纜、光纜及絕緣材料產業關連性高，具垂直水平整合的優勢。相關產品並已取得 ISO9004、ISO1400、TSI16949 相關認證，產品品質與工廠管理與達國際大廠並駕齊驅。<br><br>
+        公司經營的成果卓越，據 2009 年商業週刊兩岸三地上市公司 1000 大企業的調查，台一國際集團營收規模居 389 名且列為電線電纜類之首，擁有良好的市占率及優良的客戶群，營業規模領先其他台灣、中國及香港上市的同業。本集團已成為中國國內裸銅線及電磁線行業的領導生產廠商，是中國第三大及華南地區最大的裸銅線及漆包線生產廠商。"
   activerecord:
     attributes:
       announcement:

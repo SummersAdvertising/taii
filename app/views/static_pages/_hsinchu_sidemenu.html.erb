@@ -1,0 +1,25 @@
+
+    <aside>
+      <ul>
+	      <li><a href="<%= page_pages_path("hsinchu-intro") %>" class="hsinchu-intro" ><%= t("plant.hsinchu_intro") %></a></li>
+	      <li><a href="<%= page_pages_path("hsinchu-certification") %>" class="hsinchu-certification" data-no-turbolink="true" ><%= t("plant.hsinchu_certification") %></a></li>
+	      <li><a href="<%= page_pages_path("hsinchu-research") %>" class="hsinchu-research" ><%= t("plant.hsinchu_research") %></a></li>
+	      <li><a href="<%= page_pages_path("hsinchu-equipment") %>" class="hsinchu-equipment" ><%= t("plant.hsinchu_equipment") %></a></li>
+	      <li><a href="<%= page_pages_path("hsinchu-catalogs") %>" class="hsinchu-catalogs" ><%= t("plant.hsinchu_catalogs") %></a></li>
+	      <li><a href="<%= page_pages_path("hsinchu-use") %>" class="hsinchu-use" ><%= t("plant.hsinchu_use") %></a></li>
+	      <li><a href="<%= page_pages_path("hsinchu-consulting") %>" class="hsinchu-consulting" ><%= t("plant.hsinchu_consulting") %></a></li>
+      </ul>
+    </aside>
+        
+    <script type="text/javascript">
+    	var pageName = window.location.href.split('/');
+			if ( pageName ) {
+					$('.' + pageName[pageName.length -1 ]+'' ).parent().addClass('active');	
+					plant = pageName[pageName.length -1 ].split('-');
+					if ( plant ) {
+							$('.' + plant[0]+'-intro-nav' ).addClass('active');		
+					}
+					
+			}
+    </script>
+    

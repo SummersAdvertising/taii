@@ -47,7 +47,11 @@ class Admin::HqproductsController < AdminController
   # GET /hqproducts/1/edit
   def edit
   	@breadcrumb = @hqproduct.hqlevel.find_my_direct_parent()
-  	@Orgs = Organization.with_translations(I18n.locale)
+  	if current_admin.superadmin == 1
+	  	@Orgs = Organization.with_translations(I18n.locale)
+	  else
+	  	@Orgs = Organization.with_translations(I18n.locale).where("accessLevel = 1")
+	  end
 
   end
 
@@ -77,7 +81,11 @@ class Admin::HqproductsController < AdminController
   # PATCH/PUT /hqproducts/1.json
   def update
   	@breadcrumb = @hqproduct.hqlevel.find_my_direct_parent()
-  	@Orgs = Organization.with_translations(I18n.locale)
+  	if current_admin.superadmin == 1
+	  	@Orgs = Organization.with_translations(I18n.locale)
+	  else
+	  	@Orgs = Organization.with_translations(I18n.locale).where("accessLevel = 1")
+	  end
   	# force to set org_id to 0 if nil?
   	if hqproduct_params[:organization_id].empty?
   		params[:hqproduct][:organization_id] = 0

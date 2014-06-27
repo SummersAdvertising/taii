@@ -2,9 +2,9 @@
   <h2>股利分派</h2>
 </header>
  <article>
- <p class="notice"><%= notice %></p>
   <div class="button">          
-  	<a href="#" id='createANewHistoryButton' class="right highlight">新增項目<img src="/images/add.png"></a></div>
+  	<a href="javascript: void(0)" id='createANewHistoryButton' class="right highlight">新增項目<img src="/images/add.png"></a></div>
+ <p class="notice"><%= notice %></p>
   	<div class="list">
       	<table id="mainHistoryList" width="100%" border="0" cellspacing="0" cellpadding="0">
 	        	<tbody id="listThisHistory">
@@ -49,8 +49,8 @@
 			        	<%= f.text_field :cash_paymentdate, placeholder: '現金發放日', class: 'text withdatepicker' , id: "withcash00" %>
 			        </td>
 			        <td align="right" width="18%">
-		        		<%= link_to '儲存', "#", onclick: "$('#NewHistoryForm').submit()", title: "儲存" %>
-	              <a id="cancelAHistorybutton" title="取消" href="#">取消</a>
+		        		<%= link_to '儲存', "javascript: void(0)", onclick: "$('#NewHistoryForm').submit()", title: "儲存" %>
+	              <a href="javascript: void(0)" id="cancelAHistorybutton" title="取消" >取消</a>
 			        </td>
 			        <% end %>
 		      </tr>
@@ -76,31 +76,6 @@
 		  $( "#createNewHistory" ).toggle();
 		});
 		
-		//ajax:success on NewLevel action
-		$("#NewHistoryForm").on('ajax:success',function(evt, data, status, xhr) {
-			//alert("ajaxsuccess");
-		    var $this = $(this);
-		
-		    $this.find('.errors').empty();
-			$("#createNewHistory").toggle();
-
-		});
-		//ajax:error on NewLevel action
-		$("#NewHistoryForm").on('ajax:error',function(evt, data, status, xhr) {
-			//alert("ajaxerror");
-		    var responseObject = $.parseJSON(xhr.responseText),
-		        errors = $('<ul />');
-		        
-		        //alert("ERROR with="+JSON.stringify(responseObject));
-		
-		    $.each(responseObject, function(){
-		      errors.append('<li>' + this + '</li>');
-		    })
-		
-		    errors.appendTo($(this).find('.errors'));
-
-		});
-		
 		//＝＝
 			//rename link
 		$("#mainHistoryList").on('mouseup',".renameLink", function() {
@@ -111,35 +86,6 @@
 		$("#mainHistoryList").on('mouseup', ".cancelRenameAHistorybutton",function() {
 			$(".tr-"+this.id.toString().replace("cancelhistory", "")+"-for-edit").toggle();
 			$(".tr-"+this.id.toString().replace("cancelhistory", "")+"-for-show" ).toggle();
-		});
-
-		//ajax:success on Rename action
-		$(".ajaxRenameHistoryForm").on('ajax:success',function(evt, data, status, xhr) {
-			//alert("ajax rename success");
-		    var $this = $(this);
-		
-		    $this.find('.errors').empty();
-		    
-			var  strLevelid = $this.find("#renameHistoryID").val().toString();
-			$(".tr-"+strLevelid+"-for-edit").toggle();
-			$(".tr-"+strLevelid+"-for-show" ).toggle();
-			//$("#variant"+strLevelid + " > " + " a ").text( $this.find("#hqlevel_name").val().toString() );
-
-		});
-		//ajax:error on Rename action
-		$(".ajaxRenameHistoryForm").on('ajax:error' ,function(evt, data, status, xhr) {
-				//alert("ajaxerror");
-		    var responseObject = $.parseJSON(xhr.responseText),
-		        errors = $('<ul />');
-		        
-		        //alert("ERROR with="+JSON.stringify(responseObject));
-		
-		    $.each(responseObject, function(){
-		      errors.append('<li>' + this + '</li>');
-		    })
-		
-		    errors.appendTo($(this).find('.errors'));
-
 		});
 
 		//$('#listThisLevel').sortable();

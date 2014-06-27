@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/css/front/investor.css">
+<article>
+    <h2>關於台一</h2>
+        <!-- sidemenu -->
+    <%= render  "common/sidemenu" %>
+   <section>
+      <h3>財務報告</h3>
+      <% @financialreports.each do | year |%>
+		      <% if year.attachments.count > 0 %>
+			      <h4><%= year.fiscal_year %> 年 <span><%= year.fiscal_year + 1911 %> 年</span></h4>      
+					      <div class="content">
+					        <div class="folder">
+					        	<% year.attachments.each do | attach | %>
+					          		<div class="file"> <%= attach.file_name %><br>
+						          			<a href="<%= attach.attachment.url %>">&nbsp;</a> </div>
+					           <% end %>
+					        </div>
+					        <!--folder--> 
+					      </div>
+		      <% end %>
+      <% end %>
+    </section>
+  </article>

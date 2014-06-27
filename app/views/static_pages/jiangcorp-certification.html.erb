@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="/css/front/plant-2.css">
+<link rel="stylesheet" href="/css/front/colorbox.css">
+<script src="/js/jquery.colorbox-min.js"></script>
+
+<script>
+	$(document).ready(function(){
+			$(".lightbox").colorbox();
+	})
+</script>
+<style>
+article h2{background:url(<%= t("env.h2images.jc") %>) center 0 no-repeat}
+</style>
+<article>
+    <h2>觀音廠電線電纜事業介紹</h2>
+    <%= render "plant_sidemenu" %>
+    <%= render "jiangcorp_sidemenu" %>
+    <section>
+      <h3><%= t("jiangcorp-certification.main_title")%></h3>
+      <h4><%= t("jiangcorp-certification.title_1")%></h4>
+      <div class="content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="3%" valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td width="97%" valign="top"><%= t("jiangcorp-certification.title_1_content_1")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%= t("jiangcorp-certification.title_1_content_2")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%= t("jiangcorp-certification.title_1_content_3")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%= t("jiangcorp-certification.title_1_content_4")%></td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="/css/images/ab-17.png"></span></td>
+            <td valign="top"><%= t("jiangcorp-certification.title_1_content_5")%></td>
+          </tr>
+        </table>
+        <br>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center"><table width="664" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a class="lightbox" href="/css/images/jc-04-1b.jpg"><img src="/css/images/jc-04-1.jpg"></a><a class="lightbox" href="/css/images/jc-04-2b.jpg"><img src="/css/images/jc-04-2.jpg"></a></td>
+  </tr>
+  <tr>
+    <td><a class="lightbox" href="/css/images/jc-04-3b.jpg"><img src="/css/images/jc-04-3.jpg"></a><a class="lightbox" href="/css/images/jc-04-4b.jpg"><img src="/css/images/jc-04-4.jpg"></a><a class="lightbox" href="/css/images/jc-04-5b.jpg"><img src="/css/images/jc-04-5.jpg"></a></td>
+  </tr>
+</table>
+</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </article>

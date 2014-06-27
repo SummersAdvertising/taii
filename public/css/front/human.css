@@ -1,0 +1,57 @@
+
+article h2{background:url(../images/hr-01.png) center 0 no-repeat}
+
+/*-----------------------------------------------------------------------頁身---*/
+
+#wrapper > article{padding:87px 0 0 0}
+
+/*-----------------------------------------------------------------------側欄---*/
+
+article aside{float:left;width:33%;padding:60px 40px 60px 0;text-align:right}
+article aside ul{width:261px;display:inline-block;text-align:left}
+article aside li{width:100%;border-top:1px solid #E5E5E5;background:url(../images/ab-02.jpg) center 0 no-repeat #fff}
+article aside li > a{display:block;width:100%;background:url(../images/ab-03.png) 30px 19px no-repeat;
+color:#095368;font-size:17px;padding:12px 0 12px 60px}
+article aside ul li.active{background:url(../images/ab-02h.png) 0 0 no-repeat}
+article aside ul li:hover > a,
+article aside ul li.active > a{background:url(../images/ab-03h.png) 30px 19px no-repeat;color:#106AB7}
+
+article aside ul li.active > a { background-image: url(../images/ab-03hh.png) }
+
+/*-----------------------------------------------------------------------子選單---*/
+
+article aside .sub{padding:15px 0;background:url(../images/ab-02.jpg) center 0 no-repeat #fff}
+article aside .sub > a{display:block;width:100%;background:url(../images/ab-11.png) 30px 12px no-repeat;
+padding:5px 0 5px 60px;color:#555}
+article aside .sub > a:hover,
+article aside .sub a.active{background:url(../images/ab-11h.png) 30px 12px no-repeat;color:#106AB7}
+
+/*-----------------------------------------------------------------------主內容---*/
+
+article section{float:right;width:67%;padding:60px 120px 120px 0;line-height:2em;
+color:#555;position:relative;z-index:1;background:#F6F6F3;min-height:820px}
+
+/*-----------------------------------------------------------------------小標---*/
+
+article section h3{color:#095368;border-left:6px solid #7CAB2B;font:300 26px 微軟正黑體,Microsoft JhengHei;
+padding:0 0 0 16px;margin:0 0 20px 0}
+article section h4{color:#00a1a9;padding:0 0 0 21px;margin:0 0 20px 0;font:300 20px 微軟正黑體,Microsoft JhengHei}
+article section h5{font:900 15px 微軟正黑體,Microsoft JhengHei;color:#222;line-height:2em}
+
+/*-----------------------------------------------------------------------內文---*/
+
+article section .content{padding:0 0 80px 22px}
+article section b{font:300 20px 微軟正黑體,Microsoft JhengHei}
+article section li{padding:0 0 0 17px;background:url(../images/ab-07.png) 0 12px no-repeat}
+article section .box{position:absolute}
+article section a{color:#555;text-decoration:underline}
+article section .download{line-height:1.3em}
+
+
+.card { background: url(../images/iv-03.jpg) 0 0 no-repeat; width: 508px; height: 310px;
+text-align:left;padding:65px 0 0 115px;margin:50px 0 0 0}
+.card h5{margin:0 0 25px 0}
+.icon{background:url(../images/3c-09.png) 0 center no-repeat;height:64px}
+
+.download tr:hover .icon{background:url(../images/3c-09h.png) 0 center no-repeat;}
+.download a:hover{color:#0696AC}

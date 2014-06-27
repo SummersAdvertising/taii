@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/css/front/investor.css">
+<article>
+    <h2>關於台一</h2>
+        <!-- sidemenu -->
+    <%= render  "common/sidemenu" %>
+    <section>
+      <h3>公司年報</h3>
+      
+      <div class="content">
+        <div class="folder">
+        <% @currentYear.attachments.each do |attach| %>
+          <div class="file"> <%= attach.file_name %><br>
+            <a href="<%= attach.attachment.url %>">&nbsp;</a> 
+          </div>
+         <% end %>
+	      </div>
+        <!--folder--> 
+      </div>
+      
+    </section>
+  </article>

@@ -12,7 +12,7 @@ class Admin::MonthlyrevenuereportsController < AdminController
   # GET /monthlyrevenuereports/1
   # GET /monthlyrevenuereports/1.json
   def show
- 
+    #maybe for front
   	if !params[:fiscal_month].nil?
   		@currentMonth = params[:fiscal_month]
   		@revenue_items = @monthlyrevenuereport.revenue_items.where('fiscal_month='+@currentMonth.to_s)
@@ -28,8 +28,6 @@ class Admin::MonthlyrevenuereportsController < AdminController
   	#latest 8 year from current selection (on fiscal_year)
   	@history_array =  Monthlyrevenuereport.where("fiscal_year < ? ",@monthlyrevenuereport.fiscal_year).order('fiscal_year desc').select(:id).limit(8).map {|i| i.id }
   	@historyRevenues = Attachment.where(attachable_id: @history_array, attachable_type: "Monthlyrevenuereport").index_by(&:attachable_id).slice(*@history_array).values
-  	
-  	p @historyRevenues
   	
 
   end
@@ -70,7 +68,7 @@ class Admin::MonthlyrevenuereportsController < AdminController
         format.html { redirect_to  editbymonth_admin_monthlyrevenuereport_path(@monthlyrevenuereport,fiscal_month: DateTime.now.month), notice: 'Monthlyrevenuereport was successfully created.' }
         format.json { render action: 'show', status: :created, location: admin_monthlyrevenuereport_path(@monthlyrevenuereport) }
       else
-        format.html { render action: 'new' }
+        format.html { redirect_to admin_monthlyrevenuereports_path, flash: { notice: @monthlyrevenuereport.errors.full_messages } }
         format.json { render json: @monthlyrevenuereport.errors, status: :unprocessable_entity }
       end
     end
@@ -93,7 +91,7 @@ class Admin::MonthlyrevenuereportsController < AdminController
         format.html { redirect_to editbymonth_admin_monthlyrevenuereport_path(@monthlyrevenuereport, fiscal_month: params[:fiscal_month]), notice: 'Monthlyrevenuereport was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
+        format.html { redirect_to admin_monthlyrevenuereports_path, flash: { notice: @monthlyrevenuereport.errors.full_messages } }
         format.json { render json: @monthlyrevenuereport.errors, status: :unprocessable_entity }
       end
     end

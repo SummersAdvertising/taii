@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/front/about.css">
+<style>
+article section { background: url(/css/images/ab-08.jpg) 55px 185px no-repeat #F6F6F3; height: 1450px }
+#box-1 { top: 155px; left: 185px; width: 540px }
+#box-2 { top: 520px; left: 380px; width: 340px }
+#box-3 { top: 885px; left: 380px; width: 340px }
+article .item{position:absolute;left:0;bottom:0;z-index:2}
+</style>
+<article>
+    <h2>關於台一</h2>
+    <div class="item"><img src="/css/images/ab-09.jpg"></div>
+    	<%= render "about_sidemenu" %>
+     <section>
+      <h3><%=t("about-responsibility.main_title")%></h3>
+      <div class="box" id="box-1"> <b><%=t("about-responsibility.title_one")%></b><br>
+        <br>
+        <%= simple_format(t("about-responsibility.title_one_content"))%>
+      </div>
+      <div class="box" id="box-2"> <b><%=t("about-responsibility.title_two")%></b><br>
+        <br>
+        <%= simple_format(t("about-responsibility.title_two_content"))%>
+        </div>
+      <div class="box" id="box-3"> <b><%=t("about-responsibility.title_three")%></b><br>
+        <br>
+        <%= simple_format(t("about-responsibility.title_three_content"))%>
+      </div>
+    </section>
+  </article>
+

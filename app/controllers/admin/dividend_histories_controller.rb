@@ -32,7 +32,7 @@ class Admin::DividendHistoriesController < AdminController
         format.html { redirect_to admin_dividend_histories_path, notice: 'Dividend history was successfully created.' }
         format.json { render action: 'show', status: :created, location: @dividend_history }
       else
-        format.html { redirect_to admin_dividend_histories_path, notice: 'Oops, something went wrong.' }
+        format.html { redirect_to admin_dividend_histories_path, flash: { notice: @dividend_history.errors.full_messages } }
         format.json { render json: @dividend_history.errors, status: :unprocessable_entity }
       end
     end
@@ -46,7 +46,7 @@ class Admin::DividendHistoriesController < AdminController
         format.html { redirect_to admin_dividend_histories_path, notice: 'Dividend history was successfully updated.' }
         format.json { head :no_content }
       else
-	      format.html { redirect_to admin_dividend_histories_path, notice: 'Oops, something went wrong.' }
+	      format.html { redirect_to admin_dividend_histories_path, flash: { notice: @dividend_history.errors.full_messages } }
         format.json { render json: @dividend_history.errors, status: :unprocessable_entity }
       end
     end

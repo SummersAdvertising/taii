@@ -1,0 +1,24 @@
+
+/*-----------------------------------------------------------------------頁身---*/
+
+#wrapper > article{padding:102px 0 0 0}
+
+/*-----------------------------------------------------------------------大標---*/
+
+article h2{background:url(../images/ct-05.png) center 0 no-repeat}
+
+/*-----------------------------------------------------------------------內容---*/
+
+article section{padding:60px 0 120px 0;line-height:2em;
+color:#555;position:relative;z-index:1;background:url(../images/ct-07.gif)}
+#plant-box {width:900px;margin:0 auto;background:url(../images/ct-06.jpg) 0 0 no-repeat;padding:125px 0 0 0}
+.plant{border-bottom:1px dashed #BCBCBB;border-top:1px dashed #fff;padding:40px 0 0 0}
+.plant h3{font:900 20px 微軟正黑體,Microsoft JhengHei;color:#000;line-height:1.7em}
+
+.card-box{overflow:hidden}
+.card{width:50%;float:left;min-height:175px;line-height:1.5em}
+.card h4{color:#0075a9;font:300 16px 微軟正黑體,Microsoft JhengHei}
+.card a{color:#1c94fb;text-decoration:underline}
+.card a:hover{color:#66B8FF}
+
+

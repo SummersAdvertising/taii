@@ -1,0 +1,53 @@
+
+/*-----------------------------------------------------------------------全域---*/
+
+body{font:300 15px 微軟正黑體,Microsoft JhengHei;line-height:1.7em;background:#D2D2D1}
+#wrapper{width:1280px;margin:0 auto;background:#fff}
+a{font:300 15px 微軟正黑體,Microsoft JhengHei;line-height:1.7em;text-decoration:none;
+-webkit-transition:all ease .3s;-moz-transition:all ease .3s}
+.main{width:1028px;margin:0 auto;position:relative;overflow:hidden;}
+
+/*-----------------------------------------------------------------------頁首---*/
+
+#wrapper > header{height:132px}
+
+#top{background:url(../images/top.jpg) center 0 no-repeat;height:82px;}
+#top h1{float:left;width:50%;padding:17px 0 0 0}
+#top h1 a{background:url(../images/h1.png) 0 0 no-repeat;width:223px;height:51px;
+text-indent:-100%;display:block}
+
+/*-----------------------------------------------------------------------搜尋---*/
+
+#search{width:50%;float:right;height:33px;}
+#search table{width:216px;height:33px;background:url(../images/search.png) 0 0 no-repeat}
+#search .text{width:182px;height:33px;border:0;background:none;color:#fff;padding:0 15px;
+font:300 14px 微軟正黑體,Microsoft JhengHei}
+#search .button{background:none;border:none;width:34px;height:33px;cursor:pointer}
+
+/*-----------------------------------------------------------------------語言---*/
+
+#lang{float:right;font-size:11px;color:#fff;width:50%;text-align:right;padding:5px 0 0 0;height:33px}
+#lang a{font-size:11px;color:#fff}
+
+/*-----------------------------------------------------------------------導航---*/
+
+header nav{background:url(../images/nav.jpg) center 0 no-repeat;text-align:right}
+header nav .main{position:relative;left:25px}
+header nav a{display:inline-block;width:128px;height:50px;text-align:center;
+font:300 18px 微軟正黑體,Microsoft JhengHei;text-shadow:0 0 10px #082D71;color:#fff;
+padding:12px 0 0 0;background-position:center 7px}
+header nav a:hover{background:url(../images/active.png) center 7px no-repeat}
+
+/*-----------------------------------------------------------------------大標---*/
+
+article h2{height:115px;width:100%;text-indent:-100%;position:absolute;top:0;left:0;z-index:2}
+
+/*-----------------------------------------------------------------------頁身---*/
+
+#wrapper > article{overflow:hidden;position:relative;background:url(../images/ab-06.jpg) 0 0 repeat-x #F8F8F6}
+article section img{max-width:100%;height:auto}
+
+/*-----------------------------------------------------------------------頁尾---*/
+
+footer{height:182px;background:url(../images/footer.png) center 0 no-repeat #F6F6F3;color:#fff;
+font-size:12px;padding:10px 0 0 0}

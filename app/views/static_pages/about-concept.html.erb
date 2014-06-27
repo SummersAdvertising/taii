@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/front/about.css">
+<article>
+    <h2>關於台一</h2>
+    <%= render "about_sidemenu" %>
+    <section>
+      <h3><%=t("about-concept.title_one")%></h3>
+      <div class="content">
+      <p>
+      	<%=simple_format(t("about-concept.title_one_content"))%> 
+      </p>
+      </div>
+      <h3><%=t("about-concept.title_two")%></h3>
+      <div class="content">
+      <p>
+	      <%=t("about-concept.title_two_content")%>
+      </p>
+      </div>
+      <h3><%=t("about-concept.title_three")%></h3>
+      <div class="content">
+      <p>
+	      <%=simple_format(t("about-concept.title_three_content")) %>
+      </p>
+      </div>
+      <h3><%=t("about-concept.title_four")%></h3>
+      <div class="content">
+      <p>
+	      <%=simple_format(t("about-concept.title_four_content")) %>
+      </p>
+      </div>
+    </section>
+  </article>

@@ -47,7 +47,11 @@ class Admin::BrproductsController < AdminController
   # GET /brproducts/1/edit
   def edit
   	@breadcrumb = @brproduct.brlevel.find_my_direct_parent()
-  	@Orgs = Organization.with_translations(I18n.locale)
+  	if current_admin.superadmin == 1
+	  	@Orgs = Organization.with_translations(I18n.locale)
+	  else
+	  	@Orgs = Organization.with_translations(I18n.locale).where("accessLevel = 1")
+	  end
 
   end
 
@@ -78,7 +82,11 @@ class Admin::BrproductsController < AdminController
   # PATCH/PUT /brproducts/1.json
   def update
   	@breadcrumb = @brproduct.brlevel.find_my_direct_parent()
-  	@Orgs = Organization.with_translations(I18n.locale)
+  	if current_admin.superadmin == 1
+	  	@Orgs = Organization.with_translations(I18n.locale)
+	  else
+	  	@Orgs = Organization.with_translations(I18n.locale).where("accessLevel = 1")
+	  end
   	# force to set org_id to 0 if nil?
   	if brproduct_params[:organization_id].empty?
   		params[:brproduct][:organization_id] = 0

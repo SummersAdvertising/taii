@@ -1,16 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <title>Taii</title>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<meta name="Robots" content="index,follow"/>
+<meta http-equiv="content-language" content="zh-TW" charset="utf-8"/>
+<meta name="keywords" content=""/>
+<title>台一國際股份有限公司│TAI-I ELECTRIC WIRE & CABLE</title>
+<meta name="description" content=""/>
+<meta property="og:title" content=""/>
+<meta property="og:description" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content=""/>
+<meta property="og:image" content="">
+<link rel="image_src" href="">
+<link rel="shortcut icon" href=""/>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+<link rel="stylesheet" href="/css/front/reset.css">
+<link rel="stylesheet" href="/css/front/style.css">
+
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  
   <%= csrf_meta_tags %>
+
 </head>
-<body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
-<%= yield %>
-
+<body >
+<div id="wrapper">
+  <header>
+    <div id="top">
+      <div class="main">
+        <h1><a href="<%= root_path %>">台一國際</a></h1>
+        
+        <div id="lang">
+		        <% Hqlevel.full_house.each_with_index do | lang, index | %> <!-- 到時候要改成回首頁 -->
+		        		<%= link_to t("env.language.#{lang.locale}"), set_locale_path( locale: lang.locale ), 'data-no-turbolink' => true %>
+		        		<% if index != 3 %><span> │ </span><% end %>
+		        <% end %>
+        </div>
+        
+        <div id="search">
+          <table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+            <tr>
+              <td valign="top"><input name="" type="text" class="text"></td>
+              <td valign="top"><input name="" type="button" class="button"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="main">
+       		<%= link_to "關於台一", page_pages_path("about-concept")%>
+       		<%= link_to "工廠介紹", page_pages_path("plant")%>
+		      <%= link_to "產品介紹", hqlevel_path(Hqlevel.return_root_node_on_demand(I18n.locale), :locale => I18n.locale ) %>
+		      <%= link_to "投資人服務", investor_investors_path("investors-info") %>
+       		<%= link_to "人力資源", page_pages_path("human-guangzhou-1")%>
+		      <%= link_to "聯絡我們", contactus_path %>
+      </div>
+    </nav>
+  </header>
+  
+		<%= yield %>
+		
+		<footer>
+		    <div class="main"> Copyright © TAI-I JIANG CORP & TAI-I COPER 2014, All Rights Reserved. </div>
+		</footer>
+</div>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/front/plant-2.css">
+<style>
+article h2 { background: url(<%= t("env.h2images.cp") %>) center 0 no-repeat }
+article section .content { padding: 0 0 80px 55px }
+</style>
+
+<article>
+    <h2>觀音廠電線電纜事業介紹</h2>
+    <%= render "plant_sidemenu" %>
+    <%= render "copper_sidemenu" %>
+    <section>
+      <h3><%=t("copper-superiority.main_title")%></h3>
+      <h4><%=t("copper-superiority.title_1")%></h4>
+      <div class="content"> <%=t("copper-superiority.title_1_content")%></div>
+      <h4><%=t("copper-superiority.title_2")%></h4>
+      <div class="content"> <%=t("copper-superiority.title_2_content")%></div>
+      <h4><%=t("copper-superiority.title_3")%></h4>
+      <div class="content">
+        <%=t("copper-superiority.title_3_content")%></div>
+      <h4><%=t("copper-superiority.title_4")%></h4>
+      <div class="content">
+      <%=t("copper-superiority.title_4_content")%>
+      </div>
+      </section>
+  </article>

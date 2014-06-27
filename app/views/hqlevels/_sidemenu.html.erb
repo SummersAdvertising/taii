@@ -1,0 +1,52 @@
+
+					<div id="list-1">
+	      		  <ul class="level-1">
+								      <% levels = @level_relations.select { |v| v[2] == @current_root.id } %>
+								      <% levels.each do | level1 | %>
+  		  									<li><%= link_to level1[3], 'javascript: void(0)' %>
+							      		  			<ul class="level-2">
+	  												      <% levels = @level_relations.select { |v| v[2] == level1[0] } %>
+														      <% levels.each do | level2 | %>
+									      		  		<li><%= link_to level2[3], 'javascript: void(0)' %>
+								      		  						<ul class="level-3">
+				  												      <% levels = @level_relations.select { |v| v[2] == level2[0] } %>
+																	      <% levels.each do | level3 | %>
+										      		  								<li><%= link_to level3[3], 'javascript: void(0)' %>
+													      		  								<ul class="level-4">
+		  									  												      <% levels = @level_relations.select { |v| v[2] == level3[0] } %>
+																									      <% levels.each do | level4 | %>
+																		      		  									<li><%= link_to level4[3], 'javascript: void(0)' %>
+																				      		  									<ul class="level-5">
+																																					<% level_products = @product_relations.select { |v| v[0] == level4[0] } %>
+																																					<% level_products.each do | product | %>
+																																					<li><%= link_to product[3], fetch_hqproduct_path(product[2],locale: I18n.locale), remote: true, 'data-no-turbolink' => true %></li>
+																														      		  	<% end %>
+																				      		  									</ul>
+																		      		  									</li>
+																				      		  				<% end %>
+																				      		  				
+																				      		  				<% level_products = @product_relations.select { |v| v[0] == level3[0] } %>
+																														<% level_products.each do | product | %>
+																														<li><%= link_to product[3], fetch_hqproduct_path(product[2],locale: I18n.locale), remote: true, 'data-no-turbolink' => true %></li>
+																							      		  	<% end %>									
+													      		  								</ul>
+										      		  								</li>
+									      		  							<% end %>
+									      		  							<% level_products = @product_relations.select { |v| v[0] == level2[0] } %>
+																						<% level_products.each do | product | %>
+																						<li><%= link_to product[3], fetch_hqproduct_path(product[2],locale: I18n.locale), remote: true, 'data-no-turbolink' => true %></li>
+															      		  	<% end %>
+								      		  						</ul>
+								      		  						</li>
+						      		  						<% end%>			
+						      		  						<% level_products = @product_relations.select { |v| v[0] == level1[0] } %>
+																		<% level_products.each do | product | %>
+																		<li><%= link_to product[3], fetch_hqproduct_path(product[2],locale: I18n.locale), remote: true, 'data-no-turbolink' => true %></li>
+												      		  	<% end %>
+							      		  			</ul>
+							      		  	</li>
+			      		  			<% end %>
+	      		  </ul>
+	      	</div>
+	    
+	      

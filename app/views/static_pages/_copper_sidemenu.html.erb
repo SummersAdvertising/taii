@@ -1,0 +1,24 @@
+
+    <aside>
+      <ul>
+        <li><a href="<%= page_pages_path("copper-intro") %>" class="copper-intro" ><%= t("plant.copper_intro") %></a></li>
+        <li><a href="<%= page_pages_path("copper-certification") %>" class="copper-certification" data-no-turbolink="true" ><%= t("plant.copper_certification") %></a></li>
+        <li><a href="<%= page_pages_path("copper-superiority") %>" class="copper-superiority" ><%= t("plant.copper_superiority") %></a></li>
+        <li><a href="<%= page_pages_path("copper-research") %>" class="copper-research" ><%= t("plant.copper_research") %></a></li>
+        <li><a href="<%= page_pages_path("copper-catalogs") %>" class="copper-catalogs" ><%= t("plant.copper_catalogs") %></a></li>
+       <li><a href="<%= page_pages_path("copper-consulting") %>" class="copper-consulting" ><%= t("plant.copper_consulting") %></a></li>
+      </ul>
+    </aside>
+    
+    <script type="text/javascript">
+    	var pageName = window.location.href.split('/');
+			if ( pageName ) {
+					$('.' + pageName[pageName.length -1 ]+'' ).parent().addClass('active');	
+					plant = pageName[pageName.length -1 ].split('-');
+					if ( plant ) {
+							$('.' + plant[0]+'-intro-nav' ).addClass('active');		
+					}
+					
+			}
+    </script>
+    

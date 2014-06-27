@@ -3,7 +3,8 @@
   <nav class="left"></nav>
 </header>
 <article>
-  <div class="button"><a href="#" id='createAHistorybutton' class="right highlight">建立年份<img src="/images/add_folder.png"></a></div>
+  <div class="button"><a href="javascript: void(0)" id='createAHistorybutton' class="right highlight">建立年份<img src="/images/add_folder.png"></a></div>
+  <p><%= notice %></p>
   <!-- repeat  start -->
   <div class="list">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -35,8 +36,8 @@
 				        <%= f.text_field :fiscal_year, class: "text", placeholder:"年份/民國" %>
 	        	</td>
 	          <td width='18%' align="right">
-	          	<%= link_to '儲存', "#", onclick: "$('#ajaxNewHistoryForm').submit()", title: "儲存" %>
-	              <a id="cancelAHistorybutton" title="取消" href="#">取消</a>
+	          	<%= link_to '儲存', "javascript: void(0)", onclick: "$('#ajaxNewHistoryForm').submit()", title: "儲存" %>
+	              <a id="cancelAHistorybutton" title="取消" href="javascript: void(0)">取消</a>
 	           </td>
            <% end %>		
 	        </tr>
@@ -53,31 +54,6 @@
 		//hide create new level inputs
 		$( "#cancelAHistorybutton" ).mouseup(function() {
 		  $( "#createNewHistory" ).toggle();
-		});
-		
-		//ajax:success on NewLevel action
-		$("#ajaxNewHistoryForm").on('ajax:success',function(evt, data, status, xhr) {
-			//alert("ajaxsuccess");
-		    var $this = $(this);
-		
-		    $this.find('.errors').empty();
-				$("#createNewHistory").toggle();
-
-		});
-		//ajax:error on NewLevel action
-		$("#ajaxNewHistoryForm").on('ajax:error',function(evt, data, status, xhr) {
-			//alert("ajaxerror");
-		    var responseObject = $.parseJSON(xhr.responseText),
-		        errors = $('<ul />');
-		        
-		        //alert("ERROR with="+JSON.stringify(responseObject));
-		
-		    $.each(responseObject, function(){
-		      errors.append('<li>' + this + '</li>');
-		    })
-		
-		    errors.appendTo($(this).find('.errors'));
-
 		});
 
 </script>

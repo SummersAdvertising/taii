@@ -269,6 +269,7 @@ $( "#cancelAnAttachbutton" ).mouseup(function() {
 			var prevEvent = null;
 		    $( "#listThisAttach" ).sortable({
 		      //connectWith: ".renamelevelcontainer",
+		    	items: "> .dragable" ,
 		      placeholder: "ui-state-highlight",
 		      update: function( event, ui ) {
 			      	

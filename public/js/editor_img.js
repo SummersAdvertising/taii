@@ -32,6 +32,7 @@ editor.img = {
 		var input = $("<input>");
 		input.attr("id", editor.img.fileinputID).attr("name", editor.img.fileinputName).attr("type", "file").attr('class', 'file');
 
+	
 		var span = $('<span id="imageAttributes">');
 		/*
 		var inputWidth = $("<input>");

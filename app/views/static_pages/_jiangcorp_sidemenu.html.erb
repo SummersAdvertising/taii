@@ -1,0 +1,24 @@
+			
+			<aside>
+      <ul>
+       <li><a href="<%= page_pages_path("jiangcorp-intro") %>" class="jiangcorp-intro" ><%= t("plant.jiangcorp_intro") %></a></li>
+        <li><a href="<%= page_pages_path("jiangcorp-certification") %>" class="jiangcorp-certification" data-no-turbolink="true" ><%= t("plant.jiangcorp_certification") %></a></li>
+        <li><a href="<%= page_pages_path("jiangcorp-superiority") %>" class="jiangcorp-superiority" ><%= t("plant.jiangcorp_superiority") %></a></li>
+        <li><a href="<%= page_pages_path("jiangcorp-research") %>" class="jiangcorp-research" ><%= t("plant.jiangcorp_research") %></a></li>
+        <li><a href="<%= page_pages_path("jiangcorp-use") %>" class="jiangcorp-use" ><%= t("plant.jiangcorp_use") %></a></li>
+       <li><a href="<%= page_pages_path("jiangcorp-consulting") %>" class="jiangcorp-consulting" ><%= t("plant.jiangcorp_consulting") %></a></li>
+      </ul>
+    </aside>
+        
+    <script type="text/javascript">
+    	var pageName = window.location.href.split('/');
+			if ( pageName ) {
+					$('.' + pageName[pageName.length -1 ]+'' ).parent().addClass('active');	
+					plant = pageName[pageName.length -1 ].split('-');
+					if ( plant ) {
+							$('.' + plant[0]+'-intro-nav' ).addClass('active');		
+					}
+					
+			}
+    </script>
+    

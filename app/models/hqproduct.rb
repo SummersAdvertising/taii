@@ -9,6 +9,8 @@ class Hqproduct < ActiveRecord::Base
   
 	validates :organization_id, presence: true
   
+	default_scope  { includes(:translations) }  
+	
 	def self.search(search)
 	  if search
 		  find(:all, :conditions => ['name LIKE ?', "%#{search}%"])

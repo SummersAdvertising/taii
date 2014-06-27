@@ -1,0 +1,59 @@
+
+/*-----------------------------------------------------------------------頁身---*/
+
+#wrapper > article{padding:102px 0 0 0;background:url(../images/pd-08.png) 0 0 repeat-y;}
+
+/*-----------------------------------------------------------------------大標---*/
+
+article h2{background:url(../images/pd-01.png) center 0 no-repeat}
+
+/*-----------------------------------------------------------------------側欄---*/
+
+article aside{float:left;width:33%;padding:60px 35px 60px 125px}
+article aside a{cursor:pointer;-webkit-transition:all ease 0s;-moz-transition:all ease 0s}
+article aside a:hover{color:#106AB7}
+#tab{height:48px;width:100%;overflow:hidden;margin:0 0 15px 0}
+#tab li{float:left;width:50%;height:100%;}
+#tab a{display:block;width:100%;height:100%;background:url(../images/pd-03.jpg) 0 0 no-repeat;
+text-align:center;padding:8px 0 0 0;font:900 16px 微軟正黑體,Microsoft JhengHei;color:#b3b3b3}
+#tab .active a{background:url(../images/pd-02.jpg) 0 0 no-repeat;color:#000}
+
+.level-1 > li > a{display:block;width:100%;height:51px;background:url(../images/pd-04.png) 28px 22px no-repeat;
+padding:15px 0 0 55px;font:900 16px 微軟正黑體,Microsoft JhengHei}
+.level-1 > li > .active{background:url(../images/pd-04h.png) 0 0 no-repeat;color:#fff}
+
+.level-2{padding:0 0 15px 0}
+.level-2 > li{background:url(../images/ab-02.jpg) 0 0 no-repeat;border-bottom:1px solid #E5E5E5}
+.level-2 > li > a{display:block;width:100%;height:51px;background:url(../images/pd-05.png) 28px 22px no-repeat;
+padding:15px 0 0 55px;}
+.level-2 > li > .active{background:url(../images/pd-05h.png) 28px 22px no-repeat;font-weight:900}
+
+.level-3{padding:0 0 15px 0}
+.level-3 > li > a{display:block;width:100%;height:36px;background:url(../images/pd-06.png) 28px 13px no-repeat;
+padding:5px 0 0 55px}
+.level-3 > li > .active{background:url(../images/pd-06h.png) 28px 15px no-repeat;color:#106ab7;font-weight:900}
+
+.level-4{padding:0 0 15px 0}
+.level-4 > li > a{display:block;width:100%;height:36px;background:url(../images/pd-07.png) 59px 16px no-repeat;
+padding:5px 0 0 85px;color:#000}
+.level-4 > li > .active{background:url(../images/pd-07h.png) 59px 16px no-repeat;color:#106ab7;font-weight:900}
+
+
+/*-----------------------------------------------------------------------內容---*/
+
+article section{float:right;width:67%;padding:60px 120px 120px 30px;line-height:2em;
+color:#555;position:relative;z-index:1}
+article section h3{color:#106ab7;font:300 24px 微軟正黑體,Microsoft JhengHei;line-height:1.5em;margin:40px 0}
+article section #crumb{font-size:14px;color:#666}
+
+.content img{margin:10px 0}
+.content h4{font:900 20px 微軟正黑體,Microsoft JhengHei;color:#b21d1d;margin:50px 0 0 0;line-height:1.7em}
+.content ul li{padding:0 0 0 20px;background:url(../images/pd-04.png) 0 10px no-repeat}
+
+#contact{background:url(../images/pd-10.jpg) 0 0 no-repeat;padding:75px 0 0 0;margin:50px 0 0 0}
+#contact h5{color:#333;font:300 18px 微軟正黑體,Microsoft JhengHei}
+#contact b{color:#000;font-weight:900}
+#contact a{color:#1c94fb}
+#contact #link{background:url(../images/pd-09.jpg) 0 0 no-repeat;
+display:block;width:189px;height:54px}
+#contact #link:hover{background:url(../images/pd-09h.jpg) 0 0 no-repeat}

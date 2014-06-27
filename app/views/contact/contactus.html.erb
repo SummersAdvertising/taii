@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/front/contact.css">
+<article>
+    <h2>聯合國物資採購監管中心臺灣中心介紹</h2>
+    <section>
+      <div id="plant-box">
+
+        <% @organizations.each do | org | %>
+        <div class="plant">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						  <tr>
+								  <td width="34%" align="left" valign="top"><h3><%= org.org_name%></h3>
+		              <%= org.address%>
+		              </td>
+							    <td width="66%" align="left" valign="top">
+									    <div class="card-box">
+										    		<% org.representatives.each do | rep |%>
+								              	<div class="card">
+										              	<h4><%= rep.division %></h4>
+																		<%= rep.name %><br>
+																		電話：<%= rep.phone %><br>
+																		傳真：<%= rep.fax %> <br>
+																		手機：<%= rep.mobile %><br>
+																		Email：<a href="mailto:<%= rep.email%>" target="_blank"><%= rep.email%></a>
+																</div>  
+														<% end %>
+		                </div>
+							    </td>
+						  </tr>
+						</table>
+					</div>
+					<% end %>
+        
+      </div>
+    </section>
+  </article>

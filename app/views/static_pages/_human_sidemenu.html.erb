@@ -1,0 +1,21 @@
+
+	 <aside>
+      <ul>
+	      <li class="active"><a><%= t("human_side_menu.title") %></a>
+        <div class="sub"> 
+	        <%= link_to t("human_side_menu.guangzhou-1"), page_pages_path("human-guangzhou-1"),class: "human-guangzhou-1" %>
+	        <%= link_to t("human_side_menu.guangzhou-2"), page_pages_path("human-guangzhou-2"),class: "human-guangzhou-2" %>
+	        <%= link_to t("human_side_menu.guangzhou-3"), page_pages_path("human-guangzhou-3"),class: "human-guangzhou-3" %>
+	        <%= link_to t("human_side_menu.guangzhou-4"), page_pages_path("human-guangzhou-4"),class: "human-guangzhou-4" %>
+        </div>
+	      </li>
+        <li class="human-taiwan-1"><%= link_to t("human_side_menu.taiwan-1"), page_pages_path("human-taiwan-1") %></li>
+      </ul>
+    </aside>
+    
+    <script type="text/javascript">
+    	var pageName = window.location.href.split('/');
+			if ( pageName ) {
+					$('.' + pageName[pageName.length -1 ]+'' ).addClass('active');	
+			}
+    </script>
