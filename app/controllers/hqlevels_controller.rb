@@ -20,7 +20,7 @@ class HqlevelsController < ApplicationController
   	if( params[:product] )
   	  @default_product = Hqproduct.find(params[:product])  		
   	else	
-  		@default_product = Hqproduct.find(@product_relations.first[0])
+  		@default_product = Hqproduct.find(@product_relations.first[2])
   	end  	
   	
   	@contact_org = Organization.find(@default_product.organization_id) 
