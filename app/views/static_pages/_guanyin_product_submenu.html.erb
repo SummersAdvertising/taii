@@ -1,0 +1,37 @@
+<aside>
+      <ul>
+      	<li><a href="<%= page_pages_path("guanyin-intro") %>" class="guanyin-intro" ><%= t("plant.guanyin_intro") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-history") %>" class="guanyin-history" ><%= t("plant.guanyin_history") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-certification") %>" class="guanyin-certification" data-no-turbolink="true" ><%= t("plant.guanyin_certification") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-superiority") %>" class="guanyin-superiority" ><%= t("plant.guanyin_superiority") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-research") %>" class="guanyin-research" ><%= t("plant.guanyin_research") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-equipment") %>" class="guanyin-equipment" ><%= t("plant.guanyin_equipment") %></a></li>
+        <li class="active"><a><%= t("plant.guanyin_product_sub_nav") %></a>
+        <div class="sub"> 
+        <a href="<%= page_pages_path("guanyin-product-1") %>" class="guanyin-product-1" ><%= t("plant.guanyin_product-1") %></a>
+        <a href="<%= page_pages_path("guanyin-product-2") %>" class="guanyin-product-2" ><%= t("plant.guanyin_product-2") %></a>
+        <a href="<%= page_pages_path("guanyin-product-3") %>" class="guanyin-product-3" ><%= t("plant.guanyin_product-3") %></a>
+        <a href="<%= page_pages_path("guanyin-product-4") %>" class="guanyin-product-4" ><%= t("plant.guanyin_product-4") %></a>
+        <a href="<%= page_pages_path("guanyin-product-5") %>" class="guanyin-product-5" ><%= t("plant.guanyin_product-5") %></a>
+        <a href="<%= page_pages_path("guanyin-product-6") %>" class="guanyin-product-6" ><%= t("plant.guanyin_product-6") %></a>
+        <a href="<%= page_pages_path("guanyin-product-7") %>" class="guanyin-product-7" ><%= t("plant.guanyin_product-7") %></a>
+        <a href="<%= page_pages_path("guanyin-product-8") %>" class="guanyin-product-8" ><%= t("plant.guanyin_product-8") %></a>
+        <a href="<%= page_pages_path("guanyin-product-9") %>" class="guanyin-product-9" ><%= t("plant.guanyin_product-9") %></a>
+        </div>
+        </li>
+        <li><a href="<%= page_pages_path("guanyin-catalogs") %>" class="guanyin-catalogs" ><%= t("plant.guanyin_catalogs") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-consulting") %>" class="guanyin-consulting" ><%= t("plant.guanyin_consulting") %></a></li>
+      </ul>
+
+    </aside>
+       <script type="text/javascript">
+    	var pageName = window.location.href.split('/');
+			if ( pageName ) {
+					$('.' + pageName[pageName.length -1 ]+'' ).addClass('active');	
+					plant = pageName[pageName.length -1 ].split('-');
+					if ( plant ) {
+							$('.' + plant[0]+'-intro-nav' ).addClass('active');		
+					}
+					
+			}
+    </script>

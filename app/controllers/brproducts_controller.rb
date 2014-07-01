@@ -13,7 +13,8 @@ class BrproductsController < ApplicationController
   end
   
   def fetch
-  	 
+  
+ 		 @breadcrumb = (Brlevel.find(@brproduct.brlevel_id)).find_my_direct_parent
   	 @contact_org = Organization.find(@brproduct.organization_id) 
 		 @sales = Representative.where(['organization_id = ?', @contact_org.id]) 
 		 @attachments = @brproduct.attachments

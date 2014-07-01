@@ -9,7 +9,7 @@ padding:5px 0 0 85px;color:#000}
     <h2>產品介紹</h2>
     <aside>
       <ul id="tab">
-        <li><a href="javascript: void(0)" class='active'>總覽</a></li>
+        <li class="active"><a href="javascript: void(0)" class='active'>總覽</a></li>
         <li><a href="<%= brlevel_path(Brlevel.return_root_node_on_demand(I18n.locale), :locale => I18n.locale ) %>">工廠</a></li>
       </ul>
 
@@ -20,18 +20,11 @@ padding:5px 0 0 85px;color:#000}
     
     </div>
     </aside>
-    <section> 
-    	<span id="crumb"  data-no-turbolink>
-    			產品介紹 >
-    			<% @breadcrumb.reverse.each_with_index do | level, index | %>
-    					<%= link_to level.name, hqlevel_path(level,locale: I18n.locale) %> <%= " > " if @breadcrumb.length - 1 != index%>
-    			<% end %>
-    		</span>
-    		
+    
+    <section data-no-turbolink> 
+    	<span id="crumb"  ></span>
       
-        <p id="items_grid" data-no-turbolink></p>
-      	<%# render 'showproduct' %>  
-      
+        <p id="items_grid" data-no-turbolink></p>	
   
     </section>
   </article>
@@ -46,43 +39,27 @@ padding:5px 0 0 85px;color:#000}
 		})
 	</script>
 	<script type="text/javascript">
-	$(function(){	
-		var _showTab = 0;
-		var $defaultLi = $('#tab li').eq(_showTab).addClass('active');	
-		$($defaultLi.find('a')).siblings().hide();  
-		$('#tab li').click(function() {		
-			var $this = $(this),
-				_clickTab = $this.find('a');		
-			$this.addClass('active').siblings('.active').removeClass('active');
-			$(_clickTab).stop(false, true).fadeIn(1000).siblings().hide(); 
-			//return false;
-		}).find('a').focus(function(){
-			this.blur();
-		});
-	});
-	</script>
-	<script type="text/javascript">
-	/*
+	
 
 	$(function() {
-			for(){
-								$.ajax({
-					      type: "GET",
-					      url: "/"+"<%# I18n.locale.to_s %>"+"/hqproducts/"+<%# @defaultshow.id %>+"/fetch",
-					      data: { brproduct: {  reorderset: orderSet } },
-					      success: function(data){
-								 // 	console.log("================ GET successfully end =============");
-					        return false   
-					      },
-					      error: function(data){
-					      //  console.log("================ GET has some issues ==================");
-					        return false  
-					      }
-					    });
-			}		
+			
+			$.ajax({
+      type: "GET",
+      url: "/"+"<%= I18n.locale.to_s %>"+"/hqproducts/"+<%= @default_product.id %>+"/fetch",
+      data: { },
+      success: function(data){
+
+        return false   
+      },
+      error: function(data){
+
+        return false  
+      }
+    });
+					
 		  	
   });  
-*/
+
 
 	</script>
 	

@@ -14,7 +14,8 @@ class HqproductsController < ApplicationController
   end
 
   def fetch
-		 
+  
+		 @breadcrumb = (Hqlevel.find(@hqproduct.hqlevel_id)).find_my_direct_parent
 		 @contact_org = Organization.find(@hqproduct.organization_id) 
 		 @sales = Representative.where(['organization_id = ?', @contact_org.id]) 
 		 @attachments = @hqproduct.attachments

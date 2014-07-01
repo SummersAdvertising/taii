@@ -1,0 +1,19 @@
+<script src="/js/editor.js"></script>
+<script src="/js/editor_p.js"></script>
+<script src="/js/editor_img.js"></script>
+<script src="/js/editor_list.js"></script>
+<script src="/js/editor_video.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/imgareaselect-default.css" />
+
+<h3><%= selectitem.title %></h3>
+
+<div class="content"  id="articleContent"></div>    
+
+<input id="article_content" style="display:none;" type="text" value="<%= selectitem.article.content %>">
+      
+<script type="text/javascript">
+
+		editor.output();	
+
+</script>

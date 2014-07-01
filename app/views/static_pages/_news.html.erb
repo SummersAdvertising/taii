@@ -1,0 +1,7 @@
+<% @news.each do | announcement | %>
+  <tr>
+    <td width="100%" valign="top"><span><%= announcement.updated_at.strftime('%B %d, %Y') %></span><br>
+      <%= link_to announcement.title, announcements_path(find: announcement.id) %>
+      </td>
+  </tr>
+<% end %>

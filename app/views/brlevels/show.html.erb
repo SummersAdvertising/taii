@@ -10,7 +10,7 @@ padding:5px 0 0 85px;color:#000}
     <aside>
       <ul id="tab">
         <li><a href="<%= hqlevel_path(Hqlevel.return_root_node_on_demand(I18n.locale), :locale =>I18n.locale) %>">總覽</a></li>
-        <li><a href="javascript: void(0)" class='active'>工廠</a></li>
+        <li class="active"><a href="javascript: void(0)" class='active'>工廠</a></li>
       </ul>
 
     <div id="list-box"  >
@@ -20,12 +20,7 @@ padding:5px 0 0 85px;color:#000}
     </div>
     </aside>
     <section> 
-    	<span id="crumb"  data-no-turbolink>
-    			產品介紹 >
-    			<% @breadcrumb.reverse.each_with_index do | level, index | %>
-    					<%= link_to level.name, brlevel_path(level,locale: I18n.locale) %> <%= " > " if @breadcrumb.length - 1 != index%>
-    			<% end %>
-    		</span>
+    	<span id="crumb"  data-no-turbolink> </span>
     		
       
         <p id="items_grid"></p>
@@ -44,18 +39,26 @@ padding:5px 0 0 85px;color:#000}
 		})
 	</script>
 	<script type="text/javascript">
-	$(function(){	
-		var _showTab = 0;
-		var $defaultLi = $('#tab li').eq(_showTab).addClass('active');	
-		$($defaultLi.find('a')).siblings().hide();  
-		$('#tab li').click(function() {		
-			var $this = $(this),
-				_clickTab = $this.find('a');		
-			$this.addClass('active').siblings('.active').removeClass('active');
-			$(_clickTab).stop(false, true).fadeIn(1000).siblings().hide(); 
-			//return false;
-		}).find('a').focus(function(){
-			this.blur();
-		});
-	});
+	
+
+	$(function() {
+			
+			$.ajax({
+      type: "GET",
+      url: "/"+"<%= I18n.locale.to_s %>"+"/brproducts/"+<%= @default_product.id %>+"/fetch",
+      data: { },
+      success: function(data){
+			 // 	console.log("================ GET successfully end =============");
+        return false   
+      },
+      error: function(data){
+      //  console.log("================ GET has some issues ==================");
+        return false  
+      }
+    });
+					
+		  	
+  });  
+
+
 	</script>

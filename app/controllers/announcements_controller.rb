@@ -1,10 +1,17 @@
 class AnnouncementsController < ApplicationController
-  before_action :set_announcement, only: [:show]
+  before_action :set_announcement, only: [:show,:fetch]
 
   # GET /announcements
   # GET /announcements.json
   def index
-    @announcements = Announcement.all
+    @announcements = Announcement.all.page(params[:page])
+    
+  	if( params[:find] )
+  	  @default_news = Announcement.find(params[:find])  		
+  	else	
+  		@default_news = Announcement.all.limit(1)
+  	end  	
+
   end
 
   # GET /announcements/1
@@ -12,6 +19,12 @@ class AnnouncementsController < ApplicationController
   def show
   end
 
+  def fetch
+	   respond_to do |format|
+       format.js
+     end     
+  end
+  
    private
     # Use callbacks to share common setup or constraints between actions.
     def set_announcement

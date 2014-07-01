@@ -1,0 +1,26 @@
+		<aside>
+      <ul>
+			<li><a href="<%= page_pages_path("guanyin-intro") %>" class="guanyin-intro" ><%= t("plant.guanyin_intro") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-history") %>" class="guanyin-history" ><%= t("plant.guanyin_history") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-certification") %>" class="guanyin-certification" data-no-turbolink="true" ><%= t("plant.guanyin_certification") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-superiority") %>" class="guanyin-superiority" ><%= t("plant.guanyin_superiority") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-research") %>" class="guanyin-research" ><%= t("plant.guanyin_research") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-equipment") %>" class="guanyin-equipment" ><%= t("plant.guanyin_equipment") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-product-1") %>" class="guanyin-product-1" ><%= t("plant.guanyin_product-1") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-catalogs") %>" class="guanyin-catalogs" ><%= t("plant.guanyin_catalogs") %></a></li>
+			<li><a href="<%= page_pages_path("guanyin-consulting") %>" class="guanyin-consulting" ><%= t("plant.guanyin_consulting") %></a></li>
+      </ul>
+    </aside>
+        
+    <script type="text/javascript">
+    	var pageName = window.location.href.split('/');
+			if ( pageName ) {
+					$('.' + pageName[pageName.length -1 ]+'' ).parent().addClass('active');	
+					plant = pageName[pageName.length -1 ].split('-');
+					if ( plant ) {
+							$('.' + plant[0]+'-intro-nav' ).addClass('active');		
+					}
+					
+			}
+    </script>
+    

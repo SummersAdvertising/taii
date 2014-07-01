@@ -1,0 +1,6 @@
+<div>
+<% @announcements.each do | news | %>
+	<%= link_to news.title, fetch_announcement_path(news), remote: true, 'data-no-turbolink' => true %><br>
+<% end %>
+<%= paginate @announcements, :window => 5 ,:theme =>"default" %>
+<div>

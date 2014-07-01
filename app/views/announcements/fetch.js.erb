@@ -1,0 +1,2 @@
+$("#newscontainer").empty();
+$("<%= escape_javascript(render 'showannouncement', :selectitem => @announcement ) %>").appendTo("#newscontainer");

@@ -1,7 +1,289 @@
-<p>Find me in app/views/static_pages/index.html.erb</p>
+<link rel="stylesheet" href="/css/front/index.css">
+<script>
+$(function(){	
+	var _showTab = 0;
+	var $defaultLi = $('#tab li').eq(_showTab).addClass('active');	
+	$($defaultLi.find('a').attr('href')).siblings().hide();  
+	$('#tab li').click(function() {		
+		var $this = $(this),
+			_clickTab = $this.find('a').attr('href');		
+		$this.addClass('active').siblings('.active').removeClass('active');
+		$(_clickTab).stop(false, true).fadeIn(1000).siblings().hide(); 
+		return false;
+	}).find('a').focus(function(){
+		this.blur();
+	});
+});
+</script>
+<script>
+$(function(){	
+	var _showTab = 0;
+	var $defaultLi = $('#pin li').eq(_showTab).addClass('active');	
+	$($defaultLi.find('a').attr('href')).siblings().hide();  
+	$('#pin li').hover(function() {		
+		var $this = $(this),
+			_clickTab = $this.find('a').attr('href');		
+		$this.addClass('active').siblings('.active').removeClass('active');
+		$(_clickTab).stop(false, true).fadeIn(1000).siblings().hide(); 
+		return false;
+	}).find('a').focus(function(){
+		this.blur();
+	});
+});
+</script>
+<article>
+    <div id="intro"> <a id="link" href="<%= page_pages_path("center") %>"><img src="/css/images/id-02.jpg"></a>
+      <div id="faith">
+        <h3><%= t("index.spirit_main_title") %></h3>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="10%" valign="top"><img src="/css/images/id-04.jpg"></td>
+            <td width="90%" valign="top">
+              <%= simple_format( t("index.spirit_title_1") )%>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top"><img src="/css/images/id-04.jpg"></td>
+            <td valign="top">
+              <%= simple_format( t("index.spirit_title_2") )%>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" style="border:none"><img src="/css/images/id-04.jpg"></td>
+            <td valign="top" style="border:none">
+             <%= simple_format( t("index.spirit_title_3") )%>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="news">
+        <h3><%= t("index.news")%></h3>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <%= render 'news' %>
+        </table>
+      </div>
+    </div>
+    <!--intro-->
+    <div id="product">
+      <ul id="tab">
+        <li id="tab-1" class="active"><a href="#item-1"><%= t("index.main_product_cate_1")%></a></li>
+        <li id="tab-2"><a href="#item-2"><%= t("index.main_product_cate_2")%></a></li>
+        <li id="tab-3"><a href="#item-3"><%= t("index.main_product_cate_3")%></a></li>
+        <li id="tab-4"><a href="#item-4"><%= t("index.main_product_cate_4")%></a></li>
+        <li id="tab-5"><a href="#item-5"><%= t("index.main_product_cate_5")%></a></li>
+        <li id="tab-6"><a href="#item-6"><%= t("index.main_product_cate_6")%></a></li>
+      </ul>
+      <div id="item-box">
+        <div id="item-1" class="item">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="300"><img src="/css/images/id-15.png"></td>
+              <td width="490"><h4><%= t("index.main_product_cate_1_title")%></h4>
+                <%= simple_format( t("index.main_product_cate_1_content") )%>
+                <br>
+                <a href="javascript: void(0)"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="item-2" class="item">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="300"><img src="/css/images/id-16.png"></td>
+              <td width="490"><h4><%= t("index.main_product_cate_2_title")%></h4>
+                <%= simple_format( t("index.main_product_cate_2_content") )%>
+                
+                <br>
+                <a href="javascript: void(0)"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="item-3" class="item">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="300" align="center"><img src="/css/images/id-17.png"></td>
+              <td width="490"><h4><%= t("index.main_product_cate_3_title")%></h4>
+                <%= simple_format( t("index.main_product_cate_3_content") )%>
+                
+                <br>
+                <a href="javascript: void(0)"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="item-4" class="item">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="300" align="center"><img src="/css/images/id-18.png"></td>
+              <td width="490"><h4><%= t("index.main_product_cate_4_title")%></h4>
+                <%= simple_format( t("index.main_product_cate_4_content") )%>
+                
+                <br>
+                <a href="javascript: void(0)"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="item-5" class="item">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="351"><img src="/css/images/id-19.png"></td>
+              <td width="439"><h4><%= t("index.main_product_cate_5_title")%></h4>
+                <%= simple_format( t("index.main_product_cate_5_content") )%>
+                <br>
+                <a href="javascript: void(0)"><br>
+                <%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="item-6" class="item">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="300" align="center"><img src="/css/images/id-20.png"></td>
+              <td width="490"><h4><%= t("index.main_product_cate_6_title")%></h4>
+                <%= simple_format( t("index.main_product_cate_6_content") )%>
+                
+                <br>
+                <a href="javascript: void(0)"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--product-->
+    <div id="scope">
+      <ul id="pin">
+        <li id="pin-1"><a href="#plant-1"></a><img src="/css/images/id-23.png"></li>
+        <li id="pin-2"><a href="#plant-2"></a><img src="/css/images/id-24.png"></li>
+        <li id="pin-3"><a href="#plant-3"></a><img src="/css/images/id-25.png"></li>
+        <li id="pin-4"><a href="#plant-4"></a><img src="/css/images/id-26.png"></li>
+        <li id="pin-5"><a href="#plant-5"></a><img src="/css/images/id-27.png"></li>
+        <li id="pin-6"><a href="#plant-6"></a><img src="/css/images/id-28.png"></li>
+      </ul>
+      <div id="plant-box">
+        <div id="plant-1" class="plant">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="35%" valign="top" class="left"><h5><%= t("index.copper")%></h5>
+                <%= simple_format( t("index.copper_basic") )%>
+                
+                </td>
+              <td width="65%" valign="top" class="right"><h4><%= t("index.copper")%></h4>
+                <%= simple_format( t("index.copper_adv") )%>
+                <br>
+                <img src="/css/images/id-21.jpg"></td>
+            </tr>
+            <tr>
+              <td align="right" ><a href="<%= page_pages_path("copper-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+              <td align="right"><a href="<%= page_pages_path("copper-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="plant-2">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="35%" valign="top" class="left"><h5><%= t("index.jiangcorp")%></h5>
+                <%= simple_format( t("index.jiangcorp_basic") )%>
+                
+                </td>
+              <td width="65%" valign="top" class="right"><h4><%= t("index.jiangcorp")%></h4>
+                <%= simple_format( t("index.jiangcorp_adv") )%>
+                <br>
+                <img src="/css/images/id-29.jpg">
+                
+                </td>
+            </tr>
+            <tr>
+              <td align="right" ><a href="<%= page_pages_path("jiangcorp-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+              <td align="right"><a href="<%= page_pages_path("jiangcorp-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="plant-3">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="35%" valign="top" class="left"><h5><%= t("index.hsinchu")%></h5>
+                <%= simple_format( t("index.hsinchu_basic") )%>
+                                
+                </td>
+              <td width="65%" valign="top" class="right"><h4><%= t("index.hsinchu")%></h4>
+                <%= simple_format( t("index.hsinchu_adv") )%>
+                
+                <img src="/css/images/id-30.jpg">
+                
+                </td>
+            </tr>
+            <tr>
+              <td align="right" ><a href="<%= page_pages_path("hsinchu-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+              <td align="right"><a href="<%= page_pages_path("hsinchu-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="plant-4">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="35%" valign="top" class="left"><h5><%= t("index.resin")%></h5>
+                <%= simple_format( t("index.resin_basic") )%>
+                
+                </td>
+              <td width="65%" valign="top" class="right"><h4><%= t("index.resin")%></h4>
+	              <%= simple_format( t("index.resin_adv") )%>
+                
+                <img src="/css/images/id-31.jpg"></td>
+            </tr>
+            <tr>
+              <td align="right" ><a href="<%= page_pages_path("resin-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+              <td align="right"><a href="<%= page_pages_path("resin-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="plant-5">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="35%" valign="top" class="left"><h5><%= t("index.guanyin")%></h5>
+	              <%= simple_format( t("index.guanyin_basic") )%>
+                
+                </td>
+              <td width="65%" valign="top" class="right"><h4><%= t("index.guanyin")%></h4>
+	              <%= simple_format( t("index.resin_adv_1") )%>
+	              
+                <p style="background:url(/css/images/id-32.jpg) right bottom no-repeat">
+	              <%= simple_format( t("index.resin_adv_2") )%>  
+                </p>
+                <br>
+                <%= simple_format( t("index.resin_adv_3") )%>
+                </td>
+            </tr>
+            <tr>
+              <td align="right" ><a href="<%= page_pages_path("guanyin-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+              <td align="right"><a href="<%= page_pages_path("guanyin-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="plant-6">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="35%" valign="top" class="left"><h5><%= t("index.guanyin3c")%></h5>
+	              <%= simple_format( t("index.guanyin3c_basic") )%>                
+                
+                
+                </td>
+              <td width="65%" valign="top" class="right"><h4><%= t("index.guanyin3c")%></h4>
+                <%= simple_format( t("index.guanyin3c_adv_1") )%>
+                <p style="background:url(/css/images/id-33.jpg) right bottom no-repeat;padding:0 0 285px 0">
+                <%= simple_format( t("index.guanyin3c_adv_2") )%>
+                </td>
+            </tr>
+            <tr>
+              <td align="right" ><a href="<%= page_pages_path("guanyin3c-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+              <td align="right"><a href="<%= page_pages_path("guanyin3c-intro") %>"><%= t("env.index.more") %><span>》</span></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
 
 <%= I18n.locale %>
-
 <p>Admin login:</p>
 <%= link_to "後台登入", new_admin_session_path %>
 

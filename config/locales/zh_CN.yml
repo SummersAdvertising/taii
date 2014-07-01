@@ -1,4 +1,144 @@
 zh_CN:
+  index:
+    spirit_main_title: "我们的信念"
+    spirit_title_1: "<b>深耕</b><br>
+              深入技术研发，提升自我能力，耕耘客<br>
+              户，取得客户对公司对产品的信任。"
+    spirit_title_2: "<b>创新</b><br>
+              观念创新丶技术创新丶产品创新。"
+    spirit_title_3: "<b>国际观</b><br>
+              胸怀国际，全球化经营，成就全球企业<br>
+              集团之理想。"
+    news: "最新消息 "
+    main_product_cate_1: "光亮圆铜杆"
+    main_product_cate_2: "漆包线"
+    main_product_cate_3: "绝缘材料"
+    main_product_cate_4: "电缆电线"
+    main_product_cate_5: "AC电源传输线"
+    main_product_cate_6: "抗突波漆包线"
+    main_product_cate_1_title: "2.6mm 轴装裸铜线"
+    main_product_cate_1_content: "<br>
+                使用进口独立滑差控制的双头伸线机所生产出来的 2.6mm 轴装裸铜线，它具有底下的优点：<br>
+                1. 表面光滑，特别适用於外观需求较高的漆包线客户。<br>
+                2. 拉伸性能好，可拉丝到 0.05mm 规格以下极细铜线。<br>
+                3. 连拉连退，2.6mm 伸长率可达 32% 以上，伸张柔软度佳，适合各类铜<br>
+                　产品加工。<br>
+                4. 采无轴式包装，便於运送及储存。<br>"
+    main_product_cate_2_title: "MW-35C 双复合涂耐高温漆包线 EIWH"
+    main_product_cate_2_content: "<br>
+                1. 生产范围: 0.20~3.0mm<br>
+                2. 耐热性极佳，复合式涂布，耐磨耗性能优异，绝缘耐压非常好<br>
+                3. 具有良好的可绕性，适合应用於各种苛刻高占积率的高速绕线机种<br>
+                4. 结合聚脂亚胺及聚醯胺醯亚胺双重特性加上台一独特制程，完美呈<br>
+                　现此复合涂布漆包线优异性能适合各种高端电机绕线使用<br>"
+    main_product_cate_3_title: "绝缘材料"
+    main_product_cate_3_content: "<br>
+                本事业部产品乃机能性树脂丶涂料丶或称凡立水，主要系运用於漆包线之外层批覆绝缘材料；故特别重视产品之绝缘特性丶机械特性与耐热特性。
+                概括产品分类，计有：聚酯类树脂（PEW类）丶聚酯亚胺类树脂（EIW类）丶聚胺酯类树脂（UEW类)丶聚醯胺亚胺类树脂（AIW类）丶尼龙类树脂(NY类)丶其他特殊机能性涂料树脂<br>"
+    main_product_cate_4_title: "耐热耐燃电缆"
+    main_product_cate_4_content: "<br>
+                产品涵盖 300℃丶380℃ 耐热及 840℃丶950℃ 耐燃电缆丶产品通过财团法人消防安全中心基金会（CFS）之耐热电线电缆认可基准及耐燃电缆认可基准认证，被覆材料包含低烟无卤等材料，适用於消防安全设备紧急供电系统之电源丶控制回路丶警报丶监视及通信线路。<br>"
+    main_product_cate_5_title: "资讯丶通讯丶消费性电子产品之电源线连接器(传输线)"
+    main_product_cate_5_content: "<br>
+                电源传输线及附插接头之电源传输线组为各式电子产品之电源供应组件中末端用来与电源插座相连之元件，主要功用为传输电源，属於电子连接器的一种，故可将之统称为电源连接器。由於电源连接器品质的良窳足以影响电子机器间电力传输的信赖度及安全性，因此在电子产品的应用上是一项相当重要的零组件。"
+    main_product_cate_6_title: 	"抗突波漆包线"
+    main_product_cate_6_content: "<br>
+                1. 特性：漆膜具抗突波特性，防止过载漏电流对皮膜产生热劣化而龟裂，<br>
+                　并於高温高压高频下耐寿命较一般同等级耐热线为优。<br>
+                2. 用途：高频变压器丶变频马达丶感应伺服马达绕线材。<br>
+                　转动机器：密封直流马达丶电动工具丶电动汽车马达。<br>"
+    copper: "台一铜业(广州)有限公司"
+    copper_basic: "员工人数：1,200 人<br>
+                注册资本：USD 4,110 万元<br>
+                公司地址：广州经济技术开发区东区东鹏大道77号<br>
+                公司电话：020-82265528<br>
+                <b>业务专线</b><br>
+                电话：86-020-82265950<br>
+                传真：86-020-82265955丶020-32067312<br>
+                Email：gms10@tai-i-gz.com<br>"
+    copper_adv: "<h5>研究发展</h5>
+                <br>
+                <p>专业研发人员本公司有实力雄厚的研发团队，大专以上学历占87.5%，其中有资质深厚的日丶台籍顾问，有各种不同专业的年轻技术人员，也有集技术与管理一身的中间传承者，团队富有开拓精神，凝聚力强，善於攻坚。</p>"
+    
+    jiangcorp: "台一江铜(广州)有限公司"
+    jiangcorp_basic: "员工人数：170 人<br>
+                注册资本：7,022 美元<br>
+                公司地址：广州市广州经济技术开发区东区骏业路251号<br>
+                <b>业务专线</b><br>
+                电话：+86-020-82265949<br>
+                传真：+86-020-82265715#6060"
+    jiangcorp_adv: "<h5>竞争优势 </h5>
+                <p><br>
+                  垂直整合的企业架构：<br>
+                  公司裸铜线产品产能18万吨，集团有漆包线丶电力电缆丶电线电缆丶电子线丶通信线丶产品群制造丶熟悉客户之需求丶并拥有规模优势及优质客户群，是珠江三角地区同行业龙头企业。 </p>
+                <br>
+                <h5>认证与荣耀 </h5>
+"
+    hsinchu: "新竹厂"
+    hsinchu_basic: "员工人数：120 人<br>
+                公司地址：新竹县新竹工业区大同路25号<br>
+                优势：高附加价值的漆包线，荣获德国丶美国丶台湾各项专利<br>
+                <b>业务专线</b><br>
+                电话：+886-3-5981521#238<br>
+                传真：+886-3-5981166
+"
+    hsinchu_adv: "<h5>研究发展 </h5>
+                <p> 发展与技术背景：<br>
+                  台一为提高产品品质与市场竞争力及开发附加价值新产品，与金属中心技术合作及台大化学系教授指导，并投入各类精密仪器设备与人类做各种研究开发工作。
+                  目前已完成抗图波漆包线丶异行铜线丶三层绝缘线产品，提升国内产业技术层次，满足客户品质的要求和社会趋势的需求。</p>
+                <br>
+                <h5>重要设备</h5>"
+    resin: "树脂厂"
+    resin_basic: "员工人数：20 人<br>
+                公司地址：桃园县杨梅镇中山北路一段399号<br>
+                优势：完整掌握一级涂料商品之优缺点藉藉世界级客户之受注情报，合作优化具世界级之集团产品<br>
+                <b>业务专线</b><br>
+                电话：+886-3-5981521#238<br>
+                传真：+886-3-5981166"
+    resin_adv: "<h5>产品优势</h5>"
+    guanyin: "观音厂电线电缆事业"
+    guanyin_basic: "员工人数：109 人<br>
+                公司地址：桃园县观音乡富源村3邻49号<br>
+                优势：为台电丶中华电信丶中国钢铁丶台湾中油等国营事业合格供应商丶及台塑集团事业群50家公司高压电缆之唯一指定供应商<br>
+                <b>业务专线</b><br>
+                电话：+886-3-4907711#804/814<br>
+                传真：+886-3-4906622"
+    guanyin_adv_1: "<h5>研究发展</h5><br>"
+    guanyin_adv_2: "本事业部研发部门多年来致力於生产效率的改进与新产品的开发，主要有下列新产品之开发<br>
+                  1. FFC (Flexible Flat Cable)<br>
+                  2. 电子线 UL 1430 / UL1431<br>
+                  3. 电动车充电电缆<br>
+                  4. TCER<br>
+                  5. 汽车线<br>
+                  6. 汽车马达接引线 "
+    guanyin_adv_3: "<h5>认证与荣耀</h5><br>
+                <p> 1. 2012年取得中国国家强制性产品认证书<br>
+                  2. 2012年 取得日本适合性同等检查合格书<br>
+                  3. 2010 年 取得国家实验室(TAF)认证 </p>"
+    guanyin3c: "观音厂3C事业"
+    guanyin3c_basic: "员工人数：109 人<br>
+                公司地址：桃园县观音乡富源村3邻49号<br>
+                优势：生产垂直供应链，有50年生产经验并采用先进SAMP多头延伸线机及束缴机，制程稳定，品质管制比照航太工业要求。主要产品为 Power cords<br>
+                <b>业务专线</b><br>
+                电话：+886-2-27187333#257<br>
+                传真：+886-2-27191311"
+    guanyin3c_adv_1: "<h5>专业认证与荣耀</h5>"
+    guanyin3c_adv_2: "品质保证<br>
+1. 2013.01-取得美国UL认证<br>
+2. 2013.05-取得经济部标准检验局认证</p>"
+  center:
+    main_title: "<p>台一国际通过联合国物资采购监管中心的审核<br>
+              台一系列产品荣获联合国物资采购中心推荐之指定产品</p>"
+    title_1: "联合国物资采购监管中心台湾中心介绍"
+    title_1_content_1: "成立於美国洛杉矶丶直属联合国的世界资讯机构<br>
+                    （WIO-UN）是全球最权威丶最全面的资讯机构，多年来为各国的发展和进步，做出了卓越的贡献。<br>
+                    <br>
+                    为了让「联合国千年发展目标」早日实现，联合国世界资讯机构董事会决定联合国际资本丶基金丶银行等成立联合国世界资讯机构金融投资集团（WIO-UN Corp），在 2011 年底获得中国驻美国洛杉矶总领事馆正式确认，并於 2012 年成立中国运营总部。<br>
+                    <br>
+                    联合国世界资讯机构金融投资集团多年来集合国际资本在世界各国成功地对接了超大型项目，并成功安排多家国际银行丶基金以及信托公司完成了多个专案融资，为进一步落实联合国千年发展目标，共谋和谐发展之路，经联合国世界资讯机构美国总部批准，又在中国成立联合国物资采购监管中心（UNMPCC），为中国企业物资进入联合国采购和各国政府采购提供服务，为推广世界高科技专案提供商务平台。"
+    title_1_content_2: "为帮助更多台湾企业进入联合国采购和成员国采购的行列，并引进世界高科技项目进入台湾，联合国物资采购监管中心特授权中华关怀两岸企业联合会会长吴达民先生全权筹办联合国物资采购监管中心台湾中心（UNMPCCTW），让台湾也有专属平台，为实现联合国千年发展目标共同努力，贡献一份力量。"
+    title_1_content_3: "资料来源："
+    title_1_content_4: "联合国物资采购监管中心台湾中心网站"
   about_side_menu:
     concept: "经营理念"
     responsibility: "企业责任"
@@ -377,6 +517,56 @@ zh_CN:
     copper_research: "研究发展"
     copper_catalogs: "产品型录"
     copper_consulting: "产品谘询"
+    hsinchu_intro: "新竹厂简介"
+    hsinchu_certification: "专业认证与荣耀"
+    hsinchu_research: "研究发展"
+    hsinchu_equipment: "重要设备"
+    hsinchu_catalogs: "产品型录"
+    hsinchu_use: "产品运用"
+    hsinchu_consulting: "产品谘询"
+    jiangcorp_intro: "台一江铜厂简介"
+    jiangcorp_certification: "专业认证与荣耀" 
+    jiangcorp_superiority: "竞争优势"
+    jiangcorp_research: "研究发展"
+    jiangcorp_use: "产品应用"
+    jiangcorp_consulting: "产品谘询"
+    resin_intro: "树脂厂介绍"
+    resin_certification: "专业认证与荣耀"
+    resin_superiority: "产品优势"
+    resin_research: "研究发展"
+    resin_catalogs: "产品型录"
+    resin_quality: "品质保证"
+    resin_equipment: "设备简介"
+    resin_use: "产品运用"
+    resin_consulting: "产品谘询"
+    guanyin3c_intro: "观音厂3C事业简介"
+    guanyin3c_certification: "专业认证与荣耀"
+    guanyin3c_superiority: "竞争优势"
+    guanyin3c_research: "研究发展"
+    guanyin3c_technology: "技术资料"
+    guanyin3c_catalogs: "产品型录"
+    guanyin3c_use: "产品运用"
+    guanyin3c_consulting: "产品谘询"
+    guanyin_intro: "电线电缆事业简介"
+    guanyin_history: "电线电缆事业历程"
+    guanyin_certification: "专业认证与荣耀"
+    guanyin_superiority: "竞争优势"
+    guanyin_research: "研究发展"
+    guanyin_equipment: "设备介绍"
+    guanyin_product-1: "产品介绍"
+    guanyin_catalogs: "产品型录"
+    guanyin_consulting: "产品谘询"
+    guanyin_product_sub_nav: "产品介绍"
+    guanyin_product-1: "主要产品及应用"
+    guanyin_product-2: "汽车线"
+    guanyin_product-3: "汽车马达接引线"
+    guanyin_product-4: "电子线丶花线"
+    guanyin_product-5: "PV Ribbon"
+    guanyin_product-6: "PV Wire"
+    guanyin_product-7: "架空线丶消防线"
+    guanyin_product-8: "电线电缆丶高中压电缆"
+    guanyin_product-9: "光缆"
+    
     jiangcorp_title: "台一江铜"
     jiangcorp_desc: "公司成立於 1997 年 5 月，年产能 180,000 吨裸铜线，已从美国引进最先进的 SCR 连铸连轧铸造机及最新研发之电子控制系统，并与美国南线公司保持长期技术合作，拥有成熟生产技术及稳定的品质保证，为珠江三角洲地区同行业龙头企业。"
     hsinchu_title: "新竹厂"
@@ -427,6 +617,633 @@ zh_CN:
     title_3_content: "公司研发团队累积集团四十多年之经验，主动与客户生产团队合作研发，满足客户需求之特殊线种，与客户创双赢优势。"
     title_4: "4丶丰富的产业经验"
     title_4_content: "公司从事漆包线制造四十多年，所有经营管理团队成员对本行业具有丰富经验，使公司能紧贴行业相关连产业之发展趋势，随时制定产品发展策略。"
+  copper-research:
+    main_title: "研究发展"
+    main_title_desc: "公司研发部门多年来致力於生产效率的改进与新产品的开发，主要有： "
+    title_1: "1丶生产效率的改进"
+    title_1_content: "<p>透过定期的“技术管理会议”研发部门与制造部门共同对生产制程丶设备效率丶原材料选择等方面进行研究，不断更新改善细线针孔问题丶氧化问题丶花线问题丶粉尘问题等制程瓶颈。<br>
+                <br>
+              </p>
+              <p>联合设备供应商对机台进行改造，将 DV 值提升至超出原厂设计上限，产能提高近 30%，因应不同的作业环境，不断开发改进原材料，解决现场中的作业困难，同时，在提升品质前提的同时，致力开发新材料，降低部份产品的单位成本，增强产品的市场竞争力。</p>"
+    title_2: "2丶新产品的开发"
+    title_2_content_1: "公司研发部门历来致力於新产品的研发，陆续成功开发的新产品有："
+    title_2_content_2: "高性能耐冷媒线"
+    title_2_content_3: "超薄漆膜微细线"
+    title_2_content_4: "低 GAS 密闭电子元器件用漆包线"
+    title_2_content_5: "Φ2.0 以上“0”针孔严加工高温线" 
+    title_2_content_6: "180℃ 直焊自融着漆包线等"
+    title_2_content_7: "<p>其中高性能耐冷媒线 DFWB 有特殊的专有技术，单向刮漆平均可达 1800g 以上，滑性可达0.04 以下，综合性能较一般产品性能高出 30% 以上，特别适合於高功效，低能耗之高槽满率压缩机机种。
+<br><br>
+超薄漆膜微细线可确保在 6μ 漆膜厚度状况下针孔控制在 3 个以下，外径均匀保持在 2μ 以内。低 GAS 漆包线不只对漆膜种类及表面润滑油提供严格要求，并且具备良好滑性以确保客户高速绕线不断线。2.0 大线及 180℃ 直焊融着线等均可完全满客户之特殊需求，品质独到之处，非一般厂商所能替代。目前技术研发的方向仍持续延伸至耐高频线丶Litz 线丶其它导体漆包线等。</p>"
+  copper-catalogs:
+    main_title: "产品型录"
+    download: "附件下载："
+  copper-consulting:
+    main_title: "产品谘询专线"
+    title_1: "台一铜业（广州）有限公司"
+    title_1_content: "电话：+86-020-82265950<br>
+                传真：+86-020-82265955<br>
+                　　　+86-020-32067312"
+  hsinchu-intro:
+    main_title: "新竹厂简介"
+    main_desc: "新竹厂（漆包线事业部）创立於 1979 年 9 月，设立於新竹县新竹工业区，年产量约 14000 公吨，为漆包线领导厂商之一。与日本漆包线最大制造厂－第一电工 技术合作，制造高品质漆包线，深获客户好评。"
+    title_one: "工厂面积："
+    title_one_content: "13,551 M（4,099 坪）"
+    title_two: "建筑面积："
+    title_two_content: "13,626 M（4,122 坪）"
+    title_three: "员工人数："
+    title_three_content: "约 120 人"
+    title_four: "地理位置："
+    title_four_content: "新竹县新竹工业区大同路 25 号"
+    title_five: "优　　势："
+    title_five_content: "高附加价值的漆包线，荣获德国丶美国丶台湾各项专利"
+    title_six: "主要产品："
+    title_six_content: "音圈用漆包线丶耐热漆包线丶耐热可直焊漆包线丶耐冷媒漆包线丶融着漆包线丶变频马达用抗突波漆包线丶汽车电装专用漆包线丶平行漆包线丶高抗张漆包线丶三层绝缘线丶异型铜线…。"
+  hsinchu-certification:
+    main_title: "专业认证与荣耀"
+    title_1: "1丶品质保证"
+    title_1_content_1: "1982.09"
+    title_1_content_1_desc: "取得经济部中央标准局正字（CNS认证）"
+    title_1_content_2: "1984"
+    title_1_content_2_desc: "经济部商品检验局评定甲等工厂"
+    title_1_content_3: "1995.01　"
+    title_1_content_3_desc: "通过 ISO 9001 认证"
+    title_1_content_4: "1995.02"
+    title_1_content_4_desc: "取得日本松下认可指定为世界松下供应厂"
+    title_1_content_5: "2001.02~09"
+    title_1_content_5_desc: "取得美国丶德国丶台湾 抗突波及耐高温有色线专利"
+    title_1_content_6: "2004.04"
+    title_1_content_6_desc: "取得松下 GP 环境品质保证供应商资格"
+    title_1_content_7: "2008.01"
+    title_1_content_7_desc: "通过 ISO 14001 认证"
+    title_1_content_8: "2008.10"
+    title_1_content_8_desc: "通过 QC-080000 认证"
+    title_1_content_9: "2010.03"
+    title_1_content_9_desc: "通过 TS16949 汽车体系品质管制体系认证"
+    title_2: "2丶产品取得 UL 认证"
+    title_2_content_1: "通过 23 个品种。"
+    title_3: "3丶专利"
+    title_3_contne_1: "1999 "
+    title_3_contne_1_desc: "率先与台大教授群解析 Phelps dodge 专利研发抗突波漆包线"
+    title_3_contne_2: "2001.02"
+    title_3_contne_2_desc: "取得美国抗突波线专利，号码：US Patent：6190770 B"
+    title_3_contne_3: "2001.09　"
+    title_3_contne_3_desc: "取得德国专利耐高温有色漆包线，号码：199 27 52"
+    title_3_contne_4: "2001 "
+    title_3_contne_4_desc: "取得中华民国三项专利，号码：123015丶152929丶243754"
+  hsinchu-research:
+    main_title: "研究发展"
+    title_1: "1丶研发技术背景"
+    title_1_desc: "台一为提高产品品质与市场竞争能力及开发附加价值新产品，与金属中心技术合作及台大化学系教授指导，并投入各类精密仪器设备与人力做各种研究开发工作。
+<br><br>
+目前已完成抗突波漆包线丶异型铜线丶三层绝缘线产品，提升国内产业技术层次，满足客户品质的要求和社会趋势的需求。
+"
+    title_2: "2丶主要开发产品"
+    title_2_content_1: "抗突波线"
+    title_2_content_1_sub: "特　　性："
+    title_2_content_1_desc: "漆膜具抗突波特性，防止过载漏电流对皮膜产生热劣化而龟裂，并於高温高压高频下耐寿命较一般同等级耐热线为优。"
+    title_2_content_1_subtitle_1: "用　　途："
+    title_2_content_1_subtitle_1_desc: "高频变压器丶变频马达丶感应伺服马达绕线材。转动机器：密封直流马达丶电动工具丶电动汽车马达。"
+    title_2_content_1_subtitle_2: "耐热等级："
+    title_2_content_1_subtitle_2_desc: "200 ℃。"
+    title_2_content_1_subtitle_3: "适用线径："
+    title_2_content_1_subtitle_3_desc: "美规 AWG# 18~24，Heavy 种。"
+    title_2_content_1_subtitle_4: "检验标准："
+    title_2_content_1_subtitle_4_desc: "A丶漆包线一般特性：NEMA MW35C。<br>
+                  B丶高频特性（耐寿命）：马达变频器测试法。"
+    title_2_content_1_subtitle_5: "UL  认 证："
+    title_2_content_1_subtitle_5_desc: "NEMA MW35C丶200 ℃ 。"
+    title_2_content_1_subtitle_6: "专　　利："
+    title_2_content_1_subtitle_6_desc: "A丶中华专利号码：123015丶152929丶243754<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核准日期：2000/9/13。<br>
+                    B丶美国专利号码：US 6190770B，核准日期：2001/2/20。<br>
+                  C丶德国专利号码：199.27.52，核准日期：2001/9/20。"
+    title_2_content_2: "异型铜线"
+    title_2_content_2_sub: "特　　性："
+    title_2_content_2_desc: "异型铜线应用於高效马达具有优良的导电度，与高占积率藉此提高电磁转换效率；同时具有高速运转时之结构强度与长期运转时之高温劣化稳定性。"
+    title_2_content_2_subtitle_1: "用　　途："
+    title_2_content_2_subtitle_1_desc: "混合动力汽车和电动汽车丶横向磁通电机丶工业高效电机丶主轴电机丶变频马达。"
+    title_2_content_2_subtitle_2: "适用线径："
+    title_2_content_2_subtitle_2_desc: "各类异型线材，可客制化。"
+    title_2_content_2_subtitle_3: "检验标准："
+    title_2_content_2_subtitle_3_desc: "ASTM 规范 B152丶B272。"
+    title_2_content_3: "异型铜线"
+    title_2_content_3_sub: "特　　性："
+    title_2_content_3_desc: "具有厚膜耐高电压绝缘，省去常规绕线间的绝缘纸和中间绝缘间隔栅，可使变压器缩小体积，约为传统变压器的一半，而重量减为传统变压器的2／3，故可大幅降低材料成本及加工费并可实现 产品小型化。本产品具有优良的焊接及卷绕加工性，故在末端可直接直焊，故颇适合做为变压器之线圈或引线的绕组应用。"
+    title_2_content_3_subtitle_1: "用　　途："
+    title_2_content_3_subtitle_1_desc: "切换式电源供应器（SMPS）实例：机器人，影印机丶电动玩具与游戏机丶液晶丶电浆显示器丶高低频变压器丶手机丶录影机用电池充电器丶掌上数位处理器（PDA）丶数位相机丶PC 用 AC 整流器（ADAPTOR3丶耐热等级：200 ℃）。"
+    title_2_content_3_subtitle_2: "适用线径："
+    title_2_content_3_subtitle_2_desc: "0.20-1.00mm。"
+    title_2_content_3_subtitle_3: "检验标准："
+    title_2_content_3_subtitle_3_desc: "安全规范认可 UL60950，绝缘系统认可 UL1446。"
+    title_2_content_3_subtitle_4: "耐热等级："
+    title_2_content_3_subtitle_4_desc: "B（130℃）TUB-X，F（155℃）TUF-X。"
+    title_2_content_3_subtitle_5: "单(素)线认证："
+    title_2_content_3_subtitle_5_desc: "UL 取得认证UL OBJT2.E346389。"
+    title_2_content_3_subtitle_6: "UL  认 证："
+    title_2_content_3_subtitle_6_desc: "绝缘系统（EIS）认证：UL OBJ32丶UL1446 配合电源供应器生产大厂之要求，申请 EIS 认证，通过时间预计 2014 年完成。"
+  hsinchu-equipment:
+    main_title: "重要设备"
+    title_1: "1丶设备介绍"
+    title_2: "2丶近年来持续提升品质特性改善之实绩"
+    title_3: "3丶生产线上自动检出设备"
+  hsinchu-catalogs:
+    main_title: "产品型录"
+  hsinchu-use:
+    main_title: "产品介绍与运用"
+    subtitle_1:  "1丶主要产品及用途"
+    subtitle_2:  "2丶产品运用"
+  hsinchu-consulting:
+    main_title: "产品谘询专线"
+    subtitle_1:  "<h5>漆包线事业部 - 业务</h5>
+                <p>电话：+886-3-5981521 # 238<br>
+                传真：+886-3-5981166 </p>"
+    subtitle_2:  "<h5>漆包线事业部 - 技术</h5>
+                <p>电话：+886-3-5981521 # 224/346<br>
+                传真：+886-5-5981166</p>"
+  jiangcorp-intro:
+    main_title: "台一江铜（广州）有限公司简介"
+    main_desc: "公司成立於 1997 年 5 月，座落于广州经济技术开发区东区，由台湾台一国际股份有限公司投资，公司注册资本 4,072 万美元，投资总额 7,022 万美元，员工人数约 170 人，近年每年营业额约 90 亿元人民币。
+<br><br>
+公司年产能 180,000 吨裸铜线，从美国引进最先进的 SCR 连铸连轧铸造机及最新研发之电子控制系统，并与美国南线公司（Southwire）保持长期技术合作，拥有成熟的生产技术及稳定的品质保证。
+<br><br>
+公司严格执行 ISO9001 品质管制体系丶ISO14001 环保管理体系管理标准，为珠江三角洲地区同行业龙头企业。
+<br><br>
+公司秉承集团优良传统，取得诸多荣誉：安全生产标准化企业资格丶广州市清洁生产企业评定丶广东省优秀台资企业称号等。
+<br><br>
+公司主营产品为 8.0mm 及 2.0 - 3.2mm 裸铜线，产品广泛应用於漆包线丶电力电缆丶电线电缆丶各类电子线及通信线等行业。"
+    title_1: "员工人数："
+    title_1_content: "170 人"
+    title_2: "工厂面积："
+    title_2_content: "20,230 平方米"
+    title_3: "建筑面积："
+    title_3_content: "9,575 平方米 "
+    title_4: "地理位置："
+    title_4_content: "广州市广州经济技术开发区东区骏业路 251 号"
+  jiangcorp-certification:
+    main_title: "专业认证与荣耀"
+    title_1: "品质保证"
+    title_1_content_1: "通过 ISO9001 品质管制体系"
+    title_1_content_2: "通过 ISO14001 环保管理体系管理体系"
+    title_1_content_3: "通过广州市清洁生产企业评定"
+    title_1_content_4: "通过安全生产标准化企业资格"
+    title_1_content_5: "获评为广东省优秀台资企业"
+  jiangcorp-superiority:
+    main_title: "竞争优势"
+    title_1: "1丶垂直整合的企业架构"
+    title_1_desc: "公司祼铜线产品年产能 18 万吨，集团有漆包线丶电力电缆丶电线电缆丶电子线丶通信线等产品群制造，熟悉客户之需求，并拥有规模优势及优质客户群，是珠三角地区同行业龙头企业。"
+    title_2: "2丶先进的生产设备"
+    title_2_desc: "公司除引进制造铜材世界最主流设备系统--美国南线公司 SCR 连铸连轧铸造机,并且配以最新研发之电子控制系统，促使 SCR 设备性能更加优异丶产能更为提高丶制程技术更为成熟丶制造成本更加低廉。"
+    title_3: "3丶全面的技术支援服务"
+    title_3_desc: "公司在技术上与美国南线公司（Southwire）保持长期技术合作，并同时秉承台湾母公司四十多年铜加工行业产品制造经验，拥有坚强技术团队，使产品品质长保优良稳定。"
+  jiangcorp-research:
+    main_title: "研究发展"
+    main_title_desc: " 公司研发部门多年来致力於生产效率的改进与新产品的开发，主要有： "
+    title_1: "1丶生产效率的改进"
+    title_1_content:  "研发部门秉承公司深耕丶创新丶国际观的经营理念，凭藉四十多年来在铜加工产品制造经验及不懈努力，持续进行生产工序丶机械效率和材料利用率的研究，不断完善产品品质并使之更加专业化。 <br>
+              <br>
+              2004 年 3 月成功提升 SCR 熔炉和铸造系统的生产效率，将￠8mm 铜杆产能由 125,000 吨提高至 150,000 吨；2009 年再次对炉铸机系统改造，成功将产能由 150,000 吨提升至 180,000 吨。 <br>
+              <br>
+              继 SCR-3000 生产线成功升级後，於 2012 年 10 月对 2 台 TS45 大拉机进行电气系统改造，将原有 SIEI 系统升级为西门子 S7 系统，大幅提高设备稼动效率及产品品质。"
+    title_2: "2丶新产品的开发"
+    title_2_content: "研发部门对客户需求的新产品，除将对产品规格和拟定用途进行反复研究，并在产品交付予客户前，进行产品原件检测。 <br>
+        <br>
+        研发部门主动与客户协同合作，包括现场视察客户生产设施，以深入了解客户生产工序和需求，藉以提升客户品质需求。 <br>
+        <br>
+        研发部门亦针对客户将来可能需求之产品，制定产品相应规格丶材料用途以及生产工序导入，扩大产品适用领域。 "
+  jiangcorp-use:
+    main_title: "产品运用"
+    main_title_desc: "  裸铜线是制造漆包线丶电线和电缆的主要原材料。根据行业分类，裸铜线制造业指制造供电线电缆行业使用的铜杆，以及将铜杆伸线成不同直径的铜线的电解铜加工业。裸铜线制造商被列为电线电缆制造业的上游供应商。因此，裸铜线品质在电线电缆行业中起到了举足轻重的作用，并可直接影响到其下游产品的品质丶功能和生产效率。"
+    title_1: "本公司所生产之裸铜线可广泛使用於下列用途："
+    title_1_content_1: "漆包线"
+    title_1_content_2: "高压电力电缆"
+    title_1_content_3: "中低压电线电缆"
+    title_1_content_4: "电子线"
+    title_1_content_5: "通信线"
+  jiangcorp-consulting:
+    main_title: "产品谘询专线"
+    content_1: "<h5>台一江铜（广州）有限公司</h5>
+                <p>电话：+86-020-82265949<br>
+                传真：+86-020-82265715 # 6060"
+  resin-intro:
+    main_title: "树脂厂（绝缘材料事业部）简介"
+    main_title_desc: "树脂厂（绝缘材料事业部）产品乃机能性树脂丶 涂料丶或称凡立水，主要系运用於漆包线之外层批覆绝缘材料，故特别重视产品之绝缘特性丶机械特性与耐热特性。"
+    title_1: "工厂面积："
+    title_1_desc: "4042（坪）" 
+    title_2: "建筑面积："
+    title_2_desc: "473（坪）"
+    title_3: "员工人数："
+    title_3_desc: "约 20 人"
+    title_4: "地理位置："
+    title_4_desc: "桃园县杨梅镇中山北路一段 399 号"
+    title_5: "优　　势："
+    title_5_desc: "完整掌握一级涂料商产品之优缺点藉世界级客户之受注情报，合作优化具世界级之集团产品。"
+    title_6: "主要产品："
+    title_6_desc: "AIW 涂料丶EIW 涂料 丶 PEW 涂料丶UEW 涂料丶醯胺披覆涂料丶其他机能类等。"
+  resin-certification:
+    main_title: "专业认证与荣耀"
+    main_title_desc: "技术认证与品质保证"
+    title_1: "1993　"
+    title_1_content: "与工研院材料所技术合作，於观音厂创建研发雏型工厂" 
+    title_2: "1994"
+    title_2_content: "成立绝缘材料事业部" 
+    title_3: "1996"
+    title_3_content: "顺应世界潮流，领先同业取得 ISO9001 国际品质系统认证" 
+    title_4: "2000"
+    title_4_content: "取得 AIW 涂料及 F 级 PEW 涂料 UL 认证研发雏型成果量化，於杨梅厂区迁厂扩建" 
+    title_5: "2001"
+    title_5_content: "取得德国高频涂料专利（高频涂料之开发，节能减碳意识抬头，开发变频马达所需之高频涂料专利取得）" 
+    title_6: "2003"
+    title_6_content: "PEW 系列有色涂料开发完成" 
+    title_7: "2006"
+    title_7_content: "取得 EIW 涂料 UL 认证" 
+    title_8: "2010"
+    title_8_content: "PEW系列适用全线种全线径达成" 
+  resin-superiority:
+    main_title: "产品优势"
+    main_title_desc: "认证／专利"
+  resin-research:
+    main_title: "研究发展"
+    main_title_desc: "本事业部研究发展之使命有三，阐述如下："
+    title_1: "反应集团漆包线厂之客户资讯，或友厂之品质触角，在既有之产品规格上，研发提升该特殊之性能，例如：可揽性再提升 5%，环保副产物之减少等，除满足特定客户外，更能站在市场领先地位。"
+    title_2: "结合集团内各项创新高值专案，提供绝缘材料之设计理论与方向对策，加速成熟商转时机。"
+    title_3: "不断寻求低成品丶高品质之原料开发，降低产品单位成本，制衡涂料市场之垄断报价。"
+  resin-catalogs:
+    main_title: "产品型录"
+  resin-quality:
+    main_title: "品质保证"
+  resin-equipment:
+    main_title: "设备简介"
+    title_1: "<h5>主要设备：</h5>
+            3~7 吨涂料反应槽组 15 座。<br><br>"
+    title_2: "<h5>间接加热热源：：</h5>
+            2.4 吨蒸气锅炉 1 座，可到 150℃。<br>
+200 万仟卡热媒锅炉1座，可到 230 ~270℃ 。<br>
+自动化中央生产控制系统。<br>
+各类精密涂料研发分析仪器。<br><br>"
+    title_3: "<h5>生产能力：</h5>
+            内销 150 吨／月<br>
+外销 250 吨／月<br>
+总销 4,800 吨／年"
+  resin-use:
+    main_title: "产品运用"
+    title_1: "<h5>TAI-AIW 聚醯胺亚胺酯涂料</h5>
+            可用於：特殊高耐热性马达用线
+<br><br>"
+    title_2: "<h5>TAI-EIW 聚亚胺酯涂料 </h5>
+            可用於：电动工具丶高压变压器<br><br>"
+    title_3: "<h5>TAI-PEW聚酯涂料</h5>
+           可用於：泛用马达丶变压器<br><br>"
+    title_4: "<h5>TAI-UEB丶TAI-UEF 聚氨基甲酸酯涂料</h5>
+            可用於：具直焊性之家电用线<br><br>"
+    title_5: "<h5>TAI-NY 聚醯胺披覆涂料</h5>
+            可用於：NYLON 外被增加漆包线滑性<br><br>"
+    title_6: "<h5>其他机能类涂料</h5>
+            可用於：动力方向盘马达<br><br>
+            备注：另行研发融着线用丶融断线用等涂料"
+  resin-consulting:
+    main_title: "产品谘询专线"
+    title_1: "<h5>绝缘材料事业部 - 业务</h5>
+                <p>电话：+886-3-488-4091#283<br>
+                传真：+886-3-488-1564</p>"
+    title_2: "<h5>绝缘材料事业部 - 生技</h5>
+                <p>电话：+886-3-488-4091#281<br>
+                传真：+886-3-488-1564</p>"
+  guanyin3c-intro:
+    main_title: "观音厂3C事业简介"
+    main_title_desc: "观音厂 3C 事业创立於 2012 年，设立於桃园县观音乡，产品为电子电源线，年产量约 6000 万组。"
+    title_1: "工厂面积："
+    title_1_content: "18,350 坪"
+    title_2: "员工人数："
+    title_2_content: "约 109 人"
+    title_3: "地理位置："
+    title_3_content: "桃园县观音乡富源村 3 邻 49 号"
+    title_4: "优　　势："
+    title_4_content: "生产垂直整合供应链，有 50 年生产经验并采用先进 SAMP 多头伸线机及束绞机，制程稳定，品质管制比照航太工业要求"
+    title_5: "主要产品："
+    title_5_content: "Power cords"
+  guanyin3c-certification:
+    main_title: "专业认证与荣耀"
+    title_1: "品质保证"
+    title_2: "2013.01-取得美国UL认证"
+    title_3: "2013.05-取得经济部标准检验局认证"
+  guanyin3c-superiority:
+    main_title: "竞争优势"
+    title_1: "1丶生产垂直整合供应链"
+    title_1_desc: "从炼铜→伸绞线→电源线→电源线组。 "
+    title_2:  "2丶丰富的生产经验和先进的"
+    title_2_desc: "有 50 年生产经验并采用先进 SAMP 多头伸线机 及 束绞机，制程稳定，品质管制比照航太工业要求。 "
+    title_3: "3丶MES制造执行系统导入与运用"
+    title_3_desc_1: "即时管理制造活动中的在制品 WIP丶原物料丶机台状况丶工单完成情形满足客户订单的需求。"
+    title_3_desc_2: "即时提高管理者对制造现场生产线即时监控能力。"
+    title_3_desc_3: "即时利用系统防呆机制丶避免生产中错件。"
+    title_3_desc_4: "即时建立符合客户需求之品质系统。"
+    title_3_desc_5: "即时提供即时的生产履历追溯系统。"
+    title_3_desc_6: "即时一旦发生不良，可迅速的追踪不良的批号，减少损失，也避免不良品流出客户，对客户负责。"
+    title_3_desc_7: "即时MES 结合 SAP ERP 系统，有效整合生产制造与采购丶业务销售丶生管丶成本会计丶品质管制等企业资源，提升效率满足客户需求。"
+    title_4: "4丶弹性化规划流水生产线"
+    title_4_desc_1: "即时训练有素的操作员工，严密依照管制计画（CP）及 SPC 执行，确保品质符合需求。"
+    title_4_desc_2: "即时依照不同工序规划合理顺畅流水生产线，达到高生产效益，低在制库存。"
+    title_4_desc_3: "具弹性生产优势，可快速满足客户不同订单需求。"
+    title_5: "5丶全自动规划流水生产线"
+    title_5_desc_1: "适合规模化生产。"
+    title_5_desc_2: "提高产品一致性与稳定的品质。"
+    title_5_desc_3: "提高技术管理水准，减少管理和生产技术人员，有效地提高劳动生产率。"
+  guanyin3c-research:
+    main_title: "研究发展"
+    title_1: "1丶研发技术背景"
+    title_1_desc: "持续引进专业人才，同时与工研院等研究单位技术合作，以开发新制程丶改善设备自动化的理念下，持续系的进行制程的研发等工作，同时采用现代化的电脑模拟设备以及评估中的3D 列印技术，可以在设计同时就先模拟产品的外观及特色，期许可以减少先期研发设计的成本，提高新产品开发效率。"
+    title_2: "2丶主要开发产品"
+    title_2_desc_1: "DC Power cord<br>
+<h5>特性：</h5> 
+· 导体使用 50AWG 以上单根或绞合裸铜或镀锡铜线<br>
+· 聚氯乙烯或半硬质聚氯乙烯绝缘<br>
+· 聚氯乙烯护套<br>
+· 绝缘厚度均匀丶易剥丶易裁<br>
+<h5>用途：</h5>
+· 电子，电器设备内部连线及手提电脑的变压器。<br>
+· 额定温度：80℃<br>
+· 额定电压：30V<br>
+· 检验标准：通过 UL VW-1 及 CSA FT1 垂直耐燃测试<br>
+<br>"
+    title_2_desc_2: "讯号线<br>
+<h5>特性：</h5> 
+· 导体使用单条或绞合裸铜或镀锡铜线<br>
+· 无铅 PVC丶SR-PVC丶PE，发泡 PE 或架桥 PE 绝缘<br>
+· 芯线绞合後可加铝箔麦拉带遮蔽<br>
+· 可加入绞合镀锡或裸铜地线<br>
+· 可加裸铜或镀锡铜线缠绕或编织遮蔽<br>
+· 绝缘厚度均匀丶易剥丶易裁<br>
+<h5>用途：</h5>
+· 用於 2 类系统之电子或电器设备之内部配线。<br>
+· 额定温度：80℃<br>
+· 额定电压：30V<br>
+· 检验标准：UL758，UL1581 及 CSA C22.2 No.210.2 "
+  guanyin3c-technology:
+    main_title: "技术资料"
+    title_1: "1丶电源线组-连接器"
+    title_2: "参考网址："
+    title_3: "2丶各国安规标志"
+  guanyin3c-catalogs:
+    main_title: "产品型录"
+    title_1: "1丶电源线组-连接器"
+    title_2: "2丶电源线组-插头"
+  guanyin3c-use:
+    main_title: "产品运用"
+    main_title_desc: "电源装置是所有电子产品能量驱动来源，而电源线就是电源装置输出电力的重要传输媒介。电源线和电子线可广泛应用下列用途：於电脑周边丶通信设备丶消费性家电产品丶照明系统及医疗设备... 等用途。"
+  guanyin3c-consulting:
+    main_title: "产品谘询专线"
+    title_1: "<h5>3C 事业 - 业务</h5>
+                <p>电话：+886-2-27187333 # 257<br>
+                  传真：+886-2-27191311 </p>"
+    title_2: "<h5>3C 事业 - 技术</h5>
+                <p>电话：+886-3-4907711 # 835<br>
+                  传真：+886-3-4906087</p>"
+  guanyin-intro:
+    main_title: "电线电缆事业简介"
+    main_title_desc: "於 1954 年 6 月创立低压厂，於 1993 年增设高压厂，并於 1996 年合并为电线电缆事业部，最适产品组合年产量约 16,000 公吨，为电线电缆与光缆业的领导厂商之一，产品涵盖民生基础工业（如营建丶通信等）与重大经济工程（如台电丶高铁等）配合都市发展，提供高品质之供电可靠度，并因应区域性负载自然成长，深获客户好评。"
+    title_1: "工厂面积："
+    title_1_desc: "18,350 坪"
+    title_2: "员工人数："
+    title_2_desc: "约 109 人"
+    title_3: "地理位置："
+    title_3_desc: "桃园县观音乡富源村 3 邻 49 号"
+    title_4: "优　　势："
+    title_4_desc: "为台电丶中华电信丶中国钢铁丶台湾中油等国营事业合格供应商，及台塑集团事业群50 家公司高压电缆之唯一指定供应商。"
+    title_5: "主要产品："
+    title_5_desc: "特高压电力电缆丶 XLPE 电缆丶架空全铝线丶钢心铝线丶 PVC 电缆丶耐热电缆丶耐火电缆及光纤缆线。"
+  guanyin-history:
+    main_title: "电线电缆事业历程"
+  guanyin-certification:
+    main_title: "专业认证与荣耀"
+    title_1: "技术认证与品质保证"
+    title_2: "1995 年取得 BVQI 及商检局 ISO 9002 认证"
+    title_3: "1997 年取得台湾电力公司 69kV  超高压电缆资格"
+    title_4: "1998 年取得台湾电力公司 69kV 超高压电缆接续施工资格"
+    title_5: "1999 年取得 ISO 14001 认证"
+    title_6: "2001 年取得台湾电力公司 161kV 超高压电缆丶接续施工资格"
+    title_7: "2001 年取得台湾电力公司钢芯铝线丶全铝线投标资格"
+    title_8: "2002 年取得台湾电力公司地下输电线用 161kV 交连 PE 连络线路丶输电线路投标资格，预计 2013 年通过 ISO/TS16949 汽车体系品质管制体系认证"
+    title_9: "2006 年取得国家实验室（TAF）认证"
+    title_10: "2010 年取得中国电力科学院武汉分院 110kV丶220kV 型式试验认证"
+    title_11: "2012 年取得日本适合性同等检查合格书"
+    title_12: "2012 年取得中国国家强制性产品认证证书"
+  guanyin-superiority:
+    main_title: "竞争优势"
+    title_1: "1丶垂直整合优势"
+    title_1_content: "营运项目涵盖产业之上丶中游，具垂直整合优势，确保质优原料，降低原料成本。"
+    title_2: "2丶技术领先优势"
+    title_2_content: "取得日本住友经芬兰 NOKIA 授权之氮气干式加硫生产工艺专利，系现行世界先进交联电力电缆之主流，并且累积多年之生产经验，具技术领先优势。"
+    title_3: "3丶检测能力优势"
+    title_3_content: "具备完整之检测能力，包括例行试验丶电缆抽样试验丶型式试验及回圈老化试验等，以严格之试验方法确保品质。 "
+    title_4: "4丶应用技术优势"
+    title_4_content: "拥有合规之技术施工团队，能有效执行电缆管路试通丶电缆延放作业及普通接续丶绝缘接续及端末处理等施工工程之完整配套作业。 "
+    title_5: "5丶产学合作"
+    title_5_content_1: "<h5>太阳能光伏焊带</h5>
+        <p>产品适用於太阳能光伏作业系统,为光伏产业提供独特方案使厂商提高电池效率。</p>"
+    title_5_content_2: "产品优点：<br>
+              具备铜材核心技术,提供质量兼具之产品<br>
+              笔直度取样标准较业界严苛,降低模组制程停机率<br>
+              焊带经三倍耐候试验,使模组具较高使用寿命"
+    title_5_content_3: "技术合作：<br>
+              （1）压延铜带 — 金属工业研究发展中心<br>
+              （2）光伏焊带 — 工研院绿能所<br>"
+    title_6: "6丶完整产品认证"
+    title_6_content: "台一拥有高压电缆丶中压电缆丶一般电线电缆丶架空线丶消防线丶电子线丶花线丶光缆等产品生产能力，种类齐全，并已取得台湾电力公司丶CCC丶TAF丶UL丶CSA丶VDE丶PSE丶CNS … 等多国安规认证。"
+  guanyin-research:
+    main_title: "研究发展"
+    main_title_desc: "本事业部研发部门多年来致力於生产效率的改进与新产品的开发，<br>
+        主要有下列新产品之开发： </div>
+      <h4>主要新产品开发</h4>"
+    main_title_list: "1丶FFC（Flexible Flat Cable）<br>
+              2丶电子线 UL1430／UL1431<br>
+              3丶电动车充电电缆<br>
+              4丶TCER<br>
+              5丶汽车线<br>
+              6丶汽车马达接引线</td>"
+    title_1: "产品开发介绍"
+    title_1_content_1: "<h5>1丶定义：FFC（Flexible Flat Cables）即为卡片式软排线的英文缩写。<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;功用：用於液晶模组显示信号的输入。</h5>"
+    title_2: "2丶电子线 UL1430／UL1431"
+    title_2_content_1: "UL1430<br>
+              * 额定温度：105℃<br>
+              * 额定电压：300V<br>
+              * 执行标准：UL 758丶UL 1581丶C22.2<br>
+              * 导体使用单根或绞合 30-16AWG 镀锡或裸钢丝<br>
+              * 交联聚氯乙烯绝缘<br>
+              * 通过 UL VW-1 及 CSA 垂直燃烧测试<br>
+              * 绝缘厚度均匀丶易剥丶易裁<br>
+              * 用於电气设备内部连线"
+    title_2_content_2: "UL1431<br>
+              * 额定温度：105℃<br>
+              * 额定电压：600V<br>
+              * 执行标准：UL 758丶UL 1581丶C22.2<br>
+              * 导体使用单根或绞合 30-4/0AWG 镀锡或裸钢丝<br>
+              * 交联聚氯乙烯绝缘<br>
+              * 通过 UL VW-1 及 CSA 垂直燃烧测试<br>
+              * 绝缘厚度均匀丶易剥丶易裁<br>
+              * 用於电气设备内部连线"
+    title_3: "3丶新产品开发 - 电动车充电电缆"
+    title_4: "4丶新产品开发 - TCER"
+    title_4_content_1: "额定温度：90℃"
+    title_4_content_2: "额定电压：600V"
+    title_4_content_3: "执行标准：UL 1277丶UL 1581"
+    title_4_content_4: "导体使用镀锡绞合软铜丝或裸软绞合铜丝线规 18 AWG-2 AWG"
+    title_4_content_5: "半硬质聚氯乙烯内层绝缘，尼龙外层绝缘，聚氯乙烯护套"
+    title_4_content_6: "铜丝编织屏蔽或无屏蔽"
+    title_4_content_7: "通过 UL 1666 的 FT4／IEEE 1202 燃烧要求"
+    title_4_content_8: "托盘电脑，用於户外信号传输丶太阳能用线等"
+    title_5: "5丶新产品开发 - 汽车线"
+    title_5_content_1: "汽车线开发项目："
+    title_5_content_2: "低烟无卤丶耐用丶轻量丶细径丶超薄肉丶环保电线适用於各式运送工具之内丶外部的低压绝缘花线。"
+    title_5_content_3: "引用照射料，提高耐温等级。"
+    title_6: "6丶新产品开发 - 汽车马达接引线"
+    title_6_content_1: "汽车马达引接线开发："
+    title_6_content_2: "低烟无卤丶耐用丶轻量丶细径丶超薄肉丶环保电线适用於各式运送工具之内丶外部的低压绝缘花线。"
+    title_6_content_3: "线材引用照射料，提高耐温等级。"
+    title_6_content_4: "耐热保护管材导入应用。"
+  guanyin-equipment:
+    main_title: "设备介绍"
+  guanyin-product-1:
+    main_title: "主要产品及应用"
+    title_1: "1丶电缆电线"
+  guanyin-product-2:
+    main_title: "汽车线"
+    title_1: "汽车线开发项目："
+    title_1_content_1: "低烟无卤丶耐用丶轻量丶细径丶超薄肉丶环保电线适用於各式运送工具之内丶外部的低压绝缘花线。"
+    title_1_content_2: "引用照射料，提高耐温等级。"
+  guanyin-product-3:
+    main_title: "汽车线"
+    title_1: "汽车马达引接线开发："
+    title_1_content_1: "低烟无卤丶耐用丶轻量丶细径丶超薄肉丶环保电线适用於各式运送工具之内丶外部的低压绝缘花线。"
+    title_1_content_2: "线材引用照射料，提高耐温等级。"
+    title_1_content_3: "耐热保护管材导入应用。"
+  guanyin-product-4:
+    main_title: "电子线丶花线"
+    title_1: "1丶电子线"
+    title_1_desc: "细小丶柔软易作业大量应用在电路板或线路接点间之连接线，符合 UL758丶UL1007丶UL1015丶UL1430丶UL1431 标准。"
+    title_1_content_1: "UL1430<br>
+              * 额定温度：105℃<br>
+              * 额定电压：300V<br>
+              * 执行标准：UL 758丶UL 1581丶C22.2<br>
+              * 导体使用单根或绞合 30-16AWG 镀锡或裸钢丝<br>
+              * 交联聚氯乙烯绝缘<br>
+              * 通过 UL VW-1 及 CSA 垂直燃烧测试<br>
+              * 绝缘厚度均匀丶易剥丶易裁<br>
+              * 用於电气设备内部连线"
+    title_1_content_2: "UL1431<br>
+              * 额定温度：105℃<br>
+              * 额定电压：600V<br>
+              * 执行标准：UL 758丶UL 1581丶C22.2<br>
+              * 导体使用单根或绞合 30-4/0AWG 镀锡或裸钢丝<br>
+              * 交联聚氯乙烯绝缘<br>
+              * 通过 UL VW-1 及 CSA 垂直燃烧测试<br>
+              * 绝缘厚度均匀丶易剥丶易裁<br>
+              * 用於电气设备内部连线"
+    title_2: "2丶花线"
+    title_2_content_1: "<h5>花线：</h5>
+        <p>聚乙烯绝缘高压汽车花线，低压花线，及器具用花线，具备柔软性，抗张性，易於施工符合 JIS C3406丶JIS C3405丶BS6862 等标准。</p>
+        <br>
+        <h5>电源线：</h5>
+        <p>其柔软性，良好弯曲性适用於电气器具之接电源用线符合UL62标准。</p>"
+  guanyin-product-5:
+    main_title: "PV Ribbon"
+    title_1: "1丶电缆电线"
+    title_1_content_1: "<b>太阳能光伏焊带</b>
+        <p>产品适用於太阳能光伏作业系统,为光伏产业提供独特方案使厂商提高电池效率。</p><br>"
+    title_1_content_2: " PV Ribbon应用："
+  guanyin-product-6:
+    main_title: "PV Wire"
+    main_title_desc: "<b>光伏电缆</b><br>
+       <p>适用於电压 1.8kV（线芯间非接地系统）直流电压，在光伏系统 DC 侧使用单芯软线，运转环境温度为 90℃。</p>"
+  guanyin-product-7:    
+    main_title: "架空线丶消防线"
+    title_1: "1丶架空线"
+    title_1_conent_1: "<h5>全铝电线</h5>
+            本产品符合美国 ASTM B-230 及 231 class AA丶IEC60888丶GB/T3048.2 等标准适用於电站内部线路。<br>
+            <br>"
+    title_1_conent_2: "<h5>钢心铝线</h5>
+            本产品符合 ASTM B-230丶B-231丶B-232丶B-233丶B-498丶A-90丶A-239丶IEC60888丶GB/T3048.2 等标准适用电站内部输配电线路，电压依架设情况从
+1KV ~750 KV。<br>
+<br>"
+    title_1_conent_3: "<h5>高压交连PE风雨线</h5>
+            主要用於近市区高压架空配电线，交连 PE 为被覆屋外用风雨线符合 TPC A009 标准。"
+    title_2: "2丶消防线"
+    title_2_conent_1: "<h5>耐热电线电缆</h5>
+            本产品采用交连聚乙烯绝缘，聚氯乙烯混合物，耐热温度 300℃ 适用於消防安全设备紧急供电系统之信号，标示灯及控制回路所使用之耐热电线电缆符合。<br>
+            <br>"
+    title_2_conent_2: "<h5>无卤低烟阻燃电缆</h5>
+            本产品采用交连聚乙烯绝缘，聚氯乙烯外被，之低烟无卤材料适用於消防安全设备紧急供电系统电源，控制回路，监视及通信线路符合 UL丶SAE丶SJE 标准。"
+  guanyin-product-8:
+    main_title: "电线电缆丶高中压电缆"
+    title_1: "1丶电线电缆"
+    title_1_content_1: "<h5>控制电缆</h5>
+              以聚乙烯绝缘，聚氯乙烯被覆（CEV）及聚氯乙烯绝缘，聚氯乙烯被覆 CVV，主要用於600V 以下发变电所控制电路，及一般器具控制回路用线符合 JIS C3401丶TPC A040 等标准。<br>
+              <br>"
+    title_1_content_2: "<h5>聚乙烯绝缘电缆</h5>
+              额定电压 450／750V 及以下聚氯乙绝缘电线及软线，可以客制按 IEC 等各国标准制造符合 JIS C3605 标准。<br>
+              <br>"
+    title_1_content_3: "<h5>600V 交连聚乙烯绝缘铜带遮蔽控制电缆</h5>
+              适用於防干扰机器控制回路用电缆符合 JCS 258A 标准。<br>
+              <br>"
+    title_1_content_4: "<h5>辐照交连电缆</h5>
+              可依客户需求按国际电工委员会推荐标准 IEC，英国标准及美国标准生产。<br>
+              <br>"
+    title_1_content_5: "<h5>PVC电线</h5>
+              以聚氯乙烯为主要成分混合物绝缘,主要用於 600V 以下之一般电气工作物之绝缘电线，及一般建筑用线符合 TPC A006，JIS C3342 等标准。 <br>
+              <br>"
+    title_1_content_6: "<h5>电梯电缆</h5>
+              适应电梯升降移动性，不时来回弯曲，抗张，防导体延伸断裂柔软，耐机械性，扭力平衡，承受应力平衡符合 JIS C3408 等各国标准。<br>
+              <br>"
+    title_1_content_7: "<h5>出口线</h5>
+              聚氯乙烯成分混合物绝缘，出口线柔软性佳，一般应用於电气机具之引出连接线及配电盘内部之接线及其他需有弯曲性配电线适用於马达出口线。<br>
+              <br>"
+    title_1_content_8: "<h5>轻便电缆</h5>
+              轻便电缆俗称卡浦胎（Cabtye）电缆，主要用於工厂，矿场，农场及其他移动性如电动工具，吊车等用途符合 JIS C3312 等标准。"
+    title_2: "2丶消防线"
+    title_2_content_1: "<h5>127／230KV ~ 330/345KV 交连聚乙烯绝缘电力电缆</h5>
+              本产品适用於市电工频 127/230kV ~ 330/345kV 交连聚乙烯绝缘电力电缆符合IEC62067 及 GB／Z18890.2 标准适用於高电压输电线路用。 <br>
+              <br>"
+    title_2_content_2: "<h5>600V~87／161KV交连聚乙烯绝缘电力电缆</h5>
+              本产品适用於市电工频 600V ~ 87／161kV 符合 IEC60502丶IEC60840丶GB／T12706GB／T11013 标准输配电线路的电能配送。<br>
+              <br>"
+    title_2_content_3: "<h5>防蚁电力电缆</h5>
+              额定电压 127／230KV 及以下交连聚乙烯绝缘铜芯,铝芯防蚁害电缆符合 IEC60502丶IEC60840 及 GB2951.38。<br>
+              <br>"
+    title_2_content_4: "<h5>抗水树电缆</h5>
+              本产品适用市电工频 3.6／6kV~ 26／35kV，湿气较重，或地下水较丰富下地敷设电缆及有控制水树生长需求，增强可靠运行输配电线路符合 TPC 业研 155 等标准。<br>
+              <br>
+              电力系统流程图：<br>"
+  guanyin-product-9:
+    main_title: "光缆"
+    title_1_content_1: "<h5>全波段引接充胶单模光缆</h5>
+              二~十二心经分别染色石英系玻璃单模光纤心线，置於束管或套管内，加抗张体，耐燃被覆体组合，适用 1260nm~1625nm 波长范围构成用户回路分歧引进用户端。<br>
+              <br>"
+    title_1_content_2: "<h5>非零色散单模光缆</h5>
+              十二心经染色不同颜色之石英系玻璃非零色散单模光纤心线集合成簇适 1460mm~1625mm，传输波长构成之长途或市内中继线路。<br>
+              <br>"
+    title_1_content_3: "<h5>屋内光缆</h5>
+              石英系玻璃光纤心线,耐燃外被适用建筑物内干线或配缆。<br>
+              <br>"
+    title_1_content_4: "<h5>全波段充胶单模光缆</h5>
+              六心或十二心分别染颜色之石英系玻璃单模光纤心线集合成六心簇或十二心簇，适用由1260mm~1625mm 全部传输波长范围之用户回路。<br>
+              <br>"
+    title_1_content_5: "<h5>全波段充胶单模六心簇光缆</h5>
+              六心经分别染色，石英系玻璃单模光纤心线集合成簇,适用适量簇数及抗张体组合。<br>
+              <br>"
+    title_1_content_6: "<h5>全波段充胶单膜十二心簇光缆</h5>
+              十二心经分别染色，石英系玻璃单模光纤心集合成簇适用适量簇数及抗张体组合。<br>
+              <br>"
+  guanyin-catalogs:
+    main_title: "产品型录"
+  guanyin-consulting:
+    main_title: "产品谘询专线"
+    content_1: "<h5>电线电缆事业部 - 业务</h5>
+                <p>电话：+886-3-4907711 # 804/814<br>
+                  传真：+886-3-4906622</p>"
+    content_2: "<h5>电线电缆事业部 - 品保与生技</h5>
+                <p>电话：+886-3-4907711 # 693/631<br>
+                  传真：+886-3-4902275</p>"
   x_about-responsibility: 
     main_title:
     title_one:
@@ -448,9 +1265,17 @@ zh_CN:
         公司经营的成果卓越，据 2009 年商业周刊两岸三地上市公司 1000 大企业的调查，台一国际集团营收规模居 389 名且列为电线电缆类之首，拥有良好的市占率及优良的客户群，营业规模领先其他台湾丶中国及香港上市的同业。本集团已成为中国国内裸铜线及电磁线行业的领导生产厂商，是中国第三大及华南地区最大的裸铜线及漆包线生产厂商。"
   
   env:
+    index:
+      more: "看更多"
     h2images:
       gy: "/css/images/gy-01.png"
+      gy-28: "/css/images/gy-28.jpg"
       cp: "/css/images/cp-01.png"
+      hc: "/css/images/hc-01.png"
+      jc: "/css/images/jc-01.png"
+      rs: "/css/images/rs-01.png"
+      3c: "/css/images/3c-01.png"
+      ab-03hh: "/css/images/ab-03hh.png"
     language:
       zh_CN: "简体中文"
       zh_TW: "繁体中文"

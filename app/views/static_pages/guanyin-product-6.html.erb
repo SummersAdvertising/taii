@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/css/front/plant-2.css">
+<style>
+article h2{background:url(<%= t("env.h2images.gy") %>) center 0 no-repeat}
+article aside ul li.active > a { background-image: url(<%= t("env.h2images.ab-03hh") %>) }
+</style>
+<article>
+    <h2>觀音廠電線電纜事業介紹</h2>
+		<%= render "plant_sidemenu" %>
+		<%= render "guanyin_product_submenu" %>    
+    <section>
+      <h3><%= t("guanyin-product-6.main_title") %></h3>
+      <div class="content">
+      <%= simple_format( t("guanyin-product-6.main_title_desc") )%>
+       <br>
+      <img src="/css/images/gy-25.jpg"> </div>
+    </section>
+  </article>

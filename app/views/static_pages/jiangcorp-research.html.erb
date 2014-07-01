@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/front/plant-2.css">
+<style>
+article h2{background:url(<%= t("env.h2images.jc") %>) center 0 no-repeat}
+article section .content { padding: 0 0 80px 55px }
+</style>
+<article>
+    <h2>觀音廠電線電纜事業介紹</h2>
+		<%= render "plant_sidemenu" %>
+		<%= render "jiangcorp_sidemenu" %>
+    <section>
+      <h3><%= t("jiangcorp-research.main_title")%></h3>
+      <div class="content"><%= t("jiangcorp-research.main_title_desc")%></div>
+      <h4><%= t("jiangcorp-research.title_1")%></h4>
+      <div class="content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="55%" valign="top"><%= simple_format( t("jiangcorp-research.title_1_content") ) %></td>
+            <td width="45%" align="right" valign="top"><img src="/css/images/jc-05.jpg"></td>
+          </tr>
+        </table>
+      </div>
+      <h4><%= t("jiangcorp-research.title_2")%></h4>
+      <div class="content"> <%= simple_format( t("jiangcorp-research.title_2_content") ) %></div>
+    </section>
+  </article>
+

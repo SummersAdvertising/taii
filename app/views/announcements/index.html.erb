@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/css/front/product.css">
+<article>
+    <h2>最新消息</h2>
+    <aside>
+			
+    <div id="list-box" >
+    		<%= render 'sidemenu' %>
+    </div>
+    </aside>
+    
+    <section data-no-turbolink> 
+    	  <p id="newscontainer"></p>
+    </section>
+    
+</article>
+
+<script type="text/javascript">
+	
+
+	$(function() {
+			
+			$.ajax({
+      type: "GET",
+      url: "/announcements/"+<%= @default_news.id %>+"/fetch",
+      data: { },
+      success: function(data){
+
+        return false   
+      },
+      error: function(data){
+
+        return false  
+      }
+    });
+					
+		  	
+  });  
+
+
+	</script>
+	

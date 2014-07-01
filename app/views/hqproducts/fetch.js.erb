@@ -1,2 +1,4 @@
 $("#items_grid").empty();
 $("<%= escape_javascript(render 'showproduct', :selectitem => @hqproduct ) %>").appendTo("#items_grid");
+$("#crumb").empty();
+$("<%= escape_javascript(render 'hqproducts/breadcrumb', :breadcrumb => @breadcrumb ) %>").appendTo("#crumb");

@@ -13,9 +13,11 @@ class Hqproduct < ActiveRecord::Base
 	
 	def self.search(search)
 	  if search
-		  find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+	    Hqproduct.with_translations(I18n.locale).where(['name LIKE ? and showatfront = 200 ', "%#{search}%"])
+		  #find(:all, :conditions => ['name LIKE ? and showatfront = 200 ', "%#{search}%"])
 	  else
-	  	  find(:all)
+		  Hqproduct.with_translations(I18n.locale).where(['showatfront = 200 '])
+	  	#find(:all, :conditions => ['showatfront = 200 ', "%#{search}%"])
 	  end
 	end
 

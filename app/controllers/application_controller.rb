@@ -13,8 +13,7 @@ class ApplicationController < ActionController::Base
 
     I18n.locale = session[:locale] || I18n.default_locale
   end
-
-  
+      
   def after_sign_in_path_for(resource)
 	  admin_hqlevel_path(Hqlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW" )
 	end

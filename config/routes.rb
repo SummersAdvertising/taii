@@ -19,9 +19,14 @@ Taii::Application.routes.draw do
 	  end
 
 	end
-	
-  #resources :majorpolicies
-  #resources :announcements
+
+  resources :announcements do
+  	member do 
+  	 get 'fetch', :action => 'fetch'
+  	end
+  end
+  
+  #x_resources :majorpolicies
   #x_resources :dividend_histories, only: [:index]
   #x_resources :organizations, only: [:index]
   #x_resources :financialreports, only: [:index]
@@ -199,7 +204,8 @@ Taii::Application.routes.draw do
   get 'contactus' => "contact#contactus"
   
   get 'set_locale/:locale' => "static_pages#set_locale", :as => :set_locale, :locale => /en|zh_TW|zh_CN|ja/
-  
+	get 'search' => "search#index", :as => :search
+	#resources :search, only: [:index]
 	root :to => 'static_pages#index'
   #root :to => 'static_pages#construct'
   

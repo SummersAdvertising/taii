@@ -10,16 +10,25 @@ class HqlevelsController < ApplicationController
   # GET /hqlevels/1
   # GET /hqlevels/1.json
   def show
-  	I18n.locale = params[:locale]
-
-  	@breadcrumb = @hqlevel.find_my_direct_parent
+  	
+		I18n.locale = params[:locale]
 
   	@current_root = Hqlevel.return_root_node_on_demand(I18n.locale)
   	@level_relations = Hqlevel.get_level_hierarchy()
   	@product_relations = Hqlevel.get_all_level_product_pairs()
 
+  	if( params[:product] )
+  	  @default_product = Hqproduct.find(params[:product])  		
+  	else	
+  		@default_product = Hqproduct.find(@product_relations.first[0])
+  	end  	
+  	
+  	@contact_org = Organization.find(@default_product.organization_id) 
+		@sales = Representative.where(['organization_id = ?', @contact_org.id]) 
+		@attachments = @default_product.attachments
+		
   end
-
+  
   # GET /hqlevels/new
   def new
     @hqlevel = Hqlevel.new

@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/front/plant-2.css">
+<style>
+article h2{background:url(<%= t("env.h2images.jc") %>) center 0 no-repeat}
+.card { background: url(<%= t("env.h2images.gy-28") %>) 0 0 no-repeat; width: 508px; height: 249px;
+text-align:left;padding:65px 0 0 145px;margin:50px 0 0 0}
+.card h5{margin:0 0 25px 0}
+</style>
+<article>
+    <h2>觀音廠電線電纜事業介紹</h2>
+		<%= render "plant_sidemenu" %>
+		<%= render "jiangcorp_sidemenu" %>
+    <section>
+      <h3><%= t("jiangcorp-consulting.main_title")%></h3>
+      <div class="content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center"><div class="card">
+		            <%= simple_format( t("jiangcorp-consulting.content_1") )%>
+              </div></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </article>
+

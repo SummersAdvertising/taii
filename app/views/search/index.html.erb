@@ -1,0 +1,25 @@
+Find me in Search controller<br>
+
+<% if @hq_result.count > 0 %>
+=HQ Results
+<ul>
+	<% @hq_result.each do | result | %>
+		<li>
+		  <%= link_to "#{result.id}-#{result.name}", hqlevel_path(@hq_root_node, locale: I18n.locale, product: result.id )%>
+		</li>
+	<% end %>
+</ul>
+<% end %>
+
+<br>
+
+<% if @br_result.count > 0 %>
+=BR Results
+<ul>
+	<% @br_result.each do | result | %>
+		<li>
+		 <%= link_to "#{result.id}-#{result.name}", brlevel_path(@br_root_node, locale: I18n.locale, product: result.id )%>
+		</li>
+	<% end %>
+</ul>
+<% end %>
