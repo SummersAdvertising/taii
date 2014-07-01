@@ -120,7 +120,7 @@ class Brlevel < ActiveRecord::Base
   
   #FOR FRONT END: [brlevels.id, brlevels.level, brlevels.parent, brlevels.name]
   def self.get_level_hierarchy()
-	  sql = "SELECT brlevels.id, brlevels.level, brlevels.parent, brlevel_translations.name FROM brlevels LEFT JOIN brlevel_translations ON brlevels.id = brlevel_translations.brlevel_id WHERE brlevels.locale = 'zh_TW' AND brlevels.parent != 0 ORDER BY brlevels.ranking"
+	  sql = "SELECT brlevels.id, brlevels.level, brlevels.parent, brlevel_translations.name FROM brlevels LEFT JOIN brlevel_translations ON brlevels.id = brlevel_translations.brlevel_id WHERE brlevels.locale = '#{I18n.locale}' AND brlevels.parent != 0 ORDER BY brlevels.ranking"
 	  #local
 	  #sql = "SELECT brlevels.id, brlevels.level, brlevels.parent, brlevel_translations.name FROM brlevels LEFT JOIN brlevel_translations WHERE brlevels.id = brlevel_translations.brlevel_id AND brlevels.locale = '#{I18n.locale}' AND brlevels.parent != 0 ORDER BY brlevels.ranking"
 	  

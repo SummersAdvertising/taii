@@ -53,12 +53,12 @@
     </div>
     <nav>
       <div class="main">
-       		<%= link_to "關於台一", page_pages_path("about-concept")%>
-       		<%= link_to "工廠介紹", page_pages_path("plant")%>
-		      <%= link_to "產品介紹", hqlevel_path(Hqlevel.return_root_node_on_demand(I18n.locale), :locale => I18n.locale ) %>
-		      <%= link_to "投資人服務", investor_investors_path("investors-info") %>
-       		<%= link_to "人力資源", page_pages_path("human-guangzhou-1")%>
-		      <%= link_to "聯絡我們", contactus_path %>
+       		<%= link_to t("layout.about"), page_pages_path("about-concept")%>
+       		<%= link_to t("layout.plant"), page_pages_path("plant")%>
+		      <%= link_to t("layout.product"), hqlevel_path(Hqlevel.return_root_node_on_demand(I18n.locale), :locale => I18n.locale ) %>
+		      <%= link_to t("layout.investors"), investor_investors_path("investors-info") %>
+       		<%= link_to t("layout.hr"), page_pages_path("human-guangzhou-1")%>
+		      <%= link_to t("layout.contact"), contactus_path %>
       </div>
     </nav>
     <% if request.original_url == root_url %>

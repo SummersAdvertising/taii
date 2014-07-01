@@ -153,7 +153,7 @@ class Hqlevel < ActiveRecord::Base
   
   #FOR FRONT END: [hqlevels.id, hqlevels.level, hqlevels.parent, hqlevels.name]
   def self.get_level_hierarchy()
-	  sql = "SELECT hqlevels.id, hqlevels.level, hqlevels.parent, hqlevel_translations.name FROM hqlevels LEFT JOIN hqlevel_translations ON hqlevels.id = hqlevel_translations.hqlevel_id WHERE hqlevels.locale = 'zh_TW' AND hqlevels.parent != 0 ORDER BY hqlevels.ranking"
+	  sql = "SELECT hqlevels.id, hqlevels.level, hqlevels.parent, hqlevel_translations.name FROM hqlevels LEFT JOIN hqlevel_translations ON hqlevels.id = hqlevel_translations.hqlevel_id WHERE hqlevels.locale = '#{I18n.locale}' AND hqlevels.parent != 0 ORDER BY hqlevels.ranking"
 	  #local
 	  #sql = "SELECT hqlevels.id, hqlevels.level, hqlevels.parent, hqlevel_translations.name FROM hqlevels LEFT JOIN hqlevel_translations WHERE hqlevels.id = hqlevel_translations.hqlevel_id AND hqlevels.locale = '#{I18n.locale}' AND hqlevels.parent != 0 ORDER BY hqlevels.ranking"
 	  
