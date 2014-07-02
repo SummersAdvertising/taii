@@ -25,7 +25,7 @@ class BrlevelsController < ApplicationController
 	  	end
   	end  	
   	
-  	if !@default_product.nil?
+  	if !@default_product.nil? && @default_product.organization_id != 0
 	  	@contact_org = Organization.find(@default_product.organization_id) 
 			@sales = Representative.where(['organization_id = ?', @contact_org.id]) 
 			@attachments = @default_product.attachments
