@@ -6,9 +6,11 @@
 
 <link rel="stylesheet" type="text/css" href="/css/imgareaselect-default.css" />
 
-<h3><%= selectitem.title %></h3>
+<h3><%= selectitem.title %><br><span class="date"><%= selectitem.updated_at.strftime('%B %d, %Y') %></span></h3>
 
-<div class="content"  id="articleContent"></div>    
+<p>
+	<div class="content"  id="articleContent"></div>    
+</p>
 
 <input id="article_content" style="display:none;" type="text" value="<%= selectitem.article.content %>">
       

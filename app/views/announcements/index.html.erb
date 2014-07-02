@@ -1,22 +1,23 @@
-<link rel="stylesheet" href="/css/front/product.css">
+<link rel="stylesheet" href="/css/front/news.css">
 <article>
     <h2>最新消息</h2>
-    <aside>
-			
-    <div id="list-box" >
-    		<%= render 'sidemenu' %>
-    </div>
-    </aside>
-    
     <section data-no-turbolink> 
-    	  <p id="newscontainer"></p>
+
+		<div class="left" >
+				<%= render 'sidemenu' %>
+		</div>
+		
+    <div class="right" id="newscontainer" >
+	    
+    </div>
+
     </section>
-    
+
 </article>
 
+<% if !@default_news.nil? %>
 <script type="text/javascript">
 	
-
 	$(function() {
 			
 			$.ajax({
@@ -38,4 +39,6 @@
 
 
 	</script>
+	
+<% end %>
 	

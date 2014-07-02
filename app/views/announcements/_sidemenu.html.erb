@@ -1,6 +1,16 @@
-<div>
-<% @announcements.each do | news | %>
-	<%= link_to news.title, fetch_announcement_path(news), remote: true, 'data-no-turbolink' => true %><br>
-<% end %>
-<%= paginate @announcements, :window => 5 ,:theme =>"default" %>
-<div>
+
+
+			<ul>
+	   
+				<% @announcements.each do | news | %>
+					<li>
+					<span class="date"><%= news.updated_at.strftime('%B %d, %Y') %></span><br>
+					<%= link_to news.title, fetch_announcement_path(news), remote: true, 'data-no-turbolink' => true %>
+				  </li>
+				<% end %>
+
+			</ul>
+
+		<div class= "page">
+			<%= paginate @announcements ,:window => 1 %>
+		</div>

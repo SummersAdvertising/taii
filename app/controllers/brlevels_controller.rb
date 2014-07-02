@@ -20,13 +20,16 @@ class BrlevelsController < ApplicationController
   	if( params[:product] )
   	  @default_product = Brproduct.find(params[:product])  		
   	else	
-  		@default_product = Brproduct.find(@product_relations.first[2])
+  		if @product_relations.count > 0
+	  		@default_product = Brproduct.find(@product_relations.first[2]) #要修改
+	  	end
   	end  	
   	
-  	@contact_org = Organization.find(@default_product.organization_id) 
-		@sales = Representative.where(['organization_id = ?', @contact_org.id]) 
-		@attachments = @default_product.attachments
-	  
+  	if !@default_product.nil?
+	  	@contact_org = Organization.find(@default_product.organization_id) 
+			@sales = Representative.where(['organization_id = ?', @contact_org.id]) 
+			@attachments = @default_product.attachments
+		end
   	
   end
 

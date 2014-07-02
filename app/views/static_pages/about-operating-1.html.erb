@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/front/about.css">
 <style>
-article aside ul li.active > a { background-image: url(/css/images/ab-03hh.png) }
+article aside ul li.active > a { background-image: url(<%= t("env.img_url.ab-03hh") %>) }
 </style>
 <article>
     <h2>關於台一</h2>
@@ -30,6 +30,6 @@ article aside ul li.active > a { background-image: url(/css/images/ab-03hh.png) 
         <p><%=t("about-operating-1.main_content")%></p>
         <br>
         <br>
-        <img src="/css/images/ab-21.jpg"> </div>
+        <img src="<%= t("env.img_url.ab-21") %>"> </div>
     </section>
   </article>

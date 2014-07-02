@@ -9,7 +9,7 @@ class AnnouncementsController < ApplicationController
   	if( params[:find] )
   	  @default_news = Announcement.find(params[:find])  		
   	else	
-  		@default_news = Announcement.all.limit(1)
+  		@default_news = Announcement.first
   	end  	
 
   end
