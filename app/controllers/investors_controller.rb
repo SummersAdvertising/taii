@@ -9,7 +9,7 @@ class InvestorsController < ApplicationController
 		end
 		
 		respond_to do | format |
-			format.html { render :template => 'investors/' + params[ :investor ]  } #rescue redirect_to '/errors' }
+			format.html { render :template => 'investors/' + params[ :investor ]  rescue redirect_to '/errors' }
 		end
 
 	end

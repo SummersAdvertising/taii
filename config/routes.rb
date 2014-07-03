@@ -209,6 +209,6 @@ Taii::Application.routes.draw do
 	root :to => 'static_pages#index'
   #root :to => 'static_pages#construct'
   
-	#get '(*url)'	 => 'errors#index'
+	get '(*url)'	 => 'errors#index'
 	#  end of front end
 end
