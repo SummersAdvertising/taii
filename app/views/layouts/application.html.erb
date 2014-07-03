@@ -26,8 +26,8 @@
 
 </head>
 <body >
-<div id="wrapper">
-  <header>
+<div id="wrapper" >
+  <header _height="none">
     <div id="top">
       <div class="main">
         <h1><a href="<%= root_path %>">台一國際</a></h1>
@@ -52,7 +52,7 @@
       </div>
     </div>
     <nav>
-      <div class="main">
+      <div class="main" _height="auto">
        		<%= link_to t("layout.about"), page_pages_path("about-concept")%>
        		<%= link_to t("layout.plant"), page_pages_path("plant")%>
 		      <%= link_to t("layout.product"), hqlevel_path(Hqlevel.return_root_node_on_demand(I18n.locale), :locale => I18n.locale ) %>

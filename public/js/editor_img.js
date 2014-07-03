@@ -31,7 +31,9 @@ editor.img = {
 		
 		var input = $("<input>");
 		input.attr("id", editor.img.fileinputID).attr("name", editor.img.fileinputName).attr("type", "file").attr('class', 'file');
-
+		input.click(function(event){
+			$(this).addClass("afterselected");
+		});
 	
 		var span = $('<span id="imageAttributes">');
 		/*
@@ -94,9 +96,10 @@ editor.img = {
 		
 		$('#peditorPhotoPreview').append(image);
 		
-		image.imgAreaSelect({
+		var a = image.imgAreaSelect({
 	        handles: true,
 	        aspectRatio: '0',
+	        instance: true,
 	        onSelectEnd: function(img, selection) {
 	        	resize_data = selection;
 	        }
@@ -112,6 +115,9 @@ editor.img = {
 	        	data: resize_data,
 	        	success: function(  ) {	        			
 		        	$('#peditorPhotoPreview').children().remove();
+		        	$('[class^=imgareaselect]').remove();
+		        	a.setSelection(1, 1, 1, 1, true);
+		        	a.update();
 	        	}
         	});
 		

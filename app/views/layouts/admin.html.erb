@@ -18,7 +18,7 @@
 <script src="/js/jquery-1.10.2.min.js"></script>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <script src="/js/auto-full-height.min.js"></script>
-<script src="/js/jquery.ui.touch-punch.min.js"></script>
+
 <%= csrf_meta_tags %>
 
 <script>
@@ -84,7 +84,7 @@
     <nav _height="auto" class="left">
         <!-- _height="auto" -->
       <ul>
-        <li class="menu-box"><a href="#"><img src="/images/box.png">產品介紹</a>
+        <li class="menu-box"><a href="javascript: void(0)"><img src="/images/box.png">產品介紹</a>
           <div class="menu"> 
           	<%=link_to "集團角度", admin_hqlevel_path(Hqlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW" ), 'data-no-turbolink' => true %>
           	<%=link_to "工廠角度", admin_brlevel_path(Brlevel.return_root_node_on_demand("zh_TW"), :locale => "zh_TW" ) , 'data-no-turbolink' => true %>
