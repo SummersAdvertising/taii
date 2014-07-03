@@ -9,18 +9,13 @@ article section .content { padding: 0 0 80px 55px }
       <h3><%= t("human-guangzhou-2.main_title") %></h3>
       <h4><%= t("human-guangzhou-2.title_one") %></h4>
       <div class="content">
-      <img src="<%= t("human-guangzhou-2.hr_02_img_url") %>"> </div>
+      		<%= t("human-guangzhou-2.title_one_content_1") %><img src="<%= t("human-guangzhou-2.hr_03_img_url") %>" style="position:relative;top:10px;margin:0 5px">
+      		<%= t("human-guangzhou-2.title_one_content_search")%><a href="http://www.51job.com" target="_blank">http://www.51job.com</a>
+      		 <%= simple_format( t("human-guangzhou-2.title_one_content_2") )%>
+      </div>
       <h4><%= t("human-guangzhou-2.title_two") %></h4>
       <div class="content">
-      <%= t("human-guangzhou-2.title_two_content") %><img src="<%= t("human-guangzhou-2.hr_03_img_url") %>" style="position:relative;top:10px;margin:0 5px"> <%= t("human-guangzhou-2.title_two_content_search") %><a href="http://www.51job.com" target="_blank">http://www.51job.com</a> </div>
-      <h4><%= t("human-guangzhou-2.title_three") %></h4>
-      <div class="content">
-      <%= simple_format( t("human-guangzhou-2.title_three_content") ) %>
+      	<%= simple_format( t("human-guangzhou-2.title_two_content") )%>
       </div>
-      <h4><%= t("human-guangzhou-2.title_four") %></h4>
-      <div class="content">
-      <%= simple_format( t("human-guangzhou-2.title_four_content") ) %>
-			<img src="<%= t("human-guangzhou-2.hr_04_img_url") %>">
-			</div>
     </section>
   </article>

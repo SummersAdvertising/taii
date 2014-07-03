@@ -399,29 +399,14 @@ zh_CN:
     hr_02_img_url: "/css/images/cn/hr-02.jpg"
     hr_03_img_url: "/css/images/cn/hr-03.jpg"
     hr_04_img_url: "/css/images/cn/hr-04.jpg"
-    title_one: "1丶人力规划和人才招募"
-    title_one_content: 
-    title_two: "2丶目前职缺"
-    title_two_content: "我司招聘职位详细空缺请登录 "
-    title_two_content_search: "前程无忧网（51job) 查询："
-    title_three: "3丶报到注意事项"
-    title_three_content: "试用人员报到时，必须向管理处人资课提交以下资料： <br>
-　A丶身份证原件丶影本<br>
-　B丶毕业证丶职称证书丶生育状况（计划生育服务证）原件影本<br>
-　C丶人事资料卡（如实填写）<br>
-　D丶体检合格表（公司指定医院）<br>
-　E丶小一寸彩色相片 6 张<br>
-　F丶与原单位解除劳动关系的证明档原件<br>
-　G丶居住证<br>
-　H丶其它必要文件<br>
-同时将个人社会保险缴纳情况等告知管理处人资课<br>
-(上述证件的影本由管理处人资课留存保管，如以上证件有变动资讯情况的请及时到管理处人资课更新留存)"
-    title_four: "4丶联络方式"
-    title_four_content:  "连络人：刘小姐、蔡小姐。<br>
-联系电话：020-82265528-2723丶2725<br>
-面试地点：广州市萝岗区东区东鹏大道77号台一铜业（广州）有限公司<br>
-<br>
-"
+    title_one: "1丶目前职缺"
+    title_one_content_1: "我司招聘职位详细空缺请登录 "
+    title_one_content_search: "查询："
+    title_one_content_2: "<br> 有意者请将简历按要求投递，合适者我们将会尽快安排面试，谢谢！"    
+    title_two: "2丶联络方式"
+    title_two_content: "连络人：刘小姐丶蔡小姐。<br>
+ 联系电话：020-82265528-2723丶2725<br>
+面试地点：广州市萝岗区东区东鹏大道77号台一铜业（广州）有限公司<br><br>"
   human-guangzhou-3:
     main_title: "台一江铜丶铜业 - 薪资福利"
     subtitle: "坚持以业绩为导向，多劳多得的分配原则，不断完善薪酬福利体系，提高分配的客观性。以绩效考核为基础，建立有效的分配机制，充分体现分配的激励性。公司实行以“基本薪资 +职务津贴+其他津贴”为基础的等级工资制，以绩效考核为奖金发放依据的薪酬福利体系。在公司发展的基础上，让员工不断享受企业发展的成果，提供给员工具有市场竞争力的薪酬水准。"
@@ -875,6 +860,8 @@ zh_CN:
     title_7_content: "取得 EIW 涂料 UL 认证" 
     title_8: "2010"
     title_8_content: "PEW系列适用全线种全线径达成" 
+    title_9: "2014" 
+    title_9_content: "UEW系列涂料量产，产能增加：40吨/月"    
   resin-superiority:
     main_title: "产品优势"
     main_title_desc: "认证／专利"
@@ -941,8 +928,17 @@ zh_CN:
   guanyin3c-certification:
     main_title: "专业认证与荣耀"
     title_1: "品质保证"
-    title_2: "2013.01-取得美国UL认证"
-    title_3: "2013.05-取得经济部标准检验局认证"
+    title_2: "2012.12 取得美国UL电源线组认证"
+    title_3: "2013.05 取得台湾BSMI电源线组认证"
+    title_4: "2013.06 取得中国CCC电源线组认证" 
+    title_5: "2013.07 取得日本PSE电源线组认证"
+    title_6: "2013.09取得德国VDE电源线组认证"
+    title_7: "2013.09 取得丹麦DEMJO电源线组认证"
+    title_8: "2013.10取得巴西NBR电源线组认证"
+    title_9: "2013.11取得瑞士S+电源线组认证"
+    title_10: "2014.01取得澳洲NSW电源线组认证"
+    title_11: "2014.03取得以色列SI电源线组认证"
+    title_12: "2014.04取得韩国KC电源线组认证"
   guanyin3c-superiority:
     main_title: "竞争优势"
     title_1: "1丶生产垂直整合供应链"

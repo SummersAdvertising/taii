@@ -397,29 +397,14 @@ zh_TW:
     hr_02_img_url: "/css/images/hr-02.jpg"
     hr_03_img_url: "/css/images/hr-03.jpg"
     hr_04_img_url: "/css/images/hr-04.jpg"
-    title_one: "1、人力規劃和人才招募"
-    title_one_content: 
-    title_two: "2、目前職缺"
-    title_two_content: "我司招聘職位詳細空缺請登錄 "
-    title_two_content_search: "前程無憂網（51job) 查詢："
-    title_three: "3、報到注意事項"
-    title_three_content: "試用人員報到時，必須向管理處人資課提交以下資料： <br>
-　A、身份證原件、影本<br>
-　B、畢業證、職稱證書、生育狀況（計劃生育服務證）原件影本<br>
-　C、人事資料卡（如實填寫）<br>
-　D、體檢合格表（公司指定醫院）<br>
-　E、小一寸彩色相片 6 張<br>
-　F、與原單位解除勞動關係的證明檔原件<br>
-　G、居住證<br>
-　H、其它必要文件<br>
-同時將個人社會保險繳納情況等告知管理處人資課<br>
-(上述證件的影本由管理處人資課留存保管，如以上證件有變動資訊情況的請及時到管理處人資課更新留存)"
-    title_four: "4、聯絡方式"
-    title_four_content:  "連絡人：劉小姐、葉小姐。<br>
-聯系電話：020-82265528-2723、2724<br>
-面試地點：廣州市蘿崗區東區東鵬大道77號台一銅業（廣州）有限公司<br>
-<br>
-"
+    title_one: "1、目前職缺"
+    title_one_content_1: "我司招聘職位詳細空缺請登錄 "
+    title_one_content_search: "查詢："
+    title_one_content_2: "<br> 有意者請將簡歷按要求投遞，合適者我們將會儘快安排面試，謝謝！"    
+    title_two: "2、聯絡方式"
+    title_two_content: "連絡人：劉小姐、蔡小姐。<br>
+ 聯繫電話：020-82265528-2723、2725<br>
+面試地點：廣州市蘿崗區東區東鵬大道77號台一銅業（廣州）有限公司<br><br>"
   human-guangzhou-3:
     main_title: "台一江銅、銅業 - 薪資福利"
     subtitle: "堅持以業績為導向，多勞多得的分配原則，不斷完善薪酬福利體系，提高分配的客觀性。以績效考核為基礎，建立有效的分配機制，充分體現分配的激勵性。公司實行以“基本薪資 +職務津貼+其他津貼”為基礎的等級工資制，以績效考核為獎金發放依據的薪酬福利體系。在公司發展的基礎上，讓員工不斷享受企業發展的成果，提供給員工具有市場競爭力的薪酬水準。"
@@ -873,6 +858,8 @@ zh_TW:
     title_7_content: "取得 EIW 塗料 UL 認證" 
     title_8: "2010"
     title_8_content: "PEW系列適用全線種全線徑達成" 
+    title_9: "2014" 
+    title_9_content: "UEW系列塗料量產，產能增加：40噸/月"
   resin-superiority:
     main_title: "產品優勢"
     main_title_desc: "認證／專利"
@@ -939,8 +926,17 @@ zh_TW:
   guanyin3c-certification:
     main_title: "專業認證與榮耀"
     title_1: "品質保證"
-    title_2: "2013.01-取得美國UL認證"
-    title_3: "2013.05-取得經濟部標準檢驗局認證"
+    title_2: "2012.12 取得美國UL電源線組認證"
+    title_3: "2013.05 取得臺灣BSMI電源線組認證"
+    title_4: "2013.06 取得中國CCC電源線組認證" 
+    title_5: "2013.07 取得日本PSE電源線組認證"
+    title_6: "2013.09取得德國VDE電源線組認證"
+    title_7: "2013.09 取得丹麥DEMJO電源線組認證"
+    title_8: "2013.10取得巴西NBR電源線組認證"
+    title_9: "2013.11取得瑞士S+電源線組認證"
+    title_10: "2014.01取得澳洲NSW電源線組認證"
+    title_11: "2014.03取得以色列SI電源線組認證"
+    title_12: "2014.04取得韓國KC電源線組認證"
   guanyin3c-superiority:
     main_title: "競爭優勢"
     title_1: "1、生產垂直整合供應鏈"
