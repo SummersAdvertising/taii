@@ -1,6 +1,7 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tbody id="listThisOrganization">
 	<% @organizations.each do |organization| %>
-	        <tr>
+					<tr <%= "id=dragablecontainer_#{organization.id.to_s}" %> class="dragable" >
 	              <td width="12%"><%= link_to organization.org_name, admin_organization_path(organization,:locale => I18n.locale) %></td>
 	              <td width="70%"><span><%= organization.address %> </span></td>
 	              <td width="18%">
@@ -11,4 +12,58 @@
 	              </td>
 	        </tr>        
 	<% end %>
+	</tbody>
 </table>
+<script type="text/javascript">
+//################################ org reorder begin #######################################
+$(function() {
+  var prevEvent = null;
+  $( "#listThisOrganization" ).sortable({
+    //connectWith: ".renamelevelcontainer",
+    items: "> .dragable" ,
+    placeholder: "ui-state-highlight",
+    update: function( event, ui ) {
+
+      if(event.timeStamp == prevEvent){
+        return null;
+      }
+
+      prevEvent = event.timeStamp;  
+      var newRankings_array = $('#listThisOrganization').sortable('toArray');
+      var orderSet = [];
+      $.each(newRankings_array, function( index, value){
+        orderSet.push(value.replace("dragablecontainer_",""));
+      });
+      var order2Push = JSON.stringify(orderSet);
+      //console.log(order2Push);    
+      $.ajaxSetup({
+        headers: {
+          'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+        }
+      });
+
+        //multiple reorder 
+        $.ajax({
+          type: "PATCH",
+          url: "/admin/"+"<%= I18n.locale.to_s %>"+"/organizations/"+orderSet[0]+"/multiple_reorder",
+          data: { organization: {  reorderset: orderSet } },
+          success: function(data){
+            //alert ("success");
+            //console.log("================ organizations reorder PATCH successfully end =============");
+            return false   
+          },
+          error: function(data){
+            //alert ("faild");
+            console.log("================ organizations reorder has some issues ==================");
+            return false  
+          }
+        });
+
+      }
+    });
+
+
+    $( "#listThisOrganization" ).disableSelection();
+});  
+//################################ org reorder end #######################################
+</script>

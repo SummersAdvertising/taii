@@ -67,6 +67,28 @@ class Admin::RepresentativesController < AdminController
     end
   end
 
+  #multiReorder
+  def multiple_reorder
+    errorFlag = false
+    params[:representative][:reorderset].each_with_index do | repid , index | 
+      @representative = Representative.find(repid)
+      if !@representative.nil?
+        @representative.update_attribute(:ranking , index+1 )
+      else
+        errorFlag = true
+      end 
+    end
+    
+    respond_to do |format|
+       if errorFlag
+        format.json { head :no_content }
+       else
+        format.json { head :no_content }
+       end
+    end
+    
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_representative
@@ -75,6 +97,6 @@ class Admin::RepresentativesController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def representative_params
-		params.require(:representative).permit(:division, :name, :phone, :mobile, :email, :fax, :organization_id)
+		params.require(:representative).permit(:division, :name, :phone, :mobile, :email, :fax, :organization_id, :ranking)
     end
 end

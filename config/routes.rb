@@ -26,21 +26,6 @@ Taii::Application.routes.draw do
   	end
   end
   
-  #x_resources :majorpolicies
-  #x_resources :dividend_histories, only: [:index]
-  #x_resources :organizations, only: [:index]
-  #x_resources :financialreports, only: [:index]
-  #x_resources :majorresolutions, only: [:index]
-  
-  #x_resources :annualreports, only: [:index]  
-  
-  #x_resources :financialprojections, only: [:index]
-
-  #resources :revenue_items
-  
-
-
-	#resources :financialreports
 	devise_for :admins
 
 	namespace :admin do
@@ -154,7 +139,7 @@ Taii::Application.routes.draw do
 			    end 
 			 end
 			 
-			 resources :hqproducts do
+			resources :hqproducts do
 				member do
 					patch 'reorder'
 					patch 'multiple_reorder' , :action => 'multiple_reorder'
@@ -162,17 +147,26 @@ Taii::Application.routes.draw do
 				end 
 			end
 			
-			resources :organizations
-			resources :representatives
+			resources :organizations do 
+				member do
+					patch 'multiple_reorder' , :action => 'multiple_reorder'
+				end
+			end
+
+			resources :representatives do
+				member do
+					patch 'multiple_reorder' , :action => 'multiple_reorder'
+				end
+			end
 			
 			resources :photos do
 		  		member do
 		  			post :resize
 		  		end
-		  	end
+		  end
 		  			  	
-		  	post 	'peditor/:id/createPhoto'				=> 'peditor#createPhoto'
-		    delete 'peditor/deletePhoto/:id'				=> 'peditor#destroyPhoto' 			  	
+	  	post 	'peditor/:id/createPhoto'				=> 'peditor#createPhoto'
+	    delete 'peditor/deletePhoto/:id'				=> 'peditor#destroyPhoto' 			  	
 		    
 		end # end of locale scope
 		

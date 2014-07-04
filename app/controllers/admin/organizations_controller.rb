@@ -82,6 +82,28 @@ class Admin::OrganizationsController < AdminController
     end
   end
 
+  #multiReorder
+  def multiple_reorder
+    errorFlag = false
+    params[:organization][:reorderset].each_with_index do | orgid , index | 
+      @organization = Organization.find(orgid)
+      if !@organization.nil?
+        @organization.update_attribute(:ranking , index+1 )
+      else
+        errorFlag = true
+      end 
+    end
+    
+    respond_to do |format|
+       if errorFlag
+        format.json { head :no_content }
+       else
+        format.json { head :no_content }
+       end
+    end
+    
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_organization
@@ -90,6 +112,6 @@ class Admin::OrganizationsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def organization_params
-      params.require(:organization).permit(:org_name, :address, :accessLevel)
+      params.require(:organization).permit(:org_name, :address, :accessLevel,:ranking)
     end
 end

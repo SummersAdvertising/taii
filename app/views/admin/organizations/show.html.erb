@@ -14,7 +14,14 @@ $(function(){
 	});
 });
 </script>
-
+<style>
+div ,td, p .noTransition {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
+</style>
 	<header>
         <h2 class="left">業務管理</h2>
         <nav class="left">
@@ -89,26 +96,29 @@ $(function(){
 	        	
 	        </div>
       	 <% end %> 
-      	 
-      	<% @representatives.each do | person | %>
-      	 <div class="form">
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="6%" valign="top"><img src="/images/admin.png"></td>
-              <td width="20%" valign="top"><b><%= person.division%></b><br>
-                <%= person.name%> </td>
-              <td width="56%" valign="top"><%= person.phone%><br>
-                <%= person.fax%><br>
-                <%= person.email%></td>
-              <td width="18%" valign="top">
-              	<div class="tool">
-              		<%= link_to '', admin_representative_path(person,:locale => I18n.locale), method: :delete, class: 'delete', title: '刪除', data: { confirm: 'Are you sure?' } %>
-                </div>
-              </td>
-            </tr>
-          </table>
+      	
+        <div id="listAllRepresentatives" class="noTransition preview">
+        	<% @representatives.each do | person | %>
+        	 <div class="form dragable" style="margin: 0 0 30px 0;" <%= "id=dragablecontainer_#{person.id.to_s}" %> >
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="6%" valign="top"><img src="/images/admin.png"></td>
+                <td width="20%" valign="top"><b><%= person.division%></b><br>
+                  <%= person.name%> </td>
+                <td width="56%" valign="top"><%= person.phone%><br>
+                  <%= person.fax%><br>
+                  <%= person.email%></td>
+                <td width="18%" valign="top">
+                	<div class="tool">
+                		<%= link_to '', admin_representative_path(person,:locale => I18n.locale), method: :delete, class: 'delete', title: '刪除', data: { confirm: 'Are you sure?' } %>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <% end %>
         </div>
-        <% end %>
+
 	    <div class="button">
 	    	<a href="<%= admin_organizations_path(locale: I18n.locale )%>" class="left"><img src="/images/left.png">返回</a>
 	    	<a href="javascript: void(0)" onclick="$('#orgAttrUpdateForm').submit();" class="right highlight" >儲存<img src="/images/save.png"></a>
@@ -127,3 +137,56 @@ $(function(){
 		    alert(response);
 		});
 	</script>
+  <script type="text/javascript">
+    //################################ org reorder begin #######################################
+    $(function() {
+      var prevEvent = null;
+      $( "#listAllRepresentatives" ).sortable({
+        //connectWith: ".renamelevelcontainer",
+        items: "> .dragable" ,
+        placeholder: "space",
+        update: function( event, ui ) {
+
+          if(event.timeStamp == prevEvent){
+            return null;
+          }
+
+          prevEvent = event.timeStamp;  
+          var newRankings_array = $('#listAllRepresentatives').sortable('toArray');
+          var orderSet = [];
+          $.each(newRankings_array, function( index, value){
+            orderSet.push(value.replace("dragablecontainer_",""));
+          });
+          var order2Push = JSON.stringify(orderSet);
+          //console.log(order2Push);    
+          $.ajaxSetup({
+            headers: {
+              'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+            }
+          });
+
+            //multiple reorder 
+            $.ajax({
+              type: "PATCH",
+              url: "/admin/"+"<%= I18n.locale.to_s %>"+"/representatives/"+orderSet[0]+"/multiple_reorder",
+              data: { representative: {  reorderset: orderSet } },
+              success: function(data){
+                //alert ("success");
+                //console.log("================ representatives reorder PATCH successfully end =============");
+                return false   
+              },
+              error: function(data){
+                //alert ("faild");
+                console.log("================ representatives reorder has some issues ==================");
+                return false  
+              }
+            });
+
+          }
+        });
+
+
+        $( "#listAllRepresentatives" ).disableSelection();
+    });  
+    //################################ org reorder end #######################################
+    </script>

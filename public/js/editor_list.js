@@ -71,6 +71,7 @@ editor.list = {
 	},
 	output: function(paragraph){
 		var paragraphBox = $("<div>");
+
 		paragraphBox.attr("data-type", "list");
 
 		var ulContainer = $("<ul></ul>");
@@ -88,6 +89,7 @@ editor.list = {
 	edit: function(paragraphContainer, controlPanel){
 		//edit => add; cancel => minus; complete => minus
 		$('[_height=auto]').height($('[_height=auto]').height()+100);
+
 		controlPanel.hide();
 		$(".controlPanel a[data-control = edit]").each(function(){
 			$(this).unbind();
@@ -96,6 +98,7 @@ editor.list = {
 		var contentBlock = paragraphContainer.children("ul");
 		
 		var editPanel = $("<div>");
+		editPanel.addClass("form");
 		var editContainer = $('<ul></ul>');
 		
 		var elements = paragraphContainer.children("ul").children('li');
@@ -108,6 +111,7 @@ editor.list = {
 		
 
 		var cancel = $("<a>");
+		//hack for taii
 		cancel.append("取消");
 		cancel.click(function(){
 			//edit => add; cancel => minus; complete => minus
@@ -166,8 +170,11 @@ editor.list = {
 			}
 			
 		});
-
-		editPanel.append(editContainer).append(save).append(cancel);
+	
+		var editbtnBar = $("<div>");
+		editbtnBar.addClass("tool tool-a").append(save).append(cancel);
+		editPanel.append(editContainer).append(editbtnBar);
+		//editPanel.append(editContainer).append(save).append(cancel);
 		paragraphContainer.append(editPanel);
 	},
 	bindControl: function(paragraphBox){

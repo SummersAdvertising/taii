@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140626122441) do
+ActiveRecord::Schema.define(version: 20140704045101) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "",    null: false
@@ -206,6 +206,7 @@ ActiveRecord::Schema.define(version: 20140626122441) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "accessLevel", default: 2
+    t.integer  "ranking",     default: 999, null: false
   end
 
   create_table "photos", force: true do |t|
@@ -236,6 +237,7 @@ ActiveRecord::Schema.define(version: 20140626122441) do
     t.integer  "organization_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "ranking",         default: 999, null: false
   end
 
   create_table "revenue_items", force: true do |t|

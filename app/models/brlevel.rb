@@ -111,18 +111,18 @@ class Brlevel < ActiveRecord::Base
   
   # FOR FRONT END: [brlevels.id, brlevel_translations.name, brproducts.id, brproduct_translations.name]
   def self.get_all_level_product_pairs()
-	  sql = " SELECT brlevels.id, brlevel_translations.name, brproducts.id, brproduct_translations.name FROM brlevels LEFT JOIN (brproducts, brlevel_translations, brproduct_translations) ON (brlevels.id = brproducts.brlevel_id AND brlevel_translations.brlevel_id = brlevels.id AND brproduct_translations.brproduct_id = brproducts.id ) WHERE brproducts.showatfront = 200 AND brlevels.locale = '#{I18n.locale}' ORDER BY brlevels.ranking, brproducts.ranking "
+	  #sql = " SELECT brlevels.id, brlevel_translations.name, brproducts.id, brproduct_translations.name FROM brlevels LEFT JOIN (brproducts, brlevel_translations, brproduct_translations) ON (brlevels.id = brproducts.brlevel_id AND brlevel_translations.brlevel_id = brlevels.id AND brproduct_translations.brproduct_id = brproducts.id ) WHERE brproducts.showatfront = 200 AND brlevels.locale = '#{I18n.locale}' ORDER BY brlevels.ranking, brproducts.ranking "
   	#local
-  	#sql = "SELECT brlevels.id, brlevel_translations.name, brproducts.id, brproduct_translations.name FROM brlevels LEFT JOIN brproducts, brlevel_translations, brproduct_translations WHERE brlevels.id = brproducts.brlevel_id AND brlevel_translations.brlevel_id = brlevels.id AND brproduct_translations.brproduct_id = brproducts.id AND brproducts.showatfront = 200 AND brlevels.locale = '#{I18n.locale}' ORDER BY brlevels.ranking, brproducts.ranking"
+  	sql = "SELECT brlevels.id, brlevel_translations.name, brproducts.id, brproduct_translations.name FROM brlevels LEFT JOIN brproducts, brlevel_translations, brproduct_translations WHERE brlevels.id = brproducts.brlevel_id AND brlevel_translations.brlevel_id = brlevels.id AND brproduct_translations.brproduct_id = brproducts.id AND brproducts.showatfront = 200 AND brlevels.locale = '#{I18n.locale}' ORDER BY brlevels.ranking, brproducts.ranking"
   	
   	return records_array = ActiveRecord::Base.connection.execute(sql)
   end
   
   #FOR FRONT END: [brlevels.id, brlevels.level, brlevels.parent, brlevels.name]
   def self.get_level_hierarchy()
-	  sql = "SELECT brlevels.id, brlevels.level, brlevels.parent, brlevel_translations.name FROM brlevels LEFT JOIN brlevel_translations ON brlevels.id = brlevel_translations.brlevel_id WHERE brlevels.locale = '#{I18n.locale}' AND brlevels.parent != 0 ORDER BY brlevels.ranking"
+	  #sql = "SELECT brlevels.id, brlevels.level, brlevels.parent, brlevel_translations.name FROM brlevels LEFT JOIN brlevel_translations ON brlevels.id = brlevel_translations.brlevel_id WHERE brlevels.locale = '#{I18n.locale}' AND brlevels.parent != 0 ORDER BY brlevels.ranking"
 	  #local
-	  #sql = "SELECT brlevels.id, brlevels.level, brlevels.parent, brlevel_translations.name FROM brlevels LEFT JOIN brlevel_translations WHERE brlevels.id = brlevel_translations.brlevel_id AND brlevels.locale = '#{I18n.locale}' AND brlevels.parent != 0 ORDER BY brlevels.ranking"
+	  sql = "SELECT brlevels.id, brlevels.level, brlevels.parent, brlevel_translations.name FROM brlevels LEFT JOIN brlevel_translations WHERE brlevels.id = brlevel_translations.brlevel_id AND brlevels.locale = '#{I18n.locale}' AND brlevels.parent != 0 ORDER BY brlevels.ranking"
 	  
 	  return records_array = ActiveRecord::Base.connection.execute(sql)
 	end

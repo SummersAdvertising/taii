@@ -1,6 +1,6 @@
 <header>
         <h2 class="left">產品介紹 <span>/ 工廠角度</span></h2>
-        <nav class="left"> <!-- 直接回到編輯頁不合理 因為有的階層根本不存在 -->
+        <nav class="left"> 
         <% Hqlevel.full_house.each do | lang | %>
         		<%= link_to t("env.language.#{lang.locale}"), admin_brlevel_path( lang , locale: lang.locale ), 'data-no-turbolink' => true %>
         <% end %>

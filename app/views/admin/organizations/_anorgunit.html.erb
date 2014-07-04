@@ -1,26 +1,27 @@
 <%= organization.id %>
-      	<%= link_to organization.org_name, admin_organization_path(organization,:locale => I18n.locale) %>
-      	<%= link_to organization.address, admin_organization_path(organization,:locale => I18n.locale) %>
-        <%= link_to 'Destroy', admin_organization_path(organization,:locale => I18n.locale), method: :delete, data: { confirm: 'Are you sure?' } %>
-      
-	<div class='rename_form_container'>
-		<div <%= 'id=renamecontainerlevel#{organization.id.to_s}' %> class='renameLevel' style='display:none' >
-      
-      <%= form_for(organization,:url => admin_organization_path(organization, :locale=> I18n.locale), :method => 'PATCH', :remote => true  ) do |f| %>
-  
-	 <div class='field'>
-	    <%= f.label :org_name %><br>
-	    <%= f.text_field :org_name %>
-	  </div>
-	 <div class='field'>
-	    <%= f.label :address %><br>
-	    <%= f.text_field :address %>
-	  </div>
-	
-	  <div class='actions'>
-	    <%= f.submit %>
-	  </div>
-	    
-	  <% end %>
-	  </div>
-  </div>
+<%= link_to organization.org_name, admin_organization_path(organization,:locale => I18n.locale) %>
+<%= link_to organization.address, admin_organization_path(organization,:locale => I18n.locale) %>
+<%= link_to 'Destroy', admin_organization_path(organization,:locale => I18n.locale), method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<div class='rename_form_container'>
+  <div <%= 'id=renamecontainerlevel#{organization.id.to_s}' %> class='renameLevel' style='display:none' >
+    
+    <%= form_for(organization,:url => admin_organization_path(organization, :locale=> I18n.locale), :method => 'PATCH', :remote => true  ) do |f| %>
+    
+    <div class='field'>
+     <%= f.label :org_name %><br>
+     <%= f.text_field :org_name %>
+   </div>
+   
+   <div class='field'>
+     <%= f.label :address %><br>
+     <%= f.text_field :address %>
+   </div>
+   
+   <div class='actions'>
+     <%= f.submit %>
+   </div>
+   
+   <% end %>
+ </div>
+</div>
