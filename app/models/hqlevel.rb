@@ -144,20 +144,29 @@ class Hqlevel < ActiveRecord::Base
   
   # FOR FRONT END: [hqlevels.id, hqlevel_translations.name, hqproducts.id, hqproduct_translations.name]
   def self.get_all_level_product_pairs()
-    sql = " SELECT hqlevels.id, hqlevel_translations.name, hqproducts.id, hqproduct_translations.name FROM hqlevels LEFT JOIN (hqproducts, hqlevel_translations, hqproduct_translations) ON (hqlevels.id = hqproducts.hqlevel_id AND hqlevel_translations.hqlevel_id = hqlevels.id AND hqproduct_translations.hqproduct_id = hqproducts.id ) WHERE hqproducts.showatfront = 200 AND hqlevels.locale = '#{I18n.locale}' ORDER BY hqlevels.ranking, hqproducts.ranking "
-    #local
-  	#sql = "SELECT hqlevels.id, hqlevel_translations.name, hqproducts.id, hqproduct_translations.name FROM hqlevels LEFT JOIN hqproducts, hqlevel_translations, hqproduct_translations WHERE hqlevels.id = hqproducts.hqlevel_id AND hqlevel_translations.hqlevel_id = hqlevels.id AND hqproduct_translations.hqproduct_id = hqproducts.id AND hqproducts.showatfront = 200 AND hqlevels.locale = '#{I18n.locale}' ORDER BY hqlevels.ranking, hqproducts.ranking"
-  	
+    
+    if Rails.env.production?
+      sql = " SELECT hqlevels.id, hqlevel_translations.name, hqproducts.id, hqproduct_translations.name FROM hqlevels LEFT JOIN (hqproducts, hqlevel_translations, hqproduct_translations) ON (hqlevels.id = hqproducts.hqlevel_id AND hqlevel_translations.hqlevel_id = hqlevels.id AND hqproduct_translations.hqproduct_id = hqproducts.id ) WHERE hqproducts.showatfront = 200 AND hqlevels.locale = '#{I18n.locale}' ORDER BY hqlevels.ranking, hqproducts.ranking "
+    else
+      #local
+  	  sql = "SELECT hqlevels.id, hqlevel_translations.name, hqproducts.id, hqproduct_translations.name FROM hqlevels LEFT JOIN hqproducts, hqlevel_translations, hqproduct_translations WHERE hqlevels.id = hqproducts.hqlevel_id AND hqlevel_translations.hqlevel_id = hqlevels.id AND hqproduct_translations.hqproduct_id = hqproducts.id AND hqproducts.showatfront = 200 AND hqlevels.locale = '#{I18n.locale}' ORDER BY hqlevels.ranking, hqproducts.ranking"
+  	end
+
   	return records_array = ActiveRecord::Base.connection.execute(sql)
   end
   
   #FOR FRONT END: [hqlevels.id, hqlevels.level, hqlevels.parent, hqlevels.name]
   def self.get_level_hierarchy()
-	  sql = "SELECT hqlevels.id, hqlevels.level, hqlevels.parent, hqlevel_translations.name FROM hqlevels LEFT JOIN hqlevel_translations ON hqlevels.id = hqlevel_translations.hqlevel_id WHERE hqlevels.locale = '#{I18n.locale}' AND hqlevels.parent != 0 ORDER BY hqlevels.ranking"
-	  #local
-	  #sql = "SELECT hqlevels.id, hqlevels.level, hqlevels.parent, hqlevel_translations.name FROM hqlevels LEFT JOIN hqlevel_translations WHERE hqlevels.id = hqlevel_translations.hqlevel_id AND hqlevels.locale = '#{I18n.locale}' AND hqlevels.parent != 0 ORDER BY hqlevels.ranking"
-	  
+    
+    if Rails.env.production?
+	    sql = "SELECT hqlevels.id, hqlevels.level, hqlevels.parent, hqlevel_translations.name FROM hqlevels LEFT JOIN hqlevel_translations ON hqlevels.id = hqlevel_translations.hqlevel_id WHERE hqlevels.locale = '#{I18n.locale}' AND hqlevels.parent != 0 ORDER BY hqlevels.ranking"
+	  else
+      #local
+	    sql = "SELECT hqlevels.id, hqlevels.level, hqlevels.parent, hqlevel_translations.name FROM hqlevels LEFT JOIN hqlevel_translations WHERE hqlevels.id = hqlevel_translations.hqlevel_id AND hqlevels.locale = '#{I18n.locale}' AND hqlevels.parent != 0 ORDER BY hqlevels.ranking"
+	  end
+
 	  return records_array = ActiveRecord::Base.connection.execute(sql)
+
 	end
 	  
 end

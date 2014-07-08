@@ -8,11 +8,13 @@
       
       <div class="content">
         <div class="folder">
-        <% @currentYear.attachments.each do |attach| %>
+        <% @allYear.each do | year | %>
+          <% year.attachments.each do |attach| %>
           <div class="file"> <%= attach.file_name %><br>
             <a href="<%= attach.attachment.url %>">&nbsp;</a> 
           </div>
          <% end %>
+        <% end %>
 	      </div>
         <!--folder--> 
       </div>

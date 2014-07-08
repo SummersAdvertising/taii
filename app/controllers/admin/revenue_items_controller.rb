@@ -56,8 +56,8 @@ class Admin::RevenueItemsController < AdminController
         format.html { redirect_to editbymonth_admin_monthlyrevenuereport_path(@revenue_item.monthlyrevenuereport_id, fiscal_month: @revenue_item.fiscal_month), notice: 'Revenue item was successfully updated.' }
         format.json { head :no_content }
       else
-        #format.html { redirect_to editbymonth_admin_monthlyrevenuereport_path(@revenue_item.monthlyrevenuereport_id, fiscal_month: @revenue_item.fiscal_month), notice: 'Oops, something went wrong.' }
-        format.json { render json: @revenue_item.errors.full_messages, status: :unprocessable_entity }
+        format.html { redirect_to editbymonth_admin_monthlyrevenuereport_path(@revenue_item.monthlyrevenuereport_id, fiscal_month: @revenue_item.fiscal_month), notice: @revenue_item.errors.full_messages }
+        #format.json { render json: @revenue_item.errors.full_messages, status: :unprocessable_entity }
       end
     end
   end

@@ -15,9 +15,12 @@ class InvestorsController < ApplicationController
 	end
 	
 	def annualreport
-		max_year = Annualreport.maximum("fiscal_year")
-    max_year_id = Annualreport.where(["fiscal_year = ?", max_year]).select(:id)
-    @currentYear = Annualreport.find(max_year_id)
+		#只顯示當年度
+		#max_year = Annualreport.maximum("fiscal_year")
+    #max_year_id = Annualreport.where(["fiscal_year = ?", max_year]).select(:id)
+    #@currentYear = Annualreport.find(max_year_id)
+    #全列
+    @allYear = Annualreport.all
 	end
 	
 	def dividend_history
@@ -29,9 +32,12 @@ class InvestorsController < ApplicationController
 	end
 	
 	def majorresolution
-		max_year = Majorresolution.maximum("fiscal_year")
-    max_year_id = Majorresolution.where(["fiscal_year = ?", max_year]).select(:id)
-    @currentYear = Majorresolution.find(max_year_id)
+		#只顯示當年度
+		#max_year = Majorresolution.maximum("fiscal_year")
+    #max_year_id = Majorresolution.where(["fiscal_year = ?", max_year]).select(:id)
+    #@currentYear = Majorresolution.find(max_year_id)
+    #全列
+    @allYear = Majorresolution.all
 	end
 	
 	def financialprojection
