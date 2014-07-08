@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="/css/front/about.css">
 <style>
 article aside ul li.active > a { background-image: url(<%= t("env.img_url.ab-03hh") %>) }
-article section .content{padding:0 0 80px 55px}
 </style>
  <article>
     <h2>關於台一</h2>
@@ -12,12 +11,12 @@ article section .content{padding:0 0 80px 55px}
         <li class="about-history"><%= link_to t("about_side_menu.history"), page_pages_path("about-history") %></li>
         <li class="active"><a><%=t("about-product-1.nav_main_product")%></a>
           <div class="sub">
-	          <%= link_to t("about-product-1.nav_main_product_1"), page_pages_path("about-product-1"), class: "active" %>
-	          <%= link_to t("about-product-1.nav_main_product_2"), page_pages_path("about-product-2") %>
+	          <%= link_to t("about-product-1.nav_main_product_1"), page_pages_path("about-product-1") %>
+            <%= link_to t("about-product-1.nav_main_product_2"), page_pages_path("about-product-2") %>
             <%= link_to t("about-product-1.nav_main_product_3"), page_pages_path("about-product-3") %> 
-            <%= link_to t("about-product-1.nav_main_product_4"), page_pages_path("about-product-4") %> 
+            <%= link_to t("about-product-1.nav_main_product_4"), page_pages_path("about-product-4"), class: "active" %> 
             <%= link_to t("about-product-1.nav_main_product_5"), page_pages_path("about-product-5") %> 
-            <%= link_to t("about-product-1.nav_main_product_6"), page_pages_path("about-product-6") %> 
+            <%= link_to t("about-product-1.nav_main_product_6"), page_pages_path("about-product-6") %>
           </div>
         </li>
         </li>
@@ -28,26 +27,25 @@ article section .content{padding:0 0 80px 55px}
         <li class="about-group"><%= link_to t("about_side_menu.group"), page_pages_path("about-group") %></li>
 	    </ul>
     </aside>
+
     <section>
-      <h3><%=t("about-product-1.main_title")%></h3>
+      <h3><%=t("about-product-4.main_title")%></h3>
       <div class="content">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="3%" valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-            <td width="97%" valign="top"><%=t("about-product-1.subproduct_1")%><br>
-              <%=t("about-product-1.description_1")%></td>
+            <td width="97%" valign="top"><%=t("about-product-1.subproduct_6")%><br>
+            <%=simple_format(t("about-product-1.description_6") )%></td>
           </tr>
           <tr>
             <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-            <td valign="top"><%=t("about-product-1.subproduct_2")%>：<br>
-              <%=simple_format(t("about-product-1.description_2") )%>
-             </td>
+            <td valign="top"><%=t("about-product-1.subproduct_7")%><br>
+            <%=simple_format(t("about-product-1.description_7") )%></td>
           </tr>
           <tr>
-            <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-            <td valign="top"><%=t("about-product-1.subproduct_3")%><br>
-              <%=simple_format(t("about-product-1.description_3") )%><br><br>
-              <img src="<%= t("env.img_url.ab-12") %>"></td>
+            <td valign="top"></td>
+            <td valign="top"><br>
+              <img src="<%= t("env.img_url.ab-15") %>"></td>
           </tr>
         </table>
       </div>

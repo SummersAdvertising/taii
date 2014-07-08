@@ -12,7 +12,11 @@ article aside ul li.active > a { background-image: url(<%= t("env.img_url.ab-03h
         <li class="active"><a><%=t("about-product-1.nav_main_product")%></a>
           <div class="sub">
 	          <%= link_to t("about-product-1.nav_main_product_1"), page_pages_path("about-product-1") %>
-	          <%= link_to t("about-product-1.nav_main_product_2"), page_pages_path("about-product-2"), class: "active" %> 
+            <%= link_to t("about-product-1.nav_main_product_2"), page_pages_path("about-product-2"), class: "active" %>
+            <%= link_to t("about-product-1.nav_main_product_3"), page_pages_path("about-product-3") %> 
+            <%= link_to t("about-product-1.nav_main_product_4"), page_pages_path("about-product-4") %> 
+            <%= link_to t("about-product-1.nav_main_product_5"), page_pages_path("about-product-5") %> 
+            <%= link_to t("about-product-1.nav_main_product_6"), page_pages_path("about-product-6") %>
           </div>
         </li>
         </li>
@@ -28,10 +32,25 @@ article aside ul li.active > a { background-image: url(<%= t("env.img_url.ab-03h
       <h3><%=t("about-product-2.main_title")%></h3>
       <h4><%=t("about-product-2.product_1")%></h4>
       <div class="content">
-      <img src="<%=t("about-product-2.product_1_img_url")%>"> </div>
-      <h4><%=t("about-product-2.product_2")%></h4>
-      <div class="content">
-        <img src="<%=t("about-product-2.product_2_img_url")%>">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="3%" valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+            <td width="97%" valign="top"><%=t("about-product-1.subproduct_4")%><br>
+            <%=simple_format(t("about-product-1.description_4") )%>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+            <td valign="top"><%=t("about-product-1.subproduct_5")%><br>
+            <%=simple_format(t("about-product-1.description_5") )%>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top"></td>
+            <td align="center" valign="top"><br>
+              <img src="<%= t("env.img_url.ab-13") %>"></td>
+          </tr>
+        </table>
       </div>
     </section>
   </article>
