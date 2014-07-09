@@ -6,9 +6,10 @@ article aside ul li.active > a { background-image: url(<%= t("env.img_url.ab-03h
     <h2>關於台一</h2>
     <aside>
       <ul>
-	      <li class="about-concept"><%= link_to t("about_side_menu.concept"), page_pages_path("about-concept") %></li>
-        <li class="about-responsibility"><%= link_to t("about_side_menu.responsibility"), page_pages_path("about-responsibility") %></li>
+	      <li class="about-intro"><%= link_to t("about_side_menu.intro"), page_pages_path("about-intro") %></li>
         <li class="about-history"><%= link_to t("about_side_menu.history"), page_pages_path("about-history") %></li>
+        <li class="about-concept"><%= link_to t("about_side_menu.concept"), page_pages_path("about-concept") %></li>
+        <li class="about-responsibility"><%= link_to t("about_side_menu.responsibility"), page_pages_path("about-responsibility") %></li>        
         <li class="active"><a><%=t("about-product-1.nav_main_product")%></a>
           <div class="sub">
 	          <%= link_to t("about-product-1.nav_main_product_1"), page_pages_path("about-product-1") %>
