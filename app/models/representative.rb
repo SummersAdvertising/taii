@@ -8,7 +8,8 @@ class Representative < ActiveRecord::Base
 
   validates :division, :presence => true 
   validates :name, :presence => true 
-  validates :phone, :presence => true
-  validates :email, :format => { :with => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i}
+  #validates :phone, :presence => true
+  #validates :mobile, :presence => true
+  #validates :email, :format => { :with => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i}
     
 end

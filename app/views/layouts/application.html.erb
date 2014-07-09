@@ -33,10 +33,18 @@
         <h1><a href="<%= root_path %>">台一國際</a></h1>
         
         <div id="lang">
-		        <% Hqlevel.full_house.each_with_index do | lang, index | %>
-		        		<%= link_to t("env.language.#{lang.locale}"), set_locale_path( locale: lang.locale ), 'data-no-turbolink' => true %>
-		        		<% if index != 3 %><span> │ </span><% end %>
-		        <% end %>
+            <%= link_to t("env.language.zh_TW"), set_locale_path( locale: "zh_TW" ), 'data-no-turbolink' => true %>
+            <span> │ </span>
+            <%= link_to t("env.language.zh_CN"), set_locale_path( locale: "zh_CN" ), 'data-no-turbolink' => true %>
+            <span> │ </span>
+            <%= link_to t("env.language.en"), "http://www.tai-i-int.com.tw/Eg/default.htm" , 'data-no-turbolink' => true, target: "_blank" %>
+            <span> │ </span>
+            <%= link_to t("env.language.ja"), set_locale_path( locale: "ja" ), 'data-no-turbolink' => true %>
+
+		        <%# Hqlevel.full_house.each_with_index do | lang, index | %>
+		        		<%# link_to t("env.language.#{lang.locale}"), set_locale_path( locale: lang.locale ), 'data-no-turbolink' => true %>
+		        		<%# if index != 3 %><!-- <span> │ </span> --><%# end %>
+		        <%# end %>
         </div>
         
         <div id="search">

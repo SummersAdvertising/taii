@@ -83,7 +83,9 @@ div ,td, p .noTransition {
 					              <td align="center" valign="middle">姓名：</td>
 					              <td valign="top">    <%= f.text_field :name, class: 'text' %></td>
 					              <td align="center" valign="middle"> Email：</td>
-					              <td colspan="3" valign="top"><%= f.text_field :email, class: 'text' %></td>
+					              <td valign="top"><%= f.text_field :email, class: 'text' %></td>
+                        <td align="center" valign="middle">手機：</td>
+                        <td valign="top">    <%= f.text_field :mobile, class: 'text' %></td>
 					              <%= f.hidden_field :organization_id, :value => params[:id] %>
 					            </tr>
 					          </table>
@@ -105,9 +107,12 @@ div ,td, p .noTransition {
                 <td width="6%" valign="top"><img src="/images/admin.png"></td>
                 <td width="20%" valign="top"><b><%= person.division%></b><br>
                   <%= person.name%> </td>
-                <td width="56%" valign="top"><%= person.phone%><br>
+                <td width="56%" valign="top">
+                  <%= person.phone%><br>
                   <%= person.fax%><br>
-                  <%= person.email%></td>
+                  <%= person.mobile%><br>
+                  <%= person.email%>
+                  </td>
                 <td width="18%" valign="top">
                 	<div class="tool">
                 		<%= link_to '', admin_representative_path(person,:locale => I18n.locale), method: :delete, class: 'delete', title: '刪除', data: { confirm: 'Are you sure?' } %>
