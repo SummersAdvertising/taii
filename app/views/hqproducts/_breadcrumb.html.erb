@@ -1,5 +1,5 @@
 <div>
-產品介紹 >
+<%= t("env.hqlevel_show.breadcrumb") %> >
 <% breadcrumb.reverse.each_with_index do | level, index | %>
 		<%=  level.name %> <%= " > " if breadcrumb.length - 1 != index%>
 <% end %>
