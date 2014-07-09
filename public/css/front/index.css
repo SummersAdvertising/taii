@@ -1,4 +1,4 @@
-
+﻿
 body{background:#D2D2D1}
 
 #wrapper > header{height:671px}
@@ -51,6 +51,7 @@ padding:100px 0 0 0;font-size:22px}
 #pin-4{top:157px;left:455px}
 #pin-5{top:165px;left:446px}
 #pin-6{top:168px;left:457px}
+#pin-7{top:155px;left:465px}
 #plant-box{position:relative;z-index:1;background:url(../images/id-22.jpg) 0 0 no-repeat;
 width:1019px;height:100%;margin:0 auto;color:#484848}
 #plant-box h5{background:url(../images/id-04.jpg) 0 center no-repeat;padding:0 0 0 20px;
