@@ -115,6 +115,7 @@ div ,td, p .noTransition {
                   </td>
                 <td width="18%" valign="top">
                 	<div class="tool">
+                    <%= link_to '' , edit_admin_representative_path(person.id, :locale => I18n.locale),'data-no-turbolink' => true , class: 'edit' %>
                 		<%= link_to '', admin_representative_path(person,:locale => I18n.locale), method: :delete, class: 'delete', title: '刪除', data: { confirm: 'Are you sure?' } %>
                   </div>
                 </td>
@@ -126,7 +127,7 @@ div ,td, p .noTransition {
 
 	    <div class="button">
 	    	<a href="<%= admin_organizations_path(locale: I18n.locale )%>" class="left"><img src="/images/left.png">返回</a>
-	    	<a href="javascript: void(0)" onclick="$('#orgAttrUpdateForm').submit();" class="right highlight" >儲存<img src="/images/save.png"></a>
+	    	<a href="javascript: void(0)" onclick="$('#orgAttrUpdateForm').submit();" class="right highlight" >儲存<img src="/images/save.png"></a></div>
 	<article>
 	<script>
 	$("#ajaxNewRepForm").on('ajax:error',function(evt, data, status, xhr) {

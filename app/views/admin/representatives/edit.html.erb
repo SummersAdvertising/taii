@@ -1,0 +1,47 @@
+<style>
+div ,td, p .noTransition {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
+</style>
+  <header>
+        <h2 class="left">編輯業務</h2>
+  </header>
+  
+  <article>
+    <div class="hgroup">
+      <h3>業務人員</h3>
+    </div>
+    <p><%= flash[:notice] %></p>
+    <div class="form">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <div id="createNewRep">
+          <%= form_for(@representative,:url => admin_representative_path(@representative , locale: I18n.locale ), :html => { :multipart => true, :method => 'patch' , :id=> 'editRepForm' }) do |f| %>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="8%" align="center" valign="middle">部門：</td>
+                  <td width="24%" valign="top"><%= f.text_field :division, class: 'text' %></td>
+                  <td width="10%" align="center" valign="middle">電話：</td>
+                  <td width="24%" valign="top"><%= f.text_field :phone, class: 'text' %></td>
+                  <td width="10%" align="center" valign="middle">傳真：</td>
+                  <td width="24%" valign="top"><%= f.text_field :fax, class: 'text' %></td>
+                </tr>
+                <tr>
+                  <td align="center" valign="middle">姓名：</td>
+                  <td valign="top">    <%= f.text_field :name, class: 'text' %></td>
+                  <td align="center" valign="middle"> Email：</td>
+                  <td valign="top"><%= f.text_field :email, class: 'text' %></td>
+                  <td align="center" valign="middle">手機：</td>
+                  <td valign="top">    <%= f.text_field :mobile, class: 'text' %></td>
+                </tr>
+              </table>
+          <% end %>
+        </div>  
+      </table>
+    </div>
+    <div class="button">
+        <a href="<%= admin_organization_path(@representative.organization,locale: I18n.locale )%>" class="left"><img src="/images/left.png">返回</a>
+        <a href="javascript: void(0)" onclick="$('#editRepForm').submit();" class="right highlight" >儲存<img src="/images/save.png"></a></div>
+  </article>

@@ -22,6 +22,7 @@ class Admin::RepresentativesController < AdminController
 
   # GET /representatives/1/edit
   def edit
+
   end
 
   # POST /representatives
@@ -47,8 +48,8 @@ class Admin::RepresentativesController < AdminController
   def update
     respond_to do |format|
       if @representative.update(representative_params)
-        format.html { redirect_to redirect_to admin_organization_path(@representative.organization,:locale => I18n.locale), notice: 'Representative was successfully updated.' }
-        format.json { head :no_content }
+        format.html { redirect_to admin_organization_path(@representative.organization,:locale => I18n.locale), notice: 'Representative was successfully updated.' }
+        #format.json { head :no_content }
       else
         #format.html { render action: 'edit' }
         format.json { render json: @representative.errors, status: :unprocessable_entity }
