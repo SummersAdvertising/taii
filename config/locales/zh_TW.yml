@@ -704,51 +704,51 @@ zh_TW:
   hsinchu-research:
     all: "<h3>研究發展</h3>
       <h4>1、研發技術背景</h4>
-      <div class="content"> 台一為提高產品品質與市場競爭能力及開發高附加價值銅金屬產品，與金屬中心技術合作及多家馬達大廠策略結盟，並投入各類精密儀器設備與人力做各種創新研究開發工作。 <br>
+      <div class='content'> 台一為提高產品品質與市場競爭能力及開發高附加價值銅金屬產品，與金屬中心技術合作及多家馬達大廠策略結盟，並投入各類精密儀器設備與人力做各種創新研究開發工作。 <br>
         <br>
         目前已完成異型銅線、插銅式銅轉子產品及金屬複合軋延技術，提昇國內產業技術層次，滿足客戶品質的要求和社會趨勢的需求。 </div>
       <h4>2、主要開發產品</h4>
-      <div class="content">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <div class='content'>
+        <table width='100%' border='0' cellspacing='0' cellpadding='0'>
           <tr>
-            <td width="4%" valign="top"><span><img src="/css/images/ab-17.png"></span></td>
-            <td width="70%" valign="top"><h5>異型銅線</h5>
-              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <td width='4%' valign='top'><span><img src='/css/images/ab-17.png'></span></td>
+            <td width='70%' valign='top'><h5>異型銅線</h5>
+              <table width='100%' border='0' cellspacing='0' cellpadding='0'>
                 <tr>
-                  <td width="18%" valign="top">特　　性：</td>
-                  <td width="82%" valign="top">異型銅材製程是屬於對稱連續精密輥軋-精抽-精整成形產線→
+                  <td width='18%' valign='top'>特　　性：</td>
+                  <td width='82%' valign='top'>異型銅材製程是屬於對稱連續精密輥軋-精抽-精整成形產線→
                     製程應用多組特製的滾輪模具使銅金屬於輥軋成型。
                     異型銅線應用於高效馬達具有優良的導電度，與高占積率
                     藉此提高電磁轉換效率；同時具有高速運轉時之結構強度
                     與長期運轉時之高溫劣化穩定性。 </td>
                 </tr>
                 <tr>
-                  <td valign="top">用　　途：</td>
-                  <td valign="top">混合動力汽車、電動汽車車用感應馬達、橫向磁通電機、
+                  <td valign='top'>用　　途：</td>
+                  <td valign='top'>混合動力汽車、電動汽車車用感應馬達、橫向磁通電機、
                     工業高效電機、主軸電機、變頻馬達、CNC 車床、
                     高效率感應電動機、沉水泵浦馬達。 </td>
                 </tr>
                 <tr>
-                  <td valign="top">適用線徑：</td>
-                  <td valign="top">各類異型線材，可依客戶需要之形狀、規格、條材---等客製化。 </td>
+                  <td valign='top'>適用線徑：</td>
+                  <td valign='top'>各類異型線材，可依客戶需要之形狀、規格、條材---等客製化。 </td>
                 </tr>
                 <tr>
-                  <td valign="top">檢驗標準：</td>
-                  <td valign="top">ASTM規範B152、B272。</td>
+                  <td valign='top'>檢驗標準：</td>
+                  <td valign='top'>ASTM規範B152、B272。</td>
                 </tr>
               </table></td>
-            <td width="26%" align="right" valign="top"><img src="/css/images/hc-06.jpg"></td>
+            <td width='26%' align='right' valign='top'><img src='/css/images/hc-06.jpg'></td>
           </tr>
         </table>
         <br>
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <table width='100%' border='0' cellspacing='0' cellpadding='0'>
           <tr>
-            <td width="4%" valign="top"><span><img src="/css/images/ab-17.png"></span></td>
-            <td width="70%" valign="top"><h5>插銅式銅轉子</h5>
-              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <td width='4%' valign='top'><span><img src='/css/images/ab-17.png'></span></td>
+            <td width='70%' valign='top'><h5>插銅式銅轉子</h5>
+              <table width='100%' border='0' cellspacing='0' cellpadding='0'>
                 <tr>
-                  <td width="18%" valign="top">特　　性：</td>
-                  <td width="82%" valign="top">目前市面上普及的三相感應馬達轉子材料多採用鋁，而銅具有高導電
+                  <td width='18%' valign='top'>特　　性：</td>
+                  <td width='82%' valign='top'>目前市面上普及的三相感應馬達轉子材料多採用鋁，而銅具有高導電
                     性，電阻僅為鋁的三分之二左右，若改以銅取代鋁作為轉子材料，歐
                     姆損耗可有效降低。因此損耗的總減少量可達15%~20%，馬達重量
                     亦可減輕5%~10%。另外插銅式銅轉子比起壓鑄式銅轉子擁有更多優
@@ -756,50 +756,50 @@ zh_TW:
                     多等，適合高功率、高效率、高價值之馬達使用。 </td>
                 </tr>
                 <tr>
-                  <td valign="top">用　　途：</td>
-                  <td valign="top">沉水馬達、大型抽水站馬達、連續運轉之機械用馬達、電動汽車、電動巴士、輪船螺旋槳馬達、飛機螺旋槳馬達</td>
+                  <td valign='top'>用　　途：</td>
+                  <td valign='top'>沉水馬達、大型抽水站馬達、連續運轉之機械用馬達、電動汽車、電動巴士、輪船螺旋槳馬達、飛機螺旋槳馬達</td>
                 </tr>
                 <tr>
-                  <td valign="top">適用線徑：</td>
-                  <td valign="top">可依客戶馬達設計目標(輸出功率、轉速、扭力等)作客製化生產</td>
+                  <td valign='top'>適用線徑：</td>
+                  <td valign='top'>可依客戶馬達設計目標(輸出功率、轉速、扭力等)作客製化生產</td>
                 </tr>
                 <tr>
-                  <td valign="top">檢驗標準：</td>
-                  <td valign="top">JIS C 4210、IEC 34-12、NEMA MG1-11、-12。</td>
+                  <td valign='top'>檢驗標準：</td>
+                  <td valign='top'>JIS C 4210、IEC 34-12、NEMA MG1-11、-12。</td>
                 </tr>
               </table></td>
-            <td width="26%" align="right" valign="top"><img src="/css/images/hc-07.jpg"></td>
+            <td width='26%' align='right' valign='top'><img src='/css/images/hc-07.jpg'></td>
           </tr>
         </table>
         <br>
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <table width='100%' border='0' cellspacing='0' cellpadding='0'>
           <tr>
-            <td width="4%" valign="top"><span><img src="/css/images/ab-17.png"></span></td>
-            <td width="96%" valign="top"><h5>金屬複合軋延技術</h5>
-              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <td width='4%' valign='top'><span><img src='/css/images/ab-17.png'></span></td>
+            <td width='96%' valign='top'><h5>金屬複合軋延技術</h5>
+              <table width='100%' border='0' cellspacing='0' cellpadding='0'>
                 <tr>
-                  <td width="13%" valign="top">特　　性：</td>
-                  <td width="87%" valign="top">該技術是利用輥軋的方式，在常溫下把異種金屬作壓力黏合，成為介面均
+                  <td width='13%' valign='top'>特　　性：</td>
+                  <td width='87%' valign='top'>該技術是利用輥軋的方式，在常溫下把異種金屬作壓力黏合，成為介面均
                     值緊密的複合金屬材料，此法可結合兩種甚至三種以上的金屬，各自發揮
                     其特性，並互補其不足之處，相較於合金有成本較低、單側特性明顯、避
                     免製程中雜質混入、氣泡產生等優勢；而透過製程參數的控制與原料的選
                     擇，也可做出指定厚度、指定區塊黏合的複合金屬。 </td>
                 </tr>
                 <tr>
-                  <td valign="top">用　　途：</td>
-                  <td valign="top">需結合兩種以上的金屬特性之場合，除了取代既有電鍍、焊接製程產品外，
+                  <td valign='top'>用　　途：</td>
+                  <td valign='top'>需結合兩種以上的金屬特性之場合，除了取代既有電鍍、焊接製程產品外，
                     可開發出更多新市場應用，例如抗電位腐蝕介質、高強度輕質複合材、輕量
                     化鉛酸電池電極、牙科骨科用抗排斥且高強度之人體植入材</td>
                 </tr>
                 <tr>
-                  <td valign="top">適用規格：</td>
-                  <td valign="top">目前以複合成板材後，再進行加工成市場所需之金屬製品，未來會朝向多種
+                  <td valign='top'>適用規格：</td>
+                  <td valign='top'>目前以複合成板材後，再進行加工成市場所需之金屬製品，未來會朝向多種
                     金屬、多層複合，指定厚度調整，特殊形狀製程等技術去掌握，以符合客戶
                     的多樣化需求。 </td>
                 </tr>
                 <tr>
-                  <td colspan="2" align="center" valign="top"><em><br>
-                    <img src="/css/images/hc-08.jpg"></em></td>
+                  <td colspan='2' align='center' valign='top'><em><br>
+                    <img src='/css/images/hc-08.jpg'></em></td>
                 </tr>
               </table></td>
           </tr>

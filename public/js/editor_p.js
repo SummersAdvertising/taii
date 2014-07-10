@@ -79,7 +79,8 @@ editor.p = {
 		
 	},
 	add: function(){
-		if(!$("#newParagraphContent").val()){
+		//add trim
+		if(!$("#newParagraphContent").val().trim()){
 			editor.alert("請輸入內容", "error");
 			return ;
 		}
@@ -94,7 +95,10 @@ editor.p = {
 						paragraph[value] = attrEle.val() + "px";
 					break;
 					case "content":
-						paragraph[value] = editor.filter(attrEle.val(), editor.HTMLfilter);
+						//origin
+						//paragraph[value] = editor.filter(attrEle.val(), editor.HTMLfilter);
+						var temp = editor.filter(attrEle.val(), editor.HTMLfilter);
+						paragraph[value] = editor.filter(temp, editor.parsequot);
 					break;
 					default:
 						paragraph[value] = attrEle.val();
