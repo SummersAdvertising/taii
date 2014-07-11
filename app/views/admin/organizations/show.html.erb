@@ -54,6 +54,8 @@ div ,td, p .noTransition {
 							   			<td width="29%">
 								   			<%= f.check_box :accessLevel , { class: 'checkbox'  }, 1, 2 %> 是
 							   			</td>
+                      <td width="2%">&nbsp;</td>
+                      <td width="62%" colspan="2" >顯示在聯絡我們：<%= f.check_box :showatfront , { class: 'checkbox'  }, 200, 404 %> 是</td>
 							   </tr>
     				<% end %>
       </table>

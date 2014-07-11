@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140704045101) do
+ActiveRecord::Schema.define(version: 20140711064340) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "",    null: false
@@ -207,6 +207,7 @@ ActiveRecord::Schema.define(version: 20140704045101) do
     t.datetime "updated_at"
     t.integer  "accessLevel", default: 2
     t.integer  "ranking",     default: 999, null: false
+    t.integer  "showatfront", default: 404
   end
 
   create_table "photos", force: true do |t|
