@@ -149,7 +149,7 @@ zh_TW:
                 <b>業務專線</b><br>
                 電話：+886-2-27180886<br>
                 傳真：+886-2-27183686"
-    puredise_adv_1: "瀚頂生科企業簡介"
+    puredise_adv_1: "瀚顶生技企业简介"
     puredise_adv_2: "<p>瀚頂公司於屏東農業生物技術園區成立首座養殖符合ISO 22000及HACCP國際食品雙認證『養耕共生』生態漁場，並打造的第一個Made in Taiwan鮮食品牌-『淳鮮』(Puredise)，孕育綿延永續環保和堅持新鮮健康的新食文化理念。</p>"      
   center:
     main_title: "台一國際通過聯合國物資採購監管中心的審核<br>台一系列產品榮獲聯合國物資採購中心推薦之指定產品"
@@ -574,11 +574,11 @@ zh_TW:
     guanyin_superiority: "競爭優勢"
     guanyin_research: "研究發展"
     guanyin_equipment: "設備介紹"
-    guanyin_product-1: "產品介紹"
+    guanyin_product-1: "主要產品及運用"
     guanyin_catalogs: "產品型錄"
     guanyin_consulting: "產品諮詢"
-    guanyin_product_sub_nav: "產品介紹"
-    guanyin_product-1: "主要產品及應用"
+    guanyin_product_sub_nav: "主要產品及運用"
+    guanyin_product-1: "主要產品及運用"
     guanyin_product-2: "汽車線"
     guanyin_product-3: "汽車馬達接引線"
     guanyin_product-4: "電子線、花線"
@@ -786,18 +786,19 @@ zh_TW:
           </tr>
         </table>
         <br>
+
         <table width='100%' border='0' cellspacing='0' cellpadding='0'>
           <tr>
             <td width='4%' valign='top'><span><img src='/css/images/ab-17.png'></span></td>
-            <td width='96%' valign='top'><h5>金屬複合軋延技術</h5>
+            <td width='70%' valign='top'><h5>金屬複合軋延技術</h5>
               <table width='100%' border='0' cellspacing='0' cellpadding='0'>
                 <tr>
-                  <td width='13%' valign='top'>特　　性：</td>
-                  <td width='87%' valign='top'>該技術是利用輥軋的方式，在常溫下把異種金屬作壓力黏合，成為介面均
+                  <td width='18%' valign='top'>特　　性：</td>
+                  <td width='82%' valign='top'>該技術是利用輥軋的方式，在常溫下把異種金屬作壓力黏合，成為介面均
                     值緊密的複合金屬材料，此法可結合兩種甚至三種以上的金屬，各自發揮
                     其特性，並互補其不足之處，相較於合金有成本較低、單側特性明顯、避
                     免製程中雜質混入、氣泡產生等優勢；而透過製程參數的控制與原料的選
-                    擇，也可做出指定厚度、指定區塊黏合的複合金屬。 </td>
+                    擇，也可做出指定厚度、指定區塊黏合的複合金屬。</td>
                 </tr>
                 <tr>
                   <td valign='top'>用　　途：</td>
@@ -806,16 +807,13 @@ zh_TW:
                     化鉛酸電池電極、牙科骨科用抗排斥且高強度之人體植入材</td>
                 </tr>
                 <tr>
-                  <td valign='top'>適用規格：</td>
+                  <td valign='top'>適用線徑：</td>
                   <td valign='top'>目前以複合成板材後，再進行加工成市場所需之金屬製品，未來會朝向多種
                     金屬、多層複合，指定厚度調整，特殊形狀製程等技術去掌握，以符合客戶
-                    的多樣化需求。 </td>
-                </tr>
-                <tr>
-                  <td colspan='2' align='center' valign='top'><em><br>
-                    <img src='/css/images/hc-08.jpg'></em></td>
+                    的多樣化需求。</td>
                 </tr>
               </table></td>
+            <td width='26%' align='right' valign='top'><img src='/css/images/hc-08.jpg'></td>
           </tr>
         </table>
       </div>"
