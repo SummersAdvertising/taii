@@ -1718,6 +1718,7 @@ zh_TW:
       rs-08: "/css/images/rs-08.jpg"
       search: "/css/images/search.png"
       top: "/css/images/top.jpg"
+      nw-01: "/css/images/nw-01.png"
     index:
       more: "看更多"
     h2images:

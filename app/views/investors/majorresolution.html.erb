@@ -8,19 +8,20 @@
     <%= render  "common/sidemenu" %>
     <section>
       <h3>重要決議</h3>
-        <% @allYear.each do | year |%>
-          <% if year.attachments.count > 0 %>
-            <h4><%= year.fiscal_year %> 年 <span><%= year.fiscal_year + 1911 %> 年</span></h4>      
-                <div class="content">
-                  <div class="folder">
-                    <% year.attachments.each do | attach | %>
-                        <div class="file"> <%= attach.file_name %><br>
-                            <a href="<%= attach.attachment.url %>">&nbsp;</a> </div>
-                     <% end %>
-                  </div>
-                  <!--folder--> 
-                </div>
+      <!-- new version (insert after h3) -->
+      <div class="content">
+        <div class="folder">
+          <% @allYear.each do | year |%>
+            <% if year.attachments.count > 0 %>        
+                <% year.attachments.each do | attach | %>
+                  <div class="file"> <%= attach.file_name %><br>
+                    <a href="<%= attach.attachment.url %>">&nbsp;</a> </div>
+               <% end %>
+            <% end %>
           <% end %>
-      <% end %>
+        </div>
+      <!--folder--> 
+      </div>
+      <!-- new version end -->
     </section>
   </article>

@@ -4,7 +4,7 @@ class AnnouncementsController < ApplicationController
   # GET /announcements
   # GET /announcements.json
   def index
-    @announcements = Announcement.all.page(params[:page])
+    @announcements = Announcement.with_translations(I18n.locale).page(params[:page])
     
   	if( params[:find] )
   	  @default_news = Announcement.find(params[:find])  		

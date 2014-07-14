@@ -28,7 +28,7 @@ div ,td, p .noTransition {
         <% Hqlevel.full_house.each do | lang | %>
         		<%= link_to t("env.language.#{lang.locale}"), admin_organizations_path(locale: lang.locale ), 'data-no-turbolink' => true %>
         <% end %>
-			目前語系：<%=t( "env.language.#{I18n.locale}") %>
+			   目前語系：<%=t( "env.language.#{I18n.locale}") %>
         </nav>
 	</header>
 	

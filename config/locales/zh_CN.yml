@@ -1723,6 +1723,7 @@ zh_CN:
       rs-08: "/css/images/cn/rs-08.jpg"
       search: "/css/images/cn/search.png"
       top: "/css/images/cn/top.jpg"
+      nw-01: "/css/images/cn/nw-01.png"
     index:
       more: "看更多"
     h2images:

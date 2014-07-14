@@ -5,7 +5,7 @@ class Admin::AnnouncementsController < AdminController
   # GET /announcements
   # GET /announcements.json
   def index
-    @announcements = Announcement.all
+    @announcements = Announcement.with_translations(I18n.locale)
   end
 
   # GET /announcements/1
@@ -21,7 +21,7 @@ class Admin::AnnouncementsController < AdminController
 		
     respond_to do |format|
       if @announcement.save
-        format.html { redirect_to edit_admin_announcement_path(@announcement), notice: 'Announcement was successfully created.' }
+        format.html { redirect_to edit_admin_announcement_path(@announcement, locale: I18n.locale), notice: 'Announcement was successfully created.' }
         format.json { render action: 'show', status: :created, location: @announcement }
       else
         format.html { render action: 'new' }
@@ -41,7 +41,7 @@ class Admin::AnnouncementsController < AdminController
 
     respond_to do |format|
       if @announcement.save
-        format.html { redirect_to @announcement, notice: 'Announcement was successfully created.' }
+        format.html { redirect_to edit_admin_announcement_path(@announcement,locale: I18n.locale), notice: 'Announcement was successfully created.' }
         format.json { render action: 'show', status: :created, location: @announcement }
       else
         format.html { render action: 'new' }
@@ -56,7 +56,7 @@ class Admin::AnnouncementsController < AdminController
     respond_to do |format|
       if @announcement.update(announcement_params) && ( params[ :article ].nil? ^ @announcement.article.update( params.require(:article).permit(:content) ) )
       
-        format.html { redirect_to admin_announcements_path, notice: 'Announcement was successfully updated.' }
+        format.html { redirect_to admin_announcements_path(locale: I18n.locale), notice: 'Announcement was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -70,7 +70,7 @@ class Admin::AnnouncementsController < AdminController
   def destroy
     @announcement.destroy
     respond_to do |format|
-      format.html { redirect_to admin_announcements_path }
+      format.html { redirect_to admin_announcements_path(locale: I18n.locale) }
       format.json { head :no_content }
     end
   end

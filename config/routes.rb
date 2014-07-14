@@ -86,12 +86,6 @@ Taii::Application.routes.draw do
 				patch 'multiple_reorder' , :action => 'multiple_reorder'
 			end
 		end
-		
-	  resources :announcements do
-	  	member do
-				patch 'multiple_reorder' , :action => 'multiple_reorder'
-			end
-	  end
     
     resources :financialprojections do
 		    member do
@@ -158,6 +152,12 @@ Taii::Application.routes.draw do
 					patch 'multiple_reorder' , :action => 'multiple_reorder'
 				end
 			end
+
+		  resources :announcements do
+		  	member do
+					patch 'multiple_reorder' , :action => 'multiple_reorder'
+				end
+		  end
 			
 			resources :photos do
 		  		member do

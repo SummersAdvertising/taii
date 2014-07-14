@@ -1,6 +1,11 @@
 <header>
         <h2 class="left">最新消息</h2>
-        <nav class="left"></nav>
+        <nav class="left"> 
+        <% Hqlevel.full_house.each do | lang | %>
+            <%= link_to t("env.language.#{lang.locale}"), admin_announcements_path(locale: lang.locale ), 'data-no-turbolink' => true %>
+        <% end %>
+    目前語系：<%=t( "env.language.#{I18n.locale}") %>
+        </nav>
 </header>
 <article>
     <div class="button"><a href="<%= new_admin_announcement_path %>" class="right highlight" >新增文章<img src="/images/add.png"></a></div>
@@ -10,12 +15,12 @@
 	          <tbody id="listAnnouncement">
           	<% @announcements.each do | announce | %>
             <tr <%= "id=reorderAnnouncementContainer_#{announce.id.to_s}" %>>
-              <td width="64%"><a href="<%= edit_admin_announcement_path(announce)%>"><%= announce.title %></a></td>
+              <td width="64%"><a href="<%= edit_admin_announcement_path(announce, locale: I18n.locale)%>"><%= announce.title %></a></td>
               <td width="18%" align="right"><%= announce.updated_at.strftime("%Y年%m月%d日") %></td>
               <td width="18%">
               	<div class="tool">
-              		 <a class="edit" title="編輯" href='<%= edit_admin_announcement_path(announce)%>'></a>
-              		 <%= link_to '', admin_announcement_path(announce.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete',title: "刪除" %>
+              		 <a class="edit" title="編輯" href='<%= edit_admin_announcement_path(announce, locale: I18n.locale)%>'></a>
+              		 <%= link_to '', admin_announcement_path(announce.id, locale: I18n.locale), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete',title: "刪除" %>
               	</div>
               </td>
             </tr>
@@ -55,7 +60,7 @@ $(function() {
 				  	  //multiple reorder 
 					  	$.ajax({
 					      type: "PATCH",
-					      url: "/admin/announcements/"+orderSet[0]+"/multiple_reorder",
+					      url: "/admin/"+"<%= I18n.locale.to_s %>"+"/announcements/"+orderSet[0]+"/multiple_reorder",
 					      data: { announcement: {  reorderset: orderSet } },
 					      success: function(data){
 						   //alert ("success");

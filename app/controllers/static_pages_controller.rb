@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 	respond_to :html
   def index
-  		@news = Announcement.limit(3)
+  		@news = Announcement.with_translations(I18n.locale).limit(3)
   		#I18n.locale = params[:locale]
 	  	#@hqlevelsRoot = Hqlevel.new.return_root_node()    
   end
