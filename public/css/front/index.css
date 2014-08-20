@@ -48,9 +48,9 @@ padding:100px 0 0 0;font-size:22px}
 #pin-1{top:159px;left:390px}
 #pin-2{top:168px;left:381px}
 #pin-3{top:175px;left:439px}
-#pin-4{top:157px;left:455px}
+#pin-6{top:157px;left:455px}
 #pin-5{top:165px;left:446px}
-#pin-6{top:168px;left:457px}
+#pin-4{top:168px;left:457px}
 #pin-7{top:155px;left:465px}
 #pin-8{top:236px;left:427px}
 #pin-9{top:244px;left:436px}
@@ -70,4 +70,7 @@ font:300 17px 微軟正黑體,Microsoft JhengHei;color:#000;line-height:1.7em}
 
 
 
-footer{background-color:#fff}
+footer{background-color:#fff;position:relative;}
+footer a{position:absolute;top:50px;right:50px;color:#aaa;display:block;padding:5px 15px 2px 15px;border:1px solid #777;border-radius:5px;
+font-size:13px}
+footer a:hover{background:#333;}

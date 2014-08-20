@@ -19,7 +19,8 @@
         <li><%= link_to "股利分派", dividend_history_investors_path , class: "dividend_history" %></li>
         <li><%= link_to "公開資訊觀測站", investor_investors_path("investors-mops") , class: "investors-mops" %></li>
         <li><%= link_to "獨立董事", investor_investors_path("investors-director") , class: "investors-director" %></li>
-	      <li><%= link_to "聯絡窗口", investor_investors_path("investors-contact") , class: "investors-contact" %></li>
+        <li><%= link_to t("about_side_menu.group"), page_pages_path("about-group"), class: "about-group" %></li>
+	    <li><%= link_to "聯絡窗口", investor_investors_path("investors-contact") , class: "investors-contact" %></li>	    
       </ul>
     </aside>
     
@@ -31,6 +32,7 @@
 				if ( $.inArray(pageName[4], alt) != -1)
 				{
 					$('.investors-' + pageName[4]+'' ).addClass('active');	
+					$('.about-' + pageName[4]+'' ).addClass('active');
 					$('.investor-999' ).parent().addClass('active');	
 				}
 				else

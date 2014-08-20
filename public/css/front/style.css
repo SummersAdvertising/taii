@@ -51,3 +51,8 @@ article section img{max-width:100%;height:auto}
 
 footer{height:182px;background:url(../images/footer.png) center 0 no-repeat #F6F6F3;color:#fff;
 font-size:12px;padding:10px 0 0 0}
+
+footer{position:relative;}
+footer a{position:absolute;top:50px;right:50px;color:#aaa;display:block;padding:5px 15px 2px 15px;border:1px solid #777;border-radius:5px;
+font-size:13px}
+footer a:hover{background:#333;}

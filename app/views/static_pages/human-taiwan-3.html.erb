@@ -1,14 +1,28 @@
 <link rel="stylesheet" href="/css/front/human.css">
 <style>
 article h2{background:url(<%= t("env.img_url.hr-01") %>) center 0 no-repeat}
+.content b {display:block;background:url(<%= t("env.img_url.hr-05") %>) 0 bottom no-repeat;
+width:340px;height:35px;padding:0 0 0 25px}
+.content ul{padding:10px 25px}
 </style>
  <article>
     <h2>關於台一</h2>
     <%= render "human_sidemenu_tw" %>
 	  <section>
       <h3><%= t("human-taiwan-3.main_title") %></h3>
-      <div class="content"> <%= t("human-taiwan-3.subtitle") %>
-              <%= simple_format( t("human-taiwan-3.info") )%>
+      <div class="content">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="62%" valign="top">
+    <b><%= t("human-guangzhou-3.title_one") %></b>
+    <%= simple_format( t("human-taiwan-3.title_one_content") )%>
+
+    
+    </td>
+    <td width="38%" valign="top"><b><%= t("human-guangzhou-3.title_two") %></b>
+    <%= simple_format( t("human-taiwan-3.title_two_content") )%></td>
+  </tr>
+</table>
       </div>
     </section>
   </article>
