@@ -18,11 +18,13 @@ padding:0 0 10px 0}
 #news a{color:#2e4376}
 #news a:hover{color:#526490}
 
+
 #product{box-shadow:0 -5px 5px #eee}
 #product ul{background:url(../images/id-12.jpg) repeat-x;height:151px;overflow:hidden;padding:0 118px}
 #product li{width:174px;height:100%;float:left}
 #product li a{display:block;width:100%;height:100%;text-align:center;color:#aa1414;
-padding:100px 0 0 0;font-size:22px}
+padding:100px 0 0 0;font-size:22px;cursor: pointer;}
+#product li a:hover{color:#e34d4d;}
 #tab-1 a{background:url(../images/id-06.png) center 58px no-repeat}
 #tab-2 a{background:url(../images/id-07.png) center 51px no-repeat}
 #tab-3 a{background:url(../images/id-08.png) center 26px no-repeat}
@@ -30,14 +32,15 @@ padding:100px 0 0 0;font-size:22px}
 #tab-5 a{background:url(../images/id-10.png) center 45px no-repeat}
 #tab-6 a{background:url(../images/id-11.png) center 36px no-repeat}
 
-#product .active{background:url(../images/id-13.jpg) 0 0 no-repeat}
-#product .active a{font-weight:900}
-#item-box{background:url(../images/id-14.jpg) 0 0 no-repeat;height:470px;padding:80px 0 0 0}
+#tab .active_bg{background:url(../images/id-13.jpg) top center no-repeat;}
+.bx-wrapper{background:url(../images/id-14.jpg) 0 0 no-repeat;height:470px;padding:80px 0 0 0;}
+
 #item-box table{width:790px;margin:0 auto}
 #item-box h4{font:300 24px 微軟正黑體,Microsoft JhengHei}
 #item-box a{color:#007996}
 #item-box a span{font:900 11px verdana;color:#009AB2;margin:0 0 0 5px}
 #item-box a:hover{color:#0E414D}
+
 
 #scope{position:relative;height:577px;background:#fff;padding:30px 0}
 

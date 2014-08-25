@@ -1,10 +1,11 @@
 <link rel="stylesheet" href="/css/front/index.css">
+<script src="/js/jquery.bxslider.min.js"></script>
 <style>
 #banner {background: url(<%= t("env.img_url.id-01") %>) 0 0 no-repeat;height: 539px;}
 #plant-box {position:relative;z-index:1;background:url(<%= t("env.img_url.id-22") %>) 0 0 no-repeat; }
 #intro {background: url(<%= t("env.img_url.id-03") %>) 160px 80px no-repeat;}
 </style>
-<script>
+<!--script>
 $(function(){	
 	var _showTab = 0;
 	var $defaultLi = $('#tab li').eq(_showTab).addClass('active');	
@@ -19,7 +20,7 @@ $(function(){
 		this.blur();
 	});
 });
-</script>
+</script-->
 <script>
 $(function(){	
 	var _showTab = 6;
@@ -35,6 +36,21 @@ $(function(){
 		this.blur();
 	});
 });
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+    auto: true,
+    autoHover: true,
+    pause: 3000,
+    pagerCustom: $('#tab'),
+    controls: false,
+    onSlideAfter: function($slideElement, oldIndex, newIndex){ 
+      $("#tab .active").parent().addClass('active_bg').siblings().removeClass('active_bg');
+    }
+  });
+  
+  $("#tab-1").addClass('active_bg')
+})
 </script>
 <article>
     <div id="intro"> <a id="link" href="<%= page_pages_path("center") %>"><img src="<%= t("env.img_url.id-02") %>"></a>
@@ -71,14 +87,14 @@ $(function(){
     <!--intro-->
     <div id="product">
       <ul id="tab">
-        <li id="tab-1" class="active"><a href="#item-1"><%= t("index.main_product_cate_1")%></a></li>
-        <li id="tab-2"><a href="#item-2"><%= t("index.main_product_cate_2")%></a></li>
-        <li id="tab-3"><a href="#item-3"><%= t("index.main_product_cate_3")%></a></li>
-        <li id="tab-4"><a href="#item-4"><%= t("index.main_product_cate_4")%></a></li>
-        <li id="tab-5"><a href="#item-5"><%= t("index.main_product_cate_5")%></a></li>
-        <li id="tab-6"><a href="#item-6"><%= t("index.main_product_cate_6")%></a></li>
+        <li id="tab-1"><a data-slide-index="0"><%= t("index.main_product_cate_1")%></a></li>
+        <li id="tab-2"><a data-slide-index="1"><%= t("index.main_product_cate_2")%></a></li>
+        <li id="tab-3"><a data-slide-index="2"><%= t("index.main_product_cate_3")%></a></li>
+        <li id="tab-4"><a data-slide-index="3"><%= t("index.main_product_cate_4")%></a></li>
+        <li id="tab-5"><a data-slide-index="4"><%= t("index.main_product_cate_5")%></a></li>
+        <li id="tab-6"><a data-slide-index="5"><%= t("index.main_product_cate_6")%></a></li>
       </ul>
-      <div id="item-box">
+      <div id="item-box" class="bxslider">
         <div id="item-1" class="item">
           <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
@@ -149,7 +165,7 @@ $(function(){
             </tr>
           </table>
         </div>
-      </div>
+      </div><!--item-box-->
     </div>
     <!--product-->
     <div id="scope">
