@@ -9,6 +9,13 @@
 </script>
 <style>
 article h2{background:url(<%= t("env.h2images.gy") %>) center 0 no-repeat}
+#gallery a:nth-child(3){position:relative;top:-35px;}
+#gallery a:nth-child(7),
+#gallery a:nth-child(8){position:relative;left:-30px;}
+#gallery a:nth-child(11),
+#gallery a:nth-child(12){position:relative;left:25px;}
+#gallery a:nth-child(13){position:relative;left:-25px;}
+#gallery a:nth-child(14){position:relative;left:25px;top:-30px;}
 </style>
 <article>
     <h2>觀音廠電線電纜事業介紹</h2>
@@ -68,23 +75,33 @@ article h2{background:url(<%= t("env.h2images.gy") %>) center 0 no-repeat}
             <td valign="top"><%= t("guanyin-certification.title_13")%></td>
           </tr>
         </table><br><br>
-      <table width="648" border="0" cellspacing="0" cellpadding="0">
+
+<div id="gallery">
+<a class="lightbox" href="<%= t("env.img_url.gy-05-10b") %>"><img src="<%= t("env.img_url.gy-05-10") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-11b") %>"><img src="<%= t("env.img_url.gy-05-11") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-14b") %>"><img src="<%= t("env.img_url.gy-05-14") %>"></a>
+<a class="lightbox" href="<%= t("env.img_url.gy-05-1b") %>"><img src="<%= t("env.img_url.gy-05-1") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-2b") %>"><img src="<%= t("env.img_url.gy-05-2") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-5b") %>"><img src="<%= t("env.img_url.gy-05-5") %>"></a>
+<a class="lightbox" href="<%= t("env.img_url.gy-05-8b") %>"><img src="<%= t("env.img_url.gy-05-8") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-9b") %>"><img src="<%= t("env.img_url.gy-05-9") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-3b") %>"><img src="<%= t("env.img_url.gy-05-3") %>"></a>
+<a class="lightbox" href="<%= t("env.img_url.gy-05-4b") %>"><img src="<%= t("env.img_url.gy-05-4") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-7b") %>"><img src="<%= t("env.img_url.gy-05-7") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-6b") %>"><img src="<%= t("env.img_url.gy-05-6") %>"></a>
+<a class="lightbox" href="<%= t("env.img_url.gy-05-12b") %>"><img src="<%= t("env.img_url.gy-05-12") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-13b") %>"><img src="<%= t("env.img_url.gy-05-13") %>"></a>
+</div>
+
+
+      <!--table width="648" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><a class="lightbox" href="<%= t("env.img_url.gy-05-1b") %>"><img src="<%= t("env.img_url.gy-05-1") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-2b") %>"><img src="<%= t("env.img_url.gy-05-2") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-3b") %>"><img src="<%= t("env.img_url.gy-05-3") %>"></a></td>
+    <td><a class="lightbox" href="<%= t("env.img_url.gy-05-10b") %>"><img src="<%= t("env.img_url.gy-05-10") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-11b") %>"><img src="<%= t("env.img_url.gy-05-11") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-14b") %>"><img src="<%= t("env.img_url.gy-05-14") %>"></a></td>
   </tr>
   <tr>
-    <td><a class="lightbox" href="<%= t("env.img_url.gy-05-4b") %>"><img src="<%= t("env.img_url.gy-05-4") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-5b") %>"><img src="<%= t("env.img_url.gy-05-5") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-6b") %>"><img src="<%= t("env.img_url.gy-05-6") %>"></a></td>
+    <td><a class="lightbox" href="<%= t("env.img_url.gy-05-1b") %>"><img src="<%= t("env.img_url.gy-05-1") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-2b") %>"><img src="<%= t("env.img_url.gy-05-2") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-5b") %>"><img src="<%= t("env.img_url.gy-05-5") %>"></a></td>
   </tr>
   <tr>
-    <td><a class="lightbox" href="<%= t("env.img_url.gy-05-7b") %>"><img src="<%= t("env.img_url.gy-05-7") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-8b") %>"><img src="<%= t("env.img_url.gy-05-8") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-9b") %>"><img src="<%= t("env.img_url.gy-05-9") %>"></a></td>
+    <td><a class="lightbox" href="<%= t("env.img_url.gy-05-8b") %>"><img src="<%= t("env.img_url.gy-05-8") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-9b") %>"><img src="<%= t("env.img_url.gy-05-9") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-3b") %>"><img src="<%= t("env.img_url.gy-05-3") %>"></a></td>
   </tr>
   <tr>
-    <td><a class="lightbox" href="<%= t("env.img_url.gy-05-10b") %>"><img src="<%= t("env.img_url.gy-05-10") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-11b") %>"><img src="<%= t("env.img_url.gy-05-11") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-12b") %>"><img src="<%= t("env.img_url.gy-05-12") %>"></a></td>
+    <td><a class="lightbox" href="<%= t("env.img_url.gy-05-4b") %>"><img src="<%= t("env.img_url.gy-05-4") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-7b") %>"><img src="<%= t("env.img_url.gy-05-7") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-6b") %>"><img src="<%= t("env.img_url.gy-05-6") %>"></a></td>
   </tr>
   <tr>
-    <td><a class="lightbox" href="<%= t("env.img_url.gy-05-13b") %>"><img src="<%= t("env.img_url.gy-05-13") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-14b") %>"><img src="<%= t("env.img_url.gy-05-14") %>"></a></td>
+    <td><a class="lightbox" href="<%= t("env.img_url.gy-05-12b") %>"><img src="<%= t("env.img_url.gy-05-12") %>"></a><a class="lightbox" href="<%= t("env.img_url.gy-05-13b") %>"><img src="<%= t("env.img_url.gy-05-13") %>"></a></td>
   </tr>
-</table>
+</table-->
  </div>
     </section>
   </article>

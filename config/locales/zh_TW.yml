@@ -509,7 +509,7 @@ zh_TW:
 <li>年度員工旅遊及親子活動</li>
 <li>每年免費健康檢查</li>
 <li>早、午、晚餐及夜點（工廠）</li>
-<li>鮮乳（飲料）夏季每月發放一箱（兩打），其餘季節每月半箱（一打）</li>
+<li>鮮乳（飲料）夏季每月發放一箱（兩打）<br>其餘季節每月半箱（一打）</li>
 <li>薪資帳戶跨行提款免手續費</li>
 <li>社團活動補助</li>
 <li>年度模範員工禮金禮品及公開表揚</li>
@@ -1456,6 +1456,24 @@ zh_TW:
       3c-05: "/css/images/3c-05.gif"
       3c-06: "/css/images/3c-06.gif"
       3c-07: "/css/images/3c-07.jpg"
+      3c-07-1: "/css/images/3c-07-1.jpg"
+      3c-07-2: "/css/images/3c-07-2.jpg"
+      3c-07-3: "/css/images/3c-07-3.jpg"
+      3c-07-4: "/css/images/3c-07-4.jpg"
+      3c-07-5: "/css/images/3c-07-5.jpg"
+      3c-07-6: "/css/images/3c-07-6.jpg"
+      3c-07-7: "/css/images/3c-07-7.jpg"
+      3c-07-8: "/css/images/3c-07-8.jpg"
+      3c-07-9: "/css/images/3c-07-9.jpg"
+      3c-07-10: "/css/images/3c-07-10.jpg"
+      3c-07-11: "/css/images/3c-07-11.jpg"
+      3c-07-12: "/css/images/3c-07-12.jpg"
+      3c-07-13: "/css/images/3c-07-13.jpg"
+      3c-07-14: "/css/images/3c-07-14.jpg"
+      3c-07-15: "/css/images/3c-07-15.jpg"
+      3c-07-16: "/css/images/3c-07-16.jpg"
+      3c-07-17: "/css/images/3c-07-17.jpg"
+      3c-07-18: "/css/images/3c-07-18.jpg"
       3c-08: "/css/images/3c-08.jpg"
       3c-09: "/css/images/3c-09.png"
       3c-09h: "/css/images/3c-09h.png"
@@ -1621,6 +1639,7 @@ zh_TW:
       hr-06: "/css/images/hr-06.jpg"
       hr-07: "/css/images/hr-07.jpg"
       hr-08: "/css/images/hr-08.jpg"
+      hr-09: "/css/images/hr-09.jpg"
       id-01: "/css/images/id-01.jpg"
       id-02: "/css/images/id-02.jpg"
       id-03: "/css/images/id-03.jpg"
@@ -1679,6 +1698,8 @@ zh_TW:
       jc-04-4b: "/css/images/jc-04-4b.jpg"
       jc-04-5: "/css/images/jc-04-5.jpg"
       jc-04-5b: "/css/images/jc-04-5b.jpg"
+      jc-04-6: "/css/images/jc-04-6.jpg"
+      jc-04-6b: "/css/images/jc-04-6b.jpg"
       jc-04: "/css/images/jc-04.jpg"
       jc-05: "/css/images/jc-05.jpg"
       jc-06: "/css/images/jc-06.jpg"
@@ -1723,10 +1744,13 @@ zh_TW:
       rs-02: "/css/images/rs-02.jpg"
       rs-03: "/css/images/rs-03.jpg"
       rs-04-1: "/css/images/rs-04-1.jpg"
+      rs-04-1b: "/css/images/rs-04-1b.jpg"
       rs-04-2: "/css/images/rs-04-2.jpg"
       rs-04-2b: "/css/images/rs-04-2b.jpg"
       rs-04-3: "/css/images/rs-04-3.jpg"
+      rs-04-3b: "/css/images/rs-04-3b.jpg"
       rs-04-4: "/css/images/rs-04-4.jpg"
+      rs-04-4b: "/css/images/rs-04-4b.jpg"
       rs-04-5: "/css/images/rs-04-5.jpg"
       rs-04-5b: "/css/images/rs-04-5b.jpg"
       rs-04: "/css/images/rs-04.jpg"
@@ -1734,6 +1758,7 @@ zh_TW:
       rs-06: "/css/images/rs-06.jpg"
       rs-07: "/css/images/rs-07.jpg"
       rs-08: "/css/images/rs-08.jpg"
+      rs-09: "/css/images/rs-09.jpg"
       search: "/css/images/search.png"
       top: "/css/images/top.jpg"
       nw-01: "/css/images/nw-01.png"

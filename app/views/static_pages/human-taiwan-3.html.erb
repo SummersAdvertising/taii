@@ -11,18 +11,19 @@ width:340px;height:35px;padding:0 0 0 25px}
 	  <section>
       <h3><%= t("human-taiwan-3.main_title") %></h3>
       <div class="content">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="62%" valign="top">
-    <b><%= t("human-guangzhou-3.title_one") %></b>
+    <td width="74%" valign="top"><b><%= t("human-guangzhou-3.title_one") %></b>
     <%= simple_format( t("human-taiwan-3.title_one_content") )%>
-
-    
+    <br><br>
+    <b><%= t("human-guangzhou-3.title_two") %></b>
+    <%= simple_format( t("human-taiwan-3.title_two_content") )%>
     </td>
-    <td width="38%" valign="top"><b><%= t("human-guangzhou-3.title_two") %></b>
-    <%= simple_format( t("human-taiwan-3.title_two_content") )%></td>
+    <td width="26%" valign="top"><img src="<%= t("env.img_url.hr-09") %>"></td>
   </tr>
 </table>
+
       </div>
     </section>
   </article>
