@@ -48,8 +48,8 @@ padding:100px 0 0 0;font-size:22px;cursor: pointer;}
 #pin li a{display:block;width:100%;height:100%}
 #pin li img{display:none;position:absolute;top:-70px;left:-25px}
 #pin li:hover img{display:block}
-#pin-1{top:159px;left:390px}
-#pin-2{top:168px;left:381px}
+#pin-1{top:203px;left:321px}
+#pin-2{top:208px;left:310px}
 #pin-3{top:175px;left:439px}
 #pin-6{top:157px;left:455px}
 #pin-5{top:165px;left:446px}
