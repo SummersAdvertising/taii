@@ -892,8 +892,7 @@ zh_TW:
                 E-mail：<a href='mailto:sales_m@tai-i-int.com.tw' target='_blank'>sales_m@tai-i-int.com.tw</a></p>"
     subtitle_2:  "<h5>漆包線事業部 - 技術</h5>
                 <p>電話：+886-3-5981521 # 224/346<br>
-                傳真：+886-3-5981166<br>
-                E-mail：<a href='mailto:sales_m@tai-i-int.com.tw' target='_blank'>sales_m@tai-i-int.com.tw</a></p>"
+                傳真：+886-3-5981166</p>"
   jiangcorp-intro:
     main_title: "台一江銅（廣州）有限公司簡介"
     main_desc: "公司成立於 1997 年 5 月，座落于廣州經濟技術開發區東區，由臺灣台一國際股份有限公司投資，公司註冊資本 4,072 萬美元，投資總額 7,022 萬美元，員工人數約 170 人，近年每年營業額約 90 億元人民幣。
@@ -1042,11 +1041,10 @@ zh_TW:
     title_1: "<h5>絕緣材料事業部 - 業務</h5>
                 <p>電話：+886-3-488-4091 # 283<br>
                 傳真：+886-3-488-1564<br>
-                Email：sales_v@tai-i-int.com.tw</p>"
+                Email：<a href='mailto:sales_v@tai-i-int.com.tw' tarfet='_blank'>sales_v@tai-i-int.com.tw</a></p>"
     title_2: "<h5>絕緣材料事業部 - 生技</h5>
                 <p>電話：+886-3-488-4091 # 281<br>
-                傳真：+886-3-488-1564<br>
-                Email：sales_v@tai-i-int.com.tw</p>"
+                傳真：+886-3-488-1564</p>"
   guanyin3c-intro:
     main_title: "觀音廠3C事業簡介"
     main_title_desc: "觀音廠 3C 事業創立於 2012 年，設立於桃園縣觀音鄉，產品為電子電源線，年產量約 6000 萬組。"
@@ -1146,8 +1144,7 @@ zh_TW:
                   E-mail：<a href='mailto:sales_a@tai-i-int.com.tw' target='_blank'>sales_a@tai-i-int.com.tw</a></p>"
     title_2: "<h5>3C 事業 - 技術</h5>
                 <p>電話：+886-3-4907711 # 835<br>
-                  傳真：+886-3-4906087<br>
-                  E-mail：<a href='mailto:sales_a@tai-i-int.com.tw' target='_blank'>sales_a@tai-i-int.com.tw</a></p>"
+                  傳真：+886-3-4906087</p>"
   guanyin-intro:
     main_title: "電線電纜事業簡介"
     main_title_desc: "於 1954 年 6 月創立低壓廠，於 1993 年增設高壓廠，並於 1996 年合併為電線電纜事業部，最適產品組合年產量約 16,000 公噸，為電線電纜與光纜業的領導廠商之一，產品涵蓋民生基礎工業（如營建、通信等）與重大經濟工程（如台灣電力、高鐵等）配合都市發展，提供高品質之供電可靠度，並因應區域性負載自然成長，深獲客戶好評。"
@@ -1405,8 +1402,7 @@ zh_TW:
                   E-mail：<a href='mailto:sales_p@tai-i-int.com.tw' target='_blank'>sales_p@tai-i-int.com.tw</a></p>"
     content_2: "<h5>電線電纜事業部 - 品保與生技</h5>
                 <p>電話：+886-3-4907711 # 693/631<br>
-                  傳真：+886-3-4902275<br>
-                  E-mail：<a href='mailto:sales_p@tai-i-int.com.tw' target='_blank'>sales_p@tai-i-int.com.tw</a></p>"
+                  傳真：+886-3-4902275</p>"
   x_about-responsibility: 
     main_title:
     title_one:
