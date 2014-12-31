@@ -1,0 +1,87 @@
+<header>
+  <h2 class="left">首頁輪播</h2>
+  <nav class="left"> 
+  <% Hqlevel.full_house.each do | lang | %>
+      <%= link_to t("env.language.#{lang.locale}"), admin_banners_path(locale: lang.locale ), 'data-no-turbolink' => true %>
+  <% end %>
+目前語系：<%=t( "env.language.#{I18n.locale}") %>
+  </nav>
+</header>
+<article>
+  <% if @banners.count < 4 %>
+    <div class="button"><a href="<%= new_admin_banner_path %>" class="right highlight" >新增輪播<img src="/images/add.png"></a></div>
+  <% end %>
+
+  <div class="gallery" id="listBanner">
+    <% @banners.each do |banner| %>
+
+    <div class="thumb left" <%= "id=reorderBannerContainer_#{banner.id.to_s}" %> >
+      <%= link_to '', admin_banner_path(banner.id, locale: I18n.locale), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete',title: "刪除" %>
+      <a href="<%= edit_admin_banner_path(banner, locale: I18n.locale)%>">
+        <% if banner.attachments.count < 1 %>
+          <%= image_tag "/images/sample-105.jpg"%>
+        <% else %>
+          <image src=<%= "#{banner.attachments.first.attachment.url}" %> width='50%' height='50%' />
+        <% end %>
+      </a>
+      <%# link_to "編輯", edit_admin_banner_path(banner) %>
+    </div>
+
+    <% end %>    
+  </div>
+
+               		
+</article>
+<script>
+
+$(function() {
+			var prevEvent = null;
+		    $( "#listBanner" ).sortable({
+		      //connectWith: ".renamelevelcontainer",
+		      placeholder: "ui-state-highlight",
+		      update: function( event, ui ) {
+			      	
+					if(event.timeStamp == prevEvent){
+						return null;
+					}
+					
+					prevEvent = event.timeStamp;	
+					var newRankings_array = $('#listBanner').sortable('toArray');
+					var orderSet = [];
+					$.each(newRankings_array, function( index, value){
+				      	orderSet.push(value.replace("reorderBannerContainer_",""));
+				    });
+				    var order2Push = JSON.stringify(orderSet);
+				  	
+				  	$.ajaxSetup({
+					  	headers: {
+							    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+						}
+					});
+
+				  	  //multiple reorder 
+					  	$.ajax({
+					      type: "PATCH",
+					      url: "/admin/"+"<%= I18n.locale.to_s %>"+"/banners/"+orderSet[0]+"/multiple_reorder",
+					      data: { banner: {  reorderset: orderSet } },
+					      success: function(data){
+						   //alert ("success");
+	   					  	//console.log("================ brproducts reorder PATCH successfully end =============");
+					        return false   
+					      },
+					      error: function(data){
+						    //alert ("faild");
+					        //console.log("================ brproducts reorder has some issues ==================");
+					        return false  
+					      }
+					    });
+
+		      }
+		    });
+		    
+			    
+		    $( "#listBanner" ).disableSelection();
+		  });  
+</script>
+
+

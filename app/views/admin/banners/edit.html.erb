@@ -1,0 +1,51 @@
+<header>
+  <h2 class="left">首頁輪播</h2>
+  <nav class="left"></nav>
+</header>
+
+<article>	
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    
+    <% if @banner.errors.any? %>
+    	<div id="error_explanation">
+	    	<h2><%= pluralize(@banner.errors.count, "error") %> :</h2>
+		    <ul>
+		    <% @banner.errors.full_messages.each do |msg| %>
+		      <li><%= msg %></li>
+		    <% end %>
+		    </ul>
+		  </div>
+		<% end %>
+
+<div class="form">	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+      <td width="10%">連結：</td>
+      <td width="90%">
+        <%= form_for(@banner, url: admin_banner_path(@banner, locale: I18n.locale) , method: "PATCH", html: { id: "patchthisbanner", :multipart => true } ) do |f| %>
+
+	        <% if @gallery_count > 0 %>
+			      <%= render 'admin/common/show_attachment', target: @banner, target_title: '圖片', type: '', allow_dragable: false %>
+			    <% else %>
+			      <%= render 'admin/common/upload_attachment', target_title: '圖片' %>
+			    <% end %>
+
+	      	<%= f.text_field :url_1, placeholder: '請輸入連結-1', class: 'text'   , required: true  %>
+	      	<%= f.text_field :url_2, placeholder: '請輸入連結-2', class: 'text'   , required: true  %>
+	      	<%= f.text_field :url_3, placeholder: '請輸入連結-3', class: 'text'   , required: true  %>
+      	<% end %>
+      </td>
+    </tr>
+        
+  </table>
+</div>
+	
+	
+
+	<div class="button"> 
+		<a href="javascript: document.getElementById('patchthisbanner').submit();" class="right highlight" data-no-turbolink = true >儲存<img src="<%= image_path("save.png") %>"></a>
+		<a href="<%= admin_banners_path %>" class="left" data-no-turbolink = true ><img src="<%= image_path("left.png") %>">返回</a> 
+	</div>
+
+</article>

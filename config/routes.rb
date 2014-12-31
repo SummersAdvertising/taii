@@ -159,6 +159,12 @@ Taii::Application.routes.draw do
 				end
 		  end
 			
+			resources :banners do
+			  member do
+			    patch 'multiple_reorder' , :action => 'multiple_reorder'
+			  end
+			end
+
 			resources :photos do
 		  		member do
 		  			post :resize

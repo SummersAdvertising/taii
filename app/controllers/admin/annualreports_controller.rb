@@ -46,11 +46,12 @@ class Admin::AnnualreportsController < AdminController
       if @annualreport.update(annualreport_params)
       
         if params[:filename].present? 
- 			display_name = params[:filename] 
- 		else 
- 			display_name = "#{@annualreport.fiscal_year}年-財務報告-#{@annualreport.attachments.count + 1}"
- 		end
- 		Attachment.create(:attachment => params[:attachment], :attachable => @annualreport, :file_name => display_name) if params[:attachment]	
+ 			    display_name = params[:filename] 
+ 		    else 
+ 			    display_name = "#{@annualreport.fiscal_year}年-財務報告-#{@annualreport.attachments.count + 1}"
+ 		    end
+ 		    
+        Attachment.create(:attachment => params[:attachment], :attachable => @annualreport, :file_name => display_name) if params[:attachment]	
      		
         format.html { redirect_to edit_admin_annualreport_path(@annualreport), notice: 'Annualreport was successfully updated.' }
         format.json { head :no_content }

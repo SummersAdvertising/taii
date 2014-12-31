@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140711100026) do
+ActiveRecord::Schema.define(version: 20141231095031) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "",    null: false
@@ -76,6 +76,25 @@ ActiveRecord::Schema.define(version: 20140711100026) do
     t.integer  "ranking",         default: 999, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "banner_translations", force: true do |t|
+    t.integer  "banner_id",  null: false
+    t.string   "locale",     null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "url_1"
+    t.text     "url_2"
+    t.text     "url_3"
+  end
+
+  add_index "banner_translations", ["banner_id"], name: "index_banner_translations_on_banner_id"
+  add_index "banner_translations", ["locale"], name: "index_banner_translations_on_locale"
+
+  create_table "banners", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "ranking",    default: 999, null: false
   end
 
   create_table "brlevel_translations", force: true do |t|

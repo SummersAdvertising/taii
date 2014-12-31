@@ -53,6 +53,16 @@ $(document).ready(function(){
 })
 </script>
 <article>
+    <div>
+      <% @banners.each do |banner|  %>
+        <% if banner.attachments.first %>
+          <img src='<%= banner.attachments.first.attachment.url %>' />
+          <p><%= link_to '[ 1 ]', banner.url_1 %></p>
+          <p><%= link_to '[ 2 ]', banner.url_2 %></p>
+          <p><%= link_to '[ 3 ]', banner.url_3 %></p>
+        <% end %>
+      <% end %>
+    </div>
     <div id="intro"> <a id="link" href="<%= page_pages_path("center") %>"><img src="<%= t("env.img_url.id-02") %>"></a>
       <div id="faith">
         <h3><%= t("index.spirit_main_title") %></h3>
