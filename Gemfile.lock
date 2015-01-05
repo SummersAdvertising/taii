@@ -1,4 +1,16 @@
 GIT
+  remote: git://github.com/activerecord-hackery/ransack.git
+  revision: d1fc95b3c21c8294e69c70e3995459d11dabfd67
+  branch: rails-4
+  specs:
+    ransack (1.2.3)
+      actionpack (>= 4.0)
+      activerecord (>= 4.0)
+      activesupport (>= 4.0)
+      i18n
+      polyamorous (~> 1.1)
+
+GIT
   remote: git://github.com/plataformatec/devise.git
   revision: eeb6060d9df0aac63d2f8cc90895941b30ba1c0f
   specs:
@@ -95,6 +107,8 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
     orm_adapter (0.5.0)
+    polyamorous (1.1.0)
+      activerecord (>= 3.0)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-contrib (1.1.0)
@@ -177,6 +191,7 @@ DEPENDENCIES
   mini_magick
   mysql2
   rails (= 4.0.0)
+  ransack!
   remotipart
   rmagick (= 2.13.2)
   sass-rails (~> 4.0.0)

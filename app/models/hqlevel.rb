@@ -35,7 +35,7 @@ class Hqlevel < ActiveRecord::Base
   #return one level only
   #should be useful to create subfolder
   def find_my_direct_childrent
-   	  Hqlevel.with_translations(I18n.locale).where("hqlevels.level="+(self.level+1).to_s+" and hqlevels.parent="+self.id.to_s+" and hqlevels.locale='"+ I18n.locale.to_s+"'").order('hqlevels.ranking, hqlevels.id').select("hqlevels.id, hqlevels.ranking ,hqlevels.level,hqlevels.updated_at, hqlevels.chaos, hqlevel_translations.name")  	
+    Hqlevel.with_translations(I18n.locale).where("hqlevels.level="+(self.level+1).to_s+" and hqlevels.parent="+self.id.to_s+" and hqlevels.locale='"+ I18n.locale.to_s+"'").order('hqlevels.ranking, hqlevels.id').select("hqlevels.id, hqlevels.ranking ,hqlevels.level,hqlevels.updated_at, hqlevels.chaos, hqlevel_translations.name")  	
   end
   
   @@tree = []

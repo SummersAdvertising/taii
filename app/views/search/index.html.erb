@@ -2,13 +2,15 @@
 <ul>
 	HQ<%= t("env.hqlevel_show.breadcrumb") %>
 	<% @hq_result.each do | result | %>
-		<li>
-			<% hq_breadcrumb = (Hqlevel.find(result.hqlevel_id)).find_my_direct_parent %>
-			<% hq_breadcrumb.reverse.each_with_index do | level, index | %>
-					<%=  level.name %> <%= " > " if hq_breadcrumb.length - 1 != index%>
-					<%= link_to "#{result.name}", hqlevel_path(@hq_root_node, locale: I18n.locale, product: result.id )%><br>
-			<% end %>
-		</li>
+		<% hq_breadcrumb = (Hqlevel.find(result.hqlevel_id)).find_my_direct_parent %>
+		<% if hq_breadcrumb.present? %>
+			<li>
+				<% hq_breadcrumb.reverse.each_with_index do | level, index | %>
+						<%=  level.name %> <%= " > " if hq_breadcrumb.length - 1 != index%>
+						<%= link_to "#{result.name}", hqlevel_path(@hq_root_node, locale: I18n.locale, product: result.id )%><br>
+				<% end %>
+			</li>
+		<% end %>
 	<% end %>
 </ul>
 <% end %>

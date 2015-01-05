@@ -71,6 +71,7 @@ gem 'rmagick' , '2.13.2'
 gem 'mime-types'
 
 gem 'globalize', '~> 4.0.1'
+gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4'
 
 group :development do
   gem 'meta_request'

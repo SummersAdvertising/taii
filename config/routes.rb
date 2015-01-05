@@ -204,7 +204,7 @@ Taii::Application.routes.draw do
   get 'contactus' => "contact#contactus"
   
   get 'set_locale/:locale' => "static_pages#set_locale", :as => :set_locale, :locale => /en|zh_TW|zh_CN|ja/
-	get 'search' => "search#index", :as => :search
+	post 'search' => "search#index", :as => :search
 	#resources :search, only: [:index]
 	root :to => 'static_pages#index'
   #root :to => 'static_pages#construct'

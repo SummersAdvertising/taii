@@ -1,0 +1,15 @@
+<% @q = Hqproduct.with_translations(I18n.locale).where(showatfront: 200).search(params[:q].try(:merge, m: 'or')) %>
+<%= search_form_for @q, url: search_path(), class: "form-inline quick-search-form" , method: :post  do |f| %>
+  <table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+    <tr>
+      <td valign="top">
+        <%= f.search_field :translations_name_cont, class: "text", placeholder: "Search here", required: true %>
+      </td>
+      <td valign="top">
+        <%= f.submit('' , id: "quick-search", class: "button") %>
+        
+        <%# submit_tag "", class: "button", data: { onclick: "$('#searchform').submit();" } %>
+      </td>
+    </tr>
+  </table>
+<% end %>
