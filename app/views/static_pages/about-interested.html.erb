@@ -1,25 +1,20 @@
 <link rel="stylesheet" href="/css/front/about.css">
 <style>
 article aside ul li.active > a { background-image: url(<%= t("env.img_url.ab-03hh") %>) }
-article section { background: url(<%= t("env.img_url.ab-08") %>) 55px 185px no-repeat #F6F6F3; height: 1450px }
-#box-1 { top: 155px; left: 185px; width: 540px }
-#box-2 { top: 520px; left: 380px; width: 340px }
-#box-3 { top: 885px; left: 380px; width: 340px }
-article .item{position:absolute;left:0;bottom:0;z-index:2}
+article section .content{padding:0 0 80px 55px}
 article h2{background:url(<%= t("env.img_url.ab-01") %>) center 0 no-repeat}
 </style>
 <article>
     <h2>關於台一</h2>
-    <div class="item"><img src="<%= t("env.img_url.ab-09") %>"></div>
     	<aside>
       <ul>
         <li class="about-intro"><%= link_to t("about_side_menu.intro"), page_pages_path("about-intro") %></li>
         <li class="about-history"><%= link_to t("about_side_menu.history"), page_pages_path("about-history") %></li>
         <li class="about-concept"><%= link_to t("about_side_menu.concept"), page_pages_path("about-concept") %></li>
-        <li class="about-responsibility active"><%= link_to t("about_side_menu.responsibility"), page_pages_path("about-interested") %>
+        <li class="about-interested active"><%= link_to t("about_side_menu.responsibility"), page_pages_path("about-interested") %>
           <div class="sub">
-            <%= link_to t("about_side_menu.interested"), page_pages_path("about-interested") %>
-            <%= link_to t("about_side_menu.sustainability"), page_pages_path("about-responsibility"),class: "active" %>
+            <%= link_to t("about_side_menu.interested"), page_pages_path("about-interested"),class: "active" %>
+            <%= link_to t("about_side_menu.sustainability"), page_pages_path("about-responsibility") %>
           </div>
         </li>
         <li><%= link_to t("about-product-1.nav_main_product"), page_pages_path("about-product-1") %>
@@ -33,19 +28,8 @@ article h2{background:url(<%= t("env.img_url.ab-01") %>) center 0 no-repeat}
       </ul>
     </aside>
      <section>
-      <h3><%=t("about-responsibility.main_title")%></h3>
-      <div class="box" id="box-1"> <b><%=t("about-responsibility.title_one")%></b><br>
-        <br>
-        <%= simple_format(t("about-responsibility.title_one_content"))%>
-      </div>
-      <div class="box" id="box-2"> <b><%=t("about-responsibility.title_two")%></b><br>
-        <br>
-        <%= simple_format(t("about-responsibility.title_two_content"))%>
-        </div>
-      <div class="box" id="box-3"> <b><%=t("about-responsibility.title_three")%></b><br>
-        <br>
-        <%= simple_format(t("about-responsibility.title_three_content"))%>
-      </div>
+      <h3><%=t("about-interested.main_title")%></h3>
+      
     </section>
   </article>
 

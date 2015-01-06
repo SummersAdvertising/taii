@@ -1,11 +1,19 @@
 ﻿
 body{background:#D2D2D1}
 
-#wrapper > header{height:671px}
-#banner{background:url(../images/id-01.jpg) 0 0 no-repeat;height:539px}
+#wrapper > header{height:auto!important;}
+#banner{height:360px;}
+#banner div,
+#banner ul,
+#banner li{height:100%;}
+#banner .bx-wrapper{padding:0}
 
-#intro{background:url(../images/id-03.jpg) 160px 80px no-repeat;overflow:hidden;position:relative;
-padding:55px 0 0 470px;height:415px}
+#banner li{overflow:hidden;}
+#banner li a{height:100%;width:33%;float:left;display:block;text-indent:-9999px;font-size:0%;}
+#banner li a:hover{box-shadow:inset 0 0 10px #000}
+#banner li:nth-child(2){width:34%;}
+
+#intro{overflow:hidden;position:relative;padding:55px 0 0 470px;height:415px}
 #intro h3{background:url(../images/id-05.jpg) 0 bottom no-repeat;font:300 20px 微軟正黑體,Microsoft JhengHei;
 padding:0 0 10px 0}
 #link{position:absolute;top:315px;left:210px}
@@ -57,7 +65,7 @@ padding:100px 0 0 0;font-size:22px;cursor: pointer;}
 #pin-7{top:155px;left:465px}
 #pin-8{top:236px;left:427px}
 #pin-9{top:244px;left:436px}
-#plant-box{position:relative;z-index:1;background:url(../images/id-22.jpg) 0 0 no-repeat;
+#plant-box{position:relative;z-index:1;
 width:1019px;height:100%;margin:0 auto;color:#484848}
 #plant-box h5{background:url(../images/id-04.jpg) 0 center no-repeat;padding:0 0 0 20px;
 font:300 17px 微軟正黑體,Microsoft JhengHei;color:#000;line-height:1.7em}

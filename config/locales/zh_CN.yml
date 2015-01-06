@@ -174,6 +174,8 @@ zh_CN:
     operating-1: "集团营运佈局"
     organization: "组织架构"
     group: "集团架构"
+    sustainability: "永绩发展"
+    interested: "利害关系人"
   human_side_menu:
     title: "台一江铜、台一铜业"
     guangzhou-1: "人力资源政策"
@@ -188,7 +190,7 @@ zh_CN:
     taiwan-3: "薪资福利"
     taiwan-4: "教育训练"
   about-responsibility:
-    main_title: "企业责任"
+    main_title: "永绩发展"
     title_one: "落实公司治理"
     title_one_content: "<ul><li>台一集团订有相关企业社会责任之制度与执行的相关规定。</li><li>台一集团设置有推动企业社会责任专（兼）职单位运作相关措施。</li><li>集团总部及各事业部相关权责单位共同推动企业社会责任之运行，并透过环保政策，以实践社会责任时对公司产生的具体效果即为减少资源的浪费并增进能源使用效率。</li></ul>"
     title_two: "发展永续环境"
@@ -401,6 +403,8 @@ zh_CN:
   about-group:
     main_title: "集团架构"
     group_img_url: "/css/images/cn/ab-26.jpg"
+  about-interested:
+    main_title: "利害关系人"
   human-guangzhou-1:
     main_title: "台一江铜、台一铜业 - 人力资源政策"
     subtitle: "台一铜业（广州）有限公司和台一江铜（广州）有限公司致力于建设“专业、技术、整合”的一流先进生产企业，始终坚持以人为本的经营理念，通过实施人才强化战略，完善人才发展环境，推动全体员工与台一公司共同发展和进步，构建了具有台一特色的人力资源管理体系，主要包括："
