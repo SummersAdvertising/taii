@@ -5,7 +5,7 @@
         <li><a href="javascript: void(0)" class='investor-999'>財務資訊</a>
           <div class="sub" style="display:none;"> 
             <%= link_to "財務報告", financialreport_investors_path , class: "investors-financialreport" %>
-            <%= link_to "每月營收", monthlyrevenuereport_investors_path(fiscal_month: Time.now.month-1)  , class: "investors-monthlyrevenuereport"%>
+            <%= link_to "每月營收", monthlyrevenuereport_investors_path(fiscal_month: Time.now.month-1 >= 1 ? Time.now.month-1 : 1 )  , class: "investors-monthlyrevenuereport"%>
 	          <%= link_to "財務預測", financialprojection_investors_path  , class: "investors-financialprojection" , 'data-no-turbolink' => true %>
 	         </div>
         </li>
