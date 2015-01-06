@@ -1,57 +1,10 @@
 <link rel="stylesheet" href="/css/front/index.css">
 <script src="/js/jquery.bxslider.min.js"></script>
+<script src="/js/index.js"></script>
 <style>
-#banner {background: url(<%= t("env.img_url.id-01") %>) 0 0 no-repeat;height: 539px;}
-#plant-box {position:relative;z-index:1;background:url(<%= t("env.img_url.id-22") %>) 0 0 no-repeat; }
-#intro {background: url(<%= t("env.img_url.id-03") %>) 160px 80px no-repeat;}
+#plant-box {background:url(<%= t("env.img_url.id-22") %>) 0 0 no-repeat; }
+#intro {background: url(<%= t("env.img_url.id-03") %>) 160px 80px no-repeat #fff;}
 </style>
-<!--script>
-$(function(){	
-	var _showTab = 0;
-	var $defaultLi = $('#tab li').eq(_showTab).addClass('active');	
-	$($defaultLi.find('a').attr('href')).siblings().hide();  
-	$('#tab li').click(function() {		
-		var $this = $(this),
-			_clickTab = $this.find('a').attr('href');		
-		$this.addClass('active').siblings('.active').removeClass('active');
-		$(_clickTab).stop(false, true).fadeIn(1000).siblings().hide(); 
-		return false;
-	}).find('a').focus(function(){
-		this.blur();
-	});
-});
-</script-->
-<script>
-$(function(){	
-	var _showTab = 6;
-	var $defaultLi = $('#pin li').eq(_showTab).addClass('active');	
-	$($defaultLi.find('a').attr('href')).siblings().hide();  
-	$('#pin li').hover(function() {		
-		var $this = $(this),
-			_clickTab = $this.find('a').attr('href');		
-		$this.addClass('active').siblings('.active').removeClass('active');
-		$(_clickTab).stop(false, true).fadeIn(1000).siblings().hide(); 
-		return false;
-	}).find('a').focus(function(){
-		this.blur();
-	});
-});
-
-$(document).ready(function(){
-  $('.bxslider').bxSlider({
-    auto: true,
-    autoHover: true,
-    pause: 3000,
-    pagerCustom: $('#tab'),
-    controls: false,
-    onSlideAfter: function($slideElement, oldIndex, newIndex){ 
-      $("#tab .active").parent().addClass('active_bg').siblings().removeClass('active_bg');
-    }
-  });
-  
-  $("#tab-1").addClass('active_bg')
-})
-</script>
 <article>
     <div>
       <% @banners.each do |banner|  %>
@@ -198,7 +151,7 @@ $(document).ready(function(){
                 <%= simple_format( t("index.copper_basic") )%>
                 
                 </td>
-              <td width="65%" valign="top" class="right"><h4><%= t("index.copper")%></h4>
+              <td width="65%" valign="top" class="right"><h4><  %= t("index.copper")%></h4>
                 <%= simple_format( t("index.copper_adv") )%>
                 <br>
                 <img src="<%= t("env.img_url.id-21") %>"></td>
