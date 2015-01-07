@@ -34,37 +34,26 @@
 	  <div class="button">
 		  <a href="javascript: document.getElementById('patchthisbanner').submit();" class="right highlight" data-no-turbolink = true >上傳<img src="<%= image_path("up.png") %>"></a>
 		</div>
-		<% unless @is_first_banner %>
-			<div class="form">
-			<p>未上傳輪播圖片將不會顯示於首頁</p>
-		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-		      <tr>
-		        <td width="9%">連結左：</td>
-		        <td width="91%">
-		        	<%= f.text_field :url_1, placeholder: '請輸入連結(左)', class: 'text'   , required: true  %></td>
-		      </tr> 
-		      <tr>
-		        <td>連結中：</td>
-		        <td><%= f.text_field :url_2, placeholder: '請輸入連結(中)', class: 'text'   , required: true  %></td>
-		      </tr>
-		      <tr>
-		        <td>連結右：</td>
-		        <td><%= f.text_field :url_3, placeholder: '請輸入連結(右)', class: 'text'   , required: true  %></td>
-		      </tr>            
-		    </table>
-		  </div>
-		<% else %>
-			<div class="form">
-
-				<% if @banners_attachment_count <= 0 %>
-					<p>同語系需上傳至少一張輪播圖片 方可設定連結</p>
-				<% else %>
-					<p>未上傳輪播圖片將不會顯示於首頁</p>
-				<% end %>
-				
-			</div>
-			<%= f.hidden_field :url_1, placeholder: '請輸入連結(左)', class: 'text' %>
-		<% end %>
+		
+		<div class="form">
+		<p>未上傳輪播圖片將不會顯示於首頁</p>
+	    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	      <tr>
+	        <td width="9%">連結左：</td>
+	        <td width="91%">
+	        	<%= f.text_field :url_1, placeholder: '請輸入連結(左)', class: 'text'   , required: true  %>
+	        </td>
+	      </tr> 
+	      <tr>
+	        <td>連結中：</td>
+	        <td><%= f.text_field :url_2, placeholder: '請輸入連結(中)', class: 'text'   , required: true  %></td>
+	      </tr>
+	      <tr>
+	        <td>連結右：</td>
+	        <td><%= f.text_field :url_3, placeholder: '請輸入連結(右)', class: 'text'   , required: true  %></td>
+	      </tr>            
+	    </table>
+	  </div>
 	  <!--form-->
 	  <% end %>
 
@@ -74,30 +63,24 @@
 			<%= form_for(@banner, url: admin_banner_path(@banner, locale: I18n.locale) , method: "PATCH", html: { id: "patchthisbanner", :multipart => true } ) do |f| %>
 		  <%= render 'admin/common/show_attachment', target: @banner, target_title: '圖片', type: '', allow_dragable: false %>
 	 	</div>
-	 	<% unless @is_first_banner %>
-		 	<div class="form">
-		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-		      <tr>
-		        <td width="9%">連結左：</td>
-		        <td width="91%">
-		        	<%= f.text_field :url_1, placeholder: '請輸入連結(左)', class: 'text'   , required: true  %></td>
-		      </tr> 
-		      <tr>
-		        <td>連結中：</td>
-		        <td><%= f.text_field :url_2, placeholder: '請輸入連結(中)', class: 'text'   , required: true  %></td>
-		      </tr>
-		      <tr>
-		        <td>連結右：</td>
-		        <td><%= f.text_field :url_3, placeholder: '請輸入連結(右)', class: 'text'   , required: true  %></td>
-		      </tr>             
-		    </table>
-		  </div>
-	  <% else %>
-			<div class="form">
-				<p>第一張輪播無法設定連結</p>
-				<%= f.hidden_field :url_1, placeholder: '請輸入連結(左)', class: 'text' %>
-			</div>
-		<% end %>
+	 	
+	 	<div class="form">
+	    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	      <tr>
+	        <td width="9%">連結左：</td>
+	        <td width="91%">
+	        	<%= f.text_field :url_1, placeholder: '請輸入連結(左)', class: 'text'   , required: true  %></td>
+	      </tr> 
+	      <tr>
+	        <td>連結中：</td>
+	        <td><%= f.text_field :url_2, placeholder: '請輸入連結(中)', class: 'text'   , required: true  %></td>
+	      </tr>
+	      <tr>
+	        <td>連結右：</td>
+	        <td><%= f.text_field :url_3, placeholder: '請輸入連結(右)', class: 'text'   , required: true  %></td>
+	      </tr>             
+	    </table>
+	  </div>
 	  <!--form-->
   	<% end %>
 
