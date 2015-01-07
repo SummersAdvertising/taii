@@ -1,4 +1,4 @@
-<% if !@hq_result.nil? && @hq_result.count > 0 %>
+<% if @hq_has_results == true %>
 <ul>
 	HQ<%= t("env.hqlevel_show.breadcrumb") %>
 	<% @hq_result.each do | result | %>
@@ -17,7 +17,7 @@
 
 <br>
 
-<% if !@br_result.nil? && @br_result.count > 0 %>
+<% if @br_has_results == true %>
 <ul>
 	BR<%= t("env.hqlevel_show.breadcrumb") %>
 	<% @br_result.each do | result | %>
@@ -30,4 +30,8 @@
 		</li>
 	<% end %>
 </ul>
+<% end %>
+
+<% if @hq_has_results == false && @br_has_results == false %>
+	<h1>查無產品</h1>
 <% end %>
