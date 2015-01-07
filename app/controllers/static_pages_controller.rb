@@ -1,10 +1,16 @@
 class StaticPagesController < ApplicationController
 	respond_to :html
   def index
-  		@news = Announcement.with_translations(I18n.locale).limit(3)
-      @banners = Banner.with_translations(I18n.locale).limit(3)
-  		#I18n.locale = params[:locale]
-	  	#@hqlevelsRoot = Hqlevel.new.return_root_node()    
+		@news = Announcement.with_translations(I18n.locale).limit(3)
+    @banners = Banner.with_translations(I18n.locale).order(:ranking, :created_at)
+    @banners_attachment_count = 0
+
+    @banners.each do |banner|  
+      @banners_attachment_count += 1 if banner.attachments.first
+    end
+    
+		#I18n.locale = params[:locale]
+  	#@hqlevelsRoot = Hqlevel.new.return_root_node()    
   end
   
   def show

@@ -66,15 +66,25 @@
   
 			<div id="banner">
         <ul class="bxslider">
-          <% @banners.each_with_index do |banner, index|  %>
-            <% if banner.attachments.first %>
-              <li style="background:url(<%= banner.attachments.first.attachment.url %>) 0 0 no-repeat;">
-                <% if index != 0 %>
-                  <%= link_to '', banner.url_1 %><%= link_to '', banner.url_2 %><%= link_to '', banner.url_3 %>
-                <% end %>
-              </li>  
+          <% if @banners_attachment_count > 0 %>
+          
+            <% @banners.each_with_index do |banner, index|  %>
+              <% if banner.attachments.first %>
+                <li style="background:url(<%= banner.attachments.first.attachment.url %>) 0 0 no-repeat;">
+                  <% if index != 0 %>
+                    <%= link_to '', banner.url_1 %><%= link_to '', banner.url_2 %><%= link_to '', banner.url_3 %>
+                  <% end %>
+                </li>  
+              <% end %>
             <% end %>
+          
+          <% else %>
+
+            <li style="background:url(/css/images/id-01.jpg) 0 0 no-repeat;">
+            </li>  
+          
           <% end %>
+
         </ul>
       </div>
 		<% end %>

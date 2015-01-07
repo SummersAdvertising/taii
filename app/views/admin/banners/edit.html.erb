@@ -54,8 +54,15 @@
 		  </div>
 		<% else %>
 			<div class="form">
-				<p>第一張輪播無法設定連結</p>
+			
+				<% if @banners_attachment_count <= 0 %>
+					<p>需上傳至少一張輪播圖片 方可設定連結</p>
+				<% else %>
+					<p>第一張輪播無法使用設定連結功能</p>
+				<% end %>
+				
 			</div>
+			<%= f.hidden_field :url_1, placeholder: '請輸入連結(左)', class: 'text' %>
 		<% end %>
 	  <!--form-->
 	  <% end %>
@@ -87,6 +94,7 @@
 	  <% else %>
 			<div class="form">
 				<p>第一張輪播無法設定連結</p>
+				<%= f.hidden_field :url_1, placeholder: '請輸入連結(左)', class: 'text' %>
 			</div>
 		<% end %>
 	  <!--form-->

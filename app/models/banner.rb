@@ -5,7 +5,7 @@ class Banner < ActiveRecord::Base
   has_many :attachments, -> { order('ranking, created_at') } , as: :attachable , dependent: :destroy
   validates_presence_of :url_1, :url_2, :url_3, on: :update
   
-  default_scope { order('ranking, created_at desc') }
+  default_scope { order('ranking, created_at') }
 
   before_create :check_before_create
   before_update :check_before_update
