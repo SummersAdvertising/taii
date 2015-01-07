@@ -71,9 +71,7 @@
             <% @banners.each_with_index do |banner, index|  %>
               <% if banner.attachments.first %>
                 <li style="background:url(<%= banner.attachments.first.attachment.url %>) 0 0 no-repeat;">
-                  <% if index != 0 %>
-                    <%= link_to '', banner.url_1 %><%= link_to '', banner.url_2 %><%= link_to '', banner.url_3 %>
-                  <% end %>
+                  <%= link_to '', banner.url_1 %><%= link_to '', banner.url_2 %><%= link_to '', banner.url_3 %>
                 </li>  
               <% end %>
             <% end %>

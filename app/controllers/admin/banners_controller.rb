@@ -31,20 +31,20 @@ class Admin::BannersController < AdminController
   # GET /banners/1/edit
   def edit
     
-    @first_banner_of_this_locale = Banner.with_translations(I18n.locale).first
+    # @first_banner_of_this_locale = Banner.with_translations(I18n.locale).first
 
-    if @first_banner_of_this_locale.attachments.first
-      @is_first_banner = @first_banner_of_this_locale.attachments.first.attachable_id == @banner.id ? true : false
-    else
-      @is_first_banner = true
-    end
+    # if @first_banner_of_this_locale.attachments.first
+    #   @is_first_banner = @first_banner_of_this_locale.attachments.first.attachable_id == @banner.id ? true : false
+    # else
+    #   @is_first_banner = true
+    # end
     
-    @banners = Banner.with_translations(I18n.locale)
-    @banners_attachment_count = 0
+    # @banners = Banner.with_translations(I18n.locale)
+    # @banners_attachment_count = 0
 
-    @banners.each do |banner|  
-      @banners_attachment_count += 1 if banner.attachments.first
-    end
+    # @banners.each do |banner|  
+    #   @banners_attachment_count += 1 if banner.attachments.first
+    # end
 
     @gallery_count = @banner.attachments.count
   end
