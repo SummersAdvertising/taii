@@ -30,6 +30,9 @@ class Admin::BannersController < AdminController
 
   # GET /banners/1/edit
   def edit
+    
+    @first_banner_of_this_locale = Banner.with_translations(I18n.locale).first
+    @is_first_banner = @first_banner_of_this_locale.attachments.first.attachable_id == @banner.id ? true : false
     @gallery_count = @banner.attachments.count
   end
 

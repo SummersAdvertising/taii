@@ -66,10 +66,12 @@
   
 			<div id="banner">
         <ul class="bxslider">
-          <% @banners.each do |banner|  %>
+          <% @banners.each_with_index do |banner, index|  %>
             <% if banner.attachments.first %>
               <li style="background:url(<%= banner.attachments.first.attachment.url %>) 0 0 no-repeat;">
-                <%= link_to '', banner.url_1 %><%= link_to '', banner.url_2 %><%= link_to '', banner.url_3 %>
+                <% if index != 0 %>
+                  <%= link_to '', banner.url_1 %><%= link_to '', banner.url_2 %><%= link_to '', banner.url_3 %>
+                <% end %>
               </li>  
             <% end %>
           <% end %>
