@@ -36,6 +36,7 @@
 		</div>
 		<% unless @is_first_banner %>
 			<div class="form">
+			<p>未上傳輪播圖片將不會顯示於首頁</p>
 		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
 		      <tr>
 		        <td width="9%">連結左：</td>
@@ -49,16 +50,16 @@
 		      <tr>
 		        <td>連結右：</td>
 		        <td><%= f.text_field :url_3, placeholder: '請輸入連結(右)', class: 'text'   , required: true  %></td>
-		      </tr>             
+		      </tr>            
 		    </table>
 		  </div>
 		<% else %>
 			<div class="form">
-			
+
 				<% if @banners_attachment_count <= 0 %>
-					<p>需上傳至少一張輪播圖片 方可設定連結</p>
+					<p>同語系需上傳至少一張輪播圖片 方可設定連結</p>
 				<% else %>
-					<p>第一張輪播無法使用設定連結功能</p>
+					<p>未上傳輪播圖片將不會顯示於首頁</p>
 				<% end %>
 				
 			</div>
