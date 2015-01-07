@@ -5,9 +5,9 @@
 		<% hq_breadcrumb = (Hqlevel.find(result.hqlevel_id)).find_my_direct_parent %>
 		<% if hq_breadcrumb.present? %>
 			<li>
+				<%= link_to "#{result.name}", hqlevel_path(@hq_root_node, locale: I18n.locale, product: result.id )%><br>
 				<% hq_breadcrumb.reverse.each_with_index do | level, index | %>
 						<%=  level.name %> <%= " > " if hq_breadcrumb.length - 1 != index%>
-						<%= link_to "#{result.name}", hqlevel_path(@hq_root_node, locale: I18n.locale, product: result.id )%><br>
 				<% end %>
 			</li>
 		<% end %>
@@ -21,13 +21,15 @@
 <ul>
 	BR<%= t("env.hqlevel_show.breadcrumb") %>
 	<% @br_result.each do | result | %>
-		<li>
-			<% br_breadcrumb = (Brlevel.find(result.brlevel_id)).find_my_direct_parent %>
-			<% br_breadcrumb.reverse.each_with_index do | level, index | %>
-				<%=  level.name %> <%= " > " if br_breadcrumb.length - 1 != index%>
+	<% br_breadcrumb = (Brlevel.find(result.brlevel_id)).find_my_direct_parent %>
+		<% if br_breadcrumb.present? %>
+			<li>
 				<%= link_to "#{result.name}", brlevel_path(@br_root_node, locale: I18n.locale, product: result.id )%><br>
-			 <% end %>
-		</li>
+				<% br_breadcrumb.reverse.each_with_index do | level, index | %>
+					<%=  level.name %> <%= " > " if br_breadcrumb.length - 1 != index%>
+				<% end %>
+			</li>
+		<% end %>
 	<% end %>
 </ul>
 <% end %>

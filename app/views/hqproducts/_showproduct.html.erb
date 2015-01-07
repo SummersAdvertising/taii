@@ -12,11 +12,13 @@
 
 <% if @attachments.count > 0 %>
 附件：<br>
+
 	<% @attachments.each do |attach| %>
-	<%= link_to attach.file_name, attach.attachment.url%>[<%= (attach.file_size.to_i)/1000 %>KB] 
-	<br>
+	<div class='attach_file'>
+		<%= link_to attach.file_name, attach.attachment.url%>[<%= (attach.file_size.to_i)/1000 %>KB] 
+	</div>
 	<% end %>
-	<br><br><br>
+	
 <% end %>
 </div>
 
