@@ -13,7 +13,7 @@ a{font:300 15px 微軟正黑體,Microsoft JhengHei;line-height:1.7em;text-decora
 
 #top{background:url(../images/top.jpg) center 0 no-repeat;height:82px;}
 #top h1{float:left;width:50%;padding:17px 0 0 0}
-#top h1 a{background:url(../images/h1.png) 0 0 no-repeat;width:223px;height:51px;
+#top h1 a{background:url(../images/h1.png) 0 0 no-repeat;width:321px;height:51px;
 text-indent:-100%;display:block}
 
 /*-----------------------------------------------------------------------搜尋---*/
@@ -49,10 +49,8 @@ article section img{max-width:100%;height:auto}
 
 /*-----------------------------------------------------------------------頁尾---*/
 
-footer{height:182px;background:url(../images/footer.png) center 0 no-repeat #F6F6F3;color:#fff;
-font-size:12px;padding:10px 0 0 0}
-
-footer{position:relative;}
-footer a{position:absolute;top:50px;right:50px;color:#aaa;display:block;padding:5px 15px 2px 15px;border:1px solid #777;border-radius:5px;
+footer{height:140px;background:url(../images/footer.png) center 0 no-repeat;color:#fff;
+font-size:12px;padding:10px 0 0 0;background-color:#f6f6f3;position:relative;}
+footer a{position:absolute;top:59px;right:20px;color:#eacf48;display:block;padding:3px 15px 0px 15px;border:1px solid #bb9f19;border-radius:5px;
 font-size:13px}
-footer a:hover{background:#333;}
+footer a:hover{background:#bb9f19;color:#736313;}

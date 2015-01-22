@@ -9,7 +9,7 @@ article h2{background:url(../images/ct-01.png) center 0 no-repeat}
 
 /*-----------------------------------------------------------------------內容---*/
 
-article section{padding:60px 0 120px 0;line-height:2em;
+article section{padding:60px 0 120px 0;line-height:1.6em;
 color:#555;position:relative;z-index:1;background:#F6F6F3}
 
 article section > table{width:933px;margin:0 auto}

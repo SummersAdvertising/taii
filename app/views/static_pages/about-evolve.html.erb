@@ -2,6 +2,7 @@
 <style>
 article section .content{padding:0 0 80px 55px}
 article h2{background:url(<%= t("env.img_url.ab-01") %>) center 0 no-repeat}
+article section td{padding:10px 0 0 0;}
 </style>
  <article>
     <h2>關於台一</h2>    
@@ -26,13 +27,11 @@ article h2{background:url(<%= t("env.img_url.ab-01") %>) center 0 no-repeat}
           <tr>
             <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
             <td valign="top"><%=t("about-evolve.title_three")%><br>
-            <%= simple_format( t("about-evolve.title_three_content") )%>
-<br>
-<br></td>
+            <%= simple_format( t("about-evolve.title_three_content") )%></td>
           </tr>
           <tr>
             <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-            <td valign="top"><%=t("about-evolve.title_four")%></td>
+            <td valign="top"><%= simple_format( t("about-evolve.title_four") )%></td>
           </tr>
         </table>
       </div>

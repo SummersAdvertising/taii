@@ -26,7 +26,7 @@ article aside .sub a.active{background:url(../images/ab-11h.png) 30px 12px no-re
 
 /*-----------------------------------------------------------------------主內容---*/
 
-article section{float:right;width:67%;padding:60px 120px 120px 0;line-height:2em;
+article section{float:right;width:67%;padding:60px 120px 120px 0;line-height:1.6em;
 color:#555;position:relative;z-index:1;background:#F6F6F3;min-height:960px}
 
 /*-----------------------------------------------------------------------小標---*/

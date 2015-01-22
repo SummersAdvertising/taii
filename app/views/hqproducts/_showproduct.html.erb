@@ -8,17 +8,18 @@
 
 <h3><%= selectitem.name %></h3>
 
-<div class="content"  id="articleContent"></div>    
-
+<div class="content"  id="articleContent"></div>  
 <% if @attachments.count > 0 %>
-附件：<br>
-
 	<% @attachments.each do |attach| %>
-	<div class='attach_file'>
-		<%= link_to attach.file_name, attach.attachment.url%>[<%= (attach.file_size.to_i)/1000 %>KB] 
-	</div>
-	<% end %>
-	
+		<div class='attach_file'>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>              
+					<td width="8%"><img src="<%= t("env.img_url.3c-09") %>"></td>
+					<td width="92%">附件下載：<br><%= link_to attach.file_name, attach.attachment.url%><span>[<%= (attach.file_size.to_i)/1000 %>KB]</span></td>
+				</tr>
+			</table>
+		</div>
+	<% end %>	
 <% end %>
 </div>
 

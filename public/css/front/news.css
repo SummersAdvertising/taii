@@ -10,7 +10,7 @@ article h2{background:url(../images/nw-01.png) center 0 no-repeat}
 
 /*-----------------------------------------------------------------------內容---*/
 
-article section{line-height:2em;width:1024px;margin:0 auto;
+article section{line-height:1.6em;width:1024px;margin:0 auto;
 color:#555;position:relative;z-index:1;padding:60px 0 500px 0!important;}
 article section .date{font:600 14px "verdana";color:#999999}
 article .left{float:left;width:38%}
