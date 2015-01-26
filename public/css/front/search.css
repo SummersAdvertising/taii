@@ -1,0 +1,12 @@
+
+/*-----------------------------------------------------------------------頁身---*/
+
+#wrapper > article{background:#f6f6f4;padding:50px 180px;min-height:750px;}
+#wrapper > article h3{color:#095368;border-left:6px solid #7CAB2B;font:300 26px 微軟正黑體,Microsoft JhengHei;
+padding:0 0 0 16px;margin:0 0 50px 0}
+#wrapper > article h3 span{font-size:.6em;margin:0 0 0 10px;}
+
+article ul{padding:0 0 0 25px;}
+article li{font:300 18px 微軟正黑體,Microsoft JhengHei;margin:30px 0 0 0;color:#00468e;}
+article li a{font:300 18px 微軟正黑體,Microsoft JhengHei;color:#00468e;}
+article li span{color:#aaa;font-size:14px;padding:10px 0 0 23px;display:inline-block;}

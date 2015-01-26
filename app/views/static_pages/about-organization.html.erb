@@ -1,6 +1,26 @@
 <link rel="stylesheet" href="/css/front/about.css">
+<script>
+$( document ).ready(function(){
+	$('.on').click(function(){
+		$('article aside').animate({width:0,'padding':0},450)
+		$('article section').animate({width:'100%','padding-right':0},500)
+		$('.on').hide()
+		$('.off').show()
+	})
+	$('.off').click(function(){
+		$('article aside').animate({width:'33%','padding':'60px 40px 60px 0'},500)
+		$('article section').animate({width:'67%','padding-right':120},450)
+		$('.on').show()
+		$('.off').hide()
+	})
+})
+</script>
 <style>
-article h2{background:url(<%= t("env.img_url.ab-01") %>) center 0 no-repeat}
+	article h2{background:url(<%= t("env.img_url.ab-01") %>) center 0 no-repeat}
+	article aside{position:relative;overflow:hidden;}
+	.switch{position:absolute;right:30px;top:60px;display:inline-block;background:#1980b6;color:#fff;padding:5px 10px 3px 10px;border-radius:20px;font-size:13px;}
+	.switch:hover{background:#145679;}
+	.off{display:none;}
 </style>
 <article>
     <h2>關於台一</h2>    
@@ -8,7 +28,9 @@ article h2{background:url(<%= t("env.img_url.ab-01") %>) center 0 no-repeat}
     <section>
       <h3><%=t("about-organization.main_title")%></h3>      
       <div class="content">
-      	<img src="<%=t("about-organization.org_img_url")%>">   	
+      	<img src="<%=t("about-organization.org_img_url")%>">
+      	<a class="on switch" href="javascript:void(0)">放大</a>
+      	<a class="off switch" href="javascript:void(0)">返回</a>
       </div>
     </section>
   </article>

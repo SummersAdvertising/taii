@@ -11,12 +11,18 @@ body{background:#D2D2D1}
 #banner li{overflow:hidden;}
 #banner li a{height:100%;width:33.3%;float:left;display:block;text-indent:-9999px;font-size:0%;}
 
-#intro{overflow:hidden;position:relative;padding:55px 0 0 470px;height:415px}
+#intro{overflow:hidden;position:relative;padding:55px 0 0 0px;height:415px}
 #intro h3{background:url(../images/id-05.jpg) 0 bottom no-repeat;font:300 20px 微軟正黑體,Microsoft JhengHei;
 padding:0 0 10px 0}
+#intro h4{font:300 17px 微軟正黑體,Microsoft JhengHei;color:#777;}
 #link{position:absolute;top:315px;left:210px}
 #link:hover{top:313px}
-#faith,#news{width:285px;float:left;margin:0 75px 0 0}
+
+#cpration{width:400px;float:left;margin:0 0 0 75px}
+#cpration a{text-align:right;color:#00468e;float:right}
+#cpration a:hover{color:#307cca;}
+#cpration img{margin:35px 0;}
+#faith,#news{width:285px;float:left;margin:0 0 0 75px}
 #faith td{border-bottom:1px solid #B3E4EA;padding:10px 0}
 #faith b{font:900 16px 微軟正黑體,Microsoft JhengHei}
 #news td{height:85px;padding:5px 0 15px 0;background:url(../images/id-05.jpg) 0 bottom no-repeat}
@@ -46,7 +52,6 @@ padding:100px 0 0 0;font-size:22px;cursor: pointer;}
 #item-box a{color:#007996}
 #item-box a span{font:900 11px verdana;color:#009AB2;margin:0 0 0 5px}
 #item-box a:hover{color:#0E414D}
-	
 
 #scope{position:relative;height:577px;background:#fff;padding:30px 0}
 

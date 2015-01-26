@@ -1,63 +1,58 @@
 <link rel="stylesheet" href="/css/front/plant-2.css">
 <style>
-article h2{background:url(<%= t("env.h2images.gy") %>) center 0 no-repeat}
+article h2 {
+background:url(<%= t("env.h2images.gy") %>) center 0 no-repeat
+}
 </style>
 <article>
-    <h2>觀音廠電線電纜事業介紹</h2>
-		<%= render "plant_sidemenu" %>
-		<%= render "guanyin_sidemenu" %>
-    <section>
-      <h3><%= t("guanyin-superiority.main_title")%></h3>
-      <div class="content">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td align="center"><img src="<%= t("guanyin-superiority.gy-06") %>"></td>
-          </tr>
-        </table>
-      </div>
-      <h4><%= t("guanyin-superiority.title_1")%></h4>
-      <div class="content">
-        <p><%= t("guanyin-superiority.title_1_content")%></p>
-        <br>
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td align="center"><img src="<%= t("guanyin-superiority.gy-07") %>"></td>
-          </tr>
-        </table>
-      </div>
-      <h4><%= t("guanyin-superiority.title_2")%></h4>
-      <div class="content">
-        <p><%= t("guanyin-superiority.title_2_content")%></p>
-        <br>
-        <img src="<%= t("guanyin-superiority.gy-08") %>"> </div>
-      <h4><%= t("guanyin-superiority.title_3")%></h4>
-      <div class="content"> <%= t("guanyin-superiority.title_3_content")%></div>
-      <h4><%= t("guanyin-superiority.title_4")%></h4>
-      <div class="content"> <%= t("guanyin-superiority.title_4_content")%></div>
-      <h4><%= t("guanyin-superiority.title_5")%></h4>
-      <div class="content">
-        <%= simple_format( t("guanyin-superiority.title_5_content_1") )%>
-        
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="3%" valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-            <td width="97%" valign="top">
-            <%= simple_format( t("guanyin-superiority.title_5_content_2") )%>
-</td>
-          </tr>
-          <tr>
-            <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-            <td valign="top">
-            <%= simple_format( t("guanyin-superiority.title_5_content_3") )%>
-<br>
-<img src="<%= t("guanyin-superiority.gy-09") %>"></td>
-          </tr>
-        </table>
-      </div>
-      <h4><%= t("guanyin-superiority.title_6")%></h4>
-      <div class="content">
-      <p><%= t("guanyin-superiority.title_6_content")%></p>
-      <br><img src="<%= t("env.img_url.gy-10") %>">
-      </div>
-    </section>
-  </article>
+<h2>觀音廠電線電纜事業介紹</h2>
+<%= render "plant_sidemenu" %> <%= render "guanyin_sidemenu" %>
+<section>
+  <h3><%= t("guanyin-superiority.main_title")%></h3>
+  <div class="content">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center"><img src="<%= t("guanyin-superiority.gy-06") %>"></td>
+      </tr>
+    </table>
+  </div>
+  <h4><%= t("guanyin-superiority.title_1")%></h4>
+  <div class="content">
+    <p><%= t("guanyin-superiority.title_1_content")%></p>
+    <br>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center"><img src="<%= t("guanyin-superiority.gy-07") %>"></td>
+      </tr>
+    </table>
+  </div>
+  <h4><%= t("guanyin-superiority.title_2")%></h4>
+  <div class="content">
+    <p><%= t("guanyin-superiority.title_2_content")%></p>
+    <br>
+    <img src="<%= t("guanyin-superiority.gy-08") %>"> </div>
+  <h4><%= t("guanyin-superiority.title_3")%></h4>
+  <div class="content"> <%= t("guanyin-superiority.title_3_content")%></div>
+  <h4><%= t("guanyin-superiority.title_4")%></h4>
+  <div class="content"> <%= t("guanyin-superiority.title_4_content")%></div>
+  <h4><%= t("guanyin-superiority.title_5")%></h4>
+  <div class="content"> <%= simple_format( t("guanyin-superiority.title_5_content_1") )%>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="3%" valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+        <td width="97%" valign="top"><%= simple_format( t("guanyin-superiority.title_5_content_2") )%></td>
+      </tr>
+      <tr>
+        <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+        <td valign="top"><%= simple_format( t("guanyin-superiority.title_5_content_3") )%> <br>
+          <img src="<%= t("guanyin-superiority.gy-09") %>"></td>
+      </tr>
+    </table>
+  </div>
+  <h4><%= t("guanyin-superiority.title_6")%></h4>
+  <div class="content">
+    <p><%= t("guanyin-superiority.title_6_content")%></p>
+    <br>
+    <img src="<%= t("env.img_url.gy-10") %>"> </div>
+</section>
+</article>

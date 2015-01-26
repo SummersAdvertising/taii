@@ -3,10 +3,14 @@
 <script src="/js/index.js"></script>
 <style>
 #plant-box {background:url(<%= t("env.img_url.id-22") %>) 0 0 no-repeat; }
-#intro {background: url(<%= t("env.img_url.id-03") %>) 160px 80px no-repeat #fff;}
 </style>
 <article>
-    <div id="intro"> <a id="link" href="<%= page_pages_path("center") %>"><img src="<%= t("env.img_url.id-02") %>"></a>
+    <div id="intro">
+      <div id="cpration">
+        <h4>各家合作機構</h4>
+        <img src="/css/images/id-37.jpg">
+        <a href="<%= page_pages_path("center") %>">了解更多 ></a>
+      </div>
       <div id="faith">
         <h3><%= t("index.spirit_main_title") %></h3>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -141,7 +145,7 @@
                 <%= simple_format( t("index.copper_basic") )%>
                 
                 </td>
-              <td width="65%" valign="top" class="right"><h4><  %= t("index.copper")%></h4>
+              <td width="65%" valign="top" class="right"><h4><%= t("index.copper")%></h4>
                 <%= simple_format( t("index.copper_adv") )%>
                 <br>
                 <img src="<%= t("env.img_url.id-21") %>"></td>
