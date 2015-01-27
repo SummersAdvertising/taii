@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="/css/front/center.css">
+<style>
+article h2{background:url(<%= t("env.img_url.ct-01") %>) center 0 no-repeat}
+</style>
 <article>
 <ul>
 	<li><a href="#paper-1"><img src="/css/images/ct-16.jpg"></a></li>
@@ -11,35 +14,29 @@
     <section>
     	<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	        <tr id="paper-1">
-	          	<td valign="top" width="38%"><h3>工業技術研究院</h3></td>
+	          	<td valign="top" width="38%"><h3><%=t("center.title_1")%></h3></td>
 	          	<td valign="top" width="62%"><img src="/css/images/ct-08.jpg"></td>
 	        </tr>
 	        <tr id="paper-2">
-	          	<td valign="top"><h3>SAP</h3></td>
+	          	<td valign="top"><h3><%=t("center.title_2")%></h3></td>
 	          	<td valign="top"><img src="/css/images/ct-09.jpg"></td>
 	        </tr>
 	        <tr id="paper-3">
-	          	<td valign="top"><h3>金屬工業研究發展中心</h3></td>
+	          	<td valign="top"><h3><%=t("center.title_3")%></h3></td>
 	          	<td valign="top"><img src="/css/images/ct-10.jpg"><br><img src="/css/images/ct-11.jpg"></td>
 	        </tr>
 	        <tr id="paper-4">
-	          	<td valign="top"><h3>鄧白氏企業認證</h3></td>
+	          	<td valign="top"><h3><%=t("center.title_4")%></h3></td>
 	          	<td valign="top"><img src="/css/images/ct-12.jpg"></td>
 	        </tr>
 	        <tr id="paper-5">
-	          	<td valign="top"><h3>聯合國物資採購中心</h3></td>
+	          	<td valign="top"><h3><%=t("center.title_5")%></h3></td>
 	          	<td valign="top"><img src="/css/images/ct-13.jpg"><br><img src="/css/images/ct-14.jpg"><br><br>
-	          	<h4>聯合國物資採購監管中心臺灣中心介紹</h4>
-	          	<p>成立於美國洛杉磯、直屬聯合國的世界資訊機構（WIO-UN）是全球最權威、最全面的資訊機構，多年來為各國的發展和進步，做出了卓越的貢獻。<br><br>
-
-為了讓「聯合國千年發展目標」早日實現，聯合國世界資訊機構董事會決定聯合國際資本、基金、銀行等成立聯合國世界資訊機構金融投資集團（WIO-UN Corp），在 2011 年底獲得中國駐美國洛杉磯總領事館正式確認，並於 2012 年成立中國運營總部。<br><br>
-
-聯合國世界資訊機構金融投資集團多年來集合國際資本在世界各國成功地對接了超大型項目，並成功安排多家國際銀行、基金以及信託公司完成了多個專案融資，為進一步落實聯合國千年發展目標，共謀和諧發展之路，經聯合國世界資訊機構美國總部批准，又在中國成立聯合國物資採購監管中心（UNMPCC），為中國企業物資進入聯合國採購和各國政府採購提供服務，為推廣世界高科技專案提供商務平台。<br><br>
-	
-為幫助更多台灣企業進入聯合國採購和成員國採購的行列，並引進世界高科技項目進入台灣，聯合國物資採購監管中心特授權中華關懷兩岸企業聯合會會長吳達民先生全權籌辦聯合國物資採購監管中心台灣中心（UNMPCCTW），讓台灣也有專屬平台，為實現聯合國千年發展目標共同努力，貢獻一份力量。</p>
+	          	<%=simple_format(t("center.content_1"))%>
 <table>
+	          	
 	<tr>
-		<td width="75%">資料來源：<a href="http://unmpcctw-2014140108.weebly.com/" target="_blank">聯合國物資採購監管中心台灣中心網站</a></td>
+		<td width="75%"><%=t("center.content_2")%><a href="http://unmpcctw-2014140108.weebly.com/" target="_blank"><%=t("center.content_3")%></a></td>
 		<td><img src="/css/images/ct-15.jpg" style="box-shadow:none"></td>
 	</tr>
 </table>
