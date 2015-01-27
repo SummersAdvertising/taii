@@ -1,118 +1,93 @@
 <link rel="stylesheet" href="/css/front/about.css">
 <style>
-article aside ul li.active > a { background-image: url(<%= t("env.img_url.ab-03hh") %>) }
-article section .content{padding:0 0 20px 55px}
-article section .content b,article section .content a{color:#1980b6;font-size:1em;}
-article h2{background:url(<%= t("env.img_url.ab-01") %>) center 0 no-repeat}
+article aside ul li.active > a {
+background-image: url(<%= t("env.img_url.ab-03hh") %>)
+}
+article section .content {
+  padding:0 0 20px 55px
+}
+article section .content b, article section .content a {
+  color:#1980b6;
+  font-size:1em;
+}
+article h2 {
+background:url(<%= t("env.img_url.ab-01") %>) center 0 no-repeat
+}
 </style>
 <article>
-    <h2>關於台一</h2>
-    	<aside>
-      <ul>
-        <li class="about-intro"><%= link_to t("about_side_menu.intro"), page_pages_path("about-intro") %></li>
-        <li class="about-history"><%= link_to t("about_side_menu.history"), page_pages_path("about-history") %></li>
-        <li class="about-concept"><%= link_to t("about_side_menu.concept"), page_pages_path("about-concept") %></li>
-        <li class="about-interested active"><%= link_to t("about_side_menu.responsibility"), page_pages_path("about-interested") %>
-          <div class="sub">
-            <%= link_to t("about_side_menu.interested"), page_pages_path("about-interested"),class: "active" %>
-            <%= link_to t("about_side_menu.sustainability"), page_pages_path("about-responsibility") %>
-          </div>
-        </li>
-        <li><%= link_to t("about-product-1.nav_main_product"), page_pages_path("about-product-1") %>
-        </li>
-        </li>
-        <li class="about-evolve"><%= link_to t("about_side_menu.evolve"), page_pages_path("about-evolve") %></li>
-        <li class="about-superiority"><%= link_to t("about_side_menu.superiority"), page_pages_path("about-superiority") %></li>
-        <li class="about-operating-1"><%= link_to t("about_side_menu.operating-1"), page_pages_path("about-operating-1") %></li>
-        <li class="about-organization"><%= link_to t("about_side_menu.organization"), page_pages_path("about-organization") %></li>
-        <!--li class="about-group"><%= link_to t("about_side_menu.group"), page_pages_path("about-group") %></li-->
-      </ul>
-    </aside>
-     <section>
-      <h3><%=t("about-interested.main_title")%></h3>
-      <h4>落實公司治理</h4>
-      <div class="content">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="3%" valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-              <td width="97%" valign="top">台一集團對於利害關係人如投資人、客戶、員工、供應商、往來銀行間具備良好溝通管道，積極維護其應有權益。 </td>
-            </tr>
-            <tr>
-              <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-              <td valign="top">台一集團訂有相關企業社會責任之制度與執行的相關規定；符合並超越勞動條件、人權條款、勞工安全衛生與環保要求。</td>
-            </tr>
-            <tr>
-              <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-              <td valign="top">台一集團總部及各事業部相關權責單位共同推動企業社會責任之運行；積極開發高品質電力傳輸與高效能電力轉換元件，減少資源的浪費並增進能源使用效率。</td>
-            </tr>
-        </table>
-      </div>
-      <h4>發展永續環境</h4>
-      <div class="content">
-      台一集團實踐社會責任時透過各種宣傳方式，宣示公司的企業社會責任目標，如推動 RoHS 無危害物質管制作業系統，積極推動綠色生產及採購作業，並實現於製程中。同時推動清潔生產技術，將資源充分利用，改善製程及操作管理，以減少廢棄物之產生，創造永續經營環境。
-      </div>
-      <h4>維護社會公益</h4>
-      <div class="content">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="3%" valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-              <td width="97%" valign="top">台遵守相關勞動法規，保障員工之合法權益，建立適當之管理方法與程序。</td>
-            </tr>
-            <tr>
-              <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-              <td valign="top">提供員工安全與健康之工作環境，並對員工定期實施安全與健康教育。</td>
-            </tr>
-            <tr>
-              <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-              <td valign="top">制定並公開其消費者權益政策，以及對其產品與服務提供透明且有效之消費者申訴程序。 </td>
-            </tr>
-            <tr>
-              <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-              <td valign="top">與供應商合作，共同致力提升企業社會責任。</td>
-            </tr>
-            <tr>
-              <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
-              <td valign="top">藉由商業活動、實物捐贈、企業志工服務或其他免費專業服務，參與社區發展及慈善公益團體相關活動。</td>
-            </tr>
-        </table>
-      </div>
-      <h4>利害關係人</h4>
-      <div class="content">
-        <p>利害關係人指所有可以影響、或會被企業決策和行動所影響的個體或群體，包括：員工、顧客、供應商、社區團體、母公司或附屬公司、合作夥伴、投資者和股東等；因此，企業想要能永續發展，必須制定一個能符合各種不同利害關係人的策略，在注重股東的權益之外，同時關注員工、顧客、供應商、社區以及所有與企業有關的個人或團體才行，類似以企業擁有者為核心的一個同心圓，層層向外擴散。</p><p style="margin:10px 0 0 0">
-        企業必須了解利害關係人想法，隨時保持與利害關係人的透明溝通，做為永續發展的重要參考依據。台一國際除針對日常業務以各種型態與利害關係人保持互動外，官方網站亦為利害關係人與公司最基礎的溝通管道，主要內容大略分為：產品資訊、業務往來、投資人服務、工作機會、企業社會責任等幾個相關類別，並設置有專責人員管理的外部溝通信箱 <a href="ivanc@tai-i-int.com.tw" target="_blank">ivanc@tai-i-int.com.tw</a>，依類別分送至業務權責單位進行處理。此外，各廠均設有居民溝通管道，且管理部門亦不定期派員至廠區週邊巡查訪視，便於居民隨時與駐廠人員反映與溝通。</p>
-      </div>
-      <h4>利害關係人溝通管道</h4>
-      <div class="content">
-        <img src="/css/images/ab-27.png" style="margin:30px">
-        <p>台一國際的夥伴包含了股東及投資人、客戶、現職員工、未來可能新加入員工、退休員工、社區鄰里、供應商、外包商、承攬商、非政府組織 (NGOs)，以及學者專家等，如下圖。</p>
-        <img src="/css/images/ab-28.png" style="margin:30px 0 30px 120px">
-        <p><b>投資人</b><br>
-台一國際每年度股東大會皆由董事長親率經營團隊，向投資人說明、接受諮詢並給予回覆，同時在公司及證交所網站上發佈說明會所使用之年報資料、每期財報、重大決議及股價資訊等，使投資人在評估投資決策時有更多依據參考。</p>
-
-<p><b>客戶</b><br>
-台一國際秉持積極主動態度回應客戶需求，除了品質、成本、管理制度以外，更貫徹執行環安衛管理，落實“ROHS ”指令、加入Green Partner（綠色夥伴）組織，加強勞工權益及道德等，相關企業社會責任議題與管理措施，亦是台一國際長久以來持續關注並積極推動的重點。同時，台一國際亦持續深入了解客戶在此方面的觀點，分析國際推行趨勢，主動積極參與客戶的社會責任推行計畫，將新的觀點與作法實際融入台一國際管理制度。</p>
-
-<p><b>外包商 / 供應商</b><br>
-台一國際以共存共榮的概念經營供應商與外包商，包含品質 / 服務水準、綠色產品、營運製造、成本、環安衛、勞工管理、道德準則等面向，由品質、生技、環工及採購等部門人員組成稽核團隊，對於新供應商進行資格評鑑，通過審核者方能成為合作對象，對於已合作之供應商 / 外包商，亦進行定期稽核與評估，以確保品質與交期。</p>
-
-<p><b>社區鄰里</b><br>
-台一國際廠區包括桃園觀音、桃園楊梅、新竹、屏東、廣州等地區，長年來深耕社區鄰里關係，透過參與、贊助社區活動、定期訪視鄰里等，與地方居民保持良好互動。</p>
-
-<p><b>承攬商</b><br>
-為降低承攬商施工風險，台一國際不僅要求承攬商遵循當地法令規定及職業安全衛生管理系統OHSAS18001等規範，並制定「交付承攬作業管理細則」，以落實安全管理目標。</p>
-
-<p><b>員工</b><br>
-台一國際將員工福利置於優先地位，重視同仁的待遇及福利，採取具有競爭力的薪資福利政策。員工薪資係根據其學歷背景、專業經歷及個人表現所分配，不因性別、種族、宗教、政治立場、婚姻狀況等差異而在起薪上有所不同。台一國際亦提供同仁安全舒適的工作環境與平等的職涯發展機會，每年舉辦超過百場的內外部培訓課程，祈使員工職能獲得提升。我們深信完善的職涯發展規劃及訓練系統必能為公司留住優秀的人才。</p>
-
-<p><b>職業健康</b><br>
-有鑒於作業環境與員工人身安全保護對於公司營運之重要性，台一國際運用ISO14001、QC08000及TOSHMS之管理系統展開重大環境考量面、職業安全衛生風險控制、再利用目標及方案管理進行改善，以確保執業人員之安全與健康無虞。此外，每年免費為同仁辦理健康檢查、員工旅遊，還設置運動設備與場地，定期舉辦各類球賽，並提供免費的牛奶、果汁等飲品以補充員工的體力、提振員工士氣與活力，全方位照護員工的生理與心理健康！ </p>
-
-<p><b>生活環境</b><br>
-台一國際關心所有員工的生活起居，每個廠區皆設有優質的員工宿舍，提供同仁舒適的居住環境，部分偏遠廠區更有免費短程巴士接送員工往返宿舍和廠區的服務。我們為了能多聽見同仁的聲音，設置了各種溝通信箱與專線，當同仁有任何想法，皆可透過「公司信箱」、「人資月會」、「性騷擾申訴信箱」等表達；此外，亦定期召開勞資會議，確保溝通管道暢通。</p>
-
-<p><b>教育訓練與人力發展</b><br>
-台一國際重視員工的訓練與發展，為提供明確的生涯發展藍圖，公司建置了TTQS培訓體系並挹注了充足的培訓資源。員工入職即接受職前訓練，說明公司企業方針、企業社會責任理念與相關政策，以及安全衛生規範與管理制度等；俟其投入部門工作後，再依其工作任務施以長期、完整的專業養成訓練。</p>
-      </div>
-    </section>
-  </article>
-
+<h2>關於台一</h2>
+<aside>
+  <ul>
+    <li class="about-intro"><%= link_to t("about_side_menu.intro"), page_pages_path("about-intro") %></li>
+    <li class="about-history"><%= link_to t("about_side_menu.history"), page_pages_path("about-history") %></li>
+    <li class="about-concept"><%= link_to t("about_side_menu.concept"), page_pages_path("about-concept") %></li>
+    <li class="about-interested active"><%= link_to t("about_side_menu.responsibility"), page_pages_path("about-interested") %>
+      <div class="sub"> <%= link_to t("about_side_menu.interested"), page_pages_path("about-interested"),class: "active" %> <%= link_to t("about_side_menu.sustainability"), page_pages_path("about-responsibility") %> </div>
+    </li>
+    <li><%= link_to t("about-product-1.nav_main_product"), page_pages_path("about-product-1") %> </li>
+    </li>
+    <li class="about-evolve"><%= link_to t("about_side_menu.evolve"), page_pages_path("about-evolve") %></li>
+    <li class="about-superiority"><%= link_to t("about_side_menu.superiority"), page_pages_path("about-superiority") %></li>
+    <li class="about-operating-1"><%= link_to t("about_side_menu.operating-1"), page_pages_path("about-operating-1") %></li>
+    <li class="about-organization"><%= link_to t("about_side_menu.organization"), page_pages_path("about-organization") %></li>
+    <!--li class="about-group"><%= link_to t("about_side_menu.group"), page_pages_path("about-group") %></li-->
+  </ul>
+</aside>
+<section>
+  <h3><%=t("about-interested.main_title")%></h3>
+  <h4><%=t("about-interested.title_1")%></h4>
+  <div class="content">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="3%" valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+        <td width="97%" valign="top"><%=t("about-interested.content_1_1")%></td>
+      </tr>
+      <tr>
+        <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+        <td valign="top"><%=t("about-interested.content_1_2")%></td>
+      </tr>
+      <tr>
+        <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+        <td valign="top"><%=t("about-interested.content_1_3")%></td>
+      </tr>
+    </table>
+  </div>
+  <h4><%=t("about-interested.title_2")%></h4>
+  <div class="content"> <%=t("about-interested.content_2")%> </div>
+  <h4><%=t("about-interested.title_3")%></h4>
+  <div class="content">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="3%" valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+        <td width="97%" valign="top"><%=t("about-interested.content_3_1")%></td>
+      </tr>
+      <tr>
+        <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+        <td valign="top"><%=t("about-interested.content_3_2")%></td>
+      </tr>
+      <tr>
+        <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+        <td valign="top"><%=t("about-interested.content_3_3")%></td>
+      </tr>
+      <tr>
+        <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+        <td valign="top"><%=t("about-interested.content_3_4")%></td>
+      </tr>
+      <tr>
+        <td valign="top"><span><img src="<%= t("env.img_url.ab-17") %>"></span></td>
+        <td valign="top"><%=t("about-interested.content_3_5")%></td>
+      </tr>
+    </table>
+  </div>
+  <h4><%=t("about-interested.title_4")%></h4>
+  <div class="content">
+   <%=simple_format(t("about-interested.content_4"))%>
+  </div>
+  <h4><%=t("about-interested.title_5")%></h4>
+  <div class="content"> <img src="<%= t("env.img_url.ab-27") %>" style="margin:30px">
+    <%=simple_format(t("about-interested.content_5_1"))%>
+    <img src="<%= t("env.img_url.ab-28") %>" style="margin:30px 0 30px 120px">
+    <%=simple_format(t("about-interested.content_5_2"))%>
+  </div>
+</section>
+</article>
