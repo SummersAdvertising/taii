@@ -29,8 +29,9 @@ $(document).ready(function(){
 
   $('#banner ul').bxSlider({
   	auto: true,
-  	pause: 3000,
+  	pause: 5000,
   	controls: false,
-  	pager: false
+  	pager: false,
+    mode: 'fade'
   });
 })

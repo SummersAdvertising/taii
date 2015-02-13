@@ -8,6 +8,8 @@ zh_CN:
     contact: "联络我们"
     copyright: "台一国际股份有限公司  版权所有 © 2014 TAI-I  ELECTRIC WIRE & CABLE All Rights Reserved."
   index:
+    cpration_h4: "各家合作机构"
+    cpration_more: "了解更多"
     spirit_main_title: "我们的信念"
     spirit_title_1: "<b>深耕</b><br>
               深入技术研发，提升自我能力，耕耘客<br>
@@ -201,7 +203,7 @@ zh_CN:
     nav_main_product: "主要产品及应用"
     nav_main_product_1: "裸铜线"
     nav_main_product_2: "三层绝缘线"
-    nav_main_product_3: "AC,DC Power Cord and Electric Wire"
+    nav_main_product_3: "Power Cord, Extension Cord and Electric Wire"
     nav_main_product_4: "绿色能源-太阳能用线"
     nav_main_product_5: "电线电缆"
     nav_main_product_6: "漆包线"
@@ -237,7 +239,7 @@ zh_CN:
   about-product-2:
     main_title: "三层绝缘线"
   about-product-3:
-    main_title: "AC,DC Power Cord and Electric Wire"
+    main_title: "Power Cord, Extension Cord and Electric Wire"
   about-product-4:
     main_title: "绿色能源-太阳能用线"
   about-product-5:
@@ -359,8 +361,8 @@ zh_CN:
     title_one_content_3: "高附加价值之漆包线获德国、美国及台湾专利。"
     title_two: "2、电线电缆厂事业部"
     title_two_content_1: "年产塑胶电线电缆 21,600 公吨；高压电力电缆 14,400 公吨（最适产品组合 16,000 吨）。"
-    title_two_content_2: "获台湾电力公司 15KV、25KV、69KV、161KV 高压电力电缆定型试验通过。"
-    title_two_content_3: "具 161KV 交连 PE 电力电缆整体系统之设计、规划及施工能力之电力电缆施工队，开拓国际全工程市场之利基。"
+    title_two_content_2: "获台湾电力公司 15kV、25kV、69kV、161kV 高压电力电缆定型试验通过。"
+    title_two_content_3: "具 161kV 交连 PE 电力电缆整体系统之设计、规划及施工能力之电力电缆施工队，开拓国际全工程市场之利基。"
     title_two_content_4: "为台塑集团事业群 50 家公司（麦寮、六轻、南亚、台化…）高压电缆之指定供应商。"
     title_two_content_5: "获 ISO9001、ISO 14001、UL 认证。 2013 年 6 月底通过 ISO／TS16949 汽车体系品质管制体系"
     title_three: "3、绝缘材料事业部"
@@ -372,7 +374,7 @@ zh_CN:
     title_four: "4、3C元件事业部"
     title_four_content_1: "3C元件事业，创立于 2012 年，产品为电子电源线，年产量约 6000 万组"
     title_four_content_2: "具有垂直整合生产能力"
-    title_four_content_3: "有 50 年线材生产经验并採用先进 SAMP 多头伸线机及束绞机，製程稳定，品质管理比照航太工业要求。"
+    title_four_content_3: "有 50 年线材生产经验并採用欧洲进口之先进多头伸线机及束绞机，製程稳定，品质管理比照航太工业要求。"
     title_four_img_url: "/css/images/cn/ab-23.jpg"
     title_five: "5、瀚顶生物科技"
     title_five_content: "瀚顶公司于屏东农业生物科技园区成立首座养殖符合ISO 22000及HACCP国际食品双认证『养耕共生』生态渔场，并打造的第一个Made in Taiwan鲜食品牌-『淳鲜』(Puredise)，孕育绵延永续环保和坚持新鲜健康的新食文化理念。"
@@ -649,7 +651,7 @@ zh_CN:
     title_1_content: "<p>透过定期的“技术管理会议”研发部门与製造部门共同对生产制程、设备效率、原材料选择等方面进行研究，不断更新改善细线针孔问题、氧化问题、花线问题、粉尘问题等制程瓶颈。<br>
                 <br>
               </p>
-              <p>联合设备供应商对机台进行改造，将 DV 值提升至超出原厂设计上限，产能提高近 30%，因应不同的作业环境，不断开发改进原材料，解决现场中的作业困难，同时，在提升品质前提的同时，致力开发新材料，降低部份产品的单位成本，增强产品的市场竞争力。</p>"
+              <p>联合设备供应商对机台进行改造，将 DV 值提升至超出原厂设计上限，产能提高近 30%，因应不同的作业环境，不断开发改进原材料，解决现场中的作业困难，在提升品质前提的同时，致力开发新材料，降低部份产品的单位成本，增强产品的市场竞争力。</p>"
     title_2: "2、新产品的开发"
     title_2_content_1: "公司研发部门历来致力于新产品的研发，陆续成功开发的新产品有："
     title_2_content_2: "高性能耐冷媒线"
@@ -663,6 +665,7 @@ zh_CN:
   copper-catalogs:
     main_title: "产品型录"
     download: "附件下载："
+    filename: "台一铜业漆包线产品型录.pdf"
   copper-consulting:
     main_title: "产品谘询专线"
     title_1: "台一铜业（广州）有限公司"
@@ -876,6 +879,7 @@ zh_CN:
     title_3: "3、生产线上自动检出设备"
   hsinchu-catalogs:
     main_title: "产品型录"
+    filename: "新竹厂漆包线产品型录.pdf"
   hsinchu-use:
     main_title: "产品介绍与运用"
     subtitle_1:  "1、主要产品及用途"
@@ -1002,6 +1006,7 @@ zh_CN:
     title_3: "不断寻求低成本、高品质之原料开发，确保产品价格与品质之竞争优势。"
   resin-catalogs:
     main_title: "产品型录"
+    filename: "绝缘材料产品型录.pdf"
   resin-quality:
     main_title: "品质保证"
   resin-equipment:
@@ -1050,7 +1055,7 @@ zh_CN:
     title_3: "地理位置："
     title_3_content: "桃园县观音乡富源村3邻新富路606号"
     title_4: "优　　势："
-    title_4_content: "生产垂直整合供应链，有 50 年线材生产经验并採用先进 SAMP 多头伸线机及束绞机，製程稳定，品质管制比照航太工业要求"
+    title_4_content: "生产垂直整合供应链，有 50 年线材生产经验并採用欧洲进口之先进多头伸线机及束绞机，製程稳定，品质管制比照航太工业要求"
     title_5: "主要产品："
     title_5_content: "Power cords"
   guanyin3c-certification:
@@ -1072,7 +1077,7 @@ zh_CN:
     title_1: "1、生产垂直整合供应链"
     title_1_desc: "从铜杆→伸绞线→电源线→电源线组。 "
     title_2:  "2、丰富的生产经验和先进的生产设备"
-    title_2_desc: "有 50 年线材生产经验并採用先进 SAMP 多头伸线机 及 束绞机，製程稳定，品质管制比照航太工业要求。 "
+    title_2_desc: "有 50 年线材生产经验并採用欧洲进口之先进多头伸线机 及 束绞机，製程稳定，品质管制比照航太工业要求。 "
     title_3: "3、MES製造执行系统导入与运用"
     title_3_desc_1: "即时管理製造活动中的在製品 WIP、原物料、机台状况、工单完成情形满足客户订单的需求。"
     title_3_desc_2: "即时提高管理者对製造现场生产线即时监控能力。"
@@ -1128,6 +1133,7 @@ zh_CN:
     main_title: "产品型录"
     title_1: "1、电源线组-连接器"
     title_2: "2、电源线组-插头"
+    filename: "电源线组产品型录.pdf"
   guanyin3c-use:
     main_title: "产品运用"
     main_title_desc: "电源装置是所有电子产品能量驱动来源，而电源线就是电源装置输出电力的重要传输媒介。电源线和电子线可广泛应用下列用途：于电脑周边、通信设备、消费性家电产品、照明系统及医疗设备... 等用途。"
@@ -1176,7 +1182,7 @@ zh_CN:
     title_1: "1、垂直整合优势"
     title_1_content: "营运项目涵盖产业之上、中游，具垂直整合优势，确保质优原料，降低原料成本。"
     title_2: "2、技术领先优势"
-    title_2_content: "取得日本住友经芬兰 NOKIA 授权之氮气乾式加硫生产工艺专利，系现行世界先进交联电力电缆之主流，并且累积多年之生产经验，具技术领先优势。"
+    title_2_content: "取得日本住友经芬兰 NOKIA 授权之氮气乾式加硫生产工艺专利，系现行世界先进交连电力电缆之主流，并且累积多年之生产经验，具技术领先优势。"
     title_3: "3、检测能力优势"
     title_3_content: "具备完整之检测能力，包括例行试验、电缆抽样试验、型式试验及迴圈老化试验等，以严格之试验方法确保品质。 "
     title_4: "4、应用技术优势"
@@ -1243,11 +1249,11 @@ zh_CN:
     title_4_content_8: "托盘电脑，用于户外信号传输、太阳能用线等"
     title_5: "5、新产品开发 - 汽车线"
     title_5_content_1: "汽车线开发项目："
-    title_5_content_2: "低烟无卤、耐用、轻量、细径、超薄肉、环保电线适用于各式运送工具之内、外部的低压绝缘花线。"
+    title_5_content_2: "低烟无卤、耐用、轻量、细径、超薄肉、环保电线适用于各式运输工具之内、外部的低压绝缘花线。"
     title_5_content_3: "引用照射料，提高耐温等级。"
     title_6: "6、新产品开发 - 汽车马达接引线"
     title_6_content_1: "汽车马达引接线开发："
-    title_6_content_2: "低烟无卤、耐用、轻量、细径、超薄肉、环保电线适用于各式运送工具之内、外部的低压绝缘花线。"
+    title_6_content_2: "低烟无卤、耐用、轻量、细径、超薄肉、环保电线适用于各式运输工具之内、外部的低压绝缘花线。"
     title_6_content_3: "线材引用照射料，提高耐温等级。"
     title_6_content_4: "耐热保护管材导入应用。"
   guanyin-equipment:
@@ -1259,12 +1265,12 @@ zh_CN:
   guanyin-product-2:
     main_title: "汽车线"
     title_1: "汽车线开发项目："
-    title_1_content_1: "低烟无卤、耐用、轻量、细径、超薄肉、环保电线适用于各式运送工具之内、外部的低压绝缘花线。"
+    title_1_content_1: "低烟无卤、耐用、轻量、细径、超薄肉、环保电线适用于各式运输工具之内、外部的低压绝缘花线。"
     title_1_content_2: "引用照射料，提高耐温等级。"
   guanyin-product-3:
     main_title: "汽车线"
     title_1: "汽车马达引接线开发："
-    title_1_content_1: "低烟无卤、耐用、轻量、细径、超薄肉、环保电线适用于各式运送工具之内、外部的低压绝缘花线。"
+    title_1_content_1: "低烟无卤、耐用、轻量、细径、超薄肉、环保电线适用于各式运输工具之内、外部的低压绝缘花线。"
     title_1_content_2: "线材引用照射料，提高耐温等级。"
     title_1_content_3: "耐热保护管材导入应用。"
   guanyin-product-4:
@@ -1313,7 +1319,7 @@ Electrical Wires, Cables, and Flexible Cords电线电缆和软线参考标准)�
             "
     title_1_conent_2: "<h5>钢心铝线</h5>
             本产品符合 ASTM B-230、B-231、B-232、B-233、B-498、A-90、A-239、IEC60888、GB/T3048.2 等标准适用电站内部输配电线路，电压依架设情况从
-1KV ~750 KV。<br>"
+1kV ~750 kV。<br>"
     title_1_conent_3: "<h5>高压交连PE风雨线</h5>
             主要用于近市区高压架空配电线，交连 PE 为被覆屋外用风雨线符合 TPC A009 标准。"
     title_2: "2、高中壓電纜"
@@ -1351,14 +1357,14 @@ Electrical Wires, Cables, and Flexible Cords电线电缆和软线参考标准)�
     title_1_content_8: "<h5>轻便电缆</h5>
               轻便电缆俗称卡浦胎（Cabtye）电缆，主要用于工厂，矿场，农场及其他移动性如电动工具，吊车等用途符合 JIS C3312 等标准。"
     title_2: "2、消防线"
-    title_2_content_1: "<h5>127／230KV ~ 330/345KV 交连聚乙烯绝缘电力电缆</h5>
+    title_2_content_1: "<h5>127／230kV ~ 330/345kV 交连聚乙烯绝缘电力电缆</h5>
               本产品适用于市电工频 127/230kV ~ 330/345kV 交连聚乙烯绝缘电力电缆符合IEC62067 及 GB／Z18890.2 标准适用于高电压输电线路用。 <br>
               "
-    title_2_content_2: "<h5>600V~87／161KV交连聚乙烯绝缘电力电缆</h5>
+    title_2_content_2: "<h5>600V~87／161kV交连聚乙烯绝缘电力电缆</h5>
               本产品适用于市电工频 600V ~ 87／161kV 符合 IEC60502、IEC60840、GB／T12706GB／T11013 标准输配电线路的电能配送。<br>
               "
     title_2_content_3: "<h5>防蚁电力电缆</h5>
-              额定电压 127／230KV 及以下交连聚乙烯绝缘铜芯,铝芯防蚁害电缆符合 IEC60502、IEC60840 及 GB2951.38。<br>
+              额定电压 127／230kV 及以下交连聚乙烯绝缘铜芯,铝芯防蚁害电缆符合 IEC60502、IEC60840 及 GB2951.38。<br>
               "
     title_2_content_4: "<h5>抗水树电缆</h5>
               本产品适用市电工频 3.6／6kV~ 26／35kV，湿气较重，或地下水较丰富下地敷设电缆及有控制水树生长需求，增强可靠运行输配电线路符合 TPC 业研 155 等标准。<br>
@@ -1388,6 +1394,7 @@ Electrical Wires, Cables, and Flexible Cords电线电缆和软线参考标准)�
     main_title: "产品型录"
     gy-27: "/css/images/cn/gy-27.gif"
     3c-09: "/css/images/cn/3c-09.png"
+    filename: "电线电缆产品型录.pdf"
   guanyin-consulting:
     main_title: "产品谘询专线"
     content_1: "<h5>电线电缆事业部 - 业务</h5><p>电话：+886-3-4907711 # 804/814<br>传真：+886-3-4907755<br>E-mail：<a href='mailto:sales_a@tai-i-int.com.tw' target='_blank'>sales_a@tai-i-int.com.tw</a></p>"
@@ -1410,7 +1417,7 @@ Electrical Wires, Cables, and Flexible Cords电线电缆和软线参考标准)�
     title_four: "台一国际企业简介"
     title_four_content: "台一国际股份有限公司创立于西元1954年，迄今已有60年的历史。<br><br>目前集团共计有五个厂及两家子公司，分别为台湾的观音厂（电线电缆）、新竹厂（漆包线）、树脂厂（绝缘材料）三厂，中国大陆有台一铜业（漆包线）、台一江铜（铜杆）两厂及瀚顶生物科技(水产养殖)、台一重​​工(先进金属)两公司。公司产品线包含各式高、中、低压电缆、光缆、漆包线、平角线、三层绝缘线、车用电子线、电源线、电源线组、镀锡铜线、太阳能线等，产品主要用途在于高效能的信号传递、电力传送及能源转换之用。<br><br>产品范围涵盖上游裸铜线生产製造，到漆包线、电力电缆、光缆及绝缘材料，产业关连性高，具垂直水平整合的优势。相关产品并已取得 ISO9001、ISO14001、TS16949 、QC080000等相关认证，并透过SAP ERP整合企业整体资源规划系统，产品品质与工厂管理已与国际大厂并驾齐驱。新进成立瀚顶生物科技，跨足有机生态水产养殖领域，并获ISO22000与HACCP食品安全认证；而台一重工则从事于高科技之复合金属、抗菌金属与高强度不锈钢材之产品开发与运用领域发展。<br><br>公司经营的成果卓越，据 2014 年天下杂志上市公司2000 大企业的调查，台一国际集团营收规模居 73 名且列为金属制品业第2名，拥有良好的市占率及优良的客户群，营业规模领先其他台湾、中国大陆及香港上市的同业。本集团已成为中国大陆国内裸铜线及漆包线行业的领导生产厂商。"
   about-interested:
-      main_title: "利害关系人"
+      main_title: "利害关系人及伙伴"
       title_1: "落实公司治理"
       content_1_1: "台一集团对於利害关系人如投资人丶客户丶员工丶供应商丶往来银行间具备良好沟通管道，积极维护其应有权益。"
       content_1_2: "台一集团订有相关企业社会责任之制度与执行的相关规定；符合并超越劳动条件丶人权条款丶劳工安全卫生与环保要求。"
@@ -1710,6 +1717,8 @@ Electrical Wires, Cables, and Flexible Cords电线电缆和软线参考标准)�
       jc-04-4b: "/css/images/cn/jc-04-4b.jpg"
       jc-04-5: "/css/images/cn/jc-04-5.jpg"
       jc-04-5b: "/css/images/cn/jc-04-5b.jpg"
+      jc-04-6: "/css/images/cn/jc-04-6.jpg"
+      jc-04-6b: "/css/images/cn/jc-04-6b.jpg"
       jc-04: "/css/images/cn/jc-04.jpg"
       jc-05: "/css/images/cn/jc-05.jpg"
       jc-06: "/css/images/cn/jc-06.jpg"
