@@ -29,7 +29,7 @@ $(document).ready(function(){
 
   $('#banner ul').bxSlider({
   	auto: true,
-  	pause: 5000,
+  	pause: 4000,
   	controls: false,
   	pager: false,
     mode: 'fade'
