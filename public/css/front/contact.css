@@ -11,7 +11,8 @@ article h2{background:url(../images/ct-05.png) center 0 no-repeat}
 
 article section{padding:60px 0 120px 0;line-height:1.6em;
 color:#555;position:relative;z-index:1;background:url(../images/ct-07.gif)}
-#plant-box {width:900px;margin:0 auto;background:url(../images/ct-06.jpg) 0 0 no-repeat;padding:125px 0 0 0}
+#plant-box {width:900px;margin:0 auto;background:url(../images/ct-06.png) 0 0 no-repeat;padding:125px 0 0 0;position:relative;}
+#plant-box >p{position:absolute;top:10px;left:140px;letter-spacing:2px;font:400 20px/36px 微軟正黑體,Microsoft JhengHei;}
 .plant{border-bottom:1px dashed #BCBCBB;border-top:1px dashed #fff;padding:40px 0 0 0}
 .plant h3{font:900 20px 微軟正黑體,Microsoft JhengHei;color:#000;line-height:1.7em}
 

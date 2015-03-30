@@ -6,7 +6,7 @@ article h2{background:url(<%= t("env.img_url.ct-05") %>) center 0 no-repeat}
     <h2>聯合國物資採購監管中心臺灣中心介紹</h2>
     <section>
       <div id="plant-box">
-
+					<p><%= simple_format( t("contactus.note") ) %></p>
         <% @organizations.each do | org | %>
         <div class="plant">
         	<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -20,9 +20,9 @@ article h2{background:url(<%= t("env.img_url.ct-05") %>) center 0 no-repeat}
 								              	<div class="card">
 										              	<h4><%= rep.division %></h4>
 																		<%= rep.name %><br>
-																		<%= simple_format("電話：#{rep.phone}<br>") unless rep.phone.blank? %>
-																		<%= simple_format("傳真：#{rep.fax}<br>") unless rep.fax.blank? %>
-																		<%= simple_format("手機：#{rep.mobile}<br>") unless rep.mobile.blank? %>
+																		<%= simple_format( t("contactus.phone") + "#{rep.phone}<br>") unless rep.phone.blank? %>
+																		<%= simple_format( t("contactus.fax") + "#{rep.fax}<br>") unless rep.fax.blank? %>
+																		<%= simple_format( t("contactus.cellphone") + "#{rep.mobile}<br>") unless rep.mobile.blank? %>
                                     <%= "Email：" unless rep.email.blank? %>
                                     <% if !rep.email.blank? %> 
                                       <a href="mailto:<%= rep.email%>" target="_blank"><%= rep.email%></a>
