@@ -157,9 +157,9 @@ zh_TW:
     placeholder: "產品搜尋"
   contactus:
     note: "謝謝您瀏覽台一國際網站<br>如有任何有關產品的服務與寶貴意見，請與我們聯繫，謝謝。"
-    phone: "電話"
-    fax: "傳真"
-    cellphone: "手機"
+    phone: "電話："
+    fax: "傳真："
+    cellphone: "手機："
   center:
     title_1: "工業技術研究院"
     title_2: "SAP"

@@ -157,9 +157,9 @@ zh_CN:
     placeholder: "产品搜索"
   contactus:
     note: "谢谢您浏览台一国际网站<br>如有任何有关产品的服务与宝贵意见，请与我们联系，谢谢。"
-    phone: "电话"
-    fax: "传真"
-    cellphone: "手机"
+    phone: "电话："
+    fax: "传真："
+    cellphone: "手机："
   center:
     title_1: "工业技术研究院"
     title_2: "SAP"
