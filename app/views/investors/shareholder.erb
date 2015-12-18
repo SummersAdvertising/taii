@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/front/investor.css">
+<style type="text/css">
+  article h2{background:url(<%= t("env.img_url.iv-01") %>) center 0 no-repeat}
+</style>
+<article>
+    <h2>關於台一</h2>
+        <!-- sidemenu -->
+    <%= render  "common/sidemenu" %>
+    <section>
+      <h3>股東會資料</h3>
+      
+      <div class="content">
+        <iframe class="autoHeight" src="http://invest.tai-i-int.com.tw/invest/shareholder.html" width="800"></iframe>
+        <script src="/js/jquery.autoheight.js"></script>
+      </div>
+      
+    </section>
+  </article>

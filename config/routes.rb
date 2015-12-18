@@ -191,6 +191,7 @@ Taii::Application.routes.draw do
   resources :investors, :controller => :investors , only: [:annualreport, :dividend_history, :financialreport, :majorresolution, :financialprojection, :monthlyrevenuereport, :majorpolicy, :index] do 
   	collection do
    		get 'annualreport', :action => :annualreport, :as => :annualreport
+   		get 'shareholder', :action => :shareholder, :as => :shareholder
    		get 'dividend_history', :action => :dividend_history, :as => :dividend_history
    		get 'financialreport', :action => :financialreport, :as => :financialreport
    		get 'majorresolution', :action => :majorresolution, :as => :majorresolution

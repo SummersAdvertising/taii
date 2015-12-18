@@ -59,7 +59,7 @@
 		      <%= link_to t("layout.product"), hqlevel_path(Hqlevel.return_root_node_on_demand(I18n.locale), :locale => I18n.locale ) %>
 		      <%= link_to t("layout.investors"), investor_investors_path("investors-info") %>
        		<%= link_to t("layout.hr"), page_pages_path("human-taiwan-1")%>
-		      <%= link_to t("layout.contact"), contactus_path %>
+		      <%= link_to t("layout.contact"), contactus_path, :id => 'contactBtn' %>
       </div>
     </nav>
     <% if request.original_url == root_url %>
