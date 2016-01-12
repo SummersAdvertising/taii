@@ -37,7 +37,10 @@
             <span> │ </span>
             <%= link_to t("env.language.zh_CN"), set_locale_path( locale: "zh_CN" ), 'data-no-turbolink' => true %>
             <span> │ </span>
-            <%= link_to t("env.language.en"), "http://www3.tai-i-int.com.tw/Eg/default.htm" , 'data-no-turbolink' => true, target: "_blank" %>
+            <%= link_to t("env.language.en"), set_locale_path( locale: "en" ), 'data-no-turbolink' => true %>
+            <span> │ </span>
+            <%= link_to t("env.language.ja"), set_locale_path( locale: "ja" ), 'data-no-turbolink' => true %>
+            <%# link_to t("env.language.en"), "http://www3.tai-i-int.com.tw/Eg/default.htm" , 'data-no-turbolink' => true, target: "_blank" %>
 
 		        <%# Hqlevel.full_house.each_with_index do | lang, index | %>
 		        		<%# link_to t("env.language.#{lang.locale}"), set_locale_path( locale: lang.locale ), 'data-no-turbolink' => true %>

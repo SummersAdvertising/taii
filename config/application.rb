@@ -21,12 +21,12 @@ module Taii
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.encoding = "utf-8"
-		config.i18n.enforce_available_locales = false
+	config.i18n.enforce_available_locales = false
     config.i18n.default_locale = :zh_TW
     #config.i18n.fallbacks = false
     # rails will fallback to en, no matter what is set as config.i18n.default_locale
     #config.i18n.fallbacks = [:en]
-    config.i18n.fallbacks = {'en' => 'zh_TW', 'ja' => 'zh_TW', 'zh_CN' => 'zh_TW' }
+    #config.i18n.fallbacks = {'en' => 'en', 'zh_TW' => 'zh_TW', 'ja' => 'ja', 'zh_CN' => 'zh_CN' }
     
     config.to_prepare do
 	    Devise::SessionsController.layout "devise" 
