@@ -31,13 +31,15 @@ font:300 14px 微軟正黑體,Microsoft JhengHei}
 
 /*-----------------------------------------------------------------------導航---*/
 
-header nav{background:url(../images/nav.jpg) center 0 no-repeat;text-align:right}
-header nav .main{position:relative;left:100px}
-header nav a{display:inline-block;width:128px;height:50px;text-align:center;
-font:300 18px 微軟正黑體,Microsoft JhengHei;text-shadow:0 0 10px #082D71;color:#fff;
-padding:12px 0 0 0;background-position:center 7px}
-header nav a:hover{background:url(../images/active.png) center 6px no-repeat}
-#contactBtn{width:255px;}
+header nav{background:url(../images/nav_bg.png) center 0 no-repeat;text-align:right}
+header nav .main{position:relative;left:0;width:100%;text-align:right;padding:0 105px 0 0;}
+header nav li{display:inline-block;background:url(../images/nav_line.png) right 2px no-repeat;}
+header nav li:last-child{background:none;}
+header nav a{background:url(../images/nav_under.png) center bottom no-repeat;display:inline-block;height:50px;padding:0 20px;text-align:center;
+font:300 18px/50px 微軟正黑體,Microsoft JhengHei;text-shadow:0 0 10px #082D71;color:#fff;
+min-width:125px;}
+header nav a:hover{background-image:url(../images/nav_hover.png)}
+
 
 /*-----------------------------------------------------------------------大標---*/
 

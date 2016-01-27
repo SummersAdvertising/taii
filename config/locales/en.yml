@@ -1,10 +1,10 @@
 en:
   layout:
     about: "About Tai-I"
-    plant: "Business Division Introduction"
-    product: "Product Introduction"
+    plant: "Business Units"
+    product: "Product Intro."
     investors: "Investor Service"
-    hr: "Human Resources"
+    hr: "H.R."
     contact: "Contact Us"
     copyright: "© 2014 TAI-I ELECTRIC WIRE & CABLE All Rights Reserved."
   index:
@@ -12,26 +12,19 @@ en:
     cpration_more: "More"
     spirit_main_title: "Our belief"
     spirit_title_1: "<b>Reinforcement</b><br>
-              We go deeply into technology research <br>
-              and development, work on self-<br>
-              improvement, enhance relationships <br>
-              with customers and help customers to <br>
-              have confidence in the product and <br>
-              company."
+              Go deeply into technology R&D, work on self-improvement, enhance <br>
+              relationships with customers."
     spirit_title_2: "<b>Innovation</b><br>
-              We devote ourselves to concept, <br>
-              technology and product innovation."
-    spirit_title_3: "<b>International perspective</b><br>
-              We keep international horizon in mind, <br>
-              adopt global operations and become a <br>
-              global enterprise group."
+              Devote ourselves to concept, technology and product innovation."
+    spirit_title_3: "<b>International perspective</b>Keep international horizon in mind, <br>
+              adopt global operations and become a global enterprise group."
     news: "News "
-    main_product_cate_1: "Bright bare copper wire"
-    main_product_cate_2: "Heat resistant magnet wire"
-    main_product_cate_3: "Insulating resin"
-    main_product_cate_4: "Extra high voltage cable"
-    main_product_cate_5: "Power supply cord set"
-    main_product_cate_6: "Voltage surge resistant wire"
+    main_product_cate_1: "Bright Copper"
+    main_product_cate_2: "Heat Proof"
+    main_product_cate_3: "Insulating Resin"
+    main_product_cate_4: "Extra High Volt"
+    main_product_cate_5: "Power Cord Set"
+    main_product_cate_6: "Volt Surge Proof"
     main_product_cate_1_title: "2.6mm bare copper wire spool"
     main_product_cate_1_content: "<br>
                 The 2.6mm shaft bare copper wire is produced by the most advanced equipment from Europe and the double-head wiredrawing machine with non-limited slip differential and driven by the single motor. The advantages of the 2.6mm bare copper wire spool are listed as follows.<br>
@@ -41,59 +34,30 @@ en:
                    fine copper wire with a diameter below 0.04mm.<br>
                 3. It has been stretched and annealed continuously. The wire <br>
                    with a diameter of 2.6mm has the elongation above 32%. It is <br>
-                   highly flexible and suitable for the processing of copper products.<br>
-                4. It is packed as spool-less coils for easy transportation and storage.<br>"
+                   highly flexible and suitable for the processing of copper products.<br>"
     main_product_cate_2_title: "MW-35C composite double coated heat resistant magnet wire EIWH"
     main_product_cate_2_content: "<br>
-                1. Production range:  0.20~3.0mm<br> 
-                2. It is treated with composite coating and provided with <br>
-                   characteristics of excellent heat resistance, outstanding <br>
-                   wear resistance and remarkable insulation of overhead transmission.<br>
-                3. It has excellent windability and suitable for coil winding <br>
-                   machines with high fill-in ratio.<br>
-                4. It integrates with polyesterimide, polyamideimide and the <br>
-                   special process designed by Tai-I. Therefore, it perfectly <br>
-                   demonstrates that this composite coating magnet wire is suitable <br>
-                   for high-end electric winding machines.<br>"
-    main_product_cate_3_title: "Insulating resin"
-    main_product_cate_3_content: "<br>
-                The products from this business division are functional resin and coating (also known as varnish). They are mainly used for the external insulation coating of the magnet wire. Therefore, the insulation, mechanical and heat-resistant properties are the primary focus.<br>
-                The product types are polyester resin (PEW), polyesterimide resin (EIW), polyurethane resin (UEW), polyimide resin (AIW), nylon resin (NY) and other types of the functional coating resin.<br>"
-    main_product_cate_4_title: "Heat and fire resistant cable"
-    main_product_cate_4_content: "<br>
-                The products include the heat-resistant cables (300℃ and 380℃) and fire resistant cables (840℃ and 950℃). They have passed the Heat-resistant Wires and Cables (HR) and Fire-retardant Cables (FR) of the Chinese Fire Protection Safety Center (CFPSC). The coating materials include the low smoke zero halogen materials. These materials are suitable for the power supply, control circuit, alarm, as well as the monitoring and communication wires of the fire safety equipment emergency power supply system.<br>"
-    main_product_cate_5_title: "Power supply cord sets of Computer, Communication & Consumer Electronics products"
-    main_product_cate_5_content: "<br>
-                The power cord set with the power cable and plug connector is the power supply component of electronic products. These are used for power transmission. The quality of the power cord set may affect the reliability and safety of the product. Therefore, the power cord set is a significant part for the electronic products."
-    main_product_cate_6_title:  "Voltage surge resistant wire"
-    main_product_cate_6_content: "<br>
-                1. Feature: The surge resistance of the paint film can <br>
-                   prevent the overload voltage generated during the high-<br>
-                   speed adjustment of the frequency converter. Local <br>
-                   discharges may occur and the film cracks due to heat <br>
-                   deterioration. The resistance of the paint film under <br>
-                   high temperature, pressure and frequency is better <br>
+                1. Feature: The surge resistance of the paint film can prevent the<br>
+                   overload voltage generated during the high-speed adjustment of <br>
+                   the frequency converter. Local discharges may occur and the film<br>
+                   cracks due to heat deterioration. The resistance of the paint<br>
+                   film under high temperature, pressure and frequency is better <br>
                    than that of the heat-resistant wire with the same level.<br>
-                2. Use: The magnet wire is used as the coil winding <br>
-                   material of the high-frequency transformer, inverter-<br>
-                   driven motor and induction servomotor.<br>
-                3. Rotating machine: The magnet wire is applicable to the <br>
-                   encapsulated DC motor, electric tool and electric car <br>
-                   motor.<br>"
+                2. Use: The magnet wire is used as the coil winding material <br>
+                   of the high-frequency transformer, inverter-driven motor<br>
+                   and induction servomotor.<br>"
     copper: "Tai-I Copper (Guangzhou) Co., Ltd."
     copper_basic: "Employees: 1,200<br>
                 Registered capital: USD 50.76 million<br>
                 Address: No. 77, Dongpeng Rd., Eastern District of <br>
-                　　　Guangzhou Economic & Technological Development <br>
-                　　　District, Guangzhou, China<br>
-                Tel: 020-82265528<br>
+                　　　Guangzhou Economic & Technological <br>
+                　　　Development District, Guangzhou, China<br>
                 <b>Business hotline</b><br>
-                Tel.: 86-020-82265950<br>
-                Fax: 86-020-82266673 and 020-32067312<br>
-                Email: gms10@tai-i-gz.com<br>"
+                Tel: +86-020-82265950 and +86-020-82265528<br>
+                Fax:  +86-020-82266673 and +86-020-32067312<br>"
     copper_adv: "<h5>R&D</h5>
-                <br>
-                <p>Our R&D team with enormous potentiality is formed by research and development experts that 87.5% of them have junior college degree or above. Senior Japanese and Taiwanese consultants, young technicians from various professional backgrounds as well as the middlemen who master technology and management work together. The team with strong cohesiveness is full of frontier spirits. It continuously innovates and optimizes our products.</p>"
+                
+                <p>Our R&D team with enormous potentiality is formed by research and development experts that 87.5% of them have junior college degree or above. Senior Japanese and Taiwanese consultants, young technicians from various professional backgrounds work together. The team with strong cohesiveness is full of frontier spirits. It continuously innovates and optimizes our products.</p>"
     
     jiangcorp: "Tai-I Jiang Corp (Guangzhou) Co., Ltd."
     jiangcorp_basic: "Employees: 170<br>
@@ -102,7 +66,7 @@ en:
                　　　Guangzhou Economic & Technological Development <br>
                　　　District, Guangzhou, China<br>
                 <b>Business hotline</b><br>
-                Tel.: +86-020-82265949<br>
+                Tel: +86-020-82265949<br>
                 Fax: +86-020-82265715#6060"
     jiangcorp_adv: "<h5>Competitive advantage </h5>
                 <p><br>
@@ -123,7 +87,7 @@ en:
                 Fax: +886-3-2545-5973117
 "
     hsinchu_adv: "<h5>R&D </h5>
-                <p> Development and technical background:<br>
+                <p> 
                 To improve product quality, enhance competitiveness and develop the value added to the new product, we participate in the technical cooperation with the Metal Industries Research & Development Centre. We receive guidance from Taiwanese professors and put various precise instrument (and professionals) in research and development.<br>We have made the voltage surge resistant wire, shaped copper wire and triple-layer insulated winding wire. These products enhance the level of industrial technology, satisfy the quality requirements requested by customers and keep up with the social trend.</p>
                 <br>
                 <h5>Important equipment</h5>"
@@ -131,26 +95,22 @@ en:
     resin_basic: "Employees: 20<br>
                 Address: Address : No. 399, Sec. 1, Zhongshan N. Rd., <br>
                　　　Yangmei Town, Taoyuan City 326, Taiwan (R.O.C.)<br>
-                Advantage: This plant masters the strengths and weaknesses <br>
-               　　　of the first-class coating products. It grasps advanced <br>
-               　　　coating products and optimizes product portfolios by <br>
-               　　　receiving feedbacks from world-class customers and <br>
-               　　　executing development with them.<br>
+                Advantage: Masters the strengths and weaknesses<br>
+               　　　of the 1st-class coating products. It grasps advanced<br>
+               　　　coating products and optimizes product portfolios<br>
+               　　　by receiving feedbacks from world-class customers.<br>
                 <b>Business hotline</b><br>
                 Tel: +886-3-5981521#238<br>
                 Fax: +886-3-2545-5981166"
     resin_adv: "<h5>Product advantages</h5>"
-    guanyin: "Guanyin Plant (Electric Wire & Cable Business Department)"
+    guanyin: "Guanyin Plant (Electric Wire & Cable)"
     guanyin_basic: "Employees: 109<br>
                 Address : No.606, Xinfu Rd, Vicinity 3, Fuyuan Village, <br>
                　　　Guanyin Dist., Taoyuan City 328, Taiwan (R.O.C.)<br>
-                Advantage: This plant is a qualified supplier of state-owned <br>
-               　　　businesses such as Taiwan Power Company, Chunghwa Telecom, <br>
-               　　　China Steel and CPC Corporation, Taiwan. It is also a <br>
-               　　　designated supplier for the high voltage power cables <br>
-               　　　provided by 50 companies in the business group of the <br>
-               　　　Formosa Plastics Group.<br>
-                <b>Business hotline</b><br>
+                Advantage: A qualified supplier of state-owned businesses<br>
+               　　　such as Taiwan Power, Chunghwa Telecom, China Steel<br>
+               　　　and CPC, Taiwan. Also a designated supplier for the<br>
+               　　　high voltage power cables of Formosa Plastics Group.<br>
                 Tel: +886-3-4907711#804/814<br>
                 Fax: +886-3-4907755"
     guanyin_adv_1: "<h5>R&D</h5><br>"
@@ -165,35 +125,31 @@ en:
                 <p> 1. Certificate for China Compulsory Product Certification (2012)<br>
                   2. Statement of Conformity Assessment (2012)<br>
                   Chinese National Laboratory Accreditation Certificate ROC issued by the Taiwan Accreditation Foundation (TAF) </p>"
-    guanyin3c: "Guanyin Plant (Computer, Communication & Consumer Electronics Business Department)"
+    guanyin3c: "Guanyin Plant (3C)"
     guanyin3c_basic: "Employees: 109<br>
                 Address : No.606, Xinfu Rd, Vicinity 3, Fuyuan Village, <br>
                　　　Guanyin Dist., Taoyuan City 328, Taiwan (R.O.C.)<br>
-                Advantage: This plant adopts the vertical supply chain. <br>
-               　　　It has 50 years of experience in filament production <br>
-               　　　and employs advanced multi-wire drawing machines and <br>
-               　　　bunching machines from Europe. The process is stable <br>
-               　　　and the quality control is subject to the requirements <br>
-               　　　demanded by the aerospace industry. The power cord is <br>
-               　　　our main product.<br>
+                Advantage: Adopts the vertical supply chain. It has 50<br>
+               　　　years of experience in filament production and<br>
+               　　　employs advanced multi-wire drawing machines and <br>
+               　　　bunching machines from Europe.<br>
                 <b>Business hotline</b><br>
                 Tel: +886-2-27187333#257<br>
                 Fax: +886-2-27191311"
     guanyin3c_adv_1: "<h5>Professional certificates and honours</h5>"
     guanyin3c_adv_2: "</p>"
     head: "Taipei Headquarters"
-    head_basic: "Address: 10F., No. 129, Sec. 3, Minsheng E. Rd., <br>
-               　　　Songshan District, Taipei City 105, Taiwan (R.O.C.)<br>
+    head_basic: "Address: 10F., No. 129, Sec. 3, Minsheng E. Rd., Songshan District, Taipei City 105, Taiwan (R.O.C.)<br>
                 <b>Business hotline</b><br>
-                Tel.: 02-2718-7333<br>
-                Fax: 02-27180969"
+                Tel: +886-2-2718-7333<br>
+                Fax: +886-2-2718-0969"
     head_adv_1: "Introduction of Tai-I" 
     head_adv_2: "<p>Tai-I Electric Wire & Cable Co., Ltd. was founded in 1954 and has been in business for 60 years. <br>Five plants and two subsidiaries are established for our group. Three of the plants are in Taiwan, including Guanyin Plant (Electric Wire & Cable Business Division/Computer, Communication & Consumer Electronics Components), Hsinchu Plant (Enamelled Wire Business Division) and Resin Plant (Insulating Varnish Business Division). Other two plants are in China, including Tai-I Copper (Guangzhou) Co., Ltd. and Tai-I Jiang Corp (Guangzhou) Co., Ltd. The subsidiaries are Hydean Biotechnology Co., Ltd. (Aquaculture Division) and Tai-I Heavy Industries Technology Co., Ltd. (Advanced Metal Division). Our product line includes high, medium and lower voltage power cables, optical fiber cable, magnet wire, rectangular wire, triple-layer insulated winding wire, electronic wire for automobiles, power cord, power cord set, tinned copper wire and PV cable. The products are primarily used for signal transfer, power transmission and energy conversion with high performance.</p>"    
     rework: "Tai-I Heavy Industries Technology Co., Ltd"
     rework_basic: "Address: No.1001, Gaonan Highway, Nanzi Dist., <br>
                　　　Kaohsiung City 811, Taiwan (R.O.C.)<br>
                 <b>Business hotline</b><br>
-                Tel.: +886-2-27181778<br>
+                Tel: +886-2-27181778<br>
                 Fax: +886-2-27185856"
     rework_adv_1: "Introduction of Tai-I Heavy Industries Technology"
     rework_adv_2: "<p>We specialize in the development technique of the metal material application. We have the composite metal rolling technique, ultra-thin precision calendering, application of antibacterial metal technique and development technique of the equipment and process. We cooperate with the Metal Industries Research & Development Centre to invest in multiple innovation applications of industrial technology. The copper rotor of the shaped copper calendering that we developed wins the favour of domestic and overseas suppliers. We will proceed with the product R&D project and create sophisticated products with better quality</p>"      
@@ -201,7 +157,7 @@ en:
     puredise_basic: "Address: No.12, Shennong E. Rd., Dehe Village, <br>
                　　　Changzhi Township, Pingtung County 908, Taiwan<br>
                 <b>Business hotline</b><br>
-                Tel.: +886-2-27180886<br>
+                Tel: +886-2-27180886<br>
                 Fax: +886-2-27183686"
     puredise_adv_1: "Introduction of Hydean Biotechnology"
     puredise_adv_2: "<p>Hydean Biotechnology Co., Ltd. established an eco-fishery in the Pingtung Agricultural Biotechnology Park. This fishery is the first eco fishery with the \"aquaponics system\" that has acquired ISO 22000 and HACCP, which are the International Food Standard certifications. This company has found Puredise, the first fresh food brand in Taiwan. Puredise strives for sustainable environmental protection and upholds the new food culture idea, which is to persist in fresh and healthy food.</p>"      
@@ -574,7 +530,8 @@ Please visit 104 Website: <br>"
 <li>Bonuses, gifts and public praises for annual model employees</li>
 <li>Subsidies for marriages, funerals, celebrations, festivals and births</li>
 <li>Grants-in-aid for the children of the employees</li>
-<li>Emergency aid for the employees</li></ul>"
+<li>Emergency aid for the employees</li></ul>
+"
   human-taiwan-4:
     main_title: "Taipei Headquarters - Training"
     subtitle: "We are dedicated to providing the employees with the opportunities for their growth, bringing their potential into full play at their workplaces and help them in the implementation of their self-actualization. The focus includes the enhancement of the management competency at different supervisory levels, arrangement of training for professional functions in different departments, implementation of work guidance and cultivation of the talents for the organization to achieve the goal of the sustainable operation of the company."
@@ -593,8 +550,8 @@ Please visit 104 Website: <br>"
     title_two_content_5: "A digital platform is established for sharing and retaining professional knowledge and techniques."
     title_three: "3. Training development system"
   plant:
-    copper_title: "Tai-I Copper (Guangzhou) Co., Ltd. "
-    copper_desc: "The company was founded in May 1997 with a capacity of 50,000 tons of magnet wires every year. Advanced production and testing equipment is imported from Germany, Japan, Italy, an Taiwan in addition to domestic facilities. We have sophisticated and proven engineering techniques, and win the reputation as a quality-oriented trustworthy enterprise in China and excellent Taiwanese enterprise in Guangdong Province."
+    copper_title: "Tai-I Copper"
+    copper_desc: "Founded in May 1997 with a capacity of 50,000 tons of magnet wires every year. Advanced production and testing equipment is imported from Germany, Japan, Italy, and Taiwan. Wins the reputation as a quality-oriented trustworthy enterprise in China and excellent Taiwanese enterprise in Guangdong Province."
     copper_intro: "Tai-I Copper profile"
     copper_certification: "Professional certificates and honours"
     copper_superiority: "Competitive advantages "
@@ -623,7 +580,7 @@ Please visit 104 Website: <br>"
     resin_equipment: "Equipment overview"
     resin_use: "Applications"
     resin_consulting: "Product advisory"
-    guanyin3c_intro: "Guanyin Plant (Computer, Communication and Consumer Electronics) profile"
+    guanyin3c_intro: "Computer, Communication and Consumer Electronics profile"
     guanyin3c_certification: "Professional certificates and honours"
     guanyin3c_superiority: "Competitive advantage"
     guanyin3c_research: "R&D"
@@ -650,20 +607,20 @@ Please visit 104 Website: <br>"
     guanyin_product-7: "Aerial Conductor and Fire Resistant Cable"
     guanyin_product-8: "Wire cable, as well as the high and medium voltage cables"
     guanyin_product-9: "Optical fiber cable"
-    puredise_title: "Hydean Biotechnology Co., Ltd."
-    puredise_desc: "Hydean Biotechnology Co., Ltd. established an eco-fishery in the Pingtung Agricultural Biotechnology Park. This fishery is the first eco fishery with the \"aquaponics system\" that has acquired ISO 22000 and HACCP, which are the International Food Standard certifications. This company has found Puredise, the first fresh food brand in Taiwan. Puredise strives for sustainable environmental protection and upholds the new food culture idea, which is to persist in fresh and healthy food."
-    rework_title: "Tai-I Heavy Industries Technology Co., Ltd."
-    rework_desc: "The company is dedicated to the technical development and application of metallic material. It has the composite metal rolling technique, super-thin precise rolling technique, anti-bacterial metal application technique, and equipment and process development technique. The company cooperate with Metal Industries Research & Development Center (Kaohsiung) in the innovative applications of various industrial techniques. The rolled rotors made of shaped copper material that the company develops are highly praised by global customers, and some product R&D projects are implemented on an ongoing basis to create more valuable and premium commodities."
-    jiangcorp_title: "Tai-I Jiang Corp (Guangzhou) Co., Ltd."
-    jiangcorp_desc: "The company was founded in May 1997 with a capacity of 200,000 tons of bare copper wires every year. It introduces the most advanced SCR CCDR series and the latest electronic control system from the USA, establishes a long-term technical cooperation relation with Southwire (USA), and has sophisticated production technique and stable quality. These make Tai-I Jiang Corp the leading company in the industry around the Pearl River Delta area in China."
-    hsinchu_title: "Hsinchu Plant"
-    hsinchu_desc: "In September 1979, Hsinchu Plant was founded in Hsinchu Industrial park, Hsinchu County, with a capacity of 14,000 tons every year. It is a leading plant in the magnet wire field. The plant operates in technical cooperates with Daiichi Denkousya Corp., the largest magnet wire manufacturer in Japan, to produce quality magnet wires. The products are highly praised by the customers."
-    resin_title: "Resin Plant"
-    resin_desc: "Resin Plant was founded in 1994 to produce functional resin and coating (or varnish). The product is mainly used as the insulation jacket for magnet wires. The plant develops high-value products continuously to catch up with the steps of the world-class coating manufacturers."
-    guanyin_title: "Guanyin Plant (Electric Wire & Cable Business Department) "
-    guanyin_desc: "For the electric wire and cable business, a low-voltage plant was established in June 1954 and a high-voltage plant was founded in 1993. Both plants were merged to form the Electric Wire & Cable Business Department in 1996. 16,000 tons of products are manufactured in the form of optimal portfolio every year, making the plant a leading manufacturer in the wire, cable and fiber cable areas."
-    guanyin3c_title: "Guanyin Plant (Computer, Communication & Consumer Electronics Business Department)"
-    guanyin3c_desc: "The Computer, Communication & Consumer Electronics Business Department was founded in 2012 for production of electronic and electric power cables. The plant work in technical cooperation with Industrial Technology Research Institute (ITRI) and other research institutions to develop and improve processes continuously. We assess the feasibility of 3D printing technology and make intervention and development continuously to meet the requirements and expectations of our customer."
+    puredise_title: "Hydean Biotechnology"
+    puredise_desc: "Established an eco-fishery in the Pingtung Agricultural Biotechnology Park. This fishery is the first eco fishery with the \"aquaponics system\" that has acquired ISO 22000 and HACCP, which are the International Food Standard certifications."
+    rework_title: "Tai-I Heavy Industries Tech"
+    rework_desc: "Dedicated to the technical development and application of metallic material. It has the composite metal rolling technique, super-thin precise rolling technique, anti-bacterial metal application technique, and equipment and process development technique."
+    jiangcorp_title: "Tai-I Jiang Corp"
+    jiangcorp_desc: "Founded in May 1997 with a capacity of 200,000 tons of bare copper wires every year. It introduces the most advanced SCR CCDR series and the latest electronic control system from the USA, establishes a long-term technical cooperation relation with Southwire (USA). We are the leading company in the industry around the Pearl River Delta area in China."
+    hsinchu_title: "Hsinchu"
+    hsinchu_desc: "Founded in Hsinchu Industrial park in 1979 with a capacity of 14,000 tons of magnet wires every year. It operates in technical cooperates with Daiichi Denkousya Corp., the largest magnet wire manufacturer in Japan, to produce quality magnet wires. The products are highly praised by the customers."
+    resin_title: "Resin"
+    resin_desc: "Founded in 1994 to produce functional resin and coating (or varnish). The product is mainly used as the insulation jacket for magnet wires. The plant develops high-value products continuously to catch up with the steps of the world-class coating manufacturers."
+    guanyin_title: "Guanyin(E-Wire & Cable)"
+    guanyin_desc: "A low-voltage plant was established in June 1954 and a high-voltage plant was founded in 1993. 16,000 tons of products are manufactured in the form of optimal portfolio every year, making the plant a leading manufacturer in the wire, cable and fiber cable areas."
+    guanyin3c_title: "Guanyin(3C)"
+    guanyin3c_desc: "Founded in 2012 for production of electronic and electric power cables. It works in technical cooperation with Industrial Technology Research Institute (ITRI). We assess the feasibility of 3D printing technology and make intervention and development continuously to meet the requirements and expectations of our customer."
   copper-intro:
     main_title: "Company Profile"
     main_desc: "The company was founded by Tai-I Electric Wire & Cable Co., Ltd. (Taiwan) in May 1997 in the east area of Guangzhou Economic and Technological Development Zone. The registered capital of the company is US$ 50.760 million and the total investment amount is US$ 84.460 million. The company has about 650 employees, creating an annual sales amount of about RMB 2 billion.。
@@ -927,6 +884,15 @@ The shaped copper wires, copper inserted rotors and composite metal rolling tech
     subtitle_1:  "1. Major products and applications"
     subtitle_2:  "2. Applications"
   hsinchu-consulting:
+    main_title: "Hotline"
+    subtitle_1:  "<h5>Enamelled Wire Business Department - Sales</h5>
+                <p>Tel.: +886-3-5981521 # 238<br>
+                Fax: +886-3-5973117 <br>
+                E-mail: <a href='mailto:sales_m@tai-i-int.com.tw' target='_blank'>sales_m@tai-i-int.com.tw</a></p>"
+    subtitle_2:  "<h5>Enamelled Wire Business Department - Technique</h5>
+                <p>Tel.: +886-3-5981521 # 224/346<br>
+                Fax: +886-3-5981166</p>"
+  jiangcorp-intro:
     main_title: "Company Profile"
     main_desc: "The company was founded by Tai-I Electric Wire & Cable Co., Ltd. (Taiwan) in May 1997 in the east area of Guangzhou Economic and Technological Development Zone. The registered capital of the company is US$ 40.720 million and the total investment amount is US$ 70.220 million. The company has about 170 employees, creating an annual sales amount of about RMB 9 billion. 
 <br><br>

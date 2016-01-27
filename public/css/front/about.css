@@ -14,10 +14,10 @@ article aside ul{width:261px;display:inline-block;text-align:left}
 article aside li{width:100%;border-top:1px solid #E5E5E5;background:url(../images/ab-02.jpg) center 0 no-repeat #fff}
 article aside li > a{display:block;width:100%;background:url(../images/ab-03.png) 30px 19px no-repeat;
 color:#095368;font-size:17px;padding:12px 0 12px 60px}
-article aside ul li.active{background:url(../images/ab-02h.png) 0 0 no-repeat}
+article aside ul li.active{/*background:url(../images/ab-02h.png) 0 0 no-repeat*/}
 article aside ul li:hover > a,
-article aside ul li.active > a{background:url(../images/ab-03h.png) 30px 19px no-repeat;color:#106AB7}
-
+article aside ul li.active > a{background:url(../images/ab-03h.png) 30px 19px no-repeat,url(../images/ab-02h.png) 0 0/100% 100% no-repeat;color:#106AB7}
+article aside ul li > a,article aside ul li:hover > a{-webkit-transition:none;-moz-transition:none;}
 /*-----------------------------------------------------------------------子選單---*/
 
 article aside .sub{padding:15px 0;background:url(../images/ab-02.jpg) center 0 no-repeat #fff}
