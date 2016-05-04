@@ -4,11 +4,12 @@ en:
     plant: "Business Units"
     product: "Product Intro."
     investors: "Investor Service"
-    hr: "H.R."
+    hr: "Careers"
     contact: "Contact Us"
     copyright: "© 2014 TAI-I ELECTRIC WIRE & CABLE All Rights Reserved."
   index:
     cpration_h4: "Cooperative Institutions"
+    cpration_img: "/css/images/en/id-37.jpg"
     cpration_more: "More"
     spirit_main_title: "Our belief"
     spirit_title_1: "<b>Reinforcement</b><br>
@@ -16,8 +17,7 @@ en:
               relationships with customers."
     spirit_title_2: "<b>Innovation</b><br>
               Devote ourselves to concept, technology and product innovation."
-    spirit_title_3: "<b>International perspective</b>Keep international horizon in mind, <br>
-              adopt global operations and become a global enterprise group."
+    spirit_title_3: "<b>Global perspective</b> Keep global horizon in mind, adopt global operations and become a global enterprise group."
     news: "News "
     main_product_cate_1: "Bright Copper"
     main_product_cate_2: "Heat Proof"
@@ -28,35 +28,36 @@ en:
     main_product_cate_1_title: "2.6mm bare copper wire spool"
     main_product_cate_1_content: "<br>
                 The 2.6mm shaft bare copper wire is produced by the most advanced equipment from Europe and the double-head wiredrawing machine with non-limited slip differential and driven by the single motor. The advantages of the 2.6mm bare copper wire spool are listed as follows.<br>
-                1. With smooth surface, it is suitable for magnet wire customers <br>
+                1. With smooth surface, it is suitable for enameled wire customers <br>
                    with high requirements on appearance.<br>
                 2. It is so stretchable that it can be wire drawn to the ultra-<br>
                    fine copper wire with a diameter below 0.04mm.<br>
                 3. It has been stretched and annealed continuously. The wire <br>
                    with a diameter of 2.6mm has the elongation above 32%. It is <br>
                    highly flexible and suitable for the processing of copper products.<br>"
-    main_product_cate_2_title: "MW-35C composite double coated heat resistant magnet wire EIWH"
+    main_product_cate_2_title: "MW-35C composite double coated heat resistant enameled wire EIWH"
     main_product_cate_2_content: "<br>
-                1. Feature: The surge resistance of the paint film can prevent the<br>
-                   overload voltage generated during the high-speed adjustment of <br>
-                   the frequency converter. Local discharges may occur and the film<br>
-                   cracks due to heat deterioration. The resistance of the paint<br>
-                   film under high temperature, pressure and frequency is better <br>
-                   than that of the heat-resistant wire with the same level.<br>
-                2. Use: The magnet wire is used as the coil winding material <br>
-                   of the high-frequency transformer, inverter-driven motor<br>
-                   and induction servomotor.<br>"
-    main_product_cate_3_title: "Insulating resin"
+                1. Production range:  0.20~3.0mm<br>
+                2. It is treated with composite coating and provided with <br>
+                   characteristics of excellent heat resistance, outstanding <br>
+                   wear resistance and remarkable insulation of overhead transmission.<br>
+                3. It has excellent windability and suitable for coil winding <br>
+                   machines with high fill-in ratio.<br>
+                4. It integrates with polyesterimide, polyamideimide and the <br>
+                   special process designed by Tai-I. Therefore, it perfectly <br>
+                   demonstrates that this composite coating enameled wire is suitable <br>
+                   for high-end electric winding machines.<br>"
+    main_product_cate_3_title: "Insulating Resin"
     main_product_cate_3_content: "<br>
-                The products from this business division are functional resin and coating (also known as varnish). They are mainly used for the external insulation coating of the magnet wire. Therefore, the insulation, mechanical and heat-resistant properties are the primary focus.<br>
+                The products from this business unit are functional resin and coating (also known as varnish). They are mainly used for the external insulation coating of the enameled wire. Therefore, the insulation, mechanical and heat-resistant properties are the primary focus.<br>
                 The product types are polyester resin (PEW), polyesterimide resin (EIW), polyurethane resin (UEW), polyimide resin (AIW), nylon resin (NY) and other types of the functional coating resin.<br>"
-    main_product_cate_4_title: "Heat and fire resistant cable"
+    main_product_cate_4_title: "Heat and Fire Resistant Cable"
     main_product_cate_4_content: "<br>
                 The products include the heat-resistant cables (300℃ and 380℃) and fire resistant cables (840℃ and 950℃). They have passed the Heat-resistant Wires and Cables (HR) and Fire-retardant Cables (FR) of the Chinese Fire Protection Safety Center (CFPSC). The coating materials include the low smoke zero halogen materials. These materials are suitable for the power supply, control circuit, alarm, as well as the monitoring and communication wires of the fire safety equipment emergency power supply system.<br>"
-    main_product_cate_5_title: "Power cord sets of Computer, Communication & Consumer Electronics products"
+    main_product_cate_5_title: "Power Cord sets of 3C Products"
     main_product_cate_5_content: "<br>
                 The power cord set with the power cable and plug connector is the power supply component of electronic products. These are used for power transmission. The quality of the power cord set may affect the reliability and safety of the product. Therefore, the power cord set is a significant part for the electronic products."
-    main_product_cate_6_title:  "Voltage surge resistant wire"
+    main_product_cate_6_title:  "Voltage Surge Resistant Wire"
     main_product_cate_6_content: "<br>
                 1. Feature: The surge resistance of the paint film can prevent the<br>
                    overload voltage generated during the high-speed adjustment of <br>
@@ -64,7 +65,7 @@ en:
                    cracks due to heat deterioration. The resistance of the paint<br>
                    film under high temperature, pressure and frequency is better <br>
                    than that of the heat-resistant wire with the same level.<br>
-                2. Use: The magnet wire is used as the coil winding material <br>
+                2. Use: The enameled wire is used as the coil winding material <br>
                    of the high-frequency transformer, inverter-driven motor<br>
                    and induction servomotor.<br>"
     copper: "Tai-I Copper (Guangzhou) Co., Ltd."
@@ -75,9 +76,7 @@ en:
                 Tel: +86-020-82265950 and +86-020-82265528<br>
                 Fax:  +86-020-82266673 and +86-020-32067312<br>"
     copper_adv: "<h5>R&D</h5>
-                
                 <p>Our R&D team with enormous potentiality is formed by research and development experts that 87.5% of them have junior college degree or above. Senior Japanese and Taiwanese consultants, young technicians from various professional backgrounds work together. The team with strong cohesiveness is full of frontier spirits. It continuously innovates and optimizes our products.</p>"
-    
     jiangcorp: "Tai-I Jiang Corp (Guangzhou) Co., Ltd."
     jiangcorp_basic: "Employees: 170<br>
                 Registered capital: USD 70.22 million<br>
@@ -85,73 +84,68 @@ en:
                 <b>Business hotline</b><br>
                 Tel: +86-020-82265949<br>
                 Fax: +86-020-82265715#6060"
-    jiangcorp_adv: "<h5>Competitive advantage </h5>
-                <p><br>
-                  Vertical integration of the organizational structure:<br>
-                  The production capacity of our bare copper wire products is 200,000 tons. Our product group comprises magnet wires, electric cables, wire cables, electronic wires and communication wires. We are familiar with requirements demanded by customers. Furthermore, we have advantages in scale and excellent customers, which make us the leading enterprise among the companies in the same business in the Greater Pearl River Delta. </p>
-                <br>
-                <h5>Certificate and award </h5>
-"
+    jiangcorp_adv: "<h5>Competitive Advantages</h5>
+                <p>Vertical integration of the organizational structure:<br>
+                  The production capacity of our bare copper wire products is 200,000 tons. Our product group comprises enameled wires, electric cables, wire cables, electronic wires and communication wires. We are familiar with requirements demanded by customers. Furthermore, we have advantages in scale and excellent customers, which make us the leading enterprise among the companies in the same business in the Greater Pearl River Delta. </p>
+                <h5>Certificate and Award </h5>"
     hsinchu: "Hsinchu Plant"
     hsinchu_basic: "Employees: 120<br>
-                Address : No. 25, Datong Rd., Hsinchu Industrial Park, Hsinchu County 310, Taiwan (R.O.C.) <br>
-                Advantage: The high value added magnet wire is patented in Germany, the U.S.and Taiwan.<br>
+                Address: No. 25, Datong Rd., Hsinchu Industrial Park, Hsinchu County 310, Taiwan (R.O.C.) <br>
+                Advantage: The high value added enameled wire is patented in Germany, the U.S. and Taiwan.<br>
                 <b>Business hotline</b><br>
                 Tel: +886-3-5981521#238<br>
                 Fax: +886-3-2545-5973117"
     hsinchu_adv: "<h5>R&D </h5>
-                <p> 
-                To improve product quality, enhance competitiveness and develop the value added to the new product, we participate in the technical cooperation with the Metal Industries Research & Development Centre. We receive guidance from Taiwanese professors and put various precise instrument (and professionals) in research and development.<br>We have made the voltage surge resistant wire, shaped copper wire and triple-layer insulated winding wire. These products enhance the level of industrial technology and keep up with the social trend.</p>
-                <br>
-                <h5>Important equipment</h5>"
+                <p>To improve product quality, enhance competitiveness and develop the value added to the new product, we participate in the technical cooperation with the Metal Industries Research & Development Centre. We receive guidance from Taiwanese professors and put various precise instrument (and professionals) in research and development.<br>We have made the voltage surge resistant wire, shaped copper wire and triple-layer insulated winding wire. These products enhance the level of industrial technology and keep up with the social trend.</p>
+                <h5>Important Equipment</h5>"
     resin: "Resin Plant"
     resin_basic: "Employees: 20<br>
-                Address: Address : No. 399, Sec. 1, Zhongshan N. Rd., Yangmei Town, Taoyuan City 326, Taiwan (R.O.C.)<br>
+                Address: No. 399, Sec. 1, Zhongshan N. Rd., Yangmei Town,Taoyuan City 326,Taiwan(R.O.C.)<br>
                 Advantage: Masters 1st-class coating products and optimizes product portfolios by receiving feedbacks from world-class customers.<br>
                 <b>Business hotline</b><br>
                 Tel: +886-3-5981521#238<br>
                 Fax: +886-3-2545-5981166"
-    resin_adv: "<h5>Product advantages</h5>"
+    resin_adv: "<h5>Product Advantages</h5>"
     guanyin: "Guanyin Plant (Electric Wire & Cable)"
     guanyin_basic: "Employees: 109<br>
-                Address : No.606, Xinfu Rd, Vicinity 3, Fuyuan Village, Guanyin Dist., Taoyuan City 328, Taiwan (R.O.C.)<br>
+                Address: No.606, Xinfu Rd, Vicinity 3, Fuyuan Village, Guanyin Dist., Taoyuan City 328, Taiwan (R.O.C.)<br>
                 Advantage: A qualified supplier of state-owned corp.for Taiwan Power, Chunghwa Telecom, China Steel and CPC, Taiwan. Also a designated supplier for the high voltage power cables of Formosa Plastics Group.<br>
                 Tel: +886-3-4907711#804/814<br>
                 Fax: +886-3-4907755"
-    guanyin_adv_1: "<h5>R&D</h5><br>"
+    guanyin_adv_1: "<h5>R&D</h5>"
     guanyin_adv_2: "The R&D department of this business division is devoted to the productivity improvement and product development. The following new products will be developed.<br>
                   1. FFC (Flexible Flat Cable)<br>
                   2. Electronic wire UL 1430 / UL1431<br>
                   3. The charging cable for the electric car<br>
                   4. TCER<br>
                   5. Automobile wire<br>
-                  6. The leading wire for the automobile motor "
-    guanyin_adv_3: "<h5>Certificate and award</h5><br>
-                <p> 1. Certificate for China Compulsory Product Certification (2012)<br>
+                  6. The leading wire for the automobile motor<br><br>"
+    guanyin_adv_3: "<h5>Certificate and Award</h5>
+                  <p> 1. Certificate for China Compulsory Product Certification (2012)<br>
                   2. Statement of Conformity Assessment (2012)<br>
                   Chinese National Laboratory Accreditation Certificate ROC issued by the Taiwan Accreditation Foundation (TAF) </p>"
     guanyin3c: "Guanyin Plant (3C)"
     guanyin3c_basic: "Employees: 109<br>
-                Address : No.606, Xinfu Rd, Vicinity 3, Fuyuan Village, Guanyin Dist., Taoyuan City 328, Taiwan (R.O.C.)<br>
+                Address: No.606, Xinfu Rd, Vicinity 3, Fuyuan Village, Guanyin Dist., Taoyuan City 328, Taiwan (R.O.C.)<br>
                 Advantage: Adopts the vertical supply chain. It has 50 years of experience in filament production and employs advanced multi-wire drawing machines and bunching machines from Europe.<br>
                 <b>Business hotline</b><br>
                 Tel: +886-2-27187333#257<br>
                 Fax: +886-2-27191311"
-    guanyin3c_adv_1: "<h5>Professional certificates and honours</h5>"
+    guanyin3c_adv_1: "<h5>Certificates and Honors</h5>"
     guanyin3c_adv_2: "</p>"
     head: "Taipei Headquarters"
     head_basic: "Address: 10F., No. 129, Sec. 3, Minsheng E. Rd., Songshan District, Taipei City 105, Taiwan (R.O.C.)<br>
                 <b>Business hotline</b><br>
                 Tel: +886-2-2718-7333<br>
                 Fax: +886-2-2718-0969"
-    head_adv_1: "Introduction of Tai-I" 
-    head_adv_2: "<p>Tai-I Electric Wire & Cable Co., Ltd. was founded in 1954 and has been in business for 60 years. <br>Five plants and two subsidiaries are established for our group. Three of the plants are in Taiwan, including Guanyin Plant (Electric Wire & Cable Business Division/Computer, Communication & Consumer Electronics Components), Hsinchu Plant (Enamelled Wire Business Division) and Resin Plant (Insulating Varnish Business Division). Other two plants are in China, including Tai-I Copper (Guangzhou) Co., Ltd. and Tai-I Jiang Corp (Guangzhou) Co., Ltd. The subsidiaries are Hydean Biotechnology Co., Ltd. (Aquaculture Division) and Tai-I Heavy Industries Technology Co., Ltd. (Advanced Metal Division). Our product line includes high, medium and lower voltage power cables, optical fiber cable, magnet wire, rectangular wire, triple-layer insulated winding wire, electronic wire for automobiles, power cord, power cord set, tinned copper wire and PV cable. The products are primarily used for signal transfer, power transmission and energy conversion with high performance.</p>"    
-    rework: "Tai-I Heavy Industries Technology Co., Ltd"
+    head_adv_1: "Corporate Profile" 
+    head_adv_2: "<p>Tai-I Electric Wire & Cable Co., Ltd. was founded in 1954 and has been in business for 60 years. <br>Five plants and two subsidiaries are established for our group. Three of the plants are in Taiwan, including Guanyin Plant (Electric Wire & Cable Business Unit/3C Component Business Unit), Hsinchu Plant (Enameled Wire Business Unit) and Resin Plant (Insulating Varnish Business Unit). Other two plants are in China, including Tai-I Copper (Guangzhou) Co., Ltd. and Tai-I Jiang Corp (Guangzhou) Co., Ltd. The subsidiaries are Hydean Biotechnology Co., Ltd. (Aquaculture Division) and Tai-I Hitech Heavy Industries Technology Co., Ltd. (Advanced Metal Division). Our product lines include high, medium and lower voltage power cables, optical fiber cable, enameled wire, rectangular wire, triple-layer insulated winding wire, electronic wire for automobiles, power cord, power cord set, tinned copper wire and PV cable. The products are primarily used for signal transfer, power transmission and energy conversion with high performance.</p><br>"    
+    rework: "Tai-I Hitech Heavy Industries Technology Co., Ltd"
     rework_basic: "Address: No.1001, Gaonan Highway, Nanzi Dist., Kaohsiung City 811, Taiwan (R.O.C.)<br>
                 <b>Business hotline</b><br>
                 Tel: +886-2-27181778<br>
                 Fax: +886-2-27185856"
-    rework_adv_1: "Introduction of Tai-I Heavy Industries Technology"
+    rework_adv_1: "Introduction of Tai-I Hitech Heavy Industries Technology"
     rework_adv_2: "<p>We specialize in the development technique of the metal material application. We have the composite metal rolling technique, ultra-thin precision calendering, application of antibacterial metal technique and development technique of the equipment and process. We cooperate with the Metal Industries Research & Development Centre to invest in multiple innovation applications of industrial technology. The copper rotor of the shaped copper calendering that we developed wins the favour of domestic and overseas suppliers. We will proceed with the product R&D project and create sophisticated products with better quality</p>"      
     puredise: "Hydean Biotechnology Co., Ltd."
     puredise_basic: "Address: No.12, Shennong E. Rd., Dehe Village, Changzhi Township, Pingtung County 908, Taiwan<br>
@@ -159,7 +153,7 @@ en:
                 Tel: +886-2-27180886<br>
                 Fax: +886-2-27183686"
     puredise_adv_1: "Introduction of Hydean Biotechnology"
-    puredise_adv_2: "<p>Hydean Biotechnology Co., Ltd. established an eco-fishery in the Pingtung Agricultural Biotechnology Park. This fishery is the first eco fishery with the \"aquaponics system\" that has acquired ISO 22000 and HACCP, which are the International Food Standard certifications. This company has found Puredise, the first fresh food brand in Taiwan. Puredise strives for sustainable environmental protection and upholds the new food culture idea, which is to persist in fresh and healthy food.</p>"      
+    puredise_adv_2: "<p>Hydean Biotechnology Co., Ltd. established an eco-fishery in the Pingtung Agricultural Biotechnology Park. This fishery is the first eco fishery with the \"aquaponics system\" that has acquired ISO 22000 and HACCP, which are International Food Standard certifications. This company has found Puredise, the first fresh food brand in Taiwan. Puredise strives for sustainable environmental protection and upholds the new food culture idea, which is to persist in fresh and healthy food.</p>"      
   search:
     placeholder: "Product Search"
   contactus:
@@ -177,17 +171,17 @@ en:
     content_2: "Source: "
     content_3: "The United Nations Material Purchase and Control Center Taiwan Sub-center website"
   about_side_menu:
-    intro: "Introduction"
-    concept: "Operational philosophy"
-    responsibility: "Corporate responsibility"
-    history: "Company history"
-    product-1: "Main product and application"
+    intro: "Corporate Profile"
+    concept: "Corporate Philosophy"
+    responsibility: "Corporate Responsibility"
+    history: "Corporate Milestone"
+    product-1: "Product & Application"
     evolve: "R&D"
-    superiority: "Competitive advantage"
-    operating-1: "Our trading arrangement"
-    organization: "Organizational structure"
-    group: "Group structure"
-    sustainability: "Sustainable development"
+    superiority: "Competitive Advantages"
+    operating-1: "Operation Deployment"
+    organization: "Organizational Structure"
+    group: "Group Structure"
+    sustainability: "Sustainable Development"
     interested: "Stakeholder"
   human_side_menu:
     title: "Tai-I Jiang Corp, Tai-I Copper"
@@ -203,27 +197,27 @@ en:
     taiwan-3: "Compensation and Welfare"
     taiwan-4: "Training"
   about-responsibility:
-    main_title: "Sustainable development"
-    title_one: "Corporate governance implementation"
-    title_one_content: "<ul><li>We designate the system related to the corporate social responsibility and relevant regulations for execution.</li><li>We set up measures related to the operation of full- and part-time units promoting the corporate social responsibility.</li><li>Competent authorities of our headquarter and all business divisions carry out the corporate social responsibility. These authorities live up to the responsibility through environmental policies, reduction of resource consumption and increase of energy efficiency lead to significant performance for us.</li></ul>"
-    title_two: "Sustainable environment development"
+    main_title: "Sustainable Development"
+    title_one: "Corporate Governance Implementation"
+    title_one_content: "<ul><li>We designate the system related to the corporate social responsibility and relevant regulations for execution.</li><li>We set up measures related to the operation of integration units promoting the corporate social responsibility.</li><li>Competent authorities of our headquarter and all business units carry out the corporate social responsibility. These authorities live up to the responsibility through environmental policies, reduction of resource consumption and increase of energy efficiency lead to significant performance for us.</li></ul>"
+    title_two: "Sustainable Environment Development"
     title_two_content: "We declare the goal of the corporate social responsibility through various promotions. We implement the system executing the restriction of hazardous substances (RoHS). We carry out green production and purchase, which we put into practice for the process. We implement the cleaner production technology to utilize resources adequately, as well as to improve the process and operation management to reduce the waste."
     title_three: "Charity support"
     title_three_content: "<ul><li>We comply with relevant labor laws and ensure the legal rights of the employee.</li><li>We provide employees with safety and sanitary working environments.</li><li>We provide transparent and effective consumer complaint procedures for our products and services. </li></ul>"
   about-history:
-    main_title: "Company history"
+    main_title: "Corporate Milestone"
     imageurl: "/css/images/en/ab-10.jpg"
   about-product-1:
-    nav_main_product: "Main product and application"
-    nav_main_product_1: "Bare copper wire"
+    nav_main_product: "Product & Application"
+    nav_main_product_1: "Bare Copper Wire"
     nav_main_product_2: "Triple-Layer Insulated Winding Wire"
-    nav_main_product_3: "Power supply cord, extension cord and electronic wire"
-    nav_main_product_4: "PV cable for the green energy"
-    nav_main_product_5: "Wire cable"
-    nav_main_product_6: "Magnet wire"
-    main_title: "Bare copper wire"
+    nav_main_product_3: "Power Cord, extension cord and electronic wire"
+    nav_main_product_4: "PV Cable for the green energy"
+    nav_main_product_5: "Wire Cable"
+    nav_main_product_6: "Enameled wire"
+    main_title: "Bare Copper Wire"
     subproduct_1: "Bare copper wire:"
-    description_1: "The bare copper wire can be processed and made to magnet wires, wire cables, shaped copper wires, rectangular copper wires and construction wires."
+    description_1: "The bare copper wire can be processed and made to enameled wires, wire cables, shaped copper wires, rectangular copper wires and construction wires."
     subproduct_2: "Shaped copper/wire"
     description_2: "This is a primary part used for the high performance copper rotor of the motor.<ul><li>The number of vehicles in the scale of the market for electric and hybrid vehicles will reach about 13,000 thousand vehicles by 2020. The market share of the electric vehicles worldwide will reach above approximately 13%. The huge demands of the electric and hybrid cars will drive that of the parts and components produced for relevant vehicle plants.</li><li>We have long years of experience in copper processing, together with copper production, research and development. We have operated in the research, development and manufacturing of the shaped copper, the key part for the motor of the electric vehicle. Therefore, we are confident in developing these parts and components.</li></ul>"
     subproduct_3: "Rectangular copper wire:"
@@ -243,7 +237,7 @@ en:
               </ul>"
     subproduct_6: "PV Ribbon and PV Wire  "
     description_6: "These products are primarily used for the battery holder wire and bus ribbon in solar panels." 
-    subproduct_7: "Our competitive advantage:"
+    subproduct_7: "Our Competitive Advantages:"
     description_7: "<ul>
                 <li>We have the core technology of the wire and copper. Our products are integrated vertically. We have the key material in hand, which is an absolute advantage on the yield rate and selling price of the product.</li>
                 <li>The Industrial Technology Research Institute executes a triple climatic test to check the heat cycle endurance.</li>
@@ -253,24 +247,24 @@ en:
   about-product-2:
     main_title: "Triple-Layer Insulated Winding Wire"
   about-product-3:
-    main_title: "Power supply cord, extension cord and electronic wire"
+    main_title: "Power Cord, Extension Cord and Electronic Wire"
   about-product-4:
     main_title: "PV cable for the green energy"
   about-product-5:
-    main_title: "Wire cable"
-    product_5_img_url: "/css/images/en/ab-18.jpg"
+    main_title: "Wire Cable"
+    product_5_img_url: "/css/images/ab-18.jpg"
   about-product-6:
-    main_title: "Magnet wire"
+    main_title: "Enameled Wire"
     product_6_img_url: "/css/images/en/ab-19.jpg"
   about-evolve:
     main_title: "R&D"
     title_one: "1、研究發展計畫"
-    title_one_content: "Magnet wire industry:<br>
-We are always a major domestic supplier for magnet wires. With long years of experience in copper processing, we actively execute research and development with regard to high level and high added value products, optimize product portfolios and enhance profitability."
+    title_one_content: "Enameled wire industry:<br>
+We are always a major domestic supplier for enameled wires. With long years of experience in copper processing, we actively execute research and development with regard to high level and high added value products, optimize product portfolios and enhance profitability."
     title_two: "Electric cable:"
     title_two_content: "In Taiwanese market, we continue to grasp the business opportunity with regard to the cable needs from the public construction such as the Seventh Power Transmission and Substation Project of Taiwan Power Company. Besides, we utilize our current advantage in the production technology to actively expand the business regarding the electric cable needs of the infrastructure construction in China. We grasp the business opportunity with regard to the electric cable needs from the \"12th Five-Year Plan of China\" and \"Smart Grid\" to expand our customer base."
     title_three: "Coating:"
-    title_three_content: "We work on mass production of the magnet wire coating and develop the coating for special purpose wires. We strengthen the research and development, satisfy internal needs, actively explore the global market and increase profitable opportunities."
+    title_three_content: "We work on mass production of the enameled wire coating and develop the coating for special purpose wires. We strengthen the research and development, satisfy internal needs, actively explore the global market and increase profitable opportunities."
     title_four: "Environmental green energy:<br>
     We continue to collaborate with professional R&D institutions, integrate with upstream and downstream industries, develop new products, grasp key production technologies of the product and enhance profitability."
     title_five: "2、已開發成功之技術或產品"
@@ -287,15 +281,15 @@ We are always a major domestic supplier for magnet wires. With long years of exp
 <li>Power cord</li>
               </ul>"
   about-superiority:
-    main_title: "Competitive advantage"
+    main_title: "Competitive Advantages"
     title_one: "1. Vertical integration of the organizational structure"
-    title_one_content: "We apply the vertical integration of organizational structure to the product related to wire cables and magnet wires. We acquire the copper plate material for the manufacturing the copper conductor. Our resin plant supplies the external insulation coating of the magnet wire. Throughout the foregoing process, we always have a complete control. In this way, we can ensure the stable production of wire cables and magnet wires with high quality."
+    title_one_content: "We apply the vertical integration of organizational structure to the product related to wire cables and enameled wires. We acquire the copper plate material for manufacturing copper conductor. Our resin plant supplies the external insulation coating of the enameled wire. Throughout the foregoing process, we always have a complete control. In this way, we can ensure the stable production of wire cables and enameled wires with high quality."
     title_two: "2. Advanced production equipment"
     title_two_content: "Our production equipment is mainly imported from advanced countries such as the U.S., Italy, Germany and Japan. Therefore, we are assured that we can keep our product quality up."
     title_three: "3. Comprehensive technical support service"
     title_three_content: "We have professional technologies for copper processing; therefore, we can ensure our technical advantage. Other competitors outsource these technologies, which makes it difficult for adjustment based on the customer needs. We keep a great relationship with customers. Our R&D team works with the production team of the customer to execute research and development concerning special wires that meet customer needs. We develop interdependent relationships with the customer and achieve the win-win advantage."
     title_four: "4. Abundant industrial experience"
-    title_four_content: "Our senior management team have plentiful experiences in the wire industry. We keep up to date with the industry development trend and establish dominant strategies and policies."
+    title_four_content: "Our senior management team has plentiful experiences in the wire industry. We keep up to date with the industry development trend and establish dominant strategies and policies."
     title_five: "5. Diverse industry-academia cooperation"
     title_five_content: "We work with the Graduate Institute of Chemistry in National Taiwan University, the Green Energy and Environment Research Laboratories of the Industrial Technology Research Institute as well as the Metal Industries Research and Development Centre to develop the triple-layer insulated winding wire, PV ribbon and shaped copper. We create product differentiation and guarantee product competitiveness."
     title_six: "6、裸銅線、漆包線及電線電纜形成垂直整合的經營模式"
@@ -360,46 +354,46 @@ We are always a major domestic supplier for magnet wires. With long years of exp
                 <li>已取得 UL 認證，目前 UL、TUV 雙認證及 PSE 認證送樣中</li>
               </ul>"
   about-operating-1:
-    nav_main_title: "Our trading arrangement"
-    nav_main_op_1: "Our trading arrangement"
-    nav_main_op_2: "Taiwan business group"
-    nav_main_op_3: "China business group"
-    main_title: "Our trading arrangement"
+    nav_main_title: "Operation Deployment"
+    nav_main_op_1: "Operation Deployment"
+    nav_main_op_2: "Taiwan Business Group"
+    nav_main_op_3: "China Business Group"
+    main_title: "Operation Deployment"
     subtitle: "Leading brand in the industry"
-    main_content: "According to the survey \"The 2,000 Largest Public Companies\" conducted by CommonWealth Magazine in 2014, our revenue range ranks the 73th among 2,000 companies. With high market share and great customers, our business scope is larger than the companies in the same trade that are listed in the stock markets in Taiwan, China and Hong Kong. Our group has become the leading manufacturer in the bare copper wire and magnet wire industries in China. We are the third largest vendor for bare copper wire and magnet wire in China and the largest in southern China."
+    main_content: "According to the survey \"The 2,000 Largest Public Companies\" conducted by CommonWealth Magazine in 2014, our revenue range ranks the 73th among 2,000 companies. With high market share and great customers, our business scope is larger than the companies in the same trade that are listed in the stock markets in Taiwan, China and Hong Kong. Our group has become the leading manufacturer in the bare copper wire and enameled wire industries in China. We are the third largest vendor for bare copper wire and enameled wire in China and the largest in southern China."
   about-operating-2:
-    main_title: "Taiwan business group"
-    subtitle: "The magnet wire, electric cable, optical fiber cable and insulating material form a division system of horizontal and vertical allocation."
-    title_one: "1. Enamelled Wire Business Department"
-    title_one_content_1: "The annual production capacity of the magnet wire is 16,000 metric tons, which makes us the leading vendor for magnet wire in Taiwan."
-    title_one_content_2: "We have successfully developed (1) voltage surge resistant wire, (2) high frequency resistance magnet wire and (3) colored magnet wire with heat resistance capacity. These products with high added value have been patented in the U.S., Germany and Taiwan. We are the only one in Taiwan with such great honor. Furukawa Electric Co., Ltd., Phelps Dodge, Superior Essex and Tai-I are the only four companies in the world that have production and sales patents for these products."
-    title_one_content_3: "Our magnet wire with high added value has been patented in Germany, the U.S. and Taiwan."
-    title_two: "2. Electric Wire & Cable Business Division"
+    main_title: "Taiwan Business Group"
+    subtitle: "The enameled wire, electric cable, optical fiber cable and insulating material form a division system of horizontal and vertical allocation."
+    title_one: "1. Enameled Wire Business Unit"
+    title_one_content_1: "The annual production capacity of the enameled wire is 16,000 metric tons, which makes us the leading vendor for enameled wire in Taiwan."
+    title_one_content_2: "We have successfully developed (1) voltage surge resistant wire, (2) high frequency resistance enameled wire and (3) colored enameled wire with heat resistance capacity. These products with high added value have been patented in the U.S., Germany and Taiwan. We are the only one in Taiwan with such great honor. Furukawa Electric Co., Ltd., Phelps Dodge, Superior Essex and Tai-I are the only four companies in the world that have production and sales patents for these products."
+    title_one_content_3: "Our enameled wire with high added value has been patented in Germany, the U.S. and Taiwan."
+    title_two: "2. Electric Wire & Cable Business Unit"
     title_two_content_1: "The annual production capacity of the plastic electric wire is 21,600 metric tons and the annual production capacity of the high voltage electric cable is 14,400 metric tons. (The optimal product portfolio is 16,000 tons.)"
     title_two_content_2: "Our plastic electric wire and high voltage electric cable have passed the type test for the high voltage electric cable (15kV, 25kV, 69kV and 161kV)."
     title_two_content_3: "We have a construction team for electric cable. It is able to design, plan and construct an entire system for the 161kV XLPE electric cable. We open the niche in all international construction markets."
     title_two_content_4: "We are the designated supplier for the high voltage power cables provided by 50 companies (Mai-Liao Power Corporation, 6th Naphtha Cracker Plant, Nan Ya Plastics Corporation, Formosa Chemicals & Fibre Corporation...etc.) in the business group of the Formosa Plastics Group."
     title_two_content_5: "We have acquired the ISO9001, ISO 14001 and UL Certificates. At the end of June 2013, we passed the ISO/TS16949 Certificates, which are related to the quality control of the automotive system."
-    title_three: "3. Insulating Varnish Business Division"
-    title_three_content_1: "The annual production capacity of various coating materials for the magnet wire is 4,800 tons."
-    title_three_content_2: "Our (1) voltage surge resistant wire, (2) high frequency resistance magnet wire and (3) colored magnet wire with heat resistance capacity are patented in the U.S., Germany and Taiwan."
+    title_three: "3. Insulating Varnish Business Unit"
+    title_three_content_1: "The annual production capacity of various coating materials for the enameled wire is 4,800 tons."
+    title_three_content_2: "Our (1) voltage surge resistant wire, (2) high frequency resistance enameled wire and (3) colored enameled wire with heat resistance capacity are patented in the U.S., Germany and Taiwan."
     title_three_content_3: "We work with the Industrial Technology Research Institute to develop high-quality coating materials and obtain the exclusive right of technology."
     title_three_img_url: "/css/images/en/ab-22.jpg"
     title_three_img_url_2: "/css/images/en/ab-22_2.jpg"
-    title_four: "4. Computer, Communication & Consumer Electronics Component Business Division"
-    title_four_content_1: "Our Computer, Communication & Consumer Electronics Component Business Division was established in 2012. It is in charge of the electronic power cord in which the annual production capacity is about 60,000 thousand sets."
+    title_four: "4. 3C Component Business Unit"
+    title_four_content_1: "Our 3C Component Business Unit was established in 2012. It is in charge of the electronic power cord in which the annual production capacity is about 60,000 thousand sets."
     title_four_content_2: "This division has the production capability in vertical integration."
-    title_four_content_3: "We have 50 years of experience in filament production and employs advanced multi-wire drawing machines and bunching machines from Europe. The process is stable and the quality control is subject to the requirements demanded by the aerospace industry."
+    title_four_content_3: "We have 50 years of experience in filament production and employs advanced multi-wire drawing machines and bunching machines from Europe. The process is stable and the quality control is capable to meet the aerospace industry requirements."
     title_four_img_url: "/css/images/en/ab-23.jpg"
     title_five: "5. Hydean Biotechnology Co., Ltd."
-    title_five_content: "Hydean Biotechnology Co., Ltd. established an eco-fishery in the Pingtung Agricultural Biotechnology Park. This fishery is the first eco fishery with the \"aquaponics system\" that has acquired ISO 22000 and HACCP, which are the International Food Standard certifications. This company has found Puredise, the first fresh food brand in Taiwan. Puredise strives for sustainable environmental protection and upholds the new food culture idea, which is to persist in fresh and healthy food."
-    title_six: "6. Tai-I Heavy Industries Technology Co., Ltd."
+    title_five_content: "Hydean Biotechnology Co., Ltd. established an eco-fishery in the Pingtung Agricultural Biotechnology Park. This fishery is the first eco fishery with the \"aquaponics system\" that has acquired ISO 22000 and HACCP, which are International Food Standard certifications. This company has found Puredise, the first fresh food brand in Taiwan. Puredise strives for sustainable environmental protection and upholds the new food culture idea, which is to persist in fresh and healthy food."
+    title_six: "6. Tai-I Hitech Heavy Industries Technology Co., Ltd."
     title_six_content: "We specialize in the development technique of the metal material application. We have the composite metal rolling technique, ultra-thin precision calendering, application of antibacterial stainless steel technique and development technique of the equipment and process. We cooperate with the Metal Industries Research & Development Centre to invest in multiple innovation applications of industrial technology. The copper rotor of the shaped copper calendering that we developed wins the favour of global suppliers. We will proceed with the product R&D project and create sophisticated products with better quality."
   about-operating-3:
-    main_title: "China business group"
-    subtitle: "Our Tai-I Copper (Guangzhou) Co., Ltd. and Tai-I Jiang Corp (Guangzhou) Co., Ltd. are the two largest manufacturers for bare copper wire and magnet wire in southern China."
+    main_title: "China Business Group"
+    subtitle: "Our Tai-I Copper (Guangzhou) Co., Ltd. and Tai-I Jiang Corp (Guangzhou) Co., Ltd. are the two largest manufacturers for bare copper wire and enameled wire in southern China."
     title_one: "1. Tai-I Copper (Guangzhou) Co., Ltd."
-    title_one_content_1: "The annual production capacity of the magnet wire is up to 50,000 tons. Tai-I Copper (Guangzhou) Co., Ltd. is the largest magnet wire plant in southern China."
+    title_one_content_1: "The annual production capacity of the enameled wire is up to 50,000 tons. Tai-I Copper (Guangzhou) Co., Ltd. is the largest enameled wire plant in southern China."
     title_one_content_2: "The major customers are all leading vendors in the industry, such as Mabuchi, Panasonic and Delta Electronics."
     title_one_content_3: "This company has obtained the ISO9001, ISO 14001, UL and ISO/TS16949 Certificates, which are related to the quality control of the automotive system."
     title_one_content_4: "This company is awarded the SONY Green Partner Certificate. It has also received certificates from Panasonic Wanbao Appliances Compressor (Guangzhou) Co., Ltd. This company receives these certificates as an AA level supplier."
@@ -409,14 +403,16 @@ We are always a major domestic supplier for magnet wires. With long years of exp
     title_two_content_3: "This company is awarded the ISO 9001 and ISO 14001 Certificates."
     title_two_img_url: "/css/images/en/ab-24.jpg"
   about-organization:
-    main_title: "Organizational structure"
+    main_title: "Organizational Structure"
     org_img_url: "/css/images/en/ab-29.jpg"
+    zoom_in: "zoom in"
+    zoom_out: "zoom out"
   about-group:
-    main_title: "Group structure"
-    group_img_url: "/css/images/en/ab-26.jpg"
+    main_title: "Group Structure"
+    group_img_url: "/css/images/ab-26.jpg"
   human-guangzhou-1:
     main_title: "Tai-I Jiang Corp, Tai-I Copper - HR policy"
-    subtitle: "Tai-I Copper (Guangzhou) Co., Ltd. and Tai-I Jiang Corp (Guangzhou) Co., Ltd. are committed to becoming an advanced world-class \"professional, technique-oriented and integrated\" productive enterprise. Persisting in the operational philosophy of humanism, we have been implementing the talent enhancement strategies, creating a perfect development environment for the employees and driving joint development and progress of the employees and Tai-I to establish a unique Tai-I HR management system. It mainly contains the following elements:"
+    subtitle: "Tai-I Copper (Guangzhou) Co., Ltd. and Tai-I Jiang Corp (Guangzhou) Co., Ltd. are committed to becoming an advanced world-class \"professional, technique-oriented and integrated\" productive enterprise. Persisting in the corporate philosophy of humanism, we have been implementing the talent enhancement strategies, creating a perfect development environment for the employees and driving joint development and progress of the employees and Tai-I to establish a unique Tai-I HR management system. It mainly contains the following elements:"
     title_one: "1. Manpower planning and talent recruitment"
     title_one_content: "The manpower needed for achieving the corporate goals is assessed appropriately, and maintenance of premium teams is ensured for the organization by attracting external outstanding talents and retaining internal employees of excellent performance. The professional knowledge and technique that must be available in a function are defined based on the HR planning and requirements for premium employees of the company. These are used as the basis for selection of the talents."
     title_two: "2. Training and career development"
@@ -424,7 +420,7 @@ We are always a major domestic supplier for magnet wires. With long years of exp
     title_three: "3. Incentive, compensation and welfare"
     title_three_content: "We provide competitive compensation and welfare and establish an incentive compensation system to attract outstanding talents and retain the employees of excellent performance. This is effective in making more benefits for the company and creating a win-win situation for the employee and organization."
     title_four: "4. Industrial relations"
-    title_four_content: "Harmonic industrial relations can enhance the sense of self-respect and self-esteem as well as self-growth capability of the employee. This may improve the overall performance of the organization and cohesion of the employees. We take care of the requirements of the employees and provide them with good work conditions and environments as well as emergency assistance and legal consultation. The labor union is a platform that ensures positive communication and coordination between the labor and capital parties. This is very important for attracting outstanding talents and retaining the employees of excellent performance to create more benefits for the company. Other communication channels include the business meeting convened of the General Manager and the leaders of all business divisions, the overall development meeting of the company, the intranet of the company, information sharing platform and internal on-line billboard. "
+    title_four_content: "Harmonic industrial relations can enhance the sense of self-respect and self-esteem as well as self-growth capability of the employee. This may improve the overall performance of the organization and cohesion of the employees. We take care of the requirements of the employees and provide them with good work conditions and environments as well as emergency assistance and legal consultation. The labor union is a platform that ensures positive communication and coordination between the labor and capital parties. This is very important for attracting outstanding talents and retaining the employees of excellent performance to create more benefits for the company. Other communication channels include the business meeting convened of the General Manager and the leaders of all business units, the overall development meeting of the company, the intranet of the company, information sharing platform and internal on-line billboard. "
     title_five: "5. Work environment and social responsibility"
     title_five_content: "It is the responsibility of an enterprise to provide a safe work environment, protect the social environment and coordinate the relationship with nearby enterprises and residents. We establish a dedicated industrial safety and environment management department to arrange free occupational physical examination, detect harmful occupational elements in the work environment and provide professional safety training for the employees. It is also responsible for improving the safety and health knowledge and technique of the employees, ensuring the compliance of the three-waste emission and disposal of solid waste, and reciprocating the society during the development of the enterprise."
   human-guangzhou-2:
@@ -432,8 +428,8 @@ We are always a major domestic supplier for magnet wires. With long years of exp
     hr_02_img_url: "/css/images/en/hr-02.jpg"
     hr_03_img_url: "/css/images/en/hr-03.jpg"
     hr_04_img_url: "/css/images/en/hr-04.jpg"
-    title_one: "1. Vacancy"
-    title_one_content_1: "For query of the vacancies and recruitment, please log in "
+    title_one: "1. Opportunity"
+    title_one_content_1: "For query of the opportunities and recruitment, please log in "
     title_one_content_search: " and look up "
     title_one_content_keywords: "Tai-I Jiang Corp & Tai-I Copper Recruitment"
     title_one_content_2: "<br> Please deliver your resume as required and we will arrange interview ASAP. Thank you!"    
@@ -505,8 +501,7 @@ Interview: No. 77, Dongpeng Rd., Eastern District of Guangzhou Economic & Techno
     title_five_content: "\"Safety First\" is not only our commitment to the employees in the work environment, but also the highest guideline for our safety and health policies. We improve the SH knowledge and technique of the employees appropriately to create a work environment with zero occupational accident. The engagement and cohesion of the employees are ensured by taking care of their requirements and providing them with emergency aid and legal consultation."
   human-taiwan-2:
     main_title: "Taipei Headquarters - Recruitment"
-    subtitle: "Vacancies <br>
-Please visit 104 Website: <br>"
+    subtitle: "<h3>opportunities</h3>Tai-I Electric Wire & Cable CO., is an innovative and competitive<br> company in the industry and we are searching for creative<br> individuals with positive attitude to join us.<br>"
     info: "Please deliver your resume at 104 Website.<br>We will process your application and forward it to related departments.<br>Thank you!"
   human-taiwan-3:
     main_title: "Taipei Headquarters - Compensation and Welfare"
@@ -533,9 +528,9 @@ Please visit 104 Website: <br>"
 "
   human-taiwan-4:
     main_title: "Taipei Headquarters - Training"
-    subtitle: "We are dedicated to providing the employees with the opportunities for their growth, bringing their potential into full play at their workplaces and help them in the implementation of their self-actualization. The focus includes the enhancement of the management competency at different supervisory levels, arrangement of training for professional functions in different departments, implementation of work guidance and cultivation of the talents for the organization to achieve the goal of the sustainable operation of the company."
+    subtitle: "We are dedicated to providing the employees with the opportunities for their growth, bringing their potential into full play at their workplaces and help them in the implementation of their self-actualization. The focus includes the enhancement of the management competency at different supervisory levels, arrangement of training for professional competencies in different departments, implementation of work guidance and cultivation of the talents for the organization to achieve the goal of the sustainable operation of the company."
     title_one: "1. HR development policy"
-    title_one_content_1: "The training courses are enhanced by level and employee development programs are introduced for different professional functions."
+    title_one_content_1: "The training courses are enhanced by level and employee development programs are introduced for different professional competencies."
     title_one_content_2: "The training and transfer programs for the supervisors are deployed horizontally in order to cultivate the talents and enhance the operation of the organization dynamically."
     title_one_content_3: "Promotion of the Knowledge Management (KM) system is sped up for effective pass-on of the knowledge and accumulation of the techniques."
     title_one_content_4: "Retaining and reserving programs are established for cultivation of key personnel in the engineering, technique and R&D fields."
@@ -543,94 +538,94 @@ Please visit 104 Website: <br>"
     title_one_content_6: "Systematic training of new employees is provided to help them adapt themselves to Tai-I Family."
     title_two: "2. Training policy"
     title_two_content_1: "The training program is designed according to the strategy and development orientation of the organization to meet the core training requirements of the company."
-    title_two_content_2: "The PDDRO training system is introduced and implemented base on the training quality management frame (TTQS)."
+    title_two_content_2: "The PDDRO procedure is introduced and implemented base on the Talent Quality-management System (TTQS)."
     title_two_content_3: "With diverse course designs, the stakeholders are encouraged to participate in the training to ensure the effectiveness of the training."
     title_two_content_4: "Internal instructor cultivation and evaluation mechanisms are provided for effective management and development of competent instructors."
     title_two_content_5: "A digital platform is established for sharing and retaining professional knowledge and techniques."
     title_three: "3. Training development system"
   plant:
     copper_title: "Tai-I Copper"
-    copper_desc: "Founded in May 1997 with a capacity of 50,000 tons of magnet wires every year. Advanced equipment is imported from Germany, Japan, Italy, and Taiwan. Wins the reputation as a quality-oriented trustworthy enterprise in China and excellent Taiwanese enterprise in Guangdong Province."
-    copper_intro: "Tai-I Copper profile"
-    copper_certification: "Professional certificates and honours"
-    copper_superiority: "Competitive advantages "
+    copper_desc: "Founded in May 1997 with a capacity of 50,000 tons of enameled wires every year. Advanced equipment is imported from Germany, Japan, Italy, and Taiwan. Wins the reputation as a quality-oriented trustworthy enterprise in China and excellent Taiwanese enterprise in Guangdong Province."
+    copper_intro: "Tai-I Copper Profile"
+    copper_certification: "Certificates and Honours"
+    copper_superiority: "Competitive Advantages "
     copper_research: "R&D"
-    copper_catalogs: "Product catalogue"
-    copper_consulting: "Product advisory"
-    hsinchu_intro: "Hsinchu Plant profile"
-    hsinchu_certification: "Professional certificates and honours"
+    copper_catalogs: "Product Catalogue"
+    copper_consulting: "Product Advisory"
+    hsinchu_intro: "Hsinchu Plant Profile"
+    hsinchu_certification: "Certificates and Honours"
     hsinchu_research: "R&D"
-    hsinchu_equipment: "Important equipment"
-    hsinchu_catalogs: "Product catalogue"
+    hsinchu_equipment: "Important Equipment"
+    hsinchu_catalogs: "Product Catalogue"
     hsinchu_use: "Applications"
-    hsinchu_consulting: "Product advisory"
-    jiangcorp_intro: "Tai-I Jiang Corp profile"
-    jiangcorp_certification: "Professional certificates and honours" 
-    jiangcorp_superiority: "Competitive advantage"
+    hsinchu_consulting: "Product Advisory"
+    jiangcorp_intro: "Tai-I Jiang Corp Profile"
+    jiangcorp_certification: "Certificates and Honours" 
+    jiangcorp_superiority: "Competitive Advantages"
     jiangcorp_research: "R&D"
     jiangcorp_use: "Applications"
-    jiangcorp_consulting: "Product advisory"
-    resin_intro: "Resin Plant profile"
-    resin_certification: "Professional certificates and honours"
-    resin_superiority: "Product advantages"
+    jiangcorp_consulting: "Product Advisory"
+    resin_intro: "Resin Plant Profile"
+    resin_certification: "Certificates and Honours"
+    resin_superiority: "Product Advantages"
     resin_research: "R&D"
-    resin_catalogs: "Product catalogue"
-    resin_quality: "Quality assurance"
-    resin_equipment: "Equipment overview"
+    resin_catalogs: "Product Catalogue"
+    resin_quality: "Quality Assurance"
+    resin_equipment: "Equipment Overview"
     resin_use: "Applications"
-    resin_consulting: "Product advisory"
-    guanyin3c_intro: "Computer, Communication and Consumer Electronics profile"
-    guanyin3c_certification: "Professional certificates and honours"
-    guanyin3c_superiority: "Competitive advantage"
+    resin_consulting: "Product Advisory"
+    guanyin3c_intro: "3C BU Profile"
+    guanyin3c_certification: "Certificates and Honours"
+    guanyin3c_superiority: "Competitive Advantages"
     guanyin3c_research: "R&D"
     guanyin3c_technology: "Technical Information"
-    guanyin3c_catalogs: "Product catalogue"
+    guanyin3c_catalogs: "Product Catalogue"
     guanyin3c_use: "Applications"
-    guanyin3c_consulting: "Product advisory"
-    guanyin_intro: "Electric Wire & Cable Business Department profile"
+    guanyin3c_consulting: "Product Advisory"
+    guanyin_intro: "Electric Wire & Cable Business Unit Profile"
     guanyin_history: "電線電纜事業歷程"
-    guanyin_certification: "Professional certificates and honours"
-    guanyin_superiority: "Competitive advantage"
+    guanyin_certification: "Certificates and Honours"
+    guanyin_superiority: "Competitive Advantages"
     guanyin_research: "R&D"
-    guanyin_equipment: "Equipment introduction"
-    guanyin_product-1: "Main product and application"
-    guanyin_catalogs: "Product catalogue"
-    guanyin_consulting: "Product advisory"
-    guanyin_product_sub_nav: "Main product and application"
-    guanyin_product-1: "Wire cable"
-    guanyin_product-2: "Automobile wire"
-    guanyin_product-3: "Automobile motor leading wires"
-    guanyin_product-4: "Electronic wire and stranded wire"
+    guanyin_equipment: "Equipment Introduction"
+    guanyin_product-1: "Product & Application"
+    guanyin_catalogs: "Product Catalogue"
+    guanyin_consulting: "Product Advisory"
+    guanyin_product_sub_nav: "Product & Application"
+    guanyin_product-1: "Wire Cable"
+    guanyin_product-2: "Automobile Wire"
+    guanyin_product-3: "Automobile Motor Leading Wires"
+    guanyin_product-4: "Electronic Wire and Stranded Wire"
     guanyin_product-5: "PV Ribbon"
     guanyin_product-6: "PV Wire"
     guanyin_product-7: "Aerial Conductor and Fire Resistant Cable"
-    guanyin_product-8: "Wire cable, as well as the high and medium voltage cables"
-    guanyin_product-9: "Optical fiber cable"
+    guanyin_product-8: "Wire Cable, as well as the high and medium voltage cables"
+    guanyin_product-9: "Optical Fiber Cable"
     puredise_title: "Hydean Biotechnology"
-    puredise_desc: "Established an eco-fishery in the Pingtung Agricultural Biotechnology Park. This fishery is the first eco fishery with the \"aquaponics system\" that has acquired ISO 22000 and HACCP, which are the International Food Standard certifications."
-    rework_title: "Tai-I Heavy Industries Tech"
-    rework_desc: "Dedicated to the technical development and application of metallic material. It has the composite metal rolling technique, super-thin precise rolling technique, anti-bacterial metal application technique, and equipment and process development technique."
+    puredise_desc: "Established an eco-fishery in the Pingtung Agricultural Biotechnology Park. This fishery is the first eco fishery with the \"aquaponics system\" that has acquired ISO 22000 and HACCP, which are International Food Standard certifications."
+    rework_title: "Tai-I Hitech"
+    rework_desc: "Dedicated to the R&D and application of metallic material. It has the composite metal rolling technique, super-thin precise rolling technique, anti-bacterial metal application technique, and equipment and process development technology."
     jiangcorp_title: "Tai-I Jiang Corp"
     jiangcorp_desc: "Founded in May 1997 with a capacity of 200,000 tons of bare copper wires every year. It introduces the most advanced SCR CCDR series and the latest electronic control system from the US. We are the leading company in the industry around the Pearl River Delta area in China."
     hsinchu_title: "Hsinchu"
-    hsinchu_desc: "Founded in 1979 with a capacity of 14,000 tons of magnet wires every year. It operates in technical cooperates with Daiichi Denkousya Corp., the largest magnet wire manufacturer in Japan, to produce quality magnet wires. The products are highly praised by the customers."
+    hsinchu_desc: "Founded in 1979 with a capacity of 14,000 tons of enameled wires every year. It operates in technical cooperates with Daiichi Denkousya Corp., the largest enameled wire manufacturer in Japan, to produce quality enameled wires. The products are highly praised by customers."
     resin_title: "Resin"
-    resin_desc: "Founded in 1994 for production of resin and coating (or varnish). The product is mainly used as the insulation jacket for magnet wires. The plant develops high-value products continuously to catch up with the steps of the world-class coating manufacturers."
+    resin_desc: "Founded in 1994 for production of resin and coating (or varnish). The product is mainly used as the insulation jacket for enameled wires. The plant develops high-value products continuously to catch up with the steps of the world-class coating manufacturers."
     guanyin_title: "Guanyin(E-Wire & Cable)"
     guanyin_desc: "A low-voltage plant was established in June 1954 and a high-voltage plant was founded in 1993. 16,000 tons of products are manufactured in the form of optimal portfolio every year, making the plant a leading manufacturer in the wire, cable and fiber cable areas."
     guanyin3c_title: "Guanyin(3C)"
-    guanyin3c_desc: "Founded in 2012 for production of electronic and electric power cables and in cooperation with Industrial Technology Research Institute (ITRI). We adopt 3D printing technology and make innovation and development continuously to meet the requirements and expectations of our customer."
+    guanyin3c_desc: "Founded in 2012 for production of electronic and electric power cables and in cooperation with Industrial Technology Research Institute (ITRI). We adopt 3D printing technology and make innovation and development continuously to meet customers' requirements and expectations."
   copper-intro:
     main_title: "Company Profile"
     main_desc: "The company was founded by Tai-I Electric Wire & Cable Co., Ltd. (Taiwan) in May 1997 in the east area of Guangzhou Economic and Technological Development Zone. The registered capital of the company is US$ 50.760 million and the total investment amount is US$ 84.460 million. The company has about 650 employees, creating an annual sales amount of about RMB 2 billion.。
 <br><br>
-The company produces about 50,000 tons of magnet wires every year. It imports advanced production and testing equipment from Germany, Japan and Italy in addition to domestic facilities and has sophisticated and proven engineering techniques.
+The company produces about 50,000 tons of enameled wires every year. It imports advanced production and testing equipment from Germany, Japan and Italy in addition to domestic facilities and has sophisticated and proven engineering techniques.
 <br><br>
 The ISO 9001 quality management system, ISO 14001 environmental management system and ISO/TS16949 automobile quality management system are implemented thoroughly in the company. Its products have passed the US UL certification and Sony GP certification. They also comply with the RoSH and Reach requirements concerning hazardous substances in the environment. 
 <br><br>
 The company has won many honourable awards thanks to its fine traditions. These awards include the safety production and standardization qualification, clean production enterprise in Guangzhou City, quality-oriented trustworthy enterprise in China, and excellent Taiwanese enterprise in Guangdong Province.
 <br><br>
-The company produces various magnet wires with a diameter ranging from 0.040 mm to 3.20 mm. The products of the company include regular magnet wires, heat resistant wires, self-bonding wires, freon resistant wires, corona resistant wires, solderable heat resistant wires, twisted magnet wires, triple-layer insulated winding wire, flat magnet wires, shapes copper wires and special magnet wires. The magnet wires are widely used in air conditioner compressors, coils, motors, transformers, generators, micro-electronic control systems, power suppliers and electric vehicles."
+The company produces various enameled wires with a diameter ranging from 0.040 mm to 3.20 mm. The products of the company include regular enameled wires, heat resistant wires, self-bonding wires, freon resistant wires, corona resistant wires, solderable heat resistant wires, twisted enameled wires, triple-layer insulated winding wire, flat enameled wires, shapes copper wires and special enameled wires. The enameled wires are widely used in air conditioner compressors, coils, motors, transformers, generators, micro-electronic control systems, power suppliers and electric vehicles."
     title_one: "Employees: "
     title_one_content: "ca. 650"
     title_two: "Plant area: "
@@ -641,7 +636,7 @@ The company produces various magnet wires with a diameter ranging from 0.040 mm 
     title_four_content: "No. 77, Dongpeng Rd., Eastern District of Guangzhou Economic & Technological Development 
 District, Guangzhou, China "
   copper-certification:
-    main_title: "Professional certificates and honours"
+    main_title: "Certificates and Honours"
     list-1: "ISO9001 quality management system "
     list-2: "ISO/TS16949 automobile quality management system"
     list-3: "ISO 14001 environmental management system"
@@ -652,18 +647,18 @@ District, Guangzhou, China "
     list-8: "excellent Taiwanese enterprise in Guangdong Province"
     download: "Download:"
   copper-superiority:
-    main_title: "Competitive advantages "
-    title_1: "1. Vertically integrated corporate structure "
-    title_1_content: "The company has established a vertically integrated corporate structure required for the development in the industry. From acquisition of the copper material to the insulation jacket needed for the magnet wire, the quality is controlled vertically to ensure stable production of quality wires."
+    main_title: "Competitive Advantages "
+    title_1: "1. Vertical integration of the corporate structure "
+    title_1_content: "The company has established a vertical integration of the corporate structure required for the development in the industry. From acquisition of the copper material to the insulation jacket needed for the enameled wire, the quality is controlled vertically to ensure stable production of quality wires."
     title_2: "2. Advanced production equipment"
     title_2_content: "In addition to domestic facilities, advanced production and testing equipment is imported from developed countries (regions) such as Germany, Japan and Italy to ensure cutting-edge equipment for the production."
     title_3: "3. Comprehensive technical support service"
     title_3_content: "The R&D team of the company has experience for more than 40 years. It works with the production team of the customer to meet its requirements for various special wires and create a win-win situation for the customer and company."
     title_4: "4. Extensive industrial experience"
-    title_4_content: "The company has dedicated to the production of magnet wires for more than 40 years. With extensive experience in the industry, the management team ensures grasping at the development tendency of the industry and making product development strategies accordingly."
+    title_4_content: "The company has dedicated to the production of enameled wires for more than 40 years. With extensive experience in the industry, the management team ensures grasping at the development tendency of the industry and making product development strategies accordingly."
   copper-research:
     main_title: "R&D"
-    main_title_desc: "The R&D development of the company has been dedicated to the improvement of the production efficiency and development of new products for many years. The dedication has been made for the following purposes: "
+    main_title_desc: "The R&D of the company has been dedicated to the enhancement of the production efficiency and development of new products for many years. The dedication has been made for the following purposes: "
     title_1: "1. Improvement of the quality and production efficiency"
     title_1_content: "<p>The R&D and manufacture departments work on the production process, equipment efficiency and (raw) material selection jointly at the regular \"Technique Management Meeting\", and make improvement in the process bottlenecks such as the problems of needle holes, oxidation, flexible cords and powders. <br>
                 <br>
@@ -672,15 +667,15 @@ District, Guangzhou, China "
     title_2: "2. Development of new products"
     title_2_content_1: "The R&D department of the company is dedicated to the development of new products. The products that have been developed successfully are described below:"
     title_2_content_2: "High-performance freon resistant wires"
-    title_2_content_3: "Super-thin film covered magnet wires"
-    title_2_content_4: "Magnet wires for low GAS encapsulated wires for electronic components"
+    title_2_content_3: "Super-thin film covered enameled wires"
+    title_2_content_4: "Enameled wires for low GAS encapsulated wires for electronic components"
     title_2_content_5: "High-temperature wires (Φ2.0 above) with “zero” needle holes" 
     title_2_content_6: "180℃ solderable self-bonding wires"
     title_2_content_7: "<p>The high-performance freon resistant wire (DFWB) uses special techniques to create an average paint scraping level of more than 1800g and slip performance of less than 0.04. The overall performance is better than general products by more than 30%. It is especially suitable for the compressors of high fill-in ratio, high performance and low energy consumption.
 <br>
-For the super-thin film covered magnet wire, 6μ film thickness ensures that the number of needle holes is controlled below 3 and the outer diameter is controlled within 2μ. The low GAS wire is not only demanding in the type of the varnish film and the lubricant on the surface. It has excellent slip performance to ensure the customer that the wire will not break during the high-speed winding process. The 2.0 wire and 180℃ solderable self-bonding wire can meet the special requirements of the customer. No products of any third parties can be used as a substitute thanks to the unique quality requirements of the wires. The technical development is striding toward HF resistant wires, Litz wires and other conductor magnet wires.</p>"
+For the super-thin film covered enameled wire, 6μ film thickness ensures that the number of needle holes is controlled below 3 and the outer diameter is controlled within 2μ. The low GAS wire is not only demanding in the type of the varnish film and the lubricant on the surface. It has excellent slip performance to ensure the customer that the wire will not break during the high-speed winding process. The 2.0 wire and 180℃ solderable self-bonding wire can meet the special requirements of the customer. No products of any third parties can be used as a substitute thanks to the unique quality requirements of the wires. The technical development is striding toward HF resistant wires, Litz wires and other conductor enameled wires.</p>"
   copper-catalogs:
-    main_title: "Product catalogue"
+    main_title: "Product Catalogue"
     download: "Download:"
     filename: "Tai-I Copper Product Catalogue.pdf"
   copper-consulting:
@@ -692,7 +687,7 @@ For the super-thin film covered magnet wire, 6μ film thickness ensures that the
                 E-mail: <a href='mailto:sales_gm@tai-i-gz.com' target='_blank'>sales_gm@tai-i-gz.com</a>"
   hsinchu-intro:
     main_title: "Hsinchu Plant profile"
-    main_desc: "Hsinchu Plant (Enamelled Wire Business Department) was founded in Hsinchu Industrial park, Hsinchu County, in September 1979 with a capacity of 14,000 tons every year. It is a leading plant in the magnet wire field. The plant operates in technical cooperates with Daiichi Denkousya Corp., the largest magnet wire manufacturer in Japan, to produce quality magnet wires. The products are highly praised by the customers."
+    main_desc: "Hsinchu Plant (Enameled Wire Business Unit) was founded in Hsinchu Industrial park, Hsinchu County, in September 1979 with a capacity of 14,000 tons every year. It is a leading plant in the enameled wire field. The plant operates in technical cooperates with Daiichi Denkousya Corp., the largest enameled wire manufacturer in Japan, to produce quality enameled wires. The products are highly praised by customers."
     title_one: "Plant area: "
     title_one_content: "13,551 m2 (4,099 Ping)"
     title_two: "Building area: "
@@ -702,11 +697,11 @@ For the super-thin film covered magnet wire, 6μ film thickness ensures that the
     title_four: "Location: "
     title_four_content: "No. 25, Datong Rd., Hsinchu Industrial park, Hsinchu County 310, Taiwan (R.O.C.) "
     title_five: "Advantages: "
-    title_five_content: "High value-added magnet wires patented in Germany, USA and Taiwan"
+    title_five_content: "High value-added enameled wires patented in Germany, USA and Taiwan"
     title_six: "Major products: "
-    title_six_content: "Magnet wires for voice coils, heat resistant wires, solderable heat resistant wires, freon resistant wires, bonding magnet wires, voltage surge resistant wires for AC inverter motors, magnet wires for electrical parts of automobiles, flat magnet wires, high tension resistant wires, triple-layer insulated winding wire, shapes copper wires, etc."
+    title_six_content: "Enameled wires for voice coils, heat resistant wires, solderable heat resistant wires, freon resistant wires, bonding enameled wires, voltage surge resistant wires for AC inverter motors, enameled wires for electrical parts of automobiles, flat enameled wires, high tension resistant wires, triple-layer insulated winding wire, shapes copper wires, etc."
   hsinchu-certification:
-    main_title: "Professional certificates and honours"
+    main_title: "Certificates and Honours"
     title_1: "1. Quality assurance"
     title_1_content_1: "1982.09"
     title_1_content_1_desc: "Central National Standard \"Zheng\" Certification (CNS Certificate)"
@@ -739,16 +734,16 @@ For the super-thin film covered magnet wire, 6μ film thickness ensures that the
     title_3_contne_4_desc: "Three patented acquired in Taiwan: 123015、152929、243754"
   hsinchu-research:
     all: "<h3>R&D</h3>
-      <h4>1. R&D background</h4>
+      <h4>1. Background</h4>
       <div class='content'> The company cooperates with Metal Industries Research & Development Center (Kaohsiung) and forms a strategic alliance with different motor manufacturers to improve the product quality, enhance the competitiveness and develop more high value-added copper products. Various precise instruments, equipment and manpower has been invested for innovative development of new products. <br>
         <br>
         The shaped copper wires, copper inserted rotors and composite metal rolling technique have been developed successfully to improve the technique level in Taiwan, meet the requirements of the customer and catch up with the development trend of the society. </div>
-      <h4>2. Major development achievements</h4>
+      <h4>2. Development Achievements</h4>
       <div class='content'>
         <table width='100%' border='0' cellspacing='0' cellpadding='0'>
           <tr>
             <td width='4%' valign='top'><span><img src='/css/images/ab-17.png'></span></td>
-            <td width='70%' valign='top'><h5>Shaped copper wires</h5>
+            <td width='70%' valign='top'><h5>Shaped Copper Wires</h5>
               <table width='100%' border='0' cellspacing='0' cellpadding='0'>
                 <tr>
                   <td width='18%' valign='top'>Features: </td>
@@ -774,7 +769,7 @@ For the super-thin film covered magnet wire, 6μ film thickness ensures that the
         <table width='100%' border='0' cellspacing='0' cellpadding='0'>
           <tr>
             <td width='4%' valign='top'><span><img src='/css/images/ab-17.png'></span></td>
-            <td width='70%' valign='top'><h5>Copper inserted rotors</h5>
+            <td width='70%' valign='top'><h5>Copper Inserted Rotors</h5>
               <table width='100%' border='0' cellspacing='0' cellpadding='0'>
                 <tr>
                   <td width='18%' valign='top'>Features: </td>
@@ -801,7 +796,7 @@ For the super-thin film covered magnet wire, 6μ film thickness ensures that the
         <table width='100%' border='0' cellspacing='0' cellpadding='0'>
           <tr>
             <td width='4%' valign='top'><span><img src='/css/images/ab-17.png'></span></td>
-            <td width='70%' valign='top'><h5>Composite metal rolling technique </h5>
+            <td width='70%' valign='top'><h5>Composite Metal Rolling Technique </h5>
               <table width='100%' border='0' cellspacing='0' cellpadding='0'>
                 <tr>
                   <td width='18%' valign='top'>Features: </td>
@@ -821,12 +816,12 @@ For the super-thin film covered magnet wire, 6μ film thickness ensures that the
         </table>
       </div>"
     main_title: "R&D"
-    title_1: "1. R&D background"
+    title_1: "1. Background"
     title_1_desc: "The company cooperates with Metal Industries Research & Development Center (Kaohsiung) and forms a strategic alliance with different motor manufacturers to improve the product quality, enhance the competitiveness and develop more high value-added copper products. Various precise instruments, equipment and manpower has been invested for innovative development of new products.
 <br>
 The shaped copper wires, copper inserted rotors and composite metal rolling technique have been developed successfully to improve the technique level in Taiwan, meet the requirements of the customer and catch up with the development trend of the society.
 "
-    title_2: "2. Major development achievements"
+    title_2: "2. Development Achievements"
     title_2_content_1: "抗突波線"
     title_2_content_1_sub: "特　　性："
     title_2_content_1_desc: "特性：漆膜具耐變頻脈冲高電壓(突波)性能，有效消散變頻脈冲電流導致的漆膜介質過度發熱而冲蝕的現象，並於高溫高壓高頻下耐壽命較一般同等級耐熱線為優。"
@@ -876,19 +871,19 @@ The shaped copper wires, copper inserted rotors and composite metal rolling tech
     title_2: "2. Track records about continuous improvement of quality and function in recent years"
     title_3: "3. Auto detection equipment on the production line."
   hsinchu-catalogs:
-    main_title: "Product catalogue"
-    filename: "Hsinchu Plant Magnet Wire Catalogue.pdf"
+    main_title: "Product Catalogue"
+    filename: "Hsinchu Plant Enameled Wire Catalogue.pdf"
   hsinchu-use:
     main_title: "Product introduction and application"
     subtitle_1:  "1. Major products and applications"
     subtitle_2:  "2. Applications"
   hsinchu-consulting:
     main_title: "Hotline"
-    subtitle_1:  "<h5>Enamelled Wire Business Department - Sales</h5>
+    subtitle_1:  "<h5>Enameled Wire Business Unit - Sales</h5>
                 <p>Tel.: +886-3-5981521 # 238<br>
                 Fax: +886-3-5973117 <br>
                 E-mail: <a href='mailto:sales_m@tai-i-int.com.tw' target='_blank'>sales_m@tai-i-int.com.tw</a></p>"
-    subtitle_2:  "<h5>Enamelled Wire Business Department - Technique</h5>
+    subtitle_2:  "<h5>Enameled Wire Business Unit - Technique</h5>
                 <p>Tel.: +886-3-5981521 # 224/346<br>
                 Fax: +886-3-5981166</p>"
   jiangcorp-intro:
@@ -901,7 +896,7 @@ The company thoroughly implements the ISO 9001 quality management system and ISO
 <br><br>
 The company has won many honourable awards thanks to its fine traditions. These awards include the safety production and standardization qualification, clean production enterprise in Guangzhou City, and excellent Taiwanese enterprise in Guangdong Province. 
 <br><br>
-The company produces 8.0mm and 2.0 - 3.2mm bare copper wires. The products are widely used in magnet wires, electric cables as well as various electronic and communication lines."
+The company produces 8.0mm and 2.0 - 3.2mm bare copper wires. The products are widely used in enameled wires, electric cables as well as various electronic and communication lines."
     title_1: "Employees: "
     title_1_content: "170"
     title_2: "Plant area: "
@@ -911,7 +906,7 @@ The company produces 8.0mm and 2.0 - 3.2mm bare copper wires. The products are w
     title_4: "Location: "
     title_4_content: "No. 251, Jun Ye Rd., Eastern District of Guangzhou Economic & Technological Development District, Guangzhou, China"
   jiangcorp-certification:
-    main_title: "Professional certificates and honours"
+    main_title: "Certificates and Honours"
     title_1: "Quality assurance"
     title_1_content_1: "ISO9001 quality management system"
     title_1_content_2: "ISO 14001 environmental management system"
@@ -919,31 +914,31 @@ The company produces 8.0mm and 2.0 - 3.2mm bare copper wires. The products are w
     title_1_content_4: "Safety production and standardization qualification for enterprises"
     title_1_content_5: "excellent Taiwanese enterprise in Guangdong Province"
   jiangcorp-superiority:
-    main_title: "Competitive advantage"
-    title_1: "1. Vertically integrated corporate structure"
-    title_1_desc: "The company produces 200,000 tons of bare copper wires. The Group has difference divisions for production of magnet wires, electric wires and cables, electronic wires and communication wires. The company known what the customer needs and, thus, has such competitive advantages and premium customers. These makes the company the leading company in the industry around the Pearl River Delta area in China."
+    main_title: "Competitive Advantages"
+    title_1: "1. Vertical integration of the corporate structure"
+    title_1_desc: "The company produces 200,000 tons of bare copper wires. The Group has difference divisions for production of enameled wires, electric wires and cables, electronic wires and communication wires. The company known what the customer needs and, thus, has such competitive advantages and premium customers. These makes the company the leading company in the industry around the Pearl River Delta area in China."
     title_2: "2. Advanced production equipment"
     title_2_desc: "The company introduces the most advanced equipment system in the copper wire manufacture industry - SCR CCDR system. With the support of the latest electronic control system, the SCR CCDR equipment demonstrates more powerful performance and improved capability. This is helpful in the improvement of the process technique and reduction of the manufacture cost."
     title_3: "3. Comprehensive technical support service"
     title_3_desc: "The company establishes a long-term technical cooperation relation with Southwire (USA). With the help of the copper processing and manufacturing experience for more than 40 years, the company has created solid technical teams that ensure the optimal and stable quality of the products."
   jiangcorp-research:
     main_title: "R&D"
-    main_title_desc: " The R&D development of the company has been dedicated to the improvement of the production efficiency and development of new products for many years. The dedication has been made for the following purposes: "
+    main_title_desc: " The R&D of the company has been dedicated to the enhancement of the production efficiency and development of new products for many years. The dedication has been made for the following purposes: "
     title_1: "1. Improvement of the quality and production efficiency"
-    title_1_content:  "The R&D department persists in the philosophy of deep research, innovation and international perspective, and develops new processes unremittingly and continuously to improve the mechanical efficiency and material utilization based on the copper processing and manufacturing experience for more than 40 years. The purpose of these efforts is continuous improvement of the product quality and development of more professional manufacture processes.  <br>
+    title_1_content:  "The R&D department persists in the philosophy of deep research, innovation and global perspective, and develops new processes unremittingly and continuously to improve the mechanical efficiency and material utilization based on the copper processing and manufacturing experience for more than 40 years. The purpose of these efforts is continuous improvement of the product quality and development of more professional manufacture processes.  <br>
               <br>
               The production efficiency of the SCR furnace and casting system was improved in March 2004. The capacity of the Φ8mm copper rods was increased from 125,000 tons to 150,000 tons. The casting machine was further improved in 2009 to increase the capacity from 150,000 tons to 200,000 tons.<br>
               <br>
               After the SCR-3000 production line was upgraded successfully, the electrical systems of two TS45 double-head drawing machines were modified in October 2012 and the existing SIEI system was upgraded to Siemens S7 system to improve the utilization of the equipment and the quality of the product."
     title_2: "2. Development of new products"
-    title_2_content: "1. Development of copper rods for magnet wire high speed machines (DV120 above) This copper rod is smooth and scarless with little copper powder. The magnet wire produced has few varnish granule and high HV consistency.
+    title_2_content: "1. Development of copper rods for enameled wire high speed machines (DV120 above) This copper rod is smooth and scarless with little copper powder. The enameled wire produced has few varnish granule and high HV consistency.
         <br><br>
         2. Development of tough copper rods for super-fine wires (0.04mm below) This copper rod is suitable for production of 0.04mm wires at a drawing speed of up to 1500m/min and no repeated annealing is needed. The extension rate of the 0.04mm wire is more than 20%."
   jiangcorp-use:
     main_title: "Applications"
-    main_title_desc: "  Bare copper wires are the material for making magnet wires, electric wires and cables. The bare copper wire manufacturer means the electrolytic copper processing company that makes copper rods for electric wires and cables or draws copper rods to copper wires of different diameters. The manufacturer of bare copper wires is the upstream supplier of the electric wire and cable manufacturers. Hence, the quality of bare copper wires plays a decisive role in the electric wire and cable industry. It may affect the quality, function and production efficiency of downstream products."
+    main_title_desc: "  Bare copper wires are the material for making enameled wires, electric wires and cables. The bare copper wire manufacturer means the electrolytic copper processing company that makes copper rods for electric wires and cables or draws copper rods to copper wires of different diameters. The manufacturer of bare copper wires is the upstream supplier of the electric wire and cable manufacturers. Hence, the quality of bare copper wires plays a decisive role in the electric wire and cable industry. It may affect the quality, function and production efficiency of downstream products."
     title_1: "The bare copper wires that the company makes are widely used in the following applications:"
-    title_1_content_1: "Enamelled wires"
+    title_1_content_1: "Enameled wires"
     title_1_content_2: "HV electric wires and cables"
     title_1_content_3: "MV and LV electric wires and cables"
     title_1_content_4: "Electronic wires"
@@ -956,8 +951,8 @@ The company produces 8.0mm and 2.0 - 3.2mm bare copper wires. The products are w
                 Fax: +86-020-82265715 # 6060<br>
                 E-mail: <a href='mailto:sales_gc@tai-i-gz.com' target='_blank'>sales_gc@tai-i-gz.com</a>"
   resin-intro:
-    main_title: "Resin Plant (Insulating Varnish Business Department) profile"
-    main_title_desc: "Resin Plant (Insulating Varnish Business Department) was founded in 1994 to produce functional resin and coating (or varnish). The product is mainly used as the insulation jacket for magnet wires and more emphasis is put on the insulation, mechanical and heat resistance characteristics of the products."
+    main_title: "Resin Plant (Insulating Varnish Business Unit) profile"
+    main_title_desc: "Resin Plant (Insulating Varnish Business Unit) was founded in 1994 to produce functional resin and coating (or varnish). The product is mainly used as the insulation jacket for enameled wires and more emphasis is put on the insulation, mechanical and heat resistance characteristics of the products."
     title_1: "Plant area: "
     title_1_desc: "4042 (Ping)" 
     title_2: "Building area: "
@@ -971,12 +966,12 @@ The company produces 8.0mm and 2.0 - 3.2mm bare copper wires. The products are w
     title_6: "Major products: "
     title_6_desc: "AIW coating, EIW coating, PET coating, UEW coating, amide jacket coating and other functional coatings"
   resin-certification:
-    main_title: "Professional certificates and honours"
+    main_title: "Certificates and Honours"
     main_title_desc: "Technical certification and quality assurance"
     title_1: "1993　"
     title_1_content: "A technical cooperation relation is made with the ITRI Material and Chemical Research Laboratories to establish a R&D nursery factory in Guanyin Plant." 
     title_2: "1994"
-    title_2_content: "The Insulating Varnish Business Department was founded." 
+    title_2_content: "The Insulating Varnish Business Unit was founded." 
     title_3: "1996"
     title_3_content: "The ISO 9001 certificate was acquired prior to other companies in the industry to catch up with the development of the global industry." 
     title_4: "2000"
@@ -996,20 +991,20 @@ The company produces 8.0mm and 2.0 - 3.2mm bare copper wires. The products are w
     main_title_desc: "Certification/patent"
   resin-research:
     main_title: "R&D"
-    main_title_desc: "The Business Department has the following three R&D missions:"
-    title_1: "Reflect the customer information of the Group's magnet wire plant or the quality tendency of the partners; develop special functions based on existing product specifications (such as improvement of the windability and reduction of environmental by-products) to meet the requirements of special customers and stand in the leading position on the market."
+    main_title_desc: "The Business Unit has the following three R&D missions:"
+    title_1: "Reflect the customer information of the Group's enameled wire plant or the quality tendency of the partners; develop special functions based on existing product specifications (such as improvement of the windability and reduction of environmental by-products) to meet the requirements of special customers and stand in the leading position on the market."
     title_2: "Integrate all innovative high-value projects in the Group to provide design theories and strategies for the development of insulating material and speed up the mature commercial operation. "
     title_3: "Search for raw materials of low cost and high quality continuously to ensure price and quality competitiveness."
   resin-catalogs:
-    main_title: "Product catalogue"
-    filename: "Magnet Wire Varnish Catalogue.pdf"
+    main_title: "Product Catalogue"
+    filename: "Enameled Wire Varnish Catalogue.pdf"
   resin-quality:
     main_title: "Quality assurance"
   resin-equipment:
     main_title: "Equipment overview"
-    title_1: "<h5>Important equipment: </h5>
+    title_1: "<h5>Important Equipment: </h5>
             15 3~7-ton varnish reaction tanks<br>"
-    title_2: "<h5>Indirect heating source:</h5>
+    title_2: "<h5>Indirect Heating Source:</h5>
             1 2.4-ton steam boiler, up to 150℃<br>
 1 thermal oil boiler of 2 million Kcal, up to 230-270℃<br>
 Automatic central production control system<br>"
@@ -1019,32 +1014,32 @@ Export: 250 tons/month<br>
 Total sales: 4,800 tons/year"
   resin-use:
     main_title: "Applications"
-    title_1: "<h5>TAI-AIW Polyamideimide coating</h5>
+    title_1: "<h5>TAI-AIW Polyamideimide Coating</h5>
             Applications: Special heat resistant motor wires 
 <br>"
-    title_2: "<h5>TAI-EIW Polyesterimide coating </h5>
+    title_2: "<h5>TAI-EIW Polyesterimide Coating </h5>
             Applications: Electric tools, HV transformers<br>"
-    title_3: "<h5>TAI-PEW Polyester coating</h5>
+    title_3: "<h5>TAI-PEW Polyester Coating</h5>
            Applications: Universal motors, transformers<br>"
-    title_4: "<h5>TAI-UEB、TAI-UEF Polyurethane coating</h5>
+    title_4: "<h5>TAI-UEB、TAI-UEF Polyurethane Coating</h5>
             Applications: Solderable household appliance wires<br>"
-    title_5: "<h5>TAI-NY Polyamide coating</h5>
-            Applications: NYLON jacketed to improve the slip performance of the magnet wire<br>"
-    title_6: "<h5>Other functional coatings</h5>
+    title_5: "<h5>TAI-NY Polyamide Coating</h5>
+            Applications: NYLON jacketed to improve the slip performance of the enameled wire<br>"
+    title_6: "<h5>Other functional Coatings</h5>
             Applications: Power steering motor <br>
             Note: Coatings are developed for bonding wires and fusible wires."
   resin-consulting:
     main_title: "Hotline"
-    title_1: "<h5>Insulating Varnish Business Department - Sales</h5>
+    title_1: "<h5>Insulating Varnish Business Unit - Sales</h5>
                 <p>Tel.: +886-3-488-4091 # 283<br>
                 Fax: +886-3-488-1564<br>
                 Email: <a href='mailto:sales_v@tai-i-int.com.tw' tarfet='_blank'>sales_v@tai-i-int.com.tw</a></p>"
-    title_2: "<h5>Insulating Varnish Business Department - Production technique</h5>
+    title_2: "<h5>Insulating Varnish Business Unit - Production technique</h5>
                 <p>Tel.: +886-3-488-4091 # 281<br>
                 Fax: +886-3-488-1564</p>"
   guanyin3c-intro:
-    main_title: "Guanyin Plant (Computer, Communication and Consumer Electronics) profile"
-    main_title_desc: "The Computer, Communication and Consumer Electronics Business Department in the Guanyin Plant was founded in 2012 and is located in Guanyin Shiang, Taoyuan County. It is in charge of the electronic power cord in which the annual production capacity is approximately 60,000 thousand sets."
+    main_title: "Guanyin Plant ( 3C Component Business Unit ) profile"
+    main_title_desc: "The 3C Component Business Unit in the Guanyin Plant was founded in 2012 and is located in Guanyin Shiang, Taoyuan County. It is in charge of the electronic power cord in which the annual production capacity is approximately 60,000 thousand sets."
     title_1: "Plant area: "
     title_1_content: "18,350 Ping"
     title_2: "Employees: "
@@ -1052,11 +1047,11 @@ Total sales: 4,800 tons/year"
     title_3: "Location: "
     title_3_content: "No. 606, Xinfu Rd., Vicinity 3, Fuyuan Village, Guanyin Shiang, Taoyuan County 328, Taiwan (R.O.C.)"
     title_4: "Advantage: "
-    title_4_content: "This plant adopts the vertically integrated supply chain. It has 50 years of experience in filament production and employs advanced multi-wire drawing machines and bunching machines from Europe. The process is stable and the quality control is subject to the requirements demanded by the aerospace industry."
+    title_4_content: "This plant adopts the vertical Integration supply chain. It has 50 years of experience in filament production and employs advanced multi-wire drawing machines and bunching machines from Europe. The process is stable and the quality control is capable to meet the aerospace industry requirements."
     title_5: "Main Product: "
     title_5_content: "Power cords"
   guanyin3c-certification:
-    main_title: "Professional certificates and honours"
+    main_title: "Certificates and Honours"
     title_1: "Quality assurance"
     title_2: "2012.12 U.S. UL power cord set authentication"
     title_3: "2013.05 Taiwan BSMI power cord set authentication"
@@ -1070,32 +1065,32 @@ Total sales: 4,800 tons/year"
     title_11: "2014.03 Israel SI power cord set authentication"
     title_12: "2014.04 Korea KC power cord set authentication"
   guanyin3c-superiority:
-    main_title: "Competitive advantage"
-    title_1: "1. Vertically integrated supply chain"
-    title_1_desc: "From copper rod→ drawing and stranded wire→ power supply cord→ power cord set. "
-    title_2:  "2. Substantial experience and advanced equipment"
-    title_2_desc: "We have 50 years of experience in filament production and employs advanced multi-wire drawing machines and bunching machines from Europe. The process is stable and the quality control is subject to the requirements demanded by the aerospace industry. "
-    title_3: "3. Introduction and application of MES (Manufacturing Execution System)"
-    title_3_desc_1: "We manage the WIP (Work In Process), materials, machine condition status, and the completion progress of work orders to satisfy the demands of customers."
+    main_title: "Competitive Advantages"
+    title_1: "1. Vertical Integration Supply Chain"
+    title_1_desc: "From copper rod→ drawing and stranded wire→ power cord→ power cord set. "
+    title_2:  "2. Substantial Experience and Advanced Equipment"
+    title_2_desc: "We have 50 years of experience in filament production and employs advanced multi-wire drawing machines and bunching machines from Europe. The process is stable and the quality control is capable to meet the aerospace industry requirements. "
+    title_3: "3. Introduction and Application of MES (Manufacturing Execution System)"
+    title_3_desc_1: "We manage the WIP (Work In Process), materials, machine condition status, and the completion work process to satisfy customers' demands."
     title_3_desc_2: "The monitoring capability of the supervisors is upgraded to the production lines in the manufacturing site."
-    title_3_desc_3: "Wrong parts are avoided during production by the mistake-proofing mechanism."
-    title_3_desc_4: "The quality system is established to fulfil the demands of customers."
+    title_3_desc_3: "Defects are avoided during production by the mistake-proofing mechanism."
+    title_3_desc_4: "The quality system is established to fulfil customers' demands."
     title_3_desc_5: "A real-time production traceability system is provided."
-    title_3_desc_6: "Once a bad product is produced, the system can trace the batch number of the defective products immediately and reduce loses. This shows our responsibility for our customers, avoiding defective products sent to the customers."
-    title_3_desc_7: "MES combines the systems of SAP and ERP. It effectively integrates our company resources such as production manufacturing and procurement, business selling, production control, cost accounting and quality control etc. With this, our efficiency has been promoted to satisfy customer demands."
-    title_4: "4. Flow production line with flexible planning"
-    title_4_desc_1: "The well-trained operating employees conduct production strictly according to CP and SPC to ensure the quality accords with requirements."
-    title_4_desc_2: "Reasonable flow production lines are designed according to different production processes to achieve high economic effectiveness and low work-in-process inventory."
-    title_4_desc_3: "The flexibility of our production process can fulfil different order demands in a short time."
-    title_5: "5. Automatic design for flow production lines"
-    title_5_desc_1: "The design is suitable for scale production."
-    title_5_desc_2: "The product consistency and quality stability have been increased."
-    title_5_desc_3: "The enhanced level of technology management and the reduced number of production managers and production technicians raised the labor productivity effectively."
+    title_3_desc_6: "Auto-detective system can trace the batch number of the defective products immediately and reduce loses. This shows our responsibility to our customers, avoiding shipping defects to the customer."
+    title_3_desc_7: "MES combines the systems of SAP and ERP. It effectively integrates our company business activities resources such as production and procurement, production control, accounting and quality control. Therefore, we ensure our quality to the customer"
+    title_4: "4. Flexible Assembly Line Planning"
+    title_4_desc_1: "The well-trained employees conduct production strictly according to CP and SPC to ensure the quality meet requirements."
+    title_4_desc_2: "Reasonable production flows are designed by different production processes to achieve high economic effectiveness and low work-in-process inventory."
+    title_4_desc_3: "Our flexible production process can fulfil different demands in a short time."
+    title_5: "5. Design for Automatic Assembly Lines"
+    title_5_desc_1: "Scale production."
+    title_5_desc_2: "The product consistency and quality stability are achieved."
+    title_5_desc_3: "More advanced production and total productivity effectiveness are aligned with expectations."
   guanyin3c-research:
     main_title: "R&D"
-    title_1: "1. R&D background"
-    title_1_desc: "We continuously bring in talents and have technology cooperate with research organization such as Industrial Technology Research Institute (ITRI) at the same time. Holding with the ideas of developing new process and improving automatic equipment, we continue to do research and development on manufacturing process. Besides, we adopt the computer analogue equipment and the 3D printing technology under assessment to imitate the product physical appearance and characteristics at the design stage. With it, we expect to reduce the earlier costs in design R&D and enhance the development efficiency of new products."
-    title_2: "2. Major development achievements"
+    title_1: "1. Background"
+    title_1_desc: "We continuously bring in talents and technology cooperate with research organization such as Industrial Technology Research Institute (ITRI). Holding with ideas of developing process and improving automatic equipment, we continue to do research and development on manufacturing process improvement. Besides, we adopt the computer analogue equipment and the 3D printing technology under assessment to imitate the product physical appearance and characteristics at the design stage. With it, we expect to reduce the earlier costs and enhance the development efficiency of future products."
+    title_2: "2. Development Achievements"
     title_2_desc_1: "DC Power cord<br>
 <h5>Feature: </h5>
 ‧ 50AWG above solid or stranded, bare or tinned copper wire conductor<br>
@@ -1126,25 +1121,25 @@ Total sales: 4,800 tons/year"
     title_2: "Relevant Websites: "
     title_3: "2. Safety marks for countries"
   guanyin3c-catalogs:
-    main_title: "Product catalogue"
+    main_title: "Product Catalogue"
     title_1: "1. Power cord set - connector"
     title_2: "2. Power Cable - Plug"
     filename: "Power Cord Set Catalogue. pdf"
   guanyin3c-use:
     main_title: "Applications"
-    main_title_desc: "Electric power units are as the power drive source for all electronic products and the power supply cord is an important transmission media for an electric power unit while supplying power. Power supply cord and electronic wire can be broadly applied into: computer peripherals, communication equipment, consumer home appliances, illumination systems and medical equipment etc."
+    main_title_desc: "Electric power units are as the power drive source for all electronic products. Power cord is an important transmission media for an electric power unit. Power cord and electronic wire can be broadly applied into: computer peripherals, communication equipments, consumer home appliances, illumination systems and medical equipments, etc."
   guanyin3c-consulting:
     main_title: "Hotline"
-    title_1: "<h5>Computer, Communication & Consumer Electronics Business- Sales</h5>
+    title_1: "<h5>3C Component Business Unit- Sales</h5>
                 <p>Tel.: +886-2-27187333 # 257<br>
                   Fax: +886-2-27191311<br>
                   E-mail: <a href='mailto:sales_a@tai-i-int.com.tw' target='_blank'>sales_a@tai-i-int.com.tw</a></p>"
-    title_2: "<h5>Computer, Communication & Consumer Electronics Business- Technology</h5>
+    title_2: "<h5>3C Component Business Unit- Technology</h5>
                 <p>Tel.: +886-3-4907711 # 835<br>
                   Fax: +886-3-4906087</p>"
   guanyin-intro:
-    main_title: "Electric Wire & Cable Business Department profile"
-    main_title_desc: "For the electric wire and cable business, a low-voltage plant was established in June 1954 and a high-voltage plant was founded in 1993. Both plants were merged to form the Electric Wire & Cable Business Department in 1996. 16,000 tons of products are manufactured in the form of optimal portfolio every year, making the plant a leading manufacturer in the wire, cable and fiber cable areas. The products are widely used in the livelihood fundamental industry (such as construction, communications) and important economic engineering (such as electric power, high-speed railway). They provide reliable power supply for urban development and increase naturally to meet the local loading requirements. The products are highly praised by the customer."
+    main_title: "Guanyin Plant ( Electric Wire & Cable Business Unit ) Profile"
+    main_title_desc: "For the electric wire and cable business, a low-voltage plant was established in June 1954 and a high-voltage plant was founded in 1993. Both plants were merged to form the Electric Wire & Cable Business Unit in 1996. 16,000 tons of products are manufactured in the form of optimal portfolio every year, making the plant a leading manufacturer in the wire, cable and fiber cable areas. Products are widely used in the livelihood fundamental industry (such as construction, communications) and important economic engineering (such as electric power, high-speed railway). They provide reliable power supply for urban development and increase naturally to meet the local loading requirements. The products are highly praised by customer."
     title_1: "Plant area: "
     title_1_desc: "18,350 Ping"
     title_2: "Employees: "
@@ -1159,7 +1154,7 @@ Total sales: 4,800 tons/year"
     main_title: "電線電纜事業歷程"
     tree_url: "/css/images/en/gy-04.jpg"
   guanyin-certification:
-    main_title: "Professional certificates and honours"
+    main_title: "Certificates and Honours"
     title_1: "Technical certification and quality assurance"
     title_2: "1995 BVQI and BSMI ISO 9002 certificate"
     title_3: "1997 69kV extra-high voltage cable qualification granted by Taipower"
@@ -1174,17 +1169,17 @@ Total sales: 4,800 tons/year"
     title_12: "2012 Acquisition of the Compulsory Product Certificate, China"
     title_13: "2013 Acquisition of the ISO/TS16949 automobile quality management system certificate"
   guanyin-superiority:
-    main_title: "Competitive advantage"
-    title_1: "1. Vertical integration"
-    title_1_content: "The operation is supported with the vertically integrated upstream, midstream and downstream advantages to ensure acquisition of quality raw materials and reduce the cost."
-    title_2: "2. Leading technique"
-    title_2_content: "The company has the dry nitrogen curing process patent authorized by Sumitomo via Nokia in Finland. This advanced mainstream process in the world in combination with the production experience over years grants the company the leading technique advantages."
-    title_3: "3. Testing capability"
+    main_title: "Competitive Advantages"
+    title_1: "1. Vertical Integration"
+    title_1_content: "The operation is supported with the vertical integration upstream, midstream and downstream advantages to ensure acquisition of quality raw materials and reduce the cost."
+    title_2: "2. Leading Technology"
+    title_2_content: "The company has the dry nitrogen curing process patent authorized by Sumitomo via Nokia in Finland. This advanced mainstream process in the world in combination with the production experience over years grants the company the leading technical advantages."
+    title_3: "3. Testing Capability"
     title_3_content: "The company has complete testing capability for routine tests, cable sampling tests, type tests and loop aging tests. The quality is ensured with rigorous tests. "
-    title_4: "4. Applicable technique"
+    title_4: "4. Applicable Technology"
     title_4_content: "We have qualified engineering teams that meet all relevant regulations and can effectively carry out cable channel tests, cable unreeling operation, regular connection, insulation connection, end treatment and other engineering operations. "
-    title_5: "5. Industry-academia cooperation"
-    title_5_content_1: "<h5>PV ribbon</h5>
+    title_5: "5. Industry-academia Cooperation"
+    title_5_content_1: "<h5>PV Ribbon</h5>
         <p>The product is suitable for Photovoltaic operation systems and provides a special solution for the Photovoltaic industry to improve the efficiency of the battery.</p>"
     title_5_content_2: "Product advantages:<br>
               Products excellent in both quantity and quality are provided with the support of the core copper material technique.<br>
@@ -1192,8 +1187,8 @@ Total sales: 4,800 tons/year"
               The ribbon is subject to a threefold weathering test to increase the service life of the module. "
     title_5_content_3: "Technical cooperation:<br>
               (1) Rolling copper ribbon - Metal Industries Research & Development Centre<br>
-              (2) PV ribbon - Green Energy and Environment Research Laboratories, ITRI<br>"
-    title_6: "6. Complete product certificates"
+              (2) PV ribbon - Industrial Technology Research Institute<br>"
+    title_6: "6. Complete Product Certificates"
     title_6_content: "We have the capability of producing HV cables, MV cables, regular wires and cables, overhead cables, fire resistant wires, electronic wires, flexible wires and fiber cables. The product line is complete and assured by Taipower, CCC, TAF, UL, CSA, VDE, PSE, CNS and other safety certifications."
     gy-06: "/css/images/en/gy-06.jpg"
     gy-07: "/css/images/en/gy-07.jpg"
@@ -1203,7 +1198,7 @@ Total sales: 4,800 tons/year"
     main_title: "R&D"
     main_title_desc: "The R&D development of the company has been dedicated to the improvement of the production efficiency and development of new products for many years. <br>
         New products that have been developed are described below:  </div>
-      <h4>Major new products</h4>"
+      <h4>Major Products</h4>"
     main_title_list: "1. FFC (Flexible Flat Cable)<br>
               2. Electronic wires UL1430 /UL1431<br>
               3. Charging cables for electric vehicles <br>
@@ -1233,8 +1228,8 @@ Total sales: 4,800 tons/year"
               * Pass UL VW-1 and CSA vertical burning test<br>
               * Uniform thickness of insulation, easy stripping and cutting<br>
               * For internal wiring of electronic equipment"
-    title_3: "3. New Product Development- Charging Cable for the Electric Car"
-    title_4: "4. New Product Development- TCER"
+    title_3: "3. Developing Product - Charging Cable for the Electric Car"
+    title_4: "4. Developed Product - TCER"
     title_4_content_1: "Rated temperature: 90℃  "
     title_4_content_2: "Rated voltage: 600V"
     title_4_content_3: "Standard: UL 1277, UL 1581"
@@ -1242,35 +1237,35 @@ Total sales: 4,800 tons/year"
     title_4_content_5: "SR-PVC insulation inner layer, nylon insulated outer layer, PVC outer sheath"
     title_4_content_6: "Copper braid shielding or no shielding"
     title_4_content_7: "Pass the FT4/ IEEE 1202 burning requirements of UL 1666."
-    title_4_content_8: "Tray computer, outdoor signal transmission, and PV cable etc."
-    title_5: "5. New product development- automobile wire"
-    title_5_content_1: "Development projects:"
+    title_4_content_8: "Tray computer, outdoor signal transmission, and PV cable, etc."
+    title_5: "5. Developing Product - automobile wire"
+    title_5_content_1: "Projects:"
     title_5_content_2: "The eco-wire with low smoke zero halogen, durable, light, thin, extra thin-wall performances is applicable for the low-voltage insulation stranded wire of all kinds of transport."
     title_5_content_3: "Use irradiated materials to lift the level of temperature tolerance."
-    title_6: "6. New product development- leading wire for the automobile motor"
-    title_6_content_1: "The development of the leading wire for the automobile motor:"
+    title_6: "6. Developing Product - leading wire for the automobile motor"
+    title_6_content_1: ""
     title_6_content_2: "The eco-wire with low smoke zero halogen, durable, light, thin, extra thin-wall performances is applicable for the low-voltage insulation stranded wire of all kinds of transport."
     title_6_content_3: "Use irradiated materials in the wires to lift the level of temperature tolerance."
     title_6_content_4: "Introduce the heat protection material into application."
   guanyin-equipment:
     main_title: "Equipment introduction"
   guanyin-product-1:
-    main_title: "Wire cable"
-    title_1: "1. Wire cable"
-    gy-21: "/css/images/en/gy-21.jpg"
+    main_title: "Wire Cable"
+    title_1: "1. Wire Cable"
+    gy-21: "/css/images/gy-21.jpg"
   guanyin-product-2:
-    main_title: "Automobile wire"
-    title_1: "Development projects:"
+    main_title: "Automobile Wire"
+    title_1: "Developing projects:"
     title_1_content_1: "The eco-wire with low smoke zero halogen, durable, light, thin, extra thin-wall performances is applicable for the low-voltage insulation stranded wire of all kinds of transport."
     title_1_content_2: "Use irradiated materials to lift the level of temperature tolerance."
   guanyin-product-3:
-    main_title: "Automobile motor leading wires"
+    main_title: "Automobile Motor Leading Wires"
     title_1: "The development of the leading wire for the automobile motor:"
     title_1_content_1: "The eco-wire with low smoke zero halogen, durable, light, thin, extra thin-wall performances is applicable for the low-voltage insulation stranded wire of all kinds of transport."
     title_1_content_2: "Use irradiated materials in the wires to lift the level of temperature tolerance."
     title_1_content_3: "Introduce the heat protection material into application."
   guanyin-product-4:
-    main_title: "Electronic wire and stranded wire"
+    main_title: "Electronic Wire and Stranded Wire"
     title_1: "1. Electronic wire"
     title_1_desc: "The electronic wire is fine, soft and easy to use. It is widely applied as the connection wire in circuit boards or between wiring terminals, and meets the standards of UL758, UL2556 (Wire and Cable Test Methods),and UL1581 (Reference Standard for Electrical Wires, Cables, and Flexible Cords)."
     title_1_content_1: "UL1430<br>
@@ -1292,110 +1287,110 @@ Total sales: 4,800 tons/year"
               * Uniform thickness of insulation, easy stripping and cutting<br>
               * For internal wiring of electronic equipment"
     title_2: "2. Stranded wire"
-    title_2_content_1: "<h5>Stranded wire:</h5>
-        <p>PVC insulation high-voltage car stranded wire, low-voltage stranded wire, and appliance stranded wire. They possess soft , tensile properties and with easy application, and are subjected to the standards of JIS C3406, JIS C3405 and BS6862 etc.</p>
-        <h5>Power supply cord:</h5>
+    title_2_content_1: "<h5>Stranded Wire:</h5>
+        <p>PVC insulation high-voltage car stranded wire, low-voltage stranded wire, and appliance stranded wire. They possess soft, tensile properties and with easy application, and are subjected to the standards of JIS C3406, JIS C3405 and BS6862, etc.</p>
+        <h5>Power Cord:</h5>
         <p>With great softness and flexibility, it is suitable for use in electrical appliances, and meet the standard of UL62.</p>"
   guanyin-product-5:
     main_title: "PV Ribbon"
-    title_1: "1. Wire cable"
-    title_1_content_1: "<b>PV ribbon</b>
+    title_1: "1. Wire Cable"
+    title_1_content_1: "<b>PV Ribbon</b>
         <p>The product is suitable for Photovoltaic operation systems and provides a special solution for the Photovoltaic industry to improve the efficiency of the battery.</p><br>"
     title_1_content_2: "PV Ribbon application: "
   guanyin-product-6:
     main_title: "PV Wire"
-    main_title_desc: "<b>PV wire</b><br>
+    main_title_desc: "<b>PV Wire</b><br>
        <p>PV wire is applicable to dc 1.8kV (ungrounded system between wire cores), used in the single core flexible cord in the DC side of photovoltaic array. The operating environment temperature is 90℃.</p>"
   guanyin-product-7:    
     main_title: "Aerial Conductor and Fire Resistant Cable"
     title_1: "1. Aerial Conductor"
-    title_1_conent_1: "<h5>All aluminum wire</h5>
+    title_1_conent_1: "<h5>All Aluminum Wire</h5>
             This product shall comply with the standards of ASTM B-230, 231 class AA, IEC60888 and GB/T3048.2 that are applicable to the in-house line of the power station.<br>
             "
-    title_1_conent_2: "<h5>Steel reinforced aluminum wire</h5>
+    title_1_conent_2: "<h5>Steel Reinforced Aluminum Wire</h5>
             This product shall comply with the standards of ASTM B-230, B-231, B-232, B-233, B-498, A-90, A-239, IEC60888 and GB/T3048.2 that are applicable to the internal circuits for power transmission and distribution of the power station. The power voltage ranges from 1kV to 750 kV, depending on the set up."
-    title_1_conent_3: "<h5>High voltage XLPE weather-proof wire</h5>
+    title_1_conent_3: "<h5>High Voltage XLPE Weather-proof Wire</h5>
             This wire is mainly used for the high voltage overhead distribution line used in the places near the urban area. The XLPE wire is the coated weatherproof wire for outdoor use and it is in accordance with the standard of TPC A009."
     title_2: "2. Fire resistant cable"
-    title_2_conent_1: "<h5>Heat resistant wire cable</h5>
+    title_2_conent_1: "<h5>Heat Resistant Wire Cable</h5>
             The XLPE insulation, PVC compound or low smoke zero halogen coating material is used for this product. The heat resistant temperature of this product is 300℃ or 380℃. Therefore, this product is suitable for the signal light of the fire safety equipment emergency power supply system and the heat resistant wire cable of the control circuit.<br>
             "
-    title_2_conent_2: "<h5>Flame resistant cable with low smoke zero halogen performance</h5>
+    title_2_conent_2: "<h5>Flame Resistant Cable with Low Smoke Zero Halogen Performance</h5>
             The XLPE insulation material and the PVC coating with low smoke zero halogen performance is used for this product, which shall comply with the standards of UL, SAE and SJE. This product is suitable for the power supply, control circuit, as well as the monitoring and communication wires of the fire safety equipment emergency power supply system.<br>"
-    title_2_conent_3: "<h5>Fire resistant cable</h5>
+    title_2_conent_3: "<h5>Fire Resistant Cable</h5>
             This fire resistant cable is used for the power supply, control circuit, alarm, as well as the monitoring and communication wires of the fire safety equipment emergency power supply system. The fire resistant temperature is 840℃/30min or 950℃/90min. The standard and test method regarding the technology of the structure, material and performance conform to the regulations of the Fire-retardant Cables (FR)."
   guanyin-product-8:
-    main_title: "Wire cable, as well as the high and medium voltage cables"
-    title_1: "1. Wire cable"
-    title_1_content_1: "<h5>Control cable</h5>
+    main_title: "Wire Cable, as well as the high and medium voltage cables"
+    title_1: "1. Wire Cable"
+    title_1_content_1: "<h5>Control Cable</h5>
               The PE insulation with PVC coating (CEV) and PVC insulation with PVC coating (CVV) materials are used for this product, which shall comply with the standards of JIS C3401 and TPC A040. This product is mainly used for the control circuit of the power station and transformer station below 600V, as well as the wire used for the control circuit of regular appliances.<br>
               "
-    title_1_content_2: "<h5>PVC insulation cable</h5>
+    title_1_content_2: "<h5>PVC Insulation Cable</h5>
               This product is used for the PVC insulation wire and the PVC insulated flexible wire with the rated voltage 450/750V and below. This product may be customized based on the standards, such as IEC Standard, for different countries. This product shall comply with the standard of JIS C3605.<br>
               "
-    title_1_content_3: "<h5>XLPE insulated and sheathed control cable with copper wire shielded (600V)</h5>
+    title_1_content_3: "<h5>XLPE Insulated and Sheathed Control Cable with Copper Wire Shielded (600V)</h5>
               This product is used for the control circuit cable of the tamper-resistance machine. It shall comply with the standard of JCS 258A.<br>
               "
-    title_1_content_4: "<h5>Radiation-proof XLPE cable</h5>
+    title_1_content_4: "<h5>Radiation-proof XLPE Cable</h5>
               This product may be customized according to the standards recommended by IEC, the British Standard and the U.S. Standard.<br>
               "
-    title_1_content_5: "<h5>PVC wire</h5>
+    title_1_content_5: "<h5>PVC Wire</h5>
               The main composition compound is the PVC insulation material. This product is primarily used for the insulation wire with the voltage below 600V and used for the regular electrical workpiece. It is also mainly used for the regular construction wire. This product shall comply with the standards of TPC A006 and JIS C3342.  <br>
               "
-    title_1_content_6: "<h5>Elevator cable</h5>
+    title_1_content_6: "<h5>Elevator Cable</h5>
               This product adapts the elevation movement of the elevator. It is bendable and tensile. Its soft property prevents the conductor extension cable from breaking. Its mechanical resistance, torque balance and permissible stress shall comply with the standard of JIS C3408, as well as the standards in all countries.<br>
               "
-    title_1_content_7: "<h5>Outlet wire</h5>
+    title_1_content_7: "<h5>Outlet Wire</h5>
               The PVC insulation compound is used for this product. The outlet wire has great softness. It is generally used for the outgoing connector of the electrical apparatus, the connector in the power distribution panel, as well as the other motor outlet wires that require the bendable distribution line.<br>
               "
-    title_1_content_8: "<h5>Portable power cable</h5>
+    title_1_content_8: "<h5>Portable Power Cable</h5>
               The portable power cable is commonly known as the cabtye cable. It is mainly used in plants, mines and farms. It is also primarily used for portable equipment such as the electric tool and crane. This product shall comply with the standard of JIS C3312."
     title_2: "2. High and medium voltage cables"
-    title_2_content_1: "<h5>XLPE insulated power cable (127/230kV ~ 330/345kV)</h5>
+    title_2_content_1: "<h5>XLPE Insulated Power Cable (127/230kV ~ 330/345kV)</h5>
               This product is used for the XLPE insulated power cable with the commercial power frequency 127/230kV ~ 330/345kV. This product shall comply with the standards of IEC62067 and GB/Z18890.2. This product is suitable for the internal circuits for high-voltage transmission line. <br>
               "
-    title_2_content_2: "<h5>XLPE insulated power cable (600V~87/161kV)</h5>
+    title_2_content_2: "<h5>XLPE Insulated Power Cable (600V~87/161kV)</h5>
               This product is suitable for the commercial power frequency with the value of 600V ~ 87/161kV. This product is used for the power distribution of the circuits for power transmission and distribution. This product shall comply with the standards of IEC60502, IEC60840, GB/T12706 and GB/T11013.<br>
               "
-    title_2_content_3: "<h5>Anti-termite power cable</h5>
-              This product is used for the XLPE insulation copper- and alumimum-core anti-termite cable with the rated voltage 127/230kV and below. This product shall comply with the standards of IEC60502, IEC60840 and GB2951.38.<br>
+    title_2_content_3: "<h5>Anti-termite Power Cable</h5>
+              This product is used for the XLPE insulation copper- and aluminum-core anti-termite cable with the rated voltage 127/230kV and below. This product shall comply with the standards of IEC60502, IEC60840 and GB2951.38.<br>
               "
-    title_2_content_4: "<h5>Water treeing cable</h5>
+    title_2_content_4: "<h5>Water Treeing Cable</h5>
               This product is suitable for the commercial power frequency with the value of 3.6/6kV~26/35kV. This product is used for cabling in areas with high humidity or abundant underground water. It is also suitable for areas that require the control of water and tree growth. In these areas, this product enhances the reliability of the circuits for power transmission and distribution. This product shall comply with the standards of TPC 155.<br>
               <br>
               Power flow chart of the power system:<br>"
   guanyin-product-9:
-    main_title: "Optical fiber cable"
-    title_1_content_1: "<h5>Leading JF-SM optical cable for broad wavelength region</h5>
+    main_title: "Optical Fiber Cable"
+    title_1_content_1: "<h5>Leading JF-SM Optical Cable for broad wavelength region</h5>
               The optical fiber cable is a combination of 2-12 silica single-mode fibers, which are dyed respectively and bundled together in a beam tube or annular tube, a tensile cord, and a fire resistant jacket. It is applicable to the local loops in wavelength range between 1260nm-1625nm. It achieves in local loop unbundling and accesses to clients. 
               <br>"
-    title_1_content_2: "<h5>Non-zero dispersion-shifted single-mode optical fiber</h5>
+    title_1_content_2: "<h5>Non-zero dispersion-shifted single-mode Optical Fiber</h5>
               It is a combination of 12 silica non-zero dispersion-shifted single-mode fibers, which are dyed respectively and bundled together. It is applicable to the wavelength range between 1460mm-1625mm. The transmission wavelength is composed of the relay links for long distance or in the city. 
               <br>"
-    title_1_content_3: "<h5>Indoor optical fiber cable</h5>
+    title_1_content_3: "<h5>Indoor Optical Fiber Cable</h5>
               It is a silica optical fiber cable with a fire-resistant jacket, which is suitable as the trunk cable or adapter cable in a building.<br>
               <br>"
-    title_1_content_4: "<h5>JF-SM optical cable for broad wavelength region</h5>
+    title_1_content_4: "<h5>JF-SM Optical Cable for broad wavelength region</h5>
               It is a 6 or 12 silica single-mode fibers, which are dyed respectively and bundled together to be 6-fibers or 12-fibers. It is applicable to all the local loops in the transmission wavelength range between 1260mm~1625mm. 
               <br>"
-    title_1_content_5: "<h5>JF-SM 6-fibers optical cable for broad wavelength region</h5>
+    title_1_content_5: "<h5>JF-SM 6-fibers Optical Cable for broad wavelength region</h5>
               6 silica single-mode fibers are dyed respectively and bundled together. The JF-SM 6-fibers optical cable is composed of fibers with moderate clusters and tensile cord sets. 
               <br>"
-    title_1_content_6: "<h5>JF-SM 12-fibers optical cable for broad wavelength region</h5>
+    title_1_content_6: "<h5>JF-SM 12-fibers Optical Cable for broad wavelength region</h5>
               6 silica single-mode fibers are dyed respectively and bundled together. The JF-SM 12-fibers optical cable is composed of fibers with moderate clusters and tensile cord sets.
               <br>"
   guanyin-catalogs:
-    main_title: "Product catalogue"
+    main_title: "Product Catalogue"
     gy-27: "/css/images/en/gy-27.gif"
-    3c-09: "/css/images/en/3c-09.png"
+    3c-09: "/css/images/3c-09.png"
     filename: "Wire Cable Catalogue. pdf"
   guanyin-consulting:
     main_title: "Hotline"
-    content_1: "<h5>Electric Wire & Cable Business Department- Sales</h5>
+    content_1: "<h5>Electric Wire & Cable Business Unit- Sales</h5>
                 <p>Tel.: +886-3-4907711 # 804/814<br>
                   Fax: +886-3-4907755<br>
                   E-mail: <a href='mailto:sales_p@tai-i-int.com.tw' target='_blank'>sales_p@tai-i-int.com.tw</a></p>"
-    content_2: "<h5>Electric Wire & Cable Business Division- Quality Assurance and Production Technique</h5>
+    content_2: "<h5>Electric Wire & Cable Business Unit- Quality Assurance and Production Technique</h5>
                 <p>Tel.: +886-3-4907711 # 693/631<br>
                   Fax: +886-3-4902275</p>"
   x_about-responsibility: 
@@ -1407,51 +1402,51 @@ Total sales: 4,800 tons/year"
     title_three:
     title_three_content:
   about-concept:
-    title_one: "Our operational philosophy"
-    title_one_content: "<b>Reinforcement</b><br>We go deeply into technology research and development, work on self-improvement, enhance relationships with customers and help customers to have confidence in the product and company.<br><b>Innovation</b><br>We devote ourselves to concept, technology and product innovation.<br><b>International perspective</b><br>We keep international horizon in mind, adopt global operations and become a global enterprise group."
-    title_two: "Company prospect"
+    title_one: "Corporate Philosophy"
+    title_one_content: "<b>Reinforcement</b><br>We go deeply into technology research and development, work on self-improvement, enhance relationships with customers and help customers to have confidence in the product and company.<br><b>Innovation</b><br>We devote ourselves to concept, technology and product innovation.<br><b>Global perspective</b><br>We keep global horizon in mind, adopt global operations and become a global enterprise group."
+    title_two: "Corporate Prospect"
     title_two_content: "We wish for becoming one of the most advanced companies with outstanding performance in the world. We hope to act in close coordination with customers. We wish to become the best partner of customers and work together in the fields of industry cluster and supply chain."
-    title_three: "Future outlook"
+    title_three: "Future Outlook"
     title_three_content: "We strive for the vertical deep-processing of the product to enhance the adding value of the product, keep our competitiveness and work for sustainable management. We form large economies of scale to expand the industrial range actively.<br>We are devoted to form a cross-industry alliance and reinforce the cooperation with upstream and downstream vendors.<br>We endeavor to strengthen the capital structure and consolidate the business administration."
-    title_four: "Introduction of Tai-I"
-    title_four_content: "Tai-I Electric Wire & Cable Co., Ltd. was founded in 1954 and has been in business for 60 years.<br><br>Five plants and two subsidiaries are established for our group. Three of the plants are in Taiwan, including Guanyin Plant (Electric Wire & Cable/Computer, Communication & Consumer Electronics Component Business Division), Hsinchu Plant (Enamelled Wire Business Division) and Resin Plant (Insulating Varnish Business Division). Other two plants are in China, including Tai-I Copper (Guangzhou) Co., Ltd. and Tai-I Jiang Corp (Guangzhou) Co., Ltd. The subsidiaries are Hydean Biotechnology Co., Ltd. (Aquaculture Division) and Tai-I Heavy Industries Technology Co., Ltd. (Advanced Metal Division). Our product line includes high, medium and lower voltage power cables, optical fiber cable, magnet wire, rectangular wire, triple-layer insulated winding wire, electronic wire for automobiles, power cord, power cord set, tinned copper wire and PV cable. The products are primarily used for signal transfer, power transmission and energy conversion with high performance.<br><br>The products include the upstream production and manufacturing of the bare copper wire, magnet wire, electric cable, fiber cable and insulating material. These products are strongly correlated to the industry. They have the advantage in vertical and horizontal integration. We have received the ISO9001, ISO14001, TS16949 and QC080000 Certificates for our relevant products. Through the SAP ERP system, the quality of our product and the management of our plant keep pace with the ones for the major international companies. The recently founded Hydean Biotechnology Co., Ltd. has stepped into the eco-aquaculture field and received the ISO22000 certification and HACCP Food Safety Certification. Tai-I Heavy Industries Technology is engaged in the development and application of the high-tech products regarding the composite material, antibacterial metal and high-strength stainless steel.<br><br>We have outstanding achievements in operation. According to the survey \"The 2,000 Largest Public Companies\" conducted by CommonWealth Magazine in 2014, our revenue range ranks the 73th among 2,000 companies and the 2nd in the metal products industry. With high market share and great customers, our business scope is larger than the companies in the same trade that are listed in the stock markets in Taiwan, China and Hong Kong. We have become the leading manufacturer in the bare copper wire and magnet wire industries in China."
+    title_four: "Corporate Profile"
+    title_four_content: "Tai-I Electric Wire & Cable Co., Ltd. was founded in 1954 and has been in business for 60 years.<br><br>Five plants and two subsidiaries are established for our group. Three of the plants are in Taiwan, including Guanyin Plant (Electric Wire & Cable/3C Component Business Unit), Hsinchu Plant (Enameled Wire Business Unit) and Resin Plant (Insulating Varnish Business Unit). Other two plants are in China, including Tai-I Copper (Guangzhou) Co., Ltd. and Tai-I Jiang Corp (Guangzhou) Co., Ltd. The subsidiaries are Hydean Biotechnology Co., Ltd. (Aquaculture Division) and Tai-I Hitech Heavy Industries Technology Co., Ltd. (Advanced Metal Division). Our product lines include high, medium and lower voltage power cables, optical fiber cable, enameled wire, rectangular wire, triple-layer insulated winding wire, electronic wire for automobiles, power cord, power cord set, tinned copper wire and PV cable. The products are primarily used for signal transfer, power transmission and energy conversion with high performance.<br><br>The products include the upstream production and manufacturing of the bare copper wire, enameled wire, electric cable, fiber cable and insulating material. These products are highly correlated to the industry. They have the advantage in vertical and horizontal integration. We have received the ISO9001, ISO14001, TS16949 and QC080000 Certificates for our relevant products. Through the SAP ERP system, the quality of our product and the management of our plant keep pace with the ones for the major international companies. The recently founded Hydean Biotechnology Co., Ltd. has stepped into the eco-aquaculture field and received the ISO22000 certification and HACCP Food Safety Certification. Tai-I Hitech Heavy Industries Technology is engaged in the development and application of the high-tech products regarding the composite material, antibacterial metal and high-strength stainless steel.<br><br>We have outstanding achievements in operation. According to the survey \"The 2,000 Largest Public Companies\" conducted by CommonWealth Magazine in 2014, our revenue range ranks the 73th among 2,000 companies and the 2nd in the metal products industry. With high market share and great customers, our business scope is larger than the companies in the same trade that are listed in the stock markets in Taiwan, China and Hong Kong. We have become the leading manufacturer in the bare copper wire and enameled wire industries in China."
   about-interested:
     main_title: "Stakeholder"
-    title_1: "Corporate governance implementation"
-    content_1_1: "We build excellent communication channels between investors, customers, employees, suppliers and correspondent banks to secure and us the their rights."
-    content_1_2: "We designate the system related to the corporate social responsibility and relevant regulations for execution. We meet and exceed labor conditions, human right articles, as well as labor safety and health requirements."
-    content_1_3: "Competent authorities of our headquarters and all business divisions carry out the corporate social responsibility. These authorities actively develop power transmission with high quality and power conversion with high performance to reduce resource consumption and increase energy efficiency."
-    title_2: "Sustainable environment development"
+    title_1: "Corporate Governance Implementation"
+    content_1_1: "We build excellent communication channels between investors, customers, employees, suppliers and correspondent banks to secure their rights."
+    content_1_2: "We designate the system related to the corporate social responsibility and relevant regulations for execution. We meet and exceed labor conditions, human right articles, as well as labor safety, health and environmental requirements."
+    content_1_3: "Competent authorities of our headquarters and all business units carry out the corporate social responsibility. These authorities actively develop power transmission with high quality and power conversion with high performance to reduce resource consumption and increase energy efficiency."
+    title_2: "Sustainable Environment Development"
     content_2: "We declare the goal of the corporate social responsibility through various promotions. We implement the system executing the restriction of hazardous substances (RoHS). We carry out green production and purchase, which we put into practice for the process. We implement the cleaner production technology to utilize resources adequately, as well as to improve the process and operation management to reduce the waste and create a sustainable management environment."
-    title_3: "Charity support"
+    title_3: "Charity Support"
     content_3_1: "We comply with relevant labor laws and ensure the legal rights of the employee. We establish applicable management methods and procedures."
     content_3_2: "We provide employees with safety and sanitary working environments. We also implement safety and health education at regular intervals."
     content_3_3: "We draw up and publish consumer sovereignty policies. We also provide transparent and effective consumer complaint procedures for our products and services."
     content_3_4: "We collaborate with suppliers to take the corporate social responsibility."
     content_3_5: "We participate in community development and charity activities by conducting business activities, in-kind contribution events, corporate volunteer services or other free professional services."
-    title_4: "Stakeholder and partner"
-    content_4: "<p>Stakeholders include employees, customers, suppliers, community groups, parent or subsidiary company, partners, investors and shareholders. These are the individuals or groups that may affect corporate strategic decisions or actions, and vice versa. For sustainable development, a corporate must designate strategies that conform to requirements from different stakeholders. While emphasizing the shareholder rights, a corporate must pay attention to employees, customers, suppliers, communities and all related individuals or groups. They form concentric circles with the corporate owner at the center and these circles spread out.</p>
-    <p style='margin:10px 0 0 0'> A corporate must understand what stakeholders think and keep the communication with stakeholders transparently. Such communication is used as important reference bases for sustainable development. We interact with stakeholders for daily business in various ways. We also use our official website as the fundamental communication channel between stakeholders and us. The website comprises the product information, business contact, investor service, job opportunity and corporate social responsibility. The website is provided with an email address <a href='ivanc@tai-i-int.com.tw' target='_blank'>(ivanc@tai-i-int.com.tw)</a> for external communication. We hire responsible staffs that are in charge of emails. These staffs distribute emails to competent authorities in charge of different types of business to handle emails. Additionally, communication channel for residents are provided by each plant. Management departments send staffs to the surrounding area of the plant for patrol and visit purposes. Residents may express opinions and communicate with in-house staffs any time.</p>"
-    title_5: "Communication channels for stakeholders"
+    title_4: "Stakeholder and Partner"
+    content_4: "<p>Stakeholders include employees, customers, suppliers, community groups, parent or subsidiary company, partners, investors and shareholders. These are the individuals or groups that may affect corporate strategic decisions or actions, and vice versa. For sustainable development, a corporate has to designate strategies that conform to requirements from different stakeholders. While emphasizing the shareholder rights, a corporate must pay attention to employees, customers, suppliers, communities and all related individuals or groups. They form concentric circles with the corporate owner at the center and these circles spread out.</p>
+    <p style='margin:10px 0 0 0'> A corporate must understand what stakeholders think and keep the communication with stakeholders transparently. Such communication is used as important reference bases for sustainable development. We interact with stakeholders for daily business in various ways. We also use our official website as the fundamental communication channel between stakeholders and us. The website comprises the product information, business contact, investor service, job opportunity and corporate social responsibility. The website is provided with an email address <a href='ivanc@tai-i-int.com.tw' target='_blank'>(ivanc@tai-i-int.com.tw)</a> for external communication. We designate staffs that are in charge of external communication emails. They distribute emails to corresponding competent authorities according to different contents. Additionally, communication channel for residents are provided by each plant. Management departments send staffs to the surrounding area of the plant for patrol and visit purposes. Residents may express opinions and communicate with in-house staffs any time.</p>"
+    title_5: "Communication Channels for Stakeholders"
     content_5_1: "<p>Our partners include shareholders, investors, customers and present employees. New staffs, resigned staffs, community and neighbourhood, suppliers, subcontractors, contractors, NGOs, scholars and experts could be included in the future. Refer to the following diagram.</p>"
     content_5_2: "<p><b>Investor</b><br>
       In every annual shareholder meeting, our chairman leads the management team to provide descriptions for investors, who are welcomed to consult the chairman and the team. After the consultation, investors will receive clear replies from the chairman and the team. In the meantime, we release the annual report information, periodic financial statements, major resolutions and stock price information on our website and Taiwan Stock Exchange website. Investors are welcomed to use them as references for investment decision evaluation.</p>
     <p><b>Customer</b><br>
-      We always respond to customer needs actively. In addition to quality, cost and the management system, we carry through the EHS management, implement the \"ROHS\" Directives, join the Green Partner, as well as enforce labor rights and ethics. For a long time we have paid close attention to related corporate social responsibility issues and management measures, which have been implemented actively. In the meanwhile, we continue to comprehend the customer viewpoint for these issues and measures, analyze international trends and take the initiative to participate in the implementation of social responsibility taken by customers. We integrate new viewpoints and practices into our management system.</p>
+      We always respond to customer needs actively. In addition to quality, cost and the management system, we carry through the EHS management, implement the \"ROHS\" Directives, join the Green Partner, as well as enforce labor rights and ethics. For a long time, we have paid close attention to related corporate social responsibility issues and management measures, which have been implemented actively. In the meanwhile, we continue to comprehend the customer viewpoint for these issues and measures, analyze international trends and take the initiative to participate in the implementation of social responsibility taken by customers. We integrate new viewpoints and practices into our management system.</p>
     <p><b>Subcontractor/Supplier</b><br>
-      Tai-I Electric Wire & Cable manages the relationships with our subcontractors and suppliers with the concepts of coexistence and co-prosperity in quality/service level, green products, operation and manufacture, cost, EHS (Environment, Safety and Health), labor management, and code of ethics etc. Staffs in the quality, biotechnology, environmental engineering, and procurement departments form an audit group to conduct a qualification evaluation for new suppliers. The approved ones will be our partners. For those suppliers and subcontractors who are our present partners, the audit group also periodically conducts an audit and assessment on them to ensure the product quality and delivery time.</p>
-    <p><b>Community and neighbourhood</b><br>
-      Our plants cover the areas of Guanyin and Yangmei in Taoyuan, as well as Hsinchu, Pingtung and Guangzhou etc. We cultivate the neighborhood relationships for many years and keep good interactions with local residents by sponsoring and participating in community events, as well as visiting neighborhoods etc.</p>
+      Tai-I Electric Wire & Cable manages the relationships with our subcontractors and suppliers with the concepts of coexistence and co-prosperity in quality/service level, green products, operation and manufacture, cost, EHS (Environment, Safety and Health), labor management, and code of ethics, etc. Staffs in the quality, biotechnology, environmental engineering, and procurement departments form an audit group to conduct a qualification evaluation for new suppliers. The approved ones will be our partners. For those suppliers and subcontractors who are our present partners, the audit group also periodically conducts an audit and assessment on them to ensure the product quality and delivery time.</p>
+    <p><b>Community and Neighbourhood</b><br>
+      Our plants cover the areas of Guanyin and Yangmei in Taoyuan, as well as Hsinchu, Pingtung and Guangzhou, etc. We cultivate the neighborhood relationships for many years and keep good interactions with local residents by sponsoring and participating in community events, as well as visiting neighborhoods, etc.</p>
     <p><b>Contractor</b><br>
-      For reducing the construction risks for contractors, not only we require them to meet the local requirements and the OHSAS 18001 Standard for Occupational Safety and Health Management System, but also establish the \"Contracting Operation Management Rules\" to fulfil the goals of safety management.</p>
+      For reducing the construction risks for contractors, we require them not only to meet the local requirements and the OHSAS 18001 Standard for Occupational Safety and Health Management System, but also establish the \"Contracting Operation Management Rules\" to fulfil the goals of safety management.</p>
     <p><b>Employee</b><br>
-      Tai-I Electric Wire & Cable places employee welfare as top priority. We attach importance to the benefits and welfare of the employees and adopt the most competitive compensation and benefit policy. The staff payroll distribution is based on educational background, professional experience and individual performance. The beginning salary does not vary by gender, race, religion, political affiliation or marital status etc. We also provide a safe and comfortable working environment and equal opportunities for career advancement. There are more than a hundred internal and external training courses held every year in hoping that employee competencies can be promoted. With comprehensive career development planning and training systems, we deeply believe that they help us to retain excellent employees.</p>
-    <p><b>Occupational health</b><br>
-      Considering the importance of working environment and employee safety protection for the company operation, we perform management systems regarding ISO14001, QC08000 and TOSHMS to identify the significant environmental aspects, control the risks of occupational safety and health, achieve the reuse goals and improve the project management, ensuring the safety and health of the employees. Besides, free physical examination and employee trip are held annually. We built sports and exercise facilities and areas to hold different ball games periodically. Free beverages such as milk, juice etc. are offered during the games for adding strength and boosting morale of employees. We take care of the physical and psychological health of employees comprehensively. </p>
-    <p><b>Living environment</b><br>
-      We care about the daily life of each employee. Therefore, every plant is equipped with good quality dormitories to offer them a comfortable living environment. Free shuttle buses between dorms and plants are even provided for employees in some remote plants. To hear more from employees, we have set up several dedicated communication mailboxes and hot lines. Employees can express their opinions through the \"company mailbox\", \"monthly HR meeting\" and \"mailbox for sexual harassment complaints\". Moreover, labor meetings are held periodically to ensure an open and free communication channel.</p>
-    <p><b>Employee training and manpower development</b><br>
-      We give weight to employee training and development. For providing concrete blueprint of career development for our employees, we have established a TTQS training system offering adequate training resources. The employees accept orientation trainings while taking office. The trainings introduce them the company policy, our philosophy and related policies of corporate social responsibility, safety and health requirements and the management system etc. After working at the positions, they will receive a long-term and complete professional training according to their job contents.</p>"
+      Tai-I Electric Wire & Cable regards employee welfare as first priority. We attach importance to the benefits and welfare of the employees and adopt the most competitive compensation and benefit policy. The staff payroll distribution is based on educational background, professional experience and individual performance. The starting salary is not varied by gender, race, religion, political affiliation or marital status, etc. We also provide a safe and comfortable working environment and equal opportunities for career advancement. There are more than hundred of internal and external training courses held every year in hoping that employees' competencies can be promoted. With comprehensive career development planning and training systems, we deeply believe that they help us to retain excellent employees.</p>
+    <p><b>Occupational Health</b><br>
+      Considering the importance of working environment and employee safety protection for the company operation, we perform management systems regarding ISO14001, QC08000 and TOSHMS to identify the significant environmental aspects, control the risks of occupational safety and health, achieve the reuse goals and improve the project management, ensuring the safety and health of the employees. Besides, free physical examination and employee trip are held annually. We also built facilities for sports and exercise and hold different kinds of ball games periodically. Free beverages such as milk, juice, etc. are offered to enhance the vitality and boosting morale of employees. We comprehensively take care of employee's physical and psychological health. </p>
+    <p><b>Living Environment</b><br>
+      We care about the daily life of each employee. Therefore, every plant is equipped with good quality dormitories to offer them a comfortable living environment. Free shuttle buses between dorms and plants are even provided for employees in some remote plants. To receive more opinions and suggestions from employees, we set up several dedicated communication mailboxes and hot lines. Employees can express their opinions through the \"company mailbox\", \"monthly HR meeting\" and \"mailbox for sexual harassment complaints\". Moreover, labor meetings are held periodically to ensure an open and free communication channel.</p>
+    <p><b>Employee Training and Career Development</b><br>
+      We give weight to employee training and development. For providing concrete blueprint of career development for our employees, we have established a TTQS training system offering adequate training resources. The employees accept orientation trainings while taking office. The trainings introduce them the company policy, our philosophy and related policies of corporate social responsibility, safety and health requirements and the management system, etc. After working at the positions, they will receive a long-term and completely professional training according to their job contents.</p>"
   env:
     hqlevel_show:
       overview: "Overview"
@@ -1502,8 +1497,8 @@ Total sales: 4,800 tons/year"
       3c-07-17: "/css/images/en/3c-07-17.jpg"
       3c-07-18: "/css/images/en/3c-07-18.jpg"
       3c-08: "/css/images/en/3c-08.jpg"
-      3c-09: "/css/images/en/3c-09.png"
-      3c-09h: "/css/images/en/3c-09h.png"
+      3c-09: "/css/images/3c-09.png"
+      3c-09h: "/css/images/3c-09h.png"
       3c-10: "/css/images/en/3c-10.jpg"
       ab-01: "/css/images/en/ab-01.png"
       ab-05: "/css/images/en/ab-05.jpg"

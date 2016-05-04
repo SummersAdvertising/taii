@@ -8,7 +8,7 @@
     <div id="intro">
       <div id="cpration">
         <h4><%=  t("index.cpration_h4") %></h4>
-        <img src="/css/images/id-37.jpg">
+        <img src="<%=  t("index.cpration_img") %>">
         <a href="<%= page_pages_path("center") %>"><%=  t("index.cpration_more") %> ></a>
       </div>
       <div id="faith">
@@ -165,9 +165,7 @@
                 </td>
               <td width="65%" valign="top" class="right"><h4><%= t("index.jiangcorp")%></h4>
                 <%= simple_format( t("index.jiangcorp_adv") )%>
-                <br>
                 <img src="<%= t("env.img_url.id-29") %>">
-                
                 </td>
             </tr>
             <tr>
@@ -227,7 +225,6 @@
                 <p style="background:url(<%= t("env.img_url.id-32") %>) right bottom no-repeat">
 	              <%= simple_format( t("index.guanyin_adv_2") )%>  
                 </p>
-                <br>
                 <%= simple_format( t("index.guanyin_adv_3") )%>
                 </td>
             </tr>

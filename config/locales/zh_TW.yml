@@ -9,6 +9,7 @@ zh_TW:
     copyright: "台一國際股份有限公司  版權所有 © 2014 TAI-I  ELECTRIC WIRE & CABLE All Rights Reserved."
   index:
     cpration_h4: "各家合作機構"
+    cpration_img: "/css/images/id-37.jpg"
     cpration_more: "了解更多"
     spirit_main_title: "我們的信念"
     spirit_title_1: "<b>深耕</b><br>
@@ -404,6 +405,8 @@ zh_TW:
   about-organization:
     main_title: "組織架構"
     org_img_url: "/css/images/tw/ab-29.jpg"
+    zoom_in: "放大"
+    zoom_out: "返回"
   about-group:
     main_title: "集團架構"
     group_img_url: "/css/images/tw/ab-26.jpg"
@@ -1399,7 +1402,7 @@ zh_TW:
   guanyin-catalogs:
     main_title: "產品型錄"
     gy-27: "/css/images/tw/gy-27.gif"
-    3c-09: "/css/images/tw/3c-09.png"
+    3c-09: "/css/images/3c-09.png"
     filename: "電線電纜產品型錄.pdf"
   guanyin-consulting:
     main_title: "產品諮詢專線"
@@ -1514,8 +1517,8 @@ zh_TW:
       3c-07-17: "/css/images/tw/3c-07-17.jpg"
       3c-07-18: "/css/images/tw/3c-07-18.jpg"
       3c-08: "/css/images/tw/3c-08.jpg"
-      3c-09: "/css/images/tw/3c-09.png"
-      3c-09h: "/css/images/tw/3c-09h.png"
+      3c-09: "/css/images/3c-09.png"
+      3c-09h: "/css/images/3c-09h.png"
       3c-10: "/css/images/tw/3c-10.jpg"
       ab-01: "/css/images/tw/ab-01.png"
       ab-05: "/css/images/tw/ab-05.jpg"

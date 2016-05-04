@@ -9,6 +9,7 @@ zh_CN:
     copyright: "台一国际股份有限公司  版权所有 © 2014 TAI-I  ELECTRIC WIRE & CABLE All Rights Reserved."
   index:
     cpration_h4: "各家合作机构"
+    cpration_img: "/css/images/id-37.jpg"
     cpration_more: "了解更多"
     spirit_main_title: "我们的信念"
     spirit_title_1: "<b>深耕</b><br>
@@ -403,6 +404,8 @@ zh_CN:
   about-organization:
     main_title: "组织架构"
     org_img_url: "/css/images/cn/ab-29.jpg"
+    zoom_in: "放大"
+    zoom_out: "返回"
   about-group:
     main_title: "集团架构"
     group_img_url: "/css/images/cn/ab-26.jpg"
@@ -1399,7 +1402,7 @@ Electrical Wires, Cables, and Flexible Cords电线电缆和软线参考标准)�
   guanyin-catalogs:
     main_title: "产品型录"
     gy-27: "/css/images/cn/gy-27.gif"
-    3c-09: "/css/images/cn/3c-09.png"
+    3c-09: "/css/images/3c-09.png"
     filename: "电线电缆产品型录.pdf"
   guanyin-consulting:
     main_title: "产品谘询专线"
@@ -1498,8 +1501,8 @@ Electrical Wires, Cables, and Flexible Cords电线电缆和软线参考标准)�
       3c-07-17: "/css/images/cn/3c-07-17.jpg"
       3c-07-18: "/css/images/cn/3c-07-18.jpg"
       3c-08: "/css/images/cn/3c-08.jpg"
-      3c-09: "/css/images/cn/3c-09.png"
-      3c-09h: "/css/images/cn/3c-09h.png"
+      3c-09: "/css/images/3c-09.png"
+      3c-09h: "/css/images/3c-09h.png"
       3c-10: "/css/images/cn/3c-10.jpg"
       ab-01: "/css/images/cn/ab-01.png"
       ab-05: "/css/images/cn/ab-05.jpg"
