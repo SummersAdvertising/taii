@@ -17,7 +17,8 @@ en:
               relationships with customers."
     spirit_title_2: "<b>Innovation</b><br>
               Devote ourselves to concept, technology and product innovation."
-    spirit_title_3: "<b>Global perspective</b> Keep global horizon in mind, adopt global operations and become a global enterprise group."
+    spirit_title_3: "<b>Global perspective</b><br>
+              Keep global horizon in mind, adopt global operations and become a global enterprise group."
     news: "News "
     main_product_cate_1: "Bright Copper"
     main_product_cate_2: "Heat Proof"
@@ -501,8 +502,8 @@ Interview: No. 77, Dongpeng Rd., Eastern District of Guangzhou Economic & Techno
     title_five_content: "\"Safety First\" is not only our commitment to the employees in the work environment, but also the highest guideline for our safety and health policies. We improve the SH knowledge and technique of the employees appropriately to create a work environment with zero occupational accident. The engagement and cohesion of the employees are ensured by taking care of their requirements and providing them with emergency aid and legal consultation."
   human-taiwan-2:
     main_title: "Taipei Headquarters - Recruitment"
-    subtitle: "<h3>opportunities</h3>Tai-I Electric Wire & Cable CO., is an innovative and competitive<br> company in the industry and we are searching for creative<br> individuals with positive attitude to join us.<br>"
-    info: "Please deliver your resume at 104 Website.<br>We will process your application and forward it to related departments.<br>Thank you!"
+    subtitle: "<h3>opportunities</h3>Tai-I Electric Wire & Cable CO., is an innovative and<br> competitive company in the industry and we are searching <br>for creative individuals with positive attitude to join us.<br>"
+    info: "Please deliver your resume at 104 Website.<br>We will process your application and forward it to <br>related departments.Thank you!"
   human-taiwan-3:
     main_title: "Taipei Headquarters - Compensation and Welfare"
     subtitle: "本公司提供具激勵性之獎酬制度及順暢的升遷管道："
@@ -1066,7 +1067,7 @@ Total sales: 4,800 tons/year"
     title_12: "2014.04 Korea KC power cord set authentication"
   guanyin3c-superiority:
     main_title: "Competitive Advantages"
-    title_1: "1. Vertical Integration Supply Chain"
+    title_1: "1. Vertical Integration of Supply Chain"
     title_1_desc: "From copper rod→ drawing and stranded wire→ power cord→ power cord set. "
     title_2:  "2. Substantial Experience and Advanced Equipment"
     title_2_desc: "We have 50 years of experience in filament production and employs advanced multi-wire drawing machines and bunching machines from Europe. The process is stable and the quality control is capable to meet the aerospace industry requirements. "
@@ -1081,7 +1082,7 @@ Total sales: 4,800 tons/year"
     title_4: "4. Flexible Assembly Line Planning"
     title_4_desc_1: "The well-trained employees conduct production strictly according to CP and SPC to ensure the quality meet requirements."
     title_4_desc_2: "Reasonable production flows are designed by different production processes to achieve high economic effectiveness and low work-in-process inventory."
-    title_4_desc_3: "Our flexible production process can fulfil different demands in a short time."
+    title_4_desc_3: "Our flexible production can fulfil different demands in a short time."
     title_5: "5. Design for Automatic Assembly Lines"
     title_5_desc_1: "Scale production."
     title_5_desc_2: "The product consistency and quality stability are achieved."
@@ -1127,7 +1128,7 @@ Total sales: 4,800 tons/year"
     filename: "Power Cord Set Catalogue. pdf"
   guanyin3c-use:
     main_title: "Applications"
-    main_title_desc: "Electric power units are as the power drive source for all electronic products. Power cord is an important transmission media for an electric power unit. Power cord and electronic wire can be broadly applied into: computer peripherals, communication equipments, consumer home appliances, illumination systems and medical equipments, etc."
+    main_title_desc: "Electric power units are as the power drive source for all electronic products. Power supply cord is an important transmission media for an electric power unit. Power supply cord and electronic wire can be broadly applied into: computer peripherals, communication equipments, consumer home appliances, illumination systems and medical equipments, etc."
   guanyin3c-consulting:
     main_title: "Hotline"
     title_1: "<h5>3C Component Business Unit- Sales</h5>
@@ -1139,7 +1140,7 @@ Total sales: 4,800 tons/year"
                   Fax: +886-3-4906087</p>"
   guanyin-intro:
     main_title: "Guanyin Plant ( Electric Wire & Cable Business Unit ) Profile"
-    main_title_desc: "For the electric wire and cable business, a low-voltage plant was established in June 1954 and a high-voltage plant was founded in 1993. Both plants were merged to form the Electric Wire & Cable Business Unit in 1996. 16,000 tons of products are manufactured in the form of optimal portfolio every year, making the plant a leading manufacturer in the wire, cable and fiber cable areas. Products are widely used in the livelihood fundamental industry (such as construction, communications) and important economic engineering (such as electric power, high-speed railway). They provide reliable power supply for urban development and increase naturally to meet the local loading requirements. The products are highly praised by customer."
+    main_title_desc: "For the electric wire and cable business, a low-voltage plant was established in June 1954 and a high-voltage plant was founded in 1993. Both plants were merged to form the Electric Wire & Cable Business Unit in 1996. 16,000 tons of products are manufactured in the form of optimal portfolio every year, making the plant a leading manufacturer in the wire, cable and fiber cable areas. Products are widely used in the livelihood fundamental industry (such as construction, communications) and important economic engineering (such as electric power, high-speed railway). They provide reliable power supply for urban development and increase naturally to meet the local loading requirements. The products are highly praised by the customer."
     title_1: "Plant area: "
     title_1_desc: "18,350 Ping"
     title_2: "Employees: "
@@ -1196,8 +1197,7 @@ Total sales: 4,800 tons/year"
     gy-09: "/css/images/en/gy-09.jpg"
   guanyin-research:
     main_title: "R&D"
-    main_title_desc: "The R&D development of the company has been dedicated to the improvement of the production efficiency and development of new products for many years. <br>
-        New products that have been developed are described below:  </div>
+    main_title_desc: "The R&D of the company has been dedicated to the enhancement of the production efficiency and development of new products:</div>
       <h4>Major Products</h4>"
     main_title_list: "1. FFC (Flexible Flat Cable)<br>
               2. Electronic wires UL1430 /UL1431<br>
@@ -1228,8 +1228,8 @@ Total sales: 4,800 tons/year"
               * Pass UL VW-1 and CSA vertical burning test<br>
               * Uniform thickness of insulation, easy stripping and cutting<br>
               * For internal wiring of electronic equipment"
-    title_3: "3. Developing Product - Charging Cable for the Electric Car"
-    title_4: "4. Developed Product - TCER"
+    title_3: "3. New Developing Product - Charging Cable for the Electric Car"
+    title_4: "4. New Developed Product - TCER"
     title_4_content_1: "Rated temperature: 90℃  "
     title_4_content_2: "Rated voltage: 600V"
     title_4_content_3: "Standard: UL 1277, UL 1581"
@@ -1238,11 +1238,11 @@ Total sales: 4,800 tons/year"
     title_4_content_6: "Copper braid shielding or no shielding"
     title_4_content_7: "Pass the FT4/ IEEE 1202 burning requirements of UL 1666."
     title_4_content_8: "Tray computer, outdoor signal transmission, and PV cable, etc."
-    title_5: "5. Developing Product - automobile wire"
+    title_5: "5. New Developing Product - automobile wire"
     title_5_content_1: "Projects:"
     title_5_content_2: "The eco-wire with low smoke zero halogen, durable, light, thin, extra thin-wall performances is applicable for the low-voltage insulation stranded wire of all kinds of transport."
     title_5_content_3: "Use irradiated materials to lift the level of temperature tolerance."
-    title_6: "6. Developing Product - leading wire for the automobile motor"
+    title_6: "6. New Developing Product - leading wire for the automobile motor"
     title_6_content_1: ""
     title_6_content_2: "The eco-wire with low smoke zero halogen, durable, light, thin, extra thin-wall performances is applicable for the low-voltage insulation stranded wire of all kinds of transport."
     title_6_content_3: "Use irradiated materials in the wires to lift the level of temperature tolerance."
@@ -1425,7 +1425,7 @@ Total sales: 4,800 tons/year"
     content_3_4: "We collaborate with suppliers to take the corporate social responsibility."
     content_3_5: "We participate in community development and charity activities by conducting business activities, in-kind contribution events, corporate volunteer services or other free professional services."
     title_4: "Stakeholder and Partner"
-    content_4: "<p>Stakeholders include employees, customers, suppliers, community groups, parent or subsidiary company, partners, investors and shareholders. These are the individuals or groups that may affect corporate strategic decisions or actions, and vice versa. For sustainable development, a corporate has to designate strategies that conform to requirements from different stakeholders. While emphasizing the shareholder rights, a corporate must pay attention to employees, customers, suppliers, communities and all related individuals or groups. They form concentric circles with the corporate owner at the center and these circles spread out.</p>
+    content_4: "<p>Stakeholders include employees, customers, suppliers, community groups, parent or subsidiary company, partners, investors and shareholders. These are the individuals or groups that may affect corporate strategic decisions or actions, and vice versa. For sustainable development, a corporate has to formulate strategies that conform to requirements from different stakeholders. While emphasizing the shareholder rights, a corporate must pay attention to employees, customers, suppliers, communities and all related individuals or groups. They form concentric circles with the corporate owner at the center and these circles spread out.</p>
     <p style='margin:10px 0 0 0'> A corporate must understand what stakeholders think and keep the communication with stakeholders transparently. Such communication is used as important reference bases for sustainable development. We interact with stakeholders for daily business in various ways. We also use our official website as the fundamental communication channel between stakeholders and us. The website comprises the product information, business contact, investor service, job opportunity and corporate social responsibility. The website is provided with an email address <a href='ivanc@tai-i-int.com.tw' target='_blank'>(ivanc@tai-i-int.com.tw)</a> for external communication. We designate staffs that are in charge of external communication emails. They distribute emails to corresponding competent authorities according to different contents. Additionally, communication channel for residents are provided by each plant. Management departments send staffs to the surrounding area of the plant for patrol and visit purposes. Residents may express opinions and communicate with in-house staffs any time.</p>"
     title_5: "Communication Channels for Stakeholders"
     content_5_1: "<p>Our partners include shareholders, investors, customers and present employees. New staffs, resigned staffs, community and neighbourhood, suppliers, subcontractors, contractors, NGOs, scholars and experts could be included in the future. Refer to the following diagram.</p>"
@@ -1440,7 +1440,7 @@ Total sales: 4,800 tons/year"
     <p><b>Contractor</b><br>
       For reducing the construction risks for contractors, we require them not only to meet the local requirements and the OHSAS 18001 Standard for Occupational Safety and Health Management System, but also establish the \"Contracting Operation Management Rules\" to fulfil the goals of safety management.</p>
     <p><b>Employee</b><br>
-      Tai-I Electric Wire & Cable regards employee welfare as first priority. We attach importance to the benefits and welfare of the employees and adopt the most competitive compensation and benefit policy. The staff payroll distribution is based on educational background, professional experience and individual performance. The starting salary is not varied by gender, race, religion, political affiliation or marital status, etc. We also provide a safe and comfortable working environment and equal opportunities for career advancement. There are more than hundred of internal and external training courses held every year in hoping that employees' competencies can be promoted. With comprehensive career development planning and training systems, we deeply believe that they help us to retain excellent employees.</p>
+      Tai-I Electric Wire & Cable regards employee welfare as first priority. We attach importance to the benefits and welfare of the employees and adopt the most competitive compensation and benefit policy. The staff payroll distribution is based on educational background, professional experience and individual performance. The starting salary is not varied by gender, race, religion, political affiliation or marital status, etc. We also provide a safe and comfortable working environment and equal opportunities for career advancement. There are more than hundreds of internal and external training courses held every year in hoping that employees' competencies can be promoted. With comprehensive career development planning and training systems, we deeply believe that they help us to retain excellent employees.</p>
     <p><b>Occupational Health</b><br>
       Considering the importance of working environment and employee safety protection for the company operation, we perform management systems regarding ISO14001, QC08000 and TOSHMS to identify the significant environmental aspects, control the risks of occupational safety and health, achieve the reuse goals and improve the project management, ensuring the safety and health of the employees. Besides, free physical examination and employee trip are held annually. We also built facilities for sports and exercise and hold different kinds of ball games periodically. Free beverages such as milk, juice, etc. are offered to enhance the vitality and boosting morale of employees. We comprehensively take care of employee's physical and psychological health. </p>
     <p><b>Living Environment</b><br>
