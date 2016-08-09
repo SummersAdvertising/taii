@@ -16,6 +16,7 @@
 							<%= f.hidden_field :level, :value => ( nxtlevel > 0 ) ? nxtlevel  : 1 %>
 							<%= f.hidden_field :parent, :value => @hqlevel.id.to_i %>
 							<%= f.hidden_field :locale, :value => I18n.locale.to_s %>
+
 							<%= f.hidden_field :ranking, :value => 999 %>
         	</td>
           <td width='18%' align="right">
@@ -24,6 +25,6 @@
            </td>
 
         </tr>
-         <% end %>	
+         <% end %>
 			</table>
     </div>

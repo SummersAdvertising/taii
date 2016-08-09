@@ -18,7 +18,7 @@ class Admin::AnnouncementsController < AdminController
     @announcement = Announcement.create()
   	@announcement.article = Article.new
   	@announcement.title = "最新消息標題#{Time.now.strftime("%Y-%m-%d-%I")}"
-		
+
     respond_to do |format|
       if @announcement.save
         format.html { redirect_to edit_admin_announcement_path(@announcement, locale: I18n.locale), notice: 'Announcement was successfully created.' }
@@ -55,7 +55,7 @@ class Admin::AnnouncementsController < AdminController
   def update
     respond_to do |format|
       if @announcement.update(announcement_params) && ( params[ :article ].nil? ^ @announcement.article.update( params.require(:article).permit(:content) ) )
-      
+
         format.html { redirect_to admin_announcements_path(locale: I18n.locale), notice: 'Announcement was successfully updated.' }
         format.json { head :no_content }
       else
@@ -75,18 +75,18 @@ class Admin::AnnouncementsController < AdminController
     end
   end
 
-  #multiReorder 
+  #multiReorder
 	  def multiple_reorder
 	  	errorFlag = false
-	  	params[:announcement][:reorderset].each_with_index do | announceid , index | 
+	  	params[:announcement][:reorderset].each_with_index do | announceid , index |
 	  		@announcement = Announcement.find(announceid)
 	  		if !@announcement.nil?
-	  			@announcement.update_attribute(:ranking , index+1 )
+	  			@announcement.update_column(:ranking , index+1 )
 	  		else
 	  			errorFlag = true
-	  		end	
+	  		end
 	  	end
-	  	
+
 	  	respond_to do |format|
 		  	 if errorFlag
 		  	 	format.json { head :no_content }
@@ -94,7 +94,7 @@ class Admin::AnnouncementsController < AdminController
 		  	 	format.json { head :no_content }
 		  	 end
 		  end
-		  
+
 	  end
 
 

@@ -1,6 +1,6 @@
 class AddRankingToDividendHistories < ActiveRecord::Migration
   def up
-    add_column :dividend_histories, :ranking, :integer, :null => false, :default => 999
+    add_column :dividend_histories, :ranking, :integer, :null => false, :default => 999 #
   end
 
   def down
